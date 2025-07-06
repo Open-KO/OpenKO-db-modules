@@ -1,6 +1,9 @@
+module;
+
+#include <string>
+#include <unordered_set>
+
 export module doxygen_model:KnightsUser;
-#include <unordered_set>;
-#include <string>;
 
 //class KnightsUserBinder;
 

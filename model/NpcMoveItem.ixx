@@ -1,6 +1,9 @@
+module;
+
+#include <unordered_set>
+#include <string>
+
 export module doxygen_model:NpcMoveItem;
-#include <unordered_set>;
-#include <string>;
 
 //class NpcMoveItemBinder;
 

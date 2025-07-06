@@ -1,6 +1,9 @@
+module;
+
+#include <unordered_set>
+#include <string>
+
 export module doxygen_model:ServerResource;
-#include <unordered_set>;
-#include <string>;
 
 //class ServerResourceBinder;
 
