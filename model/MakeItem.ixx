@@ -1,6 +1,6 @@
 export module doxygen_model:MakeItem;
-#include <unordered_set>
-#include <string>
+#include <unordered_set>;
+#include <string>;
 
 //class MakeItemBinder;
 

@@ -1,6 +1,6 @@
 export module doxygen_model:MagicType6;
-#include <unordered_set>
-#include <string>
+#include <unordered_set>;
+#include <string>;
 
 //class MagicType6Binder;
 

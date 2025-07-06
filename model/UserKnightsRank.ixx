@@ -1,6 +1,6 @@
 export module doxygen_model:UserKnightsRank;
-#include <unordered_set>
-#include <string>
+#include <unordered_set>;
+#include <string>;
 
 //class UserKnightsRankBinder;
 

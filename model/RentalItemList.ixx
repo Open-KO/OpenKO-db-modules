@@ -1,6 +1,6 @@
 export module doxygen_model:RentalItemList;
-#include <unordered_set>
-#include <string>
+#include <unordered_set>;
+#include <string>;
 
 //class RentalItemListBinder;
 
