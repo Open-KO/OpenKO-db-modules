@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:ProgramListLog;
 
-//class ProgramListLogBinder;
-
-export class ProgramListLog 
+namespace model
 {
-public:
-//	using BinderType = ProgramListLogBinder;
+	//class ProgramListLogBinder;
 	
-};
+	export class ProgramListLog 
+	{
+	public:
+	//	using BinderType = ProgramListLogBinder;
+		
+	};
+}

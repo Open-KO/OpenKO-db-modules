@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:WebpageAddress;
 
-//class WebpageAddressBinder;
-
-export class WebpageAddress 
+namespace model
 {
-public:
-//	using BinderType = WebpageAddressBinder;
+	//class WebpageAddressBinder;
 	
-};
+	export class WebpageAddress 
+	{
+	public:
+	//	using BinderType = WebpageAddressBinder;
+		
+	};
+}

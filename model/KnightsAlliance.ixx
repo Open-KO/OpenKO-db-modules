@@ -1,15 +1,18 @@
 module;
 
-#include <unordered_set>
 #include <string>
+#include <unordered_set>
 
 export module doxygen_model:KnightsAlliance;
 
-//class KnightsAllianceBinder;
-
-export class KnightsAlliance 
+namespace model
 {
-public:
-//	using BinderType = KnightsAllianceBinder;
+	//class KnightsAllianceBinder;
 	
-};
+	export class KnightsAlliance 
+	{
+	public:
+	//	using BinderType = KnightsAllianceBinder;
+		
+	};
+}

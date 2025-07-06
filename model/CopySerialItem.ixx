@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:CopySerialItem;
 
-//class CopySerialItemBinder;
-
-export class CopySerialItem 
+namespace model
 {
-public:
-//	using BinderType = CopySerialItemBinder;
+	//class CopySerialItemBinder;
 	
-};
+	export class CopySerialItem 
+	{
+	public:
+	//	using BinderType = CopySerialItemBinder;
+		
+	};
+}

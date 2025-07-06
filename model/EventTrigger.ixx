@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:EventTrigger;
 
-//class EventTriggerBinder;
-
-export class EventTrigger 
+namespace model
 {
-public:
-//	using BinderType = EventTriggerBinder;
+	//class EventTriggerBinder;
 	
-};
+	export class EventTrigger 
+	{
+	public:
+	//	using BinderType = EventTriggerBinder;
+		
+	};
+}

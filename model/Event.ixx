@@ -1,15 +1,18 @@
 module;
 
-#include <string>
 #include <unordered_set>
+#include <string>
 
 export module doxygen_model:Event;
 
-//class EventBinder;
-
-export class Event 
+namespace model
 {
-public:
-//	using BinderType = EventBinder;
+	//class EventBinder;
 	
-};
+	export class Event 
+	{
+	public:
+	//	using BinderType = EventBinder;
+		
+	};
+}

@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MonsterItemTest;
 
-//class MonsterItemTestBinder;
-
-export class MonsterItemTest 
+namespace model
 {
-public:
-//	using BinderType = MonsterItemTestBinder;
+	//class MonsterItemTestBinder;
 	
-};
+	export class MonsterItemTest 
+	{
+	public:
+	//	using BinderType = MonsterItemTestBinder;
+		
+	};
+}

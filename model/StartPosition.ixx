@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:StartPosition;
 
-//class StartPositionBinder;
-
-export class StartPosition 
+namespace model
 {
-public:
-//	using BinderType = StartPositionBinder;
+	//class StartPositionBinder;
 	
-};
+	export class StartPosition 
+	{
+	public:
+	//	using BinderType = StartPositionBinder;
+		
+	};
+}

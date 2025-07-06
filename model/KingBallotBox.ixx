@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:KingBallotBox;
 
-//class KingBallotBoxBinder;
-
-export class KingBallotBox 
+namespace model
 {
-public:
-//	using BinderType = KingBallotBoxBinder;
+	//class KingBallotBoxBinder;
 	
-};
+	export class KingBallotBox 
+	{
+	public:
+	//	using BinderType = KingBallotBoxBinder;
+		
+	};
+}

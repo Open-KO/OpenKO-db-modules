@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:Coefficient;
 
-//class CoefficientBinder;
-
-export class Coefficient 
+namespace model
 {
-public:
-//	using BinderType = CoefficientBinder;
+	//class CoefficientBinder;
 	
-};
+	export class Coefficient 
+	{
+	public:
+	//	using BinderType = CoefficientBinder;
+		
+	};
+}

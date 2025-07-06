@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:Item;
 
-//class ItemBinder;
-
-export class Item 
+namespace model
 {
-public:
-//	using BinderType = ItemBinder;
+	//class ItemBinder;
 	
-};
+	export class Item 
+	{
+	public:
+	//	using BinderType = ItemBinder;
+		
+	};
+}

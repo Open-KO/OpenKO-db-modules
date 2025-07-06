@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:ItemUpProbability;
 
-//class ItemUpProbabilityBinder;
-
-export class ItemUpProbability 
+namespace model
 {
-public:
-//	using BinderType = ItemUpProbabilityBinder;
+	//class ItemUpProbabilityBinder;
 	
-};
+	export class ItemUpProbability 
+	{
+	public:
+	//	using BinderType = ItemUpProbabilityBinder;
+		
+	};
+}

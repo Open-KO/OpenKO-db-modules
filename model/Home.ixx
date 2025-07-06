@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:Home;
 
-//class HomeBinder;
-
-export class Home 
+namespace model
 {
-public:
-//	using BinderType = HomeBinder;
+	//class HomeBinder;
 	
-};
+	export class Home 
+	{
+	public:
+	//	using BinderType = HomeBinder;
+		
+	};
+}

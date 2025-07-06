@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:UserKnightsRank;
 
-//class UserKnightsRankBinder;
-
-export class UserKnightsRank 
+namespace model
 {
-public:
-//	using BinderType = UserKnightsRankBinder;
+	//class UserKnightsRankBinder;
 	
-};
+	export class UserKnightsRank 
+	{
+	public:
+	//	using BinderType = UserKnightsRankBinder;
+		
+	};
+}

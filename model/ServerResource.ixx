@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:ServerResource;
 
-//class ServerResourceBinder;
-
-export class ServerResource 
+namespace model
 {
-public:
-//	using BinderType = ServerResourceBinder;
+	//class ServerResourceBinder;
 	
-};
+	export class ServerResource 
+	{
+	public:
+	//	using BinderType = ServerResourceBinder;
+		
+	};
+}

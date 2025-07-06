@@ -1,15 +1,18 @@
 module;
 
-#include <unordered_set>
 #include <string>
+#include <unordered_set>
 
 export module doxygen_model:RentalItem;
 
-//class RentalItemBinder;
-
-export class RentalItem 
+namespace model
 {
-public:
-//	using BinderType = RentalItemBinder;
+	//class RentalItemBinder;
 	
-};
+	export class RentalItem 
+	{
+	public:
+	//	using BinderType = RentalItemBinder;
+		
+	};
+}

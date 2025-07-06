@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:UserRentalItem;
 
-//class UserRentalItemBinder;
-
-export class UserRentalItem 
+namespace model
 {
-public:
-//	using BinderType = UserRentalItemBinder;
+	//class UserRentalItemBinder;
 	
-};
+	export class UserRentalItem 
+	{
+	public:
+	//	using BinderType = UserRentalItemBinder;
+		
+	};
+}

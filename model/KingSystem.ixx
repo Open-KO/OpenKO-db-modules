@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:KingSystem;
 
-//class KingSystemBinder;
-
-export class KingSystem 
+namespace model
 {
-public:
-//	using BinderType = KingSystemBinder;
+	//class KingSystemBinder;
 	
-};
+	export class KingSystem 
+	{
+	public:
+	//	using BinderType = KingSystemBinder;
+		
+	};
+}

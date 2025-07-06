@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:NpcItem;
 
-//class NpcItemBinder;
-
-export class NpcItem 
+namespace model
 {
-public:
-//	using BinderType = NpcItemBinder;
+	//class NpcItemBinder;
 	
-};
+	export class NpcItem 
+	{
+	public:
+	//	using BinderType = NpcItemBinder;
+		
+	};
+}

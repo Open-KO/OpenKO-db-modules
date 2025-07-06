@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:WebItemMallLog;
 
-//class WebItemMallLogBinder;
-
-export class WebItemMallLog 
+namespace model
 {
-public:
-//	using BinderType = WebItemMallLogBinder;
+	//class WebItemMallLogBinder;
 	
-};
+	export class WebItemMallLog 
+	{
+	public:
+	//	using BinderType = WebItemMallLogBinder;
+		
+	};
+}

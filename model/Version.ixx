@@ -1,15 +1,18 @@
 module;
 
-#include <unordered_set>
 #include <string>
+#include <unordered_set>
 
 export module doxygen_model:Version;
 
-//class VersionBinder;
-
-export class Version 
+namespace model
 {
-public:
-//	using BinderType = VersionBinder;
+	//class VersionBinder;
 	
-};
+	export class Version 
+	{
+	public:
+	//	using BinderType = VersionBinder;
+		
+	};
+}

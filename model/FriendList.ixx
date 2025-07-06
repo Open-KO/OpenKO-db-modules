@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:FriendList;
 
-//class FriendListBinder;
-
-export class FriendList 
+namespace model
 {
-public:
-//	using BinderType = FriendListBinder;
+	//class FriendListBinder;
 	
-};
+	export class FriendList 
+	{
+	public:
+	//	using BinderType = FriendListBinder;
+		
+	};
+}

@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:CouponSerialList;
 
-//class CouponSerialListBinder;
-
-export class CouponSerialList 
+namespace model
 {
-public:
-//	using BinderType = CouponSerialListBinder;
+	//class CouponSerialListBinder;
 	
-};
+	export class CouponSerialList 
+	{
+	public:
+	//	using BinderType = CouponSerialListBinder;
+		
+	};
+}

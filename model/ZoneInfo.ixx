@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:ZoneInfo;
 
-//class ZoneInfoBinder;
-
-export class ZoneInfo 
+namespace model
 {
-public:
-//	using BinderType = ZoneInfoBinder;
+	//class ZoneInfoBinder;
 	
-};
+	export class ZoneInfo 
+	{
+	public:
+	//	using BinderType = ZoneInfoBinder;
+		
+	};
+}

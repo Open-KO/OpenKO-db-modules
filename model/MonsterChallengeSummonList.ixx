@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MonsterChallengeSummonList;
 
-//class MonsterChallengeSummonListBinder;
-
-export class MonsterChallengeSummonList 
+namespace model
 {
-public:
-//	using BinderType = MonsterChallengeSummonListBinder;
+	//class MonsterChallengeSummonListBinder;
 	
-};
+	export class MonsterChallengeSummonList 
+	{
+	public:
+	//	using BinderType = MonsterChallengeSummonListBinder;
+		
+	};
+}

@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:UserData;
 
-//class UserDataBinder;
-
-export class UserData 
+namespace model
 {
-public:
-//	using BinderType = UserDataBinder;
+	//class UserDataBinder;
 	
-};
+	export class UserData 
+	{
+	public:
+	//	using BinderType = UserDataBinder;
+		
+	};
+}

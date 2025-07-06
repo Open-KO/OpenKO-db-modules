@@ -1,15 +1,18 @@
 module;
 
-#include <unordered_set>
 #include <string>
+#include <unordered_set>
 
 export module doxygen_model:NpcMoveItem;
 
-//class NpcMoveItemBinder;
-
-export class NpcMoveItem 
+namespace model
 {
-public:
-//	using BinderType = NpcMoveItemBinder;
+	//class NpcMoveItemBinder;
 	
-};
+	export class NpcMoveItem 
+	{
+	public:
+	//	using BinderType = NpcMoveItemBinder;
+		
+	};
+}

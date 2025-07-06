@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:UserEditor;
 
-//class UserEditorBinder;
-
-export class UserEditor 
+namespace model
 {
-public:
-//	using BinderType = UserEditorBinder;
+	//class UserEditorBinder;
 	
-};
+	export class UserEditor 
+	{
+	public:
+	//	using BinderType = UserEditorBinder;
+		
+	};
+}

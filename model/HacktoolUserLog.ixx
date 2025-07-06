@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:HacktoolUserLog;
 
-//class HacktoolUserLogBinder;
-
-export class HacktoolUserLog 
+namespace model
 {
-public:
-//	using BinderType = HacktoolUserLogBinder;
+	//class HacktoolUserLogBinder;
 	
-};
+	export class HacktoolUserLog 
+	{
+	public:
+	//	using BinderType = HacktoolUserLogBinder;
+		
+	};
+}

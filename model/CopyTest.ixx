@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:CopyTest;
 
-//class CopyTestBinder;
-
-export class CopyTest 
+namespace model
 {
-public:
-//	using BinderType = CopyTestBinder;
+	//class CopyTestBinder;
 	
-};
+	export class CopyTest 
+	{
+	public:
+	//	using BinderType = CopyTestBinder;
+		
+	};
+}

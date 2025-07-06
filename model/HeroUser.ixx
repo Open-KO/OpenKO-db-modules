@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:HeroUser;
 
-//class HeroUserBinder;
-
-export class HeroUser 
+namespace model
 {
-public:
-//	using BinderType = HeroUserBinder;
+	//class HeroUserBinder;
 	
-};
+	export class HeroUser 
+	{
+	public:
+	//	using BinderType = HeroUserBinder;
+		
+	};
+}

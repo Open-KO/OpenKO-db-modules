@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:Warehouse;
 
-//class WarehouseBinder;
-
-export class Warehouse 
+namespace model
 {
-public:
-//	using BinderType = WarehouseBinder;
+	//class WarehouseBinder;
 	
-};
+	export class Warehouse 
+	{
+	public:
+	//	using BinderType = WarehouseBinder;
+		
+	};
+}

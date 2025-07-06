@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:UserDataSkillShortcut;
 
-//class UserDataSkillShortcutBinder;
-
-export class UserDataSkillShortcut 
+namespace model
 {
-public:
-//	using BinderType = UserDataSkillShortcutBinder;
+	//class UserDataSkillShortcutBinder;
 	
-};
+	export class UserDataSkillShortcut 
+	{
+	public:
+	//	using BinderType = UserDataSkillShortcutBinder;
+		
+	};
+}

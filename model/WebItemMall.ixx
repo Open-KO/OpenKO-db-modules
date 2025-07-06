@@ -1,15 +1,18 @@
 module;
 
-#include <unordered_set>
 #include <string>
+#include <unordered_set>
 
 export module doxygen_model:WebItemMall;
 
-//class WebItemMallBinder;
-
-export class WebItemMall 
+namespace model
 {
-public:
-//	using BinderType = WebItemMallBinder;
+	//class WebItemMallBinder;
 	
-};
+	export class WebItemMall 
+	{
+	public:
+	//	using BinderType = WebItemMallBinder;
+		
+	};
+}

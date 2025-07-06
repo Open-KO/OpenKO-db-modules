@@ -1,15 +1,18 @@
 module;
 
-#include <unordered_set>
 #include <string>
+#include <unordered_set>
 
 export module doxygen_model:MakeItemGroup;
 
-//class MakeItemGroupBinder;
-
-export class MakeItemGroup 
+namespace model
 {
-public:
-//	using BinderType = MakeItemGroupBinder;
+	//class MakeItemGroupBinder;
 	
-};
+	export class MakeItemGroup 
+	{
+	public:
+	//	using BinderType = MakeItemGroupBinder;
+		
+	};
+}

@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MakeDefensive;
 
-//class MakeDefensiveBinder;
-
-export class MakeDefensive 
+namespace model
 {
-public:
-//	using BinderType = MakeDefensiveBinder;
+	//class MakeDefensiveBinder;
 	
-};
+	export class MakeDefensive 
+	{
+	public:
+	//	using BinderType = MakeDefensiveBinder;
+		
+	};
+}

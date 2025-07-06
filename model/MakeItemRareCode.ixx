@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MakeItemRareCode;
 
-//class MakeItemRareCodeBinder;
-
-export class MakeItemRareCode 
+namespace model
 {
-public:
-//	using BinderType = MakeItemRareCodeBinder;
+	//class MakeItemRareCodeBinder;
 	
-};
+	export class MakeItemRareCode 
+	{
+	public:
+	//	using BinderType = MakeItemRareCodeBinder;
+		
+	};
+}

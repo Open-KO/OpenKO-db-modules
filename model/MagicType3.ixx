@@ -1,15 +1,18 @@
 module;
 
-#include <string>
 #include <unordered_set>
+#include <string>
 
 export module doxygen_model:MagicType3;
 
-//class MagicType3Binder;
-
-export class MagicType3 
+namespace model
 {
-public:
-//	using BinderType = MagicType3Binder;
+	//class MagicType3Binder;
 	
-};
+	export class MagicType3 
+	{
+	public:
+	//	using BinderType = MagicType3Binder;
+		
+	};
+}

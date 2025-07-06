@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MakeItem;
 
-//class MakeItemBinder;
-
-export class MakeItem 
+namespace model
 {
-public:
-//	using BinderType = MakeItemBinder;
+	//class MakeItemBinder;
 	
-};
+	export class MakeItem 
+	{
+	public:
+	//	using BinderType = MakeItemBinder;
+		
+	};
+}

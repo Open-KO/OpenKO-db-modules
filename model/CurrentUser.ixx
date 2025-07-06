@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:CurrentUser;
 
-//class CurrentUserBinder;
-
-export class CurrentUser 
+namespace model
 {
-public:
-//	using BinderType = CurrentUserBinder;
+	//class CurrentUserBinder;
 	
-};
+	export class CurrentUser 
+	{
+	public:
+	//	using BinderType = CurrentUserBinder;
+		
+	};
+}

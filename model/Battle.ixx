@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:Battle;
 
-//class BattleBinder;
-
-export class Battle 
+namespace model
 {
-public:
-//	using BinderType = BattleBinder;
+	//class BattleBinder;
 	
-};
+	export class Battle 
+	{
+	public:
+	//	using BinderType = BattleBinder;
+		
+	};
+}

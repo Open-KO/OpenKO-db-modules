@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:KingCandidacyNoticeBoard;
 
-//class KingCandidacyNoticeBoardBinder;
-
-export class KingCandidacyNoticeBoard 
+namespace model
 {
-public:
-//	using BinderType = KingCandidacyNoticeBoardBinder;
+	//class KingCandidacyNoticeBoardBinder;
 	
-};
+	export class KingCandidacyNoticeBoard 
+	{
+	public:
+	//	using BinderType = KingCandidacyNoticeBoardBinder;
+		
+	};
+}

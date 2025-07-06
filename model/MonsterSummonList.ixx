@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MonsterSummonList;
 
-//class MonsterSummonListBinder;
-
-export class MonsterSummonList 
+namespace model
 {
-public:
-//	using BinderType = MonsterSummonListBinder;
+	//class MonsterSummonListBinder;
 	
-};
+	export class MonsterSummonList 
+	{
+	public:
+	//	using BinderType = MonsterSummonListBinder;
+		
+	};
+}

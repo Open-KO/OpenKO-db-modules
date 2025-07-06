@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:UserSavedMagic;
 
-//class UserSavedMagicBinder;
-
-export class UserSavedMagic 
+namespace model
 {
-public:
-//	using BinderType = UserSavedMagicBinder;
+	//class UserSavedMagicBinder;
 	
-};
+	export class UserSavedMagic 
+	{
+	public:
+	//	using BinderType = UserSavedMagicBinder;
+		
+	};
+}

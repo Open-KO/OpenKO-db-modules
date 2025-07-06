@@ -1,15 +1,18 @@
 module;
 
-#include <string>
 #include <unordered_set>
+#include <string>
 
 export module doxygen_model:KnightsUser;
 
-//class KnightsUserBinder;
-
-export class KnightsUser 
+namespace model
 {
-public:
-//	using BinderType = KnightsUserBinder;
+	//class KnightsUserBinder;
 	
-};
+	export class KnightsUser 
+	{
+	public:
+	//	using BinderType = KnightsUserBinder;
+		
+	};
+}

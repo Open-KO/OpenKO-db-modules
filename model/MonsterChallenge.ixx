@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MonsterChallenge;
 
-//class MonsterChallengeBinder;
-
-export class MonsterChallenge 
+namespace model
 {
-public:
-//	using BinderType = MonsterChallengeBinder;
+	//class MonsterChallengeBinder;
 	
-};
+	export class MonsterChallenge 
+	{
+	public:
+	//	using BinderType = MonsterChallengeBinder;
+		
+	};
+}

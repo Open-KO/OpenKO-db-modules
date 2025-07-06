@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:KnightsRating;
 
-//class KnightsRatingBinder;
-
-export class KnightsRating 
+namespace model
 {
-public:
-//	using BinderType = KnightsRatingBinder;
+	//class KnightsRatingBinder;
 	
-};
+	export class KnightsRating 
+	{
+	public:
+	//	using BinderType = KnightsRatingBinder;
+		
+	};
+}

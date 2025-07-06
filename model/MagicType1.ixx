@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MagicType1;
 
-//class MagicType1Binder;
-
-export class MagicType1 
+namespace model
 {
-public:
-//	using BinderType = MagicType1Binder;
+	//class MagicType1Binder;
 	
-};
+	export class MagicType1 
+	{
+	public:
+	//	using BinderType = MagicType1Binder;
+		
+	};
+}

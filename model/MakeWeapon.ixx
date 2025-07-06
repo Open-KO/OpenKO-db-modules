@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MakeWeapon;
 
-//class MakeWeaponBinder;
-
-export class MakeWeapon 
+namespace model
 {
-public:
-//	using BinderType = MakeWeaponBinder;
+	//class MakeWeaponBinder;
 	
-};
+	export class MakeWeapon 
+	{
+	public:
+	//	using BinderType = MakeWeaponBinder;
+		
+	};
+}

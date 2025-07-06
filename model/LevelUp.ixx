@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:LevelUp;
 
-//class LevelUpBinder;
-
-export class LevelUp 
+namespace model
 {
-public:
-//	using BinderType = LevelUpBinder;
+	//class LevelUpBinder;
 	
-};
+	export class LevelUp 
+	{
+	public:
+	//	using BinderType = LevelUpBinder;
+		
+	};
+}

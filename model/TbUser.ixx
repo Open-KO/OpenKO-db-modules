@@ -1,15 +1,18 @@
 module;
 
-#include <unordered_set>
 #include <string>
+#include <unordered_set>
 
 export module doxygen_model:TbUser;
 
-//class TbUserBinder;
-
-export class TbUser 
+namespace model
 {
-public:
-//	using BinderType = TbUserBinder;
+	//class TbUserBinder;
 	
-};
+	export class TbUser 
+	{
+	public:
+	//	using BinderType = TbUserBinder;
+		
+	};
+}

@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:Concurrent;
 
-//class ConcurrentBinder;
-
-export class Concurrent 
+namespace model
 {
-public:
-//	using BinderType = ConcurrentBinder;
+	//class ConcurrentBinder;
 	
-};
+	export class Concurrent 
+	{
+	public:
+	//	using BinderType = ConcurrentBinder;
+		
+	};
+}

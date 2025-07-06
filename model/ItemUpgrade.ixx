@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:ItemUpgrade;
 
-//class ItemUpgradeBinder;
-
-export class ItemUpgrade 
+namespace model
 {
-public:
-//	using BinderType = ItemUpgradeBinder;
+	//class ItemUpgradeBinder;
 	
-};
+	export class ItemUpgrade 
+	{
+	public:
+	//	using BinderType = ItemUpgradeBinder;
+		
+	};
+}

@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:KnightsSiegeWarfare;
 
-//class KnightsSiegeWarfareBinder;
-
-export class KnightsSiegeWarfare 
+namespace model
 {
-public:
-//	using BinderType = KnightsSiegeWarfareBinder;
+	//class KnightsSiegeWarfareBinder;
 	
-};
+	export class KnightsSiegeWarfare 
+	{
+	public:
+	//	using BinderType = KnightsSiegeWarfareBinder;
+		
+	};
+}

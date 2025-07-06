@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:KingElectionList;
 
-//class KingElectionListBinder;
-
-export class KingElectionList 
+namespace model
 {
-public:
-//	using BinderType = KingElectionListBinder;
+	//class KingElectionListBinder;
 	
-};
+	export class KingElectionList 
+	{
+	public:
+	//	using BinderType = KingElectionListBinder;
+		
+	};
+}

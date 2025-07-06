@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:NpcPos;
 
-//class NpcPosBinder;
-
-export class NpcPos 
+namespace model
 {
-public:
-//	using BinderType = NpcPosBinder;
+	//class NpcPosBinder;
 	
-};
+	export class NpcPos 
+	{
+	public:
+	//	using BinderType = NpcPosBinder;
+		
+	};
+}

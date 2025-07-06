@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:MakeItemGradeCode;
 
-//class MakeItemGradeCodeBinder;
-
-export class MakeItemGradeCode 
+namespace model
 {
-public:
-//	using BinderType = MakeItemGradeCodeBinder;
+	//class MakeItemGradeCodeBinder;
 	
-};
+	export class MakeItemGradeCode 
+	{
+	public:
+	//	using BinderType = MakeItemGradeCodeBinder;
+		
+	};
+}

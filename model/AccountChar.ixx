@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:AccountChar;
 
-//class AccountCharBinder;
-
-export class AccountChar 
+namespace model
 {
-public:
-//	using BinderType = AccountCharBinder;
+	//class AccountCharBinder;
 	
-};
+	export class AccountChar 
+	{
+	public:
+	//	using BinderType = AccountCharBinder;
+		
+	};
+}

@@ -5,11 +5,14 @@ module;
 
 export module doxygen_model:RentalItemList;
 
-//class RentalItemListBinder;
-
-export class RentalItemList 
+namespace model
 {
-public:
-//	using BinderType = RentalItemListBinder;
+	//class RentalItemListBinder;
 	
-};
+	export class RentalItemList 
+	{
+	public:
+	//	using BinderType = RentalItemListBinder;
+		
+	};
+}
