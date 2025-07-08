@@ -61,19 +61,19 @@ namespace model
 		/// \brief Binds a result's column to EnglishName
 		static void BindEnglishName(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.EnglishName);
+			m.EnglishName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to KoreanName
 		static void BindKoreanName(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.KoreanName);
+			m.KoreanName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
+			m.Description = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to BeforeAction
@@ -193,7 +193,7 @@ namespace model
 		/// \brief Binds a result's column to Event
 		static void BindEvent(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.Event);
+			m.Event = result.get<int32_t>(colIndex);
 		}
 
 	};

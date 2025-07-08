@@ -52,37 +52,37 @@ namespace model
 		/// \brief Binds a result's column to ElmoUserId
 		static void BindElmoUserId(UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoUserId);
+			m.ElmoUserId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ElmoKnightsName
 		static void BindElmoKnightsName(UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoKnightsName);
+			m.ElmoKnightsName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ElmoLoyalty
 		static void BindElmoLoyalty(UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.ElmoLoyalty);
+			m.ElmoLoyalty = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to KarusUserId
 		static void BindKarusUserId(UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.KarusUserId);
+			m.KarusUserId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to KarusKnightsName
 		static void BindKarusKnightsName(UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.KarusKnightsName);
+			m.KarusKnightsName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to KarusLoyalty
 		static void BindKarusLoyalty(UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.KarusLoyalty);
+			m.KarusLoyalty = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Money

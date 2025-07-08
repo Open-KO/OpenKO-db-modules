@@ -112,19 +112,19 @@ namespace model
 		/// \brief Binds a result's column to BorrowerCharId
 		static void BindBorrowerCharId(RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.BorrowerCharId);
+			m.BorrowerCharId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to BorrowerAccountId
 		static void BindBorrowerAccountId(RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.BorrowerAccountId);
+			m.BorrowerAccountId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to LendTime
 		static void BindLendTime(RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::time_t>>(colIndex, m.LendTime);
+			m.LendTime = result.get<std::time_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to RegisterTime

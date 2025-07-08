@@ -36,31 +36,31 @@ namespace model
 		/// \brief Binds a result's column to UserId
 		static void BindUserId(CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.UserId);
+			m.UserId = result.get<std::vector<uint8_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Type
 		static void BindType(CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Type);
+			m.Type = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Pos
 		static void BindPos(CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Pos);
+			m.Pos = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemNum
 		static void BindItemNum(CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemNum);
+			m.ItemNum = result.get<std::vector<uint8_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemSerial
 		static void BindItemSerial(CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemSerial);
+			m.ItemSerial = result.get<std::vector<uint8_t>(colIndex);
 		}
 
 	};

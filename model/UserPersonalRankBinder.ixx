@@ -61,13 +61,13 @@ namespace model
 		/// \brief Binds a result's column to ElmoUserId
 		static void BindElmoUserId(UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoUserId);
+			m.ElmoUserId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ElmoLoyaltyMonthly
 		static void BindElmoLoyaltyMonthly(UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.ElmoLoyaltyMonthly);
+			m.ElmoLoyaltyMonthly = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ElmoCheck
@@ -85,13 +85,13 @@ namespace model
 		/// \brief Binds a result's column to KarusUserId
 		static void BindKarusUserId(UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.KarusUserId);
+			m.KarusUserId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to KarusLoyaltyMonthly
 		static void BindKarusLoyaltyMonthly(UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.KarusLoyaltyMonthly);
+			m.KarusLoyaltyMonthly = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to KarusCheck

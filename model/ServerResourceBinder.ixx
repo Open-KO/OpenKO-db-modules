@@ -46,7 +46,7 @@ namespace model
 		/// \brief Binds a result's column to Resource
 		static void BindResource(ServerResource& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Resource);
+			m.Resource = result.get<std::string>(colIndex);
 		}
 
 	};

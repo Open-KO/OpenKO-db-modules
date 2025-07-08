@@ -48,13 +48,13 @@ namespace model
 		/// \brief Binds a result's column to Knights
 		static void BindKnights(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Knights);
+			m.Knights = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Name
 		static void BindName(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
+			m.Name = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Money

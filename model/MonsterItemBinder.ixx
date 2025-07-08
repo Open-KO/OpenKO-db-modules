@@ -48,61 +48,61 @@ namespace model
 		/// \brief Binds a result's column to ItemId1
 		static void BindItemId1(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId1);
+			m.ItemId1 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance1
 		static void BindDropChance1(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance1);
+			m.DropChance1 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemId2
 		static void BindItemId2(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId2);
+			m.ItemId2 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance2
 		static void BindDropChance2(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance2);
+			m.DropChance2 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemId3
 		static void BindItemId3(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId3);
+			m.ItemId3 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance3
 		static void BindDropChance3(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance3);
+			m.DropChance3 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemId4
 		static void BindItemId4(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId4);
+			m.ItemId4 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance4
 		static void BindDropChance4(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance4);
+			m.DropChance4 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemId5
 		static void BindItemId5(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId5);
+			m.ItemId5 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance5
 		static void BindDropChance5(MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance5);
+			m.DropChance5 = result.get<int16_t>(colIndex);
 		}
 
 	};

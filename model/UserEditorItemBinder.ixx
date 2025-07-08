@@ -95,7 +95,7 @@ namespace model
 		/// \brief Binds a result's column to UpdateTime
 		static void BindUpdateTime(UserEditorItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::time_t>>(colIndex, m.UpdateTime);
+			m.UpdateTime = result.get<std::time_t>(colIndex);
 		}
 
 	};

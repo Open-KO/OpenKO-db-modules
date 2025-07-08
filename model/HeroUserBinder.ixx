@@ -42,25 +42,25 @@ namespace model
 		/// \brief Binds a result's column to UserId
 		static void BindUserId(HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.UserId);
+			m.UserId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Nation
 		static void BindNation(HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Nation);
+			m.Nation = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ClassName
 		static void BindClassName(HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ClassName);
+			m.ClassName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Achievement
 		static void BindAchievement(HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Achievement);
+			m.Achievement = result.get<std::string>(colIndex);
 		}
 
 	};

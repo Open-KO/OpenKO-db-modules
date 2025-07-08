@@ -110,13 +110,13 @@ namespace model
 		/// \brief Binds a result's column to RentalTimestamp
 		static void BindRentalTimestamp(UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::time_t>>(colIndex, m.RentalTimestamp);
+			m.RentalTimestamp = result.get<std::time_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to RegisterTime
 		static void BindRegisterTime(UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::time_t>>(colIndex, m.RegisterTime);
+			m.RegisterTime = result.get<std::time_t>(colIndex);
 		}
 
 	};

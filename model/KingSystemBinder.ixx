@@ -222,13 +222,13 @@ namespace model
 		/// \brief Binds a result's column to KingName
 		static void BindKingName(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.KingName);
+			m.KingName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ImRequestId
 		static void BindImRequestId(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ImRequestId);
+			m.ImRequestId = result.get<std::string>(colIndex);
 		}
 
 	};

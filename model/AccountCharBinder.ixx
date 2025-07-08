@@ -55,19 +55,19 @@ namespace model
 		/// \brief Binds a result's column to CharId1
 		static void BindCharId1(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.CharId1);
+			m.CharId1 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to CharId2
 		static void BindCharId2(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.CharId2);
+			m.CharId2 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to CharId3
 		static void BindCharId3(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.CharId3);
+			m.CharId3 = result.get<std::string>(colIndex);
 		}
 
 	};

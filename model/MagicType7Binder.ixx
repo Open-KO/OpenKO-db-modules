@@ -51,13 +51,13 @@ namespace model
 		/// \brief Binds a result's column to Name
 		static void BindName(MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
+			m.Name = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Note
 		static void BindNote(MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Note);
+			m.Note = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ValidGroup

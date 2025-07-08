@@ -68,13 +68,13 @@ namespace model
 		/// \brief Binds a result's column to NpcName
 		static void BindNpcName(ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.NpcName);
+			m.NpcName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Note
 		static void BindNote(ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Note);
+			m.Note = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to RandomFlag

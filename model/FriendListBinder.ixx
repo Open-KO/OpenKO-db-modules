@@ -62,145 +62,145 @@ namespace model
 		/// \brief Binds a result's column to Friend1
 		static void BindFriend1(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend1);
+			m.Friend1 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend2
 		static void BindFriend2(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend2);
+			m.Friend2 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend3
 		static void BindFriend3(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend3);
+			m.Friend3 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend4
 		static void BindFriend4(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend4);
+			m.Friend4 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend5
 		static void BindFriend5(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend5);
+			m.Friend5 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend6
 		static void BindFriend6(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend6);
+			m.Friend6 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend7
 		static void BindFriend7(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend7);
+			m.Friend7 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend8
 		static void BindFriend8(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend8);
+			m.Friend8 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend9
 		static void BindFriend9(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend9);
+			m.Friend9 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend10
 		static void BindFriend10(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend10);
+			m.Friend10 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend11
 		static void BindFriend11(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend11);
+			m.Friend11 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend12
 		static void BindFriend12(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend12);
+			m.Friend12 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend13
 		static void BindFriend13(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend13);
+			m.Friend13 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend14
 		static void BindFriend14(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend14);
+			m.Friend14 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend15
 		static void BindFriend15(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend15);
+			m.Friend15 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend16
 		static void BindFriend16(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend16);
+			m.Friend16 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend17
 		static void BindFriend17(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend17);
+			m.Friend17 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend18
 		static void BindFriend18(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend18);
+			m.Friend18 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend19
 		static void BindFriend19(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend19);
+			m.Friend19 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend20
 		static void BindFriend20(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend20);
+			m.Friend20 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend21
 		static void BindFriend21(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend21);
+			m.Friend21 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend22
 		static void BindFriend22(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend22);
+			m.Friend22 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend23
 		static void BindFriend23(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend23);
+			m.Friend23 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Friend24
 		static void BindFriend24(FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Friend24);
+			m.Friend24 = result.get<std::string>(colIndex);
 		}
 
 	};

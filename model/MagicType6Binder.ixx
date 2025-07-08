@@ -68,7 +68,7 @@ namespace model
 		/// \brief Binds a result's column to Description
 		static void BindDescription(MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
+			m.Description = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Size

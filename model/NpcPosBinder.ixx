@@ -51,121 +51,121 @@ namespace model
 		/// \brief Binds a result's column to ZoneId
 		static void BindZoneId(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.ZoneId);
+			m.ZoneId = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to NpcId
 		static void BindNpcId(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.NpcId);
+			m.NpcId = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ActType
 		static void BindActType(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.ActType);
+			m.ActType = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to RegenType
 		static void BindRegenType(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.RegenType);
+			m.RegenType = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DungeonFamily
 		static void BindDungeonFamily(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.DungeonFamily);
+			m.DungeonFamily = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to SpecialType
 		static void BindSpecialType(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.SpecialType);
+			m.SpecialType = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to TrapNumber
 		static void BindTrapNumber(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.TrapNumber);
+			m.TrapNumber = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to LeftX
 		static void BindLeftX(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.LeftX);
+			m.LeftX = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to TopZ
 		static void BindTopZ(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.TopZ);
+			m.TopZ = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to RightX
 		static void BindRightX(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.RightX);
+			m.RightX = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to BottomZ
 		static void BindBottomZ(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.BottomZ);
+			m.BottomZ = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to LimitMinZ
 		static void BindLimitMinZ(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.LimitMinZ);
+			m.LimitMinZ = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to LimitMinX
 		static void BindLimitMinX(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.LimitMinX);
+			m.LimitMinX = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to LimitMaxX
 		static void BindLimitMaxX(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.LimitMaxX);
+			m.LimitMaxX = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to LimitMaxZ
 		static void BindLimitMaxZ(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.LimitMaxZ);
+			m.LimitMaxZ = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to NumNpc
 		static void BindNumNpc(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.NumNpc);
+			m.NumNpc = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to RespawnTime
 		static void BindRespawnTime(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.RespawnTime);
+			m.RespawnTime = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Direction
 		static void BindDirection(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.Direction);
+			m.Direction = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DotCount
 		static void BindDotCount(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.DotCount);
+			m.DotCount = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Path
 		static void BindPath(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Path);
+			m.Path = result.get<std::string>(colIndex);
 		}
 
 	};

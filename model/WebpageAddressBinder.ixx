@@ -39,7 +39,7 @@ namespace model
 		/// \brief Binds a result's column to WebPageAddress
 		static void BindWebPageAddress(WebpageAddress& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.WebPageAddress);
+			m.WebPageAddress = result.get<std::string>(colIndex);
 		}
 
 	};

@@ -62,61 +62,61 @@ namespace model
 		/// \brief Binds a result's column to Condition1
 		static void BindCondition1(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Condition1);
+			m.Condition1 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Condition2
 		static void BindCondition2(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Condition2);
+			m.Condition2 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Condition3
 		static void BindCondition3(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Condition3);
+			m.Condition3 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Condition4
 		static void BindCondition4(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Condition4);
+			m.Condition4 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Condition5
 		static void BindCondition5(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Condition5);
+			m.Condition5 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Execute1
 		static void BindExecute1(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Execute1);
+			m.Execute1 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Execute2
 		static void BindExecute2(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Execute2);
+			m.Execute2 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Execute3
 		static void BindExecute3(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Execute3);
+			m.Execute3 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Execute4
 		static void BindExecute4(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Execute4);
+			m.Execute4 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Execute5
 		static void BindExecute5(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Execute5);
+			m.Execute5 = result.get<std::string>(colIndex);
 		}
 
 	};

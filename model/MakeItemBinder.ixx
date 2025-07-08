@@ -41,7 +41,7 @@ namespace model
 		/// \brief Binds a result's column to ItemInfo
 		static void BindItemInfo(MakeItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ItemInfo);
+			m.ItemInfo = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemCode

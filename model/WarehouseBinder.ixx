@@ -54,13 +54,13 @@ namespace model
 		/// \brief Binds a result's column to ItemData
 		static void BindItemData(Warehouse& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ItemData);
+			m.ItemData = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Serial
 		static void BindSerial(Warehouse& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Serial);
+			m.Serial = result.get<std::string>(colIndex);
 		}
 
 	};

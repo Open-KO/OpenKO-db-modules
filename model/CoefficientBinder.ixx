@@ -94,7 +94,7 @@ namespace model
 		/// \brief Binds a result's column to Bow
 		static void BindBow(Coefficient& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<double>>(colIndex, m.Bow);
+			m.Bow = result.get<double>(colIndex);
 		}
 
 		/// \brief Binds a result's column to HitPoint

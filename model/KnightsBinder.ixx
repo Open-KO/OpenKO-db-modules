@@ -99,25 +99,25 @@ namespace model
 		/// \brief Binds a result's column to ViceChief1
 		static void BindViceChief1(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief1);
+			m.ViceChief1 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ViceChief2
 		static void BindViceChief2(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief2);
+			m.ViceChief2 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ViceChief3
 		static void BindViceChief3(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief3);
+			m.ViceChief3 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to EnemyName
 		static void BindEnemyName(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.EnemyName);
+			m.EnemyName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to OldWarResult
@@ -159,7 +159,7 @@ namespace model
 		/// \brief Binds a result's column to Points
 		static void BindPoints(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.Points);
+			m.Points = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to CreateTime
@@ -183,13 +183,13 @@ namespace model
 		/// \brief Binds a result's column to Mark
 		static void BindMark(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.Mark);
+			m.Mark = result.get<std::vector<uint8_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Stash
 		static void BindStash(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Stash);
+			m.Stash = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to SiegeFlag

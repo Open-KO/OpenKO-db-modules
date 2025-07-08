@@ -53,49 +53,49 @@ namespace model
 		/// \brief Binds a result's column to Grade2
 		static void BindGrade2(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Grade2);
+			m.Grade2 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Grade3
 		static void BindGrade3(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Grade3);
+			m.Grade3 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Grade4
 		static void BindGrade4(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Grade4);
+			m.Grade4 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Grade5
 		static void BindGrade5(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Grade5);
+			m.Grade5 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Grade6
 		static void BindGrade6(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Grade6);
+			m.Grade6 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Grade7
 		static void BindGrade7(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Grade7);
+			m.Grade7 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Grade8
 		static void BindGrade8(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Grade8);
+			m.Grade8 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Grade9
 		static void BindGrade9(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Grade9);
+			m.Grade9 = result.get<int16_t>(colIndex);
 		}
 
 	};

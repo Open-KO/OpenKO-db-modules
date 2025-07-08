@@ -41,19 +41,19 @@ namespace model
 		/// \brief Binds a result's column to Index
 		static void BindIndex(KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Index);
+			m.Index = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Name
 		static void BindName(KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
+			m.Name = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Points
 		static void BindPoints(KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.Points);
+			m.Points = result.get<int32_t>(colIndex);
 		}
 
 	};

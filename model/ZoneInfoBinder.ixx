@@ -88,7 +88,7 @@ namespace model
 		/// \brief Binds a result's column to Bz
 		static void BindBz(ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Bz);
+			m.Bz = result.get<std::string>(colIndex);
 		}
 
 	};

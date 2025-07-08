@@ -42,25 +42,25 @@ namespace model
 		/// \brief Binds a result's column to Zone1Count
 		static void BindZone1Count(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Zone1Count);
+			m.Zone1Count = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Zone2Count
 		static void BindZone2Count(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Zone2Count);
+			m.Zone2Count = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Zone3Count
 		static void BindZone3Count(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Zone3Count);
+			m.Zone3Count = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Bz
 		static void BindBz(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Bz);
+			m.Bz = result.get<std::string>(colIndex);
 		}
 
 	};

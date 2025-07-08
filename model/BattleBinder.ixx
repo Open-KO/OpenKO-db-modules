@@ -61,7 +61,7 @@ namespace model
 		/// \brief Binds a result's column to UserName
 		static void BindUserName(Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.UserName);
+			m.UserName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ElmoArea

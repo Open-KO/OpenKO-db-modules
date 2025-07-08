@@ -45,43 +45,43 @@ namespace model
 		/// \brief Binds a result's column to Class1
 		static void BindClass1(MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Class1);
+			m.Class1 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Class2
 		static void BindClass2(MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Class2);
+			m.Class2 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Class3
 		static void BindClass3(MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Class3);
+			m.Class3 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Class4
 		static void BindClass4(MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Class4);
+			m.Class4 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Class5
 		static void BindClass5(MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Class5);
+			m.Class5 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Class6
 		static void BindClass6(MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Class6);
+			m.Class6 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Class7
 		static void BindClass7(MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Class7);
+			m.Class7 = result.get<int16_t>(colIndex);
 		}
 
 	};

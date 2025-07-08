@@ -77,25 +77,25 @@ namespace model
 		/// \brief Binds a result's column to ImgFileName
 		static void BindImgFileName(WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ImgFileName);
+			m.ImgFileName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemName
 		static void BindItemName(WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ItemName);
+			m.ItemName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Price
 		static void BindPrice(WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.Price);
+			m.Price = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to PayType
 		static void BindPayType(WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int32_t>>(colIndex, m.PayType);
+			m.PayType = result.get<int32_t>(colIndex);
 		}
 
 	};

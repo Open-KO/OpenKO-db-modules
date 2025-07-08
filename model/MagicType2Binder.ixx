@@ -46,13 +46,13 @@ namespace model
 		/// \brief Binds a result's column to Name
 		static void BindName(MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
+			m.Name = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
+			m.Description = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to HitType
@@ -88,7 +88,7 @@ namespace model
 		/// \brief Binds a result's column to AddDamagePlus
 		static void BindAddDamagePlus(MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.AddDamagePlus);
+			m.AddDamagePlus = result.get<int16_t>(colIndex);
 		}
 
 	};

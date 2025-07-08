@@ -201,7 +201,7 @@ namespace model
 		/// \brief Binds a result's column to ChallengeList
 		static void BindChallengeList(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ChallengeList);
+			m.ChallengeList = result.get<std::vector<uint8_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to MoradonTariff

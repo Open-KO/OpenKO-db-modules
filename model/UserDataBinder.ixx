@@ -227,7 +227,7 @@ namespace model
 		/// \brief Binds a result's column to Bind
 		static void BindBind(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<int16_t>>(colIndex, m.Bind);
+			m.Bind = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to PosX
@@ -257,19 +257,19 @@ namespace model
 		/// \brief Binds a result's column to SkillData
 		static void BindSkillData(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.SkillData);
+			m.SkillData = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemData
 		static void BindItemData(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.ItemData);
+			m.ItemData = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Serial
 		static void BindSerial(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.Serial);
+			m.Serial = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to QuestCount
@@ -281,7 +281,7 @@ namespace model
 		/// \brief Binds a result's column to QuestData
 		static void BindQuestData(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::string>>(colIndex, m.QuestData);
+			m.QuestData = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to MannerPoint
@@ -305,7 +305,7 @@ namespace model
 		/// \brief Binds a result's column to UpdateTime
 		static void BindUpdateTime(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<std::time_t>>(colIndex, m.UpdateTime);
+			m.UpdateTime = result.get<std::time_t>(colIndex);
 		}
 
 	};
