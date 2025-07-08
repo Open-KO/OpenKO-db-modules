@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType3Binder;
 	
-	/// \brief [MAGIC_TYPE3] Type 3 supports Area of Effect and Damage over Time effects
+	/// \brief [MAGIC_TYPE3] Supports Area of Effect and Damage over Time effects
 	/// \class MagicType3
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE3
 	export class MagicType3 

@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType6Binder;
 	
-	/// \brief [MAGIC_TYPE6] Type 6 supports transformation magic
+	/// \brief [MAGIC_TYPE6] Supports transformation magic
 	/// \class MagicType6
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE6
 	export class MagicType6 

@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType2Binder;
 	
-	/// \brief [MAGIC_TYPE2] Type 2 covers bow abilities
+	/// \brief [MAGIC_TYPE2] Supports bow abilities
 	/// \class MagicType2
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE2
 	export class MagicType2 

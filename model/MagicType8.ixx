@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType8Binder;
 	
-	/// \brief [MAGIC_TYPE8] Type 8 supports warp magic
+	/// \brief [MAGIC_TYPE8] Supports warp magic
 	/// \class MagicType8
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE8
 	export class MagicType8 

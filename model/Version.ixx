@@ -19,10 +19,10 @@ namespace model
 	public:
 		using BinderType = VersionBinder;
 
-		/// \brief Column [sVersion]: Game version
+		/// \brief Column [sVersion]: Game version number
 		///
-		/// \property Version
-		int16_t Version = 0;
+		/// \property Number
+		int16_t Number = 0;
 
 		/// \brief Column [strFileName]: Patch file name
 		///

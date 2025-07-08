@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType9Binder;
 	
-	/// \brief [MAGIC_TYPE9] Type 9 supports stealth and detection abilities
+	/// \brief [MAGIC_TYPE9] Supports stealth and detection abilities
 	/// \class MagicType9
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE9
 	export class MagicType9 

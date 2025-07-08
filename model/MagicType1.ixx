@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType1Binder;
 	
-	/// \brief [MAGIC_TYPE1] Type 1 covers melee abilities
+	/// \brief [MAGIC_TYPE1] Supports melee abilities
 	/// \class MagicType1
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE1
 	export class MagicType1 

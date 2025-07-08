@@ -24,7 +24,7 @@ namespace model
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sVersion", &VersionBinder::BindVersion},
+				{"sVersion", &VersionBinder::BindNumber},
 				{"strFileName", &VersionBinder::BindFileName},
 				{"strCompressName", &VersionBinder::BindCompressName},
 				{"sHistoryVersion", &VersionBinder::BindHistoryVersion}
@@ -32,10 +32,10 @@ namespace model
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to Version
-		static void BindVersion(Version& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to Number
+		static void BindNumber(Version& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Version);
+			result.get_ref<int16_t>(colIndex, m.Number);
 		}
 
 		/// \brief Binds a result's column to FileName

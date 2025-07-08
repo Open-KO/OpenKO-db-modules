@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType7Binder;
 	
-	/// \brief [MAGIC_TYPE7] Type 7 supports targeting modifications
+	/// \brief [MAGIC_TYPE7] Supports targeting modifications
 	/// \class MagicType7
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE7
 	export class MagicType7 

@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType4Binder;
 	
-	/// \brief [MAGIC_TYPE4] Type 4 supports stat modification skills
+	/// \brief [MAGIC_TYPE4] Supports stat modification skills
 	/// \class MagicType4
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE4
 	export class MagicType4 
@@ -45,17 +45,21 @@ namespace model
 		/// \brief Known valid values for BuffType
 		enum class EnumBuffType
 		{
-			Health = 1, ///< Max health buffs
+			None = 0,
+			HealthMana = 1, ///< Maximum health/mana buffs
 			Armor = 2, ///< Armor modifiers
 			Size = 3, ///< Affects target size
 			AttackPower = 4, ///< Attack power modifiers
 			AttackSpeed = 5, ///< Attack speed modifiers
 			MovementSpeed = 6, ///< Movement speed modifiers
-			MovementSpeed = 7, ///< Movement speed modifiers
+			Stats = 7, ///< Stat modifiers
 			Resistance = 8, ///< Resistance modifiers
 			HitChance = 9, ///< Hit Chance modifier
 			MagicPower = 10, ///< Magic power modifier
-			Experience = 11 ///< Experience modifier
+			Experience = 11, ///< Experience modifier
+			Weight = 12, ///< Experience modifier
+			WeaponEnchant = 13, ///< Weapon damage enchant effect
+			ArmorEnchant = 14 ///< Armor enchant effect
 		};
 
 		/// \brief Column [Radius]: Area of effect circle radius

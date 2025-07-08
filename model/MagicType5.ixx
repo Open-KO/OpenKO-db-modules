@@ -11,7 +11,7 @@ namespace model
 {
 	class MagicType5Binder;
 	
-	/// \brief [MAGIC_TYPE5] Type 5 supports recovery skills
+	/// \brief [MAGIC_TYPE5] Supports recovery skills
 	/// \class MagicType5
 	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE5
 	export class MagicType5 
