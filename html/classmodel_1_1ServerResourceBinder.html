@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1ServerResourceBinder.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a078ccd3917febf3c5c4a38c780d551d2"><td class="memItemLeft" align="right" valign="top"><a id="a078ccd3917febf3c5c4a38c780d551d2" name="a078ccd3917febf3c5c4a38c780d551d2"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1ServerResource.html">ServerResource</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a078ccd3917febf3c5c4a38c780d551d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97eeae8aeaa87381cc4fa1b5ea7b61c8"><td class="memItemLeft" align="right" valign="top"><a id="a97eeae8aeaa87381cc4fa1b5ea7b61c8" name="a97eeae8aeaa87381cc4fa1b5ea7b61c8"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1ServerResource.html">model::ServerResource</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a97eeae8aeaa87381cc4fa1b5ea7b61c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59e7ec83b848d2cdb1179d2a9e6be0e0"><td class="memItemLeft" align="right" valign="top"><a id="a59e7ec83b848d2cdb1179d2a9e6be0e0" name="a59e7ec83b848d2cdb1179d2a9e6be0e0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a59e7ec83b848d2cdb1179d2a9e6be0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,18 +116,18 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a146cff07815bb09a8f1d6198bfba3f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a146cff07815bb09a8f1d6198bfba3f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93395f612a660b75902bbd017554145f"><td class="memItemLeft" align="right" valign="top"><a id="a93395f612a660b75902bbd017554145f" name="a93395f612a660b75902bbd017554145f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindResourceId</b> (<a class="el" href="classmodel_1_1ServerResource.html">ServerResource</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a93395f612a660b75902bbd017554145f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ResourceId. <br /></td></tr>
-<tr class="separator:a93395f612a660b75902bbd017554145f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9440287608e09bc54033ccdf6a8dcf17"><td class="memItemLeft" align="right" valign="top"><a id="a9440287608e09bc54033ccdf6a8dcf17" name="a9440287608e09bc54033ccdf6a8dcf17"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1ServerResource.html">ServerResource</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9440287608e09bc54033ccdf6a8dcf17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
-<tr class="separator:a9440287608e09bc54033ccdf6a8dcf17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaf67a65ca9196622a11a8cb42c3373a"><td class="memItemLeft" align="right" valign="top"><a id="afaf67a65ca9196622a11a8cb42c3373a" name="afaf67a65ca9196622a11a8cb42c3373a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindResource</b> (<a class="el" href="classmodel_1_1ServerResource.html">ServerResource</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:afaf67a65ca9196622a11a8cb42c3373a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Resource. <br /></td></tr>
-<tr class="separator:afaf67a65ca9196622a11a8cb42c3373a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95aff56593550675c0a5706a090107b1"><td class="memItemLeft" align="right" valign="top"><a id="a95aff56593550675c0a5706a090107b1" name="a95aff56593550675c0a5706a090107b1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindResourceId</b> (<a class="el" href="classmodel_1_1ServerResource.html">model::ServerResource</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a95aff56593550675c0a5706a090107b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ResourceId. <br /></td></tr>
+<tr class="separator:a95aff56593550675c0a5706a090107b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ce47672ab13cd5fa05277cf3ed747d"><td class="memItemLeft" align="right" valign="top"><a id="a95ce47672ab13cd5fa05277cf3ed747d" name="a95ce47672ab13cd5fa05277cf3ed747d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1ServerResource.html">model::ServerResource</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a95ce47672ab13cd5fa05277cf3ed747d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
+<tr class="separator:a95ce47672ab13cd5fa05277cf3ed747d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d768f64f5891517f376f185ae056633"><td class="memItemLeft" align="right" valign="top"><a id="a5d768f64f5891517f376f185ae056633" name="a5d768f64f5891517f376f185ae056633"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindResource</b> (<a class="el" href="classmodel_1_1ServerResource.html">model::ServerResource</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a5d768f64f5891517f376f185ae056633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Resource. <br /></td></tr>
+<tr class="separator:a5d768f64f5891517f376f185ae056633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1ServerResource.html" title="[SERVER_RESOURCE] Server resource">ServerResource</a> model, using nanodbc </p>

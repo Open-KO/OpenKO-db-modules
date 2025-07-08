@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1LevelUpBinder.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5db1578dea0526d0a1e0eda20040b4fc"><td class="memItemLeft" align="right" valign="top"><a id="a5db1578dea0526d0a1e0eda20040b4fc" name="a5db1578dea0526d0a1e0eda20040b4fc"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1LevelUp.html">LevelUp</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a5db1578dea0526d0a1e0eda20040b4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4feb16a434fd510134560696242c9f7"><td class="memItemLeft" align="right" valign="top"><a id="ab4feb16a434fd510134560696242c9f7" name="ab4feb16a434fd510134560696242c9f7"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1LevelUp.html">model::LevelUp</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:ab4feb16a434fd510134560696242c9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa204c0a6e8872c0797f6954e35a592f4"><td class="memItemLeft" align="right" valign="top"><a id="aa204c0a6e8872c0797f6954e35a592f4" name="aa204c0a6e8872c0797f6954e35a592f4"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:aa204c0a6e8872c0797f6954e35a592f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,14 +116,14 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a8d6628eb1a70aa191d1060a5fbc2e2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a8d6628eb1a70aa191d1060a5fbc2e2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8603592744e21a6f53f426bf9e237956"><td class="memItemLeft" align="right" valign="top"><a id="a8603592744e21a6f53f426bf9e237956" name="a8603592744e21a6f53f426bf9e237956"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevel</b> (<a class="el" href="classmodel_1_1LevelUp.html">LevelUp</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a8603592744e21a6f53f426bf9e237956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Level. <br /></td></tr>
-<tr class="separator:a8603592744e21a6f53f426bf9e237956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9a1cf36cd73354beb9a8b518d971062"><td class="memItemLeft" align="right" valign="top"><a id="ad9a1cf36cd73354beb9a8b518d971062" name="ad9a1cf36cd73354beb9a8b518d971062"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRequiredExp</b> (<a class="el" href="classmodel_1_1LevelUp.html">LevelUp</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad9a1cf36cd73354beb9a8b518d971062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RequiredExp. <br /></td></tr>
-<tr class="separator:ad9a1cf36cd73354beb9a8b518d971062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d0d3fed17750b82a33a17e803bbd78"><td class="memItemLeft" align="right" valign="top"><a id="a53d0d3fed17750b82a33a17e803bbd78" name="a53d0d3fed17750b82a33a17e803bbd78"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevel</b> (<a class="el" href="classmodel_1_1LevelUp.html">model::LevelUp</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a53d0d3fed17750b82a33a17e803bbd78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Level. <br /></td></tr>
+<tr class="separator:a53d0d3fed17750b82a33a17e803bbd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2d19e5627b34eaf6a5e8625ca4a9b2"><td class="memItemLeft" align="right" valign="top"><a id="aad2d19e5627b34eaf6a5e8625ca4a9b2" name="aad2d19e5627b34eaf6a5e8625ca4a9b2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRequiredExp</b> (<a class="el" href="classmodel_1_1LevelUp.html">model::LevelUp</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aad2d19e5627b34eaf6a5e8625ca4a9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RequiredExp. <br /></td></tr>
+<tr class="separator:aad2d19e5627b34eaf6a5e8625ca4a9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1LevelUp.html" title="[LEVEL_UP] Level experience requirements">LevelUp</a> model, using nanodbc </p>

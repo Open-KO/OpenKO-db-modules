@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1VersionBinder.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1aaab65991ba285c88c8bb287c9d44ad"><td class="memItemLeft" align="right" valign="top"><a id="a1aaab65991ba285c88c8bb287c9d44ad" name="a1aaab65991ba285c88c8bb287c9d44ad"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1Version.html">Version</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a1aaab65991ba285c88c8bb287c9d44ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647037b1e06024162ce7bf73e678f658"><td class="memItemLeft" align="right" valign="top"><a id="a647037b1e06024162ce7bf73e678f658" name="a647037b1e06024162ce7bf73e678f658"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1Version.html">model::Version</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a647037b1e06024162ce7bf73e678f658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857ff305702f9d4a8d1908951bd37118"><td class="memItemLeft" align="right" valign="top"><a id="a857ff305702f9d4a8d1908951bd37118" name="a857ff305702f9d4a8d1908951bd37118"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a857ff305702f9d4a8d1908951bd37118"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,22 +116,22 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:af113a41544905192eb1f6043c221b0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:af113a41544905192eb1f6043c221b0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af00b15e5810c0d5057e6f6321d9d2775"><td class="memItemLeft" align="right" valign="top"><a id="af00b15e5810c0d5057e6f6321d9d2775" name="af00b15e5810c0d5057e6f6321d9d2775"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindVersion</b> (<a class="el" href="classmodel_1_1Version.html">Version</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af00b15e5810c0d5057e6f6321d9d2775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to <a class="el" href="classmodel_1_1Version.html" title="[VERSION] Version data and patch management">Version</a>. <br /></td></tr>
-<tr class="separator:af00b15e5810c0d5057e6f6321d9d2775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6c28d9921864a85fbc3d63653559f8"><td class="memItemLeft" align="right" valign="top"><a id="aab6c28d9921864a85fbc3d63653559f8" name="aab6c28d9921864a85fbc3d63653559f8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindFileName</b> (<a class="el" href="classmodel_1_1Version.html">Version</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aab6c28d9921864a85fbc3d63653559f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to FileName. <br /></td></tr>
-<tr class="separator:aab6c28d9921864a85fbc3d63653559f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae961b4af2b10ef0b29e1f02b5b0a6ef"><td class="memItemLeft" align="right" valign="top"><a id="aae961b4af2b10ef0b29e1f02b5b0a6ef" name="aae961b4af2b10ef0b29e1f02b5b0a6ef"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCompressName</b> (<a class="el" href="classmodel_1_1Version.html">Version</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aae961b4af2b10ef0b29e1f02b5b0a6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CompressName. <br /></td></tr>
-<tr class="separator:aae961b4af2b10ef0b29e1f02b5b0a6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1f0453154e7a3a0f4af41d4f6508b33"><td class="memItemLeft" align="right" valign="top"><a id="ad1f0453154e7a3a0f4af41d4f6508b33" name="ad1f0453154e7a3a0f4af41d4f6508b33"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHistoryVersion</b> (<a class="el" href="classmodel_1_1Version.html">Version</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad1f0453154e7a3a0f4af41d4f6508b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HistoryVersion. <br /></td></tr>
-<tr class="separator:ad1f0453154e7a3a0f4af41d4f6508b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ef8502184447ce656b076940cc8497"><td class="memItemLeft" align="right" valign="top"><a id="a90ef8502184447ce656b076940cc8497" name="a90ef8502184447ce656b076940cc8497"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindVersion</b> (<a class="el" href="classmodel_1_1Version.html">model::Version</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a90ef8502184447ce656b076940cc8497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to <a class="el" href="classmodel_1_1Version.html" title="[VERSION] Version data and patch management">Version</a>. <br /></td></tr>
+<tr class="separator:a90ef8502184447ce656b076940cc8497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3146fd3196fd2606a2950ff5a60a80b0"><td class="memItemLeft" align="right" valign="top"><a id="a3146fd3196fd2606a2950ff5a60a80b0" name="a3146fd3196fd2606a2950ff5a60a80b0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindFileName</b> (<a class="el" href="classmodel_1_1Version.html">model::Version</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a3146fd3196fd2606a2950ff5a60a80b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to FileName. <br /></td></tr>
+<tr class="separator:a3146fd3196fd2606a2950ff5a60a80b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c73729b815949eb12c68682888bfb17"><td class="memItemLeft" align="right" valign="top"><a id="a8c73729b815949eb12c68682888bfb17" name="a8c73729b815949eb12c68682888bfb17"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCompressName</b> (<a class="el" href="classmodel_1_1Version.html">model::Version</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a8c73729b815949eb12c68682888bfb17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CompressName. <br /></td></tr>
+<tr class="separator:a8c73729b815949eb12c68682888bfb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a1e63800dae707ece224e4c59206db"><td class="memItemLeft" align="right" valign="top"><a id="a57a1e63800dae707ece224e4c59206db" name="a57a1e63800dae707ece224e4c59206db"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHistoryVersion</b> (<a class="el" href="classmodel_1_1Version.html">model::Version</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a57a1e63800dae707ece224e4c59206db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HistoryVersion. <br /></td></tr>
+<tr class="separator:a57a1e63800dae707ece224e4c59206db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1Version.html" title="[VERSION] Version data and patch management">Version</a> model, using nanodbc </p>

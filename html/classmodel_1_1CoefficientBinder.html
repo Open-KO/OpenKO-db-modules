@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1CoefficientBinder.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a96ac5b3a6620da0d1ae999253877b216"><td class="memItemLeft" align="right" valign="top"><a id="a96ac5b3a6620da0d1ae999253877b216" name="a96ac5b3a6620da0d1ae999253877b216"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a96ac5b3a6620da0d1ae999253877b216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46083b518c728a4417e7fb4f2f16e958"><td class="memItemLeft" align="right" valign="top"><a id="a46083b518c728a4417e7fb4f2f16e958" name="a46083b518c728a4417e7fb4f2f16e958"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a46083b518c728a4417e7fb4f2f16e958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2f86313c0f070e376011bae0ad710a"><td class="memItemLeft" align="right" valign="top"><a id="ace2f86313c0f070e376011bae0ad710a" name="ace2f86313c0f070e376011bae0ad710a"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:ace2f86313c0f070e376011bae0ad710a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,66 +116,66 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a592772bb809f4e4b117ae3c1509c3504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a592772bb809f4e4b117ae3c1509c3504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0efc0349f7eba3888ae2acc44765ab88"><td class="memItemLeft" align="right" valign="top"><a id="a0efc0349f7eba3888ae2acc44765ab88" name="a0efc0349f7eba3888ae2acc44765ab88"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClassId</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a0efc0349f7eba3888ae2acc44765ab88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ClassId. <br /></td></tr>
-<tr class="separator:a0efc0349f7eba3888ae2acc44765ab88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38752348c164ff3b7c860efee3830b62"><td class="memItemLeft" align="right" valign="top"><a id="a38752348c164ff3b7c860efee3830b62" name="a38752348c164ff3b7c860efee3830b62"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindShortSword</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a38752348c164ff3b7c860efee3830b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ShortSword. <br /></td></tr>
-<tr class="separator:a38752348c164ff3b7c860efee3830b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dba5b5aa1521b03e51295602366f77f"><td class="memItemLeft" align="right" valign="top"><a id="a2dba5b5aa1521b03e51295602366f77f" name="a2dba5b5aa1521b03e51295602366f77f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSword</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a2dba5b5aa1521b03e51295602366f77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Sword. <br /></td></tr>
-<tr class="separator:a2dba5b5aa1521b03e51295602366f77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac0c8bb7115aa105bbe20cbdbddf1680"><td class="memItemLeft" align="right" valign="top"><a id="aac0c8bb7115aa105bbe20cbdbddf1680" name="aac0c8bb7115aa105bbe20cbdbddf1680"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAxe</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aac0c8bb7115aa105bbe20cbdbddf1680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Axe. <br /></td></tr>
-<tr class="separator:aac0c8bb7115aa105bbe20cbdbddf1680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f506d54988730a895052dd643b59a6e"><td class="memItemLeft" align="right" valign="top"><a id="a9f506d54988730a895052dd643b59a6e" name="a9f506d54988730a895052dd643b59a6e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClub</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9f506d54988730a895052dd643b59a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Club. <br /></td></tr>
-<tr class="separator:a9f506d54988730a895052dd643b59a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb44757afef1a3f9bcb53a091f5b58d5"><td class="memItemLeft" align="right" valign="top"><a id="abb44757afef1a3f9bcb53a091f5b58d5" name="abb44757afef1a3f9bcb53a091f5b58d5"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSpear</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:abb44757afef1a3f9bcb53a091f5b58d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Spear. <br /></td></tr>
-<tr class="separator:abb44757afef1a3f9bcb53a091f5b58d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e90769fbd3131e22634d952b71ad73"><td class="memItemLeft" align="right" valign="top"><a id="aa7e90769fbd3131e22634d952b71ad73" name="aa7e90769fbd3131e22634d952b71ad73"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPole</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aa7e90769fbd3131e22634d952b71ad73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Pole. <br /></td></tr>
-<tr class="separator:aa7e90769fbd3131e22634d952b71ad73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6647dc9630c8ca57ac91fba7c59cb8c"><td class="memItemLeft" align="right" valign="top"><a id="af6647dc9630c8ca57ac91fba7c59cb8c" name="af6647dc9630c8ca57ac91fba7c59cb8c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindStaff</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af6647dc9630c8ca57ac91fba7c59cb8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Staff. <br /></td></tr>
-<tr class="separator:af6647dc9630c8ca57ac91fba7c59cb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95286c951ec733a4fadf9aa4a078bba2"><td class="memItemLeft" align="right" valign="top"><a id="a95286c951ec733a4fadf9aa4a078bba2" name="a95286c951ec733a4fadf9aa4a078bba2"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindBow</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a95286c951ec733a4fadf9aa4a078bba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Bow. <br /></td></tr>
-<tr class="separator:a95286c951ec733a4fadf9aa4a078bba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e180891d1d73698a944f01b5c20de0d"><td class="memItemLeft" align="right" valign="top"><a id="a0e180891d1d73698a944f01b5c20de0d" name="a0e180891d1d73698a944f01b5c20de0d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHitPoint</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a0e180891d1d73698a944f01b5c20de0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HitPoint. <br /></td></tr>
-<tr class="separator:a0e180891d1d73698a944f01b5c20de0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c6bb4c32c50d8341e8f32a8afd8652"><td class="memItemLeft" align="right" valign="top"><a id="a27c6bb4c32c50d8341e8f32a8afd8652" name="a27c6bb4c32c50d8341e8f32a8afd8652"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMagicPower</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a27c6bb4c32c50d8341e8f32a8afd8652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MagicPower. <br /></td></tr>
-<tr class="separator:a27c6bb4c32c50d8341e8f32a8afd8652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636cc10d677be4951089c8c6b66398b3"><td class="memItemLeft" align="right" valign="top"><a id="a636cc10d677be4951089c8c6b66398b3" name="a636cc10d677be4951089c8c6b66398b3"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSp</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a636cc10d677be4951089c8c6b66398b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Sp. <br /></td></tr>
-<tr class="separator:a636cc10d677be4951089c8c6b66398b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30c17972b49ba7435821864a541645a"><td class="memItemLeft" align="right" valign="top"><a id="ac30c17972b49ba7435821864a541645a" name="ac30c17972b49ba7435821864a541645a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindArmor</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ac30c17972b49ba7435821864a541645a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Armor. <br /></td></tr>
-<tr class="separator:ac30c17972b49ba7435821864a541645a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94c6678374f973365bd6b78aaf5d73d7"><td class="memItemLeft" align="right" valign="top"><a id="a94c6678374f973365bd6b78aaf5d73d7" name="a94c6678374f973365bd6b78aaf5d73d7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHitRate</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a94c6678374f973365bd6b78aaf5d73d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HitRate. <br /></td></tr>
-<tr class="separator:a94c6678374f973365bd6b78aaf5d73d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad62a564c657c60c0fe40c6d95a1eb81c"><td class="memItemLeft" align="right" valign="top"><a id="ad62a564c657c60c0fe40c6d95a1eb81c" name="ad62a564c657c60c0fe40c6d95a1eb81c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindEvasionrate</b> (<a class="el" href="classmodel_1_1Coefficient.html">Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad62a564c657c60c0fe40c6d95a1eb81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Evasionrate. <br /></td></tr>
-<tr class="separator:ad62a564c657c60c0fe40c6d95a1eb81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa125b27dcc7585a85f209a5b555e1256"><td class="memItemLeft" align="right" valign="top"><a id="aa125b27dcc7585a85f209a5b555e1256" name="aa125b27dcc7585a85f209a5b555e1256"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClassId</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa125b27dcc7585a85f209a5b555e1256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ClassId. <br /></td></tr>
+<tr class="separator:aa125b27dcc7585a85f209a5b555e1256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea48d8f1a561beea4df3e7c55462505"><td class="memItemLeft" align="right" valign="top"><a id="abea48d8f1a561beea4df3e7c55462505" name="abea48d8f1a561beea4df3e7c55462505"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindShortSword</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:abea48d8f1a561beea4df3e7c55462505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ShortSword. <br /></td></tr>
+<tr class="separator:abea48d8f1a561beea4df3e7c55462505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e35b3997d2fbb1c173dad23952420d"><td class="memItemLeft" align="right" valign="top"><a id="a65e35b3997d2fbb1c173dad23952420d" name="a65e35b3997d2fbb1c173dad23952420d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSword</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a65e35b3997d2fbb1c173dad23952420d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Sword. <br /></td></tr>
+<tr class="separator:a65e35b3997d2fbb1c173dad23952420d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1431e4556853346ddff00e5ba76a09"><td class="memItemLeft" align="right" valign="top"><a id="afd1431e4556853346ddff00e5ba76a09" name="afd1431e4556853346ddff00e5ba76a09"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAxe</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:afd1431e4556853346ddff00e5ba76a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Axe. <br /></td></tr>
+<tr class="separator:afd1431e4556853346ddff00e5ba76a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a4280cea93e175cda6452ffa985f05"><td class="memItemLeft" align="right" valign="top"><a id="a88a4280cea93e175cda6452ffa985f05" name="a88a4280cea93e175cda6452ffa985f05"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClub</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a88a4280cea93e175cda6452ffa985f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Club. <br /></td></tr>
+<tr class="separator:a88a4280cea93e175cda6452ffa985f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb6f554ec15a22faf04dc0303f0af0b"><td class="memItemLeft" align="right" valign="top"><a id="a8eb6f554ec15a22faf04dc0303f0af0b" name="a8eb6f554ec15a22faf04dc0303f0af0b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSpear</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a8eb6f554ec15a22faf04dc0303f0af0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Spear. <br /></td></tr>
+<tr class="separator:a8eb6f554ec15a22faf04dc0303f0af0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f8952ef948ae7766aa432600978e65"><td class="memItemLeft" align="right" valign="top"><a id="a77f8952ef948ae7766aa432600978e65" name="a77f8952ef948ae7766aa432600978e65"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPole</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a77f8952ef948ae7766aa432600978e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Pole. <br /></td></tr>
+<tr class="separator:a77f8952ef948ae7766aa432600978e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa84299914d662183c5a4e19a1b6e4d"><td class="memItemLeft" align="right" valign="top"><a id="aafa84299914d662183c5a4e19a1b6e4d" name="aafa84299914d662183c5a4e19a1b6e4d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindStaff</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aafa84299914d662183c5a4e19a1b6e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Staff. <br /></td></tr>
+<tr class="separator:aafa84299914d662183c5a4e19a1b6e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f0f2eee7c17f89c918576e97d0b08a"><td class="memItemLeft" align="right" valign="top"><a id="aa7f0f2eee7c17f89c918576e97d0b08a" name="aa7f0f2eee7c17f89c918576e97d0b08a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindBow</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa7f0f2eee7c17f89c918576e97d0b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Bow. <br /></td></tr>
+<tr class="separator:aa7f0f2eee7c17f89c918576e97d0b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ecdf3c85009d77a4b9cb750d09b8fa"><td class="memItemLeft" align="right" valign="top"><a id="ab6ecdf3c85009d77a4b9cb750d09b8fa" name="ab6ecdf3c85009d77a4b9cb750d09b8fa"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHitPoint</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab6ecdf3c85009d77a4b9cb750d09b8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HitPoint. <br /></td></tr>
+<tr class="separator:ab6ecdf3c85009d77a4b9cb750d09b8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754ce042ac9ee526595235172606c35a"><td class="memItemLeft" align="right" valign="top"><a id="a754ce042ac9ee526595235172606c35a" name="a754ce042ac9ee526595235172606c35a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMagicPower</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a754ce042ac9ee526595235172606c35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MagicPower. <br /></td></tr>
+<tr class="separator:a754ce042ac9ee526595235172606c35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d7002cd47bd427c256a9db6ce35e24"><td class="memItemLeft" align="right" valign="top"><a id="a16d7002cd47bd427c256a9db6ce35e24" name="a16d7002cd47bd427c256a9db6ce35e24"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSp</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a16d7002cd47bd427c256a9db6ce35e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Sp. <br /></td></tr>
+<tr class="separator:a16d7002cd47bd427c256a9db6ce35e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50a3604a1bd11f0ab94773c4d516e6c"><td class="memItemLeft" align="right" valign="top"><a id="aa50a3604a1bd11f0ab94773c4d516e6c" name="aa50a3604a1bd11f0ab94773c4d516e6c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindArmor</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa50a3604a1bd11f0ab94773c4d516e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Armor. <br /></td></tr>
+<tr class="separator:aa50a3604a1bd11f0ab94773c4d516e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab381843d3ccd2d7ceef398f86e38b4"><td class="memItemLeft" align="right" valign="top"><a id="a3ab381843d3ccd2d7ceef398f86e38b4" name="a3ab381843d3ccd2d7ceef398f86e38b4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHitRate</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a3ab381843d3ccd2d7ceef398f86e38b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HitRate. <br /></td></tr>
+<tr class="separator:a3ab381843d3ccd2d7ceef398f86e38b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50769a18a03d63528d8634f83f51ff83"><td class="memItemLeft" align="right" valign="top"><a id="a50769a18a03d63528d8634f83f51ff83" name="a50769a18a03d63528d8634f83f51ff83"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindEvasionrate</b> (<a class="el" href="classmodel_1_1Coefficient.html">model::Coefficient</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a50769a18a03d63528d8634f83f51ff83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Evasionrate. <br /></td></tr>
+<tr class="separator:a50769a18a03d63528d8634f83f51ff83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1Coefficient.html" title="[COEFFICIENT] Coefficient relationship between a character class, weapon types, and stats">Coefficient</a> model, using nanodbc </p>

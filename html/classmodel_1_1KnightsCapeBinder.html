@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1KnightsCapeBinder.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aabf2b57c684f723588b4b8e9689922d1"><td class="memItemLeft" align="right" valign="top"><a id="aabf2b57c684f723588b4b8e9689922d1" name="aabf2b57c684f723588b4b8e9689922d1"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1KnightsCape.html">KnightsCape</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:aabf2b57c684f723588b4b8e9689922d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73fa68a30180871fd8405172fe62c2f"><td class="memItemLeft" align="right" valign="top"><a id="ad73fa68a30180871fd8405172fe62c2f" name="ad73fa68a30180871fd8405172fe62c2f"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1KnightsCape.html">model::KnightsCape</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:ad73fa68a30180871fd8405172fe62c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ba4a19112ee8e0f787a74e506c39f3"><td class="memItemLeft" align="right" valign="top"><a id="a34ba4a19112ee8e0f787a74e506c39f3" name="a34ba4a19112ee8e0f787a74e506c39f3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a34ba4a19112ee8e0f787a74e506c39f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,26 +116,26 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:ad009e2dfff92153c9cbe0cfc0f0b623f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:ad009e2dfff92153c9cbe0cfc0f0b623f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf3347c59981494ba373a243bdff12e3"><td class="memItemLeft" align="right" valign="top"><a id="abf3347c59981494ba373a243bdff12e3" name="abf3347c59981494ba373a243bdff12e3"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCapeIndex</b> (<a class="el" href="classmodel_1_1KnightsCape.html">KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:abf3347c59981494ba373a243bdff12e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CapeIndex. <br /></td></tr>
-<tr class="separator:abf3347c59981494ba373a243bdff12e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c92483bf7315c54c8d4515077675dd2"><td class="memItemLeft" align="right" valign="top"><a id="a8c92483bf7315c54c8d4515077675dd2" name="a8c92483bf7315c54c8d4515077675dd2"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1KnightsCape.html">KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a8c92483bf7315c54c8d4515077675dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
-<tr class="separator:a8c92483bf7315c54c8d4515077675dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8bdb6a385eba4cdfdf3d755d42b47b"><td class="memItemLeft" align="right" valign="top"><a id="a7a8bdb6a385eba4cdfdf3d755d42b47b" name="a7a8bdb6a385eba4cdfdf3d755d42b47b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindBuyPrice</b> (<a class="el" href="classmodel_1_1KnightsCape.html">KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a7a8bdb6a385eba4cdfdf3d755d42b47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to BuyPrice. <br /></td></tr>
-<tr class="separator:a7a8bdb6a385eba4cdfdf3d755d42b47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab88d148aa6bea14971946e8e956cec2f"><td class="memItemLeft" align="right" valign="top"><a id="ab88d148aa6bea14971946e8e956cec2f" name="ab88d148aa6bea14971946e8e956cec2f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDuration</b> (<a class="el" href="classmodel_1_1KnightsCape.html">KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab88d148aa6bea14971946e8e956cec2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Duration. <br /></td></tr>
-<tr class="separator:ab88d148aa6bea14971946e8e956cec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa647b6e40d00de6d7cca6671e6c9160f"><td class="memItemLeft" align="right" valign="top"><a id="aa647b6e40d00de6d7cca6671e6c9160f" name="aa647b6e40d00de6d7cca6671e6c9160f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade</b> (<a class="el" href="classmodel_1_1KnightsCape.html">KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aa647b6e40d00de6d7cca6671e6c9160f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade. <br /></td></tr>
-<tr class="separator:aa647b6e40d00de6d7cca6671e6c9160f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052ed1151840fda22a681a2215b94bc4"><td class="memItemLeft" align="right" valign="top"><a id="a052ed1151840fda22a681a2215b94bc4" name="a052ed1151840fda22a681a2215b94bc4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCapeIndex</b> (<a class="el" href="classmodel_1_1KnightsCape.html">model::KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a052ed1151840fda22a681a2215b94bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CapeIndex. <br /></td></tr>
+<tr class="separator:a052ed1151840fda22a681a2215b94bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae750b727d7da9421d3f0f971fc367f2"><td class="memItemLeft" align="right" valign="top"><a id="aae750b727d7da9421d3f0f971fc367f2" name="aae750b727d7da9421d3f0f971fc367f2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1KnightsCape.html">model::KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aae750b727d7da9421d3f0f971fc367f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
+<tr class="separator:aae750b727d7da9421d3f0f971fc367f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38495a55794830d1200fe45c0ca858a1"><td class="memItemLeft" align="right" valign="top"><a id="a38495a55794830d1200fe45c0ca858a1" name="a38495a55794830d1200fe45c0ca858a1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindBuyPrice</b> (<a class="el" href="classmodel_1_1KnightsCape.html">model::KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a38495a55794830d1200fe45c0ca858a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to BuyPrice. <br /></td></tr>
+<tr class="separator:a38495a55794830d1200fe45c0ca858a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a35a9b76301d48dad75b9e1df28967b"><td class="memItemLeft" align="right" valign="top"><a id="a1a35a9b76301d48dad75b9e1df28967b" name="a1a35a9b76301d48dad75b9e1df28967b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDuration</b> (<a class="el" href="classmodel_1_1KnightsCape.html">model::KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a1a35a9b76301d48dad75b9e1df28967b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Duration. <br /></td></tr>
+<tr class="separator:a1a35a9b76301d48dad75b9e1df28967b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a042b67f42561e1ac2e221aa1ea8f6f"><td class="memItemLeft" align="right" valign="top"><a id="a6a042b67f42561e1ac2e221aa1ea8f6f" name="a6a042b67f42561e1ac2e221aa1ea8f6f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade</b> (<a class="el" href="classmodel_1_1KnightsCape.html">model::KnightsCape</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a6a042b67f42561e1ac2e221aa1ea8f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade. <br /></td></tr>
+<tr class="separator:a6a042b67f42561e1ac2e221aa1ea8f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1KnightsCape.html" title="[KNIGHTS_CAPE] Knights cape information">KnightsCape</a> model, using nanodbc </p>

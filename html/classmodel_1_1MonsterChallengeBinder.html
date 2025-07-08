@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1MonsterChallengeBinder.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa5d6d5fccadc75abaf44d181b7b7558b"><td class="memItemLeft" align="right" valign="top"><a id="aa5d6d5fccadc75abaf44d181b7b7558b" name="aa5d6d5fccadc75abaf44d181b7b7558b"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MonsterChallenge.html">MonsterChallenge</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:aa5d6d5fccadc75abaf44d181b7b7558b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e05dd60b8c27d1987fd20b3bb0640fc"><td class="memItemLeft" align="right" valign="top"><a id="a8e05dd60b8c27d1987fd20b3bb0640fc" name="a8e05dd60b8c27d1987fd20b3bb0640fc"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MonsterChallenge.html">model::MonsterChallenge</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a8e05dd60b8c27d1987fd20b3bb0640fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3451f8f7f287c0405a9909177daeed"><td class="memItemLeft" align="right" valign="top"><a id="a5e3451f8f7f287c0405a9909177daeed" name="a5e3451f8f7f287c0405a9909177daeed"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a5e3451f8f7f287c0405a9909177daeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,30 +116,30 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a9ac86f39d9d353120dbef41577a8544f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a9ac86f39d9d353120dbef41577a8544f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a919d3ed0f9860e1cc8cbfaebc4d928bd"><td class="memItemLeft" align="right" valign="top"><a id="a919d3ed0f9860e1cc8cbfaebc4d928bd" name="a919d3ed0f9860e1cc8cbfaebc4d928bd"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a919d3ed0f9860e1cc8cbfaebc4d928bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
-<tr class="separator:a919d3ed0f9860e1cc8cbfaebc4d928bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6394bbc4a027c07b53ae1e4ee6dd8734"><td class="memItemLeft" align="right" valign="top"><a id="a6394bbc4a027c07b53ae1e4ee6dd8734" name="a6394bbc4a027c07b53ae1e4ee6dd8734"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindStartTime1</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a6394bbc4a027c07b53ae1e4ee6dd8734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to StartTime1. <br /></td></tr>
-<tr class="separator:a6394bbc4a027c07b53ae1e4ee6dd8734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4a3fc7d7ec93b6cfab6c2f82fc1fae"><td class="memItemLeft" align="right" valign="top"><a id="a0f4a3fc7d7ec93b6cfab6c2f82fc1fae" name="a0f4a3fc7d7ec93b6cfab6c2f82fc1fae"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindStartTime2</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a0f4a3fc7d7ec93b6cfab6c2f82fc1fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to StartTime2. <br /></td></tr>
-<tr class="separator:a0f4a3fc7d7ec93b6cfab6c2f82fc1fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f0e840db8b54caa3a610346e3e34860"><td class="memItemLeft" align="right" valign="top"><a id="a9f0e840db8b54caa3a610346e3e34860" name="a9f0e840db8b54caa3a610346e3e34860"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindStartTime3</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9f0e840db8b54caa3a610346e3e34860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to StartTime3. <br /></td></tr>
-<tr class="separator:a9f0e840db8b54caa3a610346e3e34860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a18ee74409e2f2e6e2466967a1f4a2"><td class="memItemLeft" align="right" valign="top"><a id="a55a18ee74409e2f2e6e2466967a1f4a2" name="a55a18ee74409e2f2e6e2466967a1f4a2"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevelMin</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a55a18ee74409e2f2e6e2466967a1f4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to LevelMin. <br /></td></tr>
-<tr class="separator:a55a18ee74409e2f2e6e2466967a1f4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfbe472a8e1414bbe6f9a2060b97f006"><td class="memItemLeft" align="right" valign="top"><a id="abfbe472a8e1414bbe6f9a2060b97f006" name="abfbe472a8e1414bbe6f9a2060b97f006"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevelMax</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:abfbe472a8e1414bbe6f9a2060b97f006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to LevelMax. <br /></td></tr>
-<tr class="separator:abfbe472a8e1414bbe6f9a2060b97f006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8fbf32456aed8af033b6f923e4adf8"><td class="memItemLeft" align="right" valign="top"><a id="a2c8fbf32456aed8af033b6f923e4adf8" name="a2c8fbf32456aed8af033b6f923e4adf8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">model::MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2c8fbf32456aed8af033b6f923e4adf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
+<tr class="separator:a2c8fbf32456aed8af033b6f923e4adf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7965dd9fb94cf058d499b901ada2235c"><td class="memItemLeft" align="right" valign="top"><a id="a7965dd9fb94cf058d499b901ada2235c" name="a7965dd9fb94cf058d499b901ada2235c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindStartTime1</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">model::MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a7965dd9fb94cf058d499b901ada2235c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to StartTime1. <br /></td></tr>
+<tr class="separator:a7965dd9fb94cf058d499b901ada2235c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff21af5feda4c26c8fab920699b99f74"><td class="memItemLeft" align="right" valign="top"><a id="aff21af5feda4c26c8fab920699b99f74" name="aff21af5feda4c26c8fab920699b99f74"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindStartTime2</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">model::MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aff21af5feda4c26c8fab920699b99f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to StartTime2. <br /></td></tr>
+<tr class="separator:aff21af5feda4c26c8fab920699b99f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a9879230498c6ac3cbfd2ac2b99ab0"><td class="memItemLeft" align="right" valign="top"><a id="a73a9879230498c6ac3cbfd2ac2b99ab0" name="a73a9879230498c6ac3cbfd2ac2b99ab0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindStartTime3</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">model::MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a73a9879230498c6ac3cbfd2ac2b99ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to StartTime3. <br /></td></tr>
+<tr class="separator:a73a9879230498c6ac3cbfd2ac2b99ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219fec44ad5c51dc3677cac76dd959b3"><td class="memItemLeft" align="right" valign="top"><a id="a219fec44ad5c51dc3677cac76dd959b3" name="a219fec44ad5c51dc3677cac76dd959b3"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevelMin</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">model::MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a219fec44ad5c51dc3677cac76dd959b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to LevelMin. <br /></td></tr>
+<tr class="separator:a219fec44ad5c51dc3677cac76dd959b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44184a45e0190906360e988d66c68732"><td class="memItemLeft" align="right" valign="top"><a id="a44184a45e0190906360e988d66c68732" name="a44184a45e0190906360e988d66c68732"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevelMax</b> (<a class="el" href="classmodel_1_1MonsterChallenge.html">model::MonsterChallenge</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a44184a45e0190906360e988d66c68732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to LevelMax. <br /></td></tr>
+<tr class="separator:a44184a45e0190906360e988d66c68732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1MonsterChallenge.html" title="[MONSTER_CHALLENGE] Monster challenge (Forgotten Temple)">MonsterChallenge</a> model, using nanodbc </p>

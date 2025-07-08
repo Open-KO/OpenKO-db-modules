@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1HacktoolUserLogBinder.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa045330f5f36892dbf8f5fa0da563666"><td class="memItemLeft" align="right" valign="top"><a id="aa045330f5f36892dbf8f5fa0da563666" name="aa045330f5f36892dbf8f5fa0da563666"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1HacktoolUserLog.html">HacktoolUserLog</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:aa045330f5f36892dbf8f5fa0da563666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d121de63b4ec2e83d4558be57b6054c"><td class="memItemLeft" align="right" valign="top"><a id="a8d121de63b4ec2e83d4558be57b6054c" name="a8d121de63b4ec2e83d4558be57b6054c"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1HacktoolUserLog.html">model::HacktoolUserLog</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a8d121de63b4ec2e83d4558be57b6054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afffd2533dc08a34b4594ce93e0f04cd9"><td class="memItemLeft" align="right" valign="top"><a id="afffd2533dc08a34b4594ce93e0f04cd9" name="afffd2533dc08a34b4594ce93e0f04cd9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:afffd2533dc08a34b4594ce93e0f04cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,22 +116,22 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:afb2934ee29126b650f64ebe5aab71d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:afb2934ee29126b650f64ebe5aab71d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace60de46eb627c6fe3cbcb7ba11c8a0d"><td class="memItemLeft" align="right" valign="top"><a id="ace60de46eb627c6fe3cbcb7ba11c8a0d" name="ace60de46eb627c6fe3cbcb7ba11c8a0d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1HacktoolUserLog.html">HacktoolUserLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ace60de46eb627c6fe3cbcb7ba11c8a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
-<tr class="separator:ace60de46eb627c6fe3cbcb7ba11c8a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65a63ad4c041b458e5ae1ac98bac1fd4"><td class="memItemLeft" align="right" valign="top"><a id="a65a63ad4c041b458e5ae1ac98bac1fd4" name="a65a63ad4c041b458e5ae1ac98bac1fd4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId</b> (<a class="el" href="classmodel_1_1HacktoolUserLog.html">HacktoolUserLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a65a63ad4c041b458e5ae1ac98bac1fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId. <br /></td></tr>
-<tr class="separator:a65a63ad4c041b458e5ae1ac98bac1fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab931a32092adc6b6db21a6d99d37359d"><td class="memItemLeft" align="right" valign="top"><a id="ab931a32092adc6b6db21a6d99d37359d" name="ab931a32092adc6b6db21a6d99d37359d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHackToolName</b> (<a class="el" href="classmodel_1_1HacktoolUserLog.html">HacktoolUserLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab931a32092adc6b6db21a6d99d37359d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HackToolName. <br /></td></tr>
-<tr class="separator:ab931a32092adc6b6db21a6d99d37359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d16e4b35c4223b0674c3ebe9b7c650"><td class="memItemLeft" align="right" valign="top"><a id="ad8d16e4b35c4223b0674c3ebe9b7c650" name="ad8d16e4b35c4223b0674c3ebe9b7c650"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindWriteTime</b> (<a class="el" href="classmodel_1_1HacktoolUserLog.html">HacktoolUserLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad8d16e4b35c4223b0674c3ebe9b7c650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to WriteTime. <br /></td></tr>
-<tr class="separator:ad8d16e4b35c4223b0674c3ebe9b7c650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0a14b88b82ef6b56920a82772923d4"><td class="memItemLeft" align="right" valign="top"><a id="add0a14b88b82ef6b56920a82772923d4" name="add0a14b88b82ef6b56920a82772923d4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1HacktoolUserLog.html">model::HacktoolUserLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:add0a14b88b82ef6b56920a82772923d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
+<tr class="separator:add0a14b88b82ef6b56920a82772923d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e67e6c44f6f860a9445e9828a276580"><td class="memItemLeft" align="right" valign="top"><a id="a2e67e6c44f6f860a9445e9828a276580" name="a2e67e6c44f6f860a9445e9828a276580"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId</b> (<a class="el" href="classmodel_1_1HacktoolUserLog.html">model::HacktoolUserLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2e67e6c44f6f860a9445e9828a276580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId. <br /></td></tr>
+<tr class="separator:a2e67e6c44f6f860a9445e9828a276580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc67dc6c5d4ede623e8cc53c1d216c2"><td class="memItemLeft" align="right" valign="top"><a id="a0cc67dc6c5d4ede623e8cc53c1d216c2" name="a0cc67dc6c5d4ede623e8cc53c1d216c2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHackToolName</b> (<a class="el" href="classmodel_1_1HacktoolUserLog.html">model::HacktoolUserLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a0cc67dc6c5d4ede623e8cc53c1d216c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HackToolName. <br /></td></tr>
+<tr class="separator:a0cc67dc6c5d4ede623e8cc53c1d216c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf2a509c15874f75221a1831104d7b9"><td class="memItemLeft" align="right" valign="top"><a id="aaaf2a509c15874f75221a1831104d7b9" name="aaaf2a509c15874f75221a1831104d7b9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindWriteTime</b> (<a class="el" href="classmodel_1_1HacktoolUserLog.html">model::HacktoolUserLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aaaf2a509c15874f75221a1831104d7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to WriteTime. <br /></td></tr>
+<tr class="separator:aaaf2a509c15874f75221a1831104d7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1HacktoolUserLog.html" title="[HACKTOOL_USERLOG] Tracks possible detections of a hack tool by a user">HacktoolUserLog</a> model, using nanodbc </p>

@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1EventTriggerBinder.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a25baa666ba54acf56b69f52f7ce653c3"><td class="memItemLeft" align="right" valign="top"><a id="a25baa666ba54acf56b69f52f7ce653c3" name="a25baa666ba54acf56b69f52f7ce653c3"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1EventTrigger.html">EventTrigger</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a25baa666ba54acf56b69f52f7ce653c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74650f063247c7c245b952fd90f5e64"><td class="memItemLeft" align="right" valign="top"><a id="aa74650f063247c7c245b952fd90f5e64" name="aa74650f063247c7c245b952fd90f5e64"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1EventTrigger.html">model::EventTrigger</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:aa74650f063247c7c245b952fd90f5e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6649258a69e91e6fd1308205b05465c"><td class="memItemLeft" align="right" valign="top"><a id="ab6649258a69e91e6fd1308205b05465c" name="ab6649258a69e91e6fd1308205b05465c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:ab6649258a69e91e6fd1308205b05465c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,22 +116,22 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:aa178ef4c90b75e6ad2be3a79add75e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:aa178ef4c90b75e6ad2be3a79add75e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abceacdeb3c1ec8f71895fea098dd208c"><td class="memItemLeft" align="right" valign="top"><a id="abceacdeb3c1ec8f71895fea098dd208c" name="abceacdeb3c1ec8f71895fea098dd208c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1EventTrigger.html">EventTrigger</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:abceacdeb3c1ec8f71895fea098dd208c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
-<tr class="separator:abceacdeb3c1ec8f71895fea098dd208c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37630c5b71cda49f729a81b13c203199"><td class="memItemLeft" align="right" valign="top"><a id="a37630c5b71cda49f729a81b13c203199" name="a37630c5b71cda49f729a81b13c203199"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNpcType</b> (<a class="el" href="classmodel_1_1EventTrigger.html">EventTrigger</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a37630c5b71cda49f729a81b13c203199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NpcType. <br /></td></tr>
-<tr class="separator:a37630c5b71cda49f729a81b13c203199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4a992cab1a8bbddf97f2f158317060"><td class="memItemLeft" align="right" valign="top"><a id="a4d4a992cab1a8bbddf97f2f158317060" name="a4d4a992cab1a8bbddf97f2f158317060"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNpcId</b> (<a class="el" href="classmodel_1_1EventTrigger.html">EventTrigger</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a4d4a992cab1a8bbddf97f2f158317060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NpcId. <br /></td></tr>
-<tr class="separator:a4d4a992cab1a8bbddf97f2f158317060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b8f6890747474eb81d18fd76b0936b"><td class="memItemLeft" align="right" valign="top"><a id="ae3b8f6890747474eb81d18fd76b0936b" name="ae3b8f6890747474eb81d18fd76b0936b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindTriggerNumber</b> (<a class="el" href="classmodel_1_1EventTrigger.html">EventTrigger</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae3b8f6890747474eb81d18fd76b0936b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to TriggerNumber. <br /></td></tr>
-<tr class="separator:ae3b8f6890747474eb81d18fd76b0936b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b58d25ce13b259af9ff40edfac2151"><td class="memItemLeft" align="right" valign="top"><a id="a61b58d25ce13b259af9ff40edfac2151" name="a61b58d25ce13b259af9ff40edfac2151"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1EventTrigger.html">model::EventTrigger</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a61b58d25ce13b259af9ff40edfac2151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
+<tr class="separator:a61b58d25ce13b259af9ff40edfac2151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d87b56139db151d115dbb81753c478"><td class="memItemLeft" align="right" valign="top"><a id="a56d87b56139db151d115dbb81753c478" name="a56d87b56139db151d115dbb81753c478"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNpcType</b> (<a class="el" href="classmodel_1_1EventTrigger.html">model::EventTrigger</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a56d87b56139db151d115dbb81753c478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NpcType. <br /></td></tr>
+<tr class="separator:a56d87b56139db151d115dbb81753c478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b3b2d08a21411746d2058af27a779b"><td class="memItemLeft" align="right" valign="top"><a id="a90b3b2d08a21411746d2058af27a779b" name="a90b3b2d08a21411746d2058af27a779b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNpcId</b> (<a class="el" href="classmodel_1_1EventTrigger.html">model::EventTrigger</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a90b3b2d08a21411746d2058af27a779b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NpcId. <br /></td></tr>
+<tr class="separator:a90b3b2d08a21411746d2058af27a779b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b68ce815feb93ad2ae3579f5aa1b05"><td class="memItemLeft" align="right" valign="top"><a id="a69b68ce815feb93ad2ae3579f5aa1b05" name="a69b68ce815feb93ad2ae3579f5aa1b05"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindTriggerNumber</b> (<a class="el" href="classmodel_1_1EventTrigger.html">model::EventTrigger</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a69b68ce815feb93ad2ae3579f5aa1b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to TriggerNumber. <br /></td></tr>
+<tr class="separator:a69b68ce815feb93ad2ae3579f5aa1b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1EventTrigger.html" title="[EVENT_TRIGGER] NPC Event Triggers">EventTrigger</a> model, using nanodbc </p>

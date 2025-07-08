@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1AccountCharBinder.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a09e654121b834cc188d5da3f5b742353"><td class="memItemLeft" align="right" valign="top"><a id="a09e654121b834cc188d5da3f5b742353" name="a09e654121b834cc188d5da3f5b742353"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1AccountChar.html">AccountChar</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a09e654121b834cc188d5da3f5b742353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48af250723cdb5357b140ef9fc71f29f"><td class="memItemLeft" align="right" valign="top"><a id="a48af250723cdb5357b140ef9fc71f29f" name="a48af250723cdb5357b140ef9fc71f29f"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1AccountChar.html">model::AccountChar</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a48af250723cdb5357b140ef9fc71f29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6500fa92431036b924fcd278674bf23"><td class="memItemLeft" align="right" valign="top"><a id="aa6500fa92431036b924fcd278674bf23" name="aa6500fa92431036b924fcd278674bf23"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:aa6500fa92431036b924fcd278674bf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,30 +116,30 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:aa00c903d98190c87f17ebbaf675bbf82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:aa00c903d98190c87f17ebbaf675bbf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42cb03d7b18937f74990d59a0246aea5"><td class="memItemLeft" align="right" valign="top"><a id="a42cb03d7b18937f74990d59a0246aea5" name="a42cb03d7b18937f74990d59a0246aea5"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1AccountChar.html">AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a42cb03d7b18937f74990d59a0246aea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
-<tr class="separator:a42cb03d7b18937f74990d59a0246aea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac71022b3bc80c9ce0573c16e10acb5b0"><td class="memItemLeft" align="right" valign="top"><a id="ac71022b3bc80c9ce0573c16e10acb5b0" name="ac71022b3bc80c9ce0573c16e10acb5b0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNation</b> (<a class="el" href="classmodel_1_1AccountChar.html">AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ac71022b3bc80c9ce0573c16e10acb5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Nation. <br /></td></tr>
-<tr class="separator:ac71022b3bc80c9ce0573c16e10acb5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a219379d2b57acb1a1b356af7a1c894ae"><td class="memItemLeft" align="right" valign="top"><a id="a219379d2b57acb1a1b356af7a1c894ae" name="a219379d2b57acb1a1b356af7a1c894ae"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharNum</b> (<a class="el" href="classmodel_1_1AccountChar.html">AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a219379d2b57acb1a1b356af7a1c894ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharNum. <br /></td></tr>
-<tr class="separator:a219379d2b57acb1a1b356af7a1c894ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa64773e72eb40cc4e806648260ee0ef4"><td class="memItemLeft" align="right" valign="top"><a id="aa64773e72eb40cc4e806648260ee0ef4" name="aa64773e72eb40cc4e806648260ee0ef4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId1</b> (<a class="el" href="classmodel_1_1AccountChar.html">AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aa64773e72eb40cc4e806648260ee0ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId1. <br /></td></tr>
-<tr class="separator:aa64773e72eb40cc4e806648260ee0ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac314bd93ddbb15367cf7507fd984b13b"><td class="memItemLeft" align="right" valign="top"><a id="ac314bd93ddbb15367cf7507fd984b13b" name="ac314bd93ddbb15367cf7507fd984b13b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId2</b> (<a class="el" href="classmodel_1_1AccountChar.html">AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ac314bd93ddbb15367cf7507fd984b13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId2. <br /></td></tr>
-<tr class="separator:ac314bd93ddbb15367cf7507fd984b13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afecd3cdccbdfc658ef42a6a91f7f4ed2"><td class="memItemLeft" align="right" valign="top"><a id="afecd3cdccbdfc658ef42a6a91f7f4ed2" name="afecd3cdccbdfc658ef42a6a91f7f4ed2"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId3</b> (<a class="el" href="classmodel_1_1AccountChar.html">AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:afecd3cdccbdfc658ef42a6a91f7f4ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId3. <br /></td></tr>
-<tr class="separator:afecd3cdccbdfc658ef42a6a91f7f4ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62ce32ae250daff9c2f4b123070283d"><td class="memItemLeft" align="right" valign="top"><a id="ac62ce32ae250daff9c2f4b123070283d" name="ac62ce32ae250daff9c2f4b123070283d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1AccountChar.html">model::AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ac62ce32ae250daff9c2f4b123070283d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
+<tr class="separator:ac62ce32ae250daff9c2f4b123070283d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f9a6a76a48a94b6ad396ce18a63244"><td class="memItemLeft" align="right" valign="top"><a id="a32f9a6a76a48a94b6ad396ce18a63244" name="a32f9a6a76a48a94b6ad396ce18a63244"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNation</b> (<a class="el" href="classmodel_1_1AccountChar.html">model::AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a32f9a6a76a48a94b6ad396ce18a63244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Nation. <br /></td></tr>
+<tr class="separator:a32f9a6a76a48a94b6ad396ce18a63244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa916453b699a2059ecc34c02a7a96365"><td class="memItemLeft" align="right" valign="top"><a id="aa916453b699a2059ecc34c02a7a96365" name="aa916453b699a2059ecc34c02a7a96365"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharNum</b> (<a class="el" href="classmodel_1_1AccountChar.html">model::AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa916453b699a2059ecc34c02a7a96365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharNum. <br /></td></tr>
+<tr class="separator:aa916453b699a2059ecc34c02a7a96365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e5bf1e212433d21761bf159ac8501a"><td class="memItemLeft" align="right" valign="top"><a id="a18e5bf1e212433d21761bf159ac8501a" name="a18e5bf1e212433d21761bf159ac8501a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId1</b> (<a class="el" href="classmodel_1_1AccountChar.html">model::AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a18e5bf1e212433d21761bf159ac8501a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId1. <br /></td></tr>
+<tr class="separator:a18e5bf1e212433d21761bf159ac8501a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5dfa3e38ccfc155f4ddce7704d1151"><td class="memItemLeft" align="right" valign="top"><a id="a9f5dfa3e38ccfc155f4ddce7704d1151" name="a9f5dfa3e38ccfc155f4ddce7704d1151"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId2</b> (<a class="el" href="classmodel_1_1AccountChar.html">model::AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a9f5dfa3e38ccfc155f4ddce7704d1151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId2. <br /></td></tr>
+<tr class="separator:a9f5dfa3e38ccfc155f4ddce7704d1151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d7f4f2f4816c3b4570f4ea5cac61ca"><td class="memItemLeft" align="right" valign="top"><a id="a26d7f4f2f4816c3b4570f4ea5cac61ca" name="a26d7f4f2f4816c3b4570f4ea5cac61ca"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId3</b> (<a class="el" href="classmodel_1_1AccountChar.html">model::AccountChar</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a26d7f4f2f4816c3b4570f4ea5cac61ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId3. <br /></td></tr>
+<tr class="separator:a26d7f4f2f4816c3b4570f4ea5cac61ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1AccountChar.html" title="[ACCOUNT_CHAR] Represents the relationship between accounts and characters">AccountChar</a> model, using nanodbc </p>

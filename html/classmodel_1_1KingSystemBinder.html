@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1KingSystemBinder.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a18a7cdc3b685a344ae29f8578072c769"><td class="memItemLeft" align="right" valign="top"><a id="a18a7cdc3b685a344ae29f8578072c769" name="a18a7cdc3b685a344ae29f8578072c769"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a18a7cdc3b685a344ae29f8578072c769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3392b9dbc76bcfd69dbe1db1d07903"><td class="memItemLeft" align="right" valign="top"><a id="a2c3392b9dbc76bcfd69dbe1db1d07903" name="a2c3392b9dbc76bcfd69dbe1db1d07903"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a2c3392b9dbc76bcfd69dbe1db1d07903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a277ec97247c43fb760e5af77ccd661"><td class="memItemLeft" align="right" valign="top"><a id="a8a277ec97247c43fb760e5af77ccd661" name="a8a277ec97247c43fb760e5af77ccd661"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a8a277ec97247c43fb760e5af77ccd661"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,122 +116,122 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a21849d08ad030775883c0763c4842e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a21849d08ad030775883c0763c4842e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83974954179761b9abe3157624059211"><td class="memItemLeft" align="right" valign="top"><a id="a83974954179761b9abe3157624059211" name="a83974954179761b9abe3157624059211"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNation</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a83974954179761b9abe3157624059211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Nation. <br /></td></tr>
-<tr class="separator:a83974954179761b9abe3157624059211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c079fdbd3acd3fd60feab8e5cd39870"><td class="memItemLeft" align="right" valign="top"><a id="a6c079fdbd3acd3fd60feab8e5cd39870" name="a6c079fdbd3acd3fd60feab8e5cd39870"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a6c079fdbd3acd3fd60feab8e5cd39870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
-<tr class="separator:a6c079fdbd3acd3fd60feab8e5cd39870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab346c014c98a178f77e83a847502749b"><td class="memItemLeft" align="right" valign="top"><a id="ab346c014c98a178f77e83a847502749b" name="ab346c014c98a178f77e83a847502749b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindYear</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab346c014c98a178f77e83a847502749b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Year. <br /></td></tr>
-<tr class="separator:ab346c014c98a178f77e83a847502749b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69a3079bfc42ad945b3fe6ed91cd941"><td class="memItemLeft" align="right" valign="top"><a id="ae69a3079bfc42ad945b3fe6ed91cd941" name="ae69a3079bfc42ad945b3fe6ed91cd941"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMonth</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae69a3079bfc42ad945b3fe6ed91cd941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Month. <br /></td></tr>
-<tr class="separator:ae69a3079bfc42ad945b3fe6ed91cd941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a68463faf407fc73844d3683d063389"><td class="memItemLeft" align="right" valign="top"><a id="a1a68463faf407fc73844d3683d063389" name="a1a68463faf407fc73844d3683d063389"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDay</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a1a68463faf407fc73844d3683d063389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Day. <br /></td></tr>
-<tr class="separator:a1a68463faf407fc73844d3683d063389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023244c76191cafc98fcf4e64e2107ed"><td class="memItemLeft" align="right" valign="top"><a id="a023244c76191cafc98fcf4e64e2107ed" name="a023244c76191cafc98fcf4e64e2107ed"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHour</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a023244c76191cafc98fcf4e64e2107ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Hour. <br /></td></tr>
-<tr class="separator:a023244c76191cafc98fcf4e64e2107ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabb220e4ba2be3029688b7f74c281038"><td class="memItemLeft" align="right" valign="top"><a id="aabb220e4ba2be3029688b7f74c281038" name="aabb220e4ba2be3029688b7f74c281038"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMinute</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aabb220e4ba2be3029688b7f74c281038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Minute. <br /></td></tr>
-<tr class="separator:aabb220e4ba2be3029688b7f74c281038"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab932b005cb552bfefa2e95ea99d33434"><td class="memItemLeft" align="right" valign="top"><a id="ab932b005cb552bfefa2e95ea99d33434" name="ab932b005cb552bfefa2e95ea99d33434"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImType</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab932b005cb552bfefa2e95ea99d33434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImType. <br /></td></tr>
-<tr class="separator:ab932b005cb552bfefa2e95ea99d33434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdac8f67121081b01a352644568440c5"><td class="memItemLeft" align="right" valign="top"><a id="acdac8f67121081b01a352644568440c5" name="acdac8f67121081b01a352644568440c5"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImYear</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:acdac8f67121081b01a352644568440c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImYear. <br /></td></tr>
-<tr class="separator:acdac8f67121081b01a352644568440c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8241a6a6fb7626cbc2b157e5b81e0175"><td class="memItemLeft" align="right" valign="top"><a id="a8241a6a6fb7626cbc2b157e5b81e0175" name="a8241a6a6fb7626cbc2b157e5b81e0175"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImMonth</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a8241a6a6fb7626cbc2b157e5b81e0175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImMonth. <br /></td></tr>
-<tr class="separator:a8241a6a6fb7626cbc2b157e5b81e0175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3ee470e1c18b74b78f1e7b999ce2662"><td class="memItemLeft" align="right" valign="top"><a id="ab3ee470e1c18b74b78f1e7b999ce2662" name="ab3ee470e1c18b74b78f1e7b999ce2662"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImDay</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab3ee470e1c18b74b78f1e7b999ce2662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImDay. <br /></td></tr>
-<tr class="separator:ab3ee470e1c18b74b78f1e7b999ce2662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ddb3d94bf3dcb5a04ce4f66f5443517"><td class="memItemLeft" align="right" valign="top"><a id="a4ddb3d94bf3dcb5a04ce4f66f5443517" name="a4ddb3d94bf3dcb5a04ce4f66f5443517"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImHour</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a4ddb3d94bf3dcb5a04ce4f66f5443517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImHour. <br /></td></tr>
-<tr class="separator:a4ddb3d94bf3dcb5a04ce4f66f5443517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad75cb0af15f759c5e6d2d2f32bbf18e8"><td class="memItemLeft" align="right" valign="top"><a id="ad75cb0af15f759c5e6d2d2f32bbf18e8" name="ad75cb0af15f759c5e6d2d2f32bbf18e8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImMinute</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad75cb0af15f759c5e6d2d2f32bbf18e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImMinute. <br /></td></tr>
-<tr class="separator:ad75cb0af15f759c5e6d2d2f32bbf18e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab7c0636bf48b676775373fa18f3a2d0"><td class="memItemLeft" align="right" valign="top"><a id="aab7c0636bf48b676775373fa18f3a2d0" name="aab7c0636bf48b676775373fa18f3a2d0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEvent</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aab7c0636bf48b676775373fa18f3a2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEvent. <br /></td></tr>
-<tr class="separator:aab7c0636bf48b676775373fa18f3a2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad57aa4227d3cfab4609e5e92276cf433"><td class="memItemLeft" align="right" valign="top"><a id="ad57aa4227d3cfab4609e5e92276cf433" name="ad57aa4227d3cfab4609e5e92276cf433"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEventDay</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad57aa4227d3cfab4609e5e92276cf433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEventDay. <br /></td></tr>
-<tr class="separator:ad57aa4227d3cfab4609e5e92276cf433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c2bc2d4442d6f0b6a39ae3125a197f"><td class="memItemLeft" align="right" valign="top"><a id="aa0c2bc2d4442d6f0b6a39ae3125a197f" name="aa0c2bc2d4442d6f0b6a39ae3125a197f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEventHour</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aa0c2bc2d4442d6f0b6a39ae3125a197f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEventHour. <br /></td></tr>
-<tr class="separator:aa0c2bc2d4442d6f0b6a39ae3125a197f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa635dee06e8d30afff06fe6d7d007fa4"><td class="memItemLeft" align="right" valign="top"><a id="aa635dee06e8d30afff06fe6d7d007fa4" name="aa635dee06e8d30afff06fe6d7d007fa4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEventMinute</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aa635dee06e8d30afff06fe6d7d007fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEventMinute. <br /></td></tr>
-<tr class="separator:aa635dee06e8d30afff06fe6d7d007fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1f5d461fc9d191423ceaeda882fff08"><td class="memItemLeft" align="right" valign="top"><a id="af1f5d461fc9d191423ceaeda882fff08" name="af1f5d461fc9d191423ceaeda882fff08"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEventDuration</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af1f5d461fc9d191423ceaeda882fff08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEventDuration. <br /></td></tr>
-<tr class="separator:af1f5d461fc9d191423ceaeda882fff08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8f054d68797f06a3a66952bafd7d1c"><td class="memItemLeft" align="right" valign="top"><a id="aeb8f054d68797f06a3a66952bafd7d1c" name="aeb8f054d68797f06a3a66952bafd7d1c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEvent</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aeb8f054d68797f06a3a66952bafd7d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEvent. <br /></td></tr>
-<tr class="separator:aeb8f054d68797f06a3a66952bafd7d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b26ac1fcc2d2a7f7a0ab08d0878c9e5"><td class="memItemLeft" align="right" valign="top"><a id="a7b26ac1fcc2d2a7f7a0ab08d0878c9e5" name="a7b26ac1fcc2d2a7f7a0ab08d0878c9e5"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEventDay</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a7b26ac1fcc2d2a7f7a0ab08d0878c9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEventDay. <br /></td></tr>
-<tr class="separator:a7b26ac1fcc2d2a7f7a0ab08d0878c9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af055462f36054af76d1b34aa1b64f125"><td class="memItemLeft" align="right" valign="top"><a id="af055462f36054af76d1b34aa1b64f125" name="af055462f36054af76d1b34aa1b64f125"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEventHour</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af055462f36054af76d1b34aa1b64f125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEventHour. <br /></td></tr>
-<tr class="separator:af055462f36054af76d1b34aa1b64f125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a857f4c686660d981e00517c3077064ae"><td class="memItemLeft" align="right" valign="top"><a id="a857f4c686660d981e00517c3077064ae" name="a857f4c686660d981e00517c3077064ae"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEventMinute</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a857f4c686660d981e00517c3077064ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEventMinute. <br /></td></tr>
-<tr class="separator:a857f4c686660d981e00517c3077064ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaf60472cfece120e03374a520277812"><td class="memItemLeft" align="right" valign="top"><a id="abaf60472cfece120e03374a520277812" name="abaf60472cfece120e03374a520277812"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEventDuration</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:abaf60472cfece120e03374a520277812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEventDuration. <br /></td></tr>
-<tr class="separator:abaf60472cfece120e03374a520277812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f376d3ec2b547937c4f6d9e69442bde"><td class="memItemLeft" align="right" valign="top"><a id="a7f376d3ec2b547937c4f6d9e69442bde" name="a7f376d3ec2b547937c4f6d9e69442bde"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindTribute</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a7f376d3ec2b547937c4f6d9e69442bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Tribute. <br /></td></tr>
-<tr class="separator:a7f376d3ec2b547937c4f6d9e69442bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae27c50b67830728bfacafed203f60884"><td class="memItemLeft" align="right" valign="top"><a id="ae27c50b67830728bfacafed203f60884" name="ae27c50b67830728bfacafed203f60884"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindTerritoryTariff</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae27c50b67830728bfacafed203f60884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to TerritoryTariff. <br /></td></tr>
-<tr class="separator:ae27c50b67830728bfacafed203f60884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35da24ccd827214e8505a83f764fb65b"><td class="memItemLeft" align="right" valign="top"><a id="a35da24ccd827214e8505a83f764fb65b" name="a35da24ccd827214e8505a83f764fb65b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindTerritoryTax</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a35da24ccd827214e8505a83f764fb65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to TerritoryTax. <br /></td></tr>
-<tr class="separator:a35da24ccd827214e8505a83f764fb65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aad316c1c7d6428c2401530541c03e5"><td class="memItemLeft" align="right" valign="top"><a id="a8aad316c1c7d6428c2401530541c03e5" name="a8aad316c1c7d6428c2401530541c03e5"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNationalTreasury</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a8aad316c1c7d6428c2401530541c03e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NationalTreasury. <br /></td></tr>
-<tr class="separator:a8aad316c1c7d6428c2401530541c03e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d5fff2cf17a9cf7ee43ffff123e99b"><td class="memItemLeft" align="right" valign="top"><a id="ad1d5fff2cf17a9cf7ee43ffff123e99b" name="ad1d5fff2cf17a9cf7ee43ffff123e99b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKingName</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad1d5fff2cf17a9cf7ee43ffff123e99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KingName. <br /></td></tr>
-<tr class="separator:ad1d5fff2cf17a9cf7ee43ffff123e99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1921428ab9fda87b8c8727547613990a"><td class="memItemLeft" align="right" valign="top"><a id="a1921428ab9fda87b8c8727547613990a" name="a1921428ab9fda87b8c8727547613990a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImRequestId</b> (<a class="el" href="classmodel_1_1KingSystem.html">KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a1921428ab9fda87b8c8727547613990a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImRequestId. <br /></td></tr>
-<tr class="separator:a1921428ab9fda87b8c8727547613990a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014d23755d0f08c9bc5d41c9b892a6d9"><td class="memItemLeft" align="right" valign="top"><a id="a014d23755d0f08c9bc5d41c9b892a6d9" name="a014d23755d0f08c9bc5d41c9b892a6d9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNation</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a014d23755d0f08c9bc5d41c9b892a6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Nation. <br /></td></tr>
+<tr class="separator:a014d23755d0f08c9bc5d41c9b892a6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4895a7d9023421df0249b222325d0333"><td class="memItemLeft" align="right" valign="top"><a id="a4895a7d9023421df0249b222325d0333" name="a4895a7d9023421df0249b222325d0333"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a4895a7d9023421df0249b222325d0333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
+<tr class="separator:a4895a7d9023421df0249b222325d0333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac095ee059d4004cda355375f03ff515"><td class="memItemLeft" align="right" valign="top"><a id="aac095ee059d4004cda355375f03ff515" name="aac095ee059d4004cda355375f03ff515"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindYear</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aac095ee059d4004cda355375f03ff515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Year. <br /></td></tr>
+<tr class="separator:aac095ee059d4004cda355375f03ff515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae65109766932c503fcadd333e08779"><td class="memItemLeft" align="right" valign="top"><a id="a9ae65109766932c503fcadd333e08779" name="a9ae65109766932c503fcadd333e08779"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMonth</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a9ae65109766932c503fcadd333e08779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Month. <br /></td></tr>
+<tr class="separator:a9ae65109766932c503fcadd333e08779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251e96e9300e0c8dfe1061063664525d"><td class="memItemLeft" align="right" valign="top"><a id="a251e96e9300e0c8dfe1061063664525d" name="a251e96e9300e0c8dfe1061063664525d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDay</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a251e96e9300e0c8dfe1061063664525d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Day. <br /></td></tr>
+<tr class="separator:a251e96e9300e0c8dfe1061063664525d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a6422a1326a1b6cfbe6f564b1ae472"><td class="memItemLeft" align="right" valign="top"><a id="a10a6422a1326a1b6cfbe6f564b1ae472" name="a10a6422a1326a1b6cfbe6f564b1ae472"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHour</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a10a6422a1326a1b6cfbe6f564b1ae472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Hour. <br /></td></tr>
+<tr class="separator:a10a6422a1326a1b6cfbe6f564b1ae472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b79cc74c8620b2cd09ef81535db03f2"><td class="memItemLeft" align="right" valign="top"><a id="a2b79cc74c8620b2cd09ef81535db03f2" name="a2b79cc74c8620b2cd09ef81535db03f2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMinute</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2b79cc74c8620b2cd09ef81535db03f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Minute. <br /></td></tr>
+<tr class="separator:a2b79cc74c8620b2cd09ef81535db03f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ac3ab4a82be6144b34fee53fe33669"><td class="memItemLeft" align="right" valign="top"><a id="ab7ac3ab4a82be6144b34fee53fe33669" name="ab7ac3ab4a82be6144b34fee53fe33669"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImType</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab7ac3ab4a82be6144b34fee53fe33669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImType. <br /></td></tr>
+<tr class="separator:ab7ac3ab4a82be6144b34fee53fe33669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41d6a72c786800462d3f351f48b9c2f"><td class="memItemLeft" align="right" valign="top"><a id="ae41d6a72c786800462d3f351f48b9c2f" name="ae41d6a72c786800462d3f351f48b9c2f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImYear</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ae41d6a72c786800462d3f351f48b9c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImYear. <br /></td></tr>
+<tr class="separator:ae41d6a72c786800462d3f351f48b9c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e6a2dbb9b2feaedbd0ccb7e3cf1e4c"><td class="memItemLeft" align="right" valign="top"><a id="ab9e6a2dbb9b2feaedbd0ccb7e3cf1e4c" name="ab9e6a2dbb9b2feaedbd0ccb7e3cf1e4c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImMonth</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab9e6a2dbb9b2feaedbd0ccb7e3cf1e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImMonth. <br /></td></tr>
+<tr class="separator:ab9e6a2dbb9b2feaedbd0ccb7e3cf1e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa56f8925d3335f535608bad64715a02"><td class="memItemLeft" align="right" valign="top"><a id="afa56f8925d3335f535608bad64715a02" name="afa56f8925d3335f535608bad64715a02"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImDay</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:afa56f8925d3335f535608bad64715a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImDay. <br /></td></tr>
+<tr class="separator:afa56f8925d3335f535608bad64715a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf83ae060acf3c06eac9c212ea040ce"><td class="memItemLeft" align="right" valign="top"><a id="a4bf83ae060acf3c06eac9c212ea040ce" name="a4bf83ae060acf3c06eac9c212ea040ce"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImHour</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a4bf83ae060acf3c06eac9c212ea040ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImHour. <br /></td></tr>
+<tr class="separator:a4bf83ae060acf3c06eac9c212ea040ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8153ea37c3eb8022b87ccca92f2f197"><td class="memItemLeft" align="right" valign="top"><a id="ad8153ea37c3eb8022b87ccca92f2f197" name="ad8153ea37c3eb8022b87ccca92f2f197"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImMinute</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ad8153ea37c3eb8022b87ccca92f2f197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImMinute. <br /></td></tr>
+<tr class="separator:ad8153ea37c3eb8022b87ccca92f2f197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1705ff93fe650e96f51fb28df190a2d"><td class="memItemLeft" align="right" valign="top"><a id="af1705ff93fe650e96f51fb28df190a2d" name="af1705ff93fe650e96f51fb28df190a2d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEvent</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:af1705ff93fe650e96f51fb28df190a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEvent. <br /></td></tr>
+<tr class="separator:af1705ff93fe650e96f51fb28df190a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d743f9e03a99f8ec2b8ab5598992319"><td class="memItemLeft" align="right" valign="top"><a id="a3d743f9e03a99f8ec2b8ab5598992319" name="a3d743f9e03a99f8ec2b8ab5598992319"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEventDay</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a3d743f9e03a99f8ec2b8ab5598992319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEventDay. <br /></td></tr>
+<tr class="separator:a3d743f9e03a99f8ec2b8ab5598992319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b6e43cdcff24427b715bf55ae7055e"><td class="memItemLeft" align="right" valign="top"><a id="ac1b6e43cdcff24427b715bf55ae7055e" name="ac1b6e43cdcff24427b715bf55ae7055e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEventHour</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ac1b6e43cdcff24427b715bf55ae7055e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEventHour. <br /></td></tr>
+<tr class="separator:ac1b6e43cdcff24427b715bf55ae7055e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ad8d66ccb709ef58213854ca457f06"><td class="memItemLeft" align="right" valign="top"><a id="a11ad8d66ccb709ef58213854ca457f06" name="a11ad8d66ccb709ef58213854ca457f06"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEventMinute</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a11ad8d66ccb709ef58213854ca457f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEventMinute. <br /></td></tr>
+<tr class="separator:a11ad8d66ccb709ef58213854ca457f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7557e2c17706d82678ca0d6ea1a58b"><td class="memItemLeft" align="right" valign="top"><a id="a5f7557e2c17706d82678ca0d6ea1a58b" name="a5f7557e2c17706d82678ca0d6ea1a58b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNoahEventDuration</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a5f7557e2c17706d82678ca0d6ea1a58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NoahEventDuration. <br /></td></tr>
+<tr class="separator:a5f7557e2c17706d82678ca0d6ea1a58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3756aa24845c6e4206c55ef4ada8c1"><td class="memItemLeft" align="right" valign="top"><a id="adc3756aa24845c6e4206c55ef4ada8c1" name="adc3756aa24845c6e4206c55ef4ada8c1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEvent</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:adc3756aa24845c6e4206c55ef4ada8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEvent. <br /></td></tr>
+<tr class="separator:adc3756aa24845c6e4206c55ef4ada8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395895c27ef12a43946bfc0e94963a5d"><td class="memItemLeft" align="right" valign="top"><a id="a395895c27ef12a43946bfc0e94963a5d" name="a395895c27ef12a43946bfc0e94963a5d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEventDay</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a395895c27ef12a43946bfc0e94963a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEventDay. <br /></td></tr>
+<tr class="separator:a395895c27ef12a43946bfc0e94963a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af168418568b254d70c0dfad1638d5c27"><td class="memItemLeft" align="right" valign="top"><a id="af168418568b254d70c0dfad1638d5c27" name="af168418568b254d70c0dfad1638d5c27"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEventHour</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:af168418568b254d70c0dfad1638d5c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEventHour. <br /></td></tr>
+<tr class="separator:af168418568b254d70c0dfad1638d5c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe36c300d3d5e66ace4094075fa46d4"><td class="memItemLeft" align="right" valign="top"><a id="a9fe36c300d3d5e66ace4094075fa46d4" name="a9fe36c300d3d5e66ace4094075fa46d4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEventMinute</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a9fe36c300d3d5e66ace4094075fa46d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEventMinute. <br /></td></tr>
+<tr class="separator:a9fe36c300d3d5e66ace4094075fa46d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55dc5fc9deebb802b9ce30b1ce32a93b"><td class="memItemLeft" align="right" valign="top"><a id="a55dc5fc9deebb802b9ce30b1ce32a93b" name="a55dc5fc9deebb802b9ce30b1ce32a93b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindExpEventDuration</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a55dc5fc9deebb802b9ce30b1ce32a93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ExpEventDuration. <br /></td></tr>
+<tr class="separator:a55dc5fc9deebb802b9ce30b1ce32a93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e72077766f5df708bdd37234e56ec2"><td class="memItemLeft" align="right" valign="top"><a id="ac3e72077766f5df708bdd37234e56ec2" name="ac3e72077766f5df708bdd37234e56ec2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindTribute</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ac3e72077766f5df708bdd37234e56ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Tribute. <br /></td></tr>
+<tr class="separator:ac3e72077766f5df708bdd37234e56ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfee20a5a80c94a085da319e16449a54"><td class="memItemLeft" align="right" valign="top"><a id="adfee20a5a80c94a085da319e16449a54" name="adfee20a5a80c94a085da319e16449a54"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindTerritoryTariff</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:adfee20a5a80c94a085da319e16449a54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to TerritoryTariff. <br /></td></tr>
+<tr class="separator:adfee20a5a80c94a085da319e16449a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ebc4c07f24fb1722be1da57f0db134"><td class="memItemLeft" align="right" valign="top"><a id="ab0ebc4c07f24fb1722be1da57f0db134" name="ab0ebc4c07f24fb1722be1da57f0db134"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindTerritoryTax</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab0ebc4c07f24fb1722be1da57f0db134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to TerritoryTax. <br /></td></tr>
+<tr class="separator:ab0ebc4c07f24fb1722be1da57f0db134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6498468a79f780f541956730b610a4"><td class="memItemLeft" align="right" valign="top"><a id="a0a6498468a79f780f541956730b610a4" name="a0a6498468a79f780f541956730b610a4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNationalTreasury</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a0a6498468a79f780f541956730b610a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to NationalTreasury. <br /></td></tr>
+<tr class="separator:a0a6498468a79f780f541956730b610a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cd2dd9bcbf15f23cd0afa713f282d1"><td class="memItemLeft" align="right" valign="top"><a id="a18cd2dd9bcbf15f23cd0afa713f282d1" name="a18cd2dd9bcbf15f23cd0afa713f282d1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKingName</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a18cd2dd9bcbf15f23cd0afa713f282d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KingName. <br /></td></tr>
+<tr class="separator:a18cd2dd9bcbf15f23cd0afa713f282d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98822959a9781b0423665bde82d53f3"><td class="memItemLeft" align="right" valign="top"><a id="ab98822959a9781b0423665bde82d53f3" name="ab98822959a9781b0423665bde82d53f3"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindImRequestId</b> (<a class="el" href="classmodel_1_1KingSystem.html">model::KingSystem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab98822959a9781b0423665bde82d53f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ImRequestId. <br /></td></tr>
+<tr class="separator:ab98822959a9781b0423665bde82d53f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1KingSystem.html" title="[KING_SYSTEM] King System">KingSystem</a> model, using nanodbc </p>

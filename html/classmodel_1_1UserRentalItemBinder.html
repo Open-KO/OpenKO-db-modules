@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1UserRentalItemBinder.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1d3a7dd7eb1f7b74d38d1f9350b5d02b"><td class="memItemLeft" align="right" valign="top"><a id="a1d3a7dd7eb1f7b74d38d1f9350b5d02b" name="a1d3a7dd7eb1f7b74d38d1f9350b5d02b"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a1d3a7dd7eb1f7b74d38d1f9350b5d02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea816002a08b4e5f14844037a853baa"><td class="memItemLeft" align="right" valign="top"><a id="a3ea816002a08b4e5f14844037a853baa" name="a3ea816002a08b4e5f14844037a853baa"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a3ea816002a08b4e5f14844037a853baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c481064e956be7053518ccf65e92d5d"><td class="memItemLeft" align="right" valign="top"><a id="a7c481064e956be7053518ccf65e92d5d" name="a7c481064e956be7053518ccf65e92d5d"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a7c481064e956be7053518ccf65e92d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,58 +116,58 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:adbd4310e58267e0b47161e6ea0cd8f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:adbd4310e58267e0b47161e6ea0cd8f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b2ae0b4e421c94ae1fd5935fb97a06b"><td class="memItemLeft" align="right" valign="top"><a id="a9b2ae0b4e421c94ae1fd5935fb97a06b" name="a9b2ae0b4e421c94ae1fd5935fb97a06b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindUserId</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9b2ae0b4e421c94ae1fd5935fb97a06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to UserId. <br /></td></tr>
-<tr class="separator:a9b2ae0b4e421c94ae1fd5935fb97a06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a463ce6b45c8d3fe0b638b29be3415b0a"><td class="memItemLeft" align="right" valign="top"><a id="a463ce6b45c8d3fe0b638b29be3415b0a" name="a463ce6b45c8d3fe0b638b29be3415b0a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a463ce6b45c8d3fe0b638b29be3415b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
-<tr class="separator:a463ce6b45c8d3fe0b638b29be3415b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a55233e9fa8904a1f5d92dca22e960"><td class="memItemLeft" align="right" valign="top"><a id="ae4a55233e9fa8904a1f5d92dca22e960" name="ae4a55233e9fa8904a1f5d92dca22e960"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalType</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae4a55233e9fa8904a1f5d92dca22e960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalType. <br /></td></tr>
-<tr class="separator:ae4a55233e9fa8904a1f5d92dca22e960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a478a11be9a1d97457add76784fef1074"><td class="memItemLeft" align="right" valign="top"><a id="a478a11be9a1d97457add76784fef1074" name="a478a11be9a1d97457add76784fef1074"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRegTime</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a478a11be9a1d97457add76784fef1074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RegTime. <br /></td></tr>
-<tr class="separator:a478a11be9a1d97457add76784fef1074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a299a79e8a994251f8440ab48880b4bc9"><td class="memItemLeft" align="right" valign="top"><a id="a299a79e8a994251f8440ab48880b4bc9" name="a299a79e8a994251f8440ab48880b4bc9"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalIndex</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a299a79e8a994251f8440ab48880b4bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalIndex. <br /></td></tr>
-<tr class="separator:a299a79e8a994251f8440ab48880b4bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3744a2d1e2d644052d7fcae7de3b5fc1"><td class="memItemLeft" align="right" valign="top"><a id="a3744a2d1e2d644052d7fcae7de3b5fc1" name="a3744a2d1e2d644052d7fcae7de3b5fc1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemIndex</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a3744a2d1e2d644052d7fcae7de3b5fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemIndex. <br /></td></tr>
-<tr class="separator:a3744a2d1e2d644052d7fcae7de3b5fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc69c8b1eba9b08f385afc7076e554f0"><td class="memItemLeft" align="right" valign="top"><a id="afc69c8b1eba9b08f385afc7076e554f0" name="afc69c8b1eba9b08f385afc7076e554f0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDurability</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:afc69c8b1eba9b08f385afc7076e554f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Durability. <br /></td></tr>
-<tr class="separator:afc69c8b1eba9b08f385afc7076e554f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a86d4a40733c601c3c536c0a9474861"><td class="memItemLeft" align="right" valign="top"><a id="a1a86d4a40733c601c3c536c0a9474861" name="a1a86d4a40733c601c3c536c0a9474861"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSerialNumber</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a1a86d4a40733c601c3c536c0a9474861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to SerialNumber. <br /></td></tr>
-<tr class="separator:a1a86d4a40733c601c3c536c0a9474861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9240a229aba2790ec7dac2ccffe07a6a"><td class="memItemLeft" align="right" valign="top"><a id="a9240a229aba2790ec7dac2ccffe07a6a" name="a9240a229aba2790ec7dac2ccffe07a6a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalMoney</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9240a229aba2790ec7dac2ccffe07a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalMoney. <br /></td></tr>
-<tr class="separator:a9240a229aba2790ec7dac2ccffe07a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbdeeca2777130d03e2efb81ab5c2e82"><td class="memItemLeft" align="right" valign="top"><a id="abbdeeca2777130d03e2efb81ab5c2e82" name="abbdeeca2777130d03e2efb81ab5c2e82"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalTime</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:abbdeeca2777130d03e2efb81ab5c2e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalTime. <br /></td></tr>
-<tr class="separator:abbdeeca2777130d03e2efb81ab5c2e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50eefcf8d5c2412a4afce880fb8a43b9"><td class="memItemLeft" align="right" valign="top"><a id="a50eefcf8d5c2412a4afce880fb8a43b9" name="a50eefcf8d5c2412a4afce880fb8a43b9"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDuringTime</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a50eefcf8d5c2412a4afce880fb8a43b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to DuringTime. <br /></td></tr>
-<tr class="separator:a50eefcf8d5c2412a4afce880fb8a43b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93eb2ef73f15a34b6d46c9e6125a357f"><td class="memItemLeft" align="right" valign="top"><a id="a93eb2ef73f15a34b6d46c9e6125a357f" name="a93eb2ef73f15a34b6d46c9e6125a357f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalTimestamp</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a93eb2ef73f15a34b6d46c9e6125a357f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalTimestamp. <br /></td></tr>
-<tr class="separator:a93eb2ef73f15a34b6d46c9e6125a357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a161d4494b2b8150b0c031d89d7ad3efa"><td class="memItemLeft" align="right" valign="top"><a id="a161d4494b2b8150b0c031d89d7ad3efa" name="a161d4494b2b8150b0c031d89d7ad3efa"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRegisterTime</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a161d4494b2b8150b0c031d89d7ad3efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RegisterTime. <br /></td></tr>
-<tr class="separator:a161d4494b2b8150b0c031d89d7ad3efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffb818548bad6d9142d04155d5d54bf"><td class="memItemLeft" align="right" valign="top"><a id="a6ffb818548bad6d9142d04155d5d54bf" name="a6ffb818548bad6d9142d04155d5d54bf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindUserId</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a6ffb818548bad6d9142d04155d5d54bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to UserId. <br /></td></tr>
+<tr class="separator:a6ffb818548bad6d9142d04155d5d54bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6021b78e0742cb44d9753d99c5dce7"><td class="memItemLeft" align="right" valign="top"><a id="aca6021b78e0742cb44d9753d99c5dce7" name="aca6021b78e0742cb44d9753d99c5dce7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aca6021b78e0742cb44d9753d99c5dce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
+<tr class="separator:aca6021b78e0742cb44d9753d99c5dce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1b2475f8c9a6d208853bd76d75517e"><td class="memItemLeft" align="right" valign="top"><a id="aaf1b2475f8c9a6d208853bd76d75517e" name="aaf1b2475f8c9a6d208853bd76d75517e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalType</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aaf1b2475f8c9a6d208853bd76d75517e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalType. <br /></td></tr>
+<tr class="separator:aaf1b2475f8c9a6d208853bd76d75517e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b73f24c2428dbcd3c0b7ab14256d022"><td class="memItemLeft" align="right" valign="top"><a id="a4b73f24c2428dbcd3c0b7ab14256d022" name="a4b73f24c2428dbcd3c0b7ab14256d022"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRegTime</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a4b73f24c2428dbcd3c0b7ab14256d022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RegTime. <br /></td></tr>
+<tr class="separator:a4b73f24c2428dbcd3c0b7ab14256d022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6504ff9fe119917855c1021792f1a85b"><td class="memItemLeft" align="right" valign="top"><a id="a6504ff9fe119917855c1021792f1a85b" name="a6504ff9fe119917855c1021792f1a85b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalIndex</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a6504ff9fe119917855c1021792f1a85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalIndex. <br /></td></tr>
+<tr class="separator:a6504ff9fe119917855c1021792f1a85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6683189cfad2238f0607ee04b4850bec"><td class="memItemLeft" align="right" valign="top"><a id="a6683189cfad2238f0607ee04b4850bec" name="a6683189cfad2238f0607ee04b4850bec"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemIndex</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a6683189cfad2238f0607ee04b4850bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemIndex. <br /></td></tr>
+<tr class="separator:a6683189cfad2238f0607ee04b4850bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe26df6baa19f1edd20c5d4ee38fbae8"><td class="memItemLeft" align="right" valign="top"><a id="abe26df6baa19f1edd20c5d4ee38fbae8" name="abe26df6baa19f1edd20c5d4ee38fbae8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDurability</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:abe26df6baa19f1edd20c5d4ee38fbae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Durability. <br /></td></tr>
+<tr class="separator:abe26df6baa19f1edd20c5d4ee38fbae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2408d51217de5cab65533804ed671b00"><td class="memItemLeft" align="right" valign="top"><a id="a2408d51217de5cab65533804ed671b00" name="a2408d51217de5cab65533804ed671b00"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSerialNumber</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2408d51217de5cab65533804ed671b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to SerialNumber. <br /></td></tr>
+<tr class="separator:a2408d51217de5cab65533804ed671b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39430d1e44b9d9860332e96c28f22452"><td class="memItemLeft" align="right" valign="top"><a id="a39430d1e44b9d9860332e96c28f22452" name="a39430d1e44b9d9860332e96c28f22452"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalMoney</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a39430d1e44b9d9860332e96c28f22452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalMoney. <br /></td></tr>
+<tr class="separator:a39430d1e44b9d9860332e96c28f22452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095564ec892bb7e076ef39f0d1b934b3"><td class="memItemLeft" align="right" valign="top"><a id="a095564ec892bb7e076ef39f0d1b934b3" name="a095564ec892bb7e076ef39f0d1b934b3"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalTime</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a095564ec892bb7e076ef39f0d1b934b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalTime. <br /></td></tr>
+<tr class="separator:a095564ec892bb7e076ef39f0d1b934b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd19fbb4acbe00989e4366f84b3b8a9"><td class="memItemLeft" align="right" valign="top"><a id="addd19fbb4acbe00989e4366f84b3b8a9" name="addd19fbb4acbe00989e4366f84b3b8a9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDuringTime</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:addd19fbb4acbe00989e4366f84b3b8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to DuringTime. <br /></td></tr>
+<tr class="separator:addd19fbb4acbe00989e4366f84b3b8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d6f65ae7894fe00445511c3ce36a39"><td class="memItemLeft" align="right" valign="top"><a id="a21d6f65ae7894fe00445511c3ce36a39" name="a21d6f65ae7894fe00445511c3ce36a39"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRentalTimestamp</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a21d6f65ae7894fe00445511c3ce36a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RentalTimestamp. <br /></td></tr>
+<tr class="separator:a21d6f65ae7894fe00445511c3ce36a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7703f3f59cf67975c63f359a06cbff7b"><td class="memItemLeft" align="right" valign="top"><a id="a7703f3f59cf67975c63f359a06cbff7b" name="a7703f3f59cf67975c63f359a06cbff7b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRegisterTime</b> (<a class="el" href="classmodel_1_1UserRentalItem.html">model::UserRentalItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a7703f3f59cf67975c63f359a06cbff7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RegisterTime. <br /></td></tr>
+<tr class="separator:a7703f3f59cf67975c63f359a06cbff7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1UserRentalItem.html" title="[USER_RENTAL_ITEM] User rental item">UserRentalItem</a> model, using nanodbc </p>

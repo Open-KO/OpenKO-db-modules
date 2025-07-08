@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1MakeItemRareCodeBinder.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3ace143b143215fdebf97362d26ed8b6"><td class="memItemLeft" align="right" valign="top"><a id="a3ace143b143215fdebf97362d26ed8b6" name="a3ace143b143215fdebf97362d26ed8b6"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MakeItemRareCode.html">MakeItemRareCode</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a3ace143b143215fdebf97362d26ed8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b953fbd3749beff89480dbd4d8234c"><td class="memItemLeft" align="right" valign="top"><a id="a06b953fbd3749beff89480dbd4d8234c" name="a06b953fbd3749beff89480dbd4d8234c"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MakeItemRareCode.html">model::MakeItemRareCode</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a06b953fbd3749beff89480dbd4d8234c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae36f3ca03d05d3ccaeafb2eb90237c1c"><td class="memItemLeft" align="right" valign="top"><a id="ae36f3ca03d05d3ccaeafb2eb90237c1c" name="ae36f3ca03d05d3ccaeafb2eb90237c1c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:ae36f3ca03d05d3ccaeafb2eb90237c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,26 +116,26 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a36eac160a6189db98a7314d4c33370c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a36eac160a6189db98a7314d4c33370c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83896638450be6bd3394956c4624318"><td class="memItemLeft" align="right" valign="top"><a id="ac83896638450be6bd3394956c4624318" name="ac83896638450be6bd3394956c4624318"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevelGrade</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ac83896638450be6bd3394956c4624318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to LevelGrade. <br /></td></tr>
-<tr class="separator:ac83896638450be6bd3394956c4624318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a384d2c9696cf10feff042c452d873b25"><td class="memItemLeft" align="right" valign="top"><a id="a384d2c9696cf10feff042c452d873b25" name="a384d2c9696cf10feff042c452d873b25"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindUpgradeItem</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a384d2c9696cf10feff042c452d873b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to UpgradeItem. <br /></td></tr>
-<tr class="separator:a384d2c9696cf10feff042c452d873b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf94064efc2940c5e0f1c0e4127d8bbe"><td class="memItemLeft" align="right" valign="top"><a id="aaf94064efc2940c5e0f1c0e4127d8bbe" name="aaf94064efc2940c5e0f1c0e4127d8bbe"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRareItem</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aaf94064efc2940c5e0f1c0e4127d8bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RareItem. <br /></td></tr>
-<tr class="separator:aaf94064efc2940c5e0f1c0e4127d8bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3006552a76fe55244e09206c1905e39"><td class="memItemLeft" align="right" valign="top"><a id="ae3006552a76fe55244e09206c1905e39" name="ae3006552a76fe55244e09206c1905e39"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMagicItem</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae3006552a76fe55244e09206c1905e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MagicItem. <br /></td></tr>
-<tr class="separator:ae3006552a76fe55244e09206c1905e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2368c82919475adef2c225639d7a72"><td class="memItemLeft" align="right" valign="top"><a id="abe2368c82919475adef2c225639d7a72" name="abe2368c82919475adef2c225639d7a72"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGeneralItem</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:abe2368c82919475adef2c225639d7a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to GeneralItem. <br /></td></tr>
-<tr class="separator:abe2368c82919475adef2c225639d7a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f3d92953179b33818931ef6f785f2"><td class="memItemLeft" align="right" valign="top"><a id="ae66f3d92953179b33818931ef6f785f2" name="ae66f3d92953179b33818931ef6f785f2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevelGrade</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">model::MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ae66f3d92953179b33818931ef6f785f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to LevelGrade. <br /></td></tr>
+<tr class="separator:ae66f3d92953179b33818931ef6f785f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518b3cde882d75618621157ea6e12fdf"><td class="memItemLeft" align="right" valign="top"><a id="a518b3cde882d75618621157ea6e12fdf" name="a518b3cde882d75618621157ea6e12fdf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindUpgradeItem</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">model::MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a518b3cde882d75618621157ea6e12fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to UpgradeItem. <br /></td></tr>
+<tr class="separator:a518b3cde882d75618621157ea6e12fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf408cd69d0e6c263e8dec02286fe53"><td class="memItemLeft" align="right" valign="top"><a id="a1bf408cd69d0e6c263e8dec02286fe53" name="a1bf408cd69d0e6c263e8dec02286fe53"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRareItem</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">model::MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a1bf408cd69d0e6c263e8dec02286fe53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RareItem. <br /></td></tr>
+<tr class="separator:a1bf408cd69d0e6c263e8dec02286fe53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cb7e47a740aa9bc9189d00ed57c135"><td class="memItemLeft" align="right" valign="top"><a id="a90cb7e47a740aa9bc9189d00ed57c135" name="a90cb7e47a740aa9bc9189d00ed57c135"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMagicItem</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">model::MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a90cb7e47a740aa9bc9189d00ed57c135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MagicItem. <br /></td></tr>
+<tr class="separator:a90cb7e47a740aa9bc9189d00ed57c135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c4948ddf2bf0e56cd0ad30976b57f6"><td class="memItemLeft" align="right" valign="top"><a id="a96c4948ddf2bf0e56cd0ad30976b57f6" name="a96c4948ddf2bf0e56cd0ad30976b57f6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGeneralItem</b> (<a class="el" href="classmodel_1_1MakeItemRareCode.html">model::MakeItemRareCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a96c4948ddf2bf0e56cd0ad30976b57f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to GeneralItem. <br /></td></tr>
+<tr class="separator:a96c4948ddf2bf0e56cd0ad30976b57f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1MakeItemRareCode.html" title="[MAKE_ITEM_LARECODE] Make item rarity codes">MakeItemRareCode</a> model, using nanodbc </p>

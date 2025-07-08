@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1MakeItemGradeCodeBinder.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7f781620feb6c819e5984c56b662dc3a"><td class="memItemLeft" align="right" valign="top"><a id="a7f781620feb6c819e5984c56b662dc3a" name="a7f781620feb6c819e5984c56b662dc3a"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a7f781620feb6c819e5984c56b662dc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0aa2b706dd89e817136ea8b32a12c44"><td class="memItemLeft" align="right" valign="top"><a id="ac0aa2b706dd89e817136ea8b32a12c44" name="ac0aa2b706dd89e817136ea8b32a12c44"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:ac0aa2b706dd89e817136ea8b32a12c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadc89ed1c33960160a63bf9cd7a391a0"><td class="memItemLeft" align="right" valign="top"><a id="aadc89ed1c33960160a63bf9cd7a391a0" name="aadc89ed1c33960160a63bf9cd7a391a0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:aadc89ed1c33960160a63bf9cd7a391a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,46 +116,46 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a4e60ae5398b60f3fb801c96ba6c013ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a4e60ae5398b60f3fb801c96ba6c013ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae14b1069ff80252341c7690d0d548892"><td class="memItemLeft" align="right" valign="top"><a id="ae14b1069ff80252341c7690d0d548892" name="ae14b1069ff80252341c7690d0d548892"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemIndex</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae14b1069ff80252341c7690d0d548892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemIndex. <br /></td></tr>
-<tr class="separator:ae14b1069ff80252341c7690d0d548892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f2ce39cf4f7b9180a5723e20ff1f6e1"><td class="memItemLeft" align="right" valign="top"><a id="a7f2ce39cf4f7b9180a5723e20ff1f6e1" name="a7f2ce39cf4f7b9180a5723e20ff1f6e1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade1</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a7f2ce39cf4f7b9180a5723e20ff1f6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade1. <br /></td></tr>
-<tr class="separator:a7f2ce39cf4f7b9180a5723e20ff1f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a587c97866df49680c4c1c29844ffa"><td class="memItemLeft" align="right" valign="top"><a id="a32a587c97866df49680c4c1c29844ffa" name="a32a587c97866df49680c4c1c29844ffa"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade2</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a32a587c97866df49680c4c1c29844ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade2. <br /></td></tr>
-<tr class="separator:a32a587c97866df49680c4c1c29844ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15b0fbd419c309958304537c7bbf986"><td class="memItemLeft" align="right" valign="top"><a id="af15b0fbd419c309958304537c7bbf986" name="af15b0fbd419c309958304537c7bbf986"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade3</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af15b0fbd419c309958304537c7bbf986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade3. <br /></td></tr>
-<tr class="separator:af15b0fbd419c309958304537c7bbf986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a605999bbcfd3bc482b56c9ef889abc61"><td class="memItemLeft" align="right" valign="top"><a id="a605999bbcfd3bc482b56c9ef889abc61" name="a605999bbcfd3bc482b56c9ef889abc61"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade4</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a605999bbcfd3bc482b56c9ef889abc61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade4. <br /></td></tr>
-<tr class="separator:a605999bbcfd3bc482b56c9ef889abc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2da607fbcfbe375959333dd057dfad82"><td class="memItemLeft" align="right" valign="top"><a id="a2da607fbcfbe375959333dd057dfad82" name="a2da607fbcfbe375959333dd057dfad82"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade5</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a2da607fbcfbe375959333dd057dfad82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade5. <br /></td></tr>
-<tr class="separator:a2da607fbcfbe375959333dd057dfad82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29bc99720b09a641b307096a9f9c016f"><td class="memItemLeft" align="right" valign="top"><a id="a29bc99720b09a641b307096a9f9c016f" name="a29bc99720b09a641b307096a9f9c016f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade6</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a29bc99720b09a641b307096a9f9c016f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade6. <br /></td></tr>
-<tr class="separator:a29bc99720b09a641b307096a9f9c016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8624d0630569790c6ad94cbe180d234"><td class="memItemLeft" align="right" valign="top"><a id="ab8624d0630569790c6ad94cbe180d234" name="ab8624d0630569790c6ad94cbe180d234"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade7</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab8624d0630569790c6ad94cbe180d234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade7. <br /></td></tr>
-<tr class="separator:ab8624d0630569790c6ad94cbe180d234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b3c7ce50b8bbea77e6dc9544ce97d73"><td class="memItemLeft" align="right" valign="top"><a id="a8b3c7ce50b8bbea77e6dc9544ce97d73" name="a8b3c7ce50b8bbea77e6dc9544ce97d73"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade8</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a8b3c7ce50b8bbea77e6dc9544ce97d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade8. <br /></td></tr>
-<tr class="separator:a8b3c7ce50b8bbea77e6dc9544ce97d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bc505e8030dd7a61e8055894e2125e0"><td class="memItemLeft" align="right" valign="top"><a id="a8bc505e8030dd7a61e8055894e2125e0" name="a8bc505e8030dd7a61e8055894e2125e0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade9</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a8bc505e8030dd7a61e8055894e2125e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade9. <br /></td></tr>
-<tr class="separator:a8bc505e8030dd7a61e8055894e2125e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41581d1bc8bca3517591f34f3e6fd225"><td class="memItemLeft" align="right" valign="top"><a id="a41581d1bc8bca3517591f34f3e6fd225" name="a41581d1bc8bca3517591f34f3e6fd225"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemIndex</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a41581d1bc8bca3517591f34f3e6fd225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemIndex. <br /></td></tr>
+<tr class="separator:a41581d1bc8bca3517591f34f3e6fd225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11064e59388f3eaa52b5919d7fad988e"><td class="memItemLeft" align="right" valign="top"><a id="a11064e59388f3eaa52b5919d7fad988e" name="a11064e59388f3eaa52b5919d7fad988e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade1</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a11064e59388f3eaa52b5919d7fad988e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade1. <br /></td></tr>
+<tr class="separator:a11064e59388f3eaa52b5919d7fad988e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf75d46fcb9b383d81a401accdd2797"><td class="memItemLeft" align="right" valign="top"><a id="aebf75d46fcb9b383d81a401accdd2797" name="aebf75d46fcb9b383d81a401accdd2797"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade2</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aebf75d46fcb9b383d81a401accdd2797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade2. <br /></td></tr>
+<tr class="separator:aebf75d46fcb9b383d81a401accdd2797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b46b46394d8285f4371266b266369d"><td class="memItemLeft" align="right" valign="top"><a id="af6b46b46394d8285f4371266b266369d" name="af6b46b46394d8285f4371266b266369d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade3</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:af6b46b46394d8285f4371266b266369d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade3. <br /></td></tr>
+<tr class="separator:af6b46b46394d8285f4371266b266369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3cd24f0a08843b7aa46c755013d85e"><td class="memItemLeft" align="right" valign="top"><a id="a5d3cd24f0a08843b7aa46c755013d85e" name="a5d3cd24f0a08843b7aa46c755013d85e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade4</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a5d3cd24f0a08843b7aa46c755013d85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade4. <br /></td></tr>
+<tr class="separator:a5d3cd24f0a08843b7aa46c755013d85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe8a53c115a0de908b12141ef489b60"><td class="memItemLeft" align="right" valign="top"><a id="adfe8a53c115a0de908b12141ef489b60" name="adfe8a53c115a0de908b12141ef489b60"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade5</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:adfe8a53c115a0de908b12141ef489b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade5. <br /></td></tr>
+<tr class="separator:adfe8a53c115a0de908b12141ef489b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f3b13b3c77b2b9618e9b8dd657abf2"><td class="memItemLeft" align="right" valign="top"><a id="ae8f3b13b3c77b2b9618e9b8dd657abf2" name="ae8f3b13b3c77b2b9618e9b8dd657abf2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade6</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ae8f3b13b3c77b2b9618e9b8dd657abf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade6. <br /></td></tr>
+<tr class="separator:ae8f3b13b3c77b2b9618e9b8dd657abf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c18a785081e45bb19881b85e0d5cc03"><td class="memItemLeft" align="right" valign="top"><a id="a0c18a785081e45bb19881b85e0d5cc03" name="a0c18a785081e45bb19881b85e0d5cc03"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade7</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a0c18a785081e45bb19881b85e0d5cc03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade7. <br /></td></tr>
+<tr class="separator:a0c18a785081e45bb19881b85e0d5cc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3bb7310a9484c2121a18bade1aeac6"><td class="memItemLeft" align="right" valign="top"><a id="a0d3bb7310a9484c2121a18bade1aeac6" name="a0d3bb7310a9484c2121a18bade1aeac6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade8</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a0d3bb7310a9484c2121a18bade1aeac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade8. <br /></td></tr>
+<tr class="separator:a0d3bb7310a9484c2121a18bade1aeac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa027b992eb634c1e603423f4787ad2ed"><td class="memItemLeft" align="right" valign="top"><a id="aa027b992eb634c1e603423f4787ad2ed" name="aa027b992eb634c1e603423f4787ad2ed"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindGrade9</b> (<a class="el" href="classmodel_1_1MakeItemGradeCode.html">model::MakeItemGradeCode</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa027b992eb634c1e603423f4787ad2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Grade9. <br /></td></tr>
+<tr class="separator:aa027b992eb634c1e603423f4787ad2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1MakeItemGradeCode.html" title="[MAKE_ITEM_GRADECODE] Make item grade code">MakeItemGradeCode</a> model, using nanodbc </p>

@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1UserKnightsRankBinder.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3ce110684a9a89853f042aab69a363c3"><td class="memItemLeft" align="right" valign="top"><a id="a3ce110684a9a89853f042aab69a363c3" name="a3ce110684a9a89853f042aab69a363c3"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a3ce110684a9a89853f042aab69a363c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe61231b449209340bc17a9f54664d69"><td class="memItemLeft" align="right" valign="top"><a id="afe61231b449209340bc17a9f54664d69" name="afe61231b449209340bc17a9f54664d69"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:afe61231b449209340bc17a9f54664d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8805c31ddc5a545c0b322c5e140364e7"><td class="memItemLeft" align="right" valign="top"><a id="a8805c31ddc5a545c0b322c5e140364e7" name="a8805c31ddc5a545c0b322c5e140364e7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a8805c31ddc5a545c0b322c5e140364e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,42 +116,42 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a0e53d727436dc4c8506dcbdf6e5c7d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a0e53d727436dc4c8506dcbdf6e5c7d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dfa45a26883aae1235c9518cf390a72"><td class="memItemLeft" align="right" valign="top"><a id="a9dfa45a26883aae1235c9518cf390a72" name="a9dfa45a26883aae1235c9518cf390a72"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9dfa45a26883aae1235c9518cf390a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
-<tr class="separator:a9dfa45a26883aae1235c9518cf390a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef54b9ff0b258ead5942b4b82b43e16"><td class="memItemLeft" align="right" valign="top"><a id="a9ef54b9ff0b258ead5942b4b82b43e16" name="a9ef54b9ff0b258ead5942b4b82b43e16"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9ef54b9ff0b258ead5942b4b82b43e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
-<tr class="separator:a9ef54b9ff0b258ead5942b4b82b43e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8229c2d60b9fed92557573c7e25337f"><td class="memItemLeft" align="right" valign="top"><a id="ad8229c2d60b9fed92557573c7e25337f" name="ad8229c2d60b9fed92557573c7e25337f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoUserId</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad8229c2d60b9fed92557573c7e25337f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoUserId. <br /></td></tr>
-<tr class="separator:ad8229c2d60b9fed92557573c7e25337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ecb80b759b611bbd4c5c4293af7c2ec"><td class="memItemLeft" align="right" valign="top"><a id="a5ecb80b759b611bbd4c5c4293af7c2ec" name="a5ecb80b759b611bbd4c5c4293af7c2ec"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoKnightsName</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a5ecb80b759b611bbd4c5c4293af7c2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoKnightsName. <br /></td></tr>
-<tr class="separator:a5ecb80b759b611bbd4c5c4293af7c2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f8792a5c5966a8db777d35df0fc890"><td class="memItemLeft" align="right" valign="top"><a id="ae0f8792a5c5966a8db777d35df0fc890" name="ae0f8792a5c5966a8db777d35df0fc890"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoLoyalty</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae0f8792a5c5966a8db777d35df0fc890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoLoyalty. <br /></td></tr>
-<tr class="separator:ae0f8792a5c5966a8db777d35df0fc890"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab02596e3a1ec6680ffcd158f34e27c02"><td class="memItemLeft" align="right" valign="top"><a id="ab02596e3a1ec6680ffcd158f34e27c02" name="ab02596e3a1ec6680ffcd158f34e27c02"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusUserId</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab02596e3a1ec6680ffcd158f34e27c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusUserId. <br /></td></tr>
-<tr class="separator:ab02596e3a1ec6680ffcd158f34e27c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d938b6fc0c721e055ee5f915ce7683e"><td class="memItemLeft" align="right" valign="top"><a id="a6d938b6fc0c721e055ee5f915ce7683e" name="a6d938b6fc0c721e055ee5f915ce7683e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusKnightsName</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a6d938b6fc0c721e055ee5f915ce7683e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusKnightsName. <br /></td></tr>
-<tr class="separator:a6d938b6fc0c721e055ee5f915ce7683e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3aaba3a23040b0b600b44fe162c4aff"><td class="memItemLeft" align="right" valign="top"><a id="aa3aaba3a23040b0b600b44fe162c4aff" name="aa3aaba3a23040b0b600b44fe162c4aff"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusLoyalty</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aa3aaba3a23040b0b600b44fe162c4aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusLoyalty. <br /></td></tr>
-<tr class="separator:aa3aaba3a23040b0b600b44fe162c4aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1dd6da9231b17f7392fcb2752d61e02"><td class="memItemLeft" align="right" valign="top"><a id="af1dd6da9231b17f7392fcb2752d61e02" name="af1dd6da9231b17f7392fcb2752d61e02"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMoney</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af1dd6da9231b17f7392fcb2752d61e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Money. <br /></td></tr>
-<tr class="separator:af1dd6da9231b17f7392fcb2752d61e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa988af407c272e5bebea6739179a46f"><td class="memItemLeft" align="right" valign="top"><a id="afa988af407c272e5bebea6739179a46f" name="afa988af407c272e5bebea6739179a46f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:afa988af407c272e5bebea6739179a46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
+<tr class="separator:afa988af407c272e5bebea6739179a46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d29ed2f493f0dfed47e453210116a03"><td class="memItemLeft" align="right" valign="top"><a id="a2d29ed2f493f0dfed47e453210116a03" name="a2d29ed2f493f0dfed47e453210116a03"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2d29ed2f493f0dfed47e453210116a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
+<tr class="separator:a2d29ed2f493f0dfed47e453210116a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fb9df3ca12aef1d477b3d0498a7169"><td class="memItemLeft" align="right" valign="top"><a id="a26fb9df3ca12aef1d477b3d0498a7169" name="a26fb9df3ca12aef1d477b3d0498a7169"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoUserId</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a26fb9df3ca12aef1d477b3d0498a7169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoUserId. <br /></td></tr>
+<tr class="separator:a26fb9df3ca12aef1d477b3d0498a7169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb942655dc9fdff437dbb3ecd4c315b"><td class="memItemLeft" align="right" valign="top"><a id="abcb942655dc9fdff437dbb3ecd4c315b" name="abcb942655dc9fdff437dbb3ecd4c315b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoKnightsName</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:abcb942655dc9fdff437dbb3ecd4c315b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoKnightsName. <br /></td></tr>
+<tr class="separator:abcb942655dc9fdff437dbb3ecd4c315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579f3cd26f1eb221ad323301c074234a"><td class="memItemLeft" align="right" valign="top"><a id="a579f3cd26f1eb221ad323301c074234a" name="a579f3cd26f1eb221ad323301c074234a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoLoyalty</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a579f3cd26f1eb221ad323301c074234a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoLoyalty. <br /></td></tr>
+<tr class="separator:a579f3cd26f1eb221ad323301c074234a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52987c36edbb99058e52e8940590443b"><td class="memItemLeft" align="right" valign="top"><a id="a52987c36edbb99058e52e8940590443b" name="a52987c36edbb99058e52e8940590443b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusUserId</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a52987c36edbb99058e52e8940590443b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusUserId. <br /></td></tr>
+<tr class="separator:a52987c36edbb99058e52e8940590443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc6bf3ecc02bb50131afd21607f6ec0"><td class="memItemLeft" align="right" valign="top"><a id="a4dc6bf3ecc02bb50131afd21607f6ec0" name="a4dc6bf3ecc02bb50131afd21607f6ec0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusKnightsName</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a4dc6bf3ecc02bb50131afd21607f6ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusKnightsName. <br /></td></tr>
+<tr class="separator:a4dc6bf3ecc02bb50131afd21607f6ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03dc0cfd2269bde336c4673605a643ed"><td class="memItemLeft" align="right" valign="top"><a id="a03dc0cfd2269bde336c4673605a643ed" name="a03dc0cfd2269bde336c4673605a643ed"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusLoyalty</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a03dc0cfd2269bde336c4673605a643ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusLoyalty. <br /></td></tr>
+<tr class="separator:a03dc0cfd2269bde336c4673605a643ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9042f61d6f6afc00d2d3274ba1cfdf"><td class="memItemLeft" align="right" valign="top"><a id="add9042f61d6f6afc00d2d3274ba1cfdf" name="add9042f61d6f6afc00d2d3274ba1cfdf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMoney</b> (<a class="el" href="classmodel_1_1UserKnightsRank.html">model::UserKnightsRank</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:add9042f61d6f6afc00d2d3274ba1cfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Money. <br /></td></tr>
+<tr class="separator:add9042f61d6f6afc00d2d3274ba1cfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1UserKnightsRank.html" title="[USER_KNIGHTS_RANK] User Knights Ranking">UserKnightsRank</a> model, using nanodbc </p>
