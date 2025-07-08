@@ -8,7 +8,7 @@ export module FullModel:MonsterChallengeSummonList;
 
 namespace model
 {
-	class MonsterChallengeSummonListBinder;
+	export class MonsterChallengeSummonListBinder;
 	
 	/// \brief [MONSTER_CHALLENGE_SUMMON_LIST] Forgotten Temple summon list
 	/// \class MonsterChallengeSummonList

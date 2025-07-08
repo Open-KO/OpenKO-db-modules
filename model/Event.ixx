@@ -9,7 +9,7 @@ export module FullModel:Event;
 
 namespace model
 {
-	class EventBinder;
+	export class EventBinder;
 	
 	/// \brief [EVENT] Event Information
 	/// \class Event

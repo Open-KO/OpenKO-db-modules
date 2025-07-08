@@ -9,7 +9,7 @@ export module FullModel:HacktoolUserLog;
 
 namespace model
 {
-	class HacktoolUserLogBinder;
+	export class HacktoolUserLogBinder;
 	
 	/// \brief [HACKTOOL_USERLOG] Tracks possible detections of a hack tool by a user
 	/// \class HacktoolUserLog

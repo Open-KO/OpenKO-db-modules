@@ -9,7 +9,7 @@ export module FullModel:ItemExchange;
 
 namespace model
 {
-	class ItemExchangeBinder;
+	export class ItemExchangeBinder;
 	
 	/// \brief [ITEM_EXCHANGE] Enables players to be able to give items in exchange for an item from an NPC
 	/// \class ItemExchange

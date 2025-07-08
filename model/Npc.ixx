@@ -9,7 +9,7 @@ export module FullModel:Npc;
 
 namespace model
 {
-	class NpcBinder;
+	export class NpcBinder;
 	
 	/// \brief [K_NPC] Non-Player Character
 	/// \class Npc

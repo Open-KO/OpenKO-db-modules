@@ -8,7 +8,7 @@ export module FullModel:UserSavedMagic;
 
 namespace model
 {
-	class UserSavedMagicBinder;
+	export class UserSavedMagicBinder;
 	
 	/// \brief [USER_SAVED_MAGIC] User saved magic
 	/// \class UserSavedMagic

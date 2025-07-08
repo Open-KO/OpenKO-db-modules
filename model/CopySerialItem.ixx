@@ -9,7 +9,7 @@ export module FullModel:CopySerialItem;
 
 namespace model
 {
-	class CopySerialItemBinder;
+	export class CopySerialItemBinder;
 	
 	/// \brief [COPY_SERIAL_ITEM] TODO: Doc
 	/// \class CopySerialItem

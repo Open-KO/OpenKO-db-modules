@@ -8,7 +8,7 @@ export module FullModel:KingCandidacyNoticeBoard;
 
 namespace model
 {
-	class KingCandidacyNoticeBoardBinder;
+	export class KingCandidacyNoticeBoardBinder;
 	
 	/// \brief [KING_CANDIDACY_NOTICE_BOARD] King candidacy notice board
 	/// \class KingCandidacyNoticeBoard

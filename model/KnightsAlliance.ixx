@@ -8,7 +8,7 @@ export module FullModel:KnightsAlliance;
 
 namespace model
 {
-	class KnightsAllianceBinder;
+	export class KnightsAllianceBinder;
 	
 	/// \brief [KNIGHTS_ALLIANCE] Knights alliance formations
 	/// \class KnightsAlliance

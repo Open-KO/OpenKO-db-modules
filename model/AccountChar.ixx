@@ -9,7 +9,7 @@ export module FullModel:AccountChar;
 
 namespace model
 {
-	class AccountCharBinder;
+	export class AccountCharBinder;
 	
 	/// \brief [ACCOUNT_CHAR] Represents the relationship between accounts and characters
 	/// \class AccountChar

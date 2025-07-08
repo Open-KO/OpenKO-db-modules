@@ -9,7 +9,7 @@ export module FullModel:TbUser;
 
 namespace model
 {
-	class TbUserBinder;
+	export class TbUserBinder;
 	
 	/// \brief [TB_USER] User Account Information
 	/// \class TbUser

@@ -9,7 +9,7 @@ export module FullModel:MagicType5;
 
 namespace model
 {
-	class MagicType5Binder;
+	export class MagicType5Binder;
 	
 	/// \brief [MAGIC_TYPE5] Supports recovery skills
 	/// \class MagicType5

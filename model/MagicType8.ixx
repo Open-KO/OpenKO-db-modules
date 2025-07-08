@@ -9,7 +9,7 @@ export module FullModel:MagicType8;
 
 namespace model
 {
-	class MagicType8Binder;
+	export class MagicType8Binder;
 	
 	/// \brief [MAGIC_TYPE8] Supports warp magic
 	/// \class MagicType8

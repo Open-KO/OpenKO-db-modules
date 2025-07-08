@@ -8,7 +8,7 @@ export module FullModel:UserDataSkillShortcut;
 
 namespace model
 {
-	class UserDataSkillShortcutBinder;
+	export class UserDataSkillShortcutBinder;
 	
 	/// \brief [USERDATA_SKILLSHORTCUT] User data skill shortcut
 	/// \class UserDataSkillShortcut

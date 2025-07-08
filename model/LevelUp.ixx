@@ -8,7 +8,7 @@ export module FullModel:LevelUp;
 
 namespace model
 {
-	class LevelUpBinder;
+	export class LevelUpBinder;
 	
 	/// \brief [LEVEL_UP] Level experience requirements
 	/// \class LevelUp

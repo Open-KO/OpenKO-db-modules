@@ -9,7 +9,7 @@ export module FullModel:KnightsSiegeWarfare;
 
 namespace model
 {
-	class KnightsSiegeWarfareBinder;
+	export class KnightsSiegeWarfareBinder;
 	
 	/// \brief [KNIGHTS_SIEGE_WARFARE] Knights Siege Warfare
 	/// \class KnightsSiegeWarfare

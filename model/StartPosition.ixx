@@ -8,7 +8,7 @@ export module FullModel:StartPosition;
 
 namespace model
 {
-	class StartPositionBinder;
+	export class StartPositionBinder;
 	
 	/// \brief [START_POSITION] Start position
 	/// \class StartPosition

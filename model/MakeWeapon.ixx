@@ -9,7 +9,7 @@ export module FullModel:MakeWeapon;
 
 namespace model
 {
-	class MakeWeaponBinder;
+	export class MakeWeaponBinder;
 	
 	/// \brief [MAKE_WEAPON] Make weapon
 	/// \class MakeWeapon

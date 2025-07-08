@@ -9,7 +9,7 @@ export module FullModel:HeroUser;
 
 namespace model
 {
-	class HeroUserBinder;
+	export class HeroUserBinder;
 	
 	/// \brief [HERO_USER] TODO Doc
 	/// \class HeroUser

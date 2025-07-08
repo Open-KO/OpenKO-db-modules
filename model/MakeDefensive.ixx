@@ -9,7 +9,7 @@ export module FullModel:MakeDefensive;
 
 namespace model
 {
-	class MakeDefensiveBinder;
+	export class MakeDefensiveBinder;
 	
 	/// \brief [MAKE_DEFENSIVE] Make defensive
 	/// \class MakeDefensive

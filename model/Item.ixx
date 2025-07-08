@@ -8,7 +8,7 @@ export module FullModel:Item;
 
 namespace model
 {
-	class ItemBinder;
+	export class ItemBinder;
 	
 	/// \brief [ITEM] Item information
 	/// \class Item

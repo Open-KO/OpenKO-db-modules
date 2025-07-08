@@ -9,7 +9,7 @@ export module FullModel:Warehouse;
 
 namespace model
 {
-	class WarehouseBinder;
+	export class WarehouseBinder;
 	
 	/// \brief [WAREHOUSE] The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
 	/// \class Warehouse

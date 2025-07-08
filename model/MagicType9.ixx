@@ -9,7 +9,7 @@ export module FullModel:MagicType9;
 
 namespace model
 {
-	class MagicType9Binder;
+	export class MagicType9Binder;
 	
 	/// \brief [MAGIC_TYPE9] Supports stealth and detection abilities
 	/// \class MagicType9

@@ -8,7 +8,7 @@ export module FullModel:KnightsCape;
 
 namespace model
 {
-	class KnightsCapeBinder;
+	export class KnightsCapeBinder;
 	
 	/// \brief [KNIGHTS_CAPE] Knights cape information
 	/// \class KnightsCape

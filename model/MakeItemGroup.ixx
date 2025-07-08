@@ -8,7 +8,7 @@ export module FullModel:MakeItemGroup;
 
 namespace model
 {
-	class MakeItemGroupBinder;
+	export class MakeItemGroupBinder;
 	
 	/// \brief [MAKE_ITEM_GROUP] Make item group
 	/// \class MakeItemGroup

@@ -8,7 +8,7 @@ export module FullModel:FriendList;
 
 namespace model
 {
-	class FriendListBinder;
+	export class FriendListBinder;
 	
 	/// \brief [FRIEND_LIST] User friend list
 	/// \class FriendList

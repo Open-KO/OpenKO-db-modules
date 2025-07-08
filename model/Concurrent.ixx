@@ -9,7 +9,7 @@ export module FullModel:Concurrent;
 
 namespace model
 {
-	class ConcurrentBinder;
+	export class ConcurrentBinder;
 	
 	/// \brief [CONCURRENT] Keeps track of concurrent user counts
 	/// \class Concurrent

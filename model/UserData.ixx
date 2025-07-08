@@ -10,7 +10,7 @@ export module FullModel:UserData;
 
 namespace model
 {
-	class UserDataBinder;
+	export class UserDataBinder;
 	
 	/// \brief [USERDATA] User data contains saved character information
 	/// \class UserData

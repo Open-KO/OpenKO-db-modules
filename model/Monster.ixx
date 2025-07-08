@@ -9,7 +9,7 @@ export module FullModel:Monster;
 
 namespace model
 {
-	class MonsterBinder;
+	export class MonsterBinder;
 	
 	/// \brief [K_MONSTER] Monster definitions
 	/// \class Monster

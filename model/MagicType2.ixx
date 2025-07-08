@@ -9,7 +9,7 @@ export module FullModel:MagicType2;
 
 namespace model
 {
-	class MagicType2Binder;
+	export class MagicType2Binder;
 	
 	/// \brief [MAGIC_TYPE2] Supports bow abilities
 	/// \class MagicType2

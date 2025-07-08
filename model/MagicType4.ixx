@@ -9,7 +9,7 @@ export module FullModel:MagicType4;
 
 namespace model
 {
-	class MagicType4Binder;
+	export class MagicType4Binder;
 	
 	/// \brief [MAGIC_TYPE4] Supports stat modification skills
 	/// \class MagicType4

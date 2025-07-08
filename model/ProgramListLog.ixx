@@ -9,7 +9,7 @@ export module FullModel:ProgramListLog;
 
 namespace model
 {
-	class ProgramListLogBinder;
+	export class ProgramListLogBinder;
 	
 	/// \brief [PROGRAMLIST_LOG] Program list log
 	/// \class ProgramListLog

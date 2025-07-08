@@ -9,7 +9,7 @@ export module FullModel:NpcMoveItem;
 
 namespace model
 {
-	class NpcMoveItemBinder;
+	export class NpcMoveItemBinder;
 	
 	/// \brief [K_NPC_MOVE_ITEM] NPC Move Item: TODO
 	/// \class NpcMoveItem

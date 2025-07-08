@@ -9,7 +9,7 @@ export module FullModel:MonsterItem;
 
 namespace model
 {
-	class MonsterItemBinder;
+	export class MonsterItemBinder;
 	
 	/// \brief [K_MONSTER_ITEM] Monster loot table
 	/// \class MonsterItem

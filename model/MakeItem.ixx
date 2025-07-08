@@ -9,7 +9,7 @@ export module FullModel:MakeItem;
 
 namespace model
 {
-	class MakeItemBinder;
+	export class MakeItemBinder;
 	
 	/// \brief [MAKE_ITEM] Make item
 	/// \class MakeItem

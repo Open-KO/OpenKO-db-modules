@@ -8,7 +8,7 @@ export module FullModel:Home;
 
 namespace model
 {
-	class HomeBinder;
+	export class HomeBinder;
 	
 	/// \brief [HOME] TODO Doc
 	/// \class Home

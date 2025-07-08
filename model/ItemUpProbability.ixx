@@ -8,7 +8,7 @@ export module FullModel:ItemUpProbability;
 
 namespace model
 {
-	class ItemUpProbabilityBinder;
+	export class ItemUpProbabilityBinder;
 	
 	/// \brief [ITEMUP_PROBABILITY] TODO: Doc usage
 	/// \class ItemUpProbability

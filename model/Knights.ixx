@@ -10,7 +10,7 @@ export module FullModel:Knights;
 
 namespace model
 {
-	class KnightsBinder;
+	export class KnightsBinder;
 	
 	/// \brief [KNIGHTS] Knights are the clan/guild system of the game
 	/// \class Knights

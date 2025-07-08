@@ -8,7 +8,7 @@ export module FullModel:CurrentUser;
 
 namespace model
 {
-	class CurrentUserBinder;
+	export class CurrentUserBinder;
 	
 	/// \brief [CURRENTUSER] Keeps track of users currently connected to the server
 	/// \class CurrentUser

@@ -8,7 +8,7 @@ export module FullModel:EventTrigger;
 
 namespace model
 {
-	class EventTriggerBinder;
+	export class EventTriggerBinder;
 	
 	/// \brief [EVENT_TRIGGER] NPC Event Triggers
 	/// \class EventTrigger

@@ -9,7 +9,7 @@ export module FullModel:ServerResource;
 
 namespace model
 {
-	class ServerResourceBinder;
+	export class ServerResourceBinder;
 	
 	/// \brief [SERVER_RESOURCE] Server resource
 	/// \class ServerResource

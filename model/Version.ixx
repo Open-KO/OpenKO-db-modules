@@ -8,7 +8,7 @@ export module FullModel:Version;
 
 namespace model
 {
-	class VersionBinder;
+	export class VersionBinder;
 	
 	/// \brief [VERSION] Version data and patch management
 	/// \class Version

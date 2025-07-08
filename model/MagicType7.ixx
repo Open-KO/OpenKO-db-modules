@@ -9,7 +9,7 @@ export module FullModel:MagicType7;
 
 namespace model
 {
-	class MagicType7Binder;
+	export class MagicType7Binder;
 	
 	/// \brief [MAGIC_TYPE7] Supports targeting modifications
 	/// \class MagicType7

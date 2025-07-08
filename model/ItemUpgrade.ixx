@@ -9,7 +9,7 @@ export module FullModel:ItemUpgrade;
 
 namespace model
 {
-	class ItemUpgradeBinder;
+	export class ItemUpgradeBinder;
 	
 	/// \brief [ITEM_UPGRADE] Item upgrade configuration
 	/// \class ItemUpgrade

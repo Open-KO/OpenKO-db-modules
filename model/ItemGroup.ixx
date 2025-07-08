@@ -9,7 +9,7 @@ export module FullModel:ItemGroup;
 
 namespace model
 {
-	class ItemGroupBinder;
+	export class ItemGroupBinder;
 	
 	/// \brief [ITEM_GROUP] TODO Doc; No Data in table
 	/// \class ItemGroup

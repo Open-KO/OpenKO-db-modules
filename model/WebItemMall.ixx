@@ -10,7 +10,7 @@ export module FullModel:WebItemMall;
 
 namespace model
 {
-	class WebItemMallBinder;
+	export class WebItemMallBinder;
 	
 	/// \brief [WEB_ITEMMALL] Power-up store purchases
 	/// \class WebItemMall

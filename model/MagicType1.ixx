@@ -9,7 +9,7 @@ export module FullModel:MagicType1;
 
 namespace model
 {
-	class MagicType1Binder;
+	export class MagicType1Binder;
 	
 	/// \brief [MAGIC_TYPE1] Supports melee abilities
 	/// \class MagicType1

@@ -9,7 +9,7 @@ export module FullModel:Coefficient;
 
 namespace model
 {
-	class CoefficientBinder;
+	export class CoefficientBinder;
 	
 	/// \brief [COEFFICIENT] Coefficient relationship between a character class, weapon types, and stats
 	/// \class Coefficient

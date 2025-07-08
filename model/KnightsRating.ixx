@@ -9,7 +9,7 @@ export module FullModel:KnightsRating;
 
 namespace model
 {
-	class KnightsRatingBinder;
+	export class KnightsRatingBinder;
 	
 	/// \brief [KNIGHTS_RATING] Knights Ratings
 	/// \class KnightsRating

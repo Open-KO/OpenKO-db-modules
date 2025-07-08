@@ -9,7 +9,7 @@ export module FullModel:NpcPos;
 
 namespace model
 {
-	class NpcPosBinder;
+	export class NpcPosBinder;
 	
 	/// \brief [K_NPCPOS] NPC Spawn Positions
 	/// \class NpcPos

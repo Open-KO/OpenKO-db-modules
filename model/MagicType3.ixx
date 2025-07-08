@@ -9,7 +9,7 @@ export module FullModel:MagicType3;
 
 namespace model
 {
-	class MagicType3Binder;
+	export class MagicType3Binder;
 	
 	/// \brief [MAGIC_TYPE3] Supports Area of Effect and Damage over Time effects
 	/// \class MagicType3

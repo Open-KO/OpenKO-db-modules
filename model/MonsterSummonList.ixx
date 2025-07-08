@@ -9,7 +9,7 @@ export module FullModel:MonsterSummonList;
 
 namespace model
 {
-	class MonsterSummonListBinder;
+	export class MonsterSummonListBinder;
 	
 	/// \brief [MONSTER_SUMMON_LIST] Monster summon list
 	/// \class MonsterSummonList

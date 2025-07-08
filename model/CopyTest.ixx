@@ -8,7 +8,7 @@ export module FullModel:CopyTest;
 
 namespace model
 {
-	class CopyTestBinder;
+	export class CopyTestBinder;
 	
 	/// \brief [COPY_TEST] TODO: Doc
 	/// \class CopyTest

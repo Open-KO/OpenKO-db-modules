@@ -9,7 +9,7 @@ export module FullModel:Magic;
 
 namespace model
 {
-	class MagicBinder;
+	export class MagicBinder;
 	
 	/// \brief [MAGIC] Contains the configuration for magic and abilities
 	/// \class Magic

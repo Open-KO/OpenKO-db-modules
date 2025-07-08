@@ -10,7 +10,7 @@ export module FullModel:UserEditorItem;
 
 namespace model
 {
-	class UserEditorItemBinder;
+	export class UserEditorItemBinder;
 	
 	/// \brief [USER_EDITOR_ITEM] User editor item
 	/// \class UserEditorItem

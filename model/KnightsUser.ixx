@@ -8,7 +8,7 @@ export module FullModel:KnightsUser;
 
 namespace model
 {
-	class KnightsUserBinder;
+	export class KnightsUserBinder;
 	
 	/// \brief [KNIGHTS_USER] Knights to character relationships
 	/// \class KnightsUser

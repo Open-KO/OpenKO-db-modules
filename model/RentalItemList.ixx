@@ -10,7 +10,7 @@ export module FullModel:RentalItemList;
 
 namespace model
 {
-	class RentalItemListBinder;
+	export class RentalItemListBinder;
 	
 	/// \brief [RENTAL_ITEM_LIST] Rental item list
 	/// \class RentalItemList

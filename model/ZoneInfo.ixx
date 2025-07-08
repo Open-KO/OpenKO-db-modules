@@ -9,7 +9,7 @@ export module FullModel:ZoneInfo;
 
 namespace model
 {
-	class ZoneInfoBinder;
+	export class ZoneInfoBinder;
 	
 	/// \brief [ZONE_INFO] Zone (map) information
 	/// \class ZoneInfo

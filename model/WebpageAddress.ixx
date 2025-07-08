@@ -9,7 +9,7 @@ export module FullModel:WebpageAddress;
 
 namespace model
 {
-	class WebpageAddressBinder;
+	export class WebpageAddressBinder;
 	
 	/// \brief [WEBPAGE_ADDRESS] Webpage URL list
 	/// \class WebpageAddress

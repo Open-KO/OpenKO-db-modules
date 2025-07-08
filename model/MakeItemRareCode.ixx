@@ -8,7 +8,7 @@ export module FullModel:MakeItemRareCode;
 
 namespace model
 {
-	class MakeItemRareCodeBinder;
+	export class MakeItemRareCodeBinder;
 	
 	/// \brief [MAKE_ITEM_LARECODE] Make item rarity codes
 	/// \class MakeItemRareCode

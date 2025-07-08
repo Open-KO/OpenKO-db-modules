@@ -8,7 +8,7 @@ export module FullModel:CouponSerialList;
 
 namespace model
 {
-	class CouponSerialListBinder;
+	export class CouponSerialListBinder;
 	
 	/// \brief [COUPON_SERIAL_LIST] Coupon Serial List
 	/// \class CouponSerialList

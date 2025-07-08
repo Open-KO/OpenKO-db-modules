@@ -9,7 +9,7 @@ export module FullModel:MonsterItemTest;
 
 namespace model
 {
-	class MonsterItemTestBinder;
+	export class MonsterItemTestBinder;
 	
 	/// \brief [MONSTER_ITEM_TEST] Monster item test
 	/// \class MonsterItemTest

@@ -10,7 +10,7 @@ export module FullModel:UserPersonalRank;
 
 namespace model
 {
-	class UserPersonalRankBinder;
+	export class UserPersonalRankBinder;
 	
 	/// \brief [USER_PERSONAL_RANK] User personal ranking
 	/// \class UserPersonalRank

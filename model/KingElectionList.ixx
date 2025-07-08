@@ -9,7 +9,7 @@ export module FullModel:KingElectionList;
 
 namespace model
 {
-	class KingElectionListBinder;
+	export class KingElectionListBinder;
 	
 	/// \brief [KING_ELECTION_LIST] King election list
 	/// \class KingElectionList

@@ -9,7 +9,7 @@ export module FullModel:MakeItemGradeCode;
 
 namespace model
 {
-	class MakeItemGradeCodeBinder;
+	export class MakeItemGradeCodeBinder;
 	
 	/// \brief [MAKE_ITEM_GRADECODE] Make item grade code
 	/// \class MakeItemGradeCode

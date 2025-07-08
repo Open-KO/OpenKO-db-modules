@@ -9,7 +9,7 @@ export module FullModel:KingSystem;
 
 namespace model
 {
-	class KingSystemBinder;
+	export class KingSystemBinder;
 	
 	/// \brief [KING_SYSTEM] King System
 	/// \class KingSystem

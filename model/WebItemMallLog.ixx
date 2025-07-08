@@ -10,7 +10,7 @@ export module FullModel:WebItemMallLog;
 
 namespace model
 {
-	class WebItemMallLogBinder;
+	export class WebItemMallLogBinder;
 	
 	/// \brief [WEB_ITEMMALL_LOG] Power-up store purchase log
 	/// \class WebItemMallLog

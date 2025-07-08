@@ -9,7 +9,7 @@ export module FullModel:Battle;
 
 namespace model
 {
-	class BattleBinder;
+	export class BattleBinder;
 	
 	/// \brief [BATTLE] Battle data for the game server
 	/// \class Battle

@@ -9,7 +9,7 @@ export module FullModel:MagicType6;
 
 namespace model
 {
-	class MagicType6Binder;
+	export class MagicType6Binder;
 	
 	/// \brief [MAGIC_TYPE6] Supports transformation magic
 	/// \class MagicType6

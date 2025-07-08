@@ -8,7 +8,7 @@ export module FullModel:KingBallotBox;
 
 namespace model
 {
-	class KingBallotBoxBinder;
+	export class KingBallotBoxBinder;
 	
 	/// \brief [KING_BALLOT_BOX] King Ballot Box TODO
 	/// \class KingBallotBox

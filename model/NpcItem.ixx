@@ -9,7 +9,7 @@ export module FullModel:NpcItem;
 
 namespace model
 {
-	class NpcItemBinder;
+	export class NpcItemBinder;
 	
 	/// \brief [K_NPC_ITEM] NPC loot table
 	/// \class NpcItem
