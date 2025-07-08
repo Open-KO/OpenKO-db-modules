@@ -8,6 +8,8 @@ export module FullModel:MakeItemRareCode;
 
 namespace model
 {
+	class MakeItemRareCode;
+
 	/// \brief generated column binder for the MakeItemRareCode model, using nanodbc
 	export class MakeItemRareCodeBinder
 	{

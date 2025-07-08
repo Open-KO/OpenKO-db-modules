@@ -8,6 +8,8 @@ export module FullModel:StartPosition;
 
 namespace model
 {
+	class StartPosition;
+
 	/// \brief generated column binder for the StartPosition model, using nanodbc
 	export class StartPositionBinder
 	{

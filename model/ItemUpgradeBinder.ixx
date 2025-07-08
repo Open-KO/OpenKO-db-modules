@@ -8,6 +8,8 @@ export module FullModel:ItemUpgrade;
 
 namespace model
 {
+	class ItemUpgrade;
+
 	/// \brief generated column binder for the ItemUpgrade model, using nanodbc
 	export class ItemUpgradeBinder
 	{

@@ -70,7 +70,7 @@ namespace model
 		}
 
 		/// \brief Returns a set of column names for the table
-		static std::unordered_set<std::string>& ColumnNames()
+		static const std::unordered_set<std::string>& ColumnNames()
 		{
 			static const std::unordered_set<std::string> columnNames =
 			{
@@ -80,7 +80,7 @@ namespace model
 		}
 
 		/// \brief Returns the associated database type for the table
-		static std::string& DbType()
+		static const std::string& DbType()
 		{
 			static const std::string dbType = "GAME";
 			return dbType;

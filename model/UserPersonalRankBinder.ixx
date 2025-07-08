@@ -8,6 +8,8 @@ export module FullModel:UserPersonalRank;
 
 namespace model
 {
+	class UserPersonalRank;
+
 	/// \brief generated column binder for the UserPersonalRank model, using nanodbc
 	export class UserPersonalRankBinder
 	{

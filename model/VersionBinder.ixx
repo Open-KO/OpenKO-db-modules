@@ -8,6 +8,8 @@ export module FullModel:Version;
 
 namespace model
 {
+	class Version;
+
 	/// \brief generated column binder for the Version model, using nanodbc
 	export class VersionBinder
 	{

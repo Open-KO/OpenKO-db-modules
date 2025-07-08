@@ -8,6 +8,8 @@ export module FullModel:WebpageAddress;
 
 namespace model
 {
+	class WebpageAddress;
+
 	/// \brief generated column binder for the WebpageAddress model, using nanodbc
 	export class WebpageAddressBinder
 	{

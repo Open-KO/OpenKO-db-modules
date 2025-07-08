@@ -8,6 +8,8 @@ export module FullModel:KingElectionList;
 
 namespace model
 {
+	class KingElectionList;
+
 	/// \brief generated column binder for the KingElectionList model, using nanodbc
 	export class KingElectionListBinder
 	{

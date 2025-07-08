@@ -8,6 +8,8 @@ export module FullModel:ProgramListLog;
 
 namespace model
 {
+	class ProgramListLog;
+
 	/// \brief generated column binder for the ProgramListLog model, using nanodbc
 	export class ProgramListLogBinder
 	{

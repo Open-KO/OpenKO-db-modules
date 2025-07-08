@@ -8,6 +8,8 @@ export module FullModel:HacktoolUserLog;
 
 namespace model
 {
+	class HacktoolUserLog;
+
 	/// \brief generated column binder for the HacktoolUserLog model, using nanodbc
 	export class HacktoolUserLogBinder
 	{

@@ -8,6 +8,8 @@ export module FullModel:FriendList;
 
 namespace model
 {
+	class FriendList;
+
 	/// \brief generated column binder for the FriendList model, using nanodbc
 	export class FriendListBinder
 	{

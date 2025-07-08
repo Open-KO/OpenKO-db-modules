@@ -8,6 +8,8 @@ export module FullModel:UserEditorItem;
 
 namespace model
 {
+	class UserEditorItem;
+
 	/// \brief generated column binder for the UserEditorItem model, using nanodbc
 	export class UserEditorItemBinder
 	{

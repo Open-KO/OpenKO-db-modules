@@ -8,6 +8,8 @@ export module FullModel:KnightsCape;
 
 namespace model
 {
+	class KnightsCape;
+
 	/// \brief generated column binder for the KnightsCape model, using nanodbc
 	export class KnightsCapeBinder
 	{

@@ -8,6 +8,8 @@ export module FullModel:KingCandidacyNoticeBoard;
 
 namespace model
 {
+	class KingCandidacyNoticeBoard;
+
 	/// \brief generated column binder for the KingCandidacyNoticeBoard model, using nanodbc
 	export class KingCandidacyNoticeBoardBinder
 	{

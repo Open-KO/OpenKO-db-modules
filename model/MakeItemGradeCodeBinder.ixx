@@ -8,6 +8,8 @@ export module FullModel:MakeItemGradeCode;
 
 namespace model
 {
+	class MakeItemGradeCode;
+
 	/// \brief generated column binder for the MakeItemGradeCode model, using nanodbc
 	export class MakeItemGradeCodeBinder
 	{

@@ -8,6 +8,8 @@ export module FullModel:UserDataSkillShortcut;
 
 namespace model
 {
+	class UserDataSkillShortcut;
+
 	/// \brief generated column binder for the UserDataSkillShortcut model, using nanodbc
 	export class UserDataSkillShortcutBinder
 	{

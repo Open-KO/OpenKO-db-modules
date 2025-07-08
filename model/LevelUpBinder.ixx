@@ -8,6 +8,8 @@ export module FullModel:LevelUp;
 
 namespace model
 {
+	class LevelUp;
+
 	/// \brief generated column binder for the LevelUp model, using nanodbc
 	export class LevelUpBinder
 	{

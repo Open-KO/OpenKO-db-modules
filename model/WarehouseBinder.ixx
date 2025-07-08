@@ -8,6 +8,8 @@ export module FullModel:Warehouse;
 
 namespace model
 {
+	class Warehouse;
+
 	/// \brief generated column binder for the Warehouse model, using nanodbc
 	export class WarehouseBinder
 	{

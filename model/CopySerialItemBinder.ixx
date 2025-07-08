@@ -8,6 +8,8 @@ export module FullModel:CopySerialItem;
 
 namespace model
 {
+	class CopySerialItem;
+
 	/// \brief generated column binder for the CopySerialItem model, using nanodbc
 	export class CopySerialItemBinder
 	{

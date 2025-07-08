@@ -8,6 +8,8 @@ export module FullModel:Concurrent;
 
 namespace model
 {
+	class Concurrent;
+
 	/// \brief generated column binder for the Concurrent model, using nanodbc
 	export class ConcurrentBinder
 	{

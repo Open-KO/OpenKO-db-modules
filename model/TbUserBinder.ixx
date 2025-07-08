@@ -8,6 +8,8 @@ export module FullModel:TbUser;
 
 namespace model
 {
+	class TbUser;
+
 	/// \brief generated column binder for the TbUser model, using nanodbc
 	export class TbUserBinder
 	{

@@ -8,6 +8,8 @@ export module FullModel:ServerResource;
 
 namespace model
 {
+	class ServerResource;
+
 	/// \brief generated column binder for the ServerResource model, using nanodbc
 	export class ServerResourceBinder
 	{

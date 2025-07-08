@@ -8,6 +8,8 @@ export module FullModel:KingBallotBox;
 
 namespace model
 {
+	class KingBallotBox;
+
 	/// \brief generated column binder for the KingBallotBox model, using nanodbc
 	export class KingBallotBoxBinder
 	{

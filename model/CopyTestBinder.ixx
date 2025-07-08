@@ -8,6 +8,8 @@ export module FullModel:CopyTest;
 
 namespace model
 {
+	class CopyTest;
+
 	/// \brief generated column binder for the CopyTest model, using nanodbc
 	export class CopyTestBinder
 	{

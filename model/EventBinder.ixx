@@ -8,6 +8,8 @@ export module FullModel:Event;
 
 namespace model
 {
+	class Event;
+
 	/// \brief generated column binder for the Event model, using nanodbc
 	export class EventBinder
 	{

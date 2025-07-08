@@ -8,6 +8,8 @@ export module FullModel:AccountChar;
 
 namespace model
 {
+	class AccountChar;
+
 	/// \brief generated column binder for the AccountChar model, using nanodbc
 	export class AccountCharBinder
 	{

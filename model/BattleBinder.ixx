@@ -8,6 +8,8 @@ export module FullModel:Battle;
 
 namespace model
 {
+	class Battle;
+
 	/// \brief generated column binder for the Battle model, using nanodbc
 	export class BattleBinder
 	{

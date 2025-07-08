@@ -8,6 +8,8 @@ export module FullModel:ZoneInfo;
 
 namespace model
 {
+	class ZoneInfo;
+
 	/// \brief generated column binder for the ZoneInfo model, using nanodbc
 	export class ZoneInfoBinder
 	{

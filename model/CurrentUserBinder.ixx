@@ -8,6 +8,8 @@ export module FullModel:CurrentUser;
 
 namespace model
 {
+	class CurrentUser;
+
 	/// \brief generated column binder for the CurrentUser model, using nanodbc
 	export class CurrentUserBinder
 	{

@@ -8,6 +8,8 @@ export module FullModel:WebItemMall;
 
 namespace model
 {
+	class WebItemMall;
+
 	/// \brief generated column binder for the WebItemMall model, using nanodbc
 	export class WebItemMallBinder
 	{

@@ -8,6 +8,8 @@ export module FullModel:EventTrigger;
 
 namespace model
 {
+	class EventTrigger;
+
 	/// \brief generated column binder for the EventTrigger model, using nanodbc
 	export class EventTriggerBinder
 	{

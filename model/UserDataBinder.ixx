@@ -8,6 +8,8 @@ export module FullModel:UserData;
 
 namespace model
 {
+	class UserData;
+
 	/// \brief generated column binder for the UserData model, using nanodbc
 	export class UserDataBinder
 	{

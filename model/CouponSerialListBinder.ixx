@@ -8,6 +8,8 @@ export module FullModel:CouponSerialList;
 
 namespace model
 {
+	class CouponSerialList;
+
 	/// \brief generated column binder for the CouponSerialList model, using nanodbc
 	export class CouponSerialListBinder
 	{

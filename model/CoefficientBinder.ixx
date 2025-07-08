@@ -8,6 +8,8 @@ export module FullModel:Coefficient;
 
 namespace model
 {
+	class Coefficient;
+
 	/// \brief generated column binder for the Coefficient model, using nanodbc
 	export class CoefficientBinder
 	{

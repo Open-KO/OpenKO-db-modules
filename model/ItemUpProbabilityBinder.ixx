@@ -8,6 +8,8 @@ export module FullModel:ItemUpProbability;
 
 namespace model
 {
+	class ItemUpProbability;
+
 	/// \brief generated column binder for the ItemUpProbability model, using nanodbc
 	export class ItemUpProbabilityBinder
 	{

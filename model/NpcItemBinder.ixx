@@ -8,6 +8,8 @@ export module FullModel:NpcItem;
 
 namespace model
 {
+	class NpcItem;
+
 	/// \brief generated column binder for the NpcItem model, using nanodbc
 	export class NpcItemBinder
 	{

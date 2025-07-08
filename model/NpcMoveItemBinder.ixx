@@ -8,6 +8,8 @@ export module FullModel:NpcMoveItem;
 
 namespace model
 {
+	class NpcMoveItem;
+
 	/// \brief generated column binder for the NpcMoveItem model, using nanodbc
 	export class NpcMoveItemBinder
 	{

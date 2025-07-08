@@ -8,6 +8,8 @@ export module FullModel:ItemGroup;
 
 namespace model
 {
+	class ItemGroup;
+
 	/// \brief generated column binder for the ItemGroup model, using nanodbc
 	export class ItemGroupBinder
 	{

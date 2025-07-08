@@ -8,6 +8,8 @@ export module FullModel:KnightsUser;
 
 namespace model
 {
+	class KnightsUser;
+
 	/// \brief generated column binder for the KnightsUser model, using nanodbc
 	export class KnightsUserBinder
 	{

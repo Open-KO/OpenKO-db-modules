@@ -8,6 +8,8 @@ export module FullModel:KnightsSiegeWarfare;
 
 namespace model
 {
+	class KnightsSiegeWarfare;
+
 	/// \brief generated column binder for the KnightsSiegeWarfare model, using nanodbc
 	export class KnightsSiegeWarfareBinder
 	{

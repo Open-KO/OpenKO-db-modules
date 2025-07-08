@@ -8,6 +8,8 @@ export module FullModel:KnightsAlliance;
 
 namespace model
 {
+	class KnightsAlliance;
+
 	/// \brief generated column binder for the KnightsAlliance model, using nanodbc
 	export class KnightsAllianceBinder
 	{

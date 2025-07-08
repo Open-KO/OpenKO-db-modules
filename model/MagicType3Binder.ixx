@@ -8,6 +8,8 @@ export module FullModel:MagicType3;
 
 namespace model
 {
+	class MagicType3;
+
 	/// \brief generated column binder for the MagicType3 model, using nanodbc
 	export class MagicType3Binder
 	{

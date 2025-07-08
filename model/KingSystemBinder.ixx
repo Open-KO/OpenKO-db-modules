@@ -8,6 +8,8 @@ export module FullModel:KingSystem;
 
 namespace model
 {
+	class KingSystem;
+
 	/// \brief generated column binder for the KingSystem model, using nanodbc
 	export class KingSystemBinder
 	{

@@ -8,6 +8,8 @@ export module FullModel:MonsterItemTest;
 
 namespace model
 {
+	class MonsterItemTest;
+
 	/// \brief generated column binder for the MonsterItemTest model, using nanodbc
 	export class MonsterItemTestBinder
 	{

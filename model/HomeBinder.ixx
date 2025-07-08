@@ -8,6 +8,8 @@ export module FullModel:Home;
 
 namespace model
 {
+	class Home;
+
 	/// \brief generated column binder for the Home model, using nanodbc
 	export class HomeBinder
 	{

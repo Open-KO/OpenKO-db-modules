@@ -8,6 +8,8 @@ export module FullModel:HeroUser;
 
 namespace model
 {
+	class HeroUser;
+
 	/// \brief generated column binder for the HeroUser model, using nanodbc
 	export class HeroUserBinder
 	{

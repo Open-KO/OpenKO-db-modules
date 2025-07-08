@@ -8,6 +8,8 @@ export module FullModel:UserSavedMagic;
 
 namespace model
 {
+	class UserSavedMagic;
+
 	/// \brief generated column binder for the UserSavedMagic model, using nanodbc
 	export class UserSavedMagicBinder
 	{

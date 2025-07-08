@@ -8,6 +8,8 @@ export module FullModel:RentalItemList;
 
 namespace model
 {
+	class RentalItemList;
+
 	/// \brief generated column binder for the RentalItemList model, using nanodbc
 	export class RentalItemListBinder
 	{

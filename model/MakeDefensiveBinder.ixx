@@ -8,6 +8,8 @@ export module FullModel:MakeDefensive;
 
 namespace model
 {
+	class MakeDefensive;
+
 	/// \brief generated column binder for the MakeDefensive model, using nanodbc
 	export class MakeDefensiveBinder
 	{

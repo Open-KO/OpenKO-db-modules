@@ -8,6 +8,8 @@ export module FullModel:MakeWeapon;
 
 namespace model
 {
+	class MakeWeapon;
+
 	/// \brief generated column binder for the MakeWeapon model, using nanodbc
 	export class MakeWeaponBinder
 	{
