@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1TbUserBinder.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9d98c9be006557db8c3e2d9ef9572667"><td class="memItemLeft" align="right" valign="top"><a id="a9d98c9be006557db8c3e2d9ef9572667" name="a9d98c9be006557db8c3e2d9ef9572667"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1TbUser.html">model::TbUser</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a9d98c9be006557db8c3e2d9ef9572667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03bdf04b98eec92f6c5290f95789f66"><td class="memItemLeft" align="right" valign="top"><a id="aa03bdf04b98eec92f6c5290f95789f66" name="aa03bdf04b98eec92f6c5290f95789f66"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1TbUser.html">TbUser</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:aa03bdf04b98eec92f6c5290f95789f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d60ad0951e148f045874bb64cc189ac"><td class="memItemLeft" align="right" valign="top"><a id="a8d60ad0951e148f045874bb64cc189ac" name="a8d60ad0951e148f045874bb64cc189ac"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a8d60ad0951e148f045874bb64cc189ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,30 +116,30 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a6981b04c4f0082ea96cc6d8f70181954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a6981b04c4f0082ea96cc6d8f70181954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ce3758b73f9a3f17fd5bf4d8da802e"><td class="memItemLeft" align="right" valign="top"><a id="ab0ce3758b73f9a3f17fd5bf4d8da802e" name="ab0ce3758b73f9a3f17fd5bf4d8da802e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1TbUser.html">model::TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab0ce3758b73f9a3f17fd5bf4d8da802e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
-<tr class="separator:ab0ce3758b73f9a3f17fd5bf4d8da802e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f34b0eeb2591d7bbb836f5965339f44"><td class="memItemLeft" align="right" valign="top"><a id="a9f34b0eeb2591d7bbb836f5965339f44" name="a9f34b0eeb2591d7bbb836f5965339f44"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPassword</b> (<a class="el" href="classmodel_1_1TbUser.html">model::TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9f34b0eeb2591d7bbb836f5965339f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Password. <br /></td></tr>
-<tr class="separator:a9f34b0eeb2591d7bbb836f5965339f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5714629eb0e888f7b7277354ea37232a"><td class="memItemLeft" align="right" valign="top"><a id="a5714629eb0e888f7b7277354ea37232a" name="a5714629eb0e888f7b7277354ea37232a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSocNo</b> (<a class="el" href="classmodel_1_1TbUser.html">model::TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a5714629eb0e888f7b7277354ea37232a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to SocNo. <br /></td></tr>
-<tr class="separator:a5714629eb0e888f7b7277354ea37232a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c7f3a485db36d235c3f57628fa8f58"><td class="memItemLeft" align="right" valign="top"><a id="a31c7f3a485db36d235c3f57628fa8f58" name="a31c7f3a485db36d235c3f57628fa8f58"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindEmail</b> (<a class="el" href="classmodel_1_1TbUser.html">model::TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a31c7f3a485db36d235c3f57628fa8f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Email. <br /></td></tr>
-<tr class="separator:a31c7f3a485db36d235c3f57628fa8f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d1cce7f7d011fefd17a5eb6299ea3f"><td class="memItemLeft" align="right" valign="top"><a id="a64d1cce7f7d011fefd17a5eb6299ea3f" name="a64d1cce7f7d011fefd17a5eb6299ea3f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAuthority</b> (<a class="el" href="classmodel_1_1TbUser.html">model::TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a64d1cce7f7d011fefd17a5eb6299ea3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Authority. <br /></td></tr>
-<tr class="separator:a64d1cce7f7d011fefd17a5eb6299ea3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaa954d93b89a3414b2975cb4b9e7acb"><td class="memItemLeft" align="right" valign="top"><a id="acaa954d93b89a3414b2975cb4b9e7acb" name="acaa954d93b89a3414b2975cb4b9e7acb"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPremiumExpire</b> (<a class="el" href="classmodel_1_1TbUser.html">model::TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:acaa954d93b89a3414b2975cb4b9e7acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to PremiumExpire. <br /></td></tr>
-<tr class="separator:acaa954d93b89a3414b2975cb4b9e7acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae432cf192d86cc8edb50285dde388dc4"><td class="memItemLeft" align="right" valign="top"><a id="ae432cf192d86cc8edb50285dde388dc4" name="ae432cf192d86cc8edb50285dde388dc4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1TbUser.html">TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ae432cf192d86cc8edb50285dde388dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
+<tr class="separator:ae432cf192d86cc8edb50285dde388dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae922be89efc01f93e7477a74b616d67e"><td class="memItemLeft" align="right" valign="top"><a id="ae922be89efc01f93e7477a74b616d67e" name="ae922be89efc01f93e7477a74b616d67e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPassword</b> (<a class="el" href="classmodel_1_1TbUser.html">TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ae922be89efc01f93e7477a74b616d67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Password. <br /></td></tr>
+<tr class="separator:ae922be89efc01f93e7477a74b616d67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e7c43a8ac79ec25f40352d4944e1c7"><td class="memItemLeft" align="right" valign="top"><a id="ae3e7c43a8ac79ec25f40352d4944e1c7" name="ae3e7c43a8ac79ec25f40352d4944e1c7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSocNo</b> (<a class="el" href="classmodel_1_1TbUser.html">TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ae3e7c43a8ac79ec25f40352d4944e1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to SocNo. <br /></td></tr>
+<tr class="separator:ae3e7c43a8ac79ec25f40352d4944e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4da3fc2040e723d7e3965e5f4aea10"><td class="memItemLeft" align="right" valign="top"><a id="aca4da3fc2040e723d7e3965e5f4aea10" name="aca4da3fc2040e723d7e3965e5f4aea10"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindEmail</b> (<a class="el" href="classmodel_1_1TbUser.html">TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aca4da3fc2040e723d7e3965e5f4aea10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Email. <br /></td></tr>
+<tr class="separator:aca4da3fc2040e723d7e3965e5f4aea10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf4ecca672e965760e1feafcd6cbc0f"><td class="memItemLeft" align="right" valign="top"><a id="acdf4ecca672e965760e1feafcd6cbc0f" name="acdf4ecca672e965760e1feafcd6cbc0f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAuthority</b> (<a class="el" href="classmodel_1_1TbUser.html">TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:acdf4ecca672e965760e1feafcd6cbc0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Authority. <br /></td></tr>
+<tr class="separator:acdf4ecca672e965760e1feafcd6cbc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ddf059e78937595fcf024df69c9804a"><td class="memItemLeft" align="right" valign="top"><a id="a9ddf059e78937595fcf024df69c9804a" name="a9ddf059e78937595fcf024df69c9804a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPremiumExpire</b> (<a class="el" href="classmodel_1_1TbUser.html">TbUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a9ddf059e78937595fcf024df69c9804a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to PremiumExpire. <br /></td></tr>
+<tr class="separator:a9ddf059e78937595fcf024df69c9804a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1TbUser.html" title="[TB_USER] User Account Information">TbUser</a> model, using nanodbc </p>

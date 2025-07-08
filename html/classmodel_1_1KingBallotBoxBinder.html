@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1KingBallotBoxBinder.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7888dec7a455841293da399c2968b186"><td class="memItemLeft" align="right" valign="top"><a id="a7888dec7a455841293da399c2968b186" name="a7888dec7a455841293da399c2968b186"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1KingBallotBox.html">model::KingBallotBox</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a7888dec7a455841293da399c2968b186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64094be6759aa4d57173a337c0d382bb"><td class="memItemLeft" align="right" valign="top"><a id="a64094be6759aa4d57173a337c0d382bb" name="a64094be6759aa4d57173a337c0d382bb"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1KingBallotBox.html">KingBallotBox</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a64094be6759aa4d57173a337c0d382bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a2aa91bbf3f2cdfde789414beab6fde"><td class="memItemLeft" align="right" valign="top"><a id="a8a2aa91bbf3f2cdfde789414beab6fde" name="a8a2aa91bbf3f2cdfde789414beab6fde"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a8a2aa91bbf3f2cdfde789414beab6fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,22 +116,22 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:abbfc1c2cdf10a1b11667c96ea4b85929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:abbfc1c2cdf10a1b11667c96ea4b85929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88400a783aade3debac1ff7a520de631"><td class="memItemLeft" align="right" valign="top"><a id="a88400a783aade3debac1ff7a520de631" name="a88400a783aade3debac1ff7a520de631"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1KingBallotBox.html">model::KingBallotBox</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a88400a783aade3debac1ff7a520de631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
-<tr class="separator:a88400a783aade3debac1ff7a520de631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9fb516c565e20533eb6086524b015cf"><td class="memItemLeft" align="right" valign="top"><a id="ad9fb516c565e20533eb6086524b015cf" name="ad9fb516c565e20533eb6086524b015cf"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId</b> (<a class="el" href="classmodel_1_1KingBallotBox.html">model::KingBallotBox</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad9fb516c565e20533eb6086524b015cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId. <br /></td></tr>
-<tr class="separator:ad9fb516c565e20533eb6086524b015cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae372d9bce428d21cf0b549862a600669"><td class="memItemLeft" align="right" valign="top"><a id="ae372d9bce428d21cf0b549862a600669" name="ae372d9bce428d21cf0b549862a600669"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNation</b> (<a class="el" href="classmodel_1_1KingBallotBox.html">model::KingBallotBox</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae372d9bce428d21cf0b549862a600669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Nation. <br /></td></tr>
-<tr class="separator:ae372d9bce428d21cf0b549862a600669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a67ade548eee547ccbc1d41ae14c98"><td class="memItemLeft" align="right" valign="top"><a id="ae9a67ade548eee547ccbc1d41ae14c98" name="ae9a67ade548eee547ccbc1d41ae14c98"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCandidateId</b> (<a class="el" href="classmodel_1_1KingBallotBox.html">model::KingBallotBox</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae9a67ade548eee547ccbc1d41ae14c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CandidateId. <br /></td></tr>
-<tr class="separator:ae9a67ade548eee547ccbc1d41ae14c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8296b3f28fdaeac8f7d597d5a490caae"><td class="memItemLeft" align="right" valign="top"><a id="a8296b3f28fdaeac8f7d597d5a490caae" name="a8296b3f28fdaeac8f7d597d5a490caae"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1KingBallotBox.html">KingBallotBox</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a8296b3f28fdaeac8f7d597d5a490caae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
+<tr class="separator:a8296b3f28fdaeac8f7d597d5a490caae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae207abb8edc0e04a976361c0278bccc5"><td class="memItemLeft" align="right" valign="top"><a id="ae207abb8edc0e04a976361c0278bccc5" name="ae207abb8edc0e04a976361c0278bccc5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId</b> (<a class="el" href="classmodel_1_1KingBallotBox.html">KingBallotBox</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ae207abb8edc0e04a976361c0278bccc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId. <br /></td></tr>
+<tr class="separator:ae207abb8edc0e04a976361c0278bccc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73e25457f8c1b113fe609aba34c2666"><td class="memItemLeft" align="right" valign="top"><a id="af73e25457f8c1b113fe609aba34c2666" name="af73e25457f8c1b113fe609aba34c2666"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNation</b> (<a class="el" href="classmodel_1_1KingBallotBox.html">KingBallotBox</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:af73e25457f8c1b113fe609aba34c2666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Nation. <br /></td></tr>
+<tr class="separator:af73e25457f8c1b113fe609aba34c2666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a1d7b461360af8b950a75613c2c948"><td class="memItemLeft" align="right" valign="top"><a id="a18a1d7b461360af8b950a75613c2c948" name="a18a1d7b461360af8b950a75613c2c948"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCandidateId</b> (<a class="el" href="classmodel_1_1KingBallotBox.html">KingBallotBox</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a18a1d7b461360af8b950a75613c2c948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CandidateId. <br /></td></tr>
+<tr class="separator:a18a1d7b461360af8b950a75613c2c948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1KingBallotBox.html" title="[KING_BALLOT_BOX] King Ballot Box TODO">KingBallotBox</a> model, using nanodbc </p>

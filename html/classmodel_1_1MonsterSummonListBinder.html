@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1MonsterSummonListBinder.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a075037655642dbb75d8466990615e8a7"><td class="memItemLeft" align="right" valign="top"><a id="a075037655642dbb75d8466990615e8a7" name="a075037655642dbb75d8466990615e8a7"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MonsterSummonList.html">model::MonsterSummonList</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a075037655642dbb75d8466990615e8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6272091aa6c3c1f4725cf0dc27125b"><td class="memItemLeft" align="right" valign="top"><a id="abb6272091aa6c3c1f4725cf0dc27125b" name="abb6272091aa6c3c1f4725cf0dc27125b"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MonsterSummonList.html">MonsterSummonList</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:abb6272091aa6c3c1f4725cf0dc27125b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8b727ca66474ce9dadbcf463c2f694b"><td class="memItemLeft" align="right" valign="top"><a id="af8b727ca66474ce9dadbcf463c2f694b" name="af8b727ca66474ce9dadbcf463c2f694b"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:af8b727ca66474ce9dadbcf463c2f694b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,26 +116,26 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a2d9e47ac45612e0d89ff6886475ca794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a2d9e47ac45612e0d89ff6886475ca794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac36b1565cb46bd4da0990738278dcc4c"><td class="memItemLeft" align="right" valign="top"><a id="ac36b1565cb46bd4da0990738278dcc4c" name="ac36b1565cb46bd4da0990738278dcc4c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMonsterId</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">model::MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ac36b1565cb46bd4da0990738278dcc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MonsterId. <br /></td></tr>
-<tr class="separator:ac36b1565cb46bd4da0990738278dcc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eace6696ca0992f37bb233e9fcfebb8"><td class="memItemLeft" align="right" valign="top"><a id="a1eace6696ca0992f37bb233e9fcfebb8" name="a1eace6696ca0992f37bb233e9fcfebb8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">model::MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a1eace6696ca0992f37bb233e9fcfebb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
-<tr class="separator:a1eace6696ca0992f37bb233e9fcfebb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12209e069a3947c41b354f0a91ba398f"><td class="memItemLeft" align="right" valign="top"><a id="a12209e069a3947c41b354f0a91ba398f" name="a12209e069a3947c41b354f0a91ba398f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevel</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">model::MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a12209e069a3947c41b354f0a91ba398f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Level. <br /></td></tr>
-<tr class="separator:a12209e069a3947c41b354f0a91ba398f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a676048c33659e81798654f971b4573aa"><td class="memItemLeft" align="right" valign="top"><a id="a676048c33659e81798654f971b4573aa" name="a676048c33659e81798654f971b4573aa"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindProbability</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">model::MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a676048c33659e81798654f971b4573aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Probability. <br /></td></tr>
-<tr class="separator:a676048c33659e81798654f971b4573aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88817d92175d6a1b8a1019c0891f8654"><td class="memItemLeft" align="right" valign="top"><a id="a88817d92175d6a1b8a1019c0891f8654" name="a88817d92175d6a1b8a1019c0891f8654"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">model::MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a88817d92175d6a1b8a1019c0891f8654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
-<tr class="separator:a88817d92175d6a1b8a1019c0891f8654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519cbbcbfcbea1b78951b3c71f783713"><td class="memItemLeft" align="right" valign="top"><a id="a519cbbcbfcbea1b78951b3c71f783713" name="a519cbbcbfcbea1b78951b3c71f783713"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMonsterId</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a519cbbcbfcbea1b78951b3c71f783713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MonsterId. <br /></td></tr>
+<tr class="separator:a519cbbcbfcbea1b78951b3c71f783713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4237f1f83d32b958d566faaf448ab1de"><td class="memItemLeft" align="right" valign="top"><a id="a4237f1f83d32b958d566faaf448ab1de" name="a4237f1f83d32b958d566faaf448ab1de"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a4237f1f83d32b958d566faaf448ab1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
+<tr class="separator:a4237f1f83d32b958d566faaf448ab1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5548f852755af0f232595712de180c9"><td class="memItemLeft" align="right" valign="top"><a id="aa5548f852755af0f232595712de180c9" name="aa5548f852755af0f232595712de180c9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevel</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa5548f852755af0f232595712de180c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Level. <br /></td></tr>
+<tr class="separator:aa5548f852755af0f232595712de180c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3379d442b1596fea1f5a6fcfe2be6a3c"><td class="memItemLeft" align="right" valign="top"><a id="a3379d442b1596fea1f5a6fcfe2be6a3c" name="a3379d442b1596fea1f5a6fcfe2be6a3c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindProbability</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a3379d442b1596fea1f5a6fcfe2be6a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Probability. <br /></td></tr>
+<tr class="separator:a3379d442b1596fea1f5a6fcfe2be6a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d34614cb37bdfed35af7e96683d62a"><td class="memItemLeft" align="right" valign="top"><a id="a27d34614cb37bdfed35af7e96683d62a" name="a27d34614cb37bdfed35af7e96683d62a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1MonsterSummonList.html">MonsterSummonList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a27d34614cb37bdfed35af7e96683d62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
+<tr class="separator:a27d34614cb37bdfed35af7e96683d62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1MonsterSummonList.html" title="[MONSTER_SUMMON_LIST] Monster summon list">MonsterSummonList</a> model, using nanodbc </p>

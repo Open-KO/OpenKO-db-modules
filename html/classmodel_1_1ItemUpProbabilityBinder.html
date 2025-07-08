@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1ItemUpProbabilityBinder.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4b72a6c934e83c724b7ab7ce93925977"><td class="memItemLeft" align="right" valign="top"><a id="a4b72a6c934e83c724b7ab7ce93925977" name="a4b72a6c934e83c724b7ab7ce93925977"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1ItemUpProbability.html">model::ItemUpProbability</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a4b72a6c934e83c724b7ab7ce93925977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101cbac765bf460a448fe7d1a4e2cf5e"><td class="memItemLeft" align="right" valign="top"><a id="a101cbac765bf460a448fe7d1a4e2cf5e" name="a101cbac765bf460a448fe7d1a4e2cf5e"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1ItemUpProbability.html">ItemUpProbability</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a101cbac765bf460a448fe7d1a4e2cf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a093474527ef581fe7d1fa00cfed39c36"><td class="memItemLeft" align="right" valign="top"><a id="a093474527ef581fe7d1fa00cfed39c36" name="a093474527ef581fe7d1fa00cfed39c36"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a093474527ef581fe7d1fa00cfed39c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,26 +116,26 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a89d0bf0727d3a5973fb091fe05f4e652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a89d0bf0727d3a5973fb091fe05f4e652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab728dd80ce8f1bc65a48a81ddb3e865e"><td class="memItemLeft" align="right" valign="top"><a id="ab728dd80ce8f1bc65a48a81ddb3e865e" name="ab728dd80ce8f1bc65a48a81ddb3e865e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">model::ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab728dd80ce8f1bc65a48a81ddb3e865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
-<tr class="separator:ab728dd80ce8f1bc65a48a81ddb3e865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38988d3c18ab442edb8a47b693bc173"><td class="memItemLeft" align="right" valign="top"><a id="ad38988d3c18ab442edb8a47b693bc173" name="ad38988d3c18ab442edb8a47b693bc173"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMaxSuccess</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">model::ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad38988d3c18ab442edb8a47b693bc173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MaxSuccess. <br /></td></tr>
-<tr class="separator:ad38988d3c18ab442edb8a47b693bc173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6254b1dda909c15eadb1ac408c8b5ef9"><td class="memItemLeft" align="right" valign="top"><a id="a6254b1dda909c15eadb1ac408c8b5ef9" name="a6254b1dda909c15eadb1ac408c8b5ef9"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMaxFail</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">model::ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a6254b1dda909c15eadb1ac408c8b5ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MaxFail. <br /></td></tr>
-<tr class="separator:a6254b1dda909c15eadb1ac408c8b5ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c68d3b28acdabe636eaa7dfbd634da5"><td class="memItemLeft" align="right" valign="top"><a id="a5c68d3b28acdabe636eaa7dfbd634da5" name="a5c68d3b28acdabe636eaa7dfbd634da5"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCurrentSuccess</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">model::ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a5c68d3b28acdabe636eaa7dfbd634da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CurrentSuccess. <br /></td></tr>
-<tr class="separator:a5c68d3b28acdabe636eaa7dfbd634da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab95e5cedfc1b1a43c94a37a20068e7be"><td class="memItemLeft" align="right" valign="top"><a id="ab95e5cedfc1b1a43c94a37a20068e7be" name="ab95e5cedfc1b1a43c94a37a20068e7be"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCurrentFailure</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">model::ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ab95e5cedfc1b1a43c94a37a20068e7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CurrentFailure. <br /></td></tr>
-<tr class="separator:ab95e5cedfc1b1a43c94a37a20068e7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab99177660add9bafe497388abbefa4"><td class="memItemLeft" align="right" valign="top"><a id="a0ab99177660add9bafe497388abbefa4" name="a0ab99177660add9bafe497388abbefa4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a0ab99177660add9bafe497388abbefa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
+<tr class="separator:a0ab99177660add9bafe497388abbefa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f372a8a8d1cb742fae1aa0cb48732b"><td class="memItemLeft" align="right" valign="top"><a id="a46f372a8a8d1cb742fae1aa0cb48732b" name="a46f372a8a8d1cb742fae1aa0cb48732b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMaxSuccess</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a46f372a8a8d1cb742fae1aa0cb48732b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MaxSuccess. <br /></td></tr>
+<tr class="separator:a46f372a8a8d1cb742fae1aa0cb48732b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9b878b47f2c266643dddce554537e8"><td class="memItemLeft" align="right" valign="top"><a id="a6d9b878b47f2c266643dddce554537e8" name="a6d9b878b47f2c266643dddce554537e8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMaxFail</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a6d9b878b47f2c266643dddce554537e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MaxFail. <br /></td></tr>
+<tr class="separator:a6d9b878b47f2c266643dddce554537e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb26cf43d40402424f90eff704a232f"><td class="memItemLeft" align="right" valign="top"><a id="affb26cf43d40402424f90eff704a232f" name="affb26cf43d40402424f90eff704a232f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCurrentSuccess</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:affb26cf43d40402424f90eff704a232f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CurrentSuccess. <br /></td></tr>
+<tr class="separator:affb26cf43d40402424f90eff704a232f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28c19cce6b88472179de17b80a09f3d"><td class="memItemLeft" align="right" valign="top"><a id="ac28c19cce6b88472179de17b80a09f3d" name="ac28c19cce6b88472179de17b80a09f3d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCurrentFailure</b> (<a class="el" href="classmodel_1_1ItemUpProbability.html">ItemUpProbability</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ac28c19cce6b88472179de17b80a09f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CurrentFailure. <br /></td></tr>
+<tr class="separator:ac28c19cce6b88472179de17b80a09f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1ItemUpProbability.html" title="[ITEMUP_PROBABILITY] TODO: Doc usage">ItemUpProbability</a> model, using nanodbc </p>

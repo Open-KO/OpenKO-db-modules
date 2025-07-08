@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1ProgramListLogBinder.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2d9361c279f279785fbaa386c3e3f68d"><td class="memItemLeft" align="right" valign="top"><a id="a2d9361c279f279785fbaa386c3e3f68d" name="a2d9361c279f279785fbaa386c3e3f68d"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1ProgramListLog.html">model::ProgramListLog</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a2d9361c279f279785fbaa386c3e3f68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81908a12f575713244454db8d0da61e2"><td class="memItemLeft" align="right" valign="top"><a id="a81908a12f575713244454db8d0da61e2" name="a81908a12f575713244454db8d0da61e2"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1ProgramListLog.html">ProgramListLog</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a81908a12f575713244454db8d0da61e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb4e9c682a353a1ac1f689e41a6c36a7"><td class="memItemLeft" align="right" valign="top"><a id="adb4e9c682a353a1ac1f689e41a6c36a7" name="adb4e9c682a353a1ac1f689e41a6c36a7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:adb4e9c682a353a1ac1f689e41a6c36a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,26 +116,26 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:aeddd7ac9e3c42a57b8949e9c7b3a3e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:aeddd7ac9e3c42a57b8949e9c7b3a3e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388b92ca15ce760fc68d6f47f866dce8"><td class="memItemLeft" align="right" valign="top"><a id="a388b92ca15ce760fc68d6f47f866dce8" name="a388b92ca15ce760fc68d6f47f866dce8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindId</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">model::ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a388b92ca15ce760fc68d6f47f866dce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Id. <br /></td></tr>
-<tr class="separator:a388b92ca15ce760fc68d6f47f866dce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:added2d17ccd38057f4503ae7cefe92b5"><td class="memItemLeft" align="right" valign="top"><a id="added2d17ccd38057f4503ae7cefe92b5" name="added2d17ccd38057f4503ae7cefe92b5"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">model::ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:added2d17ccd38057f4503ae7cefe92b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
-<tr class="separator:added2d17ccd38057f4503ae7cefe92b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c180279d72dcca9bbe4112bcab34283"><td class="memItemLeft" align="right" valign="top"><a id="a1c180279d72dcca9bbe4112bcab34283" name="a1c180279d72dcca9bbe4112bcab34283"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">model::ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a1c180279d72dcca9bbe4112bcab34283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId. <br /></td></tr>
-<tr class="separator:a1c180279d72dcca9bbe4112bcab34283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e8928b917fce269255ef019ba02282"><td class="memItemLeft" align="right" valign="top"><a id="ae5e8928b917fce269255ef019ba02282" name="ae5e8928b917fce269255ef019ba02282"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHackToolName</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">model::ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae5e8928b917fce269255ef019ba02282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HackToolName. <br /></td></tr>
-<tr class="separator:ae5e8928b917fce269255ef019ba02282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0e014ea70836eeff0539a95a7d1a39"><td class="memItemLeft" align="right" valign="top"><a id="a8e0e014ea70836eeff0539a95a7d1a39" name="a8e0e014ea70836eeff0539a95a7d1a39"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindWriteTime</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">model::ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a8e0e014ea70836eeff0539a95a7d1a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to WriteTime. <br /></td></tr>
-<tr class="separator:a8e0e014ea70836eeff0539a95a7d1a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab106cb4606bce2d5169d0c989f035c0a"><td class="memItemLeft" align="right" valign="top"><a id="ab106cb4606bce2d5169d0c989f035c0a" name="ab106cb4606bce2d5169d0c989f035c0a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindId</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab106cb4606bce2d5169d0c989f035c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Id. <br /></td></tr>
+<tr class="separator:ab106cb4606bce2d5169d0c989f035c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11944d9f85a17638387b47fbd662cb0b"><td class="memItemLeft" align="right" valign="top"><a id="a11944d9f85a17638387b47fbd662cb0b" name="a11944d9f85a17638387b47fbd662cb0b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a11944d9f85a17638387b47fbd662cb0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
+<tr class="separator:a11944d9f85a17638387b47fbd662cb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003e449b745ab6b8abd8479d7d90c348"><td class="memItemLeft" align="right" valign="top"><a id="a003e449b745ab6b8abd8479d7d90c348" name="a003e449b745ab6b8abd8479d7d90c348"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a003e449b745ab6b8abd8479d7d90c348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId. <br /></td></tr>
+<tr class="separator:a003e449b745ab6b8abd8479d7d90c348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b41b6c0e4a94f6d97ad259df9b81eed"><td class="memItemLeft" align="right" valign="top"><a id="a7b41b6c0e4a94f6d97ad259df9b81eed" name="a7b41b6c0e4a94f6d97ad259df9b81eed"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindHackToolName</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a7b41b6c0e4a94f6d97ad259df9b81eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to HackToolName. <br /></td></tr>
+<tr class="separator:a7b41b6c0e4a94f6d97ad259df9b81eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfef1226be08af4e28f7242c9cbc9d6"><td class="memItemLeft" align="right" valign="top"><a id="a4dfef1226be08af4e28f7242c9cbc9d6" name="a4dfef1226be08af4e28f7242c9cbc9d6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindWriteTime</b> (<a class="el" href="classmodel_1_1ProgramListLog.html">ProgramListLog</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a4dfef1226be08af4e28f7242c9cbc9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to WriteTime. <br /></td></tr>
+<tr class="separator:a4dfef1226be08af4e28f7242c9cbc9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1ProgramListLog.html" title="[PROGRAMLIST_LOG] Program list log">ProgramListLog</a> model, using nanodbc </p>

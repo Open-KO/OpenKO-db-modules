@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1UserEditorItemBinder.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9d16a1ca090dfb68429764ad2f3a18e6"><td class="memItemLeft" align="right" valign="top"><a id="a9d16a1ca090dfb68429764ad2f3a18e6" name="a9d16a1ca090dfb68429764ad2f3a18e6"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a9d16a1ca090dfb68429764ad2f3a18e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9efddc317b82c2d4e43dd8b859befe6"><td class="memItemLeft" align="right" valign="top"><a id="ab9efddc317b82c2d4e43dd8b859befe6" name="ab9efddc317b82c2d4e43dd8b859befe6"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:ab9efddc317b82c2d4e43dd8b859befe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c66431380d27877e18b620373212b07"><td class="memItemLeft" align="right" valign="top"><a id="a8c66431380d27877e18b620373212b07" name="a8c66431380d27877e18b620373212b07"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a8c66431380d27877e18b620373212b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,46 +116,46 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:ae00901926714ffdf1d097d76fc5dd519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:ae00901926714ffdf1d097d76fc5dd519"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aadfd98ba2691851cc21208154fc1a1"><td class="memItemLeft" align="right" valign="top"><a id="a1aadfd98ba2691851cc21208154fc1a1" name="a1aadfd98ba2691851cc21208154fc1a1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a1aadfd98ba2691851cc21208154fc1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId. <br /></td></tr>
-<tr class="separator:a1aadfd98ba2691851cc21208154fc1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9202017872728e611e2d7bfa87ab0b5d"><td class="memItemLeft" align="right" valign="top"><a id="a9202017872728e611e2d7bfa87ab0b5d" name="a9202017872728e611e2d7bfa87ab0b5d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a9202017872728e611e2d7bfa87ab0b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
-<tr class="separator:a9202017872728e611e2d7bfa87ab0b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1183190b458ca97105d1488dfcb3f08"><td class="memItemLeft" align="right" valign="top"><a id="af1183190b458ca97105d1488dfcb3f08" name="af1183190b458ca97105d1488dfcb3f08"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindOpId</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af1183190b458ca97105d1488dfcb3f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to OpId. <br /></td></tr>
-<tr class="separator:af1183190b458ca97105d1488dfcb3f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a237ff34f378f9436f5b16ff8b42fe2d0"><td class="memItemLeft" align="right" valign="top"><a id="a237ff34f378f9436f5b16ff8b42fe2d0" name="a237ff34f378f9436f5b16ff8b42fe2d0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindOpIP</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a237ff34f378f9436f5b16ff8b42fe2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to OpIP. <br /></td></tr>
-<tr class="separator:a237ff34f378f9436f5b16ff8b42fe2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a052ba8e6ccb4c9e259f4459430c2ab46"><td class="memItemLeft" align="right" valign="top"><a id="a052ba8e6ccb4c9e259f4459430c2ab46" name="a052ba8e6ccb4c9e259f4459430c2ab46"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDbIndex</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a052ba8e6ccb4c9e259f4459430c2ab46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to DbIndex. <br /></td></tr>
-<tr class="separator:a052ba8e6ccb4c9e259f4459430c2ab46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7df9d02a8fd7ce6e037914a78f7f828a"><td class="memItemLeft" align="right" valign="top"><a id="a7df9d02a8fd7ce6e037914a78f7f828a" name="a7df9d02a8fd7ce6e037914a78f7f828a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPos</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a7df9d02a8fd7ce6e037914a78f7f828a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Pos. <br /></td></tr>
-<tr class="separator:a7df9d02a8fd7ce6e037914a78f7f828a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59221bfb6d5d2eaa67c5b8f0cca6b646"><td class="memItemLeft" align="right" valign="top"><a id="a59221bfb6d5d2eaa67c5b8f0cca6b646" name="a59221bfb6d5d2eaa67c5b8f0cca6b646"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a59221bfb6d5d2eaa67c5b8f0cca6b646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
-<tr class="separator:a59221bfb6d5d2eaa67c5b8f0cca6b646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a684b8a716f39507b84933c77404e6868"><td class="memItemLeft" align="right" valign="top"><a id="a684b8a716f39507b84933c77404e6868" name="a684b8a716f39507b84933c77404e6868"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemId1</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a684b8a716f39507b84933c77404e6868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemId1. <br /></td></tr>
-<tr class="separator:a684b8a716f39507b84933c77404e6868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28feba60f44516cff4aa54a7a30367bc"><td class="memItemLeft" align="right" valign="top"><a id="a28feba60f44516cff4aa54a7a30367bc" name="a28feba60f44516cff4aa54a7a30367bc"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemId2</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a28feba60f44516cff4aa54a7a30367bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemId2. <br /></td></tr>
-<tr class="separator:a28feba60f44516cff4aa54a7a30367bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d9eda8ed97b2e20a20df1ae8d52991d"><td class="memItemLeft" align="right" valign="top"><a id="a7d9eda8ed97b2e20a20df1ae8d52991d" name="a7d9eda8ed97b2e20a20df1ae8d52991d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindUpdateTime</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">model::UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a7d9eda8ed97b2e20a20df1ae8d52991d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to UpdateTime. <br /></td></tr>
-<tr class="separator:a7d9eda8ed97b2e20a20df1ae8d52991d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888c07655542e1c85c6ed12db8994bf5"><td class="memItemLeft" align="right" valign="top"><a id="a888c07655542e1c85c6ed12db8994bf5" name="a888c07655542e1c85c6ed12db8994bf5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindCharId</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a888c07655542e1c85c6ed12db8994bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to CharId. <br /></td></tr>
+<tr class="separator:a888c07655542e1c85c6ed12db8994bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa101766374575ccf88527014c7c4290"><td class="memItemLeft" align="right" valign="top"><a id="aaa101766374575ccf88527014c7c4290" name="aaa101766374575ccf88527014c7c4290"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAccountId</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aaa101766374575ccf88527014c7c4290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to AccountId. <br /></td></tr>
+<tr class="separator:aaa101766374575ccf88527014c7c4290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e209d9c7e79f325058eebb6fb27a046"><td class="memItemLeft" align="right" valign="top"><a id="a1e209d9c7e79f325058eebb6fb27a046" name="a1e209d9c7e79f325058eebb6fb27a046"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindOpId</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a1e209d9c7e79f325058eebb6fb27a046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to OpId. <br /></td></tr>
+<tr class="separator:a1e209d9c7e79f325058eebb6fb27a046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e4a5588f47fa78ff1ad7d3e6f3845d"><td class="memItemLeft" align="right" valign="top"><a id="ab3e4a5588f47fa78ff1ad7d3e6f3845d" name="ab3e4a5588f47fa78ff1ad7d3e6f3845d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindOpIP</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab3e4a5588f47fa78ff1ad7d3e6f3845d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to OpIP. <br /></td></tr>
+<tr class="separator:ab3e4a5588f47fa78ff1ad7d3e6f3845d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311c00b686fb94366ee3687f37b0ecca"><td class="memItemLeft" align="right" valign="top"><a id="a311c00b686fb94366ee3687f37b0ecca" name="a311c00b686fb94366ee3687f37b0ecca"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindDbIndex</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a311c00b686fb94366ee3687f37b0ecca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to DbIndex. <br /></td></tr>
+<tr class="separator:a311c00b686fb94366ee3687f37b0ecca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473583c3e2f07df3f532cb4cb605935b"><td class="memItemLeft" align="right" valign="top"><a id="a473583c3e2f07df3f532cb4cb605935b" name="a473583c3e2f07df3f532cb4cb605935b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPos</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a473583c3e2f07df3f532cb4cb605935b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Pos. <br /></td></tr>
+<tr class="separator:a473583c3e2f07df3f532cb4cb605935b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2806ff2a7b6d4da13b2d9a1f91c5138d"><td class="memItemLeft" align="right" valign="top"><a id="a2806ff2a7b6d4da13b2d9a1f91c5138d" name="a2806ff2a7b6d4da13b2d9a1f91c5138d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2806ff2a7b6d4da13b2d9a1f91c5138d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
+<tr class="separator:a2806ff2a7b6d4da13b2d9a1f91c5138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c16726d6cd07507131753ae1a565d7a"><td class="memItemLeft" align="right" valign="top"><a id="a0c16726d6cd07507131753ae1a565d7a" name="a0c16726d6cd07507131753ae1a565d7a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemId1</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a0c16726d6cd07507131753ae1a565d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemId1. <br /></td></tr>
+<tr class="separator:a0c16726d6cd07507131753ae1a565d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b2826279131bb868ce5a9798384787"><td class="memItemLeft" align="right" valign="top"><a id="a83b2826279131bb868ce5a9798384787" name="a83b2826279131bb868ce5a9798384787"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemId2</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a83b2826279131bb868ce5a9798384787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemId2. <br /></td></tr>
+<tr class="separator:a83b2826279131bb868ce5a9798384787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac52948e322a45fc55b532b44c44c01e"><td class="memItemLeft" align="right" valign="top"><a id="aac52948e322a45fc55b532b44c44c01e" name="aac52948e322a45fc55b532b44c44c01e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindUpdateTime</b> (<a class="el" href="classmodel_1_1UserEditorItem.html">UserEditorItem</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aac52948e322a45fc55b532b44c44c01e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to UpdateTime. <br /></td></tr>
+<tr class="separator:aac52948e322a45fc55b532b44c44c01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1UserEditorItem.html" title="[USER_EDITOR_ITEM] User editor item">UserEditorItem</a> model, using nanodbc </p>

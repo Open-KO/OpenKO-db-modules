@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1CouponSerialListBinder.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0d006f63c932d72eaa406df057c47d96"><td class="memItemLeft" align="right" valign="top"><a id="a0d006f63c932d72eaa406df057c47d96" name="a0d006f63c932d72eaa406df057c47d96"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1CouponSerialList.html">model::CouponSerialList</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a0d006f63c932d72eaa406df057c47d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08f7afc88a0ea125f59d8eb334500bc"><td class="memItemLeft" align="right" valign="top"><a id="af08f7afc88a0ea125f59d8eb334500bc" name="af08f7afc88a0ea125f59d8eb334500bc"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1CouponSerialList.html">CouponSerialList</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:af08f7afc88a0ea125f59d8eb334500bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848790afa9e2672a844a0bcefb07b510"><td class="memItemLeft" align="right" valign="top"><a id="a848790afa9e2672a844a0bcefb07b510" name="a848790afa9e2672a844a0bcefb07b510"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a848790afa9e2672a844a0bcefb07b510"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,22 +116,22 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a7742e953f5c1be60783282323bc9f0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a7742e953f5c1be60783282323bc9f0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c98db0aef8a82d331336dfd3e876b59"><td class="memItemLeft" align="right" valign="top"><a id="a5c98db0aef8a82d331336dfd3e876b59" name="a5c98db0aef8a82d331336dfd3e876b59"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1CouponSerialList.html">model::CouponSerialList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a5c98db0aef8a82d331336dfd3e876b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
-<tr class="separator:a5c98db0aef8a82d331336dfd3e876b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a549822af65abbea4d0371cc9d6ac7f0d"><td class="memItemLeft" align="right" valign="top"><a id="a549822af65abbea4d0371cc9d6ac7f0d" name="a549822af65abbea4d0371cc9d6ac7f0d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSerialNum</b> (<a class="el" href="classmodel_1_1CouponSerialList.html">model::CouponSerialList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a549822af65abbea4d0371cc9d6ac7f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to SerialNum. <br /></td></tr>
-<tr class="separator:a549822af65abbea4d0371cc9d6ac7f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ae576e146495ec8c115787eae106aa"><td class="memItemLeft" align="right" valign="top"><a id="a63ae576e146495ec8c115787eae106aa" name="a63ae576e146495ec8c115787eae106aa"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemNumber</b> (<a class="el" href="classmodel_1_1CouponSerialList.html">model::CouponSerialList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a63ae576e146495ec8c115787eae106aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemNumber. <br /></td></tr>
-<tr class="separator:a63ae576e146495ec8c115787eae106aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861b28f4b032eb4b1b27527d1c04c2b0"><td class="memItemLeft" align="right" valign="top"><a id="a861b28f4b032eb4b1b27527d1c04c2b0" name="a861b28f4b032eb4b1b27527d1c04c2b0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemCount</b> (<a class="el" href="classmodel_1_1CouponSerialList.html">model::CouponSerialList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a861b28f4b032eb4b1b27527d1c04c2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemCount. <br /></td></tr>
-<tr class="separator:a861b28f4b032eb4b1b27527d1c04c2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1083bb29b02acb7be80c99645a88f570"><td class="memItemLeft" align="right" valign="top"><a id="a1083bb29b02acb7be80c99645a88f570" name="a1083bb29b02acb7be80c99645a88f570"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1CouponSerialList.html">CouponSerialList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a1083bb29b02acb7be80c99645a88f570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
+<tr class="separator:a1083bb29b02acb7be80c99645a88f570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874e213e6b60150d8c5098055bf03395"><td class="memItemLeft" align="right" valign="top"><a id="a874e213e6b60150d8c5098055bf03395" name="a874e213e6b60150d8c5098055bf03395"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSerialNum</b> (<a class="el" href="classmodel_1_1CouponSerialList.html">CouponSerialList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a874e213e6b60150d8c5098055bf03395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to SerialNum. <br /></td></tr>
+<tr class="separator:a874e213e6b60150d8c5098055bf03395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85839b5d5cfc89395b340d038dbef752"><td class="memItemLeft" align="right" valign="top"><a id="a85839b5d5cfc89395b340d038dbef752" name="a85839b5d5cfc89395b340d038dbef752"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemNumber</b> (<a class="el" href="classmodel_1_1CouponSerialList.html">CouponSerialList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a85839b5d5cfc89395b340d038dbef752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemNumber. <br /></td></tr>
+<tr class="separator:a85839b5d5cfc89395b340d038dbef752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181adb2a94c9ab684a21ac2e66847e9b"><td class="memItemLeft" align="right" valign="top"><a id="a181adb2a94c9ab684a21ac2e66847e9b" name="a181adb2a94c9ab684a21ac2e66847e9b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindItemCount</b> (<a class="el" href="classmodel_1_1CouponSerialList.html">CouponSerialList</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a181adb2a94c9ab684a21ac2e66847e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ItemCount. <br /></td></tr>
+<tr class="separator:a181adb2a94c9ab684a21ac2e66847e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1CouponSerialList.html" title="[COUPON_SERIAL_LIST] Coupon Serial List">CouponSerialList</a> model, using nanodbc </p>

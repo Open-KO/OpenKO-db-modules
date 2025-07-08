@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1StartPositionBinder.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a43e1190c38043df0ce3031b634f61f7d"><td class="memItemLeft" align="right" valign="top"><a id="a43e1190c38043df0ce3031b634f61f7d" name="a43e1190c38043df0ce3031b634f61f7d"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a43e1190c38043df0ce3031b634f61f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982dda7bfef6fd0af1a5ac0d1b801eaa"><td class="memItemLeft" align="right" valign="top"><a id="a982dda7bfef6fd0af1a5ac0d1b801eaa" name="a982dda7bfef6fd0af1a5ac0d1b801eaa"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a982dda7bfef6fd0af1a5ac0d1b801eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa37f53053bf4c0b851605939c4528f4a"><td class="memItemLeft" align="right" valign="top"><a id="aa37f53053bf4c0b851605939c4528f4a" name="aa37f53053bf4c0b851605939c4528f4a"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:aa37f53053bf4c0b851605939c4528f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,50 +116,50 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a46e38f6dc725db01ce170a1ecba04f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a46e38f6dc725db01ce170a1ecba04f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b3fa7a08bc6ed7bd812930615efc9a"><td class="memItemLeft" align="right" valign="top"><a id="a15b3fa7a08bc6ed7bd812930615efc9a" name="a15b3fa7a08bc6ed7bd812930615efc9a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindZoneId</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a15b3fa7a08bc6ed7bd812930615efc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ZoneId. <br /></td></tr>
-<tr class="separator:a15b3fa7a08bc6ed7bd812930615efc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a813845cdb1983e81c15715e77c70b0d9"><td class="memItemLeft" align="right" valign="top"><a id="a813845cdb1983e81c15715e77c70b0d9" name="a813845cdb1983e81c15715e77c70b0d9"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusX</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a813845cdb1983e81c15715e77c70b0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusX. <br /></td></tr>
-<tr class="separator:a813845cdb1983e81c15715e77c70b0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13e64e6412ea31d311a68360c419b17"><td class="memItemLeft" align="right" valign="top"><a id="af13e64e6412ea31d311a68360c419b17" name="af13e64e6412ea31d311a68360c419b17"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af13e64e6412ea31d311a68360c419b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusZ. <br /></td></tr>
-<tr class="separator:af13e64e6412ea31d311a68360c419b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4ad88d4ba843d14d6c717bd33c938e"><td class="memItemLeft" align="right" valign="top"><a id="a8f4ad88d4ba843d14d6c717bd33c938e" name="a8f4ad88d4ba843d14d6c717bd33c938e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoX</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a8f4ad88d4ba843d14d6c717bd33c938e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoX. <br /></td></tr>
-<tr class="separator:a8f4ad88d4ba843d14d6c717bd33c938e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83fceea68d37d037fd0c40bdf2bb744e"><td class="memItemLeft" align="right" valign="top"><a id="a83fceea68d37d037fd0c40bdf2bb744e" name="a83fceea68d37d037fd0c40bdf2bb744e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a83fceea68d37d037fd0c40bdf2bb744e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoZ. <br /></td></tr>
-<tr class="separator:a83fceea68d37d037fd0c40bdf2bb744e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a040a9b524e82928121a7197999da8bc1"><td class="memItemLeft" align="right" valign="top"><a id="a040a9b524e82928121a7197999da8bc1" name="a040a9b524e82928121a7197999da8bc1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRangeX</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a040a9b524e82928121a7197999da8bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RangeX. <br /></td></tr>
-<tr class="separator:a040a9b524e82928121a7197999da8bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83ecc0a9cd294848b0633cb29c0c001"><td class="memItemLeft" align="right" valign="top"><a id="ac83ecc0a9cd294848b0633cb29c0c001" name="ac83ecc0a9cd294848b0633cb29c0c001"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRangeZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ac83ecc0a9cd294848b0633cb29c0c001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RangeZ. <br /></td></tr>
-<tr class="separator:ac83ecc0a9cd294848b0633cb29c0c001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e3c2f739c03b974b6fed6db2de2538"><td class="memItemLeft" align="right" valign="top"><a id="a55e3c2f739c03b974b6fed6db2de2538" name="a55e3c2f739c03b974b6fed6db2de2538"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusGateX</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a55e3c2f739c03b974b6fed6db2de2538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusGateX. <br /></td></tr>
-<tr class="separator:a55e3c2f739c03b974b6fed6db2de2538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e1fd44c6f9e65fecea6c8ff58dc1591"><td class="memItemLeft" align="right" valign="top"><a id="a4e1fd44c6f9e65fecea6c8ff58dc1591" name="a4e1fd44c6f9e65fecea6c8ff58dc1591"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusGateZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a4e1fd44c6f9e65fecea6c8ff58dc1591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusGateZ. <br /></td></tr>
-<tr class="separator:a4e1fd44c6f9e65fecea6c8ff58dc1591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831cc58dde3d71c78ff4071b01720291"><td class="memItemLeft" align="right" valign="top"><a id="a831cc58dde3d71c78ff4071b01720291" name="a831cc58dde3d71c78ff4071b01720291"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoGateX</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a831cc58dde3d71c78ff4071b01720291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoGateX. <br /></td></tr>
-<tr class="separator:a831cc58dde3d71c78ff4071b01720291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d634e827c9059acfe607a66d5c0d21"><td class="memItemLeft" align="right" valign="top"><a id="a38d634e827c9059acfe607a66d5c0d21" name="a38d634e827c9059acfe607a66d5c0d21"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoGateZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">model::StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a38d634e827c9059acfe607a66d5c0d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoGateZ. <br /></td></tr>
-<tr class="separator:a38d634e827c9059acfe607a66d5c0d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e3faa7777edbda9187eebd5b448d15"><td class="memItemLeft" align="right" valign="top"><a id="af2e3faa7777edbda9187eebd5b448d15" name="af2e3faa7777edbda9187eebd5b448d15"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindZoneId</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:af2e3faa7777edbda9187eebd5b448d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ZoneId. <br /></td></tr>
+<tr class="separator:af2e3faa7777edbda9187eebd5b448d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afacbdc817168ca29cf0e5309d594213b"><td class="memItemLeft" align="right" valign="top"><a id="afacbdc817168ca29cf0e5309d594213b" name="afacbdc817168ca29cf0e5309d594213b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusX</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:afacbdc817168ca29cf0e5309d594213b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusX. <br /></td></tr>
+<tr class="separator:afacbdc817168ca29cf0e5309d594213b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9204871d5b50d87944f747545ee1fcbb"><td class="memItemLeft" align="right" valign="top"><a id="a9204871d5b50d87944f747545ee1fcbb" name="a9204871d5b50d87944f747545ee1fcbb"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a9204871d5b50d87944f747545ee1fcbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusZ. <br /></td></tr>
+<tr class="separator:a9204871d5b50d87944f747545ee1fcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae027079a4f6018978992b51a1b702745"><td class="memItemLeft" align="right" valign="top"><a id="ae027079a4f6018978992b51a1b702745" name="ae027079a4f6018978992b51a1b702745"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoX</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ae027079a4f6018978992b51a1b702745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoX. <br /></td></tr>
+<tr class="separator:ae027079a4f6018978992b51a1b702745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5013445abbb6579add367804e70cf8d7"><td class="memItemLeft" align="right" valign="top"><a id="a5013445abbb6579add367804e70cf8d7" name="a5013445abbb6579add367804e70cf8d7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a5013445abbb6579add367804e70cf8d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoZ. <br /></td></tr>
+<tr class="separator:a5013445abbb6579add367804e70cf8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f44459a1ee29fcdc054ed49324d110"><td class="memItemLeft" align="right" valign="top"><a id="a03f44459a1ee29fcdc054ed49324d110" name="a03f44459a1ee29fcdc054ed49324d110"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRangeX</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a03f44459a1ee29fcdc054ed49324d110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RangeX. <br /></td></tr>
+<tr class="separator:a03f44459a1ee29fcdc054ed49324d110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8682db57694b30a5a9802ba5a6dc2aa"><td class="memItemLeft" align="right" valign="top"><a id="ac8682db57694b30a5a9802ba5a6dc2aa" name="ac8682db57694b30a5a9802ba5a6dc2aa"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRangeZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ac8682db57694b30a5a9802ba5a6dc2aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RangeZ. <br /></td></tr>
+<tr class="separator:ac8682db57694b30a5a9802ba5a6dc2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d29dee63ca087f6c1e9af23edef81d"><td class="memItemLeft" align="right" valign="top"><a id="ab2d29dee63ca087f6c1e9af23edef81d" name="ab2d29dee63ca087f6c1e9af23edef81d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusGateX</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab2d29dee63ca087f6c1e9af23edef81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusGateX. <br /></td></tr>
+<tr class="separator:ab2d29dee63ca087f6c1e9af23edef81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541f78c912b7cf1af07c0bedda965907"><td class="memItemLeft" align="right" valign="top"><a id="a541f78c912b7cf1af07c0bedda965907" name="a541f78c912b7cf1af07c0bedda965907"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindKarusGateZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a541f78c912b7cf1af07c0bedda965907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to KarusGateZ. <br /></td></tr>
+<tr class="separator:a541f78c912b7cf1af07c0bedda965907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985b479ff65e0603cc7da89aa4a44ebf"><td class="memItemLeft" align="right" valign="top"><a id="a985b479ff65e0603cc7da89aa4a44ebf" name="a985b479ff65e0603cc7da89aa4a44ebf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoGateX</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a985b479ff65e0603cc7da89aa4a44ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoGateX. <br /></td></tr>
+<tr class="separator:a985b479ff65e0603cc7da89aa4a44ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e5a3c56ac2ec714b0e1190ab29fa66"><td class="memItemLeft" align="right" valign="top"><a id="a40e5a3c56ac2ec714b0e1190ab29fa66" name="a40e5a3c56ac2ec714b0e1190ab29fa66"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindElmoGateZ</b> (<a class="el" href="classmodel_1_1StartPosition.html">StartPosition</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a40e5a3c56ac2ec714b0e1190ab29fa66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ElmoGateZ. <br /></td></tr>
+<tr class="separator:a40e5a3c56ac2ec714b0e1190ab29fa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1StartPosition.html" title="[START_POSITION] Start position">StartPosition</a> model, using nanodbc </p>

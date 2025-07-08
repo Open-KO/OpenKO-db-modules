@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1ZoneInfoBinder.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9cf7dd25a8490e7f47eb05ec6b0382ac"><td class="memItemLeft" align="right" valign="top"><a id="a9cf7dd25a8490e7f47eb05ec6b0382ac" name="a9cf7dd25a8490e7f47eb05ec6b0382ac"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a9cf7dd25a8490e7f47eb05ec6b0382ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e6495e18ed432b91f4892487856233"><td class="memItemLeft" align="right" valign="top"><a id="af4e6495e18ed432b91f4892487856233" name="af4e6495e18ed432b91f4892487856233"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:af4e6495e18ed432b91f4892487856233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07ff7a44f67f0b7639c5ab1e6a2568fa"><td class="memItemLeft" align="right" valign="top"><a id="a07ff7a44f67f0b7639c5ab1e6a2568fa" name="a07ff7a44f67f0b7639c5ab1e6a2568fa"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a07ff7a44f67f0b7639c5ab1e6a2568fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,42 +116,42 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a2187acdd71734cb69b9920bb2aab9b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a2187acdd71734cb69b9920bb2aab9b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae96180032a90193fbc585518110e06e1"><td class="memItemLeft" align="right" valign="top"><a id="ae96180032a90193fbc585518110e06e1" name="ae96180032a90193fbc585518110e06e1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindServerId</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae96180032a90193fbc585518110e06e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ServerId. <br /></td></tr>
-<tr class="separator:ae96180032a90193fbc585518110e06e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adee7d0ad69ec28873bb26da76842278b"><td class="memItemLeft" align="right" valign="top"><a id="adee7d0ad69ec28873bb26da76842278b" name="adee7d0ad69ec28873bb26da76842278b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindZoneId</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:adee7d0ad69ec28873bb26da76842278b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ZoneId. <br /></td></tr>
-<tr class="separator:adee7d0ad69ec28873bb26da76842278b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98a86ab2df6eb99fe4f062fde47da2d1"><td class="memItemLeft" align="right" valign="top"><a id="a98a86ab2df6eb99fe4f062fde47da2d1" name="a98a86ab2df6eb99fe4f062fde47da2d1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a98a86ab2df6eb99fe4f062fde47da2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
-<tr class="separator:a98a86ab2df6eb99fe4f062fde47da2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f55987d23c51474363b2d588192754"><td class="memItemLeft" align="right" valign="top"><a id="ae0f55987d23c51474363b2d588192754" name="ae0f55987d23c51474363b2d588192754"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindInitX</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae0f55987d23c51474363b2d588192754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to InitX. <br /></td></tr>
-<tr class="separator:ae0f55987d23c51474363b2d588192754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae45b295e58c470a658fa0710eab1f26e"><td class="memItemLeft" align="right" valign="top"><a id="ae45b295e58c470a658fa0710eab1f26e" name="ae45b295e58c470a658fa0710eab1f26e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindInitZ</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae45b295e58c470a658fa0710eab1f26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to InitZ. <br /></td></tr>
-<tr class="separator:ae45b295e58c470a658fa0710eab1f26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae1e3fceae99f05a744ca191d51b6da"><td class="memItemLeft" align="right" valign="top"><a id="a7ae1e3fceae99f05a744ca191d51b6da" name="a7ae1e3fceae99f05a744ca191d51b6da"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindInitY</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a7ae1e3fceae99f05a744ca191d51b6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to InitY. <br /></td></tr>
-<tr class="separator:a7ae1e3fceae99f05a744ca191d51b6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae8c4cc5fb92e86eb03e7526b874d99"><td class="memItemLeft" align="right" valign="top"><a id="aeae8c4cc5fb92e86eb03e7526b874d99" name="aeae8c4cc5fb92e86eb03e7526b874d99"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aeae8c4cc5fb92e86eb03e7526b874d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
-<tr class="separator:aeae8c4cc5fb92e86eb03e7526b874d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc19dc4c2b9870e9ac2b327a729f8335"><td class="memItemLeft" align="right" valign="top"><a id="abc19dc4c2b9870e9ac2b327a729f8335" name="abc19dc4c2b9870e9ac2b327a729f8335"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRoomEvent</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:abc19dc4c2b9870e9ac2b327a729f8335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RoomEvent. <br /></td></tr>
-<tr class="separator:abc19dc4c2b9870e9ac2b327a729f8335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09ecdc9c09a695fdb35984ea26ffe47d"><td class="memItemLeft" align="right" valign="top"><a id="a09ecdc9c09a695fdb35984ea26ffe47d" name="a09ecdc9c09a695fdb35984ea26ffe47d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindBz</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">model::ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a09ecdc9c09a695fdb35984ea26ffe47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Bz. <br /></td></tr>
-<tr class="separator:a09ecdc9c09a695fdb35984ea26ffe47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72a2d596f7e52fc56ab114b98c3bc88"><td class="memItemLeft" align="right" valign="top"><a id="aa72a2d596f7e52fc56ab114b98c3bc88" name="aa72a2d596f7e52fc56ab114b98c3bc88"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindServerId</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa72a2d596f7e52fc56ab114b98c3bc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ServerId. <br /></td></tr>
+<tr class="separator:aa72a2d596f7e52fc56ab114b98c3bc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd21742a6fe8b9f9c4a6791c62f0a464"><td class="memItemLeft" align="right" valign="top"><a id="abd21742a6fe8b9f9c4a6791c62f0a464" name="abd21742a6fe8b9f9c4a6791c62f0a464"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindZoneId</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:abd21742a6fe8b9f9c4a6791c62f0a464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ZoneId. <br /></td></tr>
+<tr class="separator:abd21742a6fe8b9f9c4a6791c62f0a464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56241808910c58f5f6f9e4694b1b5721"><td class="memItemLeft" align="right" valign="top"><a id="a56241808910c58f5f6f9e4694b1b5721" name="a56241808910c58f5f6f9e4694b1b5721"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindName</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a56241808910c58f5f6f9e4694b1b5721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Name. <br /></td></tr>
+<tr class="separator:a56241808910c58f5f6f9e4694b1b5721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893a417e5842274cbac5cbebf071019c"><td class="memItemLeft" align="right" valign="top"><a id="a893a417e5842274cbac5cbebf071019c" name="a893a417e5842274cbac5cbebf071019c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindInitX</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a893a417e5842274cbac5cbebf071019c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to InitX. <br /></td></tr>
+<tr class="separator:a893a417e5842274cbac5cbebf071019c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af677c92ed1a0bf175775c28e1b6e2885"><td class="memItemLeft" align="right" valign="top"><a id="af677c92ed1a0bf175775c28e1b6e2885" name="af677c92ed1a0bf175775c28e1b6e2885"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindInitZ</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:af677c92ed1a0bf175775c28e1b6e2885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to InitZ. <br /></td></tr>
+<tr class="separator:af677c92ed1a0bf175775c28e1b6e2885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37788bfe6d02c5f0b322c847700dd677"><td class="memItemLeft" align="right" valign="top"><a id="a37788bfe6d02c5f0b322c847700dd677" name="a37788bfe6d02c5f0b322c847700dd677"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindInitY</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a37788bfe6d02c5f0b322c847700dd677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to InitY. <br /></td></tr>
+<tr class="separator:a37788bfe6d02c5f0b322c847700dd677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50118e571caaacc68c9edccf257c9711"><td class="memItemLeft" align="right" valign="top"><a id="a50118e571caaacc68c9edccf257c9711" name="a50118e571caaacc68c9edccf257c9711"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindType</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a50118e571caaacc68c9edccf257c9711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Type. <br /></td></tr>
+<tr class="separator:a50118e571caaacc68c9edccf257c9711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad78fec7c1b362613a02c55247ff71c"><td class="memItemLeft" align="right" valign="top"><a id="a2ad78fec7c1b362613a02c55247ff71c" name="a2ad78fec7c1b362613a02c55247ff71c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindRoomEvent</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2ad78fec7c1b362613a02c55247ff71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to RoomEvent. <br /></td></tr>
+<tr class="separator:a2ad78fec7c1b362613a02c55247ff71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7c059c30119a16d88f14efc0cdafb5"><td class="memItemLeft" align="right" valign="top"><a id="a2a7c059c30119a16d88f14efc0cdafb5" name="a2a7c059c30119a16d88f14efc0cdafb5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindBz</b> (<a class="el" href="classmodel_1_1ZoneInfo.html">ZoneInfo</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2a7c059c30119a16d88f14efc0cdafb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Bz. <br /></td></tr>
+<tr class="separator:a2a7c059c30119a16d88f14efc0cdafb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1ZoneInfo.html" title="[ZONE_INFO] Zone (map) information">ZoneInfo</a> model, using nanodbc </p>

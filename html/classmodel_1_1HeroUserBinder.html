@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1HeroUserBinder.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a94babdfb6612f452ef83502b83555fc1"><td class="memItemLeft" align="right" valign="top"><a id="a94babdfb6612f452ef83502b83555fc1" name="a94babdfb6612f452ef83502b83555fc1"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1HeroUser.html">model::HeroUser</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a94babdfb6612f452ef83502b83555fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc408d6dcf0081ab6d1d153aa523a36"><td class="memItemLeft" align="right" valign="top"><a id="aedc408d6dcf0081ab6d1d153aa523a36" name="aedc408d6dcf0081ab6d1d153aa523a36"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1HeroUser.html">HeroUser</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:aedc408d6dcf0081ab6d1d153aa523a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a788528c8f1c15677a5c7ae16901b2c5a"><td class="memItemLeft" align="right" valign="top"><a id="a788528c8f1c15677a5c7ae16901b2c5a" name="a788528c8f1c15677a5c7ae16901b2c5a"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a788528c8f1c15677a5c7ae16901b2c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,26 +116,26 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a5c2e7b4b012f04460a9e7395039b2ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a5c2e7b4b012f04460a9e7395039b2ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d523ad4c322a2979b60c756fd0e9198"><td class="memItemLeft" align="right" valign="top"><a id="a2d523ad4c322a2979b60c756fd0e9198" name="a2d523ad4c322a2979b60c756fd0e9198"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1HeroUser.html">model::HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a2d523ad4c322a2979b60c756fd0e9198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
-<tr class="separator:a2d523ad4c322a2979b60c756fd0e9198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0366067520d0b0d7c301780b9be477a"><td class="memItemLeft" align="right" valign="top"><a id="af0366067520d0b0d7c301780b9be477a" name="af0366067520d0b0d7c301780b9be477a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindUserId</b> (<a class="el" href="classmodel_1_1HeroUser.html">model::HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:af0366067520d0b0d7c301780b9be477a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to UserId. <br /></td></tr>
-<tr class="separator:af0366067520d0b0d7c301780b9be477a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0279b37b66545b423a866d2c62bdbfe"><td class="memItemLeft" align="right" valign="top"><a id="ad0279b37b66545b423a866d2c62bdbfe" name="ad0279b37b66545b423a866d2c62bdbfe"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNation</b> (<a class="el" href="classmodel_1_1HeroUser.html">model::HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad0279b37b66545b423a866d2c62bdbfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Nation. <br /></td></tr>
-<tr class="separator:ad0279b37b66545b423a866d2c62bdbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61155f713075e873a9d8a431d0b4eaed"><td class="memItemLeft" align="right" valign="top"><a id="a61155f713075e873a9d8a431d0b4eaed" name="a61155f713075e873a9d8a431d0b4eaed"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClassName</b> (<a class="el" href="classmodel_1_1HeroUser.html">model::HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a61155f713075e873a9d8a431d0b4eaed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ClassName. <br /></td></tr>
-<tr class="separator:a61155f713075e873a9d8a431d0b4eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5432ee98ba75ed632af2fef6cb8be4"><td class="memItemLeft" align="right" valign="top"><a id="a5d5432ee98ba75ed632af2fef6cb8be4" name="a5d5432ee98ba75ed632af2fef6cb8be4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAchievement</b> (<a class="el" href="classmodel_1_1HeroUser.html">model::HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a5d5432ee98ba75ed632af2fef6cb8be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Achievement. <br /></td></tr>
-<tr class="separator:a5d5432ee98ba75ed632af2fef6cb8be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c2a62817faf98c1cda621a05f7f4cd"><td class="memItemLeft" align="right" valign="top"><a id="ad8c2a62817faf98c1cda621a05f7f4cd" name="ad8c2a62817faf98c1cda621a05f7f4cd"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindIndex</b> (<a class="el" href="classmodel_1_1HeroUser.html">HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ad8c2a62817faf98c1cda621a05f7f4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Index. <br /></td></tr>
+<tr class="separator:ad8c2a62817faf98c1cda621a05f7f4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0583e88b72c40fd50449ad2dc7fcf0"><td class="memItemLeft" align="right" valign="top"><a id="a9a0583e88b72c40fd50449ad2dc7fcf0" name="a9a0583e88b72c40fd50449ad2dc7fcf0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindUserId</b> (<a class="el" href="classmodel_1_1HeroUser.html">HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a9a0583e88b72c40fd50449ad2dc7fcf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to UserId. <br /></td></tr>
+<tr class="separator:a9a0583e88b72c40fd50449ad2dc7fcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fae6a421e888cd8cd9be49e6db29"><td class="memItemLeft" align="right" valign="top"><a id="ad146fae6a421e888cd8cd9be49e6db29" name="ad146fae6a421e888cd8cd9be49e6db29"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindNation</b> (<a class="el" href="classmodel_1_1HeroUser.html">HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ad146fae6a421e888cd8cd9be49e6db29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Nation. <br /></td></tr>
+<tr class="separator:ad146fae6a421e888cd8cd9be49e6db29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51c94a21c5b1754cb1e6e427d35bbdc"><td class="memItemLeft" align="right" valign="top"><a id="ab51c94a21c5b1754cb1e6e427d35bbdc" name="ab51c94a21c5b1754cb1e6e427d35bbdc"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClassName</b> (<a class="el" href="classmodel_1_1HeroUser.html">HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ab51c94a21c5b1754cb1e6e427d35bbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to ClassName. <br /></td></tr>
+<tr class="separator:ab51c94a21c5b1754cb1e6e427d35bbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894cd0aca9f7f5c0786d61fbbcd336b2"><td class="memItemLeft" align="right" valign="top"><a id="a894cd0aca9f7f5c0786d61fbbcd336b2" name="a894cd0aca9f7f5c0786d61fbbcd336b2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindAchievement</b> (<a class="el" href="classmodel_1_1HeroUser.html">HeroUser</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a894cd0aca9f7f5c0786d61fbbcd336b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Achievement. <br /></td></tr>
+<tr class="separator:a894cd0aca9f7f5c0786d61fbbcd336b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1HeroUser.html" title="[HERO_USER] TODO Doc">HeroUser</a> model, using nanodbc </p>

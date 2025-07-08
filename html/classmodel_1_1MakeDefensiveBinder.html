@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1MakeDefensiveBinder.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a352462305b8230dd1248e05fcd582995"><td class="memItemLeft" align="right" valign="top"><a id="a352462305b8230dd1248e05fcd582995" name="a352462305b8230dd1248e05fcd582995"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a352462305b8230dd1248e05fcd582995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a7b28ee0d81bdae2acbd1acb08b455"><td class="memItemLeft" align="right" valign="top"><a id="a00a7b28ee0d81bdae2acbd1acb08b455" name="a00a7b28ee0d81bdae2acbd1acb08b455"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:a00a7b28ee0d81bdae2acbd1acb08b455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a542abb2e497185f13d232e1a81e142ff"><td class="memItemLeft" align="right" valign="top"><a id="a542abb2e497185f13d232e1a81e142ff" name="a542abb2e497185f13d232e1a81e142ff"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a542abb2e497185f13d232e1a81e142ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,38 +116,38 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:a5fa7ca554b69aa2bd74239288c739160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:a5fa7ca554b69aa2bd74239288c739160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46585a6069e3337ef146578c45aea9ef"><td class="memItemLeft" align="right" valign="top"><a id="a46585a6069e3337ef146578c45aea9ef" name="a46585a6069e3337ef146578c45aea9ef"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevel</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a46585a6069e3337ef146578c45aea9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Level. <br /></td></tr>
-<tr class="separator:a46585a6069e3337ef146578c45aea9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23a319b5b910ac4600e505bbb1982a4d"><td class="memItemLeft" align="right" valign="top"><a id="a23a319b5b910ac4600e505bbb1982a4d" name="a23a319b5b910ac4600e505bbb1982a4d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass1</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a23a319b5b910ac4600e505bbb1982a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class1. <br /></td></tr>
-<tr class="separator:a23a319b5b910ac4600e505bbb1982a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae149d9832b6395cee63aea7bcacf9a17"><td class="memItemLeft" align="right" valign="top"><a id="ae149d9832b6395cee63aea7bcacf9a17" name="ae149d9832b6395cee63aea7bcacf9a17"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass2</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ae149d9832b6395cee63aea7bcacf9a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class2. <br /></td></tr>
-<tr class="separator:ae149d9832b6395cee63aea7bcacf9a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad182cb749cbb43bfa62c77a1b6fb4a6f"><td class="memItemLeft" align="right" valign="top"><a id="ad182cb749cbb43bfa62c77a1b6fb4a6f" name="ad182cb749cbb43bfa62c77a1b6fb4a6f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass3</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad182cb749cbb43bfa62c77a1b6fb4a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class3. <br /></td></tr>
-<tr class="separator:ad182cb749cbb43bfa62c77a1b6fb4a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d30795781bdb61e1ce65446e7a9d18"><td class="memItemLeft" align="right" valign="top"><a id="a56d30795781bdb61e1ce65446e7a9d18" name="a56d30795781bdb61e1ce65446e7a9d18"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass4</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a56d30795781bdb61e1ce65446e7a9d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class4. <br /></td></tr>
-<tr class="separator:a56d30795781bdb61e1ce65446e7a9d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962d0b21bbcc404b564846657080e62a"><td class="memItemLeft" align="right" valign="top"><a id="a962d0b21bbcc404b564846657080e62a" name="a962d0b21bbcc404b564846657080e62a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass5</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a962d0b21bbcc404b564846657080e62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class5. <br /></td></tr>
-<tr class="separator:a962d0b21bbcc404b564846657080e62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77220b624b9d0c975c9e6b3626da5631"><td class="memItemLeft" align="right" valign="top"><a id="a77220b624b9d0c975c9e6b3626da5631" name="a77220b624b9d0c975c9e6b3626da5631"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass6</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a77220b624b9d0c975c9e6b3626da5631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class6. <br /></td></tr>
-<tr class="separator:a77220b624b9d0c975c9e6b3626da5631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a018bec4a88c07a198f29068ffe778c9f"><td class="memItemLeft" align="right" valign="top"><a id="a018bec4a88c07a198f29068ffe778c9f" name="a018bec4a88c07a198f29068ffe778c9f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass7</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">model::MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a018bec4a88c07a198f29068ffe778c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class7. <br /></td></tr>
-<tr class="separator:a018bec4a88c07a198f29068ffe778c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ad0bbc4184be0b2a9324a6c711931f"><td class="memItemLeft" align="right" valign="top"><a id="aa4ad0bbc4184be0b2a9324a6c711931f" name="aa4ad0bbc4184be0b2a9324a6c711931f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindLevel</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa4ad0bbc4184be0b2a9324a6c711931f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Level. <br /></td></tr>
+<tr class="separator:aa4ad0bbc4184be0b2a9324a6c711931f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad812f3290223d1807cdf1201603a872a"><td class="memItemLeft" align="right" valign="top"><a id="ad812f3290223d1807cdf1201603a872a" name="ad812f3290223d1807cdf1201603a872a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass1</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:ad812f3290223d1807cdf1201603a872a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class1. <br /></td></tr>
+<tr class="separator:ad812f3290223d1807cdf1201603a872a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa037ee2c68e0d8f8a5bc69609cde3575"><td class="memItemLeft" align="right" valign="top"><a id="aa037ee2c68e0d8f8a5bc69609cde3575" name="aa037ee2c68e0d8f8a5bc69609cde3575"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass2</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aa037ee2c68e0d8f8a5bc69609cde3575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class2. <br /></td></tr>
+<tr class="separator:aa037ee2c68e0d8f8a5bc69609cde3575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13750f69e8d786a1c7df9ad455d61c1e"><td class="memItemLeft" align="right" valign="top"><a id="a13750f69e8d786a1c7df9ad455d61c1e" name="a13750f69e8d786a1c7df9ad455d61c1e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass3</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a13750f69e8d786a1c7df9ad455d61c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class3. <br /></td></tr>
+<tr class="separator:a13750f69e8d786a1c7df9ad455d61c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa7a52aaf3aeb77a3508599fab5d1be"><td class="memItemLeft" align="right" valign="top"><a id="a7fa7a52aaf3aeb77a3508599fab5d1be" name="a7fa7a52aaf3aeb77a3508599fab5d1be"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass4</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a7fa7a52aaf3aeb77a3508599fab5d1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class4. <br /></td></tr>
+<tr class="separator:a7fa7a52aaf3aeb77a3508599fab5d1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdb328e4d434ad8f345a5b55d5d841a"><td class="memItemLeft" align="right" valign="top"><a id="afbdb328e4d434ad8f345a5b55d5d841a" name="afbdb328e4d434ad8f345a5b55d5d841a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass5</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:afbdb328e4d434ad8f345a5b55d5d841a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class5. <br /></td></tr>
+<tr class="separator:afbdb328e4d434ad8f345a5b55d5d841a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba593171a318d570585b836f228326e0"><td class="memItemLeft" align="right" valign="top"><a id="aba593171a318d570585b836f228326e0" name="aba593171a318d570585b836f228326e0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass6</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:aba593171a318d570585b836f228326e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class6. <br /></td></tr>
+<tr class="separator:aba593171a318d570585b836f228326e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2751740ac2b92949a41bcf2697f45e7c"><td class="memItemLeft" align="right" valign="top"><a id="a2751740ac2b92949a41bcf2697f45e7c" name="a2751740ac2b92949a41bcf2697f45e7c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindClass7</b> (<a class="el" href="classmodel_1_1MakeDefensive.html">MakeDefensive</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a2751740ac2b92949a41bcf2697f45e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to Class7. <br /></td></tr>
+<tr class="separator:a2751740ac2b92949a41bcf2697f45e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1MakeDefensive.html" title="[MAKE_DEFENSIVE] Make defensive">MakeDefensive</a> model, using nanodbc </p>

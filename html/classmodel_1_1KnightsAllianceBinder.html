@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('classmodel_1_1KnightsAllianceBinder.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5b2aa4d1f1660c6fc9ac52963f3e3ae9"><td class="memItemLeft" align="right" valign="top"><a id="a5b2aa4d1f1660c6fc9ac52963f3e3ae9" name="a5b2aa4d1f1660c6fc9ac52963f3e3ae9"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1KnightsAlliance.html">model::KnightsAlliance</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="separator:a5b2aa4d1f1660c6fc9ac52963f3e3ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9433f7b9ad8d044f5d62c548c601d7"><td class="memItemLeft" align="right" valign="top"><a id="afe9433f7b9ad8d044f5d62c548c601d7" name="afe9433f7b9ad8d044f5d62c548c601d7"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>BindColumnFunction_t</b>) (<a class="el" href="classmodel_1_1KnightsAlliance.html">KnightsAlliance</a> &amp;m, const nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="separator:afe9433f7b9ad8d044f5d62c548c601d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a347b3bdd779e0bd8b29c839e0b39a7a1"><td class="memItemLeft" align="right" valign="top"><a id="a347b3bdd779e0bd8b29c839e0b39a7a1" name="a347b3bdd779e0bd8b29c839e0b39a7a1"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BindingsMapType</b> = std::unordered_map&lt; std::string, BindColumnFunction_t &gt;</td></tr>
 <tr class="separator:a347b3bdd779e0bd8b29c839e0b39a7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,22 +116,22 @@ Static Public Member Functions</h2></td></tr>
 static const BindingsMapType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnBindings</b> ()</td></tr>
 <tr class="memdesc:af453317eadf5761b18db202e88cff70d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binding function associated with the column name. <br /></td></tr>
 <tr class="separator:af453317eadf5761b18db202e88cff70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2dd64c8796a4c9e2ce099819f3fb83a"><td class="memItemLeft" align="right" valign="top"><a id="ad2dd64c8796a4c9e2ce099819f3fb83a" name="ad2dd64c8796a4c9e2ce099819f3fb83a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMainAllianceKnights</b> (<a class="el" href="classmodel_1_1KnightsAlliance.html">model::KnightsAlliance</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ad2dd64c8796a4c9e2ce099819f3fb83a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MainAllianceKnights. <br /></td></tr>
-<tr class="separator:ad2dd64c8796a4c9e2ce099819f3fb83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19adecd6ebf3faac550a908e16a50661"><td class="memItemLeft" align="right" valign="top"><a id="a19adecd6ebf3faac550a908e16a50661" name="a19adecd6ebf3faac550a908e16a50661"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSubAllianceKnights</b> (<a class="el" href="classmodel_1_1KnightsAlliance.html">model::KnightsAlliance</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:a19adecd6ebf3faac550a908e16a50661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to SubAllianceKnights. <br /></td></tr>
-<tr class="separator:a19adecd6ebf3faac550a908e16a50661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac967f3ba13b9645cbbe4726081f7c9d0"><td class="memItemLeft" align="right" valign="top"><a id="ac967f3ba13b9645cbbe4726081f7c9d0" name="ac967f3ba13b9645cbbe4726081f7c9d0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMercenaryClan1</b> (<a class="el" href="classmodel_1_1KnightsAlliance.html">model::KnightsAlliance</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:ac967f3ba13b9645cbbe4726081f7c9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MercenaryClan1. <br /></td></tr>
-<tr class="separator:ac967f3ba13b9645cbbe4726081f7c9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2bf8f80e513d9a94faf5ad26dba6630"><td class="memItemLeft" align="right" valign="top"><a id="aa2bf8f80e513d9a94faf5ad26dba6630" name="aa2bf8f80e513d9a94faf5ad26dba6630"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMercenaryClan2</b> (<a class="el" href="classmodel_1_1KnightsAlliance.html">model::KnightsAlliance</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
-<tr class="memdesc:aa2bf8f80e513d9a94faf5ad26dba6630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MercenaryClan2. <br /></td></tr>
-<tr class="separator:aa2bf8f80e513d9a94faf5ad26dba6630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb905da0c453f5828824241b7dce3b55"><td class="memItemLeft" align="right" valign="top"><a id="acb905da0c453f5828824241b7dce3b55" name="acb905da0c453f5828824241b7dce3b55"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMainAllianceKnights</b> (<a class="el" href="classmodel_1_1KnightsAlliance.html">KnightsAlliance</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:acb905da0c453f5828824241b7dce3b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MainAllianceKnights. <br /></td></tr>
+<tr class="separator:acb905da0c453f5828824241b7dce3b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c07a242b8c4fe3f5bb4ff4129f70b74"><td class="memItemLeft" align="right" valign="top"><a id="a5c07a242b8c4fe3f5bb4ff4129f70b74" name="a5c07a242b8c4fe3f5bb4ff4129f70b74"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindSubAllianceKnights</b> (<a class="el" href="classmodel_1_1KnightsAlliance.html">KnightsAlliance</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:a5c07a242b8c4fe3f5bb4ff4129f70b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to SubAllianceKnights. <br /></td></tr>
+<tr class="separator:a5c07a242b8c4fe3f5bb4ff4129f70b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd01f75261e5c344e0d4a0f0cbb4ca9"><td class="memItemLeft" align="right" valign="top"><a id="abdd01f75261e5c344e0d4a0f0cbb4ca9" name="abdd01f75261e5c344e0d4a0f0cbb4ca9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMercenaryClan1</b> (<a class="el" href="classmodel_1_1KnightsAlliance.html">KnightsAlliance</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:abdd01f75261e5c344e0d4a0f0cbb4ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MercenaryClan1. <br /></td></tr>
+<tr class="separator:abdd01f75261e5c344e0d4a0f0cbb4ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af081f058d447a3f49d55093793f9fdfa"><td class="memItemLeft" align="right" valign="top"><a id="af081f058d447a3f49d55093793f9fdfa" name="af081f058d447a3f49d55093793f9fdfa"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMercenaryClan2</b> (<a class="el" href="classmodel_1_1KnightsAlliance.html">KnightsAlliance</a> &amp;m, nanodbc::result &amp;result, short colIndex)</td></tr>
+<tr class="memdesc:af081f058d447a3f49d55093793f9fdfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a result's column to MercenaryClan2. <br /></td></tr>
+<tr class="separator:af081f058d447a3f49d55093793f9fdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>generated column binder for the <a class="el" href="classmodel_1_1KnightsAlliance.html" title="[KNIGHTS_ALLIANCE] Knights alliance formations">KnightsAlliance</a> model, using nanodbc </p>
