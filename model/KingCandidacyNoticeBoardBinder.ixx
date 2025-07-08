@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to CandidateId
-		static void BindCandidateId(KingCandidacyNoticeBoard& m, nanodbc::result& result, short colIndex)
+		static void BindCandidateId(KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CandidateId);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(KingCandidacyNoticeBoard& m, nanodbc::result& result, short colIndex)
+		static void BindNation(KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to NoticeLength
-		static void BindNoticeLength(KingCandidacyNoticeBoard& m, nanodbc::result& result, short colIndex)
+		static void BindNoticeLength(KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NoticeLength);
 		}
 
 		/// \brief Binds a result's column to Notice
-		static void BindNotice(KingCandidacyNoticeBoard& m, nanodbc::result& result, short colIndex)
+		static void BindNotice(KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::vector<uint8_t>>(colIndex, m.Notice);
 		}

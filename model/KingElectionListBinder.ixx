@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(KingElectionList& m, nanodbc::result& result, short colIndex)
+		static void BindType(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(KingElectionList& m, nanodbc::result& result, short colIndex)
+		static void BindNation(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Knights
-		static void BindKnights(KingElectionList& m, nanodbc::result& result, short colIndex)
+		static void BindKnights(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Knights);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(KingElectionList& m, nanodbc::result& result, short colIndex)
+		static void BindName(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Money
-		static void BindMoney(KingElectionList& m, nanodbc::result& result, short colIndex)
+		static void BindMoney(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Money);
 		}

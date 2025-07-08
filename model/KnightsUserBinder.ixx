@@ -31,13 +31,13 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to KnightsId
-		static void BindKnightsId(KnightsUser& m, nanodbc::result& result, short colIndex)
+		static void BindKnightsId(KnightsUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.KnightsId);
 		}
 
 		/// \brief Binds a result's column to UserId
-		static void BindUserId(KnightsUser& m, nanodbc::result& result, short colIndex)
+		static void BindUserId(KnightsUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.UserId);
 		}

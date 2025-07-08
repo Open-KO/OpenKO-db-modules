@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(EventTrigger& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to NpcType
-		static void BindNpcType(EventTrigger& m, nanodbc::result& result, short colIndex)
+		static void BindNpcType(EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.NpcType);
 		}
 
 		/// \brief Binds a result's column to NpcId
-		static void BindNpcId(EventTrigger& m, nanodbc::result& result, short colIndex)
+		static void BindNpcId(EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NpcId);
 		}
 
 		/// \brief Binds a result's column to TriggerNumber
-		static void BindTriggerNumber(EventTrigger& m, nanodbc::result& result, short colIndex)
+		static void BindTriggerNumber(EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.TriggerNumber);
 		}

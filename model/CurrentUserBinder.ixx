@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ServerNumber
-		static void BindServerNumber(CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindServerNumber(CurrentUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ServerNumber);
 		}
 
 		/// \brief Binds a result's column to ServerIP
-		static void BindServerIP(CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindServerIP(CurrentUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.ServerIP);
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(CurrentUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(CurrentUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to ClientIP
-		static void BindClientIP(CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindClientIP(CurrentUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.ClientIP);
 		}

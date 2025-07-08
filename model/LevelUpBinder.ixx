@@ -31,13 +31,13 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Level
-		static void BindLevel(LevelUp& m, nanodbc::result& result, short colIndex)
+		static void BindLevel(LevelUp& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to RequiredExp
-		static void BindRequiredExp(LevelUp& m, nanodbc::result& result, short colIndex)
+		static void BindRequiredExp(LevelUp& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.RequiredExp);
 		}

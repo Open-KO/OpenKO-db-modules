@@ -35,37 +35,37 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(TbUser& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(TbUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to Password
-		static void BindPassword(TbUser& m, nanodbc::result& result, short colIndex)
+		static void BindPassword(TbUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Password);
 		}
 
 		/// \brief Binds a result's column to SocNo
-		static void BindSocNo(TbUser& m, nanodbc::result& result, short colIndex)
+		static void BindSocNo(TbUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.SocNo);
 		}
 
 		/// \brief Binds a result's column to Email
-		static void BindEmail(TbUser& m, nanodbc::result& result, short colIndex)
+		static void BindEmail(TbUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Email);
 		}
 
 		/// \brief Binds a result's column to Authority
-		static void BindAuthority(TbUser& m, nanodbc::result& result, short colIndex)
+		static void BindAuthority(TbUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Authority);
 		}
 
 		/// \brief Binds a result's column to PremiumExpire
-		static void BindPremiumExpire(TbUser& m, nanodbc::result& result, short colIndex)
+		static void BindPremiumExpire(TbUser& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::time_t>(colIndex, m.PremiumExpire);
 		}

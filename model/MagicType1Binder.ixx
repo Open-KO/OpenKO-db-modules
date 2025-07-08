@@ -41,73 +41,73 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindMagicNumber(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.MagicNumber);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindName(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
-		static void BindDescription(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindDescription(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindType(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to HitRateMod
-		static void BindHitRateMod(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindHitRateMod(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.HitRateMod);
 		}
 
 		/// \brief Binds a result's column to DamageMod
-		static void BindDamageMod(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindDamageMod(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.DamageMod);
 		}
 
 		/// \brief Binds a result's column to AddDamage
-		static void BindAddDamage(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindAddDamage(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.AddDamage);
 		}
 
 		/// \brief Binds a result's column to Delay
-		static void BindDelay(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindDelay(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Delay);
 		}
 
 		/// \brief Binds a result's column to ComboType
-		static void BindComboType(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindComboType(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ComboType);
 		}
 
 		/// \brief Binds a result's column to ComboCount
-		static void BindComboCount(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindComboCount(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ComboCount);
 		}
 
 		/// \brief Binds a result's column to ComboDamage
-		static void BindComboDamage(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindComboDamage(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ComboDamage);
 		}
 
 		/// \brief Binds a result's column to Range
-		static void BindRange(MagicType1& m, nanodbc::result& result, short colIndex)
+		static void BindRange(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Range);
 		}

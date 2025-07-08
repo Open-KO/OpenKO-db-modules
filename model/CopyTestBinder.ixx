@@ -30,7 +30,7 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ItemSerial
-		static void BindItemSerial(CopyTest& m, nanodbc::result& result, short colIndex)
+		static void BindItemSerial(CopyTest& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int64_t>(colIndex, m.ItemSerial);
 		}

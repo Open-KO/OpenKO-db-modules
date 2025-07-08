@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MainAllianceKnights
-		static void BindMainAllianceKnights(KnightsAlliance& m, nanodbc::result& result, short colIndex)
+		static void BindMainAllianceKnights(KnightsAlliance& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MainAllianceKnights);
 		}
 
 		/// \brief Binds a result's column to SubAllianceKnights
-		static void BindSubAllianceKnights(KnightsAlliance& m, nanodbc::result& result, short colIndex)
+		static void BindSubAllianceKnights(KnightsAlliance& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.SubAllianceKnights);
 		}
 
 		/// \brief Binds a result's column to MercenaryClan1
-		static void BindMercenaryClan1(KnightsAlliance& m, nanodbc::result& result, short colIndex)
+		static void BindMercenaryClan1(KnightsAlliance& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MercenaryClan1);
 		}
 
 		/// \brief Binds a result's column to MercenaryClan2
-		static void BindMercenaryClan2(KnightsAlliance& m, nanodbc::result& result, short colIndex)
+		static void BindMercenaryClan2(KnightsAlliance& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MercenaryClan2);
 		}

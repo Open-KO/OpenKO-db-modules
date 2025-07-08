@@ -36,43 +36,43 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(MagicType8& m, nanodbc::result& result, short colIndex)
+		static void BindMagicNumber(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.MagicNumber);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(MagicType8& m, nanodbc::result& result, short colIndex)
+		static void BindName(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
-		static void BindDescription(MagicType8& m, nanodbc::result& result, short colIndex)
+		static void BindDescription(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Target
-		static void BindTarget(MagicType8& m, nanodbc::result& result, short colIndex)
+		static void BindTarget(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Target);
 		}
 
 		/// \brief Binds a result's column to Radius
-		static void BindRadius(MagicType8& m, nanodbc::result& result, short colIndex)
+		static void BindRadius(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Radius);
 		}
 
 		/// \brief Binds a result's column to WarpType
-		static void BindWarpType(MagicType8& m, nanodbc::result& result, short colIndex)
+		static void BindWarpType(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.WarpType);
 		}
 
 		/// \brief Binds a result's column to ExpRecover
-		static void BindExpRecover(MagicType8& m, nanodbc::result& result, short colIndex)
+		static void BindExpRecover(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ExpRecover);
 		}

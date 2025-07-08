@@ -35,37 +35,37 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindNation(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to CharNum
-		static void BindCharNum(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindCharNum(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.CharNum);
 		}
 
 		/// \brief Binds a result's column to CharId1
-		static void BindCharId1(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindCharId1(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.CharId1);
 		}
 
 		/// \brief Binds a result's column to CharId2
-		static void BindCharId2(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindCharId2(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.CharId2);
 		}
 
 		/// \brief Binds a result's column to CharId3
-		static void BindCharId3(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindCharId3(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.CharId3);
 		}

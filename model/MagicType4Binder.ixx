@@ -59,181 +59,181 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindMagicNumber(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.MagicNumber);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindName(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
-		static void BindDescription(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindDescription(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to BuffType
-		static void BindBuffType(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindBuffType(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.BuffType);
 		}
 
 		/// \brief Binds a result's column to Radius
-		static void BindRadius(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindRadius(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Radius);
 		}
 
 		/// \brief Binds a result's column to Duration
-		static void BindDuration(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindDuration(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Duration);
 		}
 
 		/// \brief Binds a result's column to AttackSpeed
-		static void BindAttackSpeed(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindAttackSpeed(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.AttackSpeed);
 		}
 
 		/// \brief Binds a result's column to Speed
-		static void BindSpeed(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindSpeed(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Speed);
 		}
 
 		/// \brief Binds a result's column to Armor
-		static void BindArmor(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindArmor(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Armor);
 		}
 
 		/// \brief Binds a result's column to ArmorPercent
-		static void BindArmorPercent(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindArmorPercent(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ArmorPercent);
 		}
 
 		/// \brief Binds a result's column to AttackPower
-		static void BindAttackPower(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindAttackPower(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.AttackPower);
 		}
 
 		/// \brief Binds a result's column to MagicPower
-		static void BindMagicPower(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindMagicPower(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.MagicPower);
 		}
 
 		/// \brief Binds a result's column to MaxHp
-		static void BindMaxHp(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindMaxHp(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MaxHp);
 		}
 
 		/// \brief Binds a result's column to MaxHpPercent
-		static void BindMaxHpPercent(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindMaxHpPercent(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MaxHpPercent);
 		}
 
 		/// \brief Binds a result's column to MaxMp
-		static void BindMaxMp(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindMaxMp(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MaxMp);
 		}
 
 		/// \brief Binds a result's column to MaxMpPercent
-		static void BindMaxMpPercent(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindMaxMpPercent(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MaxMpPercent);
 		}
 
 		/// \brief Binds a result's column to HitRate
-		static void BindHitRate(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindHitRate(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.HitRate);
 		}
 
 		/// \brief Binds a result's column to AvoidRate
-		static void BindAvoidRate(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindAvoidRate(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.AvoidRate);
 		}
 
 		/// \brief Binds a result's column to Strength
-		static void BindStrength(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindStrength(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Strength);
 		}
 
 		/// \brief Binds a result's column to Stamina
-		static void BindStamina(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindStamina(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Stamina);
 		}
 
 		/// \brief Binds a result's column to Dexterity
-		static void BindDexterity(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindDexterity(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Dexterity);
 		}
 
 		/// \brief Binds a result's column to Intelligence
-		static void BindIntelligence(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindIntelligence(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Intelligence);
 		}
 
 		/// \brief Binds a result's column to Charisma
-		static void BindCharisma(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindCharisma(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Charisma);
 		}
 
 		/// \brief Binds a result's column to FireResist
-		static void BindFireResist(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindFireResist(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.FireResist);
 		}
 
 		/// \brief Binds a result's column to ColdResist
-		static void BindColdResist(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindColdResist(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ColdResist);
 		}
 
 		/// \brief Binds a result's column to LightningResist
-		static void BindLightningResist(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindLightningResist(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.LightningResist);
 		}
 
 		/// \brief Binds a result's column to MagicResist
-		static void BindMagicResist(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindMagicResist(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.MagicResist);
 		}
 
 		/// \brief Binds a result's column to DiseaseResist
-		static void BindDiseaseResist(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindDiseaseResist(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.DiseaseResist);
 		}
 
 		/// \brief Binds a result's column to PoisonResist
-		static void BindPoisonResist(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindPoisonResist(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.PoisonResist);
 		}
 
 		/// \brief Binds a result's column to ExpPercent
-		static void BindExpPercent(MagicType4& m, nanodbc::result& result, short colIndex)
+		static void BindExpPercent(MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ExpPercent);
 		}

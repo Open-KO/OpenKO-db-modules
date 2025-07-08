@@ -55,157 +55,157 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to IdNumber
-		static void BindIdNumber(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindIdNumber(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.IdNumber);
 		}
 
 		/// \brief Binds a result's column to Flag
-		static void BindFlag(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindFlag(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Flag);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindNation(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Ranking
-		static void BindRanking(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindRanking(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Ranking);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindName(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Members
-		static void BindMembers(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindMembers(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Members);
 		}
 
 		/// \brief Binds a result's column to Chief
-		static void BindChief(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindChief(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Chief);
 		}
 
 		/// \brief Binds a result's column to ViceChief1
-		static void BindViceChief1(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindViceChief1(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief1);
 		}
 
 		/// \brief Binds a result's column to ViceChief2
-		static void BindViceChief2(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindViceChief2(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief2);
 		}
 
 		/// \brief Binds a result's column to ViceChief3
-		static void BindViceChief3(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindViceChief3(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief3);
 		}
 
 		/// \brief Binds a result's column to EnemyName
-		static void BindEnemyName(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindEnemyName(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.EnemyName);
 		}
 
 		/// \brief Binds a result's column to OldWarResult
-		static void BindOldWarResult(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindOldWarResult(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.OldWarResult);
 		}
 
 		/// \brief Binds a result's column to WarEnemyId
-		static void BindWarEnemyId(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindWarEnemyId(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.WarEnemyId);
 		}
 
 		/// \brief Binds a result's column to Victory
-		static void BindVictory(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindVictory(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Victory);
 		}
 
 		/// \brief Binds a result's column to Lose
-		static void BindLose(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindLose(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Lose);
 		}
 
 		/// \brief Binds a result's column to Gold
-		static void BindGold(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindGold(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int64_t>(colIndex, m.Gold);
 		}
 
 		/// \brief Binds a result's column to Domination
-		static void BindDomination(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindDomination(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Domination);
 		}
 
 		/// \brief Binds a result's column to Points
-		static void BindPoints(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindPoints(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Points);
 		}
 
 		/// \brief Binds a result's column to CreateTime
-		static void BindCreateTime(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindCreateTime(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::time_t>(colIndex, m.CreateTime);
 		}
 
 		/// \brief Binds a result's column to MarkVersion
-		static void BindMarkVersion(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindMarkVersion(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MarkVersion);
 		}
 
 		/// \brief Binds a result's column to MarkLength
-		static void BindMarkLength(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindMarkLength(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MarkLength);
 		}
 
 		/// \brief Binds a result's column to Mark
-		static void BindMark(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindMark(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.Mark);
 		}
 
 		/// \brief Binds a result's column to Stash
-		static void BindStash(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindStash(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Stash);
 		}
 
 		/// \brief Binds a result's column to SiegeFlag
-		static void BindSiegeFlag(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindSiegeFlag(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.SiegeFlag);
 		}
 
 		/// \brief Binds a result's column to AllianceKnights
-		static void BindAllianceKnights(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindAllianceKnights(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.AllianceKnights);
 		}
 
 		/// \brief Binds a result's column to Cape
-		static void BindCape(Knights& m, nanodbc::result& result, short colIndex)
+		static void BindCape(Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Cape);
 		}

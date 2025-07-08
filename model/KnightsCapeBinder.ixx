@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to CapeIndex
-		static void BindCapeIndex(KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindCapeIndex(KnightsCape& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.CapeIndex);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindName(KnightsCape& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to BuyPrice
-		static void BindBuyPrice(KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindBuyPrice(KnightsCape& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.BuyPrice);
 		}
 
 		/// \brief Binds a result's column to Duration
-		static void BindDuration(KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindDuration(KnightsCape& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Duration);
 		}
 
 		/// \brief Binds a result's column to Grade
-		static void BindGrade(KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindGrade(KnightsCape& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Grade);
 		}

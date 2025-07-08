@@ -32,19 +32,19 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ResourceId
-		static void BindResourceId(ServerResource& m, nanodbc::result& result, short colIndex)
+		static void BindResourceId(ServerResource& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ResourceId);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(ServerResource& m, nanodbc::result& result, short colIndex)
+		static void BindName(ServerResource& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Resource
-		static void BindResource(ServerResource& m, nanodbc::result& result, short colIndex)
+		static void BindResource(ServerResource& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Resource);
 		}

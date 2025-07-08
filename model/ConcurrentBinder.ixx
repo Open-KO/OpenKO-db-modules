@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ServerId
-		static void BindServerId(Concurrent& m, nanodbc::result& result, short colIndex)
+		static void BindServerId(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to Zone1Count
-		static void BindZone1Count(Concurrent& m, nanodbc::result& result, short colIndex)
+		static void BindZone1Count(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Zone1Count);
 		}
 
 		/// \brief Binds a result's column to Zone2Count
-		static void BindZone2Count(Concurrent& m, nanodbc::result& result, short colIndex)
+		static void BindZone2Count(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Zone2Count);
 		}
 
 		/// \brief Binds a result's column to Zone3Count
-		static void BindZone3Count(Concurrent& m, nanodbc::result& result, short colIndex)
+		static void BindZone3Count(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Zone3Count);
 		}
 
 		/// \brief Binds a result's column to Bz
-		static void BindBz(Concurrent& m, nanodbc::result& result, short colIndex)
+		static void BindBz(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Bz);
 		}

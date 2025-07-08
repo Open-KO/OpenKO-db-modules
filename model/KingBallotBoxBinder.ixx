@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(KingBallotBox& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(KingBallotBox& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(KingBallotBox& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(KingBallotBox& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(KingBallotBox& m, nanodbc::result& result, short colIndex)
+		static void BindNation(KingBallotBox& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to CandidateId
-		static void BindCandidateId(KingBallotBox& m, nanodbc::result& result, short colIndex)
+		static void BindCandidateId(KingBallotBox& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CandidateId);
 		}

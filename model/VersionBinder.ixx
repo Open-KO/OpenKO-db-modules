@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Version
-		static void BindVersion(Version& m, nanodbc::result& result, short colIndex)
+		static void BindVersion(Version& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Version);
 		}
 
 		/// \brief Binds a result's column to FileName
-		static void BindFileName(Version& m, nanodbc::result& result, short colIndex)
+		static void BindFileName(Version& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.FileName);
 		}
 
 		/// \brief Binds a result's column to CompressName
-		static void BindCompressName(Version& m, nanodbc::result& result, short colIndex)
+		static void BindCompressName(Version& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CompressName);
 		}
 
 		/// \brief Binds a result's column to HistoryVersion
-		static void BindHistoryVersion(Version& m, nanodbc::result& result, short colIndex)
+		static void BindHistoryVersion(Version& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.HistoryVersion);
 		}

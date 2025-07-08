@@ -40,67 +40,67 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindMagicNumber(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.MagicNumber);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindName(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
-		static void BindDescription(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindDescription(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Radius
-		static void BindRadius(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindRadius(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Radius);
 		}
 
 		/// \brief Binds a result's column to Angle
-		static void BindAngle(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindAngle(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Angle);
 		}
 
 		/// \brief Binds a result's column to DirectType
-		static void BindDirectType(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindDirectType(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.DirectType);
 		}
 
 		/// \brief Binds a result's column to FirstDamage
-		static void BindFirstDamage(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindFirstDamage(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.FirstDamage);
 		}
 
 		/// \brief Binds a result's column to EndDamage
-		static void BindEndDamage(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindEndDamage(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.EndDamage);
 		}
 
 		/// \brief Binds a result's column to TimeDamage
-		static void BindTimeDamage(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindTimeDamage(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.TimeDamage);
 		}
 
 		/// \brief Binds a result's column to Duration
-		static void BindDuration(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindDuration(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Duration);
 		}
 
 		/// \brief Binds a result's column to Attribute
-		static void BindAttribute(MagicType3& m, nanodbc::result& result, short colIndex)
+		static void BindAttribute(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Attribute);
 		}

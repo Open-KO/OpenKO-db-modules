@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MonsterId
-		static void BindMonsterId(MonsterSummonList& m, nanodbc::result& result, short colIndex)
+		static void BindMonsterId(MonsterSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MonsterId);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(MonsterSummonList& m, nanodbc::result& result, short colIndex)
+		static void BindName(MonsterSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Level
-		static void BindLevel(MonsterSummonList& m, nanodbc::result& result, short colIndex)
+		static void BindLevel(MonsterSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Probability
-		static void BindProbability(MonsterSummonList& m, nanodbc::result& result, short colIndex)
+		static void BindProbability(MonsterSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Probability);
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(MonsterSummonList& m, nanodbc::result& result, short colIndex)
+		static void BindType(MonsterSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Type);
 		}

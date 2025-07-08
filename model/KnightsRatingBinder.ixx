@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Rank
-		static void BindRank(KnightsRating& m, nanodbc::result& result, short colIndex)
+		static void BindRank(KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Rank);
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(KnightsRating& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(KnightsRating& m, nanodbc::result& result, short colIndex)
+		static void BindName(KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Points
-		static void BindPoints(KnightsRating& m, nanodbc::result& result, short colIndex)
+		static void BindPoints(KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Points);
 		}

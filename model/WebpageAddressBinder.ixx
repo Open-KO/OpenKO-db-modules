@@ -31,13 +31,13 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(WebpageAddress& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(WebpageAddress& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to WebPageAddress
-		static void BindWebPageAddress(WebpageAddress& m, nanodbc::result& result, short colIndex)
+		static void BindWebPageAddress(WebpageAddress& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.WebPageAddress);
 		}

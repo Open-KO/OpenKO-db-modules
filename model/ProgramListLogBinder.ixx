@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Id
-		static void BindId(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindId(ProgramListLog& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Id);
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(ProgramListLog& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(ProgramListLog& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to HackToolName
-		static void BindHackToolName(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindHackToolName(ProgramListLog& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.HackToolName);
 		}
 
 		/// \brief Binds a result's column to WriteTime
-		static void BindWriteTime(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindWriteTime(ProgramListLog& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::time_t>(colIndex, m.WriteTime);
 		}

@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to LevelGrade
-		static void BindLevelGrade(MakeItemRareCode& m, nanodbc::result& result, short colIndex)
+		static void BindLevelGrade(MakeItemRareCode& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.LevelGrade);
 		}
 
 		/// \brief Binds a result's column to UpgradeItem
-		static void BindUpgradeItem(MakeItemRareCode& m, nanodbc::result& result, short colIndex)
+		static void BindUpgradeItem(MakeItemRareCode& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.UpgradeItem);
 		}
 
 		/// \brief Binds a result's column to RareItem
-		static void BindRareItem(MakeItemRareCode& m, nanodbc::result& result, short colIndex)
+		static void BindRareItem(MakeItemRareCode& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.RareItem);
 		}
 
 		/// \brief Binds a result's column to MagicItem
-		static void BindMagicItem(MakeItemRareCode& m, nanodbc::result& result, short colIndex)
+		static void BindMagicItem(MakeItemRareCode& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MagicItem);
 		}
 
 		/// \brief Binds a result's column to GeneralItem
-		static void BindGeneralItem(MakeItemRareCode& m, nanodbc::result& result, short colIndex)
+		static void BindGeneralItem(MakeItemRareCode& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.GeneralItem);
 		}
