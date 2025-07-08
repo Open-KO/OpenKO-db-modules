@@ -183,7 +183,7 @@ namespace model
 		/// \brief Binds a result's column to Mark
 		static void BindMark(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Mark = result.get<std::vector<uint8_t>(colIndex);
+			m.Mark = result.get<std::vector<uint8_t>>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Stash

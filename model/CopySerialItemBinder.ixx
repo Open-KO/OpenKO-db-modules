@@ -36,7 +36,7 @@ namespace model
 		/// \brief Binds a result's column to UserId
 		static void BindUserId(CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.UserId = result.get<std::vector<uint8_t>(colIndex);
+			m.UserId = result.get<std::vector<uint8_t>>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Type
@@ -54,13 +54,13 @@ namespace model
 		/// \brief Binds a result's column to ItemNum
 		static void BindItemNum(CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemNum = result.get<std::vector<uint8_t>(colIndex);
+			m.ItemNum = result.get<std::vector<uint8_t>>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemSerial
 		static void BindItemSerial(CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemSerial = result.get<std::vector<uint8_t>(colIndex);
+			m.ItemSerial = result.get<std::vector<uint8_t>>(colIndex);
 		}
 
 	};
