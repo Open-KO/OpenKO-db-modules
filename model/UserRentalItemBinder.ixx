@@ -6,7 +6,7 @@ module;
 
 export module FullModel:UserRentalItemBinder;
 
-import FullModel:UserRentalItem;
+import :UserRentalItem;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::UserRentalItem& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(UserRentalItem& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -42,79 +42,79 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to UserId
-		static void BindUserId(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindUserId(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.UserId);
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to RentalType
-		static void BindRentalType(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindRentalType(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.RentalType);
 		}
 
 		/// \brief Binds a result's column to RegTime
-		static void BindRegTime(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindRegTime(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.RegTime);
 		}
 
 		/// \brief Binds a result's column to RentalIndex
-		static void BindRentalIndex(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindRentalIndex(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.RentalIndex);
 		}
 
 		/// \brief Binds a result's column to ItemIndex
-		static void BindItemIndex(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemIndex(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ItemIndex);
 		}
 
 		/// \brief Binds a result's column to Durability
-		static void BindDurability(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindDurability(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Durability);
 		}
 
 		/// \brief Binds a result's column to SerialNumber
-		static void BindSerialNumber(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindSerialNumber(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int64_t>(colIndex, m.SerialNumber);
 		}
 
 		/// \brief Binds a result's column to RentalMoney
-		static void BindRentalMoney(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindRentalMoney(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.RentalMoney);
 		}
 
 		/// \brief Binds a result's column to RentalTime
-		static void BindRentalTime(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindRentalTime(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.RentalTime);
 		}
 
 		/// \brief Binds a result's column to DuringTime
-		static void BindDuringTime(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindDuringTime(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.DuringTime);
 		}
 
 		/// \brief Binds a result's column to RentalTimestamp
-		static void BindRentalTimestamp(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindRentalTimestamp(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::time_t>>(colIndex, m.RentalTimestamp);
 		}
 
 		/// \brief Binds a result's column to RegisterTime
-		static void BindRegisterTime(model::UserRentalItem& m, nanodbc::result& result, short colIndex)
+		static void BindRegisterTime(UserRentalItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::time_t>>(colIndex, m.RegisterTime);
 		}

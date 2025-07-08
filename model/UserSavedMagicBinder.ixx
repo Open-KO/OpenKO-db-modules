@@ -6,7 +6,7 @@ module;
 
 export module FullModel:UserSavedMagicBinder;
 
-import FullModel:UserSavedMagic;
+import :UserSavedMagic;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::UserSavedMagic& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(UserSavedMagic& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -50,127 +50,127 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to Skill1
-		static void BindSkill1(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill1(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill1);
 		}
 
 		/// \brief Binds a result's column to During1
-		static void BindDuring1(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring1(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During1);
 		}
 
 		/// \brief Binds a result's column to Skill2
-		static void BindSkill2(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill2(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill2);
 		}
 
 		/// \brief Binds a result's column to During2
-		static void BindDuring2(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring2(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During2);
 		}
 
 		/// \brief Binds a result's column to Skill3
-		static void BindSkill3(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill3(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill3);
 		}
 
 		/// \brief Binds a result's column to During3
-		static void BindDuring3(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring3(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During3);
 		}
 
 		/// \brief Binds a result's column to Skill4
-		static void BindSkill4(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill4(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill4);
 		}
 
 		/// \brief Binds a result's column to During4
-		static void BindDuring4(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring4(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During4);
 		}
 
 		/// \brief Binds a result's column to Skill5
-		static void BindSkill5(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill5(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill5);
 		}
 
 		/// \brief Binds a result's column to During5
-		static void BindDuring5(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring5(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During5);
 		}
 
 		/// \brief Binds a result's column to Skill6
-		static void BindSkill6(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill6(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill6);
 		}
 
 		/// \brief Binds a result's column to During6
-		static void BindDuring6(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring6(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During6);
 		}
 
 		/// \brief Binds a result's column to Skill7
-		static void BindSkill7(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill7(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill7);
 		}
 
 		/// \brief Binds a result's column to During7
-		static void BindDuring7(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring7(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During7);
 		}
 
 		/// \brief Binds a result's column to Skill8
-		static void BindSkill8(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill8(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill8);
 		}
 
 		/// \brief Binds a result's column to During8
-		static void BindDuring8(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring8(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During8);
 		}
 
 		/// \brief Binds a result's column to Skill9
-		static void BindSkill9(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill9(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill9);
 		}
 
 		/// \brief Binds a result's column to During9
-		static void BindDuring9(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring9(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During9);
 		}
 
 		/// \brief Binds a result's column to Skill10
-		static void BindSkill10(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindSkill10(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Skill10);
 		}
 
 		/// \brief Binds a result's column to During10
-		static void BindDuring10(model::UserSavedMagic& m, nanodbc::result& result, short colIndex)
+		static void BindDuring10(UserSavedMagic& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.During10);
 		}

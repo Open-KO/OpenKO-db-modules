@@ -6,7 +6,7 @@ module;
 
 export module FullModel:CurrentUserBinder;
 
-import FullModel:CurrentUser;
+import :CurrentUser;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::CurrentUser& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(CurrentUser& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ServerNumber
-		static void BindServerNumber(model::CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindServerNumber(CurrentUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ServerNumber);
 		}
 
 		/// \brief Binds a result's column to ServerIP
-		static void BindServerIP(model::CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindServerIP(CurrentUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.ServerIP);
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(model::CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(CurrentUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(model::CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(CurrentUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to ClientIP
-		static void BindClientIP(model::CurrentUser& m, nanodbc::result& result, short colIndex)
+		static void BindClientIP(CurrentUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.ClientIP);
 		}

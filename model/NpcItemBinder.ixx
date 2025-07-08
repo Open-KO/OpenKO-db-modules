@@ -6,7 +6,7 @@ module;
 
 export module FullModel:NpcItemBinder;
 
-import FullModel:NpcItem;
+import :NpcItem;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::NpcItem& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(NpcItem& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -40,67 +40,67 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to NpcId
-		static void BindNpcId(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindNpcId(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NpcId);
 		}
 
 		/// \brief Binds a result's column to ItemId1
-		static void BindItemId1(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemId1(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ItemId1);
 		}
 
 		/// \brief Binds a result's column to DropChance1
-		static void BindDropChance1(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindDropChance1(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance1);
 		}
 
 		/// \brief Binds a result's column to ItemId2
-		static void BindItemId2(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemId2(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId2);
 		}
 
 		/// \brief Binds a result's column to DropChance2
-		static void BindDropChance2(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindDropChance2(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance2);
 		}
 
 		/// \brief Binds a result's column to ItemId3
-		static void BindItemId3(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemId3(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId3);
 		}
 
 		/// \brief Binds a result's column to DropChance3
-		static void BindDropChance3(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindDropChance3(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance3);
 		}
 
 		/// \brief Binds a result's column to ItemId4
-		static void BindItemId4(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemId4(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId4);
 		}
 
 		/// \brief Binds a result's column to DropChance4
-		static void BindDropChance4(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindDropChance4(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance4);
 		}
 
 		/// \brief Binds a result's column to ItemId5
-		static void BindItemId5(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemId5(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId5);
 		}
 
 		/// \brief Binds a result's column to DropChance5
-		static void BindDropChance5(model::NpcItem& m, nanodbc::result& result, short colIndex)
+		static void BindDropChance5(NpcItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance5);
 		}

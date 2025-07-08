@@ -6,7 +6,7 @@ module;
 
 export module FullModel:UserEditorItemBinder;
 
-import FullModel:UserEditorItem;
+import :UserEditorItem;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::UserEditorItem& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(UserEditorItem& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -39,61 +39,61 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to OpId
-		static void BindOpId(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindOpId(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.OpId);
 		}
 
 		/// \brief Binds a result's column to OpIP
-		static void BindOpIP(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindOpIP(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.OpIP);
 		}
 
 		/// \brief Binds a result's column to DbIndex
-		static void BindDbIndex(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindDbIndex(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.DbIndex);
 		}
 
 		/// \brief Binds a result's column to Pos
-		static void BindPos(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindPos(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Pos);
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindType(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to ItemId1
-		static void BindItemId1(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemId1(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ItemId1);
 		}
 
 		/// \brief Binds a result's column to ItemId2
-		static void BindItemId2(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemId2(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ItemId2);
 		}
 
 		/// \brief Binds a result's column to UpdateTime
-		static void BindUpdateTime(model::UserEditorItem& m, nanodbc::result& result, short colIndex)
+		static void BindUpdateTime(UserEditorItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::time_t>>(colIndex, m.UpdateTime);
 		}

@@ -6,7 +6,7 @@ module;
 
 export module FullModel:HomeBinder;
 
-import FullModel:Home;
+import :Home;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::Home& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(Home& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -50,127 +50,127 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindNation(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to ElmoZoneX
-		static void BindElmoZoneX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindElmoZoneX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ElmoZoneX);
 		}
 
 		/// \brief Binds a result's column to ElmoZoneZ
-		static void BindElmoZoneZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindElmoZoneZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ElmoZoneZ);
 		}
 
 		/// \brief Binds a result's column to ElmoZoneLX
-		static void BindElmoZoneLX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindElmoZoneLX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ElmoZoneLX);
 		}
 
 		/// \brief Binds a result's column to ElmoZoneLZ
-		static void BindElmoZoneLZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindElmoZoneLZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ElmoZoneLZ);
 		}
 
 		/// \brief Binds a result's column to KarusZoneX
-		static void BindKarusZoneX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindKarusZoneX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.KarusZoneX);
 		}
 
 		/// \brief Binds a result's column to KarusZoneZ
-		static void BindKarusZoneZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindKarusZoneZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.KarusZoneZ);
 		}
 
 		/// \brief Binds a result's column to KarusZoneLX
-		static void BindKarusZoneLX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindKarusZoneLX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.KarusZoneLX);
 		}
 
 		/// \brief Binds a result's column to KarusZoneLZ
-		static void BindKarusZoneLZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindKarusZoneLZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.KarusZoneLZ);
 		}
 
 		/// \brief Binds a result's column to FreeZoneX
-		static void BindFreeZoneX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindFreeZoneX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.FreeZoneX);
 		}
 
 		/// \brief Binds a result's column to FreeZoneZ
-		static void BindFreeZoneZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindFreeZoneZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.FreeZoneZ);
 		}
 
 		/// \brief Binds a result's column to FreeZoneLX
-		static void BindFreeZoneLX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindFreeZoneLX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.FreeZoneLX);
 		}
 
 		/// \brief Binds a result's column to FreeZoneLZ
-		static void BindFreeZoneLZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindFreeZoneLZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.FreeZoneLZ);
 		}
 
 		/// \brief Binds a result's column to BattleZoneX
-		static void BindBattleZoneX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindBattleZoneX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.BattleZoneX);
 		}
 
 		/// \brief Binds a result's column to BattleZoneZ
-		static void BindBattleZoneZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindBattleZoneZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.BattleZoneZ);
 		}
 
 		/// \brief Binds a result's column to BattleZoneLX
-		static void BindBattleZoneLX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindBattleZoneLX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.BattleZoneLX);
 		}
 
 		/// \brief Binds a result's column to BattleZoneLZ
-		static void BindBattleZoneLZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindBattleZoneLZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.BattleZoneLZ);
 		}
 
 		/// \brief Binds a result's column to BattleZone2X
-		static void BindBattleZone2X(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindBattleZone2X(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.BattleZone2X);
 		}
 
 		/// \brief Binds a result's column to BattleZone2Z
-		static void BindBattleZone2Z(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindBattleZone2Z(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.BattleZone2Z);
 		}
 
 		/// \brief Binds a result's column to BattleZone2LX
-		static void BindBattleZone2LX(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindBattleZone2LX(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.BattleZone2LX);
 		}
 
 		/// \brief Binds a result's column to BattleZone2LZ
-		static void BindBattleZone2LZ(model::Home& m, nanodbc::result& result, short colIndex)
+		static void BindBattleZone2LZ(Home& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.BattleZone2LZ);
 		}

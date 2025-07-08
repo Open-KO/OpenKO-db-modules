@@ -6,7 +6,7 @@ module;
 
 export module FullModel:MakeDefensiveBinder;
 
-import FullModel:MakeDefensive;
+import :MakeDefensive;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MakeDefensive& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(MakeDefensive& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -37,49 +37,49 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Level
-		static void BindLevel(model::MakeDefensive& m, nanodbc::result& result, short colIndex)
+		static void BindLevel(MakeDefensive& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Class1
-		static void BindClass1(model::MakeDefensive& m, nanodbc::result& result, short colIndex)
+		static void BindClass1(MakeDefensive& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class1);
 		}
 
 		/// \brief Binds a result's column to Class2
-		static void BindClass2(model::MakeDefensive& m, nanodbc::result& result, short colIndex)
+		static void BindClass2(MakeDefensive& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class2);
 		}
 
 		/// \brief Binds a result's column to Class3
-		static void BindClass3(model::MakeDefensive& m, nanodbc::result& result, short colIndex)
+		static void BindClass3(MakeDefensive& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class3);
 		}
 
 		/// \brief Binds a result's column to Class4
-		static void BindClass4(model::MakeDefensive& m, nanodbc::result& result, short colIndex)
+		static void BindClass4(MakeDefensive& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class4);
 		}
 
 		/// \brief Binds a result's column to Class5
-		static void BindClass5(model::MakeDefensive& m, nanodbc::result& result, short colIndex)
+		static void BindClass5(MakeDefensive& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class5);
 		}
 
 		/// \brief Binds a result's column to Class6
-		static void BindClass6(model::MakeDefensive& m, nanodbc::result& result, short colIndex)
+		static void BindClass6(MakeDefensive& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class6);
 		}
 
 		/// \brief Binds a result's column to Class7
-		static void BindClass7(model::MakeDefensive& m, nanodbc::result& result, short colIndex)
+		static void BindClass7(MakeDefensive& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class7);
 		}

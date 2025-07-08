@@ -6,7 +6,7 @@ module;
 
 export module FullModel:HacktoolUserLogBinder;
 
-import FullModel:HacktoolUserLog;
+import :HacktoolUserLog;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::HacktoolUserLog& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(HacktoolUserLog& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(model::HacktoolUserLog& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(HacktoolUserLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(model::HacktoolUserLog& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(HacktoolUserLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to HackToolName
-		static void BindHackToolName(model::HacktoolUserLog& m, nanodbc::result& result, short colIndex)
+		static void BindHackToolName(HacktoolUserLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.HackToolName);
 		}
 
 		/// \brief Binds a result's column to WriteTime
-		static void BindWriteTime(model::HacktoolUserLog& m, nanodbc::result& result, short colIndex)
+		static void BindWriteTime(HacktoolUserLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::time_t>(colIndex, m.WriteTime);
 		}

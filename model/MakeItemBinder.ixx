@@ -6,7 +6,7 @@ module;
 
 export module FullModel:MakeItemBinder;
 
-import FullModel:MakeItem;
+import :MakeItem;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MakeItem& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(MakeItem& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::MakeItem& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(MakeItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to ItemInfo
-		static void BindItemInfo(model::MakeItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemInfo(MakeItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ItemInfo);
 		}
 
 		/// \brief Binds a result's column to ItemCode
-		static void BindItemCode(model::MakeItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemCode(MakeItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ItemCode);
 		}
 
 		/// \brief Binds a result's column to ItemLevel
-		static void BindItemLevel(model::MakeItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemLevel(MakeItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ItemLevel);
 		}

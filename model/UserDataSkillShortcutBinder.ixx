@@ -6,7 +6,7 @@ module;
 
 export module FullModel:UserDataSkillShortcutBinder;
 
-import FullModel:UserDataSkillShortcut;
+import :UserDataSkillShortcut;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::UserDataSkillShortcut& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(UserDataSkillShortcut& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -32,19 +32,19 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(model::UserDataSkillShortcut& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(UserDataSkillShortcut& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to Count
-		static void BindCount(model::UserDataSkillShortcut& m, nanodbc::result& result, short colIndex)
+		static void BindCount(UserDataSkillShortcut& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Count);
 		}
 
 		/// \brief Binds a result's column to SkillData
-		static void BindSkillData(model::UserDataSkillShortcut& m, nanodbc::result& result, short colIndex)
+		static void BindSkillData(UserDataSkillShortcut& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.SkillData);
 		}

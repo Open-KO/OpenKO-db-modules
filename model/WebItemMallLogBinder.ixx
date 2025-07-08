@@ -6,7 +6,7 @@ module;
 
 export module FullModel:WebItemMallLogBinder;
 
-import FullModel:WebItemMallLog;
+import :WebItemMallLog;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::WebItemMallLog& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(WebItemMallLog& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -39,61 +39,61 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to ServerId
-		static void BindServerId(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindServerId(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to ItemId
-		static void BindItemId(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindItemId(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ItemId);
 		}
 
 		/// \brief Binds a result's column to ItemCount
-		static void BindItemCount(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindItemCount(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ItemCount);
 		}
 
 		/// \brief Binds a result's column to BuyTime
-		static void BindBuyTime(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindBuyTime(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::time_t>(colIndex, m.BuyTime);
 		}
 
 		/// \brief Binds a result's column to ImgFileName
-		static void BindImgFileName(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindImgFileName(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ImgFileName);
 		}
 
 		/// \brief Binds a result's column to ItemName
-		static void BindItemName(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindItemName(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ItemName);
 		}
 
 		/// \brief Binds a result's column to Price
-		static void BindPrice(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindPrice(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Price);
 		}
 
 		/// \brief Binds a result's column to PayType
-		static void BindPayType(model::WebItemMallLog& m, nanodbc::result& result, short colIndex)
+		static void BindPayType(WebItemMallLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.PayType);
 		}

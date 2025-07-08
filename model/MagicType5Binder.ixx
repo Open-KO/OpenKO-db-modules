@@ -6,7 +6,7 @@ module;
 
 export module FullModel:MagicType5Binder;
 
-import FullModel:MagicType5;
+import :MagicType5;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MagicType5& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(MagicType5& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -35,37 +35,37 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(model::MagicType5& m, nanodbc::result& result, short colIndex)
+		static void BindMagicNumber(MagicType5& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.MagicNumber);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(model::MagicType5& m, nanodbc::result& result, short colIndex)
+		static void BindName(MagicType5& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
-		static void BindDescription(model::MagicType5& m, nanodbc::result& result, short colIndex)
+		static void BindDescription(MagicType5& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(model::MagicType5& m, nanodbc::result& result, short colIndex)
+		static void BindType(MagicType5& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to ExpRecover
-		static void BindExpRecover(model::MagicType5& m, nanodbc::result& result, short colIndex)
+		static void BindExpRecover(MagicType5& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ExpRecover);
 		}
 
 		/// \brief Binds a result's column to NeedStone
-		static void BindNeedStone(model::MagicType5& m, nanodbc::result& result, short colIndex)
+		static void BindNeedStone(MagicType5& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NeedStone);
 		}

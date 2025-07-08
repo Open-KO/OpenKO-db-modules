@@ -6,7 +6,7 @@ module;
 
 export module FullModel:MonsterChallengeBinder;
 
-import FullModel:MonsterChallenge;
+import :MonsterChallenge;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MonsterChallenge& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(MonsterChallenge& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -35,37 +35,37 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::MonsterChallenge& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(MonsterChallenge& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to StartTime1
-		static void BindStartTime1(model::MonsterChallenge& m, nanodbc::result& result, short colIndex)
+		static void BindStartTime1(MonsterChallenge& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.StartTime1);
 		}
 
 		/// \brief Binds a result's column to StartTime2
-		static void BindStartTime2(model::MonsterChallenge& m, nanodbc::result& result, short colIndex)
+		static void BindStartTime2(MonsterChallenge& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.StartTime2);
 		}
 
 		/// \brief Binds a result's column to StartTime3
-		static void BindStartTime3(model::MonsterChallenge& m, nanodbc::result& result, short colIndex)
+		static void BindStartTime3(MonsterChallenge& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.StartTime3);
 		}
 
 		/// \brief Binds a result's column to LevelMin
-		static void BindLevelMin(model::MonsterChallenge& m, nanodbc::result& result, short colIndex)
+		static void BindLevelMin(MonsterChallenge& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.LevelMin);
 		}
 
 		/// \brief Binds a result's column to LevelMax
-		static void BindLevelMax(model::MonsterChallenge& m, nanodbc::result& result, short colIndex)
+		static void BindLevelMax(MonsterChallenge& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.LevelMax);
 		}

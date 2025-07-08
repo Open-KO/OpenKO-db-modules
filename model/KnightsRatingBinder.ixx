@@ -6,7 +6,7 @@ module;
 
 export module FullModel:KnightsRatingBinder;
 
-import FullModel:KnightsRating;
+import :KnightsRating;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::KnightsRating& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(KnightsRating& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Rank
-		static void BindRank(model::KnightsRating& m, nanodbc::result& result, short colIndex)
+		static void BindRank(KnightsRating& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Rank);
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::KnightsRating& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(KnightsRating& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(model::KnightsRating& m, nanodbc::result& result, short colIndex)
+		static void BindName(KnightsRating& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Points
-		static void BindPoints(model::KnightsRating& m, nanodbc::result& result, short colIndex)
+		static void BindPoints(KnightsRating& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Points);
 		}

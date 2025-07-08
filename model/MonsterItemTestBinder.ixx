@@ -6,7 +6,7 @@ module;
 
 export module FullModel:MonsterItemTestBinder;
 
-import FullModel:MonsterItemTest;
+import :MonsterItemTest;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MonsterItemTest& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(MonsterItemTest& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -40,67 +40,67 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to Item1
-		static void BindItem1(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindItem1(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Item1);
 		}
 
 		/// \brief Binds a result's column to Percent1
-		static void BindPercent1(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindPercent1(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent1);
 		}
 
 		/// \brief Binds a result's column to Item2
-		static void BindItem2(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindItem2(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Item2);
 		}
 
 		/// \brief Binds a result's column to Percent2
-		static void BindPercent2(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindPercent2(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent2);
 		}
 
 		/// \brief Binds a result's column to Item3
-		static void BindItem3(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindItem3(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Item3);
 		}
 
 		/// \brief Binds a result's column to Percent3
-		static void BindPercent3(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindPercent3(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent3);
 		}
 
 		/// \brief Binds a result's column to Item4
-		static void BindItem4(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindItem4(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Item4);
 		}
 
 		/// \brief Binds a result's column to Percent4
-		static void BindPercent4(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindPercent4(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent4);
 		}
 
 		/// \brief Binds a result's column to Item5
-		static void BindItem5(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindItem5(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.Item5);
 		}
 
 		/// \brief Binds a result's column to Percent5
-		static void BindPercent5(model::MonsterItemTest& m, nanodbc::result& result, short colIndex)
+		static void BindPercent5(MonsterItemTest& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent5);
 		}

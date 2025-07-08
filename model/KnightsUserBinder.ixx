@@ -6,7 +6,7 @@ module;
 
 export module FullModel:KnightsUserBinder;
 
-import FullModel:KnightsUser;
+import :KnightsUser;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::KnightsUser& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(KnightsUser& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -31,13 +31,13 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to KnightsId
-		static void BindKnightsId(model::KnightsUser& m, nanodbc::result& result, short colIndex)
+		static void BindKnightsId(KnightsUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.KnightsId);
 		}
 
 		/// \brief Binds a result's column to UserId
-		static void BindUserId(model::KnightsUser& m, nanodbc::result& result, short colIndex)
+		static void BindUserId(KnightsUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.UserId);
 		}

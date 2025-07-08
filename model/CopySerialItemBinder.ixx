@@ -6,7 +6,7 @@ module;
 
 export module FullModel:CopySerialItemBinder;
 
-import FullModel:CopySerialItem;
+import :CopySerialItem;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::CopySerialItem& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(CopySerialItem& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to UserId
-		static void BindUserId(model::CopySerialItem& m, nanodbc::result& result, short colIndex)
+		static void BindUserId(CopySerialItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.UserId);
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(model::CopySerialItem& m, nanodbc::result& result, short colIndex)
+		static void BindType(CopySerialItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<uint8_t>>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Pos
-		static void BindPos(model::CopySerialItem& m, nanodbc::result& result, short colIndex)
+		static void BindPos(CopySerialItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Pos);
 		}
 
 		/// \brief Binds a result's column to ItemNum
-		static void BindItemNum(model::CopySerialItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemNum(CopySerialItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemNum);
 		}
 
 		/// \brief Binds a result's column to ItemSerial
-		static void BindItemSerial(model::CopySerialItem& m, nanodbc::result& result, short colIndex)
+		static void BindItemSerial(CopySerialItem& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemSerial);
 		}

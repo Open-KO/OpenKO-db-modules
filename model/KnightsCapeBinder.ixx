@@ -6,7 +6,7 @@ module;
 
 export module FullModel:KnightsCapeBinder;
 
-import FullModel:KnightsCape;
+import :KnightsCape;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::KnightsCape& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(KnightsCape& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to CapeIndex
-		static void BindCapeIndex(model::KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindCapeIndex(KnightsCape& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.CapeIndex);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(model::KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindName(KnightsCape& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to BuyPrice
-		static void BindBuyPrice(model::KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindBuyPrice(KnightsCape& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.BuyPrice);
 		}
 
 		/// \brief Binds a result's column to Duration
-		static void BindDuration(model::KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindDuration(KnightsCape& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Duration);
 		}
 
 		/// \brief Binds a result's column to Grade
-		static void BindGrade(model::KnightsCape& m, nanodbc::result& result, short colIndex)
+		static void BindGrade(KnightsCape& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Grade);
 		}

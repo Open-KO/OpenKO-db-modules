@@ -6,7 +6,7 @@ module;
 
 export module FullModel:UserKnightsRankBinder;
 
-import FullModel:UserKnightsRank;
+import :UserKnightsRank;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::UserKnightsRank& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(UserKnightsRank& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -38,55 +38,55 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindName(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to ElmoUserId
-		static void BindElmoUserId(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindElmoUserId(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoUserId);
 		}
 
 		/// \brief Binds a result's column to ElmoKnightsName
-		static void BindElmoKnightsName(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindElmoKnightsName(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoKnightsName);
 		}
 
 		/// \brief Binds a result's column to ElmoLoyalty
-		static void BindElmoLoyalty(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindElmoLoyalty(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.ElmoLoyalty);
 		}
 
 		/// \brief Binds a result's column to KarusUserId
-		static void BindKarusUserId(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindKarusUserId(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.KarusUserId);
 		}
 
 		/// \brief Binds a result's column to KarusKnightsName
-		static void BindKarusKnightsName(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindKarusKnightsName(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.KarusKnightsName);
 		}
 
 		/// \brief Binds a result's column to KarusLoyalty
-		static void BindKarusLoyalty(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindKarusLoyalty(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int32_t>>(colIndex, m.KarusLoyalty);
 		}
 
 		/// \brief Binds a result's column to Money
-		static void BindMoney(model::UserKnightsRank& m, nanodbc::result& result, short colIndex)
+		static void BindMoney(UserKnightsRank& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Money);
 		}

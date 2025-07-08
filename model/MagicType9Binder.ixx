@@ -6,7 +6,7 @@ module;
 
 export module FullModel:MagicType9Binder;
 
-import FullModel:MagicType9;
+import :MagicType9;
 
 namespace model
 {
@@ -15,7 +15,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MagicType9& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(MagicType9& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -43,85 +43,85 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindMagicNumber(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.MagicNumber);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindName(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
-		static void BindDescription(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindDescription(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to ValidGroup
-		static void BindValidGroup(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindValidGroup(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ValidGroup);
 		}
 
 		/// \brief Binds a result's column to NationChange
-		static void BindNationChange(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindNationChange(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.NationChange);
 		}
 
 		/// \brief Binds a result's column to MonsterNumber
-		static void BindMonsterNumber(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindMonsterNumber(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MonsterNumber);
 		}
 
 		/// \brief Binds a result's column to TargetChange
-		static void BindTargetChange(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindTargetChange(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.TargetChange);
 		}
 
 		/// \brief Binds a result's column to StateChange
-		static void BindStateChange(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindStateChange(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.StateChange);
 		}
 
 		/// \brief Binds a result's column to Radius
-		static void BindRadius(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindRadius(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Radius);
 		}
 
 		/// \brief Binds a result's column to HitRate
-		static void BindHitRate(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindHitRate(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.HitRate);
 		}
 
 		/// \brief Binds a result's column to Duration
-		static void BindDuration(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindDuration(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Duration);
 		}
 
 		/// \brief Binds a result's column to AddDamage
-		static void BindAddDamage(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindAddDamage(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.AddDamage);
 		}
 
 		/// \brief Binds a result's column to Vision
-		static void BindVision(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindVision(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Vision);
 		}
 
 		/// \brief Binds a result's column to NeedItem
-		static void BindNeedItem(model::MagicType9& m, nanodbc::result& result, short colIndex)
+		static void BindNeedItem(MagicType9& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.NeedItem);
 		}
