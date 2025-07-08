@@ -39,7 +39,7 @@ namespace model
 		/// \brief Binds a result's column to Level
 		static void BindLevel(MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Level);
+			result.get_ref<int16_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Class1

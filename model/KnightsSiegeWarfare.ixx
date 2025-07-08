@@ -33,22 +33,22 @@ namespace model
 		/// \brief Column [bySiegeType]: Siege type TODO
 		///
 		/// \property SiegeType
-		uint8_t SiegeType = 0;
+		int16_t SiegeType = 0;
 
 		/// \brief Column [byWarDay]: War day
 		///
 		/// \property WarDay
-		uint8_t WarDay = 0;
+		int16_t WarDay = 0;
 
 		/// \brief Column [byWarTime]: War hour
 		///
 		/// \property WarHour
-		uint8_t WarHour = 0;
+		int16_t WarHour = 0;
 
 		/// \brief Column [byWarMinute]: War minute
 		///
 		/// \property WarMinute
-		uint8_t WarMinute = 0;
+		int16_t WarMinute = 0;
 
 		/// \brief Column [sChallengeList_1]: Challenge list 1
 		///
@@ -103,32 +103,32 @@ namespace model
 		/// \brief Column [byWarRequestDay]: War request day
 		///
 		/// \property WarRequestDay
-		uint8_t WarRequestDay = 0;
+		int16_t WarRequestDay = 0;
 
 		/// \brief Column [byWarRequestTime]: War request time
 		///
 		/// \property WarRequestTime
-		uint8_t WarRequestTime = 0;
+		int16_t WarRequestTime = 0;
 
 		/// \brief Column [byWarRequestMinute]: War request minute
 		///
 		/// \property WarRequestMinute
-		uint8_t WarRequestMinute = 0;
+		int16_t WarRequestMinute = 0;
 
 		/// \brief Column [byGuerrillaWarDay]: Guerrilla war day
 		///
 		/// \property GuerrillaWarDay
-		uint8_t GuerrillaWarDay = 0;
+		int16_t GuerrillaWarDay = 0;
 
 		/// \brief Column [byGuerrillaWarTime]: Guerrilla war time
 		///
 		/// \property GuerrillaWarTime
-		uint8_t GuerrillaWarTime = 0;
+		int16_t GuerrillaWarTime = 0;
 
 		/// \brief Column [byGuerrillaWarMinute]: Guerrilla war minute
 		///
 		/// \property GuerrillaWarMinute
-		uint8_t GuerrillaWarMinute = 0;
+		int16_t GuerrillaWarMinute = 0;
 
 		/// \brief Column [strChallengeList]: Challenge list
 		///

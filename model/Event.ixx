@@ -23,7 +23,7 @@ namespace model
 		/// \brief Column [ZoneNum]: Zone Number
 		///
 		/// \property ZoneNumber
-		uint8_t ZoneNumber = 0;
+		int16_t ZoneNumber = 0;
 
 		/// \brief Column [EventNum]: Event Number
 		///
@@ -33,7 +33,7 @@ namespace model
 		/// \brief Column [Type]: Event Type
 		///
 		/// \property EventType
-		uint8_t EventType = 0;
+		int16_t EventType = 0;
 
 		/// \brief Column [Cond1]: Condition 1
 		///

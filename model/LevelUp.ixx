@@ -22,7 +22,7 @@ namespace model
 		/// \brief Column [level]: Level
 		///
 		/// \property Level
-		uint8_t Level = 0;
+		int16_t Level = 0;
 
 		/// \brief Column [Exp]: Required experience to advance to the next level
 		///

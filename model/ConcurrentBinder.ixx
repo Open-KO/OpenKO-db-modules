@@ -36,7 +36,7 @@ namespace model
 		/// \brief Binds a result's column to ServerId
 		static void BindServerId(Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ServerId);
+			result.get_ref<int16_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to Zone1Count

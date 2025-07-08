@@ -63,13 +63,13 @@ namespace model
 		/// \brief Binds a result's column to ValidGroup
 		static void BindValidGroup(MagicType9& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ValidGroup);
+			result.get_ref<int16_t>(colIndex, m.ValidGroup);
 		}
 
 		/// \brief Binds a result's column to NationChange
 		static void BindNationChange(MagicType9& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.NationChange);
+			result.get_ref<int16_t>(colIndex, m.NationChange);
 		}
 
 		/// \brief Binds a result's column to MonsterNumber
@@ -81,13 +81,13 @@ namespace model
 		/// \brief Binds a result's column to TargetChange
 		static void BindTargetChange(MagicType9& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.TargetChange);
+			result.get_ref<int16_t>(colIndex, m.TargetChange);
 		}
 
 		/// \brief Binds a result's column to StateChange
 		static void BindStateChange(MagicType9& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.StateChange);
+			result.get_ref<int16_t>(colIndex, m.StateChange);
 		}
 
 		/// \brief Binds a result's column to Radius

@@ -43,7 +43,7 @@ namespace model
 		/// \brief Column [strAuthority]: Authority level
 		///
 		/// \property Authority
-		uint8_t Authority = 0;
+		int16_t Authority = 0;
 
 		/// \brief Column [PremiumExpire]: Premium expiration datetime
 		///

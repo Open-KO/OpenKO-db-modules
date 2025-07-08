@@ -56,7 +56,7 @@ namespace model
 		/// \brief Binds a result's column to Target
 		static void BindTarget(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Target);
+			result.get_ref<int16_t>(colIndex, m.Target);
 		}
 
 		/// \brief Binds a result's column to Radius
@@ -68,7 +68,7 @@ namespace model
 		/// \brief Binds a result's column to WarpType
 		static void BindWarpType(MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.WarpType);
+			result.get_ref<int16_t>(colIndex, m.WarpType);
 		}
 
 		/// \brief Binds a result's column to ExpRecover

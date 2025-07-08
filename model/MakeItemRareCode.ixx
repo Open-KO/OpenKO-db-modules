@@ -22,7 +22,7 @@ namespace model
 		/// \brief Column [byLevelGrade]: Level grade
 		///
 		/// \property LevelGrade
-		uint8_t LevelGrade = 0;
+		int16_t LevelGrade = 0;
 
 		/// \brief Column [sUpgradeItem]: Upgrade item
 		///

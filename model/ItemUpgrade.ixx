@@ -98,7 +98,7 @@ namespace model
 		/// \brief Column [bRateType]: Rate type
 		///
 		/// \property RateType
-		uint8_t RateType = 0;
+		int16_t RateType = 0;
 
 		/// \brief Column [nGenRate]: Upgrade success rate
 		///

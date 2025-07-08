@@ -43,31 +43,31 @@ namespace model
 		/// \brief Binds a result's column to StartTime1
 		static void BindStartTime1(MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.StartTime1);
+			result.get_ref<int16_t>(colIndex, m.StartTime1);
 		}
 
 		/// \brief Binds a result's column to StartTime2
 		static void BindStartTime2(MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.StartTime2);
+			result.get_ref<int16_t>(colIndex, m.StartTime2);
 		}
 
 		/// \brief Binds a result's column to StartTime3
 		static void BindStartTime3(MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.StartTime3);
+			result.get_ref<int16_t>(colIndex, m.StartTime3);
 		}
 
 		/// \brief Binds a result's column to LevelMin
 		static void BindLevelMin(MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.LevelMin);
+			result.get_ref<int16_t>(colIndex, m.LevelMin);
 		}
 
 		/// \brief Binds a result's column to LevelMax
 		static void BindLevelMax(MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.LevelMax);
+			result.get_ref<int16_t>(colIndex, m.LevelMax);
 		}
 
 	};

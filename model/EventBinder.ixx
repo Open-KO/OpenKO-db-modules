@@ -44,7 +44,7 @@ namespace model
 		/// \brief Binds a result's column to ZoneNumber
 		static void BindZoneNumber(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ZoneNumber);
+			result.get_ref<int16_t>(colIndex, m.ZoneNumber);
 		}
 
 		/// \brief Binds a result's column to EventNumber
@@ -56,7 +56,7 @@ namespace model
 		/// \brief Binds a result's column to EventType
 		static void BindEventType(Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.EventType);
+			result.get_ref<int16_t>(colIndex, m.EventType);
 		}
 
 		/// \brief Binds a result's column to Condition1

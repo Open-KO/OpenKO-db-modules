@@ -104,7 +104,7 @@ namespace model
 		/// \brief Binds a result's column to Speed
 		static void BindSpeed(MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Speed);
+			result.get_ref<int16_t>(colIndex, m.Speed);
 		}
 
 		/// \brief Binds a result's column to AttackSpeed
@@ -182,25 +182,25 @@ namespace model
 		/// \brief Binds a result's column to UserSkillUse
 		static void BindUserSkillUse(MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.UserSkillUse);
+			result.get_ref<int16_t>(colIndex, m.UserSkillUse);
 		}
 
 		/// \brief Binds a result's column to NeedItem
 		static void BindNeedItem(MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.NeedItem);
+			result.get_ref<int16_t>(colIndex, m.NeedItem);
 		}
 
 		/// \brief Binds a result's column to SkillSuccessRate
 		static void BindSkillSuccessRate(MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.SkillSuccessRate);
+			result.get_ref<int16_t>(colIndex, m.SkillSuccessRate);
 		}
 
 		/// \brief Binds a result's column to MonsterFriendly
 		static void BindMonsterFriendly(MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.MonsterFriendly);
+			result.get_ref<int16_t>(colIndex, m.MonsterFriendly);
 		}
 
 	};

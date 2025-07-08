@@ -70,19 +70,19 @@ namespace model
 		/// \brief Binds a result's column to RegType
 		static void BindRegType(RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RegType);
+			result.get_ref<int16_t>(colIndex, m.RegType);
 		}
 
 		/// \brief Binds a result's column to ItemType
 		static void BindItemType(RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ItemType);
+			result.get_ref<int16_t>(colIndex, m.ItemType);
 		}
 
 		/// \brief Binds a result's column to Class
 		static void BindClass(RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Class);
+			result.get_ref<int16_t>(colIndex, m.Class);
 		}
 
 		/// \brief Binds a result's column to RentalTime

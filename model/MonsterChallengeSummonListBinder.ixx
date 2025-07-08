@@ -47,19 +47,19 @@ namespace model
 		/// \brief Binds a result's column to Level
 		static void BindLevel(MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Level);
+			result.get_ref<int16_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Stage
 		static void BindStage(MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Stage);
+			result.get_ref<int16_t>(colIndex, m.Stage);
 		}
 
 		/// \brief Binds a result's column to StageLevel
 		static void BindStageLevel(MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.StageLevel);
+			result.get_ref<int16_t>(colIndex, m.StageLevel);
 		}
 
 		/// \brief Binds a result's column to Time
@@ -95,7 +95,7 @@ namespace model
 		/// \brief Binds a result's column to Range
 		static void BindRange(MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Range);
+			result.get_ref<int16_t>(colIndex, m.Range);
 		}
 
 	};

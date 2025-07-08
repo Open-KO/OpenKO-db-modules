@@ -54,7 +54,7 @@ namespace model
 		/// \brief Column [byType]: Type
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		int16_t Type = 0;
 
 		/// \brief Column [nItemID1]: Item 1 identifier
 		///

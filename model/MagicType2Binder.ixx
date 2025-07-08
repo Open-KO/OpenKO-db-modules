@@ -58,7 +58,7 @@ namespace model
 		/// \brief Binds a result's column to HitType
 		static void BindHitType(MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.HitType);
+			result.get_ref<int16_t>(colIndex, m.HitType);
 		}
 
 		/// \brief Binds a result's column to HitRateMod
@@ -82,7 +82,7 @@ namespace model
 		/// \brief Binds a result's column to NeedArrow
 		static void BindNeedArrow(MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.NeedArrow);
+			result.get_ref<int16_t>(colIndex, m.NeedArrow);
 		}
 
 		/// \brief Binds a result's column to AddDamagePlus

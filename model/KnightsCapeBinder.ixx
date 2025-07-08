@@ -60,7 +60,7 @@ namespace model
 		/// \brief Binds a result's column to Grade
 		static void BindGrade(KnightsCape& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Grade);
+			result.get_ref<int16_t>(colIndex, m.Grade);
 		}
 
 	};

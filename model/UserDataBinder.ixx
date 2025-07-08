@@ -77,13 +77,13 @@ namespace model
 		/// \brief Binds a result's column to Nation
 		static void BindNation(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Nation);
+			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Race
 		static void BindRace(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Race);
+			result.get_ref<int16_t>(colIndex, m.Race);
 		}
 
 		/// \brief Binds a result's column to Class
@@ -95,25 +95,25 @@ namespace model
 		/// \brief Binds a result's column to HairColor
 		static void BindHairColor(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.HairColor);
+			result.get_ref<int16_t>(colIndex, m.HairColor);
 		}
 
 		/// \brief Binds a result's column to Rank
 		static void BindRank(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Rank);
+			result.get_ref<int16_t>(colIndex, m.Rank);
 		}
 
 		/// \brief Binds a result's column to Title
 		static void BindTitle(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Title);
+			result.get_ref<int16_t>(colIndex, m.Title);
 		}
 
 		/// \brief Binds a result's column to Level
 		static void BindLevel(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Level);
+			result.get_ref<int16_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Exp
@@ -131,13 +131,13 @@ namespace model
 		/// \brief Binds a result's column to Face
 		static void BindFace(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Face);
+			result.get_ref<int16_t>(colIndex, m.Face);
 		}
 
 		/// \brief Binds a result's column to City
 		static void BindCity(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.City);
+			result.get_ref<int16_t>(colIndex, m.City);
 		}
 
 		/// \brief Binds a result's column to KnightsId
@@ -149,7 +149,7 @@ namespace model
 		/// \brief Binds a result's column to Fame
 		static void BindFame(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Fame);
+			result.get_ref<int16_t>(colIndex, m.Fame);
 		}
 
 		/// \brief Binds a result's column to Hp
@@ -173,43 +173,43 @@ namespace model
 		/// \brief Binds a result's column to Strength
 		static void BindStrength(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Strength);
+			result.get_ref<int16_t>(colIndex, m.Strength);
 		}
 
 		/// \brief Binds a result's column to Stamina
 		static void BindStamina(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Stamina);
+			result.get_ref<int16_t>(colIndex, m.Stamina);
 		}
 
 		/// \brief Binds a result's column to Dexterity
 		static void BindDexterity(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Dexterity);
+			result.get_ref<int16_t>(colIndex, m.Dexterity);
 		}
 
 		/// \brief Binds a result's column to Intelligence
 		static void BindIntelligence(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Intelligence);
+			result.get_ref<int16_t>(colIndex, m.Intelligence);
 		}
 
 		/// \brief Binds a result's column to Charisma
 		static void BindCharisma(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Charisma);
+			result.get_ref<int16_t>(colIndex, m.Charisma);
 		}
 
 		/// \brief Binds a result's column to Authority
 		static void BindAuthority(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Authority);
+			result.get_ref<int16_t>(colIndex, m.Authority);
 		}
 
 		/// \brief Binds a result's column to StatPoints
 		static void BindStatPoints(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.StatPoints);
+			result.get_ref<int16_t>(colIndex, m.StatPoints);
 		}
 
 		/// \brief Binds a result's column to Gold
@@ -221,7 +221,7 @@ namespace model
 		/// \brief Binds a result's column to Zone
 		static void BindZone(UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Zone);
+			result.get_ref<int16_t>(colIndex, m.Zone);
 		}
 
 		/// \brief Binds a result's column to Bind

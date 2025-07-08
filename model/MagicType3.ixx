@@ -38,7 +38,7 @@ namespace model
 		/// \brief Column [Radius]: Area of effect circle radius
 		///
 		/// \property Radius
-		uint8_t Radius = 0;
+		int16_t Radius = 0;
 
 		/// \brief Column [Angle]: Angle seems unused/unimplemented TODO
 		///
@@ -49,7 +49,7 @@ namespace model
 		///
 		/// \see EnumDirectType
 		/// \property DirectType
-		uint8_t DirectType = 0;
+		int16_t DirectType = 0;
 	
 		/// \enum EnumDirectType
 		/// \brief Known valid values for DirectType
@@ -85,12 +85,12 @@ namespace model
 		/// \brief Column [Duration]: Duration of damage over time effects
 		///
 		/// \property Duration
-		uint8_t Duration = 0;
+		int16_t Duration = 0;
 
 		/// \brief Column [Attribute]: Attribute TODO
 		///
 		/// \property Attribute
-		uint8_t Attribute = 0;
+		int16_t Attribute = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

@@ -79,25 +79,25 @@ namespace model
 		/// \brief Binds a result's column to BeforeAction
 		static void BindBeforeAction(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.BeforeAction);
+			result.get_ref<int16_t>(colIndex, m.BeforeAction);
 		}
 
 		/// \brief Binds a result's column to TargetAction
 		static void BindTargetAction(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.TargetAction);
+			result.get_ref<int16_t>(colIndex, m.TargetAction);
 		}
 
 		/// \brief Binds a result's column to SelfEffect
 		static void BindSelfEffect(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.SelfEffect);
+			result.get_ref<int16_t>(colIndex, m.SelfEffect);
 		}
 
 		/// \brief Binds a result's column to FlyingEffect
 		static void BindFlyingEffect(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.FlyingEffect);
+			result.get_ref<int16_t>(colIndex, m.FlyingEffect);
 		}
 
 		/// \brief Binds a result's column to TargetEffect
@@ -109,7 +109,7 @@ namespace model
 		/// \brief Binds a result's column to Moral
 		static void BindMoral(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Moral);
+			result.get_ref<int16_t>(colIndex, m.Moral);
 		}
 
 		/// \brief Binds a result's column to SkillLevel
@@ -139,7 +139,7 @@ namespace model
 		/// \brief Binds a result's column to ItemGroup
 		static void BindItemGroup(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ItemGroup);
+			result.get_ref<int16_t>(colIndex, m.ItemGroup);
 		}
 
 		/// \brief Binds a result's column to UseItem
@@ -151,31 +151,31 @@ namespace model
 		/// \brief Binds a result's column to CastTime
 		static void BindCastTime(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.CastTime);
+			result.get_ref<int16_t>(colIndex, m.CastTime);
 		}
 
 		/// \brief Binds a result's column to RecastTime
 		static void BindRecastTime(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RecastTime);
+			result.get_ref<int16_t>(colIndex, m.RecastTime);
 		}
 
 		/// \brief Binds a result's column to SuccessRate
 		static void BindSuccessRate(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.SuccessRate);
+			result.get_ref<int16_t>(colIndex, m.SuccessRate);
 		}
 
 		/// \brief Binds a result's column to Type1
 		static void BindType1(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Type1);
+			result.get_ref<int16_t>(colIndex, m.Type1);
 		}
 
 		/// \brief Binds a result's column to Type2
 		static void BindType2(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Type2);
+			result.get_ref<int16_t>(colIndex, m.Type2);
 		}
 
 		/// \brief Binds a result's column to Range
@@ -187,7 +187,7 @@ namespace model
 		/// \brief Binds a result's column to Etc
 		static void BindEtc(Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Etc);
+			result.get_ref<int16_t>(colIndex, m.Etc);
 		}
 
 		/// \brief Binds a result's column to Event

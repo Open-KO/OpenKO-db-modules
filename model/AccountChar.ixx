@@ -28,12 +28,12 @@ namespace model
 		/// \brief Column [bNation]: Nation Identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		int16_t Nation = 0;
 
 		/// \brief Column [bCharNum]: Number of created characters
 		///
 		/// \property CharNum
-		uint8_t CharNum = 0;
+		int16_t CharNum = 0;
 
 		/// \brief Column [strCharID1]: Character 1 Name
 		///

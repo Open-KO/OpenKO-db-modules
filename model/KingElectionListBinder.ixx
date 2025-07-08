@@ -36,13 +36,13 @@ namespace model
 		/// \brief Binds a result's column to Type
 		static void BindType(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Type);
+			result.get_ref<int16_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Nation
 		static void BindNation(KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Nation);
+			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Knights

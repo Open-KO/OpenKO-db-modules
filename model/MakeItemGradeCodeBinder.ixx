@@ -41,7 +41,7 @@ namespace model
 		/// \brief Binds a result's column to ItemIndex
 		static void BindItemIndex(MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ItemIndex);
+			result.get_ref<int16_t>(colIndex, m.ItemIndex);
 		}
 
 		/// \brief Binds a result's column to Grade1

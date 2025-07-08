@@ -44,17 +44,17 @@ namespace model
 		/// \brief Column [byRegType]: Reg type
 		///
 		/// \property RegType
-		uint8_t RegType = 0;
+		int16_t RegType = 0;
 
 		/// \brief Column [byItemType]: Item type
 		///
 		/// \property ItemType
-		uint8_t ItemType = 0;
+		int16_t ItemType = 0;
 
 		/// \brief Column [byClass]: Class
 		///
 		/// \property Class
-		uint8_t Class = 0;
+		int16_t Class = 0;
 
 		/// \brief Column [sRentalTime]: Rental time
 		///

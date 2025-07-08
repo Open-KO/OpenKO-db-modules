@@ -36,7 +36,7 @@ namespace model
 		/// \brief Binds a result's column to LevelGrade
 		static void BindLevelGrade(MakeItemRareCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.LevelGrade);
+			result.get_ref<int16_t>(colIndex, m.LevelGrade);
 		}
 
 		/// \brief Binds a result's column to UpgradeItem

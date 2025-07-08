@@ -43,7 +43,7 @@ namespace model
 		/// \brief Column [bRandomFlag]: Random Flag
 		///
 		/// \property RandomFlag
-		uint8_t RandomFlag = 0;
+		int16_t RandomFlag = 0;
 
 		/// \brief Column [nOriginItemNum1]: Player item 1 needed for exchange
 		///

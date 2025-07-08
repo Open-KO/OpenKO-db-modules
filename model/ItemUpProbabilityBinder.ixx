@@ -36,7 +36,7 @@ namespace model
 		/// \brief Binds a result's column to Type
 		static void BindType(ItemUpProbability& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Type);
+			result.get_ref<int16_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to MaxSuccess

@@ -80,7 +80,7 @@ namespace model
 		/// \brief Binds a result's column to RandomFlag
 		static void BindRandomFlag(ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RandomFlag);
+			result.get_ref<int16_t>(colIndex, m.RandomFlag);
 		}
 
 		/// \brief Binds a result's column to OriginItemNumber1

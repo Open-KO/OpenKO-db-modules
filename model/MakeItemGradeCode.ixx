@@ -23,7 +23,7 @@ namespace model
 		/// \brief Column [byItemIndex]: Item index
 		///
 		/// \property ItemIndex
-		uint8_t ItemIndex = 0;
+		int16_t ItemIndex = 0;
 
 		/// \brief Column [byGrade_1]: Grade 1
 		///

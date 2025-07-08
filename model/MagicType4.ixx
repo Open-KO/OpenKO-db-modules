@@ -39,7 +39,7 @@ namespace model
 		///
 		/// \see EnumBuffType
 		/// \property BuffType
-		uint8_t BuffType = 0;
+		int16_t BuffType = 0;
 	
 		/// \enum EnumBuffType
 		/// \brief Known valid values for BuffType
@@ -65,7 +65,7 @@ namespace model
 		/// \brief Column [Radius]: Area of effect circle radius
 		///
 		/// \property Radius
-		uint8_t Radius = 0;
+		int16_t Radius = 0;
 
 		/// \brief Column [Duration]: Effect duration
 		///
@@ -75,12 +75,12 @@ namespace model
 		/// \brief Column [AttackSpeed]: Attack speed modifier - 100 is normal
 		///
 		/// \property AttackSpeed
-		uint8_t AttackSpeed = 0;
+		int16_t AttackSpeed = 0;
 
 		/// \brief Column [Speed]: Movement speed modifier - 100 is normal
 		///
 		/// \property Speed
-		uint8_t Speed = 0;
+		int16_t Speed = 0;
 
 		/// \brief Column [AC]: Armor modifier
 		///
@@ -95,12 +95,12 @@ namespace model
 		/// \brief Column [Attack]: Attack power modifier
 		///
 		/// \property AttackPower
-		uint8_t AttackPower = 0;
+		int16_t AttackPower = 0;
 
 		/// \brief Column [MagicAttack]: Magic power modifier
 		///
 		/// \property MagicPower
-		uint8_t MagicPower = 0;
+		int16_t MagicPower = 0;
 
 		/// \brief Column [MaxHP]: Maximum health modifier
 		///
@@ -125,7 +125,7 @@ namespace model
 		/// \brief Column [HitRate]: Hit chance multiplier
 		///
 		/// \property HitRate
-		uint8_t HitRate = 0;
+		int16_t HitRate = 0;
 
 		/// \brief Column [AvoidRate]: Evasion chance multiplier
 		///
@@ -160,37 +160,37 @@ namespace model
 		/// \brief Column [FireR]: Fire resistance
 		///
 		/// \property FireResist
-		uint8_t FireResist = 0;
+		int16_t FireResist = 0;
 
 		/// \brief Column [ColdR]: Cold resistance
 		///
 		/// \property ColdResist
-		uint8_t ColdResist = 0;
+		int16_t ColdResist = 0;
 
 		/// \brief Column [LightningR]: Lightning resistance
 		///
 		/// \property LightningResist
-		uint8_t LightningResist = 0;
+		int16_t LightningResist = 0;
 
 		/// \brief Column [MagicR]: Magic resistance
 		///
 		/// \property MagicResist
-		uint8_t MagicResist = 0;
+		int16_t MagicResist = 0;
 
 		/// \brief Column [DiseaseR]: Disease resistance
 		///
 		/// \property DiseaseResist
-		uint8_t DiseaseResist = 0;
+		int16_t DiseaseResist = 0;
 
 		/// \brief Column [PoisonR]: Poison resistance
 		///
 		/// \property PoisonResist
-		uint8_t PoisonResist = 0;
+		int16_t PoisonResist = 0;
 
 		/// \brief Column [ExpPct]: Experience percentage modifier
 		///
 		/// \property ExpPercent
-		uint8_t ExpPercent = 0;
+		int16_t ExpPercent = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

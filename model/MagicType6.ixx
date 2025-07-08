@@ -63,7 +63,7 @@ namespace model
 		/// \brief Column [Speed]: Movement speed
 		///
 		/// \property Speed
-		uint8_t Speed = 0;
+		int16_t Speed = 0;
 
 		/// \brief Column [AttackSpeed]: Attack speed
 		///
@@ -128,22 +128,22 @@ namespace model
 		/// \brief Column [UserSkillUse]: User skill use TODO - allow skill use?
 		///
 		/// \property UserSkillUse
-		uint8_t UserSkillUse = 0;
+		int16_t UserSkillUse = 0;
 
 		/// \brief Column [NeedItem]: Needs item
 		///
 		/// \property NeedItem
-		uint8_t NeedItem = 0;
+		int16_t NeedItem = 0;
 
 		/// \brief Column [SkillSuccessRate]: Skill success rate
 		///
 		/// \property SkillSuccessRate
-		uint8_t SkillSuccessRate = 0;
+		int16_t SkillSuccessRate = 0;
 
 		/// \brief Column [MonsterFriendly]: Do monsters ignore the player while transformed?
 		///
 		/// \property MonsterFriendly
-		uint8_t MonsterFriendly = 0;
+		int16_t MonsterFriendly = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

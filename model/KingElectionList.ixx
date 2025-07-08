@@ -23,12 +23,12 @@ namespace model
 		/// \brief Column [byType]: Type TODO
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		int16_t Type = 0;
 
 		/// \brief Column [byNation]: Nation identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		int16_t Nation = 0;
 
 		/// \brief Column [nKnights]: Knights identifier (Knights.IDNum)
 		///

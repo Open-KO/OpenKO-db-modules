@@ -23,7 +23,7 @@ namespace model
 		/// \brief Column [serverid]: Server Identifier
 		///
 		/// \property ServerId
-		uint8_t ServerId = 0;
+		int16_t ServerId = 0;
 
 		/// \brief Column [zone1_count]: Zone 1 Count
 		///

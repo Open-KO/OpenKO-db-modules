@@ -113,37 +113,37 @@ namespace model
 		/// \brief Binds a result's column to Group
 		static void BindGroup(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Group);
+			result.get_ref<int16_t>(colIndex, m.Group);
 		}
 
 		/// \brief Binds a result's column to ActType
 		static void BindActType(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ActType);
+			result.get_ref<int16_t>(colIndex, m.ActType);
 		}
 
 		/// \brief Binds a result's column to Type
 		static void BindType(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Type);
+			result.get_ref<int16_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Family
 		static void BindFamily(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Family);
+			result.get_ref<int16_t>(colIndex, m.Family);
 		}
 
 		/// \brief Binds a result's column to Rank
 		static void BindRank(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Rank);
+			result.get_ref<int16_t>(colIndex, m.Rank);
 		}
 
 		/// \brief Binds a result's column to Title
 		static void BindTitle(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Title);
+			result.get_ref<int16_t>(colIndex, m.Title);
 		}
 
 		/// \brief Binds a result's column to SellingGroup
@@ -221,13 +221,13 @@ namespace model
 		/// \brief Binds a result's column to WalkSpeed
 		static void BindWalkSpeed(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.WalkSpeed);
+			result.get_ref<int16_t>(colIndex, m.WalkSpeed);
 		}
 
 		/// \brief Binds a result's column to RunSpeed
 		static void BindRunSpeed(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RunSpeed);
+			result.get_ref<int16_t>(colIndex, m.RunSpeed);
 		}
 
 		/// \brief Binds a result's column to StandTime
@@ -305,19 +305,19 @@ namespace model
 		/// \brief Binds a result's column to AttackRange
 		static void BindAttackRange(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.AttackRange);
+			result.get_ref<int16_t>(colIndex, m.AttackRange);
 		}
 
 		/// \brief Binds a result's column to SearchRange
 		static void BindSearchRange(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.SearchRange);
+			result.get_ref<int16_t>(colIndex, m.SearchRange);
 		}
 
 		/// \brief Binds a result's column to TracingRange
 		static void BindTracingRange(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.TracingRange);
+			result.get_ref<int16_t>(colIndex, m.TracingRange);
 		}
 
 		/// \brief Binds a result's column to Money
@@ -335,19 +335,19 @@ namespace model
 		/// \brief Binds a result's column to DirectAttack
 		static void BindDirectAttack(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.DirectAttack);
+			result.get_ref<int16_t>(colIndex, m.DirectAttack);
 		}
 
 		/// \brief Binds a result's column to MagicAttack
 		static void BindMagicAttack(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.MagicAttack);
+			result.get_ref<int16_t>(colIndex, m.MagicAttack);
 		}
 
 		/// \brief Binds a result's column to MoneyType
 		static void BindMoneyType(Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.MoneyType);
+			result.get_ref<int16_t>(colIndex, m.MoneyType);
 		}
 
 	};

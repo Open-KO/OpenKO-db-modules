@@ -34,12 +34,12 @@ namespace model
 		/// \brief Column [byRentalType]: Rental type
 		///
 		/// \property RentalType
-		uint8_t RentalType = 0;
+		int16_t RentalType = 0;
 
 		/// \brief Column [byRegType]: Reg time
 		///
 		/// \property RegTime
-		uint8_t RegTime = 0;
+		int16_t RegTime = 0;
 
 		/// \brief Column [nRentalIndex]: Rental index
 		///

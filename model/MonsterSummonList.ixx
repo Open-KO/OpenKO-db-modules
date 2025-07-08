@@ -43,7 +43,7 @@ namespace model
 		/// \brief Column [bType]: Type
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		int16_t Type = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

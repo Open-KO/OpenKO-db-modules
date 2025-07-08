@@ -32,7 +32,7 @@ namespace model
 		/// \brief Column [byNation]: Nation identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		int16_t Nation = 0;
 
 		/// \brief Column [strCandidacyID]: Candidate identifier
 		///

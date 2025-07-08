@@ -63,19 +63,19 @@ namespace model
 		/// \brief Binds a result's column to Flag
 		static void BindFlag(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Flag);
+			result.get_ref<int16_t>(colIndex, m.Flag);
 		}
 
 		/// \brief Binds a result's column to Nation
 		static void BindNation(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Nation);
+			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Ranking
 		static void BindRanking(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Ranking);
+			result.get_ref<int16_t>(colIndex, m.Ranking);
 		}
 
 		/// \brief Binds a result's column to Name
@@ -123,7 +123,7 @@ namespace model
 		/// \brief Binds a result's column to OldWarResult
 		static void BindOldWarResult(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.OldWarResult);
+			result.get_ref<int16_t>(colIndex, m.OldWarResult);
 		}
 
 		/// \brief Binds a result's column to WarEnemyId
@@ -195,7 +195,7 @@ namespace model
 		/// \brief Binds a result's column to SiegeFlag
 		static void BindSiegeFlag(Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.SiegeFlag);
+			result.get_ref<int16_t>(colIndex, m.SiegeFlag);
 		}
 
 		/// \brief Binds a result's column to AllianceKnights

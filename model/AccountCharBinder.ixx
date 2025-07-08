@@ -43,13 +43,13 @@ namespace model
 		/// \brief Binds a result's column to Nation
 		static void BindNation(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Nation);
+			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to CharNum
 		static void BindCharNum(AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.CharNum);
+			result.get_ref<int16_t>(colIndex, m.CharNum);
 		}
 
 		/// \brief Binds a result's column to CharId1

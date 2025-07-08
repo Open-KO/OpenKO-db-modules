@@ -60,7 +60,7 @@ namespace model
 		/// \brief Binds a result's column to Radius
 		static void BindRadius(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Radius);
+			result.get_ref<int16_t>(colIndex, m.Radius);
 		}
 
 		/// \brief Binds a result's column to Angle
@@ -72,7 +72,7 @@ namespace model
 		/// \brief Binds a result's column to DirectType
 		static void BindDirectType(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.DirectType);
+			result.get_ref<int16_t>(colIndex, m.DirectType);
 		}
 
 		/// \brief Binds a result's column to FirstDamage
@@ -96,13 +96,13 @@ namespace model
 		/// \brief Binds a result's column to Duration
 		static void BindDuration(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Duration);
+			result.get_ref<int16_t>(colIndex, m.Duration);
 		}
 
 		/// \brief Binds a result's column to Attribute
 		static void BindAttribute(MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Attribute);
+			result.get_ref<int16_t>(colIndex, m.Attribute);
 		}
 
 	};

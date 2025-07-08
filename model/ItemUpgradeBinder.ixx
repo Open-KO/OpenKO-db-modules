@@ -139,7 +139,7 @@ namespace model
 		/// \brief Binds a result's column to RateType
 		static void BindRateType(ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RateType);
+			result.get_ref<int16_t>(colIndex, m.RateType);
 		}
 
 		/// \brief Binds a result's column to GenRate

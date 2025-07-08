@@ -27,7 +27,7 @@ namespace model
 		/// \brief Column [bNpcType]: NPC type
 		///
 		/// \property NpcType
-		uint8_t NpcType = 0;
+		int16_t NpcType = 0;
 
 		/// \brief Column [sNpcID]: NPC identifer
 		///

@@ -81,25 +81,25 @@ namespace model
 		/// \brief Binds a result's column to SiegeType
 		static void BindSiegeType(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.SiegeType);
+			result.get_ref<int16_t>(colIndex, m.SiegeType);
 		}
 
 		/// \brief Binds a result's column to WarDay
 		static void BindWarDay(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.WarDay);
+			result.get_ref<int16_t>(colIndex, m.WarDay);
 		}
 
 		/// \brief Binds a result's column to WarHour
 		static void BindWarHour(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.WarHour);
+			result.get_ref<int16_t>(colIndex, m.WarHour);
 		}
 
 		/// \brief Binds a result's column to WarMinute
 		static void BindWarMinute(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.WarMinute);
+			result.get_ref<int16_t>(colIndex, m.WarMinute);
 		}
 
 		/// \brief Binds a result's column to ChallengeList1
@@ -165,37 +165,37 @@ namespace model
 		/// \brief Binds a result's column to WarRequestDay
 		static void BindWarRequestDay(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.WarRequestDay);
+			result.get_ref<int16_t>(colIndex, m.WarRequestDay);
 		}
 
 		/// \brief Binds a result's column to WarRequestTime
 		static void BindWarRequestTime(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.WarRequestTime);
+			result.get_ref<int16_t>(colIndex, m.WarRequestTime);
 		}
 
 		/// \brief Binds a result's column to WarRequestMinute
 		static void BindWarRequestMinute(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.WarRequestMinute);
+			result.get_ref<int16_t>(colIndex, m.WarRequestMinute);
 		}
 
 		/// \brief Binds a result's column to GuerrillaWarDay
 		static void BindGuerrillaWarDay(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.GuerrillaWarDay);
+			result.get_ref<int16_t>(colIndex, m.GuerrillaWarDay);
 		}
 
 		/// \brief Binds a result's column to GuerrillaWarTime
 		static void BindGuerrillaWarTime(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.GuerrillaWarTime);
+			result.get_ref<int16_t>(colIndex, m.GuerrillaWarTime);
 		}
 
 		/// \brief Binds a result's column to GuerrillaWarMinute
 		static void BindGuerrillaWarMinute(KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.GuerrillaWarMinute);
+			result.get_ref<int16_t>(colIndex, m.GuerrillaWarMinute);
 		}
 
 		/// \brief Binds a result's column to ChallengeList

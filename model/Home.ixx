@@ -22,7 +22,7 @@ namespace model
 		/// \brief Column [Nation]: Nation Identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		int16_t Nation = 0;
 
 		/// \brief Column [ElmoZoneX]: Elmorad Zone X
 		///
@@ -37,12 +37,12 @@ namespace model
 		/// \brief Column [ElmoZoneLX]: Elmorad Zone LX
 		///
 		/// \property ElmoZoneLX
-		uint8_t ElmoZoneLX = 0;
+		int16_t ElmoZoneLX = 0;
 
 		/// \brief Column [ElmoZoneLZ]: Elmorad Zone LZ
 		///
 		/// \property ElmoZoneLZ
-		uint8_t ElmoZoneLZ = 0;
+		int16_t ElmoZoneLZ = 0;
 
 		/// \brief Column [KarusZoneX]: Karus Zone X
 		///
@@ -57,12 +57,12 @@ namespace model
 		/// \brief Column [KarusZoneLX]: Karus Zone LX
 		///
 		/// \property KarusZoneLX
-		uint8_t KarusZoneLX = 0;
+		int16_t KarusZoneLX = 0;
 
 		/// \brief Column [KarusZoneLZ]: Karus Zone LZ
 		///
 		/// \property KarusZoneLZ
-		uint8_t KarusZoneLZ = 0;
+		int16_t KarusZoneLZ = 0;
 
 		/// \brief Column [FreeZoneX]: Free Zone X
 		///
@@ -77,12 +77,12 @@ namespace model
 		/// \brief Column [FreeZoneLX]: Free Zone LX
 		///
 		/// \property FreeZoneLX
-		uint8_t FreeZoneLX = 0;
+		int16_t FreeZoneLX = 0;
 
 		/// \brief Column [FreeZoneLZ]: Free Zone LZ
 		///
 		/// \property FreeZoneLZ
-		uint8_t FreeZoneLZ = 0;
+		int16_t FreeZoneLZ = 0;
 
 		/// \brief Column [BattleZoneX]: Battle Zone X
 		///
@@ -97,12 +97,12 @@ namespace model
 		/// \brief Column [BattleZoneLX]: Battle Zone LX
 		///
 		/// \property BattleZoneLX
-		uint8_t BattleZoneLX = 0;
+		int16_t BattleZoneLX = 0;
 
 		/// \brief Column [BattleZoneLZ]: Battle Zone LZ
 		///
 		/// \property BattleZoneLZ
-		uint8_t BattleZoneLZ = 0;
+		int16_t BattleZoneLZ = 0;
 
 		/// \brief Column [BattleZone2X]: Battle Zone 2 X
 		///
@@ -117,12 +117,12 @@ namespace model
 		/// \brief Column [BattleZone2LX]: Battle Zone 2 LX
 		///
 		/// \property BattleZone2LX
-		uint8_t BattleZone2LX = 0;
+		int16_t BattleZone2LX = 0;
 
 		/// \brief Column [BattleZone2LZ]: Battle Zone 2 LZ
 		///
 		/// \property BattleZone2LZ
-		uint8_t BattleZone2LZ = 0;
+		int16_t BattleZone2LZ = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

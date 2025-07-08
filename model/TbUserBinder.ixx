@@ -61,7 +61,7 @@ namespace model
 		/// \brief Binds a result's column to Authority
 		static void BindAuthority(TbUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Authority);
+			result.get_ref<int16_t>(colIndex, m.Authority);
 		}
 
 		/// \brief Binds a result's column to PremiumExpire

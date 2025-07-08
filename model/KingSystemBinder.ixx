@@ -60,13 +60,13 @@ namespace model
 		/// \brief Binds a result's column to Nation
 		static void BindNation(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Nation);
+			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Type
 		static void BindType(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Type);
+			result.get_ref<int16_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Year
@@ -78,31 +78,31 @@ namespace model
 		/// \brief Binds a result's column to Month
 		static void BindMonth(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Month);
+			result.get_ref<int16_t>(colIndex, m.Month);
 		}
 
 		/// \brief Binds a result's column to Day
 		static void BindDay(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Day);
+			result.get_ref<int16_t>(colIndex, m.Day);
 		}
 
 		/// \brief Binds a result's column to Hour
 		static void BindHour(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Hour);
+			result.get_ref<int16_t>(colIndex, m.Hour);
 		}
 
 		/// \brief Binds a result's column to Minute
 		static void BindMinute(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Minute);
+			result.get_ref<int16_t>(colIndex, m.Minute);
 		}
 
 		/// \brief Binds a result's column to ImType
 		static void BindImType(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ImType);
+			result.get_ref<int16_t>(colIndex, m.ImType);
 		}
 
 		/// \brief Binds a result's column to ImYear
@@ -114,49 +114,49 @@ namespace model
 		/// \brief Binds a result's column to ImMonth
 		static void BindImMonth(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ImMonth);
+			result.get_ref<int16_t>(colIndex, m.ImMonth);
 		}
 
 		/// \brief Binds a result's column to ImDay
 		static void BindImDay(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ImDay);
+			result.get_ref<int16_t>(colIndex, m.ImDay);
 		}
 
 		/// \brief Binds a result's column to ImHour
 		static void BindImHour(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ImHour);
+			result.get_ref<int16_t>(colIndex, m.ImHour);
 		}
 
 		/// \brief Binds a result's column to ImMinute
 		static void BindImMinute(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ImMinute);
+			result.get_ref<int16_t>(colIndex, m.ImMinute);
 		}
 
 		/// \brief Binds a result's column to NoahEvent
 		static void BindNoahEvent(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.NoahEvent);
+			result.get_ref<int16_t>(colIndex, m.NoahEvent);
 		}
 
 		/// \brief Binds a result's column to NoahEventDay
 		static void BindNoahEventDay(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.NoahEventDay);
+			result.get_ref<int16_t>(colIndex, m.NoahEventDay);
 		}
 
 		/// \brief Binds a result's column to NoahEventHour
 		static void BindNoahEventHour(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.NoahEventHour);
+			result.get_ref<int16_t>(colIndex, m.NoahEventHour);
 		}
 
 		/// \brief Binds a result's column to NoahEventMinute
 		static void BindNoahEventMinute(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.NoahEventMinute);
+			result.get_ref<int16_t>(colIndex, m.NoahEventMinute);
 		}
 
 		/// \brief Binds a result's column to NoahEventDuration
@@ -168,25 +168,25 @@ namespace model
 		/// \brief Binds a result's column to ExpEvent
 		static void BindExpEvent(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ExpEvent);
+			result.get_ref<int16_t>(colIndex, m.ExpEvent);
 		}
 
 		/// \brief Binds a result's column to ExpEventDay
 		static void BindExpEventDay(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ExpEventDay);
+			result.get_ref<int16_t>(colIndex, m.ExpEventDay);
 		}
 
 		/// \brief Binds a result's column to ExpEventHour
 		static void BindExpEventHour(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ExpEventHour);
+			result.get_ref<int16_t>(colIndex, m.ExpEventHour);
 		}
 
 		/// \brief Binds a result's column to ExpEventMinute
 		static void BindExpEventMinute(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ExpEventMinute);
+			result.get_ref<int16_t>(colIndex, m.ExpEventMinute);
 		}
 
 		/// \brief Binds a result's column to ExpEventDuration
@@ -204,7 +204,7 @@ namespace model
 		/// \brief Binds a result's column to TerritoryTariff
 		static void BindTerritoryTariff(KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.TerritoryTariff);
+			result.get_ref<int16_t>(colIndex, m.TerritoryTariff);
 		}
 
 		/// \brief Binds a result's column to TerritoryTax

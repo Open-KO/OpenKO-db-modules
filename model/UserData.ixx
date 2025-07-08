@@ -29,13 +29,13 @@ namespace model
 		/// \brief Column [Nation]: Nation identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		int16_t Nation = 0;
 
 		/// \brief Column [Race]: Racial subtype
 		///
 		/// \see EnumRace
 		/// \property Race
-		uint8_t Race = 0;
+		int16_t Race = 0;
 	
 		/// \enum EnumRace
 		/// \brief Known valid values for Race
@@ -89,22 +89,22 @@ namespace model
 		/// \brief Column [HairColor]: Hair color
 		///
 		/// \property HairColor
-		uint8_t HairColor = 0;
+		int16_t HairColor = 0;
 
 		/// \brief Column [Rank]: User ranking
 		///
 		/// \property Rank
-		uint8_t Rank = 0;
+		int16_t Rank = 0;
 
 		/// \brief Column [Title]: Title
 		///
 		/// \property Title
-		uint8_t Title = 0;
+		int16_t Title = 0;
 
 		/// \brief Column [Level]: Level
 		///
 		/// \property Level
-		uint8_t Level = 0;
+		int16_t Level = 0;
 
 		/// \brief Column [Exp]: Experience
 		///
@@ -119,12 +119,12 @@ namespace model
 		/// \brief Column [Face]: Face
 		///
 		/// \property Face
-		uint8_t Face = 0;
+		int16_t Face = 0;
 
 		/// \brief Column [City]: City
 		///
 		/// \property City
-		uint8_t City = 0;
+		int16_t City = 0;
 
 		/// \brief Column [Knights]: Knights identifier (guild/clan)
 		///
@@ -134,7 +134,7 @@ namespace model
 		/// \brief Column [Fame]: Fame
 		///
 		/// \property Fame
-		uint8_t Fame = 0;
+		int16_t Fame = 0;
 
 		/// \brief Column [Hp]: Health
 		///
@@ -154,37 +154,37 @@ namespace model
 		/// \brief Column [Strong]: Strength
 		///
 		/// \property Strength
-		uint8_t Strength = 0;
+		int16_t Strength = 0;
 
 		/// \brief Column [Sta]: Stamina
 		///
 		/// \property Stamina
-		uint8_t Stamina = 0;
+		int16_t Stamina = 0;
 
 		/// \brief Column [Dex]: Dexterity
 		///
 		/// \property Dexterity
-		uint8_t Dexterity = 0;
+		int16_t Dexterity = 0;
 
 		/// \brief Column [Intel]: Intelligence
 		///
 		/// \property Intelligence
-		uint8_t Intelligence = 0;
+		int16_t Intelligence = 0;
 
 		/// \brief Column [Cha]: Charisma
 		///
 		/// \property Charisma
-		uint8_t Charisma = 0;
+		int16_t Charisma = 0;
 
 		/// \brief Column [Authority]: Authorization level
 		///
 		/// \property Authority
-		uint8_t Authority = 0;
+		int16_t Authority = 0;
 
 		/// \brief Column [Points]: Unspent stat points
 		///
 		/// \property StatPoints
-		uint8_t StatPoints = 0;
+		int16_t StatPoints = 0;
 
 		/// \brief Column [Gold]: Gold
 		///
@@ -194,7 +194,7 @@ namespace model
 		/// \brief Column [Zone]: Current zone
 		///
 		/// \property Zone
-		uint8_t Zone = 0;
+		int16_t Zone = 0;
 
 		/// \brief Column [Bind]: Bind
 		///

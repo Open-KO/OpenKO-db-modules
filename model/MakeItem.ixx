@@ -38,7 +38,7 @@ namespace model
 		/// \brief Column [byItemLevel]: Item level
 		///
 		/// \property ItemLevel
-		uint8_t ItemLevel = 0;
+		int16_t ItemLevel = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

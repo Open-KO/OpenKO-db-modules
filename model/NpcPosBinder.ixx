@@ -63,31 +63,31 @@ namespace model
 		/// \brief Binds a result's column to ActType
 		static void BindActType(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<uint8_t>>(colIndex, m.ActType);
+			result.get_ref<std::optional<int16_t>>(colIndex, m.ActType);
 		}
 
 		/// \brief Binds a result's column to RegenType
 		static void BindRegenType(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<uint8_t>>(colIndex, m.RegenType);
+			result.get_ref<std::optional<int16_t>>(colIndex, m.RegenType);
 		}
 
 		/// \brief Binds a result's column to DungeonFamily
 		static void BindDungeonFamily(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<uint8_t>>(colIndex, m.DungeonFamily);
+			result.get_ref<std::optional<int16_t>>(colIndex, m.DungeonFamily);
 		}
 
 		/// \brief Binds a result's column to SpecialType
 		static void BindSpecialType(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<uint8_t>>(colIndex, m.SpecialType);
+			result.get_ref<std::optional<int16_t>>(colIndex, m.SpecialType);
 		}
 
 		/// \brief Binds a result's column to TrapNumber
 		static void BindTrapNumber(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<uint8_t>>(colIndex, m.TrapNumber);
+			result.get_ref<std::optional<int16_t>>(colIndex, m.TrapNumber);
 		}
 
 		/// \brief Binds a result's column to LeftX
@@ -141,7 +141,7 @@ namespace model
 		/// \brief Binds a result's column to NumNpc
 		static void BindNumNpc(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<uint8_t>>(colIndex, m.NumNpc);
+			result.get_ref<std::optional<int16_t>>(colIndex, m.NumNpc);
 		}
 
 		/// \brief Binds a result's column to RespawnTime
@@ -159,7 +159,7 @@ namespace model
 		/// \brief Binds a result's column to DotCount
 		static void BindDotCount(NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::optional<uint8_t>>(colIndex, m.DotCount);
+			result.get_ref<std::optional<int16_t>>(colIndex, m.DotCount);
 		}
 
 		/// \brief Binds a result's column to Path

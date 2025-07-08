@@ -40,7 +40,7 @@ namespace model
 		/// \brief Binds a result's column to ServerId
 		static void BindServerId(ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ServerId);
+			result.get_ref<int16_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to ZoneId
@@ -76,13 +76,13 @@ namespace model
 		/// \brief Binds a result's column to Type
 		static void BindType(ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Type);
+			result.get_ref<int16_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to RoomEvent
 		static void BindRoomEvent(ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RoomEvent);
+			result.get_ref<int16_t>(colIndex, m.RoomEvent);
 		}
 
 		/// \brief Binds a result's column to Bz

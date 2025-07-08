@@ -38,7 +38,7 @@ namespace model
 		/// \brief Column [Target]: Target
 		///
 		/// \property Target
-		uint8_t Target = 0;
+		int16_t Target = 0;
 
 		/// \brief Column [Radius]: Radius
 		///
@@ -49,7 +49,7 @@ namespace model
 		///
 		/// \see EnumWarpType
 		/// \property WarpType
-		uint8_t WarpType = 0;
+		int16_t WarpType = 0;
 	
 		/// \enum EnumWarpType
 		/// \brief Known valid values for WarpType

@@ -56,13 +56,13 @@ namespace model
 		/// \brief Binds a result's column to RentalType
 		static void BindRentalType(UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RentalType);
+			result.get_ref<int16_t>(colIndex, m.RentalType);
 		}
 
 		/// \brief Binds a result's column to RegTime
 		static void BindRegTime(UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RegTime);
+			result.get_ref<int16_t>(colIndex, m.RegTime);
 		}
 
 		/// \brief Binds a result's column to RentalIndex

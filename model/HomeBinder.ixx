@@ -52,7 +52,7 @@ namespace model
 		/// \brief Binds a result's column to Nation
 		static void BindNation(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Nation);
+			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to ElmoZoneX
@@ -70,13 +70,13 @@ namespace model
 		/// \brief Binds a result's column to ElmoZoneLX
 		static void BindElmoZoneLX(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ElmoZoneLX);
+			result.get_ref<int16_t>(colIndex, m.ElmoZoneLX);
 		}
 
 		/// \brief Binds a result's column to ElmoZoneLZ
 		static void BindElmoZoneLZ(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ElmoZoneLZ);
+			result.get_ref<int16_t>(colIndex, m.ElmoZoneLZ);
 		}
 
 		/// \brief Binds a result's column to KarusZoneX
@@ -94,13 +94,13 @@ namespace model
 		/// \brief Binds a result's column to KarusZoneLX
 		static void BindKarusZoneLX(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.KarusZoneLX);
+			result.get_ref<int16_t>(colIndex, m.KarusZoneLX);
 		}
 
 		/// \brief Binds a result's column to KarusZoneLZ
 		static void BindKarusZoneLZ(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.KarusZoneLZ);
+			result.get_ref<int16_t>(colIndex, m.KarusZoneLZ);
 		}
 
 		/// \brief Binds a result's column to FreeZoneX
@@ -118,13 +118,13 @@ namespace model
 		/// \brief Binds a result's column to FreeZoneLX
 		static void BindFreeZoneLX(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.FreeZoneLX);
+			result.get_ref<int16_t>(colIndex, m.FreeZoneLX);
 		}
 
 		/// \brief Binds a result's column to FreeZoneLZ
 		static void BindFreeZoneLZ(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.FreeZoneLZ);
+			result.get_ref<int16_t>(colIndex, m.FreeZoneLZ);
 		}
 
 		/// \brief Binds a result's column to BattleZoneX
@@ -142,13 +142,13 @@ namespace model
 		/// \brief Binds a result's column to BattleZoneLX
 		static void BindBattleZoneLX(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.BattleZoneLX);
+			result.get_ref<int16_t>(colIndex, m.BattleZoneLX);
 		}
 
 		/// \brief Binds a result's column to BattleZoneLZ
 		static void BindBattleZoneLZ(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.BattleZoneLZ);
+			result.get_ref<int16_t>(colIndex, m.BattleZoneLZ);
 		}
 
 		/// \brief Binds a result's column to BattleZone2X
@@ -166,13 +166,13 @@ namespace model
 		/// \brief Binds a result's column to BattleZone2LX
 		static void BindBattleZone2LX(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.BattleZone2LX);
+			result.get_ref<int16_t>(colIndex, m.BattleZone2LX);
 		}
 
 		/// \brief Binds a result's column to BattleZone2LZ
 		static void BindBattleZone2LZ(Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.BattleZone2LZ);
+			result.get_ref<int16_t>(colIndex, m.BattleZone2LZ);
 		}
 
 	};

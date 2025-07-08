@@ -61,7 +61,7 @@ namespace model
 		/// \brief Binds a result's column to Type
 		static void BindType(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Type);
+			result.get_ref<int16_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to HitRateMod
@@ -85,19 +85,19 @@ namespace model
 		/// \brief Binds a result's column to Delay
 		static void BindDelay(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.Delay);
+			result.get_ref<int16_t>(colIndex, m.Delay);
 		}
 
 		/// \brief Binds a result's column to ComboType
 		static void BindComboType(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ComboType);
+			result.get_ref<int16_t>(colIndex, m.ComboType);
 		}
 
 		/// \brief Binds a result's column to ComboCount
 		static void BindComboCount(MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.ComboCount);
+			result.get_ref<int16_t>(colIndex, m.ComboCount);
 		}
 
 		/// \brief Binds a result's column to ComboDamage

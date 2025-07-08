@@ -28,7 +28,7 @@ namespace model
 		/// \brief Column [byType]: Type
 		///
 		/// \property Type
-		std::optional<uint8_t> Type;
+		std::optional<int16_t> Type;
 
 		/// \brief Column [nPos]: nPos: TODO
 		///

@@ -41,7 +41,7 @@ namespace model
 		/// \brief Binds a result's column to NpcType
 		static void BindNpcType(EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.NpcType);
+			result.get_ref<int16_t>(colIndex, m.NpcType);
 		}
 
 		/// \brief Binds a result's column to NpcId

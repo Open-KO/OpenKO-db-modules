@@ -43,22 +43,22 @@ namespace model
 		/// \brief Column [BeforeAction]: Before action check
 		///
 		/// \property BeforeAction
-		uint8_t BeforeAction = 0;
+		int16_t BeforeAction = 0;
 
 		/// \brief Column [TargetAction]: Target action check
 		///
 		/// \property TargetAction
-		uint8_t TargetAction = 0;
+		int16_t TargetAction = 0;
 
 		/// \brief Column [SelfEffect]: Self effect TODO
 		///
 		/// \property SelfEffect
-		uint8_t SelfEffect = 0;
+		int16_t SelfEffect = 0;
 
 		/// \brief Column [FlyingEffect]: Does the skill fire a projectile
 		///
 		/// \property FlyingEffect
-		uint8_t FlyingEffect = 0;
+		int16_t FlyingEffect = 0;
 
 		/// \brief Column [TargetEffect]: Effect identifier to use on the target
 		///
@@ -68,7 +68,7 @@ namespace model
 		/// \brief Column [Moral]: Targeting constraints
 		///
 		/// \property Moral
-		uint8_t Moral = 0;
+		int16_t Moral = 0;
 
 		/// \brief Column [SkillLevel]: Skill points required in the tree to unlock the skill
 		///
@@ -93,7 +93,7 @@ namespace model
 		/// \brief Column [ItemGroup]: Item group allows a skill to be constrained to having an item type equipped
 		///
 		/// \property ItemGroup
-		uint8_t ItemGroup = 0;
+		int16_t ItemGroup = 0;
 
 		/// \brief Column [UseItem]: Must consume this item from inventory in order to activate ability
 		///
@@ -103,27 +103,27 @@ namespace model
 		/// \brief Column [CastTime]: Time needed to cast the ability
 		///
 		/// \property CastTime
-		uint8_t CastTime = 0;
+		int16_t CastTime = 0;
 
 		/// \brief Column [ReCastTime]: Cooldown
 		///
 		/// \property RecastTime
-		uint8_t RecastTime = 0;
+		int16_t RecastTime = 0;
 
 		/// \brief Column [SuccessRate]: Chance the skill will hit target
 		///
 		/// \property SuccessRate
-		uint8_t SuccessRate = 0;
+		int16_t SuccessRate = 0;
 
 		/// \brief Column [Type1]: Look up effect in MAGIC_TYPEX table
 		///
 		/// \property Type1
-		uint8_t Type1 = 0;
+		int16_t Type1 = 0;
 
 		/// \brief Column [Type2]: Look up effect in MAGIC_TYPEX table
 		///
 		/// \property Type2
-		uint8_t Type2 = 0;
+		int16_t Type2 = 0;
 
 		/// \brief Column [Range]: Maximum range from target
 		///
@@ -133,7 +133,7 @@ namespace model
 		/// \brief Column [Etc]: Etc TODO
 		///
 		/// \property Etc
-		uint8_t Etc = 0;
+		int16_t Etc = 0;
 
 		/// \brief Column [Event]: Event TODO
 		///

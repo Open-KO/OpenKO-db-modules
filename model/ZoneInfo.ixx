@@ -23,7 +23,7 @@ namespace model
 		/// \brief Column [ServerNo]: Server identifier
 		///
 		/// \property ServerId
-		uint8_t ServerId = 0;
+		int16_t ServerId = 0;
 
 		/// \brief Column [ZoneNo]: Zone identifier
 		///
@@ -53,12 +53,12 @@ namespace model
 		/// \brief Column [Type]: Type
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		int16_t Type = 0;
 
 		/// \brief Column [RoomEvent]: Map EventId
 		///
 		/// \property RoomEvent
-		uint8_t RoomEvent = 0;
+		int16_t RoomEvent = 0;
 
 		/// \brief Column [bz]: Bz TODO - just seems like a description column
 		///

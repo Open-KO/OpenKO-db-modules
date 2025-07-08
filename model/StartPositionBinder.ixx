@@ -72,13 +72,13 @@ namespace model
 		/// \brief Binds a result's column to RangeX
 		static void BindRangeX(StartPosition& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RangeX);
+			result.get_ref<int16_t>(colIndex, m.RangeX);
 		}
 
 		/// \brief Binds a result's column to RangeZ
 		static void BindRangeZ(StartPosition& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<uint8_t>(colIndex, m.RangeZ);
+			result.get_ref<int16_t>(colIndex, m.RangeZ);
 		}
 
 		/// \brief Binds a result's column to KarusGateX
