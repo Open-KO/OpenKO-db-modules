@@ -7,7 +7,7 @@ var classmodel_1_1MagicType8 =
       [ "TeleportToFriendly", "classmodel_1_1MagicType8.html#a0dce01ff3afe2e3a46c0d6881ff57d91a980f67021d5069d1513fa25f0d906aa4", null ]
     ] ],
     [ "Description", "classmodel_1_1MagicType8.html#ab2764cff0f6ff1d21bcc23040a5e10aa", null ],
-    [ "ExpRecover", "classmodel_1_1MagicType8.html#a069fb4c6858a6b8fb200e0a7e74e125c", null ],
+    [ "ExpRecover", "classmodel_1_1MagicType8.html#ab491961e3c0e19d3282bea33756db357", null ],
     [ "MagicNumber", "classmodel_1_1MagicType8.html#a39cbdc002978853080ff027dbd04e6fe", null ],
     [ "Name", "classmodel_1_1MagicType8.html#a4e1bf4a3743ead4ddd3a001abbc5273f", null ],
     [ "Radius", "classmodel_1_1MagicType8.html#a4bb02a3d03325a5785ae35d42282f180", null ],

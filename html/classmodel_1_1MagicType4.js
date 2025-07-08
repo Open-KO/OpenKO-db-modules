@@ -39,7 +39,7 @@ var classmodel_1_1MagicType4 =
     [ "MaxMpPercent", "classmodel_1_1MagicType4.html#a1ff1c99aef0a29848104d52adf69e3ce", null ],
     [ "Name", "classmodel_1_1MagicType4.html#aea0c46c1411107a820b931531702e51f", null ],
     [ "PoisonResist", "classmodel_1_1MagicType4.html#aa095bc8c05af7d6d7a22aa2d2e630c0d", null ],
-    [ "Radius", "classmodel_1_1MagicType4.html#a34563c8ff91cf35598827599c3f49d32", null ],
+    [ "Radius", "classmodel_1_1MagicType4.html#aca1bb8f7dae5e971e9e485e949bdfc3a", null ],
     [ "Speed", "classmodel_1_1MagicType4.html#adc9ab268660f27fe272afcbf508136ea", null ],
     [ "Stamina", "classmodel_1_1MagicType4.html#ad93f1f1d6ca0639709eee44c0c839c21", null ],
     [ "Strength", "classmodel_1_1MagicType4.html#a20df937b211bbfd2b32f682677521651", null ]

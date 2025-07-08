@@ -18,7 +18,7 @@ var classmodel_1_1MagicType3 =
     [ "DirectType", "classmodel_1_1MagicType3.html#a40f36b686ff385d17dde07e123c0adfc", null ],
     [ "Duration", "classmodel_1_1MagicType3.html#a2feac39c0245e2ea0b8bd3a0dbe2477a", null ],
     [ "EndDamage", "classmodel_1_1MagicType3.html#aef6ced342a15dfe8bd7a7c2aa4f33482", null ],
-    [ "FirstDamage", "classmodel_1_1MagicType3.html#aac6784c955f1ac6def4d02ca5163e946", null ],
+    [ "FirstDamage", "classmodel_1_1MagicType3.html#a3bb267f7d05014fd5555cd1f0ad041d3", null ],
     [ "MagicNumber", "classmodel_1_1MagicType3.html#a1798453d41a90e7c5482751b1a9f2118", null ],
     [ "Name", "classmodel_1_1MagicType3.html#a3e69a0b9f9bb7c79e7dc12b6d5302192", null ],
     [ "Radius", "classmodel_1_1MagicType3.html#a5375e3599e03bf137457c32c54e16f28", null ],

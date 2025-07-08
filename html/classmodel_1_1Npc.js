@@ -22,7 +22,7 @@ var classmodel_1_1Npc =
     [ "DiseaseResistance", "classmodel_1_1Npc.html#a4684b3004183a39d8d3a97e45c3821dd", null ],
     [ "EvadeRate", "classmodel_1_1Npc.html#a66004d25fedcc0e7ee41f44b0a752571", null ],
     [ "Exp", "classmodel_1_1Npc.html#ab56c775fb8091f2e44285d753a513e83", null ],
-    [ "Family", "classmodel_1_1Npc.html#abb33c7dfc7a83a65ad27036b7daf500a", null ],
+    [ "Family", "classmodel_1_1Npc.html#af1aecdfeb7571a87465aa37ce598ef6f", null ],
     [ "FireResistance", "classmodel_1_1Npc.html#af41a441a300a5c3cfd4551e3b1a1adda", null ],
     [ "Group", "classmodel_1_1Npc.html#ab7dca96c1383853fdee904ff59860a5c", null ],
     [ "HitPoints", "classmodel_1_1Npc.html#a532f5fb90e0b58b10142016039d53832", null ],

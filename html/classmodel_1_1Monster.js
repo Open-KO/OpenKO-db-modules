@@ -22,7 +22,7 @@ var classmodel_1_1Monster =
     [ "DiseaseResistance", "classmodel_1_1Monster.html#a04404ed9a6b3e2293a28502726048d16", null ],
     [ "EvadeRate", "classmodel_1_1Monster.html#a8c004cc3cd4bf01597a3b0f75296fb91", null ],
     [ "Exp", "classmodel_1_1Monster.html#aa92774f780e51ccb9ba46f549508f7d2", null ],
-    [ "Family", "classmodel_1_1Monster.html#abe05baf404bcdd74e677a00da2c2e6bf", null ],
+    [ "Family", "classmodel_1_1Monster.html#a790743c22f06805eebcdc71561759196", null ],
     [ "FireResistance", "classmodel_1_1Monster.html#acd89390f5c7c1a135133988534924776", null ],
     [ "Group", "classmodel_1_1Monster.html#a848d39b4bdf8d2bde9afc99aeac8c6c7", null ],
     [ "HitPoints", "classmodel_1_1Monster.html#a172dc230955662690dde11a7a5af23c1", null ],

@@ -14,7 +14,7 @@ var classmodel_1_1MagicType7 =
     [ "NeedItem", "classmodel_1_1MagicType7.html#a7267929c41247033478399f107a83ff8", null ],
     [ "Note", "classmodel_1_1MagicType7.html#ad5cb2fcb17e64da75feaea14b20d7262", null ],
     [ "Radius", "classmodel_1_1MagicType7.html#a45ef98be7c04718f2e28b648f8d9608b", null ],
-    [ "StateChange", "classmodel_1_1MagicType7.html#a977f4008f716bf971502eb446748a3e5", null ],
+    [ "StateChange", "classmodel_1_1MagicType7.html#a9fe55b4500eac318921947d0670eea73", null ],
     [ "TargetChange", "classmodel_1_1MagicType7.html#ae85c136abea3ba8ccbab51f7664180bf", null ],
     [ "ValidGroup", "classmodel_1_1MagicType7.html#a34efeb8ff5ccb81df67e598a5536d5e4", null ],
     [ "Vision", "classmodel_1_1MagicType7.html#a1f919c1e6fa8dc3dccd5980017231e3f", null ]

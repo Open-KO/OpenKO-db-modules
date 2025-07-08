@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['race_0',['Race',['../classmodel_1_1UserData.html#a2eb78371c07aa1140a303971f5245fc9',1,'model::UserData::Race()'],['../classmodel_1_1Item.html#a718bbced841c2a32db0d6119c7ff6f9e',1,'model::Item::Race()']]],
-  ['radius_1',['Radius',['../classmodel_1_1MagicType4.html#a34563c8ff91cf35598827599c3f49d32',1,'model::MagicType4::Radius()'],['../classmodel_1_1MagicType3.html#a5375e3599e03bf137457c32c54e16f28',1,'model::MagicType3::Radius()'],['../classmodel_1_1MagicType9.html#ab80ffbd7d0a69203d3edc875955b28a2',1,'model::MagicType9::Radius()'],['../classmodel_1_1MagicType8.html#a4bb02a3d03325a5785ae35d42282f180',1,'model::MagicType8::Radius()'],['../classmodel_1_1MagicType7.html#a45ef98be7c04718f2e28b648f8d9608b',1,'model::MagicType7::Radius()']]],
+  ['race_0',['Race',['../classmodel_1_1UserData.html#a2eb78371c07aa1140a303971f5245fc9',1,'model::UserData::Race()'],['../classmodel_1_1Item.html#a1019b5f0a4a3885780543b979dd7758b',1,'model::Item::Race()']]],
+  ['radius_1',['Radius',['../classmodel_1_1MagicType4.html#aca1bb8f7dae5e971e9e485e949bdfc3a',1,'model::MagicType4::Radius()'],['../classmodel_1_1MagicType3.html#a5375e3599e03bf137457c32c54e16f28',1,'model::MagicType3::Radius()'],['../classmodel_1_1MagicType9.html#ab80ffbd7d0a69203d3edc875955b28a2',1,'model::MagicType9::Radius()'],['../classmodel_1_1MagicType8.html#a4bb02a3d03325a5785ae35d42282f180',1,'model::MagicType8::Radius()'],['../classmodel_1_1MagicType7.html#a45ef98be7c04718f2e28b648f8d9608b',1,'model::MagicType7::Radius()']]],
   ['randomflag_2',['RandomFlag',['../classmodel_1_1ItemExchange.html#ab04f6d3de3d0d3eb209f98acea53d521',1,'model::ItemExchange']]],
   ['range_3',['Range',['../classmodel_1_1Item.html#a88b96818641951f05c87285f244b7944',1,'model::Item::Range()'],['../classmodel_1_1Magic.html#aa2bcc8a25191726c4c9eb0eac64ba9a0',1,'model::Magic::Range()'],['../classmodel_1_1MagicType1.html#ac4f66683b7683641a0d592dadb4ad789',1,'model::MagicType1::Range()'],['../classmodel_1_1MonsterChallengeSummonList.html#a62d237a57a8c5ee5fca4fa5fee4508ca',1,'model::MonsterChallengeSummonList::Range()']]],
   ['rangemod_4',['RangeMod',['../classmodel_1_1MagicType2.html#a163b615d73977a0f9564b75f89cd5221',1,'model::MagicType2']]],
@@ -44,10 +44,10 @@ var searchData=
   ['requireitem6_41',['RequireItem6',['../classmodel_1_1ItemUpgrade.html#a8076cdf8770c78c52ade206ba0d920a3',1,'model::ItemUpgrade']]],
   ['requireitem7_42',['RequireItem7',['../classmodel_1_1ItemUpgrade.html#ac798edaddd278636ea3ef2b729ebe293',1,'model::ItemUpgrade']]],
   ['requireitem8_43',['RequireItem8',['../classmodel_1_1ItemUpgrade.html#afbd1e172bb47c282ebf7a8add86048f1',1,'model::ItemUpgrade']]],
-  ['requirelevel_44',['RequireLevel',['../classmodel_1_1Item.html#a9ed06b725232c3a3cfcf45c4ca9f291f',1,'model::Item']]],
+  ['requirelevel_44',['RequireLevel',['../classmodel_1_1Item.html#a63754b2ecd4b463c0779cffa803c492b',1,'model::Item']]],
   ['requirerank_45',['RequireRank',['../classmodel_1_1Item.html#a54940c642b910b3197472ce501061fd0',1,'model::Item']]],
   ['requirestamina_46',['RequireStamina',['../classmodel_1_1Item.html#a6be64ecfb27199a2071f331cad015478',1,'model::Item']]],
-  ['requirestrength_47',['RequireStrength',['../classmodel_1_1Item.html#a3050a89fb89bfbc5664e4c5f17e8e886',1,'model::Item']]],
+  ['requirestrength_47',['RequireStrength',['../classmodel_1_1Item.html#a94f55c68358f0a51046b1e76273091c4',1,'model::Item']]],
   ['requiretitle_48',['RequireTitle',['../classmodel_1_1Item.html#ae4c3d79bf450c9b1f7ff2754f28a4d67',1,'model::Item']]],
   ['resource_49',['Resource',['../classmodel_1_1ServerResource.html#ab3654c77b234ae4423c3acc62707d54c',1,'model::ServerResource']]],
   ['resourceid_50',['ResourceId',['../classmodel_1_1ServerResource.html#a7201cbec5968541eeddb8a78e310f4e1',1,'model::ServerResource']]],

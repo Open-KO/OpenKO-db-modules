@@ -8,7 +8,7 @@ var classmodel_1_1MagicType5 =
       [ "Unknown5", "classmodel_1_1MagicType5.html#a53a24c00e3f6953f726cd8874e580654a9438fee56697232b35b5fddd839f5557", null ]
     ] ],
     [ "Description", "classmodel_1_1MagicType5.html#a00f69a5d623b061df3c735b1bbc3380f", null ],
-    [ "ExpRecover", "classmodel_1_1MagicType5.html#aba950c376d2d9865d0947497f29ea048", null ],
+    [ "ExpRecover", "classmodel_1_1MagicType5.html#ad4f887f376d4920fbaeae2919bf23a9d", null ],
     [ "MagicNumber", "classmodel_1_1MagicType5.html#a22923605702c41cfeadc84a683c8b6d8", null ],
     [ "Name", "classmodel_1_1MagicType5.html#a714a79571a9f7996b3ff473c87a2a315", null ],
     [ "NeedStone", "classmodel_1_1MagicType5.html#a7debe57e979bda6a4f0c06104ec6b49a", null ],

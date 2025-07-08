@@ -42,9 +42,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmodel_1_1Item.html#a8c07157b2bcb109b846575c8b60b91a9ac4a49e9c4e64a901b659eab40a2490fd",
+"classmodel_1_1Item.html#a8c07157b2bcb109b846575c8b60b91a9ab23f665210a1914cab61bc8eba4c9ae0",
 "classmodel_1_1KnightsCapeBinder.html",
-"classmodel_1_1MagicType8.html#a4e1bf4a3743ead4ddd3a001abbc5273f",
+"classmodel_1_1MagicType8.html#a63d3d6898054599aff855ddfad177d1f",
 "classmodel_1_1Npc.html#a947fd40149479e6ee581d8ec0759f4e6",
 "classmodel_1_1UserKnightsRank.html#ae263ce954eca472c7e5c1acf31266494"
 ];

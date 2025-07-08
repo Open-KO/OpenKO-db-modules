@@ -1,7 +1,7 @@
 var searchData=
 [
   ['daggerarmor_0',['DaggerArmor',['../classmodel_1_1Item.html#a788a8eca65836ea25f299c4c4fe1251f',1,'model::Item']]],
-  ['damage_1',['Damage',['../classmodel_1_1Item.html#a2490248f8f8087e543bec2511d2d23d8',1,'model::Item::Damage()'],['../classmodel_1_1Npc.html#a4a48d2643d23d18c081dff8e4f62a4e0',1,'model::Npc::Damage()'],['../classmodel_1_1MagicType7.html#a8d5eaecc40b89c0067e4630af49003b0',1,'model::MagicType7::Damage()'],['../classmodel_1_1Monster.html#a9b561adc1bc2b403526bfd7ca58dbaff',1,'model::Monster::Damage()']]],
+  ['damage_1',['Damage',['../classmodel_1_1Item.html#a57d4b7c70d52687e5ea27ed144a99a22',1,'model::Item::Damage()'],['../classmodel_1_1Npc.html#a4a48d2643d23d18c081dff8e4f62a4e0',1,'model::Npc::Damage()'],['../classmodel_1_1MagicType7.html#a8d5eaecc40b89c0067e4630af49003b0',1,'model::MagicType7::Damage()'],['../classmodel_1_1Monster.html#a9b561adc1bc2b403526bfd7ca58dbaff',1,'model::Monster::Damage()']]],
   ['damagemod_2',['DamageMod',['../classmodel_1_1MagicType1.html#a02e733273e87c05bd36d0fa868c0445e',1,'model::MagicType1::DamageMod()'],['../classmodel_1_1MagicType2.html#a5c2813793c4432b00f73376d0bd08cee',1,'model::MagicType2::DamageMod()']]],
   ['day_3',['Day',['../classmodel_1_1KingSystem.html#ad3c79bf7b3accebc27e1b40f551bfd1e',1,'model::KingSystem']]],
   ['dbindex_4',['DbIndex',['../classmodel_1_1UserEditorItem.html#acf4430c885ab208d06ed4f99a6516ffb',1,'model::UserEditorItem']]],

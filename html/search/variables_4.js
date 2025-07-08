@@ -50,5 +50,5 @@ var searchData=
   ['expeventhour_47',['ExpEventHour',['../classmodel_1_1KingSystem.html#a260ccc0f10856b43c47357fdd1862304',1,'model::KingSystem']]],
   ['expeventminute_48',['ExpEventMinute',['../classmodel_1_1KingSystem.html#a3470bf7fa0532f5500b3eaf6ecf9efb5',1,'model::KingSystem']]],
   ['exppercent_49',['ExpPercent',['../classmodel_1_1MagicType4.html#af73219cd5b08a970c4ea2d9694552818',1,'model::MagicType4']]],
-  ['exprecover_50',['ExpRecover',['../classmodel_1_1MagicType5.html#aba950c376d2d9865d0947497f29ea048',1,'model::MagicType5::ExpRecover()'],['../classmodel_1_1MagicType8.html#a069fb4c6858a6b8fb200e0a7e74e125c',1,'model::MagicType8::ExpRecover()']]]
+  ['exprecover_50',['ExpRecover',['../classmodel_1_1MagicType5.html#ad4f887f376d4920fbaeae2919bf23a9d',1,'model::MagicType5::ExpRecover()'],['../classmodel_1_1MagicType8.html#ab491961e3c0e19d3282bea33756db357',1,'model::MagicType8::ExpRecover()']]]
 ];

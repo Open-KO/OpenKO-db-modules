@@ -12,7 +12,7 @@ var classmodel_1_1MagicType1 =
     [ "DamageMod", "classmodel_1_1MagicType1.html#a02e733273e87c05bd36d0fa868c0445e", null ],
     [ "Delay", "classmodel_1_1MagicType1.html#aa734c67a8884b196b1453deef33037e0", null ],
     [ "Description", "classmodel_1_1MagicType1.html#ad80f6e7d2270008edee8150ac8d4b798", null ],
-    [ "HitRateMod", "classmodel_1_1MagicType1.html#a3a07181b6b546564e97f6e3bb3ef3e99", null ],
+    [ "HitRateMod", "classmodel_1_1MagicType1.html#acda059c51a8f5ca11b7916a180e2fb01", null ],
     [ "MagicNumber", "classmodel_1_1MagicType1.html#abf2a590d576a5ad79a3a0bd90bef3dab", null ],
     [ "Name", "classmodel_1_1MagicType1.html#a29f2cc365431419c35da6f4088632cce", null ],
     [ "Range", "classmodel_1_1MagicType1.html#ac4f66683b7683641a0d592dadb4ad789", null ],

@@ -7,7 +7,7 @@ var classmodel_1_1MagicType2 =
     [ "AddDamagePlus", "classmodel_1_1MagicType2.html#a90c1f0edbbd08fb12b8553107bf791b0", null ],
     [ "DamageMod", "classmodel_1_1MagicType2.html#a5c2813793c4432b00f73376d0bd08cee", null ],
     [ "Description", "classmodel_1_1MagicType2.html#af06c26a0ea319625169adce477d35e38", null ],
-    [ "HitRateMod", "classmodel_1_1MagicType2.html#a1ef81f1c5d2a871e648196da0948dd90", null ],
+    [ "HitRateMod", "classmodel_1_1MagicType2.html#a02e831ca114b5a2f4c9ed0e19f511c0f", null ],
     [ "HitType", "classmodel_1_1MagicType2.html#ae284cd3c0962b317239a6fdc1f6482ff", null ],
     [ "MagicNumber", "classmodel_1_1MagicType2.html#a6105847cf1b278ec20189f651d2179de", null ],
     [ "Name", "classmodel_1_1MagicType2.html#a8907989b4e8e7a025241f69a707bf185", null ],
