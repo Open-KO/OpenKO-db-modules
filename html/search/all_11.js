@@ -57,12 +57,13 @@ var searchData=
   ['stash_54',['Stash',['../classmodel_1_1Knights.html#a064a063e191567a1205620110c9175c4',1,'model::Knights']]],
   ['statechange_55',['StateChange',['../classmodel_1_1MagicType7.html#a9fe55b4500eac318921947d0670eea73',1,'model::MagicType7::StateChange()'],['../classmodel_1_1MagicType9.html#abfa172610ece3d48d07682b7310af706',1,'model::MagicType9::StateChange()']]],
   ['statpoints_56',['StatPoints',['../classmodel_1_1UserData.html#a5774d6978d69cf1bdaca07936c86ac14',1,'model::UserData']]],
-  ['strength_57',['Strength',['../classmodel_1_1MagicType4.html#a20df937b211bbfd2b32f682677521651',1,'model::MagicType4::Strength()'],['../classmodel_1_1UserData.html#adf825a9da6c8791b42e24ab8bc99ba7c',1,'model::UserData::Strength()']]],
-  ['strengthbonus_58',['StrengthBonus',['../classmodel_1_1Item.html#a68f44566a7196b664299611e962bc6b8',1,'model::Item']]],
-  ['suballianceknights_59',['SubAllianceKnights',['../classmodel_1_1KnightsAlliance.html#a0591d15c2ca847644b9682215c34c373',1,'model::KnightsAlliance']]],
-  ['successrate_60',['SuccessRate',['../classmodel_1_1Magic.html#a5f46441d081fe0ae24578684f7a0b47a',1,'model::Magic']]],
-  ['summonfriendly_61',['SummonFriendly',['../classmodel_1_1MagicType8.html#a0dce01ff3afe2e3a46c0d6881ff57d91ad625eea65019e32f2b05ac03ffb2f528',1,'model::MagicType8']]],
-  ['summonmonster_62',['SummonMonster',['../classmodel_1_1MagicType8.html#a0dce01ff3afe2e3a46c0d6881ff57d91a1358f96d2287442f5055e9d3531e7caa',1,'model::MagicType8']]],
-  ['sword_63',['Sword',['../classmodel_1_1Coefficient.html#a64cdf86a1f1ab0f5a0da48eb2d07a5a3',1,'model::Coefficient']]],
-  ['swordarmor_64',['SwordArmor',['../classmodel_1_1Item.html#a8cc01ba89c14f05671324e348be0bf85',1,'model::Item']]]
+  ['stats_57',['Stats',['../classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca452a7601dbc6f2c38aa89e68bda8b603',1,'model::MagicType4']]],
+  ['strength_58',['Strength',['../classmodel_1_1MagicType4.html#a20df937b211bbfd2b32f682677521651',1,'model::MagicType4::Strength()'],['../classmodel_1_1UserData.html#adf825a9da6c8791b42e24ab8bc99ba7c',1,'model::UserData::Strength()']]],
+  ['strengthbonus_59',['StrengthBonus',['../classmodel_1_1Item.html#a68f44566a7196b664299611e962bc6b8',1,'model::Item']]],
+  ['suballianceknights_60',['SubAllianceKnights',['../classmodel_1_1KnightsAlliance.html#a0591d15c2ca847644b9682215c34c373',1,'model::KnightsAlliance']]],
+  ['successrate_61',['SuccessRate',['../classmodel_1_1Magic.html#a5f46441d081fe0ae24578684f7a0b47a',1,'model::Magic']]],
+  ['summonfriendly_62',['SummonFriendly',['../classmodel_1_1MagicType8.html#a0dce01ff3afe2e3a46c0d6881ff57d91ad625eea65019e32f2b05ac03ffb2f528',1,'model::MagicType8']]],
+  ['summonmonster_63',['SummonMonster',['../classmodel_1_1MagicType8.html#a0dce01ff3afe2e3a46c0d6881ff57d91a1358f96d2287442f5055e9d3531e7caa',1,'model::MagicType8']]],
+  ['sword_64',['Sword',['../classmodel_1_1Coefficient.html#a64cdf86a1f1ab0f5a0da48eb2d07a5a3',1,'model::Coefficient']]],
+  ['swordarmor_65',['SwordArmor',['../classmodel_1_1Item.html#a8cc01ba89c14f05671324e348be0bf85',1,'model::Item']]]
 ];

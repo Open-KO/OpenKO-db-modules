@@ -4,7 +4,7 @@ var searchData=
   ['hacktooluserlog_1',['HacktoolUserLog',['../classmodel_1_1HacktoolUserLog.html',1,'model']]],
   ['hacktooluserlogbinder_2',['HacktoolUserLogBinder',['../classmodel_1_1HacktoolUserLogBinder.html',1,'model']]],
   ['haircolor_3',['HairColor',['../classmodel_1_1UserData.html#a081768b9a91529dd84b15ebb20102562',1,'model::UserData']]],
-  ['health_4',['Health',['../classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca605669cab962bf944d99ce89cf9e58d9',1,'model::MagicType4']]],
+  ['healthmana_4',['HealthMana',['../classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52caa654156fcdb37c6f2d13fb57f792edf3',1,'model::MagicType4']]],
   ['herouser_5',['HeroUser',['../classmodel_1_1HeroUser.html',1,'model']]],
   ['herouserbinder_6',['HeroUserBinder',['../classmodel_1_1HeroUserBinder.html',1,'model']]],
   ['historyversion_7',['HistoryVersion',['../classmodel_1_1Version.html#a0c2e9afb5c6d3c6804c8e402483fa789',1,'model::Version']]],

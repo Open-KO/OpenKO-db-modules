@@ -30,10 +30,10 @@ var searchData=
   ['npcmoveitem_27',['NpcMoveItem',['../classmodel_1_1NpcMoveItem.html',1,'model']]],
   ['npcmoveitembinder_28',['NpcMoveItemBinder',['../classmodel_1_1NpcMoveItemBinder.html',1,'model']]],
   ['npcname_29',['NpcName',['../classmodel_1_1ItemExchange.html#a111e9ca4f879519072515ee0b2806555',1,'model::ItemExchange']]],
-  ['npcnumber_30',['NpcNumber',['../classmodel_1_1ItemExchange.html#abb5bee904330a1d9941264ac012d10e1',1,'model::ItemExchange::NpcNumber()'],['../classmodel_1_1ItemUpgrade.html#a987816ece432c61e2176e8a7f0398af0',1,'model::ItemUpgrade::NpcNumber()']]],
+  ['npcnumber_30',['NpcNumber',['../classmodel_1_1ItemUpgrade.html#a987816ece432c61e2176e8a7f0398af0',1,'model::ItemUpgrade::NpcNumber()'],['../classmodel_1_1ItemExchange.html#abb5bee904330a1d9941264ac012d10e1',1,'model::ItemExchange::NpcNumber()']]],
   ['npcpos_31',['NpcPos',['../classmodel_1_1NpcPos.html',1,'model']]],
   ['npcposbinder_32',['NpcPosBinder',['../classmodel_1_1NpcPosBinder.html',1,'model']]],
   ['npctype_33',['NpcType',['../classmodel_1_1EventTrigger.html#abd67ce0746522b270d48b9ff25f34fa8',1,'model::EventTrigger']]],
-  ['number_34',['Number',['../classmodel_1_1Item.html#aa2e4554d8e3681130c0c7f293f3e101a',1,'model::Item']]],
+  ['number_34',['Number',['../classmodel_1_1Item.html#aa2e4554d8e3681130c0c7f293f3e101a',1,'model::Item::Number()'],['../classmodel_1_1Version.html#a2d67583db6416bb6874e4ec03ae09b36',1,'model::Version::Number()']]],
   ['numnpc_35',['NumNpc',['../classmodel_1_1NpcPos.html#aa14a4ae7dc70ba34a5df2dda6e1d68b7',1,'model::NpcPos']]]
 ];

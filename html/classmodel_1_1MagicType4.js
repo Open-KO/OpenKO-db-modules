@@ -1,17 +1,21 @@
 var classmodel_1_1MagicType4 =
 [
     [ "EnumBuffType", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52c", [
-      [ "Health", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca605669cab962bf944d99ce89cf9e58d9", null ],
+      [ "None", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "HealthMana", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52caa654156fcdb37c6f2d13fb57f792edf3", null ],
       [ "Armor", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52cac77a8030f463c2c14aebd6452fc9f0a8", null ],
       [ "Size", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca6f6cb72d544962fa333e2e34ce64f719", null ],
       [ "AttackPower", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca35d622b2cef903b402b9cfe55fda14e2", null ],
       [ "AttackSpeed", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52caa1039049ad899dd188ddd24169458b48", null ],
       [ "MovementSpeed", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca6ac1a7dc525ac874fef15626633a9c9c", null ],
-      [ "MovementSpeed", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca6ac1a7dc525ac874fef15626633a9c9c", null ],
+      [ "Stats", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca452a7601dbc6f2c38aa89e68bda8b603", null ],
       [ "Resistance", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca9db444f7a3b8ba8f817647de53b7a6fe", null ],
       [ "HitChance", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52caf82971504de7e8f697c3a9ef01c5642b", null ],
       [ "MagicPower", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca7f98b12e59151b27631b22344a219c5f", null ],
-      [ "Experience", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca4038d5a85906029f46137a4164c51073", null ]
+      [ "Experience", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca4038d5a85906029f46137a4164c51073", null ],
+      [ "Weight", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca8c489d0946f66d17d73f26366a4bf620", null ],
+      [ "WeaponEnchant", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca59baac9e19ed966c644a04cd9acaba22", null ],
+      [ "ArmorEnchant", "classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52cad85f7ee4833db75186467342b89d542c", null ]
     ] ],
     [ "Armor", "classmodel_1_1MagicType4.html#a8a1578983da6732eb4ef8720348d990c", null ],
     [ "ArmorPercent", "classmodel_1_1MagicType4.html#a4c5f0f91c2d3bb072a948712c82c0f4c", null ],
