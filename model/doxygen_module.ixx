@@ -1,4 +1,4 @@
-export module doxygen_model;
+export module FullModel;
 
 export import :AccountChar;
 export import :Battle;

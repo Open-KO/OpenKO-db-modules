@@ -1,18 +1,73 @@
 module;
 
-#include <unordered_set>
+#include <cstdint>
+#include <optional>
 #include <string>
+#include <unordered_set>
 
-export module doxygen_model:Warehouse;
+export module FullModel:Warehouse;
 
 namespace model
 {
-	//class WarehouseBinder;
+	class WarehouseBinder;
 	
+	/// \brief [WAREHOUSE] The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
+	/// \class Warehouse
+	/// \xrefitem gamedb "Game Database" "Game Database" WAREHOUSE
 	export class Warehouse 
 	{
+	/// \publicsection
 	public:
-	//	using BinderType = WarehouseBinder;
-		
+		using BinderType = WarehouseBinder;
+
+		/// \brief Column [strAccountID]: Account identifier
+		///
+		/// \property AccountId
+		std::string AccountId;
+
+		/// \brief Column [nMoney]: Money stored in the warehouse
+		///
+		/// \property Money
+		int32_t Money = 0;
+
+		/// \brief Column [dwTime]: DwTime TODO
+		///
+		/// \property DwTime
+		int32_t DwTime = 0;
+
+		/// \brief Column [WarehouseData]: Data on items stored in the warehouse
+		///
+		/// \property ItemData
+		std::optional<std::string> ItemData;
+
+		/// \brief Column [strSerial]: Serial TODO
+		///
+		/// \property Serial
+		std::optional<std::string> Serial;
+
+		/// \brief Returns the table name
+		static const std::string& TableName()
+		{
+			static const std::string tableName = "WAREHOUSE";
+			return tableName;
+		}
+
+		/// \brief Returns a set of column names for the table
+		static std::unordered_set<std::string>& ColumnNames()
+		{
+			static const std::unordered_set<std::string> columnNames =
+			{
+				"strAccountID", "nMoney", "dwTime", "WarehouseData", "strSerial"
+			};
+			return columnNames;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static std::string& DbType()
+		{
+			static const std::string dbType = "GAME";
+			return dbType;
+		}
+
 	};
 }
