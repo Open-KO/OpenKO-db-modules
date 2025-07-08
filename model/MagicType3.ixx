@@ -65,7 +65,7 @@ namespace model
 			Unknown11 = 11, ///< TODO: Used by 220011
 			Unknown12 = 12, ///< TODO: Used by 490402
 			Unknown255 = 255 ///< TODO: Used by 501011
-		}
+		};
 
 		/// \brief Column [FirstDamage]: Damage applied on hit
 		///

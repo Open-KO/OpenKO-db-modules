@@ -50,7 +50,7 @@ namespace model
 			Resurrection = 3, ///< Ability ignores defense
 			Resurrection4 = 4, ///< Not sure how it differs from 3 other than it being triggered from an item
 			Unknown5 = 5 ///< TODO: 300133 only record using it
-		}
+		};
 
 		/// \brief Column [ExpRecover]: Percent of experience loss recovered
 		///

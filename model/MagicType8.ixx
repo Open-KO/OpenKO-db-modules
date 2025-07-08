@@ -59,7 +59,7 @@ namespace model
 			SummonFriendly = 12, ///< Summons friendly player(s)
 			SummonMonster = 21, ///< TODO
 			TeleportToFriendly = 25 ///< Teleports to a party member
-		}
+		};
 
 		/// \brief Column [ExpRecover]: Experience recovery
 		///

@@ -62,7 +62,7 @@ namespace model
 		{
 			Provoke = 0, ///< Target will target attacker
 			Sleep = 1 ///< Target gets put to sleep
-		}
+		};
 
 		/// \brief Column [byStateChange]: State change
 		///

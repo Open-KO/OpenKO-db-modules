@@ -78,7 +78,7 @@ namespace model
 			Trap = 5,
 			RangedOrc = 6,
 			Unknown9 = 9
-		}
+		};
 
 		/// \brief Column [byFamily]: Family
 		///

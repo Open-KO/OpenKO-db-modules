@@ -48,7 +48,7 @@ namespace model
 			Normal = 0, ///< Subject to all normal defence checks
 			AlwaysHit = 1, ///< Ability always hits
 			IgnoreDefense = 2 ///< Ability ignores defense
-		}
+		};
 
 		/// \brief Column [HitRate]: Hit chance modifier - 100 is normal
 		///

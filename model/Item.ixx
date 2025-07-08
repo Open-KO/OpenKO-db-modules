@@ -55,7 +55,7 @@ namespace model
 			ArmorRogue = 22,
 			ArmorWizard = 23,
 			ArmorPriest = 24
-		}
+		};
 
 		/// \brief Column [Slot]: slot this item equips to
 		///
@@ -82,7 +82,7 @@ namespace model
 			Glove = 12,
 			Foot = 13,
 			Reserved = 14
-		}
+		};
 
 		/// \brief Column [Race]: usable by race
 		///
@@ -97,7 +97,7 @@ namespace model
 			Any = 0,
 			Karus = 1,
 			ElMorad = 2
-		}
+		};
 
 		/// \brief Column [Class]: usable by class
 		///
@@ -146,7 +146,7 @@ namespace model
 			Enchanter = 210,
 			Cleric = 211,
 			Druid = 212
-		}
+		};
 
 		/// \brief Column [Damage]: Physical damage
 		///
@@ -201,7 +201,7 @@ namespace model
 			NonStackable = 0,
 			Stackable = 1,
 			Coins = 2
-		}
+		};
 
 		/// \brief Column [Effect1]: Magic effect in MAGIC.MagicNum
 		///
@@ -230,7 +230,7 @@ namespace model
 			UniqueBow = 12120000,
 			UniqueMace = 12130000,
 			UniqueStaff = 40000000
-		}
+		};
 
 		/// \brief Column [ReqLevel]: Minimum level required to use item
 		///
@@ -265,7 +265,7 @@ namespace model
 			Officer = 4,
 			Trainee = 5,
 			WarCommander = 100
-		}
+		};
 
 		/// \brief Column [ReqStr]: Strength required to use item
 		///

@@ -47,7 +47,7 @@ namespace model
 		{
 			Normal = 0, ///< Fire and forget targeting
 			Seeking = 0 ///< Projectile follows target and always hits (unless blocked by collision)
-		}
+		};
 
 		/// \brief Column [HitRate]: Hit chance modifier - 100 is normal
 		///

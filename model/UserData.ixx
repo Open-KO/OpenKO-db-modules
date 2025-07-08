@@ -48,7 +48,7 @@ namespace model
 			Barbarian = 11, ///< ElMorad warrior
 			ElMoradMale = 12, ///< ElMorad male
 			ElMoradFemale = 13 ///< ElMorad female
-		}
+		};
 
 		/// \brief Column [Class]: Player job class
 		///
@@ -84,7 +84,7 @@ namespace model
 			Enchanter = 210, ///< ElMorad master wizard
 			Cleric = 211, ///< ElMorad priest
 			Druid = 212 ///< ElMorad master priest
-		}
+		};
 
 		/// \brief Column [HairColor]: Hair color
 		///

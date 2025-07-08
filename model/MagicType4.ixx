@@ -56,7 +56,7 @@ namespace model
 			HitChance = 9, ///< Hit Chance modifier
 			MagicPower = 10, ///< Magic power modifier
 			Experience = 11 ///< Experience modifier
-		}
+		};
 
 		/// \brief Column [Radius]: Area of effect circle radius
 		///
