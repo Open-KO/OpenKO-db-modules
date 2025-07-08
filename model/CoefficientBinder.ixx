@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:Coefficient;
+export module FullModel:CoefficientBinder;
+
+import FullModel:Coefficient;
 
 namespace model
 {
-	class Coefficient;
-
 	/// \brief generated column binder for the Coefficient model, using nanodbc
 	export class CoefficientBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(Coefficient& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::Coefficient& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -44,91 +44,91 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ClassId
-		static void BindClassId(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindClassId(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ClassId);
 		}
 
 		/// \brief Binds a result's column to ShortSword
-		static void BindShortSword(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindShortSword(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.ShortSword);
 		}
 
 		/// \brief Binds a result's column to Sword
-		static void BindSword(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindSword(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Sword);
 		}
 
 		/// \brief Binds a result's column to Axe
-		static void BindAxe(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindAxe(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Axe);
 		}
 
 		/// \brief Binds a result's column to Club
-		static void BindClub(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindClub(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Club);
 		}
 
 		/// \brief Binds a result's column to Spear
-		static void BindSpear(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindSpear(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Spear);
 		}
 
 		/// \brief Binds a result's column to Pole
-		static void BindPole(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindPole(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Pole);
 		}
 
 		/// \brief Binds a result's column to Staff
-		static void BindStaff(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindStaff(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Staff);
 		}
 
 		/// \brief Binds a result's column to Bow
-		static void BindBow(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindBow(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<double>>(colIndex, m.Bow);
 		}
 
 		/// \brief Binds a result's column to HitPoint
-		static void BindHitPoint(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindHitPoint(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.HitPoint);
 		}
 
 		/// \brief Binds a result's column to MagicPower
-		static void BindMagicPower(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindMagicPower(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.MagicPower);
 		}
 
 		/// \brief Binds a result's column to Sp
-		static void BindSp(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindSp(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Sp);
 		}
 
 		/// \brief Binds a result's column to Armor
-		static void BindArmor(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindArmor(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Armor);
 		}
 
 		/// \brief Binds a result's column to HitRate
-		static void BindHitRate(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindHitRate(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.HitRate);
 		}
 
 		/// \brief Binds a result's column to Evasionrate
-		static void BindEvasionrate(Coefficient& m, nanodbc::result& result, short colIndex)
+		static void BindEvasionrate(model::Coefficient& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<double>(colIndex, m.Evasionrate);
 		}

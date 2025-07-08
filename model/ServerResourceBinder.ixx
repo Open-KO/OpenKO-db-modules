@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:ServerResource;
+export module FullModel:ServerResourceBinder;
+
+import FullModel:ServerResource;
 
 namespace model
 {
-	class ServerResource;
-
 	/// \brief generated column binder for the ServerResource model, using nanodbc
 	export class ServerResourceBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(ServerResource& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::ServerResource& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -32,19 +32,19 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ResourceId
-		static void BindResourceId(ServerResource& m, nanodbc::result& result, short colIndex)
+		static void BindResourceId(model::ServerResource& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ResourceId);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(ServerResource& m, nanodbc::result& result, short colIndex)
+		static void BindName(model::ServerResource& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Resource
-		static void BindResource(ServerResource& m, nanodbc::result& result, short colIndex)
+		static void BindResource(model::ServerResource& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Resource);
 		}

@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:AccountChar;
+export module FullModel:AccountCharBinder;
+
+import FullModel:AccountChar;
 
 namespace model
 {
-	class AccountChar;
-
 	/// \brief generated column binder for the AccountChar model, using nanodbc
 	export class AccountCharBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(AccountChar& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::AccountChar& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -35,37 +35,37 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(model::AccountChar& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindNation(model::AccountChar& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to CharNum
-		static void BindCharNum(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindCharNum(model::AccountChar& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.CharNum);
 		}
 
 		/// \brief Binds a result's column to CharId1
-		static void BindCharId1(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindCharId1(model::AccountChar& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.CharId1);
 		}
 
 		/// \brief Binds a result's column to CharId2
-		static void BindCharId2(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindCharId2(model::AccountChar& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.CharId2);
 		}
 
 		/// \brief Binds a result's column to CharId3
-		static void BindCharId3(AccountChar& m, nanodbc::result& result, short colIndex)
+		static void BindCharId3(model::AccountChar& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.CharId3);
 		}

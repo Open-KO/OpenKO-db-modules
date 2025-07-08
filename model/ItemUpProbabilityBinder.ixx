@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:ItemUpProbability;
+export module FullModel:ItemUpProbabilityBinder;
+
+import FullModel:ItemUpProbability;
 
 namespace model
 {
-	class ItemUpProbability;
-
 	/// \brief generated column binder for the ItemUpProbability model, using nanodbc
 	export class ItemUpProbabilityBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(ItemUpProbability& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::ItemUpProbability& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(ItemUpProbability& m, nanodbc::result& result, short colIndex)
+		static void BindType(model::ItemUpProbability& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to MaxSuccess
-		static void BindMaxSuccess(ItemUpProbability& m, nanodbc::result& result, short colIndex)
+		static void BindMaxSuccess(model::ItemUpProbability& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MaxSuccess);
 		}
 
 		/// \brief Binds a result's column to MaxFail
-		static void BindMaxFail(ItemUpProbability& m, nanodbc::result& result, short colIndex)
+		static void BindMaxFail(model::ItemUpProbability& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MaxFail);
 		}
 
 		/// \brief Binds a result's column to CurrentSuccess
-		static void BindCurrentSuccess(ItemUpProbability& m, nanodbc::result& result, short colIndex)
+		static void BindCurrentSuccess(model::ItemUpProbability& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.CurrentSuccess);
 		}
 
 		/// \brief Binds a result's column to CurrentFailure
-		static void BindCurrentFailure(ItemUpProbability& m, nanodbc::result& result, short colIndex)
+		static void BindCurrentFailure(model::ItemUpProbability& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.CurrentFailure);
 		}

@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:ZoneInfo;
+export module FullModel:ZoneInfoBinder;
+
+import FullModel:ZoneInfo;
 
 namespace model
 {
-	class ZoneInfo;
-
 	/// \brief generated column binder for the ZoneInfo model, using nanodbc
 	export class ZoneInfoBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(ZoneInfo& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::ZoneInfo& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -38,55 +38,55 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ServerId
-		static void BindServerId(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindServerId(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to ZoneId
-		static void BindZoneId(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindZoneId(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ZoneId);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindName(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to InitX
-		static void BindInitX(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindInitX(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.InitX);
 		}
 
 		/// \brief Binds a result's column to InitZ
-		static void BindInitZ(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindInitZ(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.InitZ);
 		}
 
 		/// \brief Binds a result's column to InitY
-		static void BindInitY(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindInitY(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.InitY);
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindType(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to RoomEvent
-		static void BindRoomEvent(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindRoomEvent(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.RoomEvent);
 		}
 
 		/// \brief Binds a result's column to Bz
-		static void BindBz(ZoneInfo& m, nanodbc::result& result, short colIndex)
+		static void BindBz(model::ZoneInfo& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Bz);
 		}

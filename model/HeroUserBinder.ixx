@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:HeroUser;
+export module FullModel:HeroUserBinder;
+
+import FullModel:HeroUser;
 
 namespace model
 {
-	class HeroUser;
-
 	/// \brief generated column binder for the HeroUser model, using nanodbc
 	export class HeroUserBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(HeroUser& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::HeroUser& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(HeroUser& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(model::HeroUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to UserId
-		static void BindUserId(HeroUser& m, nanodbc::result& result, short colIndex)
+		static void BindUserId(model::HeroUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.UserId);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(HeroUser& m, nanodbc::result& result, short colIndex)
+		static void BindNation(model::HeroUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to ClassName
-		static void BindClassName(HeroUser& m, nanodbc::result& result, short colIndex)
+		static void BindClassName(model::HeroUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.ClassName);
 		}
 
 		/// \brief Binds a result's column to Achievement
-		static void BindAchievement(HeroUser& m, nanodbc::result& result, short colIndex)
+		static void BindAchievement(model::HeroUser& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.Achievement);
 		}

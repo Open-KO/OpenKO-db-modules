@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:MakeWeapon;
+export module FullModel:MakeWeaponBinder;
+
+import FullModel:MakeWeapon;
 
 namespace model
 {
-	class MakeWeapon;
-
 	/// \brief generated column binder for the MakeWeapon model, using nanodbc
 	export class MakeWeaponBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(MakeWeapon& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::MakeWeapon& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -42,79 +42,79 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Level
-		static void BindLevel(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindLevel(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Class1
-		static void BindClass1(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass1(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class1);
 		}
 
 		/// \brief Binds a result's column to Class2
-		static void BindClass2(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass2(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class2);
 		}
 
 		/// \brief Binds a result's column to Class3
-		static void BindClass3(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass3(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class3);
 		}
 
 		/// \brief Binds a result's column to Class4
-		static void BindClass4(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass4(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class4);
 		}
 
 		/// \brief Binds a result's column to Class5
-		static void BindClass5(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass5(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class5);
 		}
 
 		/// \brief Binds a result's column to Class6
-		static void BindClass6(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass6(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class6);
 		}
 
 		/// \brief Binds a result's column to Class7
-		static void BindClass7(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass7(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class7);
 		}
 
 		/// \brief Binds a result's column to Class8
-		static void BindClass8(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass8(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class8);
 		}
 
 		/// \brief Binds a result's column to Class9
-		static void BindClass9(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass9(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class9);
 		}
 
 		/// \brief Binds a result's column to Class10
-		static void BindClass10(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass10(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class10);
 		}
 
 		/// \brief Binds a result's column to Class11
-		static void BindClass11(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass11(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class11);
 		}
 
 		/// \brief Binds a result's column to Class12
-		static void BindClass12(MakeWeapon& m, nanodbc::result& result, short colIndex)
+		static void BindClass12(model::MakeWeapon& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<int16_t>>(colIndex, m.Class12);
 		}

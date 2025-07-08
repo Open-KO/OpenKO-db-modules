@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:KnightsAlliance;
+export module FullModel:KnightsAllianceBinder;
+
+import FullModel:KnightsAlliance;
 
 namespace model
 {
-	class KnightsAlliance;
-
 	/// \brief generated column binder for the KnightsAlliance model, using nanodbc
 	export class KnightsAllianceBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(KnightsAlliance& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::KnightsAlliance& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to MainAllianceKnights
-		static void BindMainAllianceKnights(KnightsAlliance& m, nanodbc::result& result, short colIndex)
+		static void BindMainAllianceKnights(model::KnightsAlliance& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MainAllianceKnights);
 		}
 
 		/// \brief Binds a result's column to SubAllianceKnights
-		static void BindSubAllianceKnights(KnightsAlliance& m, nanodbc::result& result, short colIndex)
+		static void BindSubAllianceKnights(model::KnightsAlliance& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.SubAllianceKnights);
 		}
 
 		/// \brief Binds a result's column to MercenaryClan1
-		static void BindMercenaryClan1(KnightsAlliance& m, nanodbc::result& result, short colIndex)
+		static void BindMercenaryClan1(model::KnightsAlliance& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MercenaryClan1);
 		}
 
 		/// \brief Binds a result's column to MercenaryClan2
-		static void BindMercenaryClan2(KnightsAlliance& m, nanodbc::result& result, short colIndex)
+		static void BindMercenaryClan2(model::KnightsAlliance& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MercenaryClan2);
 		}

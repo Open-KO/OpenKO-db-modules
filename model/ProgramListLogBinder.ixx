@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:ProgramListLog;
+export module FullModel:ProgramListLogBinder;
+
+import FullModel:ProgramListLog;
 
 namespace model
 {
-	class ProgramListLog;
-
 	/// \brief generated column binder for the ProgramListLog model, using nanodbc
 	export class ProgramListLogBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(ProgramListLog& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::ProgramListLog& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Id
-		static void BindId(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindId(model::ProgramListLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Id);
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindAccountId(model::ProgramListLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindCharId(model::ProgramListLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to HackToolName
-		static void BindHackToolName(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindHackToolName(model::ProgramListLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.HackToolName);
 		}
 
 		/// \brief Binds a result's column to WriteTime
-		static void BindWriteTime(ProgramListLog& m, nanodbc::result& result, short colIndex)
+		static void BindWriteTime(model::ProgramListLog& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::time_t>(colIndex, m.WriteTime);
 		}

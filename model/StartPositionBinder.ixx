@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:StartPosition;
+export module FullModel:StartPositionBinder;
+
+import FullModel:StartPosition;
 
 namespace model
 {
-	class StartPosition;
-
 	/// \brief generated column binder for the StartPosition model, using nanodbc
 	export class StartPositionBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(StartPosition& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::StartPosition& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -40,67 +40,67 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to ZoneId
-		static void BindZoneId(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindZoneId(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ZoneId);
 		}
 
 		/// \brief Binds a result's column to KarusX
-		static void BindKarusX(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindKarusX(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.KarusX);
 		}
 
 		/// \brief Binds a result's column to KarusZ
-		static void BindKarusZ(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindKarusZ(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.KarusZ);
 		}
 
 		/// \brief Binds a result's column to ElmoX
-		static void BindElmoX(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindElmoX(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ElmoX);
 		}
 
 		/// \brief Binds a result's column to ElmoZ
-		static void BindElmoZ(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindElmoZ(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ElmoZ);
 		}
 
 		/// \brief Binds a result's column to RangeX
-		static void BindRangeX(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindRangeX(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.RangeX);
 		}
 
 		/// \brief Binds a result's column to RangeZ
-		static void BindRangeZ(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindRangeZ(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<uint8_t>(colIndex, m.RangeZ);
 		}
 
 		/// \brief Binds a result's column to KarusGateX
-		static void BindKarusGateX(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindKarusGateX(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.KarusGateX);
 		}
 
 		/// \brief Binds a result's column to KarusGateZ
-		static void BindKarusGateZ(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindKarusGateZ(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.KarusGateZ);
 		}
 
 		/// \brief Binds a result's column to ElmoGateX
-		static void BindElmoGateX(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindElmoGateX(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ElmoGateX);
 		}
 
 		/// \brief Binds a result's column to ElmoGateZ
-		static void BindElmoGateZ(StartPosition& m, nanodbc::result& result, short colIndex)
+		static void BindElmoGateZ(model::StartPosition& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ElmoGateZ);
 		}

@@ -4,18 +4,18 @@ module;
 #include <string>
 #include <unordered_map>
 
-export module FullModel:WebpageAddress;
+export module FullModel:WebpageAddressBinder;
+
+import FullModel:WebpageAddress;
 
 namespace model
 {
-	class WebpageAddress;
-
 	/// \brief generated column binder for the WebpageAddress model, using nanodbc
 	export class WebpageAddressBinder
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(WebpageAddress& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(model::WebpageAddress& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -31,13 +31,13 @@ namespace model
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(WebpageAddress& m, nanodbc::result& result, short colIndex)
+		static void BindIndex(model::WebpageAddress& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to WebPageAddress
-		static void BindWebPageAddress(WebpageAddress& m, nanodbc::result& result, short colIndex)
+		static void BindWebPageAddress(model::WebpageAddress& m, nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::optional<std::string>>(colIndex, m.WebPageAddress);
 		}
