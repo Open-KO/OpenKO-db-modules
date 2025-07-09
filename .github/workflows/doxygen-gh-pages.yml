@@ -3,7 +3,7 @@ name: Doxygen GitHub Pages Deploy Action
 on:
   push:
     branches:
-      - feature/openko-gen-8
+      - main
 
 jobs:
   deploy:
