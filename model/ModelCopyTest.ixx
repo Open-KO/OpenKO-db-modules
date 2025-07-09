@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [COPY_TEST] TODO: Doc
 	/// \class CopyTest
-	/// \xrefitem gamedb "Game Database" "Game Database" COPY_TEST
+	/// \xrefitem gamedb "Game Database" "Game Database" COPY_TEST TODO: Doc
 	export class CopyTest 
 	{
 	/// \publicsection

@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [FRIEND_LIST] User friend list
 	/// \class FriendList
-	/// \xrefitem gamedb "Game Database" "Game Database" FRIEND_LIST
+	/// \xrefitem gamedb "Game Database" "Game Database" FRIEND_LIST User friend list
 	export class FriendList 
 	{
 	/// \publicsection

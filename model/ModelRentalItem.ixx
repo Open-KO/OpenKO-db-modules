@@ -17,7 +17,7 @@ namespace model
 {
 	/// \brief [RENTAL_ITEM] Rental item
 	/// \class RentalItem
-	/// \xrefitem gamedb "Game Database" "Game Database" RENTAL_ITEM
+	/// \xrefitem gamedb "Game Database" "Game Database" RENTAL_ITEM Rental item
 	export class RentalItem 
 	{
 	/// \publicsection

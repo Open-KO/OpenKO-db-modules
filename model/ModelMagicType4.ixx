@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAGIC_TYPE4] Supports stat modification skills
 	/// \class MagicType4
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE4
+	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE4 Supports stat modification skills
 	export class MagicType4 
 	{
 	/// \publicsection

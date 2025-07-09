@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAGIC_TYPE1] Supports melee abilities
 	/// \class MagicType1
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE1
+	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE1 Supports melee abilities
 	export class MagicType1 
 	{
 	/// \publicsection

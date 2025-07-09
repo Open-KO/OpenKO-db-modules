@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [KING_BALLOT_BOX] King Ballot Box TODO
 	/// \class KingBallotBox
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_BALLOT_BOX
+	/// \xrefitem gamedb "Game Database" "Game Database" KING_BALLOT_BOX King Ballot Box TODO
 	export class KingBallotBox 
 	{
 	/// \publicsection

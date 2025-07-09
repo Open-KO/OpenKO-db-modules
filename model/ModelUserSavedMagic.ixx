@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [USER_SAVED_MAGIC] User saved magic
 	/// \class UserSavedMagic
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_SAVED_MAGIC
+	/// \xrefitem gamedb "Game Database" "Game Database" USER_SAVED_MAGIC User saved magic
 	export class UserSavedMagic 
 	{
 	/// \publicsection

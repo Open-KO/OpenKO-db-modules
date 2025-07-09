@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [COPY_SERIAL_ITEM] TODO: Doc
 	/// \class CopySerialItem
-	/// \xrefitem gamedb "Game Database" "Game Database" COPY_SERIAL_ITEM
+	/// \xrefitem gamedb "Game Database" "Game Database" COPY_SERIAL_ITEM TODO: Doc
 	export class CopySerialItem 
 	{
 	/// \publicsection

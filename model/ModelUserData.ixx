@@ -17,7 +17,7 @@ namespace model
 {
 	/// \brief [USERDATA] User data contains saved character information
 	/// \class UserData
-	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA
+	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA User data contains saved character information
 	export class UserData 
 	{
 	/// \publicsection

@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [EVENT_TRIGGER] NPC Event Triggers
 	/// \class EventTrigger
-	/// \xrefitem gamedb "Game Database" "Game Database" EVENT_TRIGGER
+	/// \xrefitem gamedb "Game Database" "Game Database" EVENT_TRIGGER NPC Event Triggers
 	export class EventTrigger 
 	{
 	/// \publicsection

@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [ITEM] Item information
 	/// \class Item
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM
+	/// \xrefitem gamedb "Game Database" "Game Database" ITEM Item information
 	export class Item 
 	{
 	/// \publicsection

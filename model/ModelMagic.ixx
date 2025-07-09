@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAGIC] Contains the configuration for magic and abilities
 	/// \class Magic
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC
+	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC Contains the configuration for magic and abilities
 	export class Magic 
 	{
 	/// \publicsection

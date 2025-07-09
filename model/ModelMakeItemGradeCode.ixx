@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAKE_ITEM_GRADECODE] Make item grade code
 	/// \class MakeItemGradeCode
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GRADECODE
+	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GRADECODE Make item grade code
 	export class MakeItemGradeCode 
 	{
 	/// \publicsection

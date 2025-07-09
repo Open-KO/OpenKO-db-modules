@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [K_NPCPOS] NPC Spawn Positions
 	/// \class NpcPos
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPCPOS
+	/// \xrefitem gamedb "Game Database" "Game Database" K_NPCPOS NPC Spawn Positions
 	export class NpcPos 
 	{
 	/// \publicsection

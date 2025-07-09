@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [VERSION] Version data and patch management
 	/// \class Version
-	/// \xrefitem gamedb "Game Database" "Game Database" VERSION
+	/// \xrefitem gamedb "Game Database" "Game Database" VERSION Version data and patch management
 	export class Version 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAGIC_TYPE9] Supports stealth and detection abilities
 	/// \class MagicType9
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE9
+	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE9 Supports stealth and detection abilities
 	export class MagicType9 
 	{
 	/// \publicsection

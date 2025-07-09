@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [HACKTOOL_USERLOG] Tracks possible detections of a hack tool by a user
 	/// \class HacktoolUserLog
-	/// \xrefitem gamedb "Game Database" "Game Database" HACKTOOL_USERLOG
+	/// \xrefitem gamedb "Game Database" "Game Database" HACKTOOL_USERLOG Tracks possible detections of a hack tool by a user
 	export class HacktoolUserLog 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [BATTLE] Battle data for the game server
 	/// \class Battle
-	/// \xrefitem gamedb "Game Database" "Game Database" BATTLE
+	/// \xrefitem gamedb "Game Database" "Game Database" BATTLE Battle data for the game server
 	export class Battle 
 	{
 	/// \publicsection

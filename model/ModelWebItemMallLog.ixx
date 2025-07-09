@@ -17,7 +17,7 @@ namespace model
 {
 	/// \brief [WEB_ITEMMALL_LOG] Power-up store purchase log
 	/// \class WebItemMallLog
-	/// \xrefitem gamedb "Game Database" "Game Database" WEB_ITEMMALL_LOG
+	/// \xrefitem gamedb "Game Database" "Game Database" WEB_ITEMMALL_LOG Power-up store purchase log
 	export class WebItemMallLog 
 	{
 	/// \publicsection

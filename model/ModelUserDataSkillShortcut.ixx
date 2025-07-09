@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [USERDATA_SKILLSHORTCUT] User data skill shortcut
 	/// \class UserDataSkillShortcut
-	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA_SKILLSHORTCUT
+	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA_SKILLSHORTCUT User data skill shortcut
 	export class UserDataSkillShortcut 
 	{
 	/// \publicsection

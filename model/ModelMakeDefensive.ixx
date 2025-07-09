@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAKE_DEFENSIVE] Make defensive
 	/// \class MakeDefensive
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_DEFENSIVE
+	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_DEFENSIVE Make defensive
 	export class MakeDefensive 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [USER_EDITOR] User editor
 	/// \class UserEditor
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_EDITOR
+	/// \xrefitem gamedb "Game Database" "Game Database" USER_EDITOR User editor
 	export class UserEditor 
 	{
 	/// \publicsection

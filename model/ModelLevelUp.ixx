@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [LEVEL_UP] Level experience requirements
 	/// \class LevelUp
-	/// \xrefitem gamedb "Game Database" "Game Database" LEVEL_UP
+	/// \xrefitem gamedb "Game Database" "Game Database" LEVEL_UP Level experience requirements
 	export class LevelUp 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAGIC_TYPE6] Supports transformation magic
 	/// \class MagicType6
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE6
+	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE6 Supports transformation magic
 	export class MagicType6 
 	{
 	/// \publicsection

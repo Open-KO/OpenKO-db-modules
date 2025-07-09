@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [KNIGHTS_CAPE] Knights cape information
 	/// \class KnightsCape
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_CAPE
+	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_CAPE Knights cape information
 	export class KnightsCape 
 	{
 	/// \publicsection

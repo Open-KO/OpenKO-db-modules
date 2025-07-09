@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAGIC_TYPE8] Supports warp magic
 	/// \class MagicType8
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE8
+	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE8 Supports warp magic
 	export class MagicType8 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [KNIGHTS_SIEGE_WARFARE] Knights Siege Warfare
 	/// \class KnightsSiegeWarfare
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_SIEGE_WARFARE
+	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_SIEGE_WARFARE Knights Siege Warfare
 	export class KnightsSiegeWarfare 
 	{
 	/// \publicsection

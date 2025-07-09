@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [CURRENTUSER] Keeps track of users currently connected to the server
 	/// \class CurrentUser
-	/// \xrefitem gamedb "Game Database" "Game Database" CURRENTUSER
+	/// \xrefitem gamedb "Game Database" "Game Database" CURRENTUSER Keeps track of users currently connected to the server
 	export class CurrentUser 
 	{
 	/// \publicsection

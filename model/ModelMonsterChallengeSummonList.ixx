@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [MONSTER_CHALLENGE_SUMMON_LIST] Forgotten Temple summon list
 	/// \class MonsterChallengeSummonList
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_CHALLENGE_SUMMON_LIST
+	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_CHALLENGE_SUMMON_LIST Forgotten Temple summon list
 	export class MonsterChallengeSummonList 
 	{
 	/// \publicsection

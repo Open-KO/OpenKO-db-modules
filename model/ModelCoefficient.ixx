@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [COEFFICIENT] Coefficient relationship between a character class, weapon types, and stats
 	/// \class Coefficient
-	/// \xrefitem gamedb "Game Database" "Game Database" COEFFICIENT
+	/// \xrefitem gamedb "Game Database" "Game Database" COEFFICIENT Coefficient relationship between a character class, weapon types, and stats
 	export class Coefficient 
 	{
 	/// \publicsection

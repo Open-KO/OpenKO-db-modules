@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [COUPON_SERIAL_LIST] Coupon Serial List
 	/// \class CouponSerialList
-	/// \xrefitem gamedb "Game Database" "Game Database" COUPON_SERIAL_LIST
+	/// \xrefitem gamedb "Game Database" "Game Database" COUPON_SERIAL_LIST Coupon Serial List
 	export class CouponSerialList 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [K_NPC_MOVE_ITEM] NPC Move Item: TODO
 	/// \class NpcMoveItem
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC_MOVE_ITEM
+	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC_MOVE_ITEM NPC Move Item: TODO
 	export class NpcMoveItem 
 	{
 	/// \publicsection

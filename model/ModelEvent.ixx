@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [EVENT] Event Information
 	/// \class Event
-	/// \xrefitem gamedb "Game Database" "Game Database" EVENT
+	/// \xrefitem gamedb "Game Database" "Game Database" EVENT Event Information
 	export class Event 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [HERO_USER] TODO Doc
 	/// \class HeroUser
-	/// \xrefitem gamedb "Game Database" "Game Database" HERO_USER
+	/// \xrefitem gamedb "Game Database" "Game Database" HERO_USER TODO Doc
 	export class HeroUser 
 	{
 	/// \publicsection

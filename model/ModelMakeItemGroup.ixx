@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [MAKE_ITEM_GROUP] Make item group
 	/// \class MakeItemGroup
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GROUP
+	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GROUP Make item group
 	export class MakeItemGroup 
 	{
 	/// \publicsection

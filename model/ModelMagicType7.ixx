@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAGIC_TYPE7] Supports targeting modifications
 	/// \class MagicType7
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE7
+	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE7 Supports targeting modifications
 	export class MagicType7 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAKE_WEAPON] Make weapon
 	/// \class MakeWeapon
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_WEAPON
+	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_WEAPON Make weapon
 	export class MakeWeapon 
 	{
 	/// \publicsection

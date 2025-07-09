@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [KNIGHTS_RATING] Knights Ratings
 	/// \class KnightsRating
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_RATING
+	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_RATING Knights Ratings
 	export class KnightsRating 
 	{
 	/// \publicsection

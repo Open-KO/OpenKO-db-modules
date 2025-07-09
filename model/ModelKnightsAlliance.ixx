@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [KNIGHTS_ALLIANCE] Knights alliance formations
 	/// \class KnightsAlliance
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_ALLIANCE
+	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_ALLIANCE Knights alliance formations
 	export class KnightsAlliance 
 	{
 	/// \publicsection

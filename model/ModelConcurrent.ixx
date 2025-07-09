@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [CONCURRENT] Keeps track of concurrent user counts
 	/// \class Concurrent
-	/// \xrefitem gamedb "Game Database" "Game Database" CONCURRENT
+	/// \xrefitem gamedb "Game Database" "Game Database" CONCURRENT Keeps track of concurrent user counts
 	export class Concurrent 
 	{
 	/// \publicsection

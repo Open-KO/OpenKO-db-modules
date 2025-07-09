@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [ACCOUNT_CHAR] Represents the relationship between accounts and characters
 	/// \class AccountChar
-	/// \xrefitem gamedb "Game Database" "Game Database" ACCOUNT_CHAR
+	/// \xrefitem gamedb "Game Database" "Game Database" ACCOUNT_CHAR Represents the relationship between accounts and characters
 	export class AccountChar 
 	{
 	/// \publicsection

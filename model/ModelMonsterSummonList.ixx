@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MONSTER_SUMMON_LIST] Monster summon list
 	/// \class MonsterSummonList
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_SUMMON_LIST
+	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_SUMMON_LIST Monster summon list
 	export class MonsterSummonList 
 	{
 	/// \publicsection

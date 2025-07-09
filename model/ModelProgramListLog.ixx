@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [PROGRAMLIST_LOG] Program list log
 	/// \class ProgramListLog
-	/// \xrefitem gamedb "Game Database" "Game Database" PROGRAMLIST_LOG
+	/// \xrefitem gamedb "Game Database" "Game Database" PROGRAMLIST_LOG Program list log
 	export class ProgramListLog 
 	{
 	/// \publicsection

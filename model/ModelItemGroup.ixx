@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [ITEM_GROUP] TODO Doc; No Data in table
 	/// \class ItemGroup
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_GROUP
+	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_GROUP TODO Doc; No Data in table
 	export class ItemGroup 
 	{
 	/// \publicsection

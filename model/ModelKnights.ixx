@@ -17,7 +17,7 @@ namespace model
 {
 	/// \brief [KNIGHTS] Knights are the clan/guild system of the game
 	/// \class Knights
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS
+	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS Knights are the clan/guild system of the game
 	export class Knights 
 	{
 	/// \publicsection

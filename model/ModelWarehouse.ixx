@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [WAREHOUSE] The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
 	/// \class Warehouse
-	/// \xrefitem gamedb "Game Database" "Game Database" WAREHOUSE
+	/// \xrefitem gamedb "Game Database" "Game Database" WAREHOUSE The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
 	export class Warehouse 
 	{
 	/// \publicsection

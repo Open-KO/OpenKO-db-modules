@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [KING_CANDIDACY_NOTICE_BOARD] King candidacy notice board
 	/// \class KingCandidacyNoticeBoard
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_CANDIDACY_NOTICE_BOARD
+	/// \xrefitem gamedb "Game Database" "Game Database" KING_CANDIDACY_NOTICE_BOARD King candidacy notice board
 	export class KingCandidacyNoticeBoard 
 	{
 	/// \publicsection

@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [KNIGHTS_USER] Knights to character relationships
 	/// \class KnightsUser
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_USER
+	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_USER Knights to character relationships
 	export class KnightsUser 
 	{
 	/// \publicsection

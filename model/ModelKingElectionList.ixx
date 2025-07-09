@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [KING_ELECTION_LIST] King election list
 	/// \class KingElectionList
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_ELECTION_LIST
+	/// \xrefitem gamedb "Game Database" "Game Database" KING_ELECTION_LIST King election list
 	export class KingElectionList 
 	{
 	/// \publicsection

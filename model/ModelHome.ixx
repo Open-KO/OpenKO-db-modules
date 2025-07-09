@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [HOME] TODO Doc
 	/// \class Home
-	/// \xrefitem gamedb "Game Database" "Game Database" HOME
+	/// \xrefitem gamedb "Game Database" "Game Database" HOME TODO Doc
 	export class Home 
 	{
 	/// \publicsection

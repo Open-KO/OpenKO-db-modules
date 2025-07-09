@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [KING_SYSTEM] King System
 	/// \class KingSystem
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_SYSTEM
+	/// \xrefitem gamedb "Game Database" "Game Database" KING_SYSTEM King System
 	export class KingSystem 
 	{
 	/// \publicsection

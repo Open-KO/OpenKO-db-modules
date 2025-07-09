@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [WEBPAGE_ADDRESS] Webpage URL list
 	/// \class WebpageAddress
-	/// \xrefitem gamedb "Game Database" "Game Database" WEBPAGE_ADDRESS
+	/// \xrefitem gamedb "Game Database" "Game Database" WEBPAGE_ADDRESS Webpage URL list
 	export class WebpageAddress 
 	{
 	/// \publicsection

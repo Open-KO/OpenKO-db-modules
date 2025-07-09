@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [ITEMUP_PROBABILITY] TODO: Doc usage
 	/// \class ItemUpProbability
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEMUP_PROBABILITY
+	/// \xrefitem gamedb "Game Database" "Game Database" ITEMUP_PROBABILITY TODO: Doc usage
 	export class ItemUpProbability 
 	{
 	/// \publicsection

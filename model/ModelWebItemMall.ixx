@@ -17,7 +17,7 @@ namespace model
 {
 	/// \brief [WEB_ITEMMALL] Power-up store purchases
 	/// \class WebItemMall
-	/// \xrefitem gamedb "Game Database" "Game Database" WEB_ITEMMALL
+	/// \xrefitem gamedb "Game Database" "Game Database" WEB_ITEMMALL Power-up store purchases
 	export class WebItemMall 
 	{
 	/// \publicsection

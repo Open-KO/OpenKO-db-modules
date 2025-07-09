@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [SERVER_RESOURCE] Server resource
 	/// \class ServerResource
-	/// \xrefitem gamedb "Game Database" "Game Database" SERVER_RESOURCE
+	/// \xrefitem gamedb "Game Database" "Game Database" SERVER_RESOURCE Server resource
 	export class ServerResource 
 	{
 	/// \publicsection

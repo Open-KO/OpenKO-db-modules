@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MAGIC_TYPE3] Supports Area of Effect and Damage over Time effects
 	/// \class MagicType3
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE3
+	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE3 Supports Area of Effect and Damage over Time effects
 	export class MagicType3 
 	{
 	/// \publicsection

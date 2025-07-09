@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [K_NPC] Non-Player Character
 	/// \class Npc
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC
+	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC Non-Player Character
 	export class Npc 
 	{
 	/// \publicsection

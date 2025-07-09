@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [ITEM_UPGRADE] Item upgrade configuration
 	/// \class ItemUpgrade
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_UPGRADE
+	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_UPGRADE Item upgrade configuration
 	export class ItemUpgrade 
 	{
 	/// \publicsection

@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [ZONE_INFO] Zone (map) information
 	/// \class ZoneInfo
-	/// \xrefitem gamedb "Game Database" "Game Database" ZONE_INFO
+	/// \xrefitem gamedb "Game Database" "Game Database" ZONE_INFO Zone (map) information
 	export class ZoneInfo 
 	{
 	/// \publicsection

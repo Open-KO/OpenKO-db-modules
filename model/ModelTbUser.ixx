@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [TB_USER] User Account Information
 	/// \class TbUser
-	/// \xrefitem gamedb "Game Database" "Game Database" TB_USER
+	/// \xrefitem gamedb "Game Database" "Game Database" TB_USER User Account Information
 	export class TbUser 
 	{
 	/// \publicsection

@@ -15,7 +15,7 @@ namespace model
 {
 	/// \brief [START_POSITION] Start position
 	/// \class StartPosition
-	/// \xrefitem gamedb "Game Database" "Game Database" START_POSITION
+	/// \xrefitem gamedb "Game Database" "Game Database" START_POSITION Start position
 	export class StartPosition 
 	{
 	/// \publicsection

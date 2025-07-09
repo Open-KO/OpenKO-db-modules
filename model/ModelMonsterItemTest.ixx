@@ -16,7 +16,7 @@ namespace model
 {
 	/// \brief [MONSTER_ITEM_TEST] Monster item test
 	/// \class MonsterItemTest
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_ITEM_TEST
+	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_ITEM_TEST Monster item test
 	export class MonsterItemTest 
 	{
 	/// \publicsection
