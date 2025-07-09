@@ -41,6 +41,5 @@ var searchData=
   ['friend7_38',['Friend7',['../classmodel_1_1FriendList.html#ae73ee8e63888ffbcdd0daf690b255dfe',1,'model::FriendList']]],
   ['friend8_39',['Friend8',['../classmodel_1_1FriendList.html#a35bb09cef72f64a8d21fc2bb01a677f9',1,'model::FriendList']]],
   ['friend9_40',['Friend9',['../classmodel_1_1FriendList.html#a2023d16960e8e79e3849e2513669c0b0',1,'model::FriendList']]],
-  ['friendlist_41',['FriendList',['../classmodel_1_1FriendList.html',1,'model']]],
-  ['friendlistbinder_42',['FriendListBinder',['../classmodel_1_1FriendListBinder.html',1,'model']]]
+  ['friendlist_41',['FriendList',['../classmodel_1_1FriendList.html',1,'model']]]
 ];

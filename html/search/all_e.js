@@ -14,7 +14,7 @@ var searchData=
   ['points_11',['Points',['../classmodel_1_1Knights.html#aebe0429eb58d4c463b145a6cd84f2c31',1,'model::Knights::Points()'],['../classmodel_1_1KnightsRating.html#a338359a3a656c4d7d4f11ba457262ac9',1,'model::KnightsRating::Points()']]],
   ['poisondamage_12',['PoisonDamage',['../classmodel_1_1Item.html#ad77c7464c8de0255900406711b1637ac',1,'model::Item']]],
   ['poisonresist_13',['PoisonResist',['../classmodel_1_1MagicType4.html#aa095bc8c05af7d6d7a22aa2d2e630c0d',1,'model::MagicType4']]],
-  ['poisonresistance_14',['PoisonResistance',['../classmodel_1_1Item.html#a31f83de3e5a593a7310e02b6c1570405',1,'model::Item::PoisonResistance()'],['../classmodel_1_1Monster.html#a7d244d73bf54153ebda59aa36bb53929',1,'model::Monster::PoisonResistance()'],['../classmodel_1_1Npc.html#ad288b70ada1b9c1f5cda7d113c4979e7',1,'model::Npc::PoisonResistance()']]],
+  ['poisonresistance_14',['PoisonResistance',['../classmodel_1_1Item.html#a31f83de3e5a593a7310e02b6c1570405',1,'model::Item::PoisonResistance()'],['../classmodel_1_1Npc.html#ad288b70ada1b9c1f5cda7d113c4979e7',1,'model::Npc::PoisonResistance()'],['../classmodel_1_1Monster.html#a7d244d73bf54153ebda59aa36bb53929',1,'model::Monster::PoisonResistance()']]],
   ['pole_15',['Pole',['../classmodel_1_1Coefficient.html#afe6d2d1c7f81f9be796b68bf29d5f5b4',1,'model::Coefficient']]],
   ['pos_16',['Pos',['../classmodel_1_1CopySerialItem.html#a6263389bc91d862f8493237bc5e8ad31',1,'model::CopySerialItem::Pos()'],['../classmodel_1_1UserEditorItem.html#adbd1d35d6d2f39b6f5419071b592b58c',1,'model::UserEditorItem::Pos()']]],
   ['position_17',['Position',['../classmodel_1_1UserPersonalRank.html#a930eb5ef48827db274924200613d1be7',1,'model::UserPersonalRank']]],
@@ -25,8 +25,7 @@ var searchData=
   ['price_22',['Price',['../classmodel_1_1WebItemMall.html#a7d24b075ac07857daeffed8310deb560',1,'model::WebItemMall::Price()'],['../classmodel_1_1WebItemMallLog.html#ae00bb415f844ed2196434dd0ad0d8fe3',1,'model::WebItemMallLog::Price()']]],
   ['probability_23',['Probability',['../classmodel_1_1MonsterSummonList.html#a6d0d3778393634fafc1a5fd12215f2a6',1,'model::MonsterSummonList']]],
   ['programlistlog_24',['ProgramListLog',['../classmodel_1_1ProgramListLog.html',1,'model']]],
-  ['programlistlogbinder_25',['ProgramListLogBinder',['../classmodel_1_1ProgramListLogBinder.html',1,'model']]],
-  ['protector_26',['Protector',['../classmodel_1_1UserData.html#ae228cf7b46f41cff71f2a4bfb46b34eeaabf2efbb461f7e1c84452cd1ffa4f491',1,'model::UserData']]],
-  ['provoke_27',['Provoke',['../classmodel_1_1MagicType7.html#acf4150c07d0221bb8a1db98290eef9dfa61f2d5bf6ecc681c319d47d1543a7629',1,'model::MagicType7']]],
-  ['purituarek_28',['PuriTuarek',['../classmodel_1_1UserData.html#acc0bfdbb72eede74639c39397ff1cee8addd6da007747fd2791ee9f359cfd4a96',1,'model::UserData']]]
+  ['protector_25',['Protector',['../classmodel_1_1UserData.html#ae228cf7b46f41cff71f2a4bfb46b34eeaabf2efbb461f7e1c84452cd1ffa4f491',1,'model::UserData']]],
+  ['provoke_26',['Provoke',['../classmodel_1_1MagicType7.html#acf4150c07d0221bb8a1db98290eef9dfa61f2d5bf6ecc681c319d47d1543a7629',1,'model::MagicType7']]],
+  ['purituarek_27',['PuriTuarek',['../classmodel_1_1UserData.html#acc0bfdbb72eede74639c39397ff1cee8addd6da007747fd2791ee9f359cfd4a96',1,'model::UserData']]]
 ];

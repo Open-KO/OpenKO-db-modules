@@ -1,19 +1,11 @@
 var searchData=
 [
   ['userdata_0',['UserData',['../classmodel_1_1UserData.html',1,'model']]],
-  ['userdatabinder_1',['UserDataBinder',['../classmodel_1_1UserDataBinder.html',1,'model']]],
-  ['userdataskillshortcut_2',['UserDataSkillShortcut',['../classmodel_1_1UserDataSkillShortcut.html',1,'model']]],
-  ['userdataskillshortcutbinder_3',['UserDataSkillShortcutBinder',['../classmodel_1_1UserDataSkillShortcutBinder.html',1,'model']]],
-  ['usereditor_4',['UserEditor',['../classmodel_1_1UserEditor.html',1,'model']]],
-  ['usereditorbinder_5',['UserEditorBinder',['../classmodel_1_1UserEditorBinder.html',1,'model']]],
-  ['usereditoritem_6',['UserEditorItem',['../classmodel_1_1UserEditorItem.html',1,'model']]],
-  ['usereditoritembinder_7',['UserEditorItemBinder',['../classmodel_1_1UserEditorItemBinder.html',1,'model']]],
-  ['userknightsrank_8',['UserKnightsRank',['../classmodel_1_1UserKnightsRank.html',1,'model']]],
-  ['userknightsrankbinder_9',['UserKnightsRankBinder',['../classmodel_1_1UserKnightsRankBinder.html',1,'model']]],
-  ['userpersonalrank_10',['UserPersonalRank',['../classmodel_1_1UserPersonalRank.html',1,'model']]],
-  ['userpersonalrankbinder_11',['UserPersonalRankBinder',['../classmodel_1_1UserPersonalRankBinder.html',1,'model']]],
-  ['userrentalitem_12',['UserRentalItem',['../classmodel_1_1UserRentalItem.html',1,'model']]],
-  ['userrentalitembinder_13',['UserRentalItemBinder',['../classmodel_1_1UserRentalItemBinder.html',1,'model']]],
-  ['usersavedmagic_14',['UserSavedMagic',['../classmodel_1_1UserSavedMagic.html',1,'model']]],
-  ['usersavedmagicbinder_15',['UserSavedMagicBinder',['../classmodel_1_1UserSavedMagicBinder.html',1,'model']]]
+  ['userdataskillshortcut_1',['UserDataSkillShortcut',['../classmodel_1_1UserDataSkillShortcut.html',1,'model']]],
+  ['usereditor_2',['UserEditor',['../classmodel_1_1UserEditor.html',1,'model']]],
+  ['usereditoritem_3',['UserEditorItem',['../classmodel_1_1UserEditorItem.html',1,'model']]],
+  ['userknightsrank_4',['UserKnightsRank',['../classmodel_1_1UserKnightsRank.html',1,'model']]],
+  ['userpersonalrank_5',['UserPersonalRank',['../classmodel_1_1UserPersonalRank.html',1,'model']]],
+  ['userrentalitem_6',['UserRentalItem',['../classmodel_1_1UserRentalItem.html',1,'model']]],
+  ['usersavedmagic_7',['UserSavedMagic',['../classmodel_1_1UserSavedMagic.html',1,'model']]]
 ];

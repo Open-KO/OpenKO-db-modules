@@ -1,23 +1,13 @@
 var searchData=
 [
   ['kingballotbox_0',['KingBallotBox',['../classmodel_1_1KingBallotBox.html',1,'model']]],
-  ['kingballotboxbinder_1',['KingBallotBoxBinder',['../classmodel_1_1KingBallotBoxBinder.html',1,'model']]],
-  ['kingcandidacynoticeboard_2',['KingCandidacyNoticeBoard',['../classmodel_1_1KingCandidacyNoticeBoard.html',1,'model']]],
-  ['kingcandidacynoticeboardbinder_3',['KingCandidacyNoticeBoardBinder',['../classmodel_1_1KingCandidacyNoticeBoardBinder.html',1,'model']]],
-  ['kingelectionlist_4',['KingElectionList',['../classmodel_1_1KingElectionList.html',1,'model']]],
-  ['kingelectionlistbinder_5',['KingElectionListBinder',['../classmodel_1_1KingElectionListBinder.html',1,'model']]],
-  ['kingsystem_6',['KingSystem',['../classmodel_1_1KingSystem.html',1,'model']]],
-  ['kingsystembinder_7',['KingSystemBinder',['../classmodel_1_1KingSystemBinder.html',1,'model']]],
-  ['knights_8',['Knights',['../classmodel_1_1Knights.html',1,'model']]],
-  ['knightsalliance_9',['KnightsAlliance',['../classmodel_1_1KnightsAlliance.html',1,'model']]],
-  ['knightsalliancebinder_10',['KnightsAllianceBinder',['../classmodel_1_1KnightsAllianceBinder.html',1,'model']]],
-  ['knightsbinder_11',['KnightsBinder',['../classmodel_1_1KnightsBinder.html',1,'model']]],
-  ['knightscape_12',['KnightsCape',['../classmodel_1_1KnightsCape.html',1,'model']]],
-  ['knightscapebinder_13',['KnightsCapeBinder',['../classmodel_1_1KnightsCapeBinder.html',1,'model']]],
-  ['knightsrating_14',['KnightsRating',['../classmodel_1_1KnightsRating.html',1,'model']]],
-  ['knightsratingbinder_15',['KnightsRatingBinder',['../classmodel_1_1KnightsRatingBinder.html',1,'model']]],
-  ['knightssiegewarfare_16',['KnightsSiegeWarfare',['../classmodel_1_1KnightsSiegeWarfare.html',1,'model']]],
-  ['knightssiegewarfarebinder_17',['KnightsSiegeWarfareBinder',['../classmodel_1_1KnightsSiegeWarfareBinder.html',1,'model']]],
-  ['knightsuser_18',['KnightsUser',['../classmodel_1_1KnightsUser.html',1,'model']]],
-  ['knightsuserbinder_19',['KnightsUserBinder',['../classmodel_1_1KnightsUserBinder.html',1,'model']]]
+  ['kingcandidacynoticeboard_1',['KingCandidacyNoticeBoard',['../classmodel_1_1KingCandidacyNoticeBoard.html',1,'model']]],
+  ['kingelectionlist_2',['KingElectionList',['../classmodel_1_1KingElectionList.html',1,'model']]],
+  ['kingsystem_3',['KingSystem',['../classmodel_1_1KingSystem.html',1,'model']]],
+  ['knights_4',['Knights',['../classmodel_1_1Knights.html',1,'model']]],
+  ['knightsalliance_5',['KnightsAlliance',['../classmodel_1_1KnightsAlliance.html',1,'model']]],
+  ['knightscape_6',['KnightsCape',['../classmodel_1_1KnightsCape.html',1,'model']]],
+  ['knightsrating_7',['KnightsRating',['../classmodel_1_1KnightsRating.html',1,'model']]],
+  ['knightssiegewarfare_8',['KnightsSiegeWarfare',['../classmodel_1_1KnightsSiegeWarfare.html',1,'model']]],
+  ['knightsuser_9',['KnightsUser',['../classmodel_1_1KnightsUser.html',1,'model']]]
 ];
