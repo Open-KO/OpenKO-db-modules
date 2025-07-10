@@ -1,0 +1,27 @@
+var classmodel_1_1Magic =
+[
+    [ "BeforeAction", "classmodel_1_1Magic.html#a9dce4b9e709f3310917aef84d7692d40", null ],
+    [ "CastTime", "classmodel_1_1Magic.html#a315c3b73cd012ed24ef63c13af3d8cc9", null ],
+    [ "Description", "classmodel_1_1Magic.html#abb7b4276c908c2103c70be7a50431c64", null ],
+    [ "EnglishName", "classmodel_1_1Magic.html#a5cdd47369588d4180da41493f09b4370", null ],
+    [ "Etc", "classmodel_1_1Magic.html#a76763f3b70fa9facc85e93953dadc9d9", null ],
+    [ "Event", "classmodel_1_1Magic.html#a326dc535d335ba52156b544535d491f7", null ],
+    [ "FlyingEffect", "classmodel_1_1Magic.html#a8ff3b1eb495171b421b078f040b44a4d", null ],
+    [ "HpCost", "classmodel_1_1Magic.html#ab92f3a467cfcbaf745c5f992e6bd116c", null ],
+    [ "ItemGroup", "classmodel_1_1Magic.html#af555fd32b51a04f094ce4076cf8135d1", null ],
+    [ "KoreanName", "classmodel_1_1Magic.html#a784f5641198888dfe1f190ce3cd46877", null ],
+    [ "MagicNumber", "classmodel_1_1Magic.html#ac9f533b2ee8ab7bb6731ee9db0d3a9a8", null ],
+    [ "ManaCost", "classmodel_1_1Magic.html#a094527fe24ad1c2ad2f01470a279b46b", null ],
+    [ "Moral", "classmodel_1_1Magic.html#a5b3b8bcc7e9b72ba57f6ae61d569a580", null ],
+    [ "Range", "classmodel_1_1Magic.html#aa2bcc8a25191726c4c9eb0eac64ba9a0", null ],
+    [ "RecastTime", "classmodel_1_1Magic.html#ae0c0c4b634b80317b46bcdcd35553ab9", null ],
+    [ "SelfEffect", "classmodel_1_1Magic.html#aa04e73c8b1f09a32a184f9716cd15f37", null ],
+    [ "Skill", "classmodel_1_1Magic.html#af8a4715239c30807e02d4496e78a191c", null ],
+    [ "SkillLevel", "classmodel_1_1Magic.html#a539aeb38d45450f4f74d386a38363a5e", null ],
+    [ "SuccessRate", "classmodel_1_1Magic.html#a5f46441d081fe0ae24578684f7a0b47a", null ],
+    [ "TargetAction", "classmodel_1_1Magic.html#a2ca847c2d4f22b186d2eea3c295df215", null ],
+    [ "TargetEffect", "classmodel_1_1Magic.html#a6d9b9233fcc773290ff1521f4433e48f", null ],
+    [ "Type1", "classmodel_1_1Magic.html#a225a5e594c66570a5fde782a976a2a1c", null ],
+    [ "Type2", "classmodel_1_1Magic.html#a3cebc9f337cff900c97ae7f22f59dfa3", null ],
+    [ "UseItem", "classmodel_1_1Magic.html#a397ccfa9b99493434a052e2c0ad0fba1", null ]
+];

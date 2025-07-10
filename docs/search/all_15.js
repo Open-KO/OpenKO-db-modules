@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['uint32_0',['UINT32',['../structcmd_8h.html#ae1e6edbbc26d6fbc71a90190d0266018',1,'structcmd.h']]],
+  ['ungroupedfunction_1',['ungroupedFunction',['../classMemgrp__Test.html#a8a3a4ac34b2e25696159ac420bd4bdc6',1,'Memgrp_Test']]],
+  ['unknown0_2',['Unknown0',['../classmodel_1_1MagicType3.html#ac2806c07e4a0e201cfadfd26afaf7672a26281f56f922419671e352e0bd4bca7b',1,'model::MagicType3']]],
+  ['unknown11_3',['Unknown11',['../classmodel_1_1MagicType3.html#ac2806c07e4a0e201cfadfd26afaf7672a20d7824ddb9c3938cf0aaa6f8ad4db21',1,'model::MagicType3']]],
+  ['unknown12_4',['Unknown12',['../classmodel_1_1MagicType3.html#ac2806c07e4a0e201cfadfd26afaf7672aecefa5080ae765056ba0aa2b7e049f07',1,'model::MagicType3']]],
+  ['unknown255_5',['Unknown255',['../classmodel_1_1MagicType3.html#ac2806c07e4a0e201cfadfd26afaf7672a30e18c0831a82d5d8041820425b1ea43',1,'model::MagicType3']]],
+  ['unknown5_6',['Unknown5',['../classmodel_1_1MagicType5.html#a53a24c00e3f6953f726cd8874e580654a9438fee56697232b35b5fddd839f5557',1,'model::MagicType5::Unknown5()'],['../classmodel_1_1MagicType3.html#ac2806c07e4a0e201cfadfd26afaf7672a9438fee56697232b35b5fddd839f5557',1,'model::MagicType3::Unknown5()']]],
+  ['updatedate_7',['UpdateDate',['../classmodel_1_1UserPersonalRank.html#a4bdd10a402e7ce18af137dd9b83d876f',1,'model::UserPersonalRank']]],
+  ['updatetime_8',['UpdateTime',['../classmodel_1_1UserEditorItem.html#a10528bef3873e2db36aac7eec176aabd',1,'model::UserEditorItem::UpdateTime()'],['../classmodel_1_1UserData.html#af7f5892b7d48d821ddf20489a8701788',1,'model::UserData::UpdateTime()']]],
+  ['upgradeitem_9',['UpgradeItem',['../classmodel_1_1MakeItemRareCode.html#ac6e81bc68781884c991a3245bbb8910f',1,'model::MakeItemRareCode']]],
+  ['useitem_10',['UseItem',['../classmodel_1_1Magic.html#a397ccfa9b99493434a052e2c0ad0fba1',1,'model::Magic']]],
+  ['userdata_11',['UserData',['../classmodel_1_1UserData.html',1,'model::UserData'],['../classmodel__binder_1_1UserData.html',1,'model_binder::UserData']]],
+  ['userdataskillshortcut_12',['UserDataSkillShortcut',['../classmodel_1_1UserDataSkillShortcut.html',1,'model::UserDataSkillShortcut'],['../classmodel__binder_1_1UserDataSkillShortcut.html',1,'model_binder::UserDataSkillShortcut']]],
+  ['usereditor_13',['UserEditor',['../classmodel_1_1UserEditor.html',1,'model::UserEditor'],['../classmodel__binder_1_1UserEditor.html',1,'model_binder::UserEditor']]],
+  ['usereditoritem_14',['UserEditorItem',['../classmodel_1_1UserEditorItem.html',1,'model::UserEditorItem'],['../classmodel__binder_1_1UserEditorItem.html',1,'model_binder::UserEditorItem']]],
+  ['userid_15',['UserId',['../classmodel_1_1CopySerialItem.html#aa34a93dc93df4ec6ff099866fb602576',1,'model::CopySerialItem::UserId()'],['../classmodel_1_1FriendList.html#afcc4323f68bf88dace434c3bc5856c80',1,'model::FriendList::UserId()'],['../classmodel_1_1HeroUser.html#a624753cbbe66db578b6314560af5fec2',1,'model::HeroUser::UserId()'],['../classmodel_1_1KnightsUser.html#ada18d7c937da78eaa1968c64d764345e',1,'model::KnightsUser::UserId()'],['../classmodel_1_1UserData.html#ad2a0c90344238530ac341f02bd5f75e7',1,'model::UserData::UserId()'],['../classmodel_1_1UserRentalItem.html#a9f73920722a1e0b41b24e8158c23c482',1,'model::UserRentalItem::UserId()']]],
+  ['userknightsrank_16',['UserKnightsRank',['../classmodel_1_1UserKnightsRank.html',1,'model::UserKnightsRank'],['../classmodel__binder_1_1UserKnightsRank.html',1,'model_binder::UserKnightsRank']]],
+  ['username_17',['UserName',['../classmodel_1_1Battle.html#a56fb643169711b8b2c79e465d1450308',1,'model::Battle']]],
+  ['userpersonalrank_18',['UserPersonalRank',['../classmodel_1_1UserPersonalRank.html',1,'model::UserPersonalRank'],['../classmodel__binder_1_1UserPersonalRank.html',1,'model_binder::UserPersonalRank']]],
+  ['userrentalitem_19',['UserRentalItem',['../classmodel_1_1UserRentalItem.html',1,'model::UserRentalItem'],['../classmodel__binder_1_1UserRentalItem.html',1,'model_binder::UserRentalItem']]],
+  ['usersavedmagic_20',['UserSavedMagic',['../classmodel_1_1UserSavedMagic.html',1,'model::UserSavedMagic'],['../classmodel__binder_1_1UserSavedMagic.html',1,'model_binder::UserSavedMagic']]],
+  ['userskilluse_21',['UserSkillUse',['../classmodel_1_1MagicType6.html#a83a4e819ca228227c2adcad794e3914a',1,'model::MagicType6']]]
+];
