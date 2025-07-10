@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"bType", &ItemUpProbability::BindType},
-				{"nMaxSuccess", &ItemUpProbability::BindMaxSuccess},
-				{"nMaxFail", &ItemUpProbability::BindMaxFail},
-				{"nCurSuccess", &ItemUpProbability::BindCurrentSuccess},
-				{"nCurFail", &ItemUpProbability::BindCurrentFailure}
+				{"bType", &ItemUpProbabilityBinder::BindType},
+				{"nMaxSuccess", &ItemUpProbabilityBinder::BindMaxSuccess},
+				{"nMaxFail", &ItemUpProbabilityBinder::BindMaxFail},
+				{"nCurSuccess", &ItemUpProbabilityBinder::BindCurrentSuccess},
+				{"nCurFail", &ItemUpProbabilityBinder::BindCurrentFailure}
 			};
 			return bindingsMap;
 		}

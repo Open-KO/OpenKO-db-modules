@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"shIndex", &HeroUser::BindIndex},
-				{"strUserID", &HeroUser::BindUserId},
-				{"strNation", &HeroUser::BindNation},
-				{"strClass", &HeroUser::BindClassName},
-				{"strAchievement", &HeroUser::BindAchievement}
+				{"shIndex", &HeroUserBinder::BindIndex},
+				{"strUserID", &HeroUserBinder::BindUserId},
+				{"strNation", &HeroUserBinder::BindNation},
+				{"strClass", &HeroUserBinder::BindClassName},
+				{"strAchievement", &HeroUserBinder::BindAchievement}
 			};
 			return bindingsMap;
 		}

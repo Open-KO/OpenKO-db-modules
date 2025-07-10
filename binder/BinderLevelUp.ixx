@@ -24,8 +24,8 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"level", &LevelUp::BindLevel},
-				{"Exp", &LevelUp::BindRequiredExp}
+				{"level", &LevelUpBinder::BindLevel},
+				{"Exp", &LevelUpBinder::BindRequiredExp}
 			};
 			return bindingsMap;
 		}

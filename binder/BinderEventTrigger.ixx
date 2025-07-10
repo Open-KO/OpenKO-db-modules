@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nIndex", &EventTrigger::BindIndex},
-				{"bNpcType", &EventTrigger::BindNpcType},
-				{"sNpcID", &EventTrigger::BindNpcId},
-				{"nTriggerNum", &EventTrigger::BindTriggerNumber}
+				{"nIndex", &EventTriggerBinder::BindIndex},
+				{"bNpcType", &EventTriggerBinder::BindNpcType},
+				{"sNpcID", &EventTriggerBinder::BindNpcId},
+				{"nTriggerNum", &EventTriggerBinder::BindTriggerNumber}
 			};
 			return bindingsMap;
 		}

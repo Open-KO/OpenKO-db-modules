@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strAccountID", &HacktoolUserLog::BindAccountId},
-				{"strCharID", &HacktoolUserLog::BindCharId},
-				{"strHackToolName", &HacktoolUserLog::BindHackToolName},
-				{"tWriteTime", &HacktoolUserLog::BindWriteTime}
+				{"strAccountID", &HacktoolUserLogBinder::BindAccountId},
+				{"strCharID", &HacktoolUserLogBinder::BindCharId},
+				{"strHackToolName", &HacktoolUserLogBinder::BindHackToolName},
+				{"tWriteTime", &HacktoolUserLogBinder::BindWriteTime}
 			};
 			return bindingsMap;
 		}

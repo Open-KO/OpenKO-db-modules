@@ -24,16 +24,16 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strAccountID", &WebItemMallLog::BindAccountId},
-				{"strCharID", &WebItemMallLog::BindCharId},
-				{"ServerNo", &WebItemMallLog::BindServerId},
-				{"ItemID", &WebItemMallLog::BindItemId},
-				{"ItemCount", &WebItemMallLog::BindItemCount},
-				{"BuyTime", &WebItemMallLog::BindBuyTime},
-				{"img_file_name", &WebItemMallLog::BindImgFileName},
-				{"strItemName", &WebItemMallLog::BindItemName},
-				{"price", &WebItemMallLog::BindPrice},
-				{"pay_type", &WebItemMallLog::BindPayType}
+				{"strAccountID", &WebItemMallLogBinder::BindAccountId},
+				{"strCharID", &WebItemMallLogBinder::BindCharId},
+				{"ServerNo", &WebItemMallLogBinder::BindServerId},
+				{"ItemID", &WebItemMallLogBinder::BindItemId},
+				{"ItemCount", &WebItemMallLogBinder::BindItemCount},
+				{"BuyTime", &WebItemMallLogBinder::BindBuyTime},
+				{"img_file_name", &WebItemMallLogBinder::BindImgFileName},
+				{"strItemName", &WebItemMallLogBinder::BindItemName},
+				{"price", &WebItemMallLogBinder::BindPrice},
+				{"pay_type", &WebItemMallLogBinder::BindPayType}
 			};
 			return bindingsMap;
 		}

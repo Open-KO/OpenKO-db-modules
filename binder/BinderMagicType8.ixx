@@ -24,13 +24,13 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType8::BindMagicNumber},
-				{"Name", &MagicType8::BindName},
-				{"Description", &MagicType8::BindDescription},
-				{"Target", &MagicType8::BindTarget},
-				{"Radius", &MagicType8::BindRadius},
-				{"WarpType", &MagicType8::BindWarpType},
-				{"ExpRecover", &MagicType8::BindExpRecover}
+				{"iNum", &MagicType8Binder::BindMagicNumber},
+				{"Name", &MagicType8Binder::BindName},
+				{"Description", &MagicType8Binder::BindDescription},
+				{"Target", &MagicType8Binder::BindTarget},
+				{"Radius", &MagicType8Binder::BindRadius},
+				{"WarpType", &MagicType8Binder::BindWarpType},
+				{"ExpRecover", &MagicType8Binder::BindExpRecover}
 			};
 			return bindingsMap;
 		}

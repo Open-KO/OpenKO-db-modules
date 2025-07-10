@@ -24,21 +24,21 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strCharID", &UserEditor::BindCharId},
-				{"strAccountID", &UserEditor::BindAccountId},
-				{"strOpID", &UserEditor::BindOpId},
-				{"strOpIP", &UserEditor::BindOpIP},
-				{"strOldUserValue", &UserEditor::BindOldUserValue},
-				{"strNewUserValue", &UserEditor::BindNewUserValue},
-				{"strOldUserSkill", &UserEditor::BindOldUserSkill},
-				{"strNewUserSkill", &UserEditor::BindNewUserSkill},
-				{"strOldUserItem", &UserEditor::BindOldUserItem},
-				{"strNewUserItem", &UserEditor::BindNewUserItem},
-				{"strOldWHValue", &UserEditor::BindOldWarehouseValue},
-				{"strNewWHValue", &UserEditor::BindNewWarehouseValue},
-				{"strOldWHItem", &UserEditor::BindOldWarehouseItem},
-				{"strNewWHItem", &UserEditor::BindNewWarehouseItem},
-				{"EditorTime", &UserEditor::BindEditorTime}
+				{"strCharID", &UserEditorBinder::BindCharId},
+				{"strAccountID", &UserEditorBinder::BindAccountId},
+				{"strOpID", &UserEditorBinder::BindOpId},
+				{"strOpIP", &UserEditorBinder::BindOpIP},
+				{"strOldUserValue", &UserEditorBinder::BindOldUserValue},
+				{"strNewUserValue", &UserEditorBinder::BindNewUserValue},
+				{"strOldUserSkill", &UserEditorBinder::BindOldUserSkill},
+				{"strNewUserSkill", &UserEditorBinder::BindNewUserSkill},
+				{"strOldUserItem", &UserEditorBinder::BindOldUserItem},
+				{"strNewUserItem", &UserEditorBinder::BindNewUserItem},
+				{"strOldWHValue", &UserEditorBinder::BindOldWarehouseValue},
+				{"strNewWHValue", &UserEditorBinder::BindNewWarehouseValue},
+				{"strOldWHItem", &UserEditorBinder::BindOldWarehouseItem},
+				{"strNewWHItem", &UserEditorBinder::BindNewWarehouseItem},
+				{"EditorTime", &UserEditorBinder::BindEditorTime}
 			};
 			return bindingsMap;
 		}

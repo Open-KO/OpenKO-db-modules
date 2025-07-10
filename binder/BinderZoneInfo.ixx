@@ -24,15 +24,15 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"ServerNo", &ZoneInfo::BindServerId},
-				{"ZoneNo", &ZoneInfo::BindZoneId},
-				{"strZoneName", &ZoneInfo::BindName},
-				{"InitX", &ZoneInfo::BindInitX},
-				{"InitZ", &ZoneInfo::BindInitZ},
-				{"InitY", &ZoneInfo::BindInitY},
-				{"Type", &ZoneInfo::BindType},
-				{"RoomEvent", &ZoneInfo::BindRoomEvent},
-				{"bz", &ZoneInfo::BindBz}
+				{"ServerNo", &ZoneInfoBinder::BindServerId},
+				{"ZoneNo", &ZoneInfoBinder::BindZoneId},
+				{"strZoneName", &ZoneInfoBinder::BindName},
+				{"InitX", &ZoneInfoBinder::BindInitX},
+				{"InitZ", &ZoneInfoBinder::BindInitZ},
+				{"InitY", &ZoneInfoBinder::BindInitY},
+				{"Type", &ZoneInfoBinder::BindType},
+				{"RoomEvent", &ZoneInfoBinder::BindRoomEvent},
+				{"bz", &ZoneInfoBinder::BindBz}
 			};
 			return bindingsMap;
 		}

@@ -24,16 +24,16 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sIndex", &MonsterChallengeSummonList::BindIndex},
-				{"bLevel", &MonsterChallengeSummonList::BindLevel},
-				{"bStage", &MonsterChallengeSummonList::BindStage},
-				{"bStageLevel", &MonsterChallengeSummonList::BindStageLevel},
-				{"sTime", &MonsterChallengeSummonList::BindTime},
-				{"sSid", &MonsterChallengeSummonList::BindMonsterId},
-				{"sCount", &MonsterChallengeSummonList::BindCount},
-				{"sPosX", &MonsterChallengeSummonList::BindPosX},
-				{"sPosZ", &MonsterChallengeSummonList::BindPosZ},
-				{"bRange", &MonsterChallengeSummonList::BindRange}
+				{"sIndex", &MonsterChallengeSummonListBinder::BindIndex},
+				{"bLevel", &MonsterChallengeSummonListBinder::BindLevel},
+				{"bStage", &MonsterChallengeSummonListBinder::BindStage},
+				{"bStageLevel", &MonsterChallengeSummonListBinder::BindStageLevel},
+				{"sTime", &MonsterChallengeSummonListBinder::BindTime},
+				{"sSid", &MonsterChallengeSummonListBinder::BindMonsterId},
+				{"sCount", &MonsterChallengeSummonListBinder::BindCount},
+				{"sPosX", &MonsterChallengeSummonListBinder::BindPosX},
+				{"sPosZ", &MonsterChallengeSummonListBinder::BindPosZ},
+				{"bRange", &MonsterChallengeSummonListBinder::BindRange}
 			};
 			return bindingsMap;
 		}

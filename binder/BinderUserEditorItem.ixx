@@ -24,16 +24,16 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strCharID", &UserEditorItem::BindCharId},
-				{"strAccountID", &UserEditorItem::BindAccountId},
-				{"strOpID", &UserEditorItem::BindOpId},
-				{"strOpIP", &UserEditorItem::BindOpIP},
-				{"sDBIndex", &UserEditorItem::BindDbIndex},
-				{"sPos", &UserEditorItem::BindPos},
-				{"byType", &UserEditorItem::BindType},
-				{"nItemID1", &UserEditorItem::BindItemId1},
-				{"nItemID2", &UserEditorItem::BindItemId2},
-				{"UpdateTime", &UserEditorItem::BindUpdateTime}
+				{"strCharID", &UserEditorItemBinder::BindCharId},
+				{"strAccountID", &UserEditorItemBinder::BindAccountId},
+				{"strOpID", &UserEditorItemBinder::BindOpId},
+				{"strOpIP", &UserEditorItemBinder::BindOpIP},
+				{"sDBIndex", &UserEditorItemBinder::BindDbIndex},
+				{"sPos", &UserEditorItemBinder::BindPos},
+				{"byType", &UserEditorItemBinder::BindType},
+				{"nItemID1", &UserEditorItemBinder::BindItemId1},
+				{"nItemID2", &UserEditorItemBinder::BindItemId2},
+				{"UpdateTime", &UserEditorItemBinder::BindUpdateTime}
 			};
 			return bindingsMap;
 		}

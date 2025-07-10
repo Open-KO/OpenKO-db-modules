@@ -24,9 +24,9 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nResourceID", &ServerResource::BindResourceId},
-				{"strName", &ServerResource::BindName},
-				{"strResource", &ServerResource::BindResource}
+				{"nResourceID", &ServerResourceBinder::BindResourceId},
+				{"strName", &ServerResourceBinder::BindName},
+				{"strResource", &ServerResourceBinder::BindResource}
 			};
 			return bindingsMap;
 		}

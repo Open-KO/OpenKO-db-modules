@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sCapeIndex", &KnightsCape::BindCapeIndex},
-				{"strName", &KnightsCape::BindName},
-				{"nBuyPrice", &KnightsCape::BindBuyPrice},
-				{"nDuration", &KnightsCape::BindDuration},
-				{"byGrade", &KnightsCape::BindGrade}
+				{"sCapeIndex", &KnightsCapeBinder::BindCapeIndex},
+				{"strName", &KnightsCapeBinder::BindName},
+				{"nBuyPrice", &KnightsCapeBinder::BindBuyPrice},
+				{"nDuration", &KnightsCapeBinder::BindDuration},
+				{"byGrade", &KnightsCapeBinder::BindGrade}
 			};
 			return bindingsMap;
 		}

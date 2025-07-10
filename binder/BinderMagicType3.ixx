@@ -24,17 +24,17 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType3::BindMagicNumber},
-				{"Name", &MagicType3::BindName},
-				{"Description", &MagicType3::BindDescription},
-				{"Radius", &MagicType3::BindRadius},
-				{"Angle", &MagicType3::BindAngle},
-				{"DirectType", &MagicType3::BindDirectType},
-				{"FirstDamage", &MagicType3::BindFirstDamage},
-				{"EndDamage", &MagicType3::BindEndDamage},
-				{"TimeDamage", &MagicType3::BindTimeDamage},
-				{"Duration", &MagicType3::BindDuration},
-				{"Attribute", &MagicType3::BindAttribute}
+				{"iNum", &MagicType3Binder::BindMagicNumber},
+				{"Name", &MagicType3Binder::BindName},
+				{"Description", &MagicType3Binder::BindDescription},
+				{"Radius", &MagicType3Binder::BindRadius},
+				{"Angle", &MagicType3Binder::BindAngle},
+				{"DirectType", &MagicType3Binder::BindDirectType},
+				{"FirstDamage", &MagicType3Binder::BindFirstDamage},
+				{"EndDamage", &MagicType3Binder::BindEndDamage},
+				{"TimeDamage", &MagicType3Binder::BindTimeDamage},
+				{"Duration", &MagicType3Binder::BindDuration},
+				{"Attribute", &MagicType3Binder::BindAttribute}
 			};
 			return bindingsMap;
 		}

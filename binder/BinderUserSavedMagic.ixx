@@ -24,27 +24,27 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strCharID", &UserSavedMagic::BindCharId},
-				{"nSkill1", &UserSavedMagic::BindSkill1},
-				{"nDuring1", &UserSavedMagic::BindDuring1},
-				{"nSkill2", &UserSavedMagic::BindSkill2},
-				{"nDuring2", &UserSavedMagic::BindDuring2},
-				{"nSkill3", &UserSavedMagic::BindSkill3},
-				{"nDuring3", &UserSavedMagic::BindDuring3},
-				{"nSkill4", &UserSavedMagic::BindSkill4},
-				{"nDuring4", &UserSavedMagic::BindDuring4},
-				{"nSkill5", &UserSavedMagic::BindSkill5},
-				{"nDuring5", &UserSavedMagic::BindDuring5},
-				{"nSkill6", &UserSavedMagic::BindSkill6},
-				{"nDuring6", &UserSavedMagic::BindDuring6},
-				{"nSkill7", &UserSavedMagic::BindSkill7},
-				{"nDuring7", &UserSavedMagic::BindDuring7},
-				{"nSkill8", &UserSavedMagic::BindSkill8},
-				{"nDuring8", &UserSavedMagic::BindDuring8},
-				{"nSkill9", &UserSavedMagic::BindSkill9},
-				{"nDuring9", &UserSavedMagic::BindDuring9},
-				{"nSkill10", &UserSavedMagic::BindSkill10},
-				{"nDuring10", &UserSavedMagic::BindDuring10}
+				{"strCharID", &UserSavedMagicBinder::BindCharId},
+				{"nSkill1", &UserSavedMagicBinder::BindSkill1},
+				{"nDuring1", &UserSavedMagicBinder::BindDuring1},
+				{"nSkill2", &UserSavedMagicBinder::BindSkill2},
+				{"nDuring2", &UserSavedMagicBinder::BindDuring2},
+				{"nSkill3", &UserSavedMagicBinder::BindSkill3},
+				{"nDuring3", &UserSavedMagicBinder::BindDuring3},
+				{"nSkill4", &UserSavedMagicBinder::BindSkill4},
+				{"nDuring4", &UserSavedMagicBinder::BindDuring4},
+				{"nSkill5", &UserSavedMagicBinder::BindSkill5},
+				{"nDuring5", &UserSavedMagicBinder::BindDuring5},
+				{"nSkill6", &UserSavedMagicBinder::BindSkill6},
+				{"nDuring6", &UserSavedMagicBinder::BindDuring6},
+				{"nSkill7", &UserSavedMagicBinder::BindSkill7},
+				{"nDuring7", &UserSavedMagicBinder::BindDuring7},
+				{"nSkill8", &UserSavedMagicBinder::BindSkill8},
+				{"nDuring8", &UserSavedMagicBinder::BindDuring8},
+				{"nSkill9", &UserSavedMagicBinder::BindSkill9},
+				{"nDuring9", &UserSavedMagicBinder::BindDuring9},
+				{"nSkill10", &UserSavedMagicBinder::BindSkill10},
+				{"nDuring10", &UserSavedMagicBinder::BindDuring10}
 			};
 			return bindingsMap;
 		}

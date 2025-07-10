@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strAccountID", &Warehouse::BindAccountId},
-				{"nMoney", &Warehouse::BindMoney},
-				{"dwTime", &Warehouse::BindDwTime},
-				{"WarehouseData", &Warehouse::BindItemData},
-				{"strSerial", &Warehouse::BindSerial}
+				{"strAccountID", &WarehouseBinder::BindAccountId},
+				{"nMoney", &WarehouseBinder::BindMoney},
+				{"dwTime", &WarehouseBinder::BindDwTime},
+				{"WarehouseData", &WarehouseBinder::BindItemData},
+				{"strSerial", &WarehouseBinder::BindSerial}
 			};
 			return bindingsMap;
 		}

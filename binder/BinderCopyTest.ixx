@@ -24,7 +24,7 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"ITEMSERIAL", &CopyTest::BindItemSerial}
+				{"ITEMSERIAL", &CopyTestBinder::BindItemSerial}
 			};
 			return bindingsMap;
 		}

@@ -24,8 +24,8 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nIndex", &WebpageAddress::BindIndex},
-				{"strWebPageAddress", &WebpageAddress::BindWebPageAddress}
+				{"nIndex", &WebpageAddressBinder::BindIndex},
+				{"strWebPageAddress", &WebpageAddressBinder::BindWebPageAddress}
 			};
 			return bindingsMap;
 		}

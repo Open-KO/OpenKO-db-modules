@@ -24,12 +24,12 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strAccountID", &AccountChar::BindAccountId},
-				{"bNation", &AccountChar::BindNation},
-				{"bCharNum", &AccountChar::BindCharNum},
-				{"strCharID1", &AccountChar::BindCharId1},
-				{"strCharID2", &AccountChar::BindCharId2},
-				{"strCharID3", &AccountChar::BindCharId3}
+				{"strAccountID", &AccountCharBinder::BindAccountId},
+				{"bNation", &AccountCharBinder::BindNation},
+				{"bCharNum", &AccountCharBinder::BindCharNum},
+				{"strCharID1", &AccountCharBinder::BindCharId1},
+				{"strCharID2", &AccountCharBinder::BindCharId2},
+				{"strCharID3", &AccountCharBinder::BindCharId3}
 			};
 			return bindingsMap;
 		}

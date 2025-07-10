@@ -24,9 +24,9 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strCharID", &UserDataSkillShortcut::BindCharId},
-				{"nCount", &UserDataSkillShortcut::BindCount},
-				{"strSkillData", &UserDataSkillShortcut::BindSkillData}
+				{"strCharID", &UserDataSkillShortcutBinder::BindCharId},
+				{"nCount", &UserDataSkillShortcutBinder::BindCount},
+				{"strSkillData", &UserDataSkillShortcutBinder::BindSkillData}
 			};
 			return bindingsMap;
 		}

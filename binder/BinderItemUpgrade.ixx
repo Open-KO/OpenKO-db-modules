@@ -24,24 +24,24 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nIndex", &ItemUpgrade::BindIndex},
-				{"nNPCNum", &ItemUpgrade::BindNpcNumber},
-				{"strName", &ItemUpgrade::BindName},
-				{"strNote", &ItemUpgrade::BindNote},
-				{"nOriginType", &ItemUpgrade::BindOriginType},
-				{"nOriginItem", &ItemUpgrade::BindOriginItem},
-				{"nReqItem1", &ItemUpgrade::BindRequireItem1},
-				{"nReqItem2", &ItemUpgrade::BindRequireItem2},
-				{"nReqItem3", &ItemUpgrade::BindRequireItem3},
-				{"nReqItem4", &ItemUpgrade::BindRequireItem4},
-				{"nReqItem5", &ItemUpgrade::BindRequireItem5},
-				{"nReqItem6", &ItemUpgrade::BindRequireItem6},
-				{"nReqItem7", &ItemUpgrade::BindRequireItem7},
-				{"nReqItem8", &ItemUpgrade::BindRequireItem8},
-				{"nReqNoah", &ItemUpgrade::BindRequireCoin},
-				{"bRateType", &ItemUpgrade::BindRateType},
-				{"nGenRate", &ItemUpgrade::BindGenRate},
-				{"nGiveItem", &ItemUpgrade::BindGiveItem}
+				{"nIndex", &ItemUpgradeBinder::BindIndex},
+				{"nNPCNum", &ItemUpgradeBinder::BindNpcNumber},
+				{"strName", &ItemUpgradeBinder::BindName},
+				{"strNote", &ItemUpgradeBinder::BindNote},
+				{"nOriginType", &ItemUpgradeBinder::BindOriginType},
+				{"nOriginItem", &ItemUpgradeBinder::BindOriginItem},
+				{"nReqItem1", &ItemUpgradeBinder::BindRequireItem1},
+				{"nReqItem2", &ItemUpgradeBinder::BindRequireItem2},
+				{"nReqItem3", &ItemUpgradeBinder::BindRequireItem3},
+				{"nReqItem4", &ItemUpgradeBinder::BindRequireItem4},
+				{"nReqItem5", &ItemUpgradeBinder::BindRequireItem5},
+				{"nReqItem6", &ItemUpgradeBinder::BindRequireItem6},
+				{"nReqItem7", &ItemUpgradeBinder::BindRequireItem7},
+				{"nReqItem8", &ItemUpgradeBinder::BindRequireItem8},
+				{"nReqNoah", &ItemUpgradeBinder::BindRequireCoin},
+				{"bRateType", &ItemUpgradeBinder::BindRateType},
+				{"nGenRate", &ItemUpgradeBinder::BindGenRate},
+				{"nGiveItem", &ItemUpgradeBinder::BindGiveItem}
 			};
 			return bindingsMap;
 		}

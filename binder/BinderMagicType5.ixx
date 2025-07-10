@@ -24,12 +24,12 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType5::BindMagicNumber},
-				{"Name", &MagicType5::BindName},
-				{"Description", &MagicType5::BindDescription},
-				{"Type", &MagicType5::BindType},
-				{"ExpRecover", &MagicType5::BindExpRecover},
-				{"NeedStone", &MagicType5::BindNeedStone}
+				{"iNum", &MagicType5Binder::BindMagicNumber},
+				{"Name", &MagicType5Binder::BindName},
+				{"Description", &MagicType5Binder::BindDescription},
+				{"Type", &MagicType5Binder::BindType},
+				{"ExpRecover", &MagicType5Binder::BindExpRecover},
+				{"NeedStone", &MagicType5Binder::BindNeedStone}
 			};
 			return bindingsMap;
 		}

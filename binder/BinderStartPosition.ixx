@@ -24,17 +24,17 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"ZoneID", &StartPosition::BindZoneId},
-				{"sKarusX", &StartPosition::BindKarusX},
-				{"sKarusZ", &StartPosition::BindKarusZ},
-				{"sElmoradX", &StartPosition::BindElmoX},
-				{"sElmoradZ", &StartPosition::BindElmoZ},
-				{"bRangeX", &StartPosition::BindRangeX},
-				{"bRangeZ", &StartPosition::BindRangeZ},
-				{"sKarusGateX", &StartPosition::BindKarusGateX},
-				{"sKarusGateZ", &StartPosition::BindKarusGateZ},
-				{"sElmoGateX", &StartPosition::BindElmoGateX},
-				{"sElmoGateZ", &StartPosition::BindElmoGateZ}
+				{"ZoneID", &StartPositionBinder::BindZoneId},
+				{"sKarusX", &StartPositionBinder::BindKarusX},
+				{"sKarusZ", &StartPositionBinder::BindKarusZ},
+				{"sElmoradX", &StartPositionBinder::BindElmoX},
+				{"sElmoradZ", &StartPositionBinder::BindElmoZ},
+				{"bRangeX", &StartPositionBinder::BindRangeX},
+				{"bRangeZ", &StartPositionBinder::BindRangeZ},
+				{"sKarusGateX", &StartPositionBinder::BindKarusGateX},
+				{"sKarusGateZ", &StartPositionBinder::BindKarusGateZ},
+				{"sElmoGateX", &StartPositionBinder::BindElmoGateX},
+				{"sElmoGateZ", &StartPositionBinder::BindElmoGateZ}
 			};
 			return bindingsMap;
 		}

@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"id", &ProgramListLog::BindId},
-				{"strAccountID", &ProgramListLog::BindAccountId},
-				{"strCharID", &ProgramListLog::BindCharId},
-				{"strHackToolName", &ProgramListLog::BindHackToolName},
-				{"tWriteTime", &ProgramListLog::BindWriteTime}
+				{"id", &ProgramListLogBinder::BindId},
+				{"strAccountID", &ProgramListLogBinder::BindAccountId},
+				{"strCharID", &ProgramListLogBinder::BindCharId},
+				{"strHackToolName", &ProgramListLogBinder::BindHackToolName},
+				{"tWriteTime", &ProgramListLogBinder::BindWriteTime}
 			};
 			return bindingsMap;
 		}

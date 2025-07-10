@@ -24,21 +24,21 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sClass", &Coefficient::BindClassId},
-				{"ShortSword", &Coefficient::BindShortSword},
-				{"Sword", &Coefficient::BindSword},
-				{"Axe", &Coefficient::BindAxe},
-				{"Club", &Coefficient::BindClub},
-				{"Spear", &Coefficient::BindSpear},
-				{"Pole", &Coefficient::BindPole},
-				{"Staff", &Coefficient::BindStaff},
-				{"Bow", &Coefficient::BindBow},
-				{"Hp", &Coefficient::BindHitPoint},
-				{"Mp", &Coefficient::BindMagicPower},
-				{"Sp", &Coefficient::BindSp},
-				{"Ac", &Coefficient::BindArmor},
-				{"Hitrate", &Coefficient::BindHitRate},
-				{"Evasionrate", &Coefficient::BindEvasionrate}
+				{"sClass", &CoefficientBinder::BindClassId},
+				{"ShortSword", &CoefficientBinder::BindShortSword},
+				{"Sword", &CoefficientBinder::BindSword},
+				{"Axe", &CoefficientBinder::BindAxe},
+				{"Club", &CoefficientBinder::BindClub},
+				{"Spear", &CoefficientBinder::BindSpear},
+				{"Pole", &CoefficientBinder::BindPole},
+				{"Staff", &CoefficientBinder::BindStaff},
+				{"Bow", &CoefficientBinder::BindBow},
+				{"Hp", &CoefficientBinder::BindHitPoint},
+				{"Mp", &CoefficientBinder::BindMagicPower},
+				{"Sp", &CoefficientBinder::BindSp},
+				{"Ac", &CoefficientBinder::BindArmor},
+				{"Hitrate", &CoefficientBinder::BindHitRate},
+				{"Evasionrate", &CoefficientBinder::BindEvasionrate}
 			};
 			return bindingsMap;
 		}

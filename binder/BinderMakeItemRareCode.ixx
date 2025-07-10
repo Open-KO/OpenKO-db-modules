@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"byLevelGrade", &MakeItemRareCode::BindLevelGrade},
-				{"sUpgradeItem", &MakeItemRareCode::BindUpgradeItem},
-				{"sLareItem", &MakeItemRareCode::BindRareItem},
-				{"sMagicItem", &MakeItemRareCode::BindMagicItem},
-				{"sGereralItem", &MakeItemRareCode::BindGeneralItem}
+				{"byLevelGrade", &MakeItemRareCodeBinder::BindLevelGrade},
+				{"sUpgradeItem", &MakeItemRareCodeBinder::BindUpgradeItem},
+				{"sLareItem", &MakeItemRareCodeBinder::BindRareItem},
+				{"sMagicItem", &MakeItemRareCodeBinder::BindMagicItem},
+				{"sGereralItem", &MakeItemRareCodeBinder::BindGeneralItem}
 			};
 			return bindingsMap;
 		}

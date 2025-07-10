@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sIndex", &MakeItem::BindIndex},
-				{"strItemInfo", &MakeItem::BindItemInfo},
-				{"iItemCode", &MakeItem::BindItemCode},
-				{"byItemLevel", &MakeItem::BindItemLevel}
+				{"sIndex", &MakeItemBinder::BindIndex},
+				{"strItemInfo", &MakeItemBinder::BindItemInfo},
+				{"iItemCode", &MakeItemBinder::BindItemCode},
+				{"byItemLevel", &MakeItemBinder::BindItemLevel}
 			};
 			return bindingsMap;
 		}

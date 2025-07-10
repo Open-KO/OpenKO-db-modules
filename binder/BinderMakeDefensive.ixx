@@ -24,14 +24,14 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"byLevel", &MakeDefensive::BindLevel},
-				{"sClass_1", &MakeDefensive::BindClass1},
-				{"sClass_2", &MakeDefensive::BindClass2},
-				{"sClass_3", &MakeDefensive::BindClass3},
-				{"sClass_4", &MakeDefensive::BindClass4},
-				{"sClass_5", &MakeDefensive::BindClass5},
-				{"sClass_6", &MakeDefensive::BindClass6},
-				{"sClass_7", &MakeDefensive::BindClass7}
+				{"byLevel", &MakeDefensiveBinder::BindLevel},
+				{"sClass_1", &MakeDefensiveBinder::BindClass1},
+				{"sClass_2", &MakeDefensiveBinder::BindClass2},
+				{"sClass_3", &MakeDefensiveBinder::BindClass3},
+				{"sClass_4", &MakeDefensiveBinder::BindClass4},
+				{"sClass_5", &MakeDefensiveBinder::BindClass5},
+				{"sClass_6", &MakeDefensiveBinder::BindClass6},
+				{"sClass_7", &MakeDefensiveBinder::BindClass7}
 			};
 			return bindingsMap;
 		}

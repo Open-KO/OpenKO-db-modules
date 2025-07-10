@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sMainAllianceKnights", &KnightsAlliance::BindMainAllianceKnights},
-				{"sSubAllianceKnights", &KnightsAlliance::BindSubAllianceKnights},
-				{"sMercenaryClan_1", &KnightsAlliance::BindMercenaryClan1},
-				{"sMercenaryClan_2", &KnightsAlliance::BindMercenaryClan2}
+				{"sMainAllianceKnights", &KnightsAllianceBinder::BindMainAllianceKnights},
+				{"sSubAllianceKnights", &KnightsAllianceBinder::BindSubAllianceKnights},
+				{"sMercenaryClan_1", &KnightsAllianceBinder::BindMercenaryClan1},
+				{"sMercenaryClan_2", &KnightsAllianceBinder::BindMercenaryClan2}
 			};
 			return bindingsMap;
 		}

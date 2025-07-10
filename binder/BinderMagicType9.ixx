@@ -24,20 +24,20 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType9::BindMagicNumber},
-				{"Name", &MagicType9::BindName},
-				{"Description", &MagicType9::BindDescription},
-				{"ValidGroup", &MagicType9::BindValidGroup},
-				{"NationChange", &MagicType9::BindNationChange},
-				{"MonsterNum", &MagicType9::BindMonsterNumber},
-				{"TargetChange", &MagicType9::BindTargetChange},
-				{"StateChange", &MagicType9::BindStateChange},
-				{"Radius", &MagicType9::BindRadius},
-				{"Hitrate", &MagicType9::BindHitRate},
-				{"Duration", &MagicType9::BindDuration},
-				{"AddDamage", &MagicType9::BindAddDamage},
-				{"Vision", &MagicType9::BindVision},
-				{"NeedItem", &MagicType9::BindNeedItem}
+				{"iNum", &MagicType9Binder::BindMagicNumber},
+				{"Name", &MagicType9Binder::BindName},
+				{"Description", &MagicType9Binder::BindDescription},
+				{"ValidGroup", &MagicType9Binder::BindValidGroup},
+				{"NationChange", &MagicType9Binder::BindNationChange},
+				{"MonsterNum", &MagicType9Binder::BindMonsterNumber},
+				{"TargetChange", &MagicType9Binder::BindTargetChange},
+				{"StateChange", &MagicType9Binder::BindStateChange},
+				{"Radius", &MagicType9Binder::BindRadius},
+				{"Hitrate", &MagicType9Binder::BindHitRate},
+				{"Duration", &MagicType9Binder::BindDuration},
+				{"AddDamage", &MagicType9Binder::BindAddDamage},
+				{"Vision", &MagicType9Binder::BindVision},
+				{"NeedItem", &MagicType9Binder::BindNeedItem}
 			};
 			return bindingsMap;
 		}

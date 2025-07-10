@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strAccountID", &KingBallotBox::BindAccountId},
-				{"strCharID", &KingBallotBox::BindCharId},
-				{"byNation", &KingBallotBox::BindNation},
-				{"strCandidacyID", &KingBallotBox::BindCandidateId}
+				{"strAccountID", &KingBallotBoxBinder::BindAccountId},
+				{"strCharID", &KingBallotBoxBinder::BindCharId},
+				{"byNation", &KingBallotBoxBinder::BindNation},
+				{"strCandidacyID", &KingBallotBoxBinder::BindCandidateId}
 			};
 			return bindingsMap;
 		}

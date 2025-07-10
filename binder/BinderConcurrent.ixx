@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"serverid", &Concurrent::BindServerId},
-				{"zone1_count", &Concurrent::BindZone1Count},
-				{"zone2_count", &Concurrent::BindZone2Count},
-				{"zone3_count", &Concurrent::BindZone3Count},
-				{"bz", &Concurrent::BindBz}
+				{"serverid", &ConcurrentBinder::BindServerId},
+				{"zone1_count", &ConcurrentBinder::BindZone1Count},
+				{"zone2_count", &ConcurrentBinder::BindZone2Count},
+				{"zone3_count", &ConcurrentBinder::BindZone3Count},
+				{"bz", &ConcurrentBinder::BindBz}
 			};
 			return bindingsMap;
 		}

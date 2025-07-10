@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"byType", &KingElectionList::BindType},
-				{"byNation", &KingElectionList::BindNation},
-				{"nKnights", &KingElectionList::BindKnights},
-				{"strName", &KingElectionList::BindName},
-				{"nMoney", &KingElectionList::BindMoney}
+				{"byType", &KingElectionListBinder::BindType},
+				{"byNation", &KingElectionListBinder::BindNation},
+				{"nKnights", &KingElectionListBinder::BindKnights},
+				{"strName", &KingElectionListBinder::BindName},
+				{"nMoney", &KingElectionListBinder::BindMoney}
 			};
 			return bindingsMap;
 		}

@@ -24,15 +24,15 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"shIndex", &UserKnightsRank::BindIndex},
-				{"strName", &UserKnightsRank::BindName},
-				{"strElmoUserID", &UserKnightsRank::BindElmoUserId},
-				{"strElmoKnightsName", &UserKnightsRank::BindElmoKnightsName},
-				{"nElmoLoyalty", &UserKnightsRank::BindElmoLoyalty},
-				{"strKarusUserID", &UserKnightsRank::BindKarusUserId},
-				{"strKarusKnightsName", &UserKnightsRank::BindKarusKnightsName},
-				{"nKarusLoyalty", &UserKnightsRank::BindKarusLoyalty},
-				{"nMoney", &UserKnightsRank::BindMoney}
+				{"shIndex", &UserKnightsRankBinder::BindIndex},
+				{"strName", &UserKnightsRankBinder::BindName},
+				{"strElmoUserID", &UserKnightsRankBinder::BindElmoUserId},
+				{"strElmoKnightsName", &UserKnightsRankBinder::BindElmoKnightsName},
+				{"nElmoLoyalty", &UserKnightsRankBinder::BindElmoLoyalty},
+				{"strKarusUserID", &UserKnightsRankBinder::BindKarusUserId},
+				{"strKarusKnightsName", &UserKnightsRankBinder::BindKarusKnightsName},
+				{"nKarusLoyalty", &UserKnightsRankBinder::BindKarusLoyalty},
+				{"nMoney", &UserKnightsRankBinder::BindMoney}
 			};
 			return bindingsMap;
 		}

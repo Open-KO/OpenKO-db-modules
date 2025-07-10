@@ -24,18 +24,18 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType1::BindMagicNumber},
-				{"Name", &MagicType1::BindName},
-				{"Description", &MagicType1::BindDescription},
-				{"Type", &MagicType1::BindType},
-				{"HitRate", &MagicType1::BindHitRateMod},
-				{"Hit", &MagicType1::BindDamageMod},
-				{"AddDamage", &MagicType1::BindAddDamage},
-				{"Delay", &MagicType1::BindDelay},
-				{"ComboType", &MagicType1::BindComboType},
-				{"ComboCount", &MagicType1::BindComboCount},
-				{"ComboDamage", &MagicType1::BindComboDamage},
-				{"Range", &MagicType1::BindRange}
+				{"iNum", &MagicType1Binder::BindMagicNumber},
+				{"Name", &MagicType1Binder::BindName},
+				{"Description", &MagicType1Binder::BindDescription},
+				{"Type", &MagicType1Binder::BindType},
+				{"HitRate", &MagicType1Binder::BindHitRateMod},
+				{"Hit", &MagicType1Binder::BindDamageMod},
+				{"AddDamage", &MagicType1Binder::BindAddDamage},
+				{"Delay", &MagicType1Binder::BindDelay},
+				{"ComboType", &MagicType1Binder::BindComboType},
+				{"ComboCount", &MagicType1Binder::BindComboCount},
+				{"ComboDamage", &MagicType1Binder::BindComboDamage},
+				{"Range", &MagicType1Binder::BindRange}
 			};
 			return bindingsMap;
 		}

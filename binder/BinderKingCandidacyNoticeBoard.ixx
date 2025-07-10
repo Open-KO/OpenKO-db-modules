@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strUserID", &KingCandidacyNoticeBoard::BindCandidateId},
-				{"byNation", &KingCandidacyNoticeBoard::BindNation},
-				{"sNoticeLen", &KingCandidacyNoticeBoard::BindNoticeLength},
-				{"strNotice", &KingCandidacyNoticeBoard::BindNotice}
+				{"strUserID", &KingCandidacyNoticeBoardBinder::BindCandidateId},
+				{"byNation", &KingCandidacyNoticeBoardBinder::BindNation},
+				{"sNoticeLen", &KingCandidacyNoticeBoardBinder::BindNoticeLength},
+				{"strNotice", &KingCandidacyNoticeBoardBinder::BindNotice}
 			};
 			return bindingsMap;
 		}

@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nIndex", &CouponSerialList::BindIndex},
-				{"strSerialNum", &CouponSerialList::BindSerialNum},
-				{"nItemNum", &CouponSerialList::BindItemNumber},
-				{"sItemCount", &CouponSerialList::BindItemCount}
+				{"nIndex", &CouponSerialListBinder::BindIndex},
+				{"strSerialNum", &CouponSerialListBinder::BindSerialNum},
+				{"nItemNum", &CouponSerialListBinder::BindItemNumber},
+				{"sItemCount", &CouponSerialListBinder::BindItemCount}
 			};
 			return bindingsMap;
 		}

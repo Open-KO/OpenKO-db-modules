@@ -24,14 +24,14 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sCastleIndex", &NpcMoveItem::BindCastleIndex},
-				{"byChangeItem", &NpcMoveItem::BindChangeItem},
-				{"sChangeSid", &NpcMoveItem::BindChangeId},
-				{"byMoveItem", &NpcMoveItem::BindMoveItem},
-				{"sMoveMinX", &NpcMoveItem::BindMoveMinX},
-				{"sMoveMinY", &NpcMoveItem::BindMoveMinY},
-				{"sMoveMaxX", &NpcMoveItem::BindMoveMaxX},
-				{"sMoveMaxY", &NpcMoveItem::BindMoveMaxY}
+				{"sCastleIndex", &NpcMoveItemBinder::BindCastleIndex},
+				{"byChangeItem", &NpcMoveItemBinder::BindChangeItem},
+				{"sChangeSid", &NpcMoveItemBinder::BindChangeId},
+				{"byMoveItem", &NpcMoveItemBinder::BindMoveItem},
+				{"sMoveMinX", &NpcMoveItemBinder::BindMoveMinX},
+				{"sMoveMinY", &NpcMoveItemBinder::BindMoveMinY},
+				{"sMoveMaxX", &NpcMoveItemBinder::BindMoveMaxX},
+				{"sMoveMaxY", &NpcMoveItemBinder::BindMoveMaxY}
 			};
 			return bindingsMap;
 		}

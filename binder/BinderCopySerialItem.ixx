@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strUserId", &CopySerialItem::BindUserId},
-				{"byType", &CopySerialItem::BindType},
-				{"nPos", &CopySerialItem::BindPos},
-				{"ItemNum", &CopySerialItem::BindItemNum},
-				{"ItemSerial", &CopySerialItem::BindItemSerial}
+				{"strUserId", &CopySerialItemBinder::BindUserId},
+				{"byType", &CopySerialItemBinder::BindType},
+				{"nPos", &CopySerialItemBinder::BindPos},
+				{"ItemNum", &CopySerialItemBinder::BindItemNum},
+				{"ItemSerial", &CopySerialItemBinder::BindItemSerial}
 			};
 			return bindingsMap;
 		}

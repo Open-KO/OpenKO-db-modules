@@ -24,19 +24,19 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strUserID", &UserRentalItem::BindUserId},
-				{"strAccountID", &UserRentalItem::BindAccountId},
-				{"byRentalType", &UserRentalItem::BindRentalType},
-				{"byRegType", &UserRentalItem::BindRegTime},
-				{"nRentalIndex", &UserRentalItem::BindRentalIndex},
-				{"nItemIndex", &UserRentalItem::BindItemIndex},
-				{"sDurability", &UserRentalItem::BindDurability},
-				{"nSerialNumber", &UserRentalItem::BindSerialNumber},
-				{"nRentalMoney", &UserRentalItem::BindRentalMoney},
-				{"sRentalTime", &UserRentalItem::BindRentalTime},
-				{"sDuringTime", &UserRentalItem::BindDuringTime},
-				{"timeRental", &UserRentalItem::BindRentalTimestamp},
-				{"timeRegister", &UserRentalItem::BindRegisterTime}
+				{"strUserID", &UserRentalItemBinder::BindUserId},
+				{"strAccountID", &UserRentalItemBinder::BindAccountId},
+				{"byRentalType", &UserRentalItemBinder::BindRentalType},
+				{"byRegType", &UserRentalItemBinder::BindRegTime},
+				{"nRentalIndex", &UserRentalItemBinder::BindRentalIndex},
+				{"nItemIndex", &UserRentalItemBinder::BindItemIndex},
+				{"sDurability", &UserRentalItemBinder::BindDurability},
+				{"nSerialNumber", &UserRentalItemBinder::BindSerialNumber},
+				{"nRentalMoney", &UserRentalItemBinder::BindRentalMoney},
+				{"sRentalTime", &UserRentalItemBinder::BindRentalTime},
+				{"sDuringTime", &UserRentalItemBinder::BindDuringTime},
+				{"timeRental", &UserRentalItemBinder::BindRentalTimestamp},
+				{"timeRegister", &UserRentalItemBinder::BindRegisterTime}
 			};
 			return bindingsMap;
 		}

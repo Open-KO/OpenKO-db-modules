@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nRank", &KnightsRating::BindRank},
-				{"shIndex", &KnightsRating::BindIndex},
-				{"strName", &KnightsRating::BindName},
-				{"nPoints", &KnightsRating::BindPoints}
+				{"nRank", &KnightsRatingBinder::BindRank},
+				{"shIndex", &KnightsRatingBinder::BindIndex},
+				{"strName", &KnightsRatingBinder::BindName},
+				{"nPoints", &KnightsRatingBinder::BindPoints}
 			};
 			return bindingsMap;
 		}

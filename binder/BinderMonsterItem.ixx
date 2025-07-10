@@ -24,17 +24,17 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sIndex", &MonsterItem::BindMonsterId},
-				{"iItem01", &MonsterItem::BindItemId1},
-				{"sPersent01", &MonsterItem::BindDropChance1},
-				{"iItem02", &MonsterItem::BindItemId2},
-				{"sPersent02", &MonsterItem::BindDropChance2},
-				{"iItem03", &MonsterItem::BindItemId3},
-				{"sPersent03", &MonsterItem::BindDropChance3},
-				{"iItem04", &MonsterItem::BindItemId4},
-				{"sPersent04", &MonsterItem::BindDropChance4},
-				{"iItem05", &MonsterItem::BindItemId5},
-				{"sPersent05", &MonsterItem::BindDropChance5}
+				{"sIndex", &MonsterItemBinder::BindMonsterId},
+				{"iItem01", &MonsterItemBinder::BindItemId1},
+				{"sPersent01", &MonsterItemBinder::BindDropChance1},
+				{"iItem02", &MonsterItemBinder::BindItemId2},
+				{"sPersent02", &MonsterItemBinder::BindDropChance2},
+				{"iItem03", &MonsterItemBinder::BindItemId3},
+				{"sPersent03", &MonsterItemBinder::BindDropChance3},
+				{"iItem04", &MonsterItemBinder::BindItemId4},
+				{"sPersent04", &MonsterItemBinder::BindDropChance4},
+				{"iItem05", &MonsterItemBinder::BindItemId5},
+				{"sPersent05", &MonsterItemBinder::BindDropChance5}
 			};
 			return bindingsMap;
 		}

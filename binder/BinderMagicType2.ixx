@@ -24,15 +24,15 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType2::BindMagicNumber},
-				{"Name", &MagicType2::BindName},
-				{"Description", &MagicType2::BindDescription},
-				{"HitType", &MagicType2::BindHitType},
-				{"HitRate", &MagicType2::BindHitRateMod},
-				{"AddDamage", &MagicType2::BindDamageMod},
-				{"AddRange", &MagicType2::BindRangeMod},
-				{"NeedArrow", &MagicType2::BindNeedArrow},
-				{"AddDamagePlus", &MagicType2::BindAddDamagePlus}
+				{"iNum", &MagicType2Binder::BindMagicNumber},
+				{"Name", &MagicType2Binder::BindName},
+				{"Description", &MagicType2Binder::BindDescription},
+				{"HitType", &MagicType2Binder::BindHitType},
+				{"HitRate", &MagicType2Binder::BindHitRateMod},
+				{"AddDamage", &MagicType2Binder::BindDamageMod},
+				{"AddRange", &MagicType2Binder::BindRangeMod},
+				{"NeedArrow", &MagicType2Binder::BindNeedArrow},
+				{"AddDamagePlus", &MagicType2Binder::BindAddDamagePlus}
 			};
 			return bindingsMap;
 		}

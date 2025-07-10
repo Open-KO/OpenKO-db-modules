@@ -24,20 +24,20 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nIndex", &MagicType7::BindMagicNumber},
-				{"strName", &MagicType7::BindName},
-				{"strNote", &MagicType7::BindNote},
-				{"byValidGroup", &MagicType7::BindValidGroup},
-				{"byNatoinChange", &MagicType7::BindNationChange},
-				{"shMonsterNum", &MagicType7::BindMonsterNumber},
-				{"byTargetChange", &MagicType7::BindTargetChange},
-				{"byStateChange", &MagicType7::BindStateChange},
-				{"byRadius", &MagicType7::BindRadius},
-				{"shHitrate", &MagicType7::BindHitRate},
-				{"shDuration", &MagicType7::BindDuration},
-				{"shDamage", &MagicType7::BindDamage},
-				{"byVisoin", &MagicType7::BindVision},
-				{"nNeedItem", &MagicType7::BindNeedItem}
+				{"nIndex", &MagicType7Binder::BindMagicNumber},
+				{"strName", &MagicType7Binder::BindName},
+				{"strNote", &MagicType7Binder::BindNote},
+				{"byValidGroup", &MagicType7Binder::BindValidGroup},
+				{"byNatoinChange", &MagicType7Binder::BindNationChange},
+				{"shMonsterNum", &MagicType7Binder::BindMonsterNumber},
+				{"byTargetChange", &MagicType7Binder::BindTargetChange},
+				{"byStateChange", &MagicType7Binder::BindStateChange},
+				{"byRadius", &MagicType7Binder::BindRadius},
+				{"shHitrate", &MagicType7Binder::BindHitRate},
+				{"shDuration", &MagicType7Binder::BindDuration},
+				{"shDamage", &MagicType7Binder::BindDamage},
+				{"byVisoin", &MagicType7Binder::BindVision},
+				{"nNeedItem", &MagicType7Binder::BindNeedItem}
 			};
 			return bindingsMap;
 		}

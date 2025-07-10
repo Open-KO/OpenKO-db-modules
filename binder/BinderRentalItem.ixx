@@ -24,21 +24,21 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nRentalIndex", &RentalItem::BindRentalIndex},
-				{"nItemIndex", &RentalItem::BindItemIndex},
-				{"sDurability", &RentalItem::BindDurability},
-				{"nSerialNumber", &RentalItem::BindSerialNumber},
-				{"byRegType", &RentalItem::BindRegType},
-				{"byItemType", &RentalItem::BindItemType},
-				{"byClass", &RentalItem::BindClass},
-				{"sRentalTime", &RentalItem::BindRentalTime},
-				{"nRentalMoney", &RentalItem::BindRentalMoney},
-				{"strLenderCharID", &RentalItem::BindLenderCharId},
-				{"strLenderAcID", &RentalItem::BindLenderAccountId},
-				{"strBorrowerCharID", &RentalItem::BindBorrowerCharId},
-				{"strBorrowerAcID", &RentalItem::BindBorrowerAccountId},
-				{"timeLender", &RentalItem::BindLendTime},
-				{"timeRegister", &RentalItem::BindRegisterTime}
+				{"nRentalIndex", &RentalItemBinder::BindRentalIndex},
+				{"nItemIndex", &RentalItemBinder::BindItemIndex},
+				{"sDurability", &RentalItemBinder::BindDurability},
+				{"nSerialNumber", &RentalItemBinder::BindSerialNumber},
+				{"byRegType", &RentalItemBinder::BindRegType},
+				{"byItemType", &RentalItemBinder::BindItemType},
+				{"byClass", &RentalItemBinder::BindClass},
+				{"sRentalTime", &RentalItemBinder::BindRentalTime},
+				{"nRentalMoney", &RentalItemBinder::BindRentalMoney},
+				{"strLenderCharID", &RentalItemBinder::BindLenderCharId},
+				{"strLenderAcID", &RentalItemBinder::BindLenderAccountId},
+				{"strBorrowerCharID", &RentalItemBinder::BindBorrowerCharId},
+				{"strBorrowerAcID", &RentalItemBinder::BindBorrowerAccountId},
+				{"timeLender", &RentalItemBinder::BindLendTime},
+				{"timeRegister", &RentalItemBinder::BindRegisterTime}
 			};
 			return bindingsMap;
 		}

@@ -24,17 +24,17 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sIndex", &MonsterItemTest::BindIndex},
-				{"iItem01", &MonsterItemTest::BindItem1},
-				{"sPersent01", &MonsterItemTest::BindPercent1},
-				{"iItem02", &MonsterItemTest::BindItem2},
-				{"sPersent02", &MonsterItemTest::BindPercent2},
-				{"iItem03", &MonsterItemTest::BindItem3},
-				{"sPersent03", &MonsterItemTest::BindPercent3},
-				{"iItem04", &MonsterItemTest::BindItem4},
-				{"sPersent04", &MonsterItemTest::BindPercent4},
-				{"iItem05", &MonsterItemTest::BindItem5},
-				{"sPersent05", &MonsterItemTest::BindPercent5}
+				{"sIndex", &MonsterItemTestBinder::BindIndex},
+				{"iItem01", &MonsterItemTestBinder::BindItem1},
+				{"sPersent01", &MonsterItemTestBinder::BindPercent1},
+				{"iItem02", &MonsterItemTestBinder::BindItem2},
+				{"sPersent02", &MonsterItemTestBinder::BindPercent2},
+				{"iItem03", &MonsterItemTestBinder::BindItem3},
+				{"sPersent03", &MonsterItemTestBinder::BindPercent3},
+				{"iItem04", &MonsterItemTestBinder::BindItem4},
+				{"sPersent04", &MonsterItemTestBinder::BindPercent4},
+				{"iItem05", &MonsterItemTestBinder::BindItem5},
+				{"sPersent05", &MonsterItemTestBinder::BindPercent5}
 			};
 			return bindingsMap;
 		}

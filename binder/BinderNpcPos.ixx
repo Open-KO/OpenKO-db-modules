@@ -24,26 +24,26 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"ZoneID", &NpcPos::BindZoneId},
-				{"NpcID", &NpcPos::BindNpcId},
-				{"ActType", &NpcPos::BindActType},
-				{"RegenType", &NpcPos::BindRegenType},
-				{"DungeonFamily", &NpcPos::BindDungeonFamily},
-				{"SpecialType", &NpcPos::BindSpecialType},
-				{"TrapNumber", &NpcPos::BindTrapNumber},
-				{"LeftX", &NpcPos::BindLeftX},
-				{"TopZ", &NpcPos::BindTopZ},
-				{"RightX", &NpcPos::BindRightX},
-				{"BottomZ", &NpcPos::BindBottomZ},
-				{"LimitMinZ", &NpcPos::BindLimitMinZ},
-				{"LimitMinX", &NpcPos::BindLimitMinX},
-				{"LimitMaxX", &NpcPos::BindLimitMaxX},
-				{"LimitMaxZ", &NpcPos::BindLimitMaxZ},
-				{"NumNPC", &NpcPos::BindNumNpc},
-				{"RegTime", &NpcPos::BindRespawnTime},
-				{"byDirection", &NpcPos::BindDirection},
-				{"DotCnt", &NpcPos::BindDotCount},
-				{"path", &NpcPos::BindPath}
+				{"ZoneID", &NpcPosBinder::BindZoneId},
+				{"NpcID", &NpcPosBinder::BindNpcId},
+				{"ActType", &NpcPosBinder::BindActType},
+				{"RegenType", &NpcPosBinder::BindRegenType},
+				{"DungeonFamily", &NpcPosBinder::BindDungeonFamily},
+				{"SpecialType", &NpcPosBinder::BindSpecialType},
+				{"TrapNumber", &NpcPosBinder::BindTrapNumber},
+				{"LeftX", &NpcPosBinder::BindLeftX},
+				{"TopZ", &NpcPosBinder::BindTopZ},
+				{"RightX", &NpcPosBinder::BindRightX},
+				{"BottomZ", &NpcPosBinder::BindBottomZ},
+				{"LimitMinZ", &NpcPosBinder::BindLimitMinZ},
+				{"LimitMinX", &NpcPosBinder::BindLimitMinX},
+				{"LimitMaxX", &NpcPosBinder::BindLimitMaxX},
+				{"LimitMaxZ", &NpcPosBinder::BindLimitMaxZ},
+				{"NumNPC", &NpcPosBinder::BindNumNpc},
+				{"RegTime", &NpcPosBinder::BindRespawnTime},
+				{"byDirection", &NpcPosBinder::BindDirection},
+				{"DotCnt", &NpcPosBinder::BindDotCount},
+				{"path", &NpcPosBinder::BindPath}
 			};
 			return bindingsMap;
 		}

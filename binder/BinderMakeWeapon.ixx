@@ -24,19 +24,19 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"byLevel", &MakeWeapon::BindLevel},
-				{"sClass_1", &MakeWeapon::BindClass1},
-				{"sClass_2", &MakeWeapon::BindClass2},
-				{"sClass_3", &MakeWeapon::BindClass3},
-				{"sClass_4", &MakeWeapon::BindClass4},
-				{"sClass_5", &MakeWeapon::BindClass5},
-				{"sClass_6", &MakeWeapon::BindClass6},
-				{"sClass_7", &MakeWeapon::BindClass7},
-				{"sClass_8", &MakeWeapon::BindClass8},
-				{"sClass_9", &MakeWeapon::BindClass9},
-				{"sClass_10", &MakeWeapon::BindClass10},
-				{"sClass_11", &MakeWeapon::BindClass11},
-				{"sClass_12", &MakeWeapon::BindClass12}
+				{"byLevel", &MakeWeaponBinder::BindLevel},
+				{"sClass_1", &MakeWeaponBinder::BindClass1},
+				{"sClass_2", &MakeWeaponBinder::BindClass2},
+				{"sClass_3", &MakeWeaponBinder::BindClass3},
+				{"sClass_4", &MakeWeaponBinder::BindClass4},
+				{"sClass_5", &MakeWeaponBinder::BindClass5},
+				{"sClass_6", &MakeWeaponBinder::BindClass6},
+				{"sClass_7", &MakeWeaponBinder::BindClass7},
+				{"sClass_8", &MakeWeaponBinder::BindClass8},
+				{"sClass_9", &MakeWeaponBinder::BindClass9},
+				{"sClass_10", &MakeWeaponBinder::BindClass10},
+				{"sClass_11", &MakeWeaponBinder::BindClass11},
+				{"sClass_12", &MakeWeaponBinder::BindClass12}
 			};
 			return bindingsMap;
 		}

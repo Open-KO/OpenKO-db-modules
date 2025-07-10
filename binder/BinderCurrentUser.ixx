@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nServerNo", &CurrentUser::BindServerNumber},
-				{"strServerIP", &CurrentUser::BindServerIP},
-				{"strAccountID", &CurrentUser::BindAccountId},
-				{"strCharID", &CurrentUser::BindCharId},
-				{"strClientIP", &CurrentUser::BindClientIP}
+				{"nServerNo", &CurrentUserBinder::BindServerNumber},
+				{"strServerIP", &CurrentUserBinder::BindServerIP},
+				{"strAccountID", &CurrentUserBinder::BindAccountId},
+				{"strCharID", &CurrentUserBinder::BindCharId},
+				{"strClientIP", &CurrentUserBinder::BindClientIP}
 			};
 			return bindingsMap;
 		}

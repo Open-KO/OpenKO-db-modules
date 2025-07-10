@@ -24,18 +24,18 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nRank", &UserPersonalRank::BindRank},
-				{"strPosition", &UserPersonalRank::BindPosition},
-				{"nElmoUP", &UserPersonalRank::BindElmoUp},
-				{"strElmoUserID", &UserPersonalRank::BindElmoUserId},
-				{"nElmoLoyaltyMonthly", &UserPersonalRank::BindElmoLoyaltyMonthly},
-				{"nElmoCheck", &UserPersonalRank::BindElmoCheck},
-				{"nKarusUP", &UserPersonalRank::BindKarusUp},
-				{"strKarusUserID", &UserPersonalRank::BindKarusUserId},
-				{"nKarusLoyaltyMonthly", &UserPersonalRank::BindKarusLoyaltyMonthly},
-				{"nKarusCheck", &UserPersonalRank::BindKarusCheck},
-				{"nSalary", &UserPersonalRank::BindSalary},
-				{"UpdateDate", &UserPersonalRank::BindUpdateDate}
+				{"nRank", &UserPersonalRankBinder::BindRank},
+				{"strPosition", &UserPersonalRankBinder::BindPosition},
+				{"nElmoUP", &UserPersonalRankBinder::BindElmoUp},
+				{"strElmoUserID", &UserPersonalRankBinder::BindElmoUserId},
+				{"nElmoLoyaltyMonthly", &UserPersonalRankBinder::BindElmoLoyaltyMonthly},
+				{"nElmoCheck", &UserPersonalRankBinder::BindElmoCheck},
+				{"nKarusUP", &UserPersonalRankBinder::BindKarusUp},
+				{"strKarusUserID", &UserPersonalRankBinder::BindKarusUserId},
+				{"nKarusLoyaltyMonthly", &UserPersonalRankBinder::BindKarusLoyaltyMonthly},
+				{"nKarusCheck", &UserPersonalRankBinder::BindKarusCheck},
+				{"nSalary", &UserPersonalRankBinder::BindSalary},
+				{"UpdateDate", &UserPersonalRankBinder::BindUpdateDate}
 			};
 			return bindingsMap;
 		}

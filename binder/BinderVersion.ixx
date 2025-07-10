@@ -24,10 +24,10 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sVersion", &Version::BindNumber},
-				{"strFileName", &Version::BindFileName},
-				{"strCompressName", &Version::BindCompressName},
-				{"sHistoryVersion", &Version::BindHistoryVersion}
+				{"sVersion", &VersionBinder::BindNumber},
+				{"strFileName", &VersionBinder::BindFileName},
+				{"strCompressName", &VersionBinder::BindCompressName},
+				{"sHistoryVersion", &VersionBinder::BindHistoryVersion}
 			};
 			return bindingsMap;
 		}

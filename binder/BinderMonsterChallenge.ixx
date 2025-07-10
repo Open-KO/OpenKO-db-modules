@@ -24,12 +24,12 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sIndex", &MonsterChallenge::BindIndex},
-				{"bStartTime1", &MonsterChallenge::BindStartTime1},
-				{"bStartTime2", &MonsterChallenge::BindStartTime2},
-				{"bStartTime3", &MonsterChallenge::BindStartTime3},
-				{"bLevelMin", &MonsterChallenge::BindLevelMin},
-				{"bLevelMax", &MonsterChallenge::BindLevelMax}
+				{"sIndex", &MonsterChallengeBinder::BindIndex},
+				{"bStartTime1", &MonsterChallengeBinder::BindStartTime1},
+				{"bStartTime2", &MonsterChallengeBinder::BindStartTime2},
+				{"bStartTime3", &MonsterChallengeBinder::BindStartTime3},
+				{"bLevelMin", &MonsterChallengeBinder::BindLevelMin},
+				{"bLevelMax", &MonsterChallengeBinder::BindLevelMax}
 			};
 			return bindingsMap;
 		}

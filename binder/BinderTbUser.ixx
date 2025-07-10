@@ -24,12 +24,12 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"strAccountID", &TbUser::BindAccountId},
-				{"strPasswd", &TbUser::BindPassword},
-				{"strSocNo", &TbUser::BindSocNo},
-				{"strEmail", &TbUser::BindEmail},
-				{"strAuthority", &TbUser::BindAuthority},
-				{"PremiumExpire", &TbUser::BindPremiumExpire}
+				{"strAccountID", &TbUserBinder::BindAccountId},
+				{"strPasswd", &TbUserBinder::BindPassword},
+				{"strSocNo", &TbUserBinder::BindSocNo},
+				{"strEmail", &TbUserBinder::BindEmail},
+				{"strAuthority", &TbUserBinder::BindAuthority},
+				{"PremiumExpire", &TbUserBinder::BindPremiumExpire}
 			};
 			return bindingsMap;
 		}

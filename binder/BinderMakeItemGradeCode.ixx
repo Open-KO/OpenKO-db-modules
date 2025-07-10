@@ -24,16 +24,16 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"byItemIndex", &MakeItemGradeCode::BindItemIndex},
-				{"byGrade_1", &MakeItemGradeCode::BindGrade1},
-				{"byGrade_2", &MakeItemGradeCode::BindGrade2},
-				{"byGrade_3", &MakeItemGradeCode::BindGrade3},
-				{"byGrade_4", &MakeItemGradeCode::BindGrade4},
-				{"byGrade_5", &MakeItemGradeCode::BindGrade5},
-				{"byGrade_6", &MakeItemGradeCode::BindGrade6},
-				{"byGrade_7", &MakeItemGradeCode::BindGrade7},
-				{"byGrade_8", &MakeItemGradeCode::BindGrade8},
-				{"byGrade_9", &MakeItemGradeCode::BindGrade9}
+				{"byItemIndex", &MakeItemGradeCodeBinder::BindItemIndex},
+				{"byGrade_1", &MakeItemGradeCodeBinder::BindGrade1},
+				{"byGrade_2", &MakeItemGradeCodeBinder::BindGrade2},
+				{"byGrade_3", &MakeItemGradeCodeBinder::BindGrade3},
+				{"byGrade_4", &MakeItemGradeCodeBinder::BindGrade4},
+				{"byGrade_5", &MakeItemGradeCodeBinder::BindGrade5},
+				{"byGrade_6", &MakeItemGradeCodeBinder::BindGrade6},
+				{"byGrade_7", &MakeItemGradeCodeBinder::BindGrade7},
+				{"byGrade_8", &MakeItemGradeCodeBinder::BindGrade8},
+				{"byGrade_9", &MakeItemGradeCodeBinder::BindGrade9}
 			};
 			return bindingsMap;
 		}

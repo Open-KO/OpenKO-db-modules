@@ -24,17 +24,17 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sIndex", &NpcItem::BindNpcId},
-				{"iItem01", &NpcItem::BindItemId1},
-				{"sPersent01", &NpcItem::BindDropChance1},
-				{"iItem02", &NpcItem::BindItemId2},
-				{"sPersent02", &NpcItem::BindDropChance2},
-				{"iItem03", &NpcItem::BindItemId3},
-				{"sPersent03", &NpcItem::BindDropChance3},
-				{"iItem04", &NpcItem::BindItemId4},
-				{"sPersent04", &NpcItem::BindDropChance4},
-				{"iItem05", &NpcItem::BindItemId5},
-				{"sPersent05", &NpcItem::BindDropChance5}
+				{"sIndex", &NpcItemBinder::BindNpcId},
+				{"iItem01", &NpcItemBinder::BindItemId1},
+				{"sPersent01", &NpcItemBinder::BindDropChance1},
+				{"iItem02", &NpcItemBinder::BindItemId2},
+				{"sPersent02", &NpcItemBinder::BindDropChance2},
+				{"iItem03", &NpcItemBinder::BindItemId3},
+				{"sPersent03", &NpcItemBinder::BindDropChance3},
+				{"iItem04", &NpcItemBinder::BindItemId4},
+				{"sPersent04", &NpcItemBinder::BindDropChance4},
+				{"iItem05", &NpcItemBinder::BindItemId5},
+				{"sPersent05", &NpcItemBinder::BindDropChance5}
 			};
 			return bindingsMap;
 		}

@@ -24,11 +24,11 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sSid", &MonsterSummonList::BindMonsterId},
-				{"strName", &MonsterSummonList::BindName},
-				{"sLevel", &MonsterSummonList::BindLevel},
-				{"sProbability", &MonsterSummonList::BindProbability},
-				{"bType", &MonsterSummonList::BindType}
+				{"sSid", &MonsterSummonListBinder::BindMonsterId},
+				{"strName", &MonsterSummonListBinder::BindName},
+				{"sLevel", &MonsterSummonListBinder::BindLevel},
+				{"sProbability", &MonsterSummonListBinder::BindProbability},
+				{"bType", &MonsterSummonListBinder::BindType}
 			};
 			return bindingsMap;
 		}

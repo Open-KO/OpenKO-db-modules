@@ -24,24 +24,24 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sIndex", &Battle::BindIndex},
-				{"byNation", &Battle::BindNation},
-				{"strUserName", &Battle::BindUserName},
-				{"byElmoArea", &Battle::BindElmoArea},
-				{"byKarusArea", &Battle::BindKarusArea},
-				{"byElmoAdvantage", &Battle::BindElmoAdvantage},
-				{"byKarusAdvantage", &Battle::BindKarusAdvantage},
-				{"byArea_1", &Battle::BindArea1},
-				{"byArea_2", &Battle::BindArea2},
-				{"byArea_3", &Battle::BindArea3},
-				{"byArea_4", &Battle::BindArea4},
-				{"byArea_5", &Battle::BindArea5},
-				{"byArea_6", &Battle::BindArea6},
-				{"byArea_7", &Battle::BindArea7},
-				{"byArea_8", &Battle::BindArea8},
-				{"byArea_9", &Battle::BindArea9},
-				{"byArea_10", &Battle::BindArea10},
-				{"byArea_11", &Battle::BindArea11}
+				{"sIndex", &BattleBinder::BindIndex},
+				{"byNation", &BattleBinder::BindNation},
+				{"strUserName", &BattleBinder::BindUserName},
+				{"byElmoArea", &BattleBinder::BindElmoArea},
+				{"byKarusArea", &BattleBinder::BindKarusArea},
+				{"byElmoAdvantage", &BattleBinder::BindElmoAdvantage},
+				{"byKarusAdvantage", &BattleBinder::BindKarusAdvantage},
+				{"byArea_1", &BattleBinder::BindArea1},
+				{"byArea_2", &BattleBinder::BindArea2},
+				{"byArea_3", &BattleBinder::BindArea3},
+				{"byArea_4", &BattleBinder::BindArea4},
+				{"byArea_5", &BattleBinder::BindArea5},
+				{"byArea_6", &BattleBinder::BindArea6},
+				{"byArea_7", &BattleBinder::BindArea7},
+				{"byArea_8", &BattleBinder::BindArea8},
+				{"byArea_9", &BattleBinder::BindArea9},
+				{"byArea_10", &BattleBinder::BindArea10},
+				{"byArea_11", &BattleBinder::BindArea11}
 			};
 			return bindingsMap;
 		}

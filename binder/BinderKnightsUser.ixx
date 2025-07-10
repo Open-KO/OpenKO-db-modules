@@ -24,8 +24,8 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"sIDNum", &KnightsUser::BindKnightsId},
-				{"strUserID", &KnightsUser::BindUserId}
+				{"sIDNum", &KnightsUserBinder::BindKnightsId},
+				{"strUserID", &KnightsUserBinder::BindUserId}
 			};
 			return bindingsMap;
 		}

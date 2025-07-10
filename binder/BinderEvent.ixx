@@ -24,19 +24,19 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"ZoneNum", &Event::BindZoneNumber},
-				{"EventNum", &Event::BindEventNumber},
-				{"Type", &Event::BindEventType},
-				{"Cond1", &Event::BindCondition1},
-				{"Cond2", &Event::BindCondition2},
-				{"Cond3", &Event::BindCondition3},
-				{"Cond4", &Event::BindCondition4},
-				{"Cond5", &Event::BindCondition5},
-				{"Exec1", &Event::BindExecute1},
-				{"Exec2", &Event::BindExecute2},
-				{"Exec3", &Event::BindExecute3},
-				{"Exec4", &Event::BindExecute4},
-				{"Exec5", &Event::BindExecute5}
+				{"ZoneNum", &EventBinder::BindZoneNumber},
+				{"EventNum", &EventBinder::BindEventNumber},
+				{"Type", &EventBinder::BindEventType},
+				{"Cond1", &EventBinder::BindCondition1},
+				{"Cond2", &EventBinder::BindCondition2},
+				{"Cond3", &EventBinder::BindCondition3},
+				{"Cond4", &EventBinder::BindCondition4},
+				{"Cond5", &EventBinder::BindCondition5},
+				{"Exec1", &EventBinder::BindExecute1},
+				{"Exec2", &EventBinder::BindExecute2},
+				{"Exec3", &EventBinder::BindExecute3},
+				{"Exec4", &EventBinder::BindExecute4},
+				{"Exec5", &EventBinder::BindExecute5}
 			};
 			return bindingsMap;
 		}

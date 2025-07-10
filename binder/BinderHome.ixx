@@ -24,27 +24,27 @@ namespace binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"Nation", &Home::BindNation},
-				{"ElmoZoneX", &Home::BindElmoZoneX},
-				{"ElmoZoneZ", &Home::BindElmoZoneZ},
-				{"ElmoZoneLX", &Home::BindElmoZoneLX},
-				{"ElmoZoneLZ", &Home::BindElmoZoneLZ},
-				{"KarusZoneX", &Home::BindKarusZoneX},
-				{"KarusZoneZ", &Home::BindKarusZoneZ},
-				{"KarusZoneLX", &Home::BindKarusZoneLX},
-				{"KarusZoneLZ", &Home::BindKarusZoneLZ},
-				{"FreeZoneX", &Home::BindFreeZoneX},
-				{"FreeZoneZ", &Home::BindFreeZoneZ},
-				{"FreeZoneLX", &Home::BindFreeZoneLX},
-				{"FreeZoneLZ", &Home::BindFreeZoneLZ},
-				{"BattleZoneX", &Home::BindBattleZoneX},
-				{"BattleZoneZ", &Home::BindBattleZoneZ},
-				{"BattleZoneLX", &Home::BindBattleZoneLX},
-				{"BattleZoneLZ", &Home::BindBattleZoneLZ},
-				{"BattleZone2X", &Home::BindBattleZone2X},
-				{"BattleZone2Z", &Home::BindBattleZone2Z},
-				{"BattleZone2LX", &Home::BindBattleZone2LX},
-				{"BattleZone2LZ", &Home::BindBattleZone2LZ}
+				{"Nation", &HomeBinder::BindNation},
+				{"ElmoZoneX", &HomeBinder::BindElmoZoneX},
+				{"ElmoZoneZ", &HomeBinder::BindElmoZoneZ},
+				{"ElmoZoneLX", &HomeBinder::BindElmoZoneLX},
+				{"ElmoZoneLZ", &HomeBinder::BindElmoZoneLZ},
+				{"KarusZoneX", &HomeBinder::BindKarusZoneX},
+				{"KarusZoneZ", &HomeBinder::BindKarusZoneZ},
+				{"KarusZoneLX", &HomeBinder::BindKarusZoneLX},
+				{"KarusZoneLZ", &HomeBinder::BindKarusZoneLZ},
+				{"FreeZoneX", &HomeBinder::BindFreeZoneX},
+				{"FreeZoneZ", &HomeBinder::BindFreeZoneZ},
+				{"FreeZoneLX", &HomeBinder::BindFreeZoneLX},
+				{"FreeZoneLZ", &HomeBinder::BindFreeZoneLZ},
+				{"BattleZoneX", &HomeBinder::BindBattleZoneX},
+				{"BattleZoneZ", &HomeBinder::BindBattleZoneZ},
+				{"BattleZoneLX", &HomeBinder::BindBattleZoneLX},
+				{"BattleZoneLZ", &HomeBinder::BindBattleZoneLZ},
+				{"BattleZone2X", &HomeBinder::BindBattleZone2X},
+				{"BattleZone2Z", &HomeBinder::BindBattleZone2Z},
+				{"BattleZone2LX", &HomeBinder::BindBattleZone2LX},
+				{"BattleZone2LZ", &HomeBinder::BindBattleZone2LZ}
 			};
 			return bindingsMap;
 		}
