@@ -1,4 +1,4 @@
-name: Doxygen GitHub Pages Deploy Action
+name: Doxygenize Action
 on:
   push:
     branches:
@@ -10,9 +10,12 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: DenverCoder1/doxygen-github-pages-action@v2.0.0
+      - uses: actions/checkout@v3
+      - name: Doxygenize
+        uses: langroodi/doxygenize@v1.7.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: doxygen_out
-          folder: .
-          config_file: Doxyfile
+          doxygenconf: './Doxyfile'
+          htmloutput: './docs'
+          ghpagesbranch: 'doxygen_out'
+          ghpagesdir: './docs/'
+          darkmode: 'true'
