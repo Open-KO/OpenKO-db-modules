@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['javadoc_5ftest_0',['Javadoc_Test',['../classJavadoc__Test.html',1,'']]]
+  ['levelup_0',['LevelUp',['../classmodel_1_1LevelUp.html',1,'model::LevelUp'],['../classmodel__binder_1_1LevelUp.html',1,'model_binder::LevelUp']]]
 ];

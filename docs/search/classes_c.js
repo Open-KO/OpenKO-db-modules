@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['npc_0',['Npc',['../classmodel_1_1Npc.html',1,'model::Npc'],['../classmodel__binder_1_1Npc.html',1,'model_binder::Npc']]],
-  ['npcitem_1',['NpcItem',['../classmodel_1_1NpcItem.html',1,'model::NpcItem'],['../classmodel__binder_1_1NpcItem.html',1,'model_binder::NpcItem']]],
-  ['npcmoveitem_2',['NpcMoveItem',['../classmodel_1_1NpcMoveItem.html',1,'model::NpcMoveItem'],['../classmodel__binder_1_1NpcMoveItem.html',1,'model_binder::NpcMoveItem']]],
-  ['npcpos_3',['NpcPos',['../classmodel_1_1NpcPos.html',1,'model::NpcPos'],['../classmodel__binder_1_1NpcPos.html',1,'model_binder::NpcPos']]]
+  ['rentalitem_0',['RentalItem',['../classmodel_1_1RentalItem.html',1,'model::RentalItem'],['../classmodel__binder_1_1RentalItem.html',1,'model_binder::RentalItem']]],
+  ['rentalitemlist_1',['RentalItemList',['../classmodel_1_1RentalItemList.html',1,'model::RentalItemList'],['../classmodel__binder_1_1RentalItemList.html',1,'model_binder::RentalItemList']]]
 ];

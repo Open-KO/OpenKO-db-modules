@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['fn_5ftest_0',['Fn_Test',['../classFn__Test.html',1,'']]],
-  ['friendlist_1',['FriendList',['../classmodel_1_1FriendList.html',1,'model::FriendList'],['../classmodel__binder_1_1FriendList.html',1,'model_binder::FriendList']]]
+  ['hacktooluserlog_0',['HacktoolUserLog',['../classmodel_1_1HacktoolUserLog.html',1,'model::HacktoolUserLog'],['../classmodel__binder_1_1HacktoolUserLog.html',1,'model_binder::HacktoolUserLog']]],
+  ['herouser_1',['HeroUser',['../classmodel_1_1HeroUser.html',1,'model::HeroUser'],['../classmodel__binder_1_1HeroUser.html',1,'model_binder::HeroUser']]],
+  ['home_2',['Home',['../classmodel_1_1Home.html',1,'model::Home'],['../classmodel__binder_1_1Home.html',1,'model_binder::Home']]]
 ];

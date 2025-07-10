@@ -1,24 +1,10 @@
 var searchData=
 [
-  ['walkspeed_0',['WalkSpeed',['../classmodel_1_1Monster.html#a0363776a2a0161cd5941af54450dd9b5',1,'model::Monster::WalkSpeed()'],['../classmodel_1_1Npc.html#aaff2afd84fc445c82a1a94f2e6354646',1,'model::Npc::WalkSpeed()']]],
-  ['warday_1',['WarDay',['../classmodel_1_1KnightsSiegeWarfare.html#ac0748f45be8cfaca611466ae216b9a1f',1,'model::KnightsSiegeWarfare']]],
-  ['warehouse_2',['Warehouse',['../classmodel_1_1Warehouse.html',1,'model::Warehouse'],['../classmodel__binder_1_1Warehouse.html',1,'model_binder::Warehouse']]],
-  ['warenemyid_3',['WarEnemyId',['../classmodel_1_1Knights.html#a997b389ef05b16fbd0f7ecebbd488d74',1,'model::Knights']]],
-  ['warhour_4',['WarHour',['../classmodel_1_1KnightsSiegeWarfare.html#acc90381cb1c78837aad763f413af2bc5',1,'model::KnightsSiegeWarfare']]],
-  ['warminute_5',['WarMinute',['../classmodel_1_1KnightsSiegeWarfare.html#af762e19cdb07e33e3275cc6c239fbbc8',1,'model::KnightsSiegeWarfare']]],
-  ['warptype_6',['WarpType',['../classmodel_1_1MagicType8.html#a6c1e86fcd5a939623768581de9421355',1,'model::MagicType8']]],
-  ['warrequestday_7',['WarRequestDay',['../classmodel_1_1KnightsSiegeWarfare.html#aa4d4fb962c5faf5d4cc5905940478e11',1,'model::KnightsSiegeWarfare']]],
-  ['warrequestminute_8',['WarRequestMinute',['../classmodel_1_1KnightsSiegeWarfare.html#aaa220576b42fd26642362548a3251178',1,'model::KnightsSiegeWarfare']]],
-  ['warrequesttime_9',['WarRequestTime',['../classmodel_1_1KnightsSiegeWarfare.html#a88064e46017caa403b62d8900b50651f',1,'model::KnightsSiegeWarfare']]],
-  ['weapon1_10',['Weapon1',['../classmodel_1_1Monster.html#a94379d1e43fa84d6932b56b1944f7cbc',1,'model::Monster::Weapon1()'],['../classmodel_1_1Npc.html#aca9cee9ee802e8cff79763e7ee8fef78',1,'model::Npc::Weapon1()']]],
-  ['weapon2_11',['Weapon2',['../classmodel_1_1Monster.html#ace3e372d8030126d25652c5094c75212',1,'model::Monster::Weapon2()'],['../classmodel_1_1Npc.html#a75a7364e68bbbbc1d2a32095af712f12',1,'model::Npc::Weapon2()']]],
-  ['weaponenchant_12',['WeaponEnchant',['../classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca59baac9e19ed966c644a04cd9acaba22',1,'model::MagicType4']]],
-  ['webitemmall_13',['WebItemMall',['../classmodel_1_1WebItemMall.html',1,'model::WebItemMall'],['../classmodel__binder_1_1WebItemMall.html',1,'model_binder::WebItemMall']]],
-  ['webitemmalllog_14',['WebItemMallLog',['../classmodel_1_1WebItemMallLog.html',1,'model::WebItemMallLog'],['../classmodel__binder_1_1WebItemMallLog.html',1,'model_binder::WebItemMallLog']]],
-  ['webpageaddress_15',['WebpageAddress',['../classmodel_1_1WebpageAddress.html',1,'model::WebpageAddress'],['../classmodel__binder_1_1WebpageAddress.html',1,'model_binder::WebpageAddress']]],
-  ['webpageaddress_16',['WebPageAddress',['../classmodel_1_1WebpageAddress.html#a8e656c520794989add2b584635c6ea0e',1,'model::WebpageAddress']]],
-  ['weight_17',['Weight',['../classaujard_1_1Item.html#ac8ae326182f58d6895ff5241edb9df3f',1,'aujard::Item::Weight()'],['../classebenezer_1_1Item.html#a3e8e979f78637d9c633346b12a58aac9',1,'ebenezer::Item::Weight()'],['../classmodel_1_1Item.html#a1eade0c7be251381800d8cf3398bef6a',1,'model::Item::Weight()'],['../classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca8c489d0946f66d17d73f26366a4bf620',1,'model::MagicType4::Weight()']]],
-  ['wrinkletuarek_18',['WrinkleTuarek',['../classmodel_1_1UserData.html#acc0bfdbb72eede74639c39397ff1cee8a34a1e71c1132011d59b0b0340b4842ca',1,'model::UserData']]],
-  ['write_19',['write',['../structcmd_8h.html#af2a3ea719b83f672637febdd87c36c36',1,'structcmd.h']]],
-  ['writetime_20',['WriteTime',['../classmodel_1_1HacktoolUserLog.html#a3df61191c630f0d200a158e231b0cad4',1,'model::HacktoolUserLog::WriteTime()'],['../classmodel_1_1ProgramListLog.html#a369ba064d78eb9f83780f79d541f27cc',1,'model::ProgramListLog::WriteTime()']]]
+  ['zone_0',['Zone',['../classmodel_1_1UserData.html#a18947d4ab7c8bab7f50972cf5fd6d8c5',1,'model::UserData']]],
+  ['zone1count_1',['Zone1Count',['../classmodel_1_1Concurrent.html#ac5864940ceb8011298e111ab16527442',1,'model::Concurrent']]],
+  ['zone2count_2',['Zone2Count',['../classmodel_1_1Concurrent.html#a721376c82ae5d3631f1a833efaad19ef',1,'model::Concurrent']]],
+  ['zone3count_3',['Zone3Count',['../classmodel_1_1Concurrent.html#a740079d7f122e2574d47f24d4658e2f8',1,'model::Concurrent']]],
+  ['zoneid_4',['ZoneId',['../classmodel_1_1NpcPos.html#a517c4f4158bd16f91210cdeef2fb113b',1,'model::NpcPos::ZoneId()'],['../classmodel_1_1StartPosition.html#a5f9ce2540686065812cf7a76984a2370',1,'model::StartPosition::ZoneId()'],['../classmodel_1_1ZoneInfo.html#a7f998ab551b555997a406481dc74b0be',1,'model::ZoneInfo::ZoneId()']]],
+  ['zoneinfo_5',['ZoneInfo',['../classmodel_1_1ZoneInfo.html',1,'model::ZoneInfo'],['../classmodel__binder_1_1ZoneInfo.html',1,'model_binder::ZoneInfo']]],
+  ['zonenumber_6',['ZoneNumber',['../classmodel_1_1Event.html#a82d397eac5d27d2818161c2477be012b',1,'model::Event']]]
 ];

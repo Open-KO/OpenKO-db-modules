@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['include_5ftest_0',['Include_Test',['../classInclude__Test.html',1,'']]],
-  ['item_1',['Item',['../classaujard_1_1Item.html',1,'aujard::Item'],['../classaujard__binder_1_1Item.html',1,'aujard_binder::Item'],['../classebenezer_1_1Item.html',1,'ebenezer::Item'],['../classebenezer__binder_1_1Item.html',1,'ebenezer_binder::Item'],['../classmodel_1_1Item.html',1,'model::Item'],['../classmodel__binder_1_1Item.html',1,'model_binder::Item']]],
-  ['itemexchange_2',['ItemExchange',['../classmodel_1_1ItemExchange.html',1,'model::ItemExchange'],['../classmodel__binder_1_1ItemExchange.html',1,'model_binder::ItemExchange']]],
-  ['itemgroup_3',['ItemGroup',['../classmodel_1_1ItemGroup.html',1,'model::ItemGroup'],['../classmodel__binder_1_1ItemGroup.html',1,'model_binder::ItemGroup']]],
-  ['itemupgrade_4',['ItemUpgrade',['../classmodel_1_1ItemUpgrade.html',1,'model::ItemUpgrade'],['../classmodel__binder_1_1ItemUpgrade.html',1,'model_binder::ItemUpgrade']]],
-  ['itemupprobability_5',['ItemUpProbability',['../classmodel_1_1ItemUpProbability.html',1,'model::ItemUpProbability'],['../classmodel__binder_1_1ItemUpProbability.html',1,'model_binder::ItemUpProbability']]]
+  ['kingballotbox_0',['KingBallotBox',['../classmodel_1_1KingBallotBox.html',1,'model::KingBallotBox'],['../classmodel__binder_1_1KingBallotBox.html',1,'model_binder::KingBallotBox']]],
+  ['kingcandidacynoticeboard_1',['KingCandidacyNoticeBoard',['../classmodel_1_1KingCandidacyNoticeBoard.html',1,'model::KingCandidacyNoticeBoard'],['../classmodel__binder_1_1KingCandidacyNoticeBoard.html',1,'model_binder::KingCandidacyNoticeBoard']]],
+  ['kingelectionlist_2',['KingElectionList',['../classmodel_1_1KingElectionList.html',1,'model::KingElectionList'],['../classmodel__binder_1_1KingElectionList.html',1,'model_binder::KingElectionList']]],
+  ['kingsystem_3',['KingSystem',['../classmodel_1_1KingSystem.html',1,'model::KingSystem'],['../classmodel__binder_1_1KingSystem.html',1,'model_binder::KingSystem']]],
+  ['knights_4',['Knights',['../classmodel_1_1Knights.html',1,'model::Knights'],['../classmodel__binder_1_1Knights.html',1,'model_binder::Knights']]],
+  ['knightsalliance_5',['KnightsAlliance',['../classmodel_1_1KnightsAlliance.html',1,'model::KnightsAlliance'],['../classmodel__binder_1_1KnightsAlliance.html',1,'model_binder::KnightsAlliance']]],
+  ['knightscape_6',['KnightsCape',['../classmodel_1_1KnightsCape.html',1,'model::KnightsCape'],['../classmodel__binder_1_1KnightsCape.html',1,'model_binder::KnightsCape']]],
+  ['knightsrating_7',['KnightsRating',['../classmodel_1_1KnightsRating.html',1,'model::KnightsRating'],['../classmodel__binder_1_1KnightsRating.html',1,'model_binder::KnightsRating']]],
+  ['knightssiegewarfare_8',['KnightsSiegeWarfare',['../classmodel_1_1KnightsSiegeWarfare.html',1,'model::KnightsSiegeWarfare'],['../classmodel__binder_1_1KnightsSiegeWarfare.html',1,'model_binder::KnightsSiegeWarfare']]],
+  ['knightsuser_9',['KnightsUser',['../classmodel_1_1KnightsUser.html',1,'model::KnightsUser'],['../classmodel__binder_1_1KnightsUser.html',1,'model_binder::KnightsUser']]]
 ];
