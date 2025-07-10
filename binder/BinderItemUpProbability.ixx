@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::ItemUpProbability
-	export class ItemUpProbability
+	/// \brief generated nanodbc column binder for model::BinderItemUpProbability
+	export class ItemUpProbabilityBinder
 	{
 	/// \publicsection
 	public:

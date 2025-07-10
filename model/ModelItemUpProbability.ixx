@@ -8,19 +8,17 @@ export module Model:ItemUpProbability;
 
 namespace binder
 {
-	export class ItemUpProbability;
+	export class ItemUpProbabilityBinder;
 }
 
 namespace model
 {
-	/// \brief [ITEMUP_PROBABILITY] TODO: Doc usage
-	/// \class ItemUpProbability
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEMUP_PROBABILITY TODO: Doc usage
+
 	export class ItemUpProbability 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::ItemUpProbability;
+		using BinderType = binder::ItemUpProbabilityBinder;
 
 		/// \brief Column [bType]: Type
 		///

@@ -9,19 +9,17 @@ export module Model:ItemUpgrade;
 
 namespace binder
 {
-	export class ItemUpgrade;
+	export class ItemUpgradeBinder;
 }
 
 namespace model
 {
-	/// \brief [ITEM_UPGRADE] Item upgrade configuration
-	/// \class ItemUpgrade
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_UPGRADE Item upgrade configuration
+
 	export class ItemUpgrade 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::ItemUpgrade;
+		using BinderType = binder::ItemUpgradeBinder;
 
 		/// \brief Column [nIndex]: Index
 		///

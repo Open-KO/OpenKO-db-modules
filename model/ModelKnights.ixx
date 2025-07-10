@@ -10,19 +10,17 @@ export module Model:Knights;
 
 namespace binder
 {
-	export class Knights;
+	export class KnightsBinder;
 }
 
 namespace model
 {
-	/// \brief [KNIGHTS] Knights are the clan/guild system of the game
-	/// \class Knights
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS Knights are the clan/guild system of the game
+
 	export class Knights 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Knights;
+		using BinderType = binder::KnightsBinder;
 
 		/// \brief Column [IDNum]: Identification number
 		///

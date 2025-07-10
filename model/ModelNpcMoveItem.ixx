@@ -9,19 +9,17 @@ export module Model:NpcMoveItem;
 
 namespace binder
 {
-	export class NpcMoveItem;
+	export class NpcMoveItemBinder;
 }
 
 namespace model
 {
-	/// \brief [K_NPC_MOVE_ITEM] NPC Move Item: TODO
-	/// \class NpcMoveItem
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC_MOVE_ITEM NPC Move Item: TODO
+
 	export class NpcMoveItem 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::NpcMoveItem;
+		using BinderType = binder::NpcMoveItemBinder;
 
 		/// \brief Column [sCastleIndex]: Castle identifier TODO mostly lines up with k_npc.ssid
 		///

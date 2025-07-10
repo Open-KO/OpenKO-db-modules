@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::CopySerialItem
-	export class CopySerialItem
+	/// \brief generated nanodbc column binder for model::BinderCopySerialItem
+	export class CopySerialItemBinder
 	{
 	/// \publicsection
 	public:

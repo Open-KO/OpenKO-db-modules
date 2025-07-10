@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::EventTrigger
-	export class EventTrigger
+	/// \brief generated nanodbc column binder for model::BinderEventTrigger
+	export class EventTriggerBinder
 	{
 	/// \publicsection
 	public:

@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::ServerResource
-	export class ServerResource
+	/// \brief generated nanodbc column binder for model::BinderServerResource
+	export class ServerResourceBinder
 	{
 	/// \publicsection
 	public:

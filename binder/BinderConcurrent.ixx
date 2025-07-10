@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::Concurrent
-	export class Concurrent
+	/// \brief generated nanodbc column binder for model::BinderConcurrent
+	export class ConcurrentBinder
 	{
 	/// \publicsection
 	public:

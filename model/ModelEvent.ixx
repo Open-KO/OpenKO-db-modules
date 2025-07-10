@@ -9,19 +9,17 @@ export module Model:Event;
 
 namespace binder
 {
-	export class Event;
+	export class EventBinder;
 }
 
 namespace model
 {
-	/// \brief [EVENT] Event Information
-	/// \class Event
-	/// \xrefitem gamedb "Game Database" "Game Database" EVENT Event Information
+
 	export class Event 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Event;
+		using BinderType = binder::EventBinder;
 
 		/// \brief Column [ZoneNum]: Zone Number
 		///

@@ -9,19 +9,17 @@ export module Model:ItemGroup;
 
 namespace binder
 {
-	export class ItemGroup;
+	export class ItemGroupBinder;
 }
 
 namespace model
 {
-	/// \brief [ITEM_GROUP] TODO Doc; No Data in table
-	/// \class ItemGroup
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_GROUP TODO Doc; No Data in table
+
 	export class ItemGroup 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::ItemGroup;
+		using BinderType = binder::ItemGroupBinder;
 
 		/// \brief Column [group]: Group
 		///

@@ -8,19 +8,17 @@ export module Model:CurrentUser;
 
 namespace binder
 {
-	export class CurrentUser;
+	export class CurrentUserBinder;
 }
 
 namespace model
 {
-	/// \brief [CURRENTUSER] Keeps track of users currently connected to the server
-	/// \class CurrentUser
-	/// \xrefitem gamedb "Game Database" "Game Database" CURRENTUSER Keeps track of users currently connected to the server
+
 	export class CurrentUser 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::CurrentUser;
+		using BinderType = binder::CurrentUserBinder;
 
 		/// \brief Column [nServerNo]: Server Index
 		///

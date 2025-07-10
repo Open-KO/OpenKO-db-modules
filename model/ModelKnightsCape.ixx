@@ -8,19 +8,17 @@ export module Model:KnightsCape;
 
 namespace binder
 {
-	export class KnightsCape;
+	export class KnightsCapeBinder;
 }
 
 namespace model
 {
-	/// \brief [KNIGHTS_CAPE] Knights cape information
-	/// \class KnightsCape
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_CAPE Knights cape information
+
 	export class KnightsCape 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KnightsCape;
+		using BinderType = binder::KnightsCapeBinder;
 
 		/// \brief Column [sCapeIndex]: Cape identifier
 		///

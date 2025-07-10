@@ -9,19 +9,17 @@ export module Model:MagicType4;
 
 namespace binder
 {
-	export class MagicType4;
+	export class MagicType4Binder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC_TYPE4] Supports stat modification skills
-	/// \class MagicType4
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE4 Supports stat modification skills
+
 	export class MagicType4 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MagicType4;
+		using BinderType = binder::MagicType4Binder;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

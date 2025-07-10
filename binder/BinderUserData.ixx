@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::UserData
-	export class UserData
+	/// \brief generated nanodbc column binder for model::BinderUserData
+	export class UserDataBinder
 	{
 	/// \publicsection
 	public:

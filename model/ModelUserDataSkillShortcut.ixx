@@ -8,19 +8,17 @@ export module Model:UserDataSkillShortcut;
 
 namespace binder
 {
-	export class UserDataSkillShortcut;
+	export class UserDataSkillShortcutBinder;
 }
 
 namespace model
 {
-	/// \brief [USERDATA_SKILLSHORTCUT] User data skill shortcut
-	/// \class UserDataSkillShortcut
-	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA_SKILLSHORTCUT User data skill shortcut
+
 	export class UserDataSkillShortcut 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::UserDataSkillShortcut;
+		using BinderType = binder::UserDataSkillShortcutBinder;
 
 		/// \brief Column [strCharID]: Character identifier
 		///

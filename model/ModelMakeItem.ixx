@@ -9,19 +9,17 @@ export module Model:MakeItem;
 
 namespace binder
 {
-	export class MakeItem;
+	export class MakeItemBinder;
 }
 
 namespace model
 {
-	/// \brief [MAKE_ITEM] Make item
-	/// \class MakeItem
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM Make item
+
 	export class MakeItem 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MakeItem;
+		using BinderType = binder::MakeItemBinder;
 
 		/// \brief Column [sIndex]: Index
 		///

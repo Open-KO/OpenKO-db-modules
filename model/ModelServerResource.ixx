@@ -9,19 +9,17 @@ export module Model:ServerResource;
 
 namespace binder
 {
-	export class ServerResource;
+	export class ServerResourceBinder;
 }
 
 namespace model
 {
-	/// \brief [SERVER_RESOURCE] Server resource
-	/// \class ServerResource
-	/// \xrefitem gamedb "Game Database" "Game Database" SERVER_RESOURCE Server resource
+
 	export class ServerResource 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::ServerResource;
+		using BinderType = binder::ServerResourceBinder;
 
 		/// \brief Column [nResourceID]: Resource Identifier
 		///

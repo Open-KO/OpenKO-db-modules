@@ -9,19 +9,17 @@ export module Model:MakeWeapon;
 
 namespace binder
 {
-	export class MakeWeapon;
+	export class MakeWeaponBinder;
 }
 
 namespace model
 {
-	/// \brief [MAKE_WEAPON] Make weapon
-	/// \class MakeWeapon
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_WEAPON Make weapon
+
 	export class MakeWeapon 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MakeWeapon;
+		using BinderType = binder::MakeWeaponBinder;
 
 		/// \brief Column [byLevel]: Level
 		///

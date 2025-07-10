@@ -8,19 +8,17 @@ export module Model:Version;
 
 namespace binder
 {
-	export class Version;
+	export class VersionBinder;
 }
 
 namespace model
 {
-	/// \brief [VERSION] Version data and patch management
-	/// \class Version
-	/// \xrefitem gamedb "Game Database" "Game Database" VERSION Version data and patch management
+
 	export class Version 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Version;
+		using BinderType = binder::VersionBinder;
 
 		/// \brief Column [sVersion]: Game version number
 		///

@@ -9,19 +9,17 @@ export module Model:Monster;
 
 namespace binder
 {
-	export class Monster;
+	export class MonsterBinder;
 }
 
 namespace model
 {
-	/// \brief [K_MONSTER] Monster definitions
-	/// \class Monster
-	/// \xrefitem gamedb "Game Database" "Game Database" K_MONSTER Monster definitions
+
 	export class Monster 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Monster;
+		using BinderType = binder::MonsterBinder;
 
 		/// \brief Column [sSid]: Monster Identifier
 		///

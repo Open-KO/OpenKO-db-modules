@@ -8,19 +8,17 @@ export module Model:Home;
 
 namespace binder
 {
-	export class Home;
+	export class HomeBinder;
 }
 
 namespace model
 {
-	/// \brief [HOME] TODO Doc
-	/// \class Home
-	/// \xrefitem gamedb "Game Database" "Game Database" HOME TODO Doc
+
 	export class Home 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Home;
+		using BinderType = binder::HomeBinder;
 
 		/// \brief Column [Nation]: Nation Identifier
 		///

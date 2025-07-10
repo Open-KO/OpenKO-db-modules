@@ -8,19 +8,17 @@ export module Model:MakeItemRareCode;
 
 namespace binder
 {
-	export class MakeItemRareCode;
+	export class MakeItemRareCodeBinder;
 }
 
 namespace model
 {
-	/// \brief [MAKE_ITEM_LARECODE] Make item rarity codes
-	/// \class MakeItemRareCode
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_LARECODE Make item rarity codes
+
 	export class MakeItemRareCode 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MakeItemRareCode;
+		using BinderType = binder::MakeItemRareCodeBinder;
 
 		/// \brief Column [byLevelGrade]: Level grade
 		///

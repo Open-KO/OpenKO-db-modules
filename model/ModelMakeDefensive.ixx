@@ -9,19 +9,17 @@ export module Model:MakeDefensive;
 
 namespace binder
 {
-	export class MakeDefensive;
+	export class MakeDefensiveBinder;
 }
 
 namespace model
 {
-	/// \brief [MAKE_DEFENSIVE] Make defensive
-	/// \class MakeDefensive
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_DEFENSIVE Make defensive
+
 	export class MakeDefensive 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MakeDefensive;
+		using BinderType = binder::MakeDefensiveBinder;
 
 		/// \brief Column [byLevel]: Level
 		///

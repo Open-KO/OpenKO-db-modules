@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::MagicType4
-	export class MagicType4
+	/// \brief generated nanodbc column binder for model::BinderMagicType4
+	export class MagicType4Binder
 	{
 	/// \publicsection
 	public:

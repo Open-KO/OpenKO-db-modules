@@ -8,19 +8,17 @@ export module Model:StartPosition;
 
 namespace binder
 {
-	export class StartPosition;
+	export class StartPositionBinder;
 }
 
 namespace model
 {
-	/// \brief [START_POSITION] Start position
-	/// \class StartPosition
-	/// \xrefitem gamedb "Game Database" "Game Database" START_POSITION Start position
+
 	export class StartPosition 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::StartPosition;
+		using BinderType = binder::StartPositionBinder;
 
 		/// \brief Column [ZoneID]: Zone identifier
 		///

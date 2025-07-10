@@ -8,19 +8,17 @@ export module Model:CouponSerialList;
 
 namespace binder
 {
-	export class CouponSerialList;
+	export class CouponSerialListBinder;
 }
 
 namespace model
 {
-	/// \brief [COUPON_SERIAL_LIST] Coupon Serial List
-	/// \class CouponSerialList
-	/// \xrefitem gamedb "Game Database" "Game Database" COUPON_SERIAL_LIST Coupon Serial List
+
 	export class CouponSerialList 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::CouponSerialList;
+		using BinderType = binder::CouponSerialListBinder;
 
 		/// \brief Column [nIndex]: Index
 		///

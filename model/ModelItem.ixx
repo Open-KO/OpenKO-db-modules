@@ -8,21 +8,25 @@ export module Model:Item;
 
 namespace binder
 {
-	export class Item;
-	export class ebenezer::Item;
-	export class aujard::Item;
+	export class ItemBinder;
+}
+namespace ebenezer
+{
+	export class ItemBinder;
+}
+namespace aujard
+{
+	export class ItemBinder;
 }
 
 namespace model
 {
-	/// \brief [ITEM] Item information
-	/// \class Item
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM Item information
+
 	export class Item 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Item;
+		using BinderType = binder::ItemBinder;
 
 		/// \brief Column [Num]: Item number
 		///
@@ -482,6 +486,7 @@ namespace model
 		}
 
 	};
+}
 namespace ebenezer
 {
 
@@ -489,7 +494,7 @@ namespace ebenezer
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::ebenezer::Item;
+		using BinderType = ebenezer::ItemBinder;
 
 		/// \brief Column [Num]: Item number
 		///
@@ -953,7 +958,7 @@ namespace aujard
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::aujard::Item;
+		using BinderType = aujard::ItemBinder;
 
 		/// \brief Column [Num]: Item number
 		///
@@ -1410,4 +1415,3 @@ namespace aujard
 	};
 }
 
-}

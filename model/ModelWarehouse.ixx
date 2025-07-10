@@ -9,19 +9,17 @@ export module Model:Warehouse;
 
 namespace binder
 {
-	export class Warehouse;
+	export class WarehouseBinder;
 }
 
 namespace model
 {
-	/// \brief [WAREHOUSE] The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
-	/// \class Warehouse
-	/// \xrefitem gamedb "Game Database" "Game Database" WAREHOUSE The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
+
 	export class Warehouse 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Warehouse;
+		using BinderType = binder::WarehouseBinder;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

@@ -9,19 +9,17 @@ export module Model:MonsterItemTest;
 
 namespace binder
 {
-	export class MonsterItemTest;
+	export class MonsterItemTestBinder;
 }
 
 namespace model
 {
-	/// \brief [MONSTER_ITEM_TEST] Monster item test
-	/// \class MonsterItemTest
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_ITEM_TEST Monster item test
+
 	export class MonsterItemTest 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MonsterItemTest;
+		using BinderType = binder::MonsterItemTestBinder;
 
 		/// \brief Column [sIndex]: Index
 		///

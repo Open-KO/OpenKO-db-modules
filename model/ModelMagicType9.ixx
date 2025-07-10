@@ -9,19 +9,17 @@ export module Model:MagicType9;
 
 namespace binder
 {
-	export class MagicType9;
+	export class MagicType9Binder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC_TYPE9] Supports stealth and detection abilities
-	/// \class MagicType9
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE9 Supports stealth and detection abilities
+
 	export class MagicType9 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MagicType9;
+		using BinderType = binder::MagicType9Binder;
 
 		/// \brief Column [iNum]: Magic number identifier
 		///

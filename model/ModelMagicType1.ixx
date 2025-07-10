@@ -9,19 +9,17 @@ export module Model:MagicType1;
 
 namespace binder
 {
-	export class MagicType1;
+	export class MagicType1Binder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC_TYPE1] Supports melee abilities
-	/// \class MagicType1
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE1 Supports melee abilities
+
 	export class MagicType1 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MagicType1;
+		using BinderType = binder::MagicType1Binder;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

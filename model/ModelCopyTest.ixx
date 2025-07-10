@@ -8,19 +8,17 @@ export module Model:CopyTest;
 
 namespace binder
 {
-	export class CopyTest;
+	export class CopyTestBinder;
 }
 
 namespace model
 {
-	/// \brief [COPY_TEST] TODO: Doc
-	/// \class CopyTest
-	/// \xrefitem gamedb "Game Database" "Game Database" COPY_TEST TODO: Doc
+
 	export class CopyTest 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::CopyTest;
+		using BinderType = binder::CopyTestBinder;
 
 		/// \brief Column [ITEMSERIAL]: Item Serial
 		///

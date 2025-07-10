@@ -10,19 +10,17 @@ export module Model:RentalItemList;
 
 namespace binder
 {
-	export class RentalItemList;
+	export class RentalItemListBinder;
 }
 
 namespace model
 {
-	/// \brief [RENTAL_ITEM_LIST] Rental item list
-	/// \class RentalItemList
-	/// \xrefitem gamedb "Game Database" "Game Database" RENTAL_ITEM_LIST Rental item list
+
 	export class RentalItemList 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::RentalItemList;
+		using BinderType = binder::RentalItemListBinder;
 
 		/// \brief Column [nRentalIndex]: Rental index
 		///

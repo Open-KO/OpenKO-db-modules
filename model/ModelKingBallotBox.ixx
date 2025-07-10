@@ -8,19 +8,17 @@ export module Model:KingBallotBox;
 
 namespace binder
 {
-	export class KingBallotBox;
+	export class KingBallotBoxBinder;
 }
 
 namespace model
 {
-	/// \brief [KING_BALLOT_BOX] King Ballot Box TODO
-	/// \class KingBallotBox
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_BALLOT_BOX King Ballot Box TODO
+
 	export class KingBallotBox 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KingBallotBox;
+		using BinderType = binder::KingBallotBoxBinder;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

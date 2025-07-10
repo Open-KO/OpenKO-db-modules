@@ -8,19 +8,17 @@ export module Model:KnightsAlliance;
 
 namespace binder
 {
-	export class KnightsAlliance;
+	export class KnightsAllianceBinder;
 }
 
 namespace model
 {
-	/// \brief [KNIGHTS_ALLIANCE] Knights alliance formations
-	/// \class KnightsAlliance
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_ALLIANCE Knights alliance formations
+
 	export class KnightsAlliance 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KnightsAlliance;
+		using BinderType = binder::KnightsAllianceBinder;
 
 		/// \brief Column [sMainAllianceKnights]: Alliance leader clan
 		///

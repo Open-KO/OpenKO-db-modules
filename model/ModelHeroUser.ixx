@@ -9,19 +9,17 @@ export module Model:HeroUser;
 
 namespace binder
 {
-	export class HeroUser;
+	export class HeroUserBinder;
 }
 
 namespace model
 {
-	/// \brief [HERO_USER] TODO Doc
-	/// \class HeroUser
-	/// \xrefitem gamedb "Game Database" "Game Database" HERO_USER TODO Doc
+
 	export class HeroUser 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::HeroUser;
+		using BinderType = binder::HeroUserBinder;
 
 		/// \brief Column [shIndex]: Index
 		///

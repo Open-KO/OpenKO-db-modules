@@ -9,19 +9,17 @@ export module Model:MagicType7;
 
 namespace binder
 {
-	export class MagicType7;
+	export class MagicType7Binder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC_TYPE7] Supports targeting modifications
-	/// \class MagicType7
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE7 Supports targeting modifications
+
 	export class MagicType7 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MagicType7;
+		using BinderType = binder::MagicType7Binder;
 
 		/// \brief Column [nIndex]: Magic identification number
 		///

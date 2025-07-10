@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::StartPosition
-	export class StartPosition
+	/// \brief generated nanodbc column binder for model::BinderStartPosition
+	export class StartPositionBinder
 	{
 	/// \publicsection
 	public:

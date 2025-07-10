@@ -9,19 +9,17 @@ export module Model:TbUser;
 
 namespace binder
 {
-	export class TbUser;
+	export class TbUserBinder;
 }
 
 namespace model
 {
-	/// \brief [TB_USER] User Account Information
-	/// \class TbUser
-	/// \xrefitem gamedb "Game Database" "Game Database" TB_USER User Account Information
+
 	export class TbUser 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::TbUser;
+		using BinderType = binder::TbUserBinder;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

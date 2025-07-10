@@ -9,19 +9,17 @@ export module Model:Concurrent;
 
 namespace binder
 {
-	export class Concurrent;
+	export class ConcurrentBinder;
 }
 
 namespace model
 {
-	/// \brief [CONCURRENT] Keeps track of concurrent user counts
-	/// \class Concurrent
-	/// \xrefitem gamedb "Game Database" "Game Database" CONCURRENT Keeps track of concurrent user counts
+
 	export class Concurrent 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Concurrent;
+		using BinderType = binder::ConcurrentBinder;
 
 		/// \brief Column [serverid]: Server Identifier
 		///

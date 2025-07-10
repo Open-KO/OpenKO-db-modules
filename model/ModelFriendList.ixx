@@ -8,19 +8,17 @@ export module Model:FriendList;
 
 namespace binder
 {
-	export class FriendList;
+	export class FriendListBinder;
 }
 
 namespace model
 {
-	/// \brief [FRIEND_LIST] User friend list
-	/// \class FriendList
-	/// \xrefitem gamedb "Game Database" "Game Database" FRIEND_LIST User friend list
+
 	export class FriendList 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::FriendList;
+		using BinderType = binder::FriendListBinder;
 
 		/// \brief Column [strUserID]: User Identifier
 		///

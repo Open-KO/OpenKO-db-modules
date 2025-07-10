@@ -9,19 +9,17 @@ export module Model:MagicType3;
 
 namespace binder
 {
-	export class MagicType3;
+	export class MagicType3Binder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC_TYPE3] Supports Area of Effect and Damage over Time effects
-	/// \class MagicType3
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE3 Supports Area of Effect and Damage over Time effects
+
 	export class MagicType3 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MagicType3;
+		using BinderType = binder::MagicType3Binder;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

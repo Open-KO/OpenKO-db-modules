@@ -9,19 +9,17 @@ export module Model:MagicType5;
 
 namespace binder
 {
-	export class MagicType5;
+	export class MagicType5Binder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC_TYPE5] Supports recovery skills
-	/// \class MagicType5
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE5 Supports recovery skills
+
 	export class MagicType5 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MagicType5;
+		using BinderType = binder::MagicType5Binder;
 
 		/// \brief Column [iNum]: Magic number identifier
 		///

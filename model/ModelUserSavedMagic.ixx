@@ -8,19 +8,17 @@ export module Model:UserSavedMagic;
 
 namespace binder
 {
-	export class UserSavedMagic;
+	export class UserSavedMagicBinder;
 }
 
 namespace model
 {
-	/// \brief [USER_SAVED_MAGIC] User saved magic
-	/// \class UserSavedMagic
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_SAVED_MAGIC User saved magic
+
 	export class UserSavedMagic 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::UserSavedMagic;
+		using BinderType = binder::UserSavedMagicBinder;
 
 		/// \brief Column [strCharID]: Character identifier
 		///

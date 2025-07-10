@@ -9,19 +9,17 @@ export module Model:ZoneInfo;
 
 namespace binder
 {
-	export class ZoneInfo;
+	export class ZoneInfoBinder;
 }
 
 namespace model
 {
-	/// \brief [ZONE_INFO] Zone (map) information
-	/// \class ZoneInfo
-	/// \xrefitem gamedb "Game Database" "Game Database" ZONE_INFO Zone (map) information
+
 	export class ZoneInfo 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::ZoneInfo;
+		using BinderType = binder::ZoneInfoBinder;
 
 		/// \brief Column [ServerNo]: Server identifier
 		///

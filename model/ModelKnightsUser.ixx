@@ -8,19 +8,17 @@ export module Model:KnightsUser;
 
 namespace binder
 {
-	export class KnightsUser;
+	export class KnightsUserBinder;
 }
 
 namespace model
 {
-	/// \brief [KNIGHTS_USER] Knights to character relationships
-	/// \class KnightsUser
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_USER Knights to character relationships
+
 	export class KnightsUser 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KnightsUser;
+		using BinderType = binder::KnightsUserBinder;
 
 		/// \brief Column [sIDNum]: Knights identifier
 		///

@@ -10,19 +10,17 @@ export module Model:UserData;
 
 namespace binder
 {
-	export class UserData;
+	export class UserDataBinder;
 }
 
 namespace model
 {
-	/// \brief [USERDATA] User data contains saved character information
-	/// \class UserData
-	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA User data contains saved character information
+
 	export class UserData 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::UserData;
+		using BinderType = binder::UserDataBinder;
 
 		/// \brief Column [strUserId]: User identifier
 		///

@@ -9,19 +9,17 @@ export module Model:CopySerialItem;
 
 namespace binder
 {
-	export class CopySerialItem;
+	export class CopySerialItemBinder;
 }
 
 namespace model
 {
-	/// \brief [COPY_SERIAL_ITEM] TODO: Doc
-	/// \class CopySerialItem
-	/// \xrefitem gamedb "Game Database" "Game Database" COPY_SERIAL_ITEM TODO: Doc
+
 	export class CopySerialItem 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::CopySerialItem;
+		using BinderType = binder::CopySerialItemBinder;
 
 		/// \brief Column [strUserId]: User Identifier
 		///

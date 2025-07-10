@@ -9,19 +9,17 @@ export module Model:AccountChar;
 
 namespace binder
 {
-	export class AccountChar;
+	export class AccountCharBinder;
 }
 
 namespace model
 {
-	/// \brief [ACCOUNT_CHAR] Represents the relationship between accounts and characters
-	/// \class AccountChar
-	/// \xrefitem gamedb "Game Database" "Game Database" ACCOUNT_CHAR Represents the relationship between accounts and characters
+
 	export class AccountChar 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::AccountChar;
+		using BinderType = binder::AccountCharBinder;
 
 		/// \brief Column [strAccountID]: Account Identifier
 		///

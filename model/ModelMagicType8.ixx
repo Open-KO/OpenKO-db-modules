@@ -9,19 +9,17 @@ export module Model:MagicType8;
 
 namespace binder
 {
-	export class MagicType8;
+	export class MagicType8Binder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC_TYPE8] Supports warp magic
-	/// \class MagicType8
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE8 Supports warp magic
+
 	export class MagicType8 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MagicType8;
+		using BinderType = binder::MagicType8Binder;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

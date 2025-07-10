@@ -8,19 +8,17 @@ export module Model:KingCandidacyNoticeBoard;
 
 namespace binder
 {
-	export class KingCandidacyNoticeBoard;
+	export class KingCandidacyNoticeBoardBinder;
 }
 
 namespace model
 {
-	/// \brief [KING_CANDIDACY_NOTICE_BOARD] King candidacy notice board
-	/// \class KingCandidacyNoticeBoard
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_CANDIDACY_NOTICE_BOARD King candidacy notice board
+
 	export class KingCandidacyNoticeBoard 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KingCandidacyNoticeBoard;
+		using BinderType = binder::KingCandidacyNoticeBoardBinder;
 
 		/// \brief Column [strUserID]: Candidate identifier
 		///

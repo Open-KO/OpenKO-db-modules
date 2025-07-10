@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::UserEditorItem
-	export class UserEditorItem
+	/// \brief generated nanodbc column binder for model::BinderUserEditorItem
+	export class UserEditorItemBinder
 	{
 	/// \publicsection
 	public:

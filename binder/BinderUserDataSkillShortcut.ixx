@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::UserDataSkillShortcut
-	export class UserDataSkillShortcut
+	/// \brief generated nanodbc column binder for model::BinderUserDataSkillShortcut
+	export class UserDataSkillShortcutBinder
 	{
 	/// \publicsection
 	public:

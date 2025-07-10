@@ -9,19 +9,17 @@ export module Model:KnightsRating;
 
 namespace binder
 {
-	export class KnightsRating;
+	export class KnightsRatingBinder;
 }
 
 namespace model
 {
-	/// \brief [KNIGHTS_RATING] Knights Ratings
-	/// \class KnightsRating
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_RATING Knights Ratings
+
 	export class KnightsRating 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KnightsRating;
+		using BinderType = binder::KnightsRatingBinder;
 
 		/// \brief Column [nRank]: Rank
 		///

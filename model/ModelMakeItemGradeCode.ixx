@@ -9,19 +9,17 @@ export module Model:MakeItemGradeCode;
 
 namespace binder
 {
-	export class MakeItemGradeCode;
+	export class MakeItemGradeCodeBinder;
 }
 
 namespace model
 {
-	/// \brief [MAKE_ITEM_GRADECODE] Make item grade code
-	/// \class MakeItemGradeCode
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GRADECODE Make item grade code
+
 	export class MakeItemGradeCode 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MakeItemGradeCode;
+		using BinderType = binder::MakeItemGradeCodeBinder;
 
 		/// \brief Column [byItemIndex]: Item index
 		///

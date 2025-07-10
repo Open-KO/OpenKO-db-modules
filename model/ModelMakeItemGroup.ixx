@@ -8,19 +8,17 @@ export module Model:MakeItemGroup;
 
 namespace binder
 {
-	export class MakeItemGroup;
+	export class MakeItemGroupBinder;
 }
 
 namespace model
 {
-	/// \brief [MAKE_ITEM_GROUP] Make item group
-	/// \class MakeItemGroup
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GROUP Make item group
+
 	export class MakeItemGroup 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MakeItemGroup;
+		using BinderType = binder::MakeItemGroupBinder;
 
 		/// \brief Column [iItemGroupNum]: Item group number
 		///

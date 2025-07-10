@@ -9,19 +9,17 @@ export module Model:NpcPos;
 
 namespace binder
 {
-	export class NpcPos;
+	export class NpcPosBinder;
 }
 
 namespace model
 {
-	/// \brief [K_NPCPOS] NPC Spawn Positions
-	/// \class NpcPos
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPCPOS NPC Spawn Positions
+
 	export class NpcPos 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::NpcPos;
+		using BinderType = binder::NpcPosBinder;
 
 		/// \brief Column [ZoneID]: Zone Identifier
 		///

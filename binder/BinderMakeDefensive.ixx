@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::MakeDefensive
-	export class MakeDefensive
+	/// \brief generated nanodbc column binder for model::BinderMakeDefensive
+	export class MakeDefensiveBinder
 	{
 	/// \publicsection
 	public:

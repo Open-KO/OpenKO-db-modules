@@ -9,19 +9,17 @@ export module Model:NpcItem;
 
 namespace binder
 {
-	export class NpcItem;
+	export class NpcItemBinder;
 }
 
 namespace model
 {
-	/// \brief [K_NPC_ITEM] NPC loot table
-	/// \class NpcItem
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC_ITEM NPC loot table
+
 	export class NpcItem 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::NpcItem;
+		using BinderType = binder::NpcItemBinder;
 
 		/// \brief Column [sIndex]: NPC identifier (K_NPC.sSid)
 		///

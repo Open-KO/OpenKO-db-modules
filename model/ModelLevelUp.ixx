@@ -8,19 +8,17 @@ export module Model:LevelUp;
 
 namespace binder
 {
-	export class LevelUp;
+	export class LevelUpBinder;
 }
 
 namespace model
 {
-	/// \brief [LEVEL_UP] Level experience requirements
-	/// \class LevelUp
-	/// \xrefitem gamedb "Game Database" "Game Database" LEVEL_UP Level experience requirements
+
 	export class LevelUp 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::LevelUp;
+		using BinderType = binder::LevelUpBinder;
 
 		/// \brief Column [level]: Level
 		///

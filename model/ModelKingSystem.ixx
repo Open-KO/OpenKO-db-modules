@@ -9,19 +9,17 @@ export module Model:KingSystem;
 
 namespace binder
 {
-	export class KingSystem;
+	export class KingSystemBinder;
 }
 
 namespace model
 {
-	/// \brief [KING_SYSTEM] King System
-	/// \class KingSystem
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_SYSTEM King System
+
 	export class KingSystem 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KingSystem;
+		using BinderType = binder::KingSystemBinder;
 
 		/// \brief Column [byNation]: Nation identifier
 		///

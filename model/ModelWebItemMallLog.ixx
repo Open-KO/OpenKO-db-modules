@@ -10,19 +10,17 @@ export module Model:WebItemMallLog;
 
 namespace binder
 {
-	export class WebItemMallLog;
+	export class WebItemMallLogBinder;
 }
 
 namespace model
 {
-	/// \brief [WEB_ITEMMALL_LOG] Power-up store purchase log
-	/// \class WebItemMallLog
-	/// \xrefitem gamedb "Game Database" "Game Database" WEB_ITEMMALL_LOG Power-up store purchase log
+
 	export class WebItemMallLog 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::WebItemMallLog;
+		using BinderType = binder::WebItemMallLogBinder;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

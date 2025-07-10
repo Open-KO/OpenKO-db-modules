@@ -9,19 +9,17 @@ export module Model:KingElectionList;
 
 namespace binder
 {
-	export class KingElectionList;
+	export class KingElectionListBinder;
 }
 
 namespace model
 {
-	/// \brief [KING_ELECTION_LIST] King election list
-	/// \class KingElectionList
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_ELECTION_LIST King election list
+
 	export class KingElectionList 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KingElectionList;
+		using BinderType = binder::KingElectionListBinder;
 
 		/// \brief Column [byType]: Type TODO
 		///

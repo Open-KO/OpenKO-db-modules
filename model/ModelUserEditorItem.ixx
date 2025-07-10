@@ -10,19 +10,17 @@ export module Model:UserEditorItem;
 
 namespace binder
 {
-	export class UserEditorItem;
+	export class UserEditorItemBinder;
 }
 
 namespace model
 {
-	/// \brief [USER_EDITOR_ITEM] User editor item
-	/// \class UserEditorItem
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_EDITOR_ITEM User editor item
+
 	export class UserEditorItem 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::UserEditorItem;
+		using BinderType = binder::UserEditorItemBinder;
 
 		/// \brief Column [strCharID]: Character identifier
 		///

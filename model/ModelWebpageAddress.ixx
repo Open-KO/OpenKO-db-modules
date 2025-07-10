@@ -9,19 +9,17 @@ export module Model:WebpageAddress;
 
 namespace binder
 {
-	export class WebpageAddress;
+	export class WebpageAddressBinder;
 }
 
 namespace model
 {
-	/// \brief [WEBPAGE_ADDRESS] Webpage URL list
-	/// \class WebpageAddress
-	/// \xrefitem gamedb "Game Database" "Game Database" WEBPAGE_ADDRESS Webpage URL list
+
 	export class WebpageAddress 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::WebpageAddress;
+		using BinderType = binder::WebpageAddressBinder;
 
 		/// \brief Column [nIndex]: Index
 		///

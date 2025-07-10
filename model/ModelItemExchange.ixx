@@ -9,19 +9,17 @@ export module Model:ItemExchange;
 
 namespace binder
 {
-	export class ItemExchange;
+	export class ItemExchangeBinder;
 }
 
 namespace model
 {
-	/// \brief [ITEM_EXCHANGE] Enables players to be able to give items in exchange for an item from an NPC
-	/// \class ItemExchange
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_EXCHANGE Enables players to be able to give items in exchange for an item from an NPC
+
 	export class ItemExchange 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::ItemExchange;
+		using BinderType = binder::ItemExchangeBinder;
 
 		/// \brief Column [nIndex]: Index
 		///

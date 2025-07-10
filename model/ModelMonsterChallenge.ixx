@@ -8,19 +8,17 @@ export module Model:MonsterChallenge;
 
 namespace binder
 {
-	export class MonsterChallenge;
+	export class MonsterChallengeBinder;
 }
 
 namespace model
 {
-	/// \brief [MONSTER_CHALLENGE] Monster challenge (Forgotten Temple)
-	/// \class MonsterChallenge
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_CHALLENGE Monster challenge (Forgotten Temple)
+
 	export class MonsterChallenge 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MonsterChallenge;
+		using BinderType = binder::MonsterChallengeBinder;
 
 		/// \brief Column [sIndex]: Index
 		///

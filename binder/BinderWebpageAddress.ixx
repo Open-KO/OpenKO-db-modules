@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::WebpageAddress
-	export class WebpageAddress
+	/// \brief generated nanodbc column binder for model::BinderWebpageAddress
+	export class WebpageAddressBinder
 	{
 	/// \publicsection
 	public:

@@ -9,19 +9,17 @@ export module Model:Battle;
 
 namespace binder
 {
-	export class Battle;
+	export class BattleBinder;
 }
 
 namespace model
 {
-	/// \brief [BATTLE] Battle data for the game server
-	/// \class Battle
-	/// \xrefitem gamedb "Game Database" "Game Database" BATTLE Battle data for the game server
+
 	export class Battle 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Battle;
+		using BinderType = binder::BattleBinder;
 
 		/// \brief Column [sIndex]: Server Index
 		///

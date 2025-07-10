@@ -8,19 +8,17 @@ export module Model:EventTrigger;
 
 namespace binder
 {
-	export class EventTrigger;
+	export class EventTriggerBinder;
 }
 
 namespace model
 {
-	/// \brief [EVENT_TRIGGER] NPC Event Triggers
-	/// \class EventTrigger
-	/// \xrefitem gamedb "Game Database" "Game Database" EVENT_TRIGGER NPC Event Triggers
+
 	export class EventTrigger 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::EventTrigger;
+		using BinderType = binder::EventTriggerBinder;
 
 		/// \brief Column [nIndex]: Index
 		///

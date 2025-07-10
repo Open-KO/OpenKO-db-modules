@@ -10,19 +10,17 @@ export module Model:UserRentalItem;
 
 namespace binder
 {
-	export class UserRentalItem;
+	export class UserRentalItemBinder;
 }
 
 namespace model
 {
-	/// \brief [USER_RENTAL_ITEM] User rental item
-	/// \class UserRentalItem
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_RENTAL_ITEM User rental item
+
 	export class UserRentalItem 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::UserRentalItem;
+		using BinderType = binder::UserRentalItemBinder;
 
 		/// \brief Column [strUserID]: User identifier
 		///

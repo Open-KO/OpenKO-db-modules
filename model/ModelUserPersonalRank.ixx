@@ -10,19 +10,17 @@ export module Model:UserPersonalRank;
 
 namespace binder
 {
-	export class UserPersonalRank;
+	export class UserPersonalRankBinder;
 }
 
 namespace model
 {
-	/// \brief [USER_PERSONAL_RANK] User personal ranking
-	/// \class UserPersonalRank
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_PERSONAL_RANK User personal ranking
+
 	export class UserPersonalRank 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::UserPersonalRank;
+		using BinderType = binder::UserPersonalRankBinder;
 
 		/// \brief Column [nRank]: Ranking
 		///

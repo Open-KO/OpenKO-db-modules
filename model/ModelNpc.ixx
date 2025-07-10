@@ -9,19 +9,17 @@ export module Model:Npc;
 
 namespace binder
 {
-	export class Npc;
+	export class NpcBinder;
 }
 
 namespace model
 {
-	/// \brief [K_NPC] Non-Player Character
-	/// \class Npc
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC Non-Player Character
+
 	export class Npc 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Npc;
+		using BinderType = binder::NpcBinder;
 
 		/// \brief Column [sSid]: NPC Identifier
 		///

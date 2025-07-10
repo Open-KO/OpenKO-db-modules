@@ -9,19 +9,17 @@ export module Model:ProgramListLog;
 
 namespace binder
 {
-	export class ProgramListLog;
+	export class ProgramListLogBinder;
 }
 
 namespace model
 {
-	/// \brief [PROGRAMLIST_LOG] Program list log
-	/// \class ProgramListLog
-	/// \xrefitem gamedb "Game Database" "Game Database" PROGRAMLIST_LOG Program list log
+
 	export class ProgramListLog 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::ProgramListLog;
+		using BinderType = binder::ProgramListLogBinder;
 
 		/// \brief Column [id]: Identifier
 		///

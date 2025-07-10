@@ -9,19 +9,17 @@ export module Model:KnightsSiegeWarfare;
 
 namespace binder
 {
-	export class KnightsSiegeWarfare;
+	export class KnightsSiegeWarfareBinder;
 }
 
 namespace model
 {
-	/// \brief [KNIGHTS_SIEGE_WARFARE] Knights Siege Warfare
-	/// \class KnightsSiegeWarfare
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_SIEGE_WARFARE Knights Siege Warfare
+
 	export class KnightsSiegeWarfare 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::KnightsSiegeWarfare;
+		using BinderType = binder::KnightsSiegeWarfareBinder;
 
 		/// \brief Column [sCastleIndex]: Castle index TODO
 		///

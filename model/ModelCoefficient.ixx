@@ -9,19 +9,17 @@ export module Model:Coefficient;
 
 namespace binder
 {
-	export class Coefficient;
+	export class CoefficientBinder;
 }
 
 namespace model
 {
-	/// \brief [COEFFICIENT] Coefficient relationship between a character class, weapon types, and stats
-	/// \class Coefficient
-	/// \xrefitem gamedb "Game Database" "Game Database" COEFFICIENT Coefficient relationship between a character class, weapon types, and stats
+
 	export class Coefficient 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Coefficient;
+		using BinderType = binder::CoefficientBinder;
 
 		/// \brief Column [sClass]: ClassIdentifier
 		///

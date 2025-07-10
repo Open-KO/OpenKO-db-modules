@@ -9,19 +9,17 @@ export module Model:HacktoolUserLog;
 
 namespace binder
 {
-	export class HacktoolUserLog;
+	export class HacktoolUserLogBinder;
 }
 
 namespace model
 {
-	/// \brief [HACKTOOL_USERLOG] Tracks possible detections of a hack tool by a user
-	/// \class HacktoolUserLog
-	/// \xrefitem gamedb "Game Database" "Game Database" HACKTOOL_USERLOG Tracks possible detections of a hack tool by a user
+
 	export class HacktoolUserLog 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::HacktoolUserLog;
+		using BinderType = binder::HacktoolUserLogBinder;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

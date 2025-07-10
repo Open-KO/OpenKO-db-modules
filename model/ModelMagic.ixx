@@ -9,19 +9,17 @@ export module Model:Magic;
 
 namespace binder
 {
-	export class Magic;
+	export class MagicBinder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC] Contains the configuration for magic and abilities
-	/// \class Magic
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC Contains the configuration for magic and abilities
+
 	export class Magic 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::Magic;
+		using BinderType = binder::MagicBinder;
 
 		/// \brief Column [MagicNum]: Magic identification number
 		///

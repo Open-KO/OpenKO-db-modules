@@ -10,19 +10,17 @@ export module Model:WebItemMall;
 
 namespace binder
 {
-	export class WebItemMall;
+	export class WebItemMallBinder;
 }
 
 namespace model
 {
-	/// \brief [WEB_ITEMMALL] Power-up store purchases
-	/// \class WebItemMall
-	/// \xrefitem gamedb "Game Database" "Game Database" WEB_ITEMMALL Power-up store purchases
+
 	export class WebItemMall 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::WebItemMall;
+		using BinderType = binder::WebItemMallBinder;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

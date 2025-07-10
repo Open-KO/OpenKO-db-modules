@@ -9,19 +9,17 @@ export module Model:MagicType6;
 
 namespace binder
 {
-	export class MagicType6;
+	export class MagicType6Binder;
 }
 
 namespace model
 {
-	/// \brief [MAGIC_TYPE6] Supports transformation magic
-	/// \class MagicType6
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE6 Supports transformation magic
+
 	export class MagicType6 
 	{
 	/// \publicsection
 	public:
-		using BinderType = binder::MagicType6;
+		using BinderType = binder::MagicType6Binder;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

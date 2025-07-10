@@ -10,8 +10,8 @@ import Model;
 
 namespace binder
 {
-	/// \brief generated nanodbc column binder for model::Coefficient
-	export class Coefficient
+	/// \brief generated nanodbc column binder for model::BinderCoefficient
+	export class CoefficientBinder
 	{
 	/// \publicsection
 	public:
