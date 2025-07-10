@@ -1,1 +1,0 @@
-Generated doxygen html files will be written to this directory.
