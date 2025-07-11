@@ -31,7 +31,7 @@ var NAVTREEINDEX3 =
 "classfull__model_1_1KnightsUser.html#aab95fe34ea947b195058b334b35ec92d":[2,0,5,28,2],
 "classfull__model_1_1KnightsUser.html#ab496184442dace928bd7bbff1ed5c45b":[2,0,5,28,1],
 "classfull__model_1_1LevelUp.html":[2,0,5,29],
-"classfull__model_1_1LevelUp.html#a6b196749a856479ae150f7b99083f6d9":[2,0,5,29,0],
+"classfull__model_1_1LevelUp.html#a4ae1e68700fa5ccaa264703792067f07":[2,0,5,29,0],
 "classfull__model_1_1LevelUp.html#a888986302178d56e0ffe1fc5ec06552d":[2,0,5,29,1],
 "classfull__model_1_1LevelUp.html#aff968329511f944b3f6e88c400770919":[2,0,5,29,2],
 "classfull__model_1_1Magic.html":[2,0,5,30],
