@@ -23,7 +23,7 @@ var searchData=
   ['englishname_20',['EnglishName',['../classmodel_1_1Magic.html#a5cdd47369588d4180da41493f09b4370',1,'model::Magic']]],
   ['etc_21',['Etc',['../classmodel_1_1Magic.html#a76763f3b70fa9facc85e93953dadc9d9',1,'model::Magic']]],
   ['evaderate_22',['EvadeRate',['../classmodel_1_1Monster.html#a8c004cc3cd4bf01597a3b0f75296fb91',1,'model::Monster::EvadeRate()'],['../classmodel_1_1Npc.html#a66004d25fedcc0e7ee41f44b0a752571',1,'model::Npc::EvadeRate()']]],
-  ['evasionrate_23',['EvasionRate',['../classaujard_1_1Item.html#a46f730f02eb7277cd549ff381d53d592',1,'aujard::Item::EvasionRate()'],['../classebenezer_1_1Item.html#a8a57d0d1f9d116b23116605fdaef35a8',1,'ebenezer::Item::EvasionRate()'],['../classmodel_1_1Item.html#a1536d74e2863940467e5897f9010a919',1,'model::Item::EvasionRate()']]],
+  ['evasionrate_23',['EvasionRate',['../classebenezer_1_1Item.html#a8a57d0d1f9d116b23116605fdaef35a8',1,'ebenezer::Item::EvasionRate()'],['../classmodel_1_1Item.html#a1536d74e2863940467e5897f9010a919',1,'model::Item::EvasionRate()']]],
   ['evasionrate_24',['Evasionrate',['../classmodel_1_1Coefficient.html#a4edf73210ad5c459440731d9a98d416a',1,'model::Coefficient']]],
   ['event_25',['Event',['../classmodel_1_1Magic.html#a326dc535d335ba52156b544535d491f7',1,'model::Magic']]],
   ['eventnumber_26',['EventNumber',['../classmodel_1_1Event.html#a42d60531921247fc067c4c8756fcfcbc',1,'model::Event']]],

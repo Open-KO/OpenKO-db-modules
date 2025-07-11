@@ -6,6 +6,7 @@ var classmodel_1_1MagicType8 =
       [ "SummonMonster", "classmodel_1_1MagicType8.html#a0dce01ff3afe2e3a46c0d6881ff57d91a1358f96d2287442f5055e9d3531e7caa", null ],
       [ "TeleportToFriendly", "classmodel_1_1MagicType8.html#a0dce01ff3afe2e3a46c0d6881ff57d91a980f67021d5069d1513fa25f0d906aa4", null ]
     ] ],
+    [ "MapKey", "classmodel_1_1MagicType8.html#ac94bb7da92d1a4d624b0b4d9cec7773f", null ],
     [ "Description", "classmodel_1_1MagicType8.html#ab2764cff0f6ff1d21bcc23040a5e10aa", null ],
     [ "ExpRecover", "classmodel_1_1MagicType8.html#ab491961e3c0e19d3282bea33756db357", null ],
     [ "MagicNumber", "classmodel_1_1MagicType8.html#a39cbdc002978853080ff027dbd04e6fe", null ],

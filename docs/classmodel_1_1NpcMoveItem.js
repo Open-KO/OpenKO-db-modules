@@ -1,5 +1,6 @@
 var classmodel_1_1NpcMoveItem =
 [
+    [ "MapKey", "classmodel_1_1NpcMoveItem.html#ac44df796cac5cd9f77f4dff319bf9ea8", null ],
     [ "CastleIndex", "classmodel_1_1NpcMoveItem.html#aa1c0e31d2e4ce77111a02ac3c92390cd", null ],
     [ "ChangeId", "classmodel_1_1NpcMoveItem.html#abc94e087fce38c102dcd7bb9e236c639", null ],
     [ "ChangeItem", "classmodel_1_1NpcMoveItem.html#a8a917c877f0768345439b4190f7f04c9", null ],

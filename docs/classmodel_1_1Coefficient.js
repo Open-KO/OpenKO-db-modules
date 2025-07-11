@@ -1,5 +1,6 @@
 var classmodel_1_1Coefficient =
 [
+    [ "MapKey", "classmodel_1_1Coefficient.html#aa2f5cfd19ff030db1f8ef83b39d8e430", null ],
     [ "Armor", "classmodel_1_1Coefficient.html#a8ae8186508a9451d69ace03e8b0c3c62", null ],
     [ "Axe", "classmodel_1_1Coefficient.html#aaa214a17a3654eb47ed78fe9af5eaee0", null ],
     [ "Bow", "classmodel_1_1Coefficient.html#a09b581a083c10ae99554ae4f0a100f1e", null ],

@@ -20,7 +20,7 @@ var searchData=
   ['karuszonelz_17',['KarusZoneLZ',['../classmodel_1_1Home.html#a673b5cd2e084f4b6496f1d1981af8200',1,'model::Home']]],
   ['karuszonex_18',['KarusZoneX',['../classmodel_1_1Home.html#a7ff0e7eb4b781261d0150085726e2902',1,'model::Home']]],
   ['karuszonez_19',['KarusZoneZ',['../classmodel_1_1Home.html#af2e6936b3f2d2162c238af91e6a56878',1,'model::Home']]],
-  ['kind_20',['Kind',['../classaujard_1_1Item.html#af051fe7eedb8d8f778c9b0e684a8b82c',1,'aujard::Item::Kind()'],['../classebenezer_1_1Item.html#aa5bbfd58877c44c2b1c4c98429804535',1,'ebenezer::Item::Kind()'],['../classmodel_1_1Item.html#a03fdde50af4280c84b2c6f6d7db1380e',1,'model::Item::Kind()']]],
+  ['kind_20',['Kind',['../classebenezer_1_1Item.html#aa5bbfd58877c44c2b1c4c98429804535',1,'ebenezer::Item::Kind()'],['../classmodel_1_1Item.html#a03fdde50af4280c84b2c6f6d7db1380e',1,'model::Item::Kind()']]],
   ['kingballotbox_21',['KingBallotBox',['../classmodel_1_1KingBallotBox.html',1,'model::KingBallotBox'],['../classmodel__binder_1_1KingBallotBox.html',1,'model_binder::KingBallotBox']]],
   ['kingcandidacynoticeboard_22',['KingCandidacyNoticeBoard',['../classmodel_1_1KingCandidacyNoticeBoard.html',1,'model::KingCandidacyNoticeBoard'],['../classmodel__binder_1_1KingCandidacyNoticeBoard.html',1,'model_binder::KingCandidacyNoticeBoard']]],
   ['kingelectionlist_23',['KingElectionList',['../classmodel_1_1KingElectionList.html',1,'model::KingElectionList'],['../classmodel__binder_1_1KingElectionList.html',1,'model_binder::KingElectionList']]],

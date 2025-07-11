@@ -1,5 +1,6 @@
 var classmodel_1_1Magic =
 [
+    [ "MapKey", "classmodel_1_1Magic.html#a85d4b0a4151a09c579f1f4a65170de29", null ],
     [ "BeforeAction", "classmodel_1_1Magic.html#a9dce4b9e709f3310917aef84d7692d40", null ],
     [ "CastTime", "classmodel_1_1Magic.html#a315c3b73cd012ed24ef63c13af3d8cc9", null ],
     [ "Description", "classmodel_1_1Magic.html#abb7b4276c908c2103c70be7a50431c64", null ],

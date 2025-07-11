@@ -1,5 +1,6 @@
 var classmodel_1_1MagicType9 =
 [
+    [ "MapKey", "classmodel_1_1MagicType9.html#aca6e94f03cb4993aad6b05a90217bc09", null ],
     [ "AddDamage", "classmodel_1_1MagicType9.html#a63782cc5a7b0a05a62594d3a11c7005f", null ],
     [ "Description", "classmodel_1_1MagicType9.html#aca2ff16210e7bb672f2c617fd6321d50", null ],
     [ "Duration", "classmodel_1_1MagicType9.html#a9e8327d94dcc66cbdce82c78631fc345", null ],

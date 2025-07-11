@@ -1,5 +1,6 @@
 var classmodel_1_1UserPersonalRank =
 [
+    [ "MapKey", "classmodel_1_1UserPersonalRank.html#a9ef8919330ae55bb7b07b0c90eb102be", null ],
     [ "ElmoCheck", "classmodel_1_1UserPersonalRank.html#a3b644cc42938fcd368f46ab95f80f2d9", null ],
     [ "ElmoLoyaltyMonthly", "classmodel_1_1UserPersonalRank.html#a2f72505aa561dcb392a5cd0f8a6edb39", null ],
     [ "ElmoUp", "classmodel_1_1UserPersonalRank.html#a75cfedb380ff605fe12f6faf85b99aba", null ],

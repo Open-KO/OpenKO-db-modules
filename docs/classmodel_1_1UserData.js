@@ -35,6 +35,7 @@ var classmodel_1_1UserData =
       [ "ElMoradMale", "classmodel_1_1UserData.html#acc0bfdbb72eede74639c39397ff1cee8ac9323e1064c69b1a1db3a31626689947", null ],
       [ "ElMoradFemale", "classmodel_1_1UserData.html#acc0bfdbb72eede74639c39397ff1cee8ad2c8b0b763a81d2abf2b57bcc65b1534", null ]
     ] ],
+    [ "MapKey", "classmodel_1_1UserData.html#ac8659810dc1c48e94a2cdf6bdd4352fb", null ],
     [ "Authority", "classmodel_1_1UserData.html#a8c4a9e00ab197c7d9391eca9dca30fa3", null ],
     [ "Bind", "classmodel_1_1UserData.html#a95c765e34e4b929c0e3c713600b34b8d", null ],
     [ "Charisma", "classmodel_1_1UserData.html#a46f7e29ab8a5325024d48c9c7f5f971b", null ],

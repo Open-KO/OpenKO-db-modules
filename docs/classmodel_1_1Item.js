@@ -108,6 +108,7 @@ var classmodel_1_1Item =
       [ "UniqueMace", "classmodel_1_1Item.html#aebf388b1e33ef66b2d7cf4dffb4dee30a9eb24ddb20cad66faf156dc77f579545", null ],
       [ "UniqueStaff", "classmodel_1_1Item.html#aebf388b1e33ef66b2d7cf4dffb4dee30a2832189dd9ab930973303aaf89745a03", null ]
     ] ],
+    [ "MapKey", "classmodel_1_1Item.html#a5f2373558cf9d4729b2509884a77a1c0", null ],
     [ "Armor", "classmodel_1_1Item.html#af783310c4dded402f04c731c2c6e0cba", null ],
     [ "AxeArmor", "classmodel_1_1Item.html#afe82e78dd8efd13617c94b644a0aa689", null ],
     [ "BowArmor", "classmodel_1_1Item.html#a022cec64ede7169e47c1418a8bb98e48", null ],

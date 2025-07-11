@@ -1,5 +1,6 @@
 var classmodel_1_1UserSavedMagic =
 [
+    [ "MapKey", "classmodel_1_1UserSavedMagic.html#af494912f91aba5c15aebd9a22f6ed990", null ],
     [ "CharId", "classmodel_1_1UserSavedMagic.html#a47b366de97638c4fa88451424ca6c1fb", null ],
     [ "During1", "classmodel_1_1UserSavedMagic.html#aaa7a7dcae6aa370e4baa1a56e4f39cd1", null ],
     [ "During10", "classmodel_1_1UserSavedMagic.html#a8d2da08ead1500c5b1a410f2a86ec379", null ],

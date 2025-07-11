@@ -1,5 +1,6 @@
 var classmodel_1_1MonsterItem =
 [
+    [ "MapKey", "classmodel_1_1MonsterItem.html#ab6b838e5988d5fdb6bb84ed83c588b12", null ],
     [ "DropChance1", "classmodel_1_1MonsterItem.html#ae6f222bbe9df152c677226f404783221", null ],
     [ "DropChance2", "classmodel_1_1MonsterItem.html#a5794b3d5f6a849f60421236dc9fddca3", null ],
     [ "DropChance3", "classmodel_1_1MonsterItem.html#aacf290d914dcab675f95de47a08853d1", null ],

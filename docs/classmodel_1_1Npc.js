@@ -10,6 +10,7 @@ var classmodel_1_1Npc =
       [ "RangedOrc", "classmodel_1_1Npc.html#a531443f3a498d93695e6f6f0f549cf45a65c06ff45df88966a09f7575b1f12f8e", null ],
       [ "Unknown9", "classmodel_1_1Npc.html#a531443f3a498d93695e6f6f0f549cf45afb06e135ac9816e3ee68dcd380274aa5", null ]
     ] ],
+    [ "MapKey", "classmodel_1_1Npc.html#aa8efcd17a372a191cc1f6d602c7c37a1", null ],
     [ "ActType", "classmodel_1_1Npc.html#aa8fa18de319d13fd324f4f3040fd199f", null ],
     [ "Armor", "classmodel_1_1Npc.html#a10baf0cf4beb384ab0a55464e608513d", null ],
     [ "Attack", "classmodel_1_1Npc.html#a07204e391028f8fd0ad09f1ef9d3091c", null ],

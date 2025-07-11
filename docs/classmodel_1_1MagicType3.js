@@ -12,6 +12,7 @@ var classmodel_1_1MagicType3 =
       [ "Unknown12", "classmodel_1_1MagicType3.html#ac2806c07e4a0e201cfadfd26afaf7672aecefa5080ae765056ba0aa2b7e049f07", null ],
       [ "Unknown255", "classmodel_1_1MagicType3.html#ac2806c07e4a0e201cfadfd26afaf7672a30e18c0831a82d5d8041820425b1ea43", null ]
     ] ],
+    [ "MapKey", "classmodel_1_1MagicType3.html#ad3725a9e7ac1e7003086838cbe1c3b42", null ],
     [ "Angle", "classmodel_1_1MagicType3.html#a7803994b6e3e4a75afa5b978cc62f2ef", null ],
     [ "Attribute", "classmodel_1_1MagicType3.html#a47a1865df82b47df463efa0808d3f11d", null ],
     [ "Description", "classmodel_1_1MagicType3.html#a39f0c867cdb53439920c2f71c117d6fd", null ],

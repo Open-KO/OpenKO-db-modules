@@ -1,5 +1,6 @@
 var classmodel_1_1ItemUpgrade =
 [
+    [ "MapKey", "classmodel_1_1ItemUpgrade.html#a7477af5218f4d4826ba7267785ca4e0a", null ],
     [ "GenRate", "classmodel_1_1ItemUpgrade.html#a7bbd0a1531b89a35564f621e569a2e01", null ],
     [ "GiveItem", "classmodel_1_1ItemUpgrade.html#aa653bf318bc9ff8aee86002204afcb90", null ],
     [ "Index", "classmodel_1_1ItemUpgrade.html#a2a7de075bba41cfb45dee21ae7ce020b", null ],

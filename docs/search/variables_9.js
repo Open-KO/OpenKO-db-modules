@@ -16,7 +16,7 @@ var searchData=
   ['karuszonelz_13',['KarusZoneLZ',['../classmodel_1_1Home.html#a673b5cd2e084f4b6496f1d1981af8200',1,'model::Home']]],
   ['karuszonex_14',['KarusZoneX',['../classmodel_1_1Home.html#a7ff0e7eb4b781261d0150085726e2902',1,'model::Home']]],
   ['karuszonez_15',['KarusZoneZ',['../classmodel_1_1Home.html#af2e6936b3f2d2162c238af91e6a56878',1,'model::Home']]],
-  ['kind_16',['Kind',['../classaujard_1_1Item.html#af051fe7eedb8d8f778c9b0e684a8b82c',1,'aujard::Item::Kind()'],['../classebenezer_1_1Item.html#aa5bbfd58877c44c2b1c4c98429804535',1,'ebenezer::Item::Kind()'],['../classmodel_1_1Item.html#a03fdde50af4280c84b2c6f6d7db1380e',1,'model::Item::Kind()']]],
+  ['kind_16',['Kind',['../classebenezer_1_1Item.html#aa5bbfd58877c44c2b1c4c98429804535',1,'ebenezer::Item::Kind()'],['../classmodel_1_1Item.html#a03fdde50af4280c84b2c6f6d7db1380e',1,'model::Item::Kind()']]],
   ['kingname_17',['KingName',['../classmodel_1_1KingSystem.html#a3e92891e1db01e363caab8fc6b922693',1,'model::KingSystem']]],
   ['knights_18',['Knights',['../classmodel_1_1KingElectionList.html#a265a40d05aab3f996dee1106b30264db',1,'model::KingElectionList']]],
   ['knightsid_19',['KnightsId',['../classmodel_1_1KnightsUser.html#ae19699807db65dada2ef3517fc879bb6',1,'model::KnightsUser::KnightsId()'],['../classmodel_1_1UserData.html#a964ee392f86e0f65785faee49842cc50',1,'model::UserData::KnightsId()']]],

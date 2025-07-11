@@ -1,5 +1,6 @@
 var classmodel_1_1UserKnightsRank =
 [
+    [ "MapKey", "classmodel_1_1UserKnightsRank.html#a90c170bb8d29be02db23d0266bfa7358", null ],
     [ "ElmoKnightsName", "classmodel_1_1UserKnightsRank.html#aed8c8232fcd75d18b327b2563cc5cdf9", null ],
     [ "ElmoLoyalty", "classmodel_1_1UserKnightsRank.html#ab83143a6abd8e9a2625f2187e925c217", null ],
     [ "ElmoUserId", "classmodel_1_1UserKnightsRank.html#a3e7abd6feed0fcc9d2e85cb12d12d9eb", null ],

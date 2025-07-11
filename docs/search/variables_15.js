@@ -12,6 +12,6 @@ var searchData=
   ['weapon1_9',['Weapon1',['../classmodel_1_1Monster.html#a94379d1e43fa84d6932b56b1944f7cbc',1,'model::Monster::Weapon1()'],['../classmodel_1_1Npc.html#aca9cee9ee802e8cff79763e7ee8fef78',1,'model::Npc::Weapon1()']]],
   ['weapon2_10',['Weapon2',['../classmodel_1_1Monster.html#ace3e372d8030126d25652c5094c75212',1,'model::Monster::Weapon2()'],['../classmodel_1_1Npc.html#a75a7364e68bbbbc1d2a32095af712f12',1,'model::Npc::Weapon2()']]],
   ['webpageaddress_11',['WebPageAddress',['../classmodel_1_1WebpageAddress.html#a8e656c520794989add2b584635c6ea0e',1,'model::WebpageAddress']]],
-  ['weight_12',['Weight',['../classaujard_1_1Item.html#ac8ae326182f58d6895ff5241edb9df3f',1,'aujard::Item::Weight()'],['../classebenezer_1_1Item.html#a3e8e979f78637d9c633346b12a58aac9',1,'ebenezer::Item::Weight()'],['../classmodel_1_1Item.html#a1eade0c7be251381800d8cf3398bef6a',1,'model::Item::Weight()']]],
+  ['weight_12',['Weight',['../classebenezer_1_1Item.html#a3e8e979f78637d9c633346b12a58aac9',1,'ebenezer::Item::Weight()'],['../classmodel_1_1Item.html#a1eade0c7be251381800d8cf3398bef6a',1,'model::Item::Weight()']]],
   ['writetime_13',['WriteTime',['../classmodel_1_1HacktoolUserLog.html#a3df61191c630f0d200a158e231b0cad4',1,'model::HacktoolUserLog::WriteTime()'],['../classmodel_1_1ProgramListLog.html#a369ba064d78eb9f83780f79d541f27cc',1,'model::ProgramListLog::WriteTime()']]]
 ];

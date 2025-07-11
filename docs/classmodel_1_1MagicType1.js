@@ -5,6 +5,7 @@ var classmodel_1_1MagicType1 =
       [ "AlwaysHit", "classmodel_1_1MagicType1.html#a9bc3fd2d0255ad96e6c71a723b67f21dacb751d8de9918479f5ccccab7d41e6f9", null ],
       [ "IgnoreDefense", "classmodel_1_1MagicType1.html#a9bc3fd2d0255ad96e6c71a723b67f21da9c941887bc8b134e44206806c110327d", null ]
     ] ],
+    [ "MapKey", "classmodel_1_1MagicType1.html#a94258d10c57cf3528adcfa8898fc16e6", null ],
     [ "AddDamage", "classmodel_1_1MagicType1.html#a32970315a5d9ee5b2dd5402b355f9fbf", null ],
     [ "ComboCount", "classmodel_1_1MagicType1.html#a023593a82c1cda6e9f2587843d5842f8", null ],
     [ "ComboDamage", "classmodel_1_1MagicType1.html#aed3ddd3b6a5bb984394b05eb61fb53de", null ],

@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classaujard_1_1Item.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classaujard_1_1Item-members.html">List of all members</a>  </div>
@@ -97,152 +98,22 @@ $(document).ready(function(){initNavTree('classaujard_1_1Item.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a55f65b7cc44637b5307230130436d77e"><td class="memItemLeft" align="right" valign="top"><a id="a55f65b7cc44637b5307230130436d77e" name="a55f65b7cc44637b5307230130436d77e"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#a55f65b7cc44637b5307230130436d77e">EnumKind</a> { <br />
-&#160;&#160;<b>Dagger</b> = 1
-, <b>Sword</b> = 2
-, <b>Axe</b> = 3
-, <b>Mace</b> = 4
-, <br />
-&#160;&#160;<b>Spear</b> = 5
-, <b>Shield</b> = 6
-, <b>Bow</b> = 7
-, <b>Longbow</b> = 8
-, <br />
-&#160;&#160;<b>Launcher</b> = 10
-, <b>Staff</b> = 11
-, <b>Arrow</b> = 12
-, <b>Javelin</b> = 13
-, <br />
-&#160;&#160;<b>ArmorWarrior</b> = 21
-, <b>ArmorRogue</b> = 22
-, <b>ArmorWizard</b> = 23
-, <b>ArmorPriest</b> = 24
-<br />
- }</td></tr>
-<tr class="memdesc:a55f65b7cc44637b5307230130436d77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Known valid values for Kind. <br /></td></tr>
-<tr class="separator:a55f65b7cc44637b5307230130436d77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b0893e7fcd1e21ff312b1f87669e35"><td class="memItemLeft" align="right" valign="top"><a id="af6b0893e7fcd1e21ff312b1f87669e35" name="af6b0893e7fcd1e21ff312b1f87669e35"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#af6b0893e7fcd1e21ff312b1f87669e35">EnumSlot</a> { <br />
-&#160;&#160;<b>RightEar</b> = 0
-, <b>Head</b> = 1
-, <b>LeftEar</b> = 2
-, <b>Neck</b> = 3
-, <br />
-&#160;&#160;<b>Breast</b> = 4
-, <b>Shoulder</b> = 5
-, <b>RightHand</b> = 6
-, <b>Waist</b> = 7
-, <br />
-&#160;&#160;<b>LeftHand</b> = 8
-, <b>RightRing</b> = 9
-, <b>Leg</b> = 10
-, <b>LeftRing</b> = 11
-, <br />
-&#160;&#160;<b>Glove</b> = 12
-, <b>Foot</b> = 13
-, <b>Reserved</b> = 14
-<br />
- }</td></tr>
-<tr class="memdesc:af6b0893e7fcd1e21ff312b1f87669e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Known valid values for Slot. <br /></td></tr>
-<tr class="separator:af6b0893e7fcd1e21ff312b1f87669e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c8d3cca23084a113c919a3b6654809"><td class="memItemLeft" align="right" valign="top"><a id="a18c8d3cca23084a113c919a3b6654809" name="a18c8d3cca23084a113c919a3b6654809"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#a18c8d3cca23084a113c919a3b6654809">EnumRace</a> { <b>Any</b> = 0
-, <b>Karus</b> = 1
-, <b>ElMorad</b> = 2
- }</td></tr>
-<tr class="memdesc:a18c8d3cca23084a113c919a3b6654809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Known valid values for Race. <br /></td></tr>
-<tr class="separator:a18c8d3cca23084a113c919a3b6654809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf55268a4b42279b4cf072897f838e71"><td class="memItemLeft" align="right" valign="top"><a id="acf55268a4b42279b4cf072897f838e71" name="acf55268a4b42279b4cf072897f838e71"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#acf55268a4b42279b4cf072897f838e71">EnumClassId</a> { <br />
-&#160;&#160;<b>Any</b> = 0
-, <b>GroupWarrior</b> = 1
-, <b>GroupRogue</b> = 2
-, <b>GroupMage</b> = 3
-, <br />
-&#160;&#160;<b>GroupCleric</b> = 4
-, <b>GroupWarriorJob</b> = 5
-, <b>GroupWarriorMaster</b> = 6
-, <b>GroupRogueJob</b> = 7
-, <br />
-&#160;&#160;<b>GroupRogueMaster</b> = 8
-, <b>GroupMageJob</b> = 9
-, <b>GroupMageMaster</b> = 10
-, <b>GroupPriestJob</b> = 11
-, <br />
-&#160;&#160;<b>GroupPriestMaster</b> = 12
-, <b>KarusWarrior</b> = 101
-, <b>KarusRogue</b> = 102
-, <b>KarusWizard</b> = 103
-, <br />
-&#160;&#160;<b>KarusPriest</b> = 104
-, <b>Berserker</b> = 105
-, <b>Guardian</b> = 106
-, <b>Hunter</b> = 107
-, <br />
-&#160;&#160;<b>Penetrator</b> = 108
-, <b>Sorcerer</b> = 109
-, <b>Necromancer</b> = 110
-, <b>Shaman</b> = 111
-, <br />
-&#160;&#160;<b>DarkPriest</b> = 112
-, <b>ElmoWarrior</b> = 201
-, <b>ElmoRogue</b> = 202
-, <b>ElmoWizard</b> = 203
-, <br />
-&#160;&#160;<b>ElmoPriest</b> = 204
-, <b>Blade</b> = 205
-, <b>Protector</b> = 206
-, <b>Ranger</b> = 207
-, <br />
-&#160;&#160;<b>Assassin</b> = 208
-, <b>Mage</b> = 209
-, <b>Enchanter</b> = 210
-, <b>Cleric</b> = 211
-, <br />
-&#160;&#160;<b>Druid</b> = 212
-<br />
- }</td></tr>
-<tr class="memdesc:acf55268a4b42279b4cf072897f838e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Known valid values for Class. <br /></td></tr>
-<tr class="separator:acf55268a4b42279b4cf072897f838e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8838fb694702dc5a7365ae7ae2460d66"><td class="memItemLeft" align="right" valign="top"><a id="a8838fb694702dc5a7365ae7ae2460d66" name="a8838fb694702dc5a7365ae7ae2460d66"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#a8838fb694702dc5a7365ae7ae2460d66">EnumCountable</a> { <b>NonStackable</b> = 0
 , <b>Stackable</b> = 1
 , <b>Coins</b> = 2
  }</td></tr>
 <tr class="memdesc:a8838fb694702dc5a7365ae7ae2460d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Known valid values for Countable. <br /></td></tr>
 <tr class="separator:a8838fb694702dc5a7365ae7ae2460d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a873e92dad9dbf94d13a25111a6ec0902"><td class="memItemLeft" align="right" valign="top"><a id="a873e92dad9dbf94d13a25111a6ec0902" name="a873e92dad9dbf94d13a25111a6ec0902"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#a873e92dad9dbf94d13a25111a6ec0902">EnumSpecialEffect</a> { <br />
-&#160;&#160;<b>ScrollTransform</b> = 1
-, <b>ScrollTransform2</b> = 2
-, <b>ScrollTransform3</b> = 3
-, <b>ScrollTransform4</b> = 4
-, <br />
-&#160;&#160;<b>ScrollAccessory</b> = 253
-, <b>ScrollRental</b> = 254
-, <b>ScrollUpgrade</b> = 255
-, <b>UniqueAxe</b> = 12050000
-, <br />
-&#160;&#160;<b>UniqueSpear</b> = 12070000
-, <b>UniqueBow</b> = 12120000
-, <b>UniqueMace</b> = 12130000
-, <b>UniqueStaff</b> = 40000000
-<br />
- }</td></tr>
-<tr class="memdesc:a873e92dad9dbf94d13a25111a6ec0902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Known valid values for Effect2. <br /></td></tr>
-<tr class="separator:a873e92dad9dbf94d13a25111a6ec0902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa17c11a7df067768a760cf2d86be1fcb"><td class="memItemLeft" align="right" valign="top"><a id="aa17c11a7df067768a760cf2d86be1fcb" name="aa17c11a7df067768a760cf2d86be1fcb"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#aa17c11a7df067768a760cf2d86be1fcb">EnumRequireTitle</a> { <br />
-&#160;&#160;<b>Any</b> = 0
-, <b>King</b> = 1
-, <b>Chief</b> = 1
-, <b>ViceChief</b> = 2
-, <br />
-&#160;&#160;<b>Knight</b> = 3
-, <b>Officer</b> = 4
-, <b>Trainee</b> = 5
-, <b>WarCommander</b> = 100
-<br />
- }</td></tr>
-<tr class="memdesc:aa17c11a7df067768a760cf2d86be1fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Known valid values for ReqTitle. <br /></td></tr>
-<tr class="separator:aa17c11a7df067768a760cf2d86be1fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04174dbc87958e938e6e888cfb85301e"><td class="memItemLeft" align="right" valign="top"><a id="a04174dbc87958e938e6e888cfb85301e" name="a04174dbc87958e938e6e888cfb85301e"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BinderType</b> = <a class="el" href="classaujard__binder_1_1Item.html">aujard_binder::Item</a></td></tr>
 <tr class="separator:a04174dbc87958e938e6e888cfb85301e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a16164ceb900c08d70d36e61b709f4e90"><td class="memItemLeft" align="right" valign="top"><a id="a16164ceb900c08d70d36e61b709f4e90" name="a16164ceb900c08d70d36e61b709f4e90"></a>
+const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>MapKey</b> ()</td></tr>
+<tr class="memdesc:a16164ceb900c08d70d36e61b709f4e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a value for use in map keys based on the table's primary key. <br /></td></tr>
+<tr class="separator:a16164ceb900c08d70d36e61b709f4e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -258,6 +129,10 @@ static const std::unordered_set&lt; std::string &gt; &amp;&#160;</td><td class="
 static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>DbType</b> ()</td></tr>
 <tr class="memdesc:ab6e1e188998ae97e894f9adccb44f02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the associated database type for the table. <br /></td></tr>
 <tr class="separator:ab6e1e188998ae97e894f9adccb44f02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2235b1da5f7726086ae1118b56989803"><td class="memItemLeft" align="right" valign="top"><a id="a2235b1da5f7726086ae1118b56989803" name="a2235b1da5f7726086ae1118b56989803"></a>
+static const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>PrimaryKey</b> ()</td></tr>
+<tr class="memdesc:a2235b1da5f7726086ae1118b56989803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the columns associated with the table's Primary Key. <br /></td></tr>
+<tr class="separator:a2235b1da5f7726086ae1118b56989803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -265,245 +140,14 @@ Public Attributes</h2></td></tr>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Number</b> = 0</td></tr>
 <tr class="memdesc:a5db38d16eabc462a8cb8a08663b5a8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Num]: <a class="el" href="classaujard_1_1Item.html" title="[ITEM] Item information">Item</a> number. <br /></td></tr>
 <tr class="separator:a5db38d16eabc462a8cb8a08663b5a8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9416b21d86eaec3a97c823a7097ef91"><td class="memItemLeft" align="right" valign="top"><a id="aa9416b21d86eaec3a97c823a7097ef91" name="aa9416b21d86eaec3a97c823a7097ef91"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b></td></tr>
-<tr class="memdesc:aa9416b21d86eaec3a97c823a7097ef91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [strName]: <a class="el" href="classaujard_1_1Item.html" title="[ITEM] Item information">Item</a> name. <br /></td></tr>
-<tr class="separator:aa9416b21d86eaec3a97c823a7097ef91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af051fe7eedb8d8f778c9b0e684a8b82c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#af051fe7eedb8d8f778c9b0e684a8b82c">Kind</a> = 0</td></tr>
-<tr class="memdesc:af051fe7eedb8d8f778c9b0e684a8b82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Kind]: <a class="el" href="classaujard_1_1Item.html" title="[ITEM] Item information">Item</a> kind.  <a href="classaujard_1_1Item.html#af051fe7eedb8d8f778c9b0e684a8b82c">More...</a><br /></td></tr>
-<tr class="separator:af051fe7eedb8d8f778c9b0e684a8b82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6cdbadbce34cd489533c18c77b02b3b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#aa6cdbadbce34cd489533c18c77b02b3b">Slot</a> = 0</td></tr>
-<tr class="memdesc:aa6cdbadbce34cd489533c18c77b02b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Slot]: slot this item equips to.  <a href="classaujard_1_1Item.html#aa6cdbadbce34cd489533c18c77b02b3b">More...</a><br /></td></tr>
-<tr class="separator:aa6cdbadbce34cd489533c18c77b02b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bbcdcc739fda4439920f23a19cbf0de"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#a9bbcdcc739fda4439920f23a19cbf0de">Race</a> = 0</td></tr>
-<tr class="memdesc:a9bbcdcc739fda4439920f23a19cbf0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Race]: usable by race.  <a href="classaujard_1_1Item.html#a9bbcdcc739fda4439920f23a19cbf0de">More...</a><br /></td></tr>
-<tr class="separator:a9bbcdcc739fda4439920f23a19cbf0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa886a279f1775d453c2013c70e6b32f6"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#aa886a279f1775d453c2013c70e6b32f6">ClassId</a> = 0</td></tr>
-<tr class="memdesc:aa886a279f1775d453c2013c70e6b32f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Class]: usable by class.  <a href="classaujard_1_1Item.html#aa886a279f1775d453c2013c70e6b32f6">More...</a><br /></td></tr>
-<tr class="separator:aa886a279f1775d453c2013c70e6b32f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2cb3d6bf7e210d823ebecc3748ccaf0"><td class="memItemLeft" align="right" valign="top"><a id="ac2cb3d6bf7e210d823ebecc3748ccaf0" name="ac2cb3d6bf7e210d823ebecc3748ccaf0"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>Damage</b> = 0</td></tr>
-<tr class="memdesc:ac2cb3d6bf7e210d823ebecc3748ccaf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Damage]: Physical damage. <br /></td></tr>
-<tr class="separator:ac2cb3d6bf7e210d823ebecc3748ccaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a706ff33cd5e1a0bdd3b299ee7e4967ba"><td class="memItemLeft" align="right" valign="top"><a id="a706ff33cd5e1a0bdd3b299ee7e4967ba" name="a706ff33cd5e1a0bdd3b299ee7e4967ba"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>Delay</b> = 0</td></tr>
-<tr class="memdesc:a706ff33cd5e1a0bdd3b299ee7e4967ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Delay]: Animation windup time before activation. <br /></td></tr>
-<tr class="separator:a706ff33cd5e1a0bdd3b299ee7e4967ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf39d7c54cda5a082b44695fc4c7e019"><td class="memItemLeft" align="right" valign="top"><a id="abf39d7c54cda5a082b44695fc4c7e019" name="abf39d7c54cda5a082b44695fc4c7e019"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>Range</b> = 0</td></tr>
-<tr class="memdesc:abf39d7c54cda5a082b44695fc4c7e019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Range]: Maximum distance from a target before item cannot activate. <br /></td></tr>
-<tr class="separator:abf39d7c54cda5a082b44695fc4c7e019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8ae326182f58d6895ff5241edb9df3f"><td class="memItemLeft" align="right" valign="top"><a id="ac8ae326182f58d6895ff5241edb9df3f" name="ac8ae326182f58d6895ff5241edb9df3f"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>Weight</b> = 0</td></tr>
-<tr class="memdesc:ac8ae326182f58d6895ff5241edb9df3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Weight]: Weight. <br /></td></tr>
-<tr class="separator:ac8ae326182f58d6895ff5241edb9df3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0a28182e611c02b86278ee5c7a979ad"><td class="memItemLeft" align="right" valign="top"><a id="ab0a28182e611c02b86278ee5c7a979ad" name="ab0a28182e611c02b86278ee5c7a979ad"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>Durability</b> = 0</td></tr>
-<tr class="memdesc:ab0a28182e611c02b86278ee5c7a979ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Duration]: Durability. <br /></td></tr>
-<tr class="separator:ab0a28182e611c02b86278ee5c7a979ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36e45a53b29e49d6d765580e44a894de"><td class="memItemLeft" align="right" valign="top"><a id="a36e45a53b29e49d6d765580e44a894de" name="a36e45a53b29e49d6d765580e44a894de"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>BuyPrice</b> = 0</td></tr>
-<tr class="memdesc:a36e45a53b29e49d6d765580e44a894de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [BuyPrice]: Price at which item can be bought from a merchant. <br /></td></tr>
-<tr class="separator:a36e45a53b29e49d6d765580e44a894de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ecc44dc0b4a000f8b3e15dd7b491107"><td class="memItemLeft" align="right" valign="top"><a id="a6ecc44dc0b4a000f8b3e15dd7b491107" name="a6ecc44dc0b4a000f8b3e15dd7b491107"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>SellPrice</b> = 0</td></tr>
-<tr class="memdesc:a6ecc44dc0b4a000f8b3e15dd7b491107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [SellPrice]: Price at which item can be sold to a merchant. <br /></td></tr>
-<tr class="separator:a6ecc44dc0b4a000f8b3e15dd7b491107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad66a73ca87d70d66cf7b8a43e6f1b077"><td class="memItemLeft" align="right" valign="top"><a id="ad66a73ca87d70d66cf7b8a43e6f1b077" name="ad66a73ca87d70d66cf7b8a43e6f1b077"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>Armor</b> = 0</td></tr>
-<tr class="memdesc:ad66a73ca87d70d66cf7b8a43e6f1b077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Ac]: Amount contributed to armor value, when equipped. <br /></td></tr>
-<tr class="separator:ad66a73ca87d70d66cf7b8a43e6f1b077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03cccb774b4c31239110c202df6386b0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#a03cccb774b4c31239110c202df6386b0">Countable</a> = 0</td></tr>
 <tr class="memdesc:a03cccb774b4c31239110c202df6386b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Countable]: Price at which item can be sold to a merchant.  <a href="classaujard_1_1Item.html#a03cccb774b4c31239110c202df6386b0">More...</a><br /></td></tr>
 <tr class="separator:a03cccb774b4c31239110c202df6386b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98f042991696dc61b0b2d6697e8338f"><td class="memItemLeft" align="right" valign="top"><a id="ac98f042991696dc61b0b2d6697e8338f" name="ac98f042991696dc61b0b2d6697e8338f"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>MagicEffect</b> = 0</td></tr>
-<tr class="memdesc:ac98f042991696dc61b0b2d6697e8338f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Effect1]: Magic effect in MAGIC.MagicNum. <br /></td></tr>
-<tr class="separator:ac98f042991696dc61b0b2d6697e8338f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38a7b4a30fb8d14d7c6aad685f940d43"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#a38a7b4a30fb8d14d7c6aad685f940d43">SpecialEffect</a> = 0</td></tr>
-<tr class="memdesc:a38a7b4a30fb8d14d7c6aad685f940d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Effect2]: Special Effect.  <a href="classaujard_1_1Item.html#a38a7b4a30fb8d14d7c6aad685f940d43">More...</a><br /></td></tr>
-<tr class="separator:a38a7b4a30fb8d14d7c6aad685f940d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbf1b5206d28d911a2332d3044a315d5"><td class="memItemLeft" align="right" valign="top"><a id="abbf1b5206d28d911a2332d3044a315d5" name="abbf1b5206d28d911a2332d3044a315d5"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequireLevel</b> = 0</td></tr>
-<tr class="memdesc:abbf1b5206d28d911a2332d3044a315d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ReqLevel]: Minimum level required to use item. <br /></td></tr>
-<tr class="separator:abbf1b5206d28d911a2332d3044a315d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae26f3417bebfc403a3f186d710ea62"><td class="memItemLeft" align="right" valign="top"><a id="a4ae26f3417bebfc403a3f186d710ea62" name="a4ae26f3417bebfc403a3f186d710ea62"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequireRank</b> = 0</td></tr>
-<tr class="memdesc:a4ae26f3417bebfc403a3f186d710ea62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ReqRank]: Rank required to use item. <br /></td></tr>
-<tr class="separator:a4ae26f3417bebfc403a3f186d710ea62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6224922c543c2203439c76f73802a331"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaujard_1_1Item.html#a6224922c543c2203439c76f73802a331">RequireTitle</a> = 0</td></tr>
-<tr class="memdesc:a6224922c543c2203439c76f73802a331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ReqTitle]: Title required to use item.  <a href="classaujard_1_1Item.html#a6224922c543c2203439c76f73802a331">More...</a><br /></td></tr>
-<tr class="separator:a6224922c543c2203439c76f73802a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a706782ce91bb7c03deb92eaddde74c6e"><td class="memItemLeft" align="right" valign="top"><a id="a706782ce91bb7c03deb92eaddde74c6e" name="a706782ce91bb7c03deb92eaddde74c6e"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequireStrength</b> = 0</td></tr>
-<tr class="memdesc:a706782ce91bb7c03deb92eaddde74c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ReqStr]: Strength required to use item. <br /></td></tr>
-<tr class="separator:a706782ce91bb7c03deb92eaddde74c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62d75bd50e596341588fc6ce1ff789b4"><td class="memItemLeft" align="right" valign="top"><a id="a62d75bd50e596341588fc6ce1ff789b4" name="a62d75bd50e596341588fc6ce1ff789b4"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequireStamina</b> = 0</td></tr>
-<tr class="memdesc:a62d75bd50e596341588fc6ce1ff789b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ReqSta]: Stamina required to use item. <br /></td></tr>
-<tr class="separator:a62d75bd50e596341588fc6ce1ff789b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df2fd8d8ec34b9dacfdb6e9f1f3938d"><td class="memItemLeft" align="right" valign="top"><a id="a8df2fd8d8ec34b9dacfdb6e9f1f3938d" name="a8df2fd8d8ec34b9dacfdb6e9f1f3938d"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequireDexterity</b> = 0</td></tr>
-<tr class="memdesc:a8df2fd8d8ec34b9dacfdb6e9f1f3938d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ReqDex]: Dexterity required to use item. <br /></td></tr>
-<tr class="separator:a8df2fd8d8ec34b9dacfdb6e9f1f3938d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b587aabeb13784dd4494b90b190b76"><td class="memItemLeft" align="right" valign="top"><a id="aa7b587aabeb13784dd4494b90b190b76" name="aa7b587aabeb13784dd4494b90b190b76"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequireIntelligence</b> = 0</td></tr>
-<tr class="memdesc:aa7b587aabeb13784dd4494b90b190b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ReqIntel]: Intelligence required to use item. <br /></td></tr>
-<tr class="separator:aa7b587aabeb13784dd4494b90b190b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e4f81f8349ce48d832bef99767f306b"><td class="memItemLeft" align="right" valign="top"><a id="a1e4f81f8349ce48d832bef99767f306b" name="a1e4f81f8349ce48d832bef99767f306b"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RequireCharisma</b> = 0</td></tr>
-<tr class="memdesc:a1e4f81f8349ce48d832bef99767f306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ReqCha]: Charisma required to use item. <br /></td></tr>
-<tr class="separator:a1e4f81f8349ce48d832bef99767f306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfeba0b8597391edfdbb71d557f3f87c"><td class="memItemLeft" align="right" valign="top"><a id="acfeba0b8597391edfdbb71d557f3f87c" name="acfeba0b8597391edfdbb71d557f3f87c"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>SellingGroup</b> = 0</td></tr>
-<tr class="memdesc:acfeba0b8597391edfdbb71d557f3f87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [SellingGroup]: NPC Selling Group. <br /></td></tr>
-<tr class="separator:acfeba0b8597391edfdbb71d557f3f87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31080cf85c222f6f8a8292b3cda910eb"><td class="memItemLeft" align="right" valign="top"><a id="a31080cf85c222f6f8a8292b3cda910eb" name="a31080cf85c222f6f8a8292b3cda910eb"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = 0</td></tr>
-<tr class="memdesc:a31080cf85c222f6f8a8292b3cda910eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ItemType]: <a class="el" href="classaujard_1_1Item.html" title="[ITEM] Item information">Item</a> grade. <br /></td></tr>
-<tr class="separator:a31080cf85c222f6f8a8292b3cda910eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344c063cd051cc9cae1f94154d9f92a4"><td class="memItemLeft" align="right" valign="top"><a id="a344c063cd051cc9cae1f94154d9f92a4" name="a344c063cd051cc9cae1f94154d9f92a4"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>HitRate</b> = 0</td></tr>
-<tr class="memdesc:a344c063cd051cc9cae1f94154d9f92a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Hitrate]: Attack power modifier. <br /></td></tr>
-<tr class="separator:a344c063cd051cc9cae1f94154d9f92a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46f730f02eb7277cd549ff381d53d592"><td class="memItemLeft" align="right" valign="top"><a id="a46f730f02eb7277cd549ff381d53d592" name="a46f730f02eb7277cd549ff381d53d592"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>EvasionRate</b> = 0</td></tr>
-<tr class="memdesc:a46f730f02eb7277cd549ff381d53d592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Evasionrate]: Dodge chance modifier. <br /></td></tr>
-<tr class="separator:a46f730f02eb7277cd549ff381d53d592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa55a7542798d3b5ff380004cd973098b"><td class="memItemLeft" align="right" valign="top"><a id="aa55a7542798d3b5ff380004cd973098b" name="aa55a7542798d3b5ff380004cd973098b"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>DaggerArmor</b> = 0</td></tr>
-<tr class="memdesc:aa55a7542798d3b5ff380004cd973098b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [DaggerAc]: Dagger defense modifier. <br /></td></tr>
-<tr class="separator:aa55a7542798d3b5ff380004cd973098b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1ada949253ad298c02bccfb606da3e4"><td class="memItemLeft" align="right" valign="top"><a id="ab1ada949253ad298c02bccfb606da3e4" name="ab1ada949253ad298c02bccfb606da3e4"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>SwordArmor</b> = 0</td></tr>
-<tr class="memdesc:ab1ada949253ad298c02bccfb606da3e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [SwordAc]: Sword defense modifier. <br /></td></tr>
-<tr class="separator:ab1ada949253ad298c02bccfb606da3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af47ba9270d67f0d37c6ec0469d35b4f1"><td class="memItemLeft" align="right" valign="top"><a id="af47ba9270d67f0d37c6ec0469d35b4f1" name="af47ba9270d67f0d37c6ec0469d35b4f1"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaceArmor</b> = 0</td></tr>
-<tr class="memdesc:af47ba9270d67f0d37c6ec0469d35b4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [MaceAc]: Mace defense modifier. <br /></td></tr>
-<tr class="separator:af47ba9270d67f0d37c6ec0469d35b4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9874e456408e76c2b18530f1ceb2deb8"><td class="memItemLeft" align="right" valign="top"><a id="a9874e456408e76c2b18530f1ceb2deb8" name="a9874e456408e76c2b18530f1ceb2deb8"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>AxeArmor</b> = 0</td></tr>
-<tr class="memdesc:a9874e456408e76c2b18530f1ceb2deb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [AxeAc]: Axe defense modifier. <br /></td></tr>
-<tr class="separator:a9874e456408e76c2b18530f1ceb2deb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc8a594b58635ca13af25a314fefa42a"><td class="memItemLeft" align="right" valign="top"><a id="afc8a594b58635ca13af25a314fefa42a" name="afc8a594b58635ca13af25a314fefa42a"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>SpearArmor</b> = 0</td></tr>
-<tr class="memdesc:afc8a594b58635ca13af25a314fefa42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [SpearAc]: Spear defense modifier. <br /></td></tr>
-<tr class="separator:afc8a594b58635ca13af25a314fefa42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f0297427b5ab9f8b5d36c4b7cfac42a"><td class="memItemLeft" align="right" valign="top"><a id="a4f0297427b5ab9f8b5d36c4b7cfac42a" name="a4f0297427b5ab9f8b5d36c4b7cfac42a"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>BowArmor</b> = 0</td></tr>
-<tr class="memdesc:a4f0297427b5ab9f8b5d36c4b7cfac42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [BowAc]: Bow defense modifier. <br /></td></tr>
-<tr class="separator:a4f0297427b5ab9f8b5d36c4b7cfac42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa62fc926f33d2dbe5eebcacba1c9c7e1"><td class="memItemLeft" align="right" valign="top"><a id="aa62fc926f33d2dbe5eebcacba1c9c7e1" name="aa62fc926f33d2dbe5eebcacba1c9c7e1"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>FireDamage</b> = 0</td></tr>
-<tr class="memdesc:aa62fc926f33d2dbe5eebcacba1c9c7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [FireDamage]: Fire damage. <br /></td></tr>
-<tr class="separator:aa62fc926f33d2dbe5eebcacba1c9c7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a827d0150e2cb6bc6320039628a41ecf7"><td class="memItemLeft" align="right" valign="top"><a id="a827d0150e2cb6bc6320039628a41ecf7" name="a827d0150e2cb6bc6320039628a41ecf7"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>IceDamage</b> = 0</td></tr>
-<tr class="memdesc:a827d0150e2cb6bc6320039628a41ecf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [IceDamage]: Ice damage. <br /></td></tr>
-<tr class="separator:a827d0150e2cb6bc6320039628a41ecf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f4256a62f47311198d8a971ae99b8f4"><td class="memItemLeft" align="right" valign="top"><a id="a5f4256a62f47311198d8a971ae99b8f4" name="a5f4256a62f47311198d8a971ae99b8f4"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>LightningDamage</b> = 0</td></tr>
-<tr class="memdesc:a5f4256a62f47311198d8a971ae99b8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [LightningDamage]: Lightning damage. <br /></td></tr>
-<tr class="separator:a5f4256a62f47311198d8a971ae99b8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb73391076dccc52a118a191570f31e7"><td class="memItemLeft" align="right" valign="top"><a id="abb73391076dccc52a118a191570f31e7" name="abb73391076dccc52a118a191570f31e7"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>PoisonDamage</b> = 0</td></tr>
-<tr class="memdesc:abb73391076dccc52a118a191570f31e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [PoisonDamage]: Poison damage. <br /></td></tr>
-<tr class="separator:abb73391076dccc52a118a191570f31e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6999fc1667da012fdae7d768648296f6"><td class="memItemLeft" align="right" valign="top"><a id="a6999fc1667da012fdae7d768648296f6" name="a6999fc1667da012fdae7d768648296f6"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>HpDrain</b> = 0</td></tr>
-<tr class="memdesc:a6999fc1667da012fdae7d768648296f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [HPDrain]: Percent of damage recovered as health. <br /></td></tr>
-<tr class="separator:a6999fc1667da012fdae7d768648296f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34d1113199d324f5cc89f77435dfa46c"><td class="memItemLeft" align="right" valign="top"><a id="a34d1113199d324f5cc89f77435dfa46c" name="a34d1113199d324f5cc89f77435dfa46c"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MpDamage</b> = 0</td></tr>
-<tr class="memdesc:a34d1113199d324f5cc89f77435dfa46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [MPDamage]: Percent of damage dealt to target mana. <br /></td></tr>
-<tr class="separator:a34d1113199d324f5cc89f77435dfa46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af65a223dd9240f243fd776a8ac2da281"><td class="memItemLeft" align="right" valign="top"><a id="af65a223dd9240f243fd776a8ac2da281" name="af65a223dd9240f243fd776a8ac2da281"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MpDrain</b> = 0</td></tr>
-<tr class="memdesc:af65a223dd9240f243fd776a8ac2da281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [MPDrain]: Percent of damage recovered as mana. <br /></td></tr>
-<tr class="separator:af65a223dd9240f243fd776a8ac2da281"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ef5298d5e749df1f7cf624fb80de29a"><td class="memItemLeft" align="right" valign="top"><a id="a7ef5298d5e749df1f7cf624fb80de29a" name="a7ef5298d5e749df1f7cf624fb80de29a"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MirrorDamage</b> = 0</td></tr>
-<tr class="memdesc:a7ef5298d5e749df1f7cf624fb80de29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [MirrorDamage]: Percent of damage reflected to attacker. <br /></td></tr>
-<tr class="separator:a7ef5298d5e749df1f7cf624fb80de29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc9754ef381db409fee905fd942f427"><td class="memItemLeft" align="right" valign="top"><a id="a4dc9754ef381db409fee905fd942f427" name="a4dc9754ef381db409fee905fd942f427"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>DropRate</b> = 0</td></tr>
-<tr class="memdesc:a4dc9754ef381db409fee905fd942f427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Droprate]: TODO: Unused? Drop rates dictated by K_NPC_ITEM. <br /></td></tr>
-<tr class="separator:a4dc9754ef381db409fee905fd942f427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1940681b5dffe6e5159803ca9ba61f80"><td class="memItemLeft" align="right" valign="top"><a id="a1940681b5dffe6e5159803ca9ba61f80" name="a1940681b5dffe6e5159803ca9ba61f80"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>StrengthBonus</b> = 0</td></tr>
-<tr class="memdesc:a1940681b5dffe6e5159803ca9ba61f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [StrB]: Strength bonus when item equipped. <br /></td></tr>
-<tr class="separator:a1940681b5dffe6e5159803ca9ba61f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d1d312916d49d5c36b360b3ede5c446"><td class="memItemLeft" align="right" valign="top"><a id="a7d1d312916d49d5c36b360b3ede5c446" name="a7d1d312916d49d5c36b360b3ede5c446"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>StaminaBonus</b> = 0</td></tr>
-<tr class="memdesc:a7d1d312916d49d5c36b360b3ede5c446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [StaB]: Stamina bonus when item equipped. <br /></td></tr>
-<tr class="separator:a7d1d312916d49d5c36b360b3ede5c446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb5cf88f42347157aa2dcbce2cc5813c"><td class="memItemLeft" align="right" valign="top"><a id="acb5cf88f42347157aa2dcbce2cc5813c" name="acb5cf88f42347157aa2dcbce2cc5813c"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>DexterityBonus</b> = 0</td></tr>
-<tr class="memdesc:acb5cf88f42347157aa2dcbce2cc5813c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [DexB]: Dexterity bonus when item equipped. <br /></td></tr>
-<tr class="separator:acb5cf88f42347157aa2dcbce2cc5813c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbdab73bab2af0ffb420253fa53989d6"><td class="memItemLeft" align="right" valign="top"><a id="afbdab73bab2af0ffb420253fa53989d6" name="afbdab73bab2af0ffb420253fa53989d6"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>IntelligenceBonus</b> = 0</td></tr>
-<tr class="memdesc:afbdab73bab2af0ffb420253fa53989d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [IntelB]: Intelligence bonus when item equipped. <br /></td></tr>
-<tr class="separator:afbdab73bab2af0ffb420253fa53989d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc11318731ab0acaa4bc28b98b3e3308"><td class="memItemLeft" align="right" valign="top"><a id="acc11318731ab0acaa4bc28b98b3e3308" name="acc11318731ab0acaa4bc28b98b3e3308"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>CharismaBonus</b> = 0</td></tr>
-<tr class="memdesc:acc11318731ab0acaa4bc28b98b3e3308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ChaB]: Charisma bonus when item equipped. <br /></td></tr>
-<tr class="separator:acc11318731ab0acaa4bc28b98b3e3308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfd9fffc92a64a8628b8aa53b42a7931"><td class="memItemLeft" align="right" valign="top"><a id="abfd9fffc92a64a8628b8aa53b42a7931" name="abfd9fffc92a64a8628b8aa53b42a7931"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxHpBonus</b> = 0</td></tr>
-<tr class="memdesc:abfd9fffc92a64a8628b8aa53b42a7931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [MaxHpB]: Maximum health bonus when item equipped. <br /></td></tr>
-<tr class="separator:abfd9fffc92a64a8628b8aa53b42a7931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a307967c6f195bf0e73623521888d1fa8"><td class="memItemLeft" align="right" valign="top"><a id="a307967c6f195bf0e73623521888d1fa8" name="a307967c6f195bf0e73623521888d1fa8"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxMpBonus</b> = 0</td></tr>
-<tr class="memdesc:a307967c6f195bf0e73623521888d1fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [MaxMpB]: Maximum mana bonus when item equipped. <br /></td></tr>
-<tr class="separator:a307967c6f195bf0e73623521888d1fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a554ef91732e697dabf53dfaa773ac1c1"><td class="memItemLeft" align="right" valign="top"><a id="a554ef91732e697dabf53dfaa773ac1c1" name="a554ef91732e697dabf53dfaa773ac1c1"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>FireResistance</b> = 0</td></tr>
-<tr class="memdesc:a554ef91732e697dabf53dfaa773ac1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [FireR]: Fire resistance. <br /></td></tr>
-<tr class="separator:a554ef91732e697dabf53dfaa773ac1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30816c76079fe0ea6127962b2add40e6"><td class="memItemLeft" align="right" valign="top"><a id="a30816c76079fe0ea6127962b2add40e6" name="a30816c76079fe0ea6127962b2add40e6"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>ColdResistance</b> = 0</td></tr>
-<tr class="memdesc:a30816c76079fe0ea6127962b2add40e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [ColdR]: Cold resistance. <br /></td></tr>
-<tr class="separator:a30816c76079fe0ea6127962b2add40e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ccf3d8a904c853c7791ffffa710f3ff"><td class="memItemLeft" align="right" valign="top"><a id="a3ccf3d8a904c853c7791ffffa710f3ff" name="a3ccf3d8a904c853c7791ffffa710f3ff"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>LightningResistance</b> = 0</td></tr>
-<tr class="memdesc:a3ccf3d8a904c853c7791ffffa710f3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [LightningR]: Lightning resistance. <br /></td></tr>
-<tr class="separator:a3ccf3d8a904c853c7791ffffa710f3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab604e405c84a6816197e82bb3770e680"><td class="memItemLeft" align="right" valign="top"><a id="ab604e405c84a6816197e82bb3770e680" name="ab604e405c84a6816197e82bb3770e680"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MagicResistance</b> = 0</td></tr>
-<tr class="memdesc:ab604e405c84a6816197e82bb3770e680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [MagicR]: Magic resistance. <br /></td></tr>
-<tr class="separator:ab604e405c84a6816197e82bb3770e680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf58335d3d8474273cfb8fa5eb8a5495"><td class="memItemLeft" align="right" valign="top"><a id="abf58335d3d8474273cfb8fa5eb8a5495" name="abf58335d3d8474273cfb8fa5eb8a5495"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>PoisonResistance</b> = 0</td></tr>
-<tr class="memdesc:abf58335d3d8474273cfb8fa5eb8a5495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [PoisonR]: Poison resistance. <br /></td></tr>
-<tr class="separator:abf58335d3d8474273cfb8fa5eb8a5495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e3126dfacd2ac344ba0b1af2158117"><td class="memItemLeft" align="right" valign="top"><a id="a55e3126dfacd2ac344ba0b1af2158117" name="a55e3126dfacd2ac344ba0b1af2158117"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>CurseResistance</b> = 0</td></tr>
-<tr class="memdesc:a55e3126dfacd2ac344ba0b1af2158117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [CurseR]: Curse resistance. <br /></td></tr>
-<tr class="separator:a55e3126dfacd2ac344ba0b1af2158117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >[ITEM] <a class="el" href="classaujard_1_1Item.html" title="[ITEM] Item information">Item</a> information </p>
 <dl class="gamedb"><dt><b><a class="el" href="gamedb.html#_gamedb000001">Game Database:</a></b></dt><dd>ITEM <a class="el" href="classaujard_1_1Item.html" title="[ITEM] Item information">Item</a> information </dd></dl>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa886a279f1775d453c2013c70e6b32f6" name="aa886a279f1775d453c2013c70e6b32f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa886a279f1775d453c2013c70e6b32f6">&#9670;&nbsp;</a></span>ClassId</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">aujard::Item::ClassId = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Column [Class]: usable by class. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classaujard_1_1Item.html#acf55268a4b42279b4cf072897f838e71" title="Known valid values for Class.">EnumClassId</a> </dd></dl>
-
-</div>
-</div>
 <a id="a03cccb774b4c31239110c202df6386b0" name="a03cccb774b4c31239110c202df6386b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03cccb774b4c31239110c202df6386b0">&#9670;&nbsp;</a></span>Countable</h2>
 
@@ -518,91 +162,6 @@ int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>CurseResistance</b
 
 <p>Column [Countable]: Price at which item can be sold to a merchant. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classaujard_1_1Item.html#a8838fb694702dc5a7365ae7ae2460d66" title="Known valid values for Countable.">EnumCountable</a> </dd></dl>
-
-</div>
-</div>
-<a id="af051fe7eedb8d8f778c9b0e684a8b82c" name="af051fe7eedb8d8f778c9b0e684a8b82c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af051fe7eedb8d8f778c9b0e684a8b82c">&#9670;&nbsp;</a></span>Kind</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">aujard::Item::Kind = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Column [Kind]: <a class="el" href="classaujard_1_1Item.html" title="[ITEM] Item information">Item</a> kind. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classaujard_1_1Item.html#a55f65b7cc44637b5307230130436d77e" title="Known valid values for Kind.">EnumKind</a> </dd></dl>
-
-</div>
-</div>
-<a id="a9bbcdcc739fda4439920f23a19cbf0de" name="a9bbcdcc739fda4439920f23a19cbf0de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bbcdcc739fda4439920f23a19cbf0de">&#9670;&nbsp;</a></span>Race</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">aujard::Item::Race = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Column [Race]: usable by race. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classaujard_1_1Item.html#a18c8d3cca23084a113c919a3b6654809" title="Known valid values for Race.">EnumRace</a> </dd></dl>
-
-</div>
-</div>
-<a id="a6224922c543c2203439c76f73802a331" name="a6224922c543c2203439c76f73802a331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6224922c543c2203439c76f73802a331">&#9670;&nbsp;</a></span>RequireTitle</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">aujard::Item::RequireTitle = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Column [ReqTitle]: Title required to use item. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classaujard_1_1Item.html#aa17c11a7df067768a760cf2d86be1fcb" title="Known valid values for ReqTitle.">EnumRequireTitle</a> </dd></dl>
-
-</div>
-</div>
-<a id="aa6cdbadbce34cd489533c18c77b02b3b" name="aa6cdbadbce34cd489533c18c77b02b3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6cdbadbce34cd489533c18c77b02b3b">&#9670;&nbsp;</a></span>Slot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">aujard::Item::Slot = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Column [Slot]: slot this item equips to. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classaujard_1_1Item.html#af6b0893e7fcd1e21ff312b1f87669e35" title="Known valid values for Slot.">EnumSlot</a> </dd></dl>
-
-</div>
-</div>
-<a id="a38a7b4a30fb8d14d7c6aad685f940d43" name="a38a7b4a30fb8d14d7c6aad685f940d43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38a7b4a30fb8d14d7c6aad685f940d43">&#9670;&nbsp;</a></span>SpecialEffect</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">aujard::Item::SpecialEffect = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Column [Effect2]: Special Effect. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classaujard_1_1Item.html#a873e92dad9dbf94d13a25111a6ec0902" title="Known valid values for Effect2.">EnumSpecialEffect</a> </dd></dl>
 
 </div>
 </div>

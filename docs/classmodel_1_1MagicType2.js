@@ -4,6 +4,7 @@ var classmodel_1_1MagicType2 =
       [ "Normal", "classmodel_1_1MagicType2.html#aa42ce120cd0e0062a44db16d43398034a960b44c579bc2f6818d2daaf9e4c16f0", null ],
       [ "Seeking", "classmodel_1_1MagicType2.html#aa42ce120cd0e0062a44db16d43398034adfa6bb51bca02efb16d45113cd76c1f4", null ]
     ] ],
+    [ "MapKey", "classmodel_1_1MagicType2.html#a9fb385d43a18cedd3f485cef20a8a66b", null ],
     [ "AddDamagePlus", "classmodel_1_1MagicType2.html#a90c1f0edbbd08fb12b8553107bf791b0", null ],
     [ "DamageMod", "classmodel_1_1MagicType2.html#a5c2813793c4432b00f73376d0bd08cee", null ],
     [ "Description", "classmodel_1_1MagicType2.html#af06c26a0ea319625169adce477d35e38", null ],

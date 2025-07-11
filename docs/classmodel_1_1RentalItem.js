@@ -1,5 +1,6 @@
 var classmodel_1_1RentalItem =
 [
+    [ "MapKey", "classmodel_1_1RentalItem.html#a70f4f27892ce73821c04b17931177f5f", null ],
     [ "BorrowerAccountId", "classmodel_1_1RentalItem.html#a330305c47e37adf728f08770ec6a88da", null ],
     [ "BorrowerCharId", "classmodel_1_1RentalItem.html#a001aebaf3067e317c1a5f6872553fe41", null ],
     [ "Class", "classmodel_1_1RentalItem.html#a06ff912c41c68760757e7a0d7b0b82cb", null ],
