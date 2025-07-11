@@ -1,17 +1,4 @@
 var searchData=
 [
-  ['enumbufftype_0',['EnumBuffType',['../classfull__model_1_1MagicType4.html#aa3e0ff5cce1e375551fc6010e670e146',1,'full_model::MagicType4']]],
-  ['enumclass_1',['EnumClass',['../classfull__model_1_1UserData.html#a12def8a323ce5d332a0395cc21aa9cc3',1,'full_model::UserData']]],
-  ['enumclassid_2',['EnumClassId',['../classebenezer__model_1_1Item.html#a7291c86023ed67b870903e3464f82f36',1,'ebenezer_model::Item::EnumClassId()'],['../classfull__model_1_1Item.html#a1655cc1e18b9605fb520df5572900b55',1,'full_model::Item::EnumClassId()']]],
-  ['enumcountable_3',['EnumCountable',['../classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62',1,'aujard_model::Item::EnumCountable()'],['../classebenezer__model_1_1Item.html#ad1b2d4ae9a10e09e84f32b28515e6c73',1,'ebenezer_model::Item::EnumCountable()'],['../classfull__model_1_1Item.html#a73ba222b99ae8be15eb0a7726a92f95b',1,'full_model::Item::EnumCountable()']]],
-  ['enumdirecttype_4',['EnumDirectType',['../classfull__model_1_1MagicType3.html#a90d4c3916431d63cdece9f27130d50f9',1,'full_model::MagicType3']]],
-  ['enumhittype_5',['EnumHitType',['../classfull__model_1_1MagicType2.html#ac64db29f453ce251792ccffff0d34cbf',1,'full_model::MagicType2']]],
-  ['enumkind_6',['EnumKind',['../classebenezer__model_1_1Item.html#a9fdbc49683bbbaf3ed9c4724eaf8ec3b',1,'ebenezer_model::Item::EnumKind()'],['../classfull__model_1_1Item.html#a7bb591ec90010479a44287f00c00d2f5',1,'full_model::Item::EnumKind()']]],
-  ['enumrace_7',['EnumRace',['../classfull__model_1_1UserData.html#a7969719ad105ec458a0810229be91e43',1,'full_model::UserData::EnumRace()'],['../classfull__model_1_1Item.html#a9ba8373a0168e94b35809b898cff3f84',1,'full_model::Item::EnumRace()'],['../classebenezer__model_1_1Item.html#a3f42f78131e2cde1c3e5f38a8d90f70c',1,'ebenezer_model::Item::EnumRace()']]],
-  ['enumrequiretitle_8',['EnumRequireTitle',['../classebenezer__model_1_1Item.html#a6e5a29dc33e1fadc9113e681a2d7326b',1,'ebenezer_model::Item::EnumRequireTitle()'],['../classfull__model_1_1Item.html#ab6e31a1435787cfb2834ace14ed0aa16',1,'full_model::Item::EnumRequireTitle()']]],
-  ['enumslot_9',['EnumSlot',['../classebenezer__model_1_1Item.html#add76e38c6f553f7085c3d20712e9905b',1,'ebenezer_model::Item::EnumSlot()'],['../classfull__model_1_1Item.html#ad960420f523aea1580e7c7f67d29f826',1,'full_model::Item::EnumSlot()']]],
-  ['enumspecialeffect_10',['EnumSpecialEffect',['../classebenezer__model_1_1Item.html#a36971a3adce748e4368c6de967d59c9a',1,'ebenezer_model::Item::EnumSpecialEffect()'],['../classfull__model_1_1Item.html#ae1be212e36f810becc426ca09ddc4458',1,'full_model::Item::EnumSpecialEffect()']]],
-  ['enumtargetchange_11',['EnumTargetChange',['../classfull__model_1_1MagicType7.html#a0df95f4ca5cc40db522a13ac9cd315b4',1,'full_model::MagicType7']]],
-  ['enumtype_12',['EnumType',['../classfull__model_1_1MagicType1.html#a10ac3a53ca3ebc4de08cf4c04ddcba45',1,'full_model::MagicType1::EnumType()'],['../classfull__model_1_1MagicType5.html#a751c23d9e53d6b567ef38fead595521a',1,'full_model::MagicType5::EnumType()'],['../classfull__model_1_1Monster.html#ab000ffe4dce36257fec1981f07528a76',1,'full_model::Monster::EnumType()'],['../classfull__model_1_1Npc.html#a65570ab611227e6ebb510a7439539137',1,'full_model::Npc::EnumType()']]],
-  ['enumwarptype_13',['EnumWarpType',['../classfull__model_1_1MagicType8.html#adf199e29a20904de40b0369acf8ce45b',1,'full_model::MagicType8']]]
+  ['dbtype_0',['DbType',['../namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334',1,'modelUtil']]]
 ];
