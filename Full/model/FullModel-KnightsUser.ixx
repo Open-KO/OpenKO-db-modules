@@ -2,6 +2,7 @@ module;
 
 #include <cstdint>
 #include <string>
+#include <tuple>
 #include <unordered_set>
 
 export module FullModel:KnightsUser;
@@ -54,6 +55,22 @@ namespace model
 		{
 			static const std::string dbType = "GAME";
 			return dbType;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				"sIDNum", "strUserID"
+			};
+			return primaryKey;
+		}
+
+		/// \brief Returns a value for use in map keys based on the table's primary key
+		const std::tuple<int16_t, std::string>& MapKey()
+		{
+			return std::tuple<int16_t, std::string>{KnightsId, UserId};
 		}
 
 	};

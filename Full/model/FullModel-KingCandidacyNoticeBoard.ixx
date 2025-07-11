@@ -66,5 +66,21 @@ namespace model
 			return dbType;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				"strUserID"
+			};
+			return primaryKey;
+		}
+
+		/// \brief Returns a value for use in map keys based on the table's primary key
+		const std::string& MapKey()
+		{
+			return CandidateId;
+		}
+
 	};
 }

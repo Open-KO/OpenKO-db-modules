@@ -3,6 +3,7 @@ module;
 #include <cstdint>
 #include <optional>
 #include <string>
+#include <tuple>
 #include <unordered_set>
 
 export module FullModel:ZoneInfo;
@@ -90,6 +91,22 @@ namespace model
 		{
 			static const std::string dbType = "GAME";
 			return dbType;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				"ServerNo", "ZoneNo"
+			};
+			return primaryKey;
+		}
+
+		/// \brief Returns a value for use in map keys based on the table's primary key
+		const std::tuple<int16_t, int16_t>& MapKey()
+		{
+			return std::tuple<int16_t, int16_t>{ServerId, ZoneId};
 		}
 
 	};
