@@ -44,7 +44,7 @@ namespace full_binder
 		/// \brief Binds a result's column to ZoneNumber
 		static void BindZoneNumber(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ZoneNumber);
+			m.ZoneNumber = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to EventNumber
@@ -56,67 +56,137 @@ namespace full_binder
 		/// \brief Binds a result's column to EventType
 		static void BindEventType(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.EventType);
+			m.EventType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Condition1
 		static void BindCondition1(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Condition1 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Condition1.reset();
+			}
+			else
+			{
+				m.Condition1 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Condition2
 		static void BindCondition2(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Condition2 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Condition2.reset();
+			}
+			else
+			{
+				m.Condition2 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Condition3
 		static void BindCondition3(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Condition3 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Condition3.reset();
+			}
+			else
+			{
+				m.Condition3 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Condition4
 		static void BindCondition4(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Condition4 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Condition4.reset();
+			}
+			else
+			{
+				m.Condition4 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Condition5
 		static void BindCondition5(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Condition5 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Condition5.reset();
+			}
+			else
+			{
+				m.Condition5 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Execute1
 		static void BindExecute1(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Execute1 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Execute1.reset();
+			}
+			else
+			{
+				m.Execute1 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Execute2
 		static void BindExecute2(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Execute2 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Execute2.reset();
+			}
+			else
+			{
+				m.Execute2 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Execute3
 		static void BindExecute3(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Execute3 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Execute3.reset();
+			}
+			else
+			{
+				m.Execute3 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Execute4
 		static void BindExecute4(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Execute4 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Execute4.reset();
+			}
+			else
+			{
+				m.Execute4 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Execute5
 		static void BindExecute5(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Execute5 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Execute5.reset();
+			}
+			else
+			{
+				m.Execute5 = result.get<std::string>(colIndex);
+			}
 		}
 
 	};

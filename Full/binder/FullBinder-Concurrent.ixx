@@ -36,31 +36,59 @@ namespace full_binder
 		/// \brief Binds a result's column to ServerId
 		static void BindServerId(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ServerId);
+			m.ServerId = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Zone1Count
 		static void BindZone1Count(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Zone1Count = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Zone1Count.reset();
+			}
+			else
+			{
+				m.Zone1Count = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Zone2Count
 		static void BindZone2Count(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Zone2Count = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Zone2Count.reset();
+			}
+			else
+			{
+				m.Zone2Count = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Zone3Count
 		static void BindZone3Count(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Zone3Count = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Zone3Count.reset();
+			}
+			else
+			{
+				m.Zone3Count = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Bz
 		static void BindBz(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Bz = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Bz.reset();
+			}
+			else
+			{
+				m.Bz = result.get<std::string>(colIndex);
+			}
 		}
 
 	};

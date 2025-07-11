@@ -36,7 +36,7 @@ namespace full_model
 		///
 		/// \see EnumKind
 		/// \property Kind
-		int16_t Kind = 0;
+		uint8_t Kind = 0;
 	
 		/// \enum EnumKind
 		/// \brief Known valid values for Kind
@@ -64,7 +64,7 @@ namespace full_model
 		///
 		/// \see EnumSlot
 		/// \property Slot
-		int16_t Slot = 0;
+		uint8_t Slot = 0;
 	
 		/// \enum EnumSlot
 		/// \brief Known valid values for Slot
@@ -91,7 +91,7 @@ namespace full_model
 		///
 		/// \see EnumRace
 		/// \property Race
-		int16_t Race = 0;
+		uint8_t Race = 0;
 	
 		/// \enum EnumRace
 		/// \brief Known valid values for Race
@@ -106,7 +106,7 @@ namespace full_model
 		///
 		/// \see EnumClassId
 		/// \property ClassId
-		int16_t ClassId = 0;
+		uint8_t ClassId = 0;
 	
 		/// \enum EnumClassId
 		/// \brief Known valid values for Class
@@ -195,7 +195,7 @@ namespace full_model
 		///
 		/// \see EnumCountable
 		/// \property Countable
-		int16_t Countable = 0;
+		uint8_t Countable = 0;
 	
 		/// \enum EnumCountable
 		/// \brief Known valid values for Countable
@@ -238,23 +238,23 @@ namespace full_model
 		/// \brief Column [ReqLevel]: Minimum level required to use item
 		///
 		/// \property RequireLevel
-		int16_t RequireLevel = 0;
+		uint8_t RequireLevel = 0;
 
 		/// \brief Column [ReqLevelMax]: Maximum level allowed to use item
 		///
 		/// \property MaxLevel
-		int16_t MaxLevel = 0;
+		uint8_t MaxLevel = 0;
 
 		/// \brief Column [ReqRank]: Rank required to use item
 		///
 		/// \property RequireRank
-		int16_t RequireRank = 0;
+		uint8_t RequireRank = 0;
 
 		/// \brief Column [ReqTitle]: Title required to use item
 		///
 		/// \see EnumRequireTitle
 		/// \property RequireTitle
-		int16_t RequireTitle = 0;
+		uint8_t RequireTitle = 0;
 	
 		/// \enum EnumRequireTitle
 		/// \brief Known valid values for ReqTitle
@@ -273,37 +273,37 @@ namespace full_model
 		/// \brief Column [ReqStr]: Strength required to use item
 		///
 		/// \property RequireStrength
-		int16_t RequireStrength = 0;
+		uint8_t RequireStrength = 0;
 
 		/// \brief Column [ReqSta]: Stamina required to use item
 		///
 		/// \property RequireStamina
-		int16_t RequireStamina = 0;
+		uint8_t RequireStamina = 0;
 
 		/// \brief Column [ReqDex]: Dexterity required to use item
 		///
 		/// \property RequireDexterity
-		int16_t RequireDexterity = 0;
+		uint8_t RequireDexterity = 0;
 
 		/// \brief Column [ReqIntel]: Intelligence required to use item
 		///
 		/// \property RequireIntelligence
-		int16_t RequireIntelligence = 0;
+		uint8_t RequireIntelligence = 0;
 
 		/// \brief Column [ReqCha]: Charisma required to use item
 		///
 		/// \property RequireCharisma
-		int16_t RequireCharisma = 0;
+		uint8_t RequireCharisma = 0;
 
 		/// \brief Column [SellingGroup]: NPC Selling Group
 		///
 		/// \property SellingGroup
-		int16_t SellingGroup = 0;
+		uint8_t SellingGroup = 0;
 
 		/// \brief Column [ItemType]: Item grade
 		///
 		/// \property Type
-		int16_t Type = 0;
+		uint8_t Type = 0;
 
 		/// \brief Column [Hitrate]: Attack power modifier
 		///
@@ -348,47 +348,47 @@ namespace full_model
 		/// \brief Column [FireDamage]: Fire damage
 		///
 		/// \property FireDamage
-		int16_t FireDamage = 0;
+		uint8_t FireDamage = 0;
 
 		/// \brief Column [IceDamage]: Ice damage
 		///
 		/// \property IceDamage
-		int16_t IceDamage = 0;
+		uint8_t IceDamage = 0;
 
 		/// \brief Column [LightningDamage]: Lightning damage
 		///
 		/// \property LightningDamage
-		int16_t LightningDamage = 0;
+		uint8_t LightningDamage = 0;
 
 		/// \brief Column [PoisonDamage]: Poison damage
 		///
 		/// \property PoisonDamage
-		int16_t PoisonDamage = 0;
+		uint8_t PoisonDamage = 0;
 
 		/// \brief Column [HPDrain]: Percent of damage recovered as health
 		///
 		/// \property HpDrain
-		int16_t HpDrain = 0;
+		uint8_t HpDrain = 0;
 
 		/// \brief Column [MPDamage]: Percent of damage dealt to target mana
 		///
 		/// \property MpDamage
-		int16_t MpDamage = 0;
+		uint8_t MpDamage = 0;
 
 		/// \brief Column [MPDrain]: Percent of damage recovered as mana
 		///
 		/// \property MpDrain
-		int16_t MpDrain = 0;
+		uint8_t MpDrain = 0;
 
 		/// \brief Column [MirrorDamage]: Percent of damage reflected to attacker
 		///
 		/// \property MirrorDamage
-		int16_t MirrorDamage = 0;
+		uint8_t MirrorDamage = 0;
 
 		/// \brief Column [Droprate]: TODO: Unused? Drop rates dictated by K_NPC_ITEM
 		///
 		/// \property DropRate
-		int16_t DropRate = 0;
+		uint8_t DropRate = 0;
 
 		/// \brief Column [StrB]: Strength bonus when item equipped
 		///

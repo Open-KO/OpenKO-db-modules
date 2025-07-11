@@ -50,12 +50,12 @@ namespace full_model
 		/// \brief Column [bRangeX]: Maximum distance from spawn X
 		///
 		/// \property RangeX
-		int16_t RangeX = 0;
+		uint8_t RangeX = 0;
 
 		/// \brief Column [bRangeZ]: Maximum distance from spawn Z
 		///
 		/// \property RangeZ
-		int16_t RangeZ = 0;
+		uint8_t RangeZ = 0;
 
 		/// \brief Column [sKarusGateX]: Karus gate X
 		///

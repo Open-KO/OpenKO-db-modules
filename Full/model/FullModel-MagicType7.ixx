@@ -41,12 +41,12 @@ namespace full_model
 		/// \brief Column [byValidGroup]: Valid group
 		///
 		/// \property ValidGroup
-		int16_t ValidGroup = 0;
+		uint8_t ValidGroup = 0;
 
 		/// \brief Column [byNatoinChange]: Nation change
 		///
 		/// \property NationChange
-		int16_t NationChange = 0;
+		uint8_t NationChange = 0;
 
 		/// \brief Column [shMonsterNum]: Monster number
 		///
@@ -57,7 +57,7 @@ namespace full_model
 		///
 		/// \see EnumTargetChange
 		/// \property TargetChange
-		int16_t TargetChange = 0;
+		uint8_t TargetChange = 0;
 	
 		/// \enum EnumTargetChange
 		/// \brief Known valid values for byTargetChange
@@ -70,12 +70,12 @@ namespace full_model
 		/// \brief Column [byStateChange]: State change
 		///
 		/// \property StateChange
-		int16_t StateChange = 0;
+		uint8_t StateChange = 0;
 
 		/// \brief Column [byRadius]: Area of effect circle radius
 		///
 		/// \property Radius
-		int16_t Radius = 0;
+		uint8_t Radius = 0;
 
 		/// \brief Column [shHitrate]: Hit rate
 		///
@@ -95,7 +95,7 @@ namespace full_model
 		/// \brief Column [byVisoin]: Vision
 		///
 		/// \property Vision
-		int16_t Vision = 0;
+		uint8_t Vision = 0;
 
 		/// \brief Column [nNeedItem]: Needs item
 		///

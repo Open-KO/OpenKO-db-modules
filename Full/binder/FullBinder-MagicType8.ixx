@@ -44,19 +44,33 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Name = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Name.reset();
+			}
+			else
+			{
+				m.Name = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Description = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Description.reset();
+			}
+			else
+			{
+				m.Description = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Target
 		static void BindTarget(full_model::MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Target);
+			m.Target = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Radius
@@ -68,7 +82,7 @@ namespace full_binder
 		/// \brief Binds a result's column to WarpType
 		static void BindWarpType(full_model::MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.WarpType);
+			m.WarpType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ExpRecover

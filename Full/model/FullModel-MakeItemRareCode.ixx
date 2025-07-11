@@ -25,7 +25,7 @@ namespace full_model
 		/// \brief Column [byLevelGrade]: Level grade
 		///
 		/// \property LevelGrade
-		int16_t LevelGrade = 0;
+		uint8_t LevelGrade = 0;
 
 		/// \brief Column [sUpgradeItem]: Upgrade item
 		///

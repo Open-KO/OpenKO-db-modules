@@ -55,103 +55,110 @@ namespace full_binder
 		/// \brief Binds a result's column to Nation
 		static void BindNation(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Nation);
+			m.Nation = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to UserName
 		static void BindUserName(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			m.UserName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.UserName.reset();
+			}
+			else
+			{
+				m.UserName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ElmoArea
 		static void BindElmoArea(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ElmoArea);
+			m.ElmoArea = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to KarusArea
 		static void BindKarusArea(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.KarusArea);
+			m.KarusArea = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ElmoAdvantage
 		static void BindElmoAdvantage(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ElmoAdvantage);
+			m.ElmoAdvantage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to KarusAdvantage
 		static void BindKarusAdvantage(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.KarusAdvantage);
+			m.KarusAdvantage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area1
 		static void BindArea1(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area1);
+			m.Area1 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area2
 		static void BindArea2(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area2);
+			m.Area2 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area3
 		static void BindArea3(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area3);
+			m.Area3 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area4
 		static void BindArea4(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area4);
+			m.Area4 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area5
 		static void BindArea5(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area5);
+			m.Area5 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area6
 		static void BindArea6(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area6);
+			m.Area6 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area7
 		static void BindArea7(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area7);
+			m.Area7 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area8
 		static void BindArea8(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area8);
+			m.Area8 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area9
 		static void BindArea9(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area9);
+			m.Area9 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area10
 		static void BindArea10(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area10);
+			m.Area10 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Area11
 		static void BindArea11(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Area11);
+			m.Area11 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 	};

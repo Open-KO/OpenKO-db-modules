@@ -30,17 +30,17 @@ namespace full_model
 		/// \brief Column [bLevel]: Level
 		///
 		/// \property Level
-		int16_t Level = 0;
+		uint8_t Level = 0;
 
 		/// \brief Column [bStage]: Stage
 		///
 		/// \property Stage
-		int16_t Stage = 0;
+		uint8_t Stage = 0;
 
 		/// \brief Column [bStageLevel]: Stage level
 		///
 		/// \property StageLevel
-		int16_t StageLevel = 0;
+		uint8_t StageLevel = 0;
 
 		/// \brief Column [sTime]: Time to spawn(?)
 		///
@@ -70,7 +70,7 @@ namespace full_model
 		/// \brief Column [bRange]: Radius from spawn point center to spawn monsters
 		///
 		/// \property Range
-		int16_t Range = 0;
+		uint8_t Range = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

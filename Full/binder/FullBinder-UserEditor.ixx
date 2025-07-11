@@ -70,61 +70,61 @@ namespace full_binder
 		/// \brief Binds a result's column to OldUserValue
 		static void BindOldUserValue(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.OldUserValue);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.OldUserValue);
 		}
 
 		/// \brief Binds a result's column to NewUserValue
 		static void BindNewUserValue(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.NewUserValue);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.NewUserValue);
 		}
 
 		/// \brief Binds a result's column to OldUserSkill
 		static void BindOldUserSkill(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.OldUserSkill);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.OldUserSkill);
 		}
 
 		/// \brief Binds a result's column to NewUserSkill
 		static void BindNewUserSkill(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.NewUserSkill);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.NewUserSkill);
 		}
 
 		/// \brief Binds a result's column to OldUserItem
 		static void BindOldUserItem(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.OldUserItem);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.OldUserItem);
 		}
 
 		/// \brief Binds a result's column to NewUserItem
 		static void BindNewUserItem(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.NewUserItem);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.NewUserItem);
 		}
 
 		/// \brief Binds a result's column to OldWarehouseValue
 		static void BindOldWarehouseValue(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.OldWarehouseValue);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.OldWarehouseValue);
 		}
 
 		/// \brief Binds a result's column to NewWarehouseValue
 		static void BindNewWarehouseValue(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.NewWarehouseValue);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.NewWarehouseValue);
 		}
 
 		/// \brief Binds a result's column to OldWarehouseItem
 		static void BindOldWarehouseItem(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.OldWarehouseItem);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.OldWarehouseItem);
 		}
 
 		/// \brief Binds a result's column to NewWarehouseItem
 		static void BindNewWarehouseItem(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.NewWarehouseItem);
+			result.get_ref<std::vector<uint8_t>(colIndex, m.NewWarehouseItem);
 		}
 
 		/// \brief Binds a result's column to EditorTime

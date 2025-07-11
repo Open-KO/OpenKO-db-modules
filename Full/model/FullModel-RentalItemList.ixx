@@ -47,17 +47,17 @@ namespace full_model
 		/// \brief Column [byRegType]: Reg type
 		///
 		/// \property RegType
-		int16_t RegType = 0;
+		uint8_t RegType = 0;
 
 		/// \brief Column [byItemType]: Item type
 		///
 		/// \property ItemType
-		int16_t ItemType = 0;
+		uint8_t ItemType = 0;
 
 		/// \brief Column [byClass]: Class
 		///
 		/// \property Class
-		int16_t Class = 0;
+		uint8_t Class = 0;
 
 		/// \brief Column [sRentalTime]: Rental time
 		///

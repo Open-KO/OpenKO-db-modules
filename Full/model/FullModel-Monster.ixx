@@ -56,18 +56,18 @@ namespace full_model
 		/// \brief Column [byGroup]: Group
 		///
 		/// \property Group
-		int16_t Group = 0;
+		uint8_t Group = 0;
 
 		/// \brief Column [byActType]: Act Type
 		///
 		/// \property ActType
-		int16_t ActType = 0;
+		uint8_t ActType = 0;
 
 		/// \brief Column [byType]: Type
 		///
 		/// \see EnumType
 		/// \property Type
-		int16_t Type = 0;
+		uint8_t Type = 0;
 	
 		/// \enum EnumType
 		/// \brief Known valid values for byType
@@ -86,17 +86,17 @@ namespace full_model
 		/// \brief Column [byFamily]: Family
 		///
 		/// \property Family
-		int16_t Family = 0;
+		uint8_t Family = 0;
 
 		/// \brief Column [byRank]: Rank
 		///
 		/// \property Rank
-		int16_t Rank = 0;
+		uint8_t Rank = 0;
 
 		/// \brief Column [byTitle]: Title
 		///
 		/// \property Title
-		int16_t Title = 0;
+		uint8_t Title = 0;
 
 		/// \brief Column [iSellingGroup]: Npc selling group
 		///
@@ -161,12 +161,12 @@ namespace full_model
 		/// \brief Column [bySpeed1]: Walk movement speed
 		///
 		/// \property WalkSpeed
-		int16_t WalkSpeed = 0;
+		uint8_t WalkSpeed = 0;
 
 		/// \brief Column [bySpeed2]: Run movement speed
 		///
 		/// \property RunSpeed
-		int16_t RunSpeed = 0;
+		uint8_t RunSpeed = 0;
 
 		/// \brief Column [sStandtime]: Delay time while in standing state
 		///
@@ -231,17 +231,17 @@ namespace full_model
 		/// \brief Column [byAttackRange]: Attack range
 		///
 		/// \property AttackRange
-		int16_t AttackRange = 0;
+		uint8_t AttackRange = 0;
 
 		/// \brief Column [bySearchRange]: Search range
 		///
 		/// \property SearchRange
-		int16_t SearchRange = 0;
+		uint8_t SearchRange = 0;
 
 		/// \brief Column [byTracingRange]: Tracing range
 		///
 		/// \property TracingRange
-		int16_t TracingRange = 0;
+		uint8_t TracingRange = 0;
 
 		/// \brief Column [iMoney]: Coins dropped on death
 		///
@@ -256,17 +256,17 @@ namespace full_model
 		/// \brief Column [byDirectAttack]: Direct attack
 		///
 		/// \property DirectAttack
-		int16_t DirectAttack = 0;
+		uint8_t DirectAttack = 0;
 
 		/// \brief Column [byMagicAttack]: Magic attack
 		///
 		/// \property MagicAttack
-		int16_t MagicAttack = 0;
+		uint8_t MagicAttack = 0;
 
 		/// \brief Column [byMoneyType]: Money type
 		///
 		/// \property MoneyType
-		int16_t MoneyType = 0;
+		uint8_t MoneyType = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

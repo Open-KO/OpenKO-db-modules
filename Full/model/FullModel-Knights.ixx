@@ -32,17 +32,17 @@ namespace full_model
 		/// \brief Column [Flag]: Flag TODO
 		///
 		/// \property Flag
-		int16_t Flag = 0;
+		uint8_t Flag = 0;
 
 		/// \brief Column [Nation]: Nation identifier
 		///
 		/// \property Nation
-		int16_t Nation = 0;
+		uint8_t Nation = 0;
 
 		/// \brief Column [Ranking]: Ranking by sum of members National Points
 		///
 		/// \property Ranking
-		int16_t Ranking = 0;
+		uint8_t Ranking = 0;
 
 		/// \brief Column [IDName]: Name of the Knights clan
 		///
@@ -82,7 +82,7 @@ namespace full_model
 		/// \brief Column [byOldWarResult]: Old war result
 		///
 		/// \property OldWarResult
-		int16_t OldWarResult = 0;
+		uint8_t OldWarResult = 0;
 
 		/// \brief Column [nWarEnemyID]: War enemy identifier
 		///
@@ -142,7 +142,7 @@ namespace full_model
 		/// \brief Column [bySiegeFlag]: Siege flag
 		///
 		/// \property SiegeFlag
-		int16_t SiegeFlag = 0;
+		uint8_t SiegeFlag = 0;
 
 		/// \brief Column [sAllianceKnights]: Alliance Knights TODO
 		///

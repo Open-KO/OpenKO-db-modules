@@ -100,25 +100,25 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to Kind
 		static void BindKind(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Kind);
+			m.Kind = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Slot
 		static void BindSlot(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Slot);
+			m.Slot = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Race
 		static void BindRace(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Race);
+			m.Race = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ClassId
 		static void BindClassId(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ClassId);
+			m.ClassId = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Damage
@@ -172,7 +172,7 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to Countable
 		static void BindCountable(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Countable);
+			m.Countable = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to MagicEffect
@@ -190,61 +190,61 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to RequireLevel
 		static void BindRequireLevel(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RequireLevel);
+			m.RequireLevel = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RequireRank
 		static void BindRequireRank(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RequireRank);
+			m.RequireRank = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RequireTitle
 		static void BindRequireTitle(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RequireTitle);
+			m.RequireTitle = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RequireStrength
 		static void BindRequireStrength(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RequireStrength);
+			m.RequireStrength = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RequireStamina
 		static void BindRequireStamina(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RequireStamina);
+			m.RequireStamina = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RequireDexterity
 		static void BindRequireDexterity(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RequireDexterity);
+			m.RequireDexterity = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RequireIntelligence
 		static void BindRequireIntelligence(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RequireIntelligence);
+			m.RequireIntelligence = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RequireCharisma
 		static void BindRequireCharisma(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RequireCharisma);
+			m.RequireCharisma = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to SellingGroup
 		static void BindSellingGroup(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.SellingGroup);
+			m.SellingGroup = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Type
 		static void BindType(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Type);
+			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to HitRate
@@ -298,55 +298,55 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to FireDamage
 		static void BindFireDamage(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.FireDamage);
+			m.FireDamage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to IceDamage
 		static void BindIceDamage(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.IceDamage);
+			m.IceDamage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to LightningDamage
 		static void BindLightningDamage(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.LightningDamage);
+			m.LightningDamage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to PoisonDamage
 		static void BindPoisonDamage(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.PoisonDamage);
+			m.PoisonDamage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to HpDrain
 		static void BindHpDrain(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.HpDrain);
+			m.HpDrain = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to MpDamage
 		static void BindMpDamage(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.MpDamage);
+			m.MpDamage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to MpDrain
 		static void BindMpDrain(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.MpDrain);
+			m.MpDrain = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to MirrorDamage
 		static void BindMirrorDamage(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.MirrorDamage);
+			m.MirrorDamage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to DropRate
 		static void BindDropRate(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.DropRate);
+			m.DropRate = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to StrengthBonus

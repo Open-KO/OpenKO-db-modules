@@ -77,13 +77,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Nation
 		static void BindNation(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Nation);
+			m.Nation = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Race
 		static void BindRace(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Race);
+			m.Race = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Class
@@ -95,25 +95,25 @@ namespace full_binder
 		/// \brief Binds a result's column to HairColor
 		static void BindHairColor(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.HairColor);
+			m.HairColor = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Rank
 		static void BindRank(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Rank);
+			m.Rank = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Title
 		static void BindTitle(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Title);
+			m.Title = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Level
 		static void BindLevel(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Level);
+			m.Level = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Exp
@@ -131,13 +131,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Face
 		static void BindFace(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Face);
+			m.Face = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to City
 		static void BindCity(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.City);
+			m.City = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to KnightsId
@@ -149,7 +149,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Fame
 		static void BindFame(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Fame);
+			m.Fame = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Hp
@@ -173,43 +173,43 @@ namespace full_binder
 		/// \brief Binds a result's column to Strength
 		static void BindStrength(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Strength);
+			m.Strength = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Stamina
 		static void BindStamina(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Stamina);
+			m.Stamina = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Dexterity
 		static void BindDexterity(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Dexterity);
+			m.Dexterity = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Intelligence
 		static void BindIntelligence(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Intelligence);
+			m.Intelligence = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Charisma
 		static void BindCharisma(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Charisma);
+			m.Charisma = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Authority
 		static void BindAuthority(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Authority);
+			m.Authority = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to StatPoints
 		static void BindStatPoints(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.StatPoints);
+			m.StatPoints = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Gold
@@ -221,13 +221,20 @@ namespace full_binder
 		/// \brief Binds a result's column to Zone
 		static void BindZone(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Zone);
+			m.Zone = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Bind
 		static void BindBind(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Bind = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Bind.reset();
+			}
+			else
+			{
+				m.Bind = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to PosX
@@ -257,19 +264,40 @@ namespace full_binder
 		/// \brief Binds a result's column to SkillData
 		static void BindSkillData(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			m.SkillData = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.SkillData.reset();
+			}
+			else
+			{
+				m.SkillData = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ItemData
 		static void BindItemData(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemData = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ItemData.reset();
+			}
+			else
+			{
+				m.ItemData = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Serial
 		static void BindSerial(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Serial = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Serial.reset();
+			}
+			else
+			{
+				m.Serial = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to QuestCount
@@ -281,7 +309,14 @@ namespace full_binder
 		/// \brief Binds a result's column to QuestData
 		static void BindQuestData(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			m.QuestData = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.QuestData.reset();
+			}
+			else
+			{
+				m.QuestData = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to MannerPoint
@@ -305,7 +340,14 @@ namespace full_binder
 		/// \brief Binds a result's column to UpdateTime
 		static void BindUpdateTime(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			m.UpdateTime = result.get<std::time_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.UpdateTime.reset();
+			}
+			else
+			{
+				m.UpdateTime = result.get<std::time_t>(colIndex);
+			}
 		}
 
 	};

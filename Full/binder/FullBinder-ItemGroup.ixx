@@ -69,7 +69,14 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::ItemGroup& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Name = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Name.reset();
+			}
+			else
+			{
+				m.Name = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Item1

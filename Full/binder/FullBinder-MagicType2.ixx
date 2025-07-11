@@ -46,19 +46,33 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Name = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Name.reset();
+			}
+			else
+			{
+				m.Name = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Description = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Description.reset();
+			}
+			else
+			{
+				m.Description = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to HitType
 		static void BindHitType(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.HitType);
+			m.HitType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to HitRateMod
@@ -82,13 +96,20 @@ namespace full_binder
 		/// \brief Binds a result's column to NeedArrow
 		static void BindNeedArrow(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.NeedArrow);
+			m.NeedArrow = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to AddDamagePlus
 		static void BindAddDamagePlus(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			m.AddDamagePlus = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.AddDamagePlus.reset();
+			}
+			else
+			{
+				m.AddDamagePlus = result.get<int16_t>(colIndex);
+			}
 		}
 
 	};

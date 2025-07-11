@@ -68,7 +68,14 @@ namespace full_binder
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Description = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Description.reset();
+			}
+			else
+			{
+				m.Description = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Size
@@ -104,7 +111,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Speed
 		static void BindSpeed(full_model::MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Speed);
+			m.Speed = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to AttackSpeed
@@ -182,25 +189,25 @@ namespace full_binder
 		/// \brief Binds a result's column to UserSkillUse
 		static void BindUserSkillUse(full_model::MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.UserSkillUse);
+			m.UserSkillUse = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to NeedItem
 		static void BindNeedItem(full_model::MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.NeedItem);
+			m.NeedItem = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to SkillSuccessRate
 		static void BindSkillSuccessRate(full_model::MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.SkillSuccessRate);
+			m.SkillSuccessRate = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to MonsterFriendly
 		static void BindMonsterFriendly(full_model::MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.MonsterFriendly);
+			m.MonsterFriendly = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 	};

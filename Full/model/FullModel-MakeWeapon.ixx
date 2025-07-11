@@ -26,7 +26,7 @@ namespace full_model
 		/// \brief Column [byLevel]: Level
 		///
 		/// \property Level
-		int16_t Level = 0;
+		uint8_t Level = 0;
 
 		/// \brief Column [sClass_1]: Class 1
 		///

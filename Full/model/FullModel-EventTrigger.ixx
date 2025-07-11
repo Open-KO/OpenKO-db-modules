@@ -30,7 +30,7 @@ namespace full_model
 		/// \brief Column [bNpcType]: NPC type
 		///
 		/// \property NpcType
-		int16_t NpcType = 0;
+		uint8_t NpcType = 0;
 
 		/// \brief Column [sNpcID]: NPC identifer
 		///

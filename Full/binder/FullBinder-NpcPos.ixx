@@ -51,121 +51,261 @@ namespace full_binder
 		/// \brief Binds a result's column to ZoneId
 		static void BindZoneId(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ZoneId = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ZoneId.reset();
+			}
+			else
+			{
+				m.ZoneId = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to NpcId
 		static void BindNpcId(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.NpcId = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.NpcId.reset();
+			}
+			else
+			{
+				m.NpcId = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ActType
 		static void BindActType(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ActType = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ActType.reset();
+			}
+			else
+			{
+			m.ActType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			}
 		}
 
 		/// \brief Binds a result's column to RegenType
 		static void BindRegenType(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RegenType = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.RegenType.reset();
+			}
+			else
+			{
+			m.RegenType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			}
 		}
 
 		/// \brief Binds a result's column to DungeonFamily
 		static void BindDungeonFamily(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.DungeonFamily = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.DungeonFamily.reset();
+			}
+			else
+			{
+			m.DungeonFamily = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			}
 		}
 
 		/// \brief Binds a result's column to SpecialType
 		static void BindSpecialType(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.SpecialType = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.SpecialType.reset();
+			}
+			else
+			{
+			m.SpecialType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			}
 		}
 
 		/// \brief Binds a result's column to TrapNumber
 		static void BindTrapNumber(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.TrapNumber = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.TrapNumber.reset();
+			}
+			else
+			{
+			m.TrapNumber = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			}
 		}
 
 		/// \brief Binds a result's column to LeftX
 		static void BindLeftX(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.LeftX = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.LeftX.reset();
+			}
+			else
+			{
+				m.LeftX = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to TopZ
 		static void BindTopZ(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.TopZ = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.TopZ.reset();
+			}
+			else
+			{
+				m.TopZ = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to RightX
 		static void BindRightX(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RightX = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.RightX.reset();
+			}
+			else
+			{
+				m.RightX = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to BottomZ
 		static void BindBottomZ(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.BottomZ = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.BottomZ.reset();
+			}
+			else
+			{
+				m.BottomZ = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to LimitMinZ
 		static void BindLimitMinZ(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.LimitMinZ = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.LimitMinZ.reset();
+			}
+			else
+			{
+				m.LimitMinZ = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to LimitMinX
 		static void BindLimitMinX(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.LimitMinX = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.LimitMinX.reset();
+			}
+			else
+			{
+				m.LimitMinX = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to LimitMaxX
 		static void BindLimitMaxX(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.LimitMaxX = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.LimitMaxX.reset();
+			}
+			else
+			{
+				m.LimitMaxX = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to LimitMaxZ
 		static void BindLimitMaxZ(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.LimitMaxZ = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.LimitMaxZ.reset();
+			}
+			else
+			{
+				m.LimitMaxZ = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to NumNpc
 		static void BindNumNpc(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.NumNpc = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.NumNpc.reset();
+			}
+			else
+			{
+			m.NumNpc = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			}
 		}
 
 		/// \brief Binds a result's column to RespawnTime
 		static void BindRespawnTime(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RespawnTime = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.RespawnTime.reset();
+			}
+			else
+			{
+				m.RespawnTime = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Direction
 		static void BindDirection(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Direction = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Direction.reset();
+			}
+			else
+			{
+				m.Direction = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to DotCount
 		static void BindDotCount(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.DotCount = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.DotCount.reset();
+			}
+			else
+			{
+			m.DotCount = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			}
 		}
 
 		/// \brief Binds a result's column to Path
 		static void BindPath(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Path = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Path.reset();
+			}
+			else
+			{
+				m.Path = result.get<std::string>(colIndex);
+			}
 		}
 
 	};

@@ -101,7 +101,7 @@ namespace full_model
 		/// \brief Column [bRateType]: Rate type
 		///
 		/// \property RateType
-		int16_t RateType = 0;
+		uint8_t RateType = 0;
 
 		/// \brief Column [nGenRate]: Upgrade success rate
 		///

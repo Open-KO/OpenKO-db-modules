@@ -42,7 +42,7 @@ namespace full_model
 		///
 		/// \see EnumHitType
 		/// \property HitType
-		int16_t HitType = 0;
+		uint8_t HitType = 0;
 	
 		/// \enum EnumHitType
 		/// \brief Known valid values for HitType
@@ -70,7 +70,7 @@ namespace full_model
 		/// \brief Column [NeedArrow]: Number of arrows needed for ability
 		///
 		/// \property NeedArrow
-		int16_t NeedArrow = 0;
+		uint8_t NeedArrow = 0;
 
 		/// \brief Column [AddDamagePlus]: Additional flat damage caused by ability
 		///

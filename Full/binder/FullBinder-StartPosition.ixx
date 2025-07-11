@@ -72,13 +72,13 @@ namespace full_binder
 		/// \brief Binds a result's column to RangeX
 		static void BindRangeX(full_model::StartPosition& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RangeX);
+			m.RangeX = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RangeZ
 		static void BindRangeZ(full_model::StartPosition& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RangeZ);
+			m.RangeZ = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to KarusGateX

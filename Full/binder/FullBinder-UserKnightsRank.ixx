@@ -52,37 +52,79 @@ namespace full_binder
 		/// \brief Binds a result's column to ElmoUserId
 		static void BindElmoUserId(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ElmoUserId = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ElmoUserId.reset();
+			}
+			else
+			{
+				m.ElmoUserId = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ElmoKnightsName
 		static void BindElmoKnightsName(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ElmoKnightsName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ElmoKnightsName.reset();
+			}
+			else
+			{
+				m.ElmoKnightsName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ElmoLoyalty
 		static void BindElmoLoyalty(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ElmoLoyalty = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ElmoLoyalty.reset();
+			}
+			else
+			{
+				m.ElmoLoyalty = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to KarusUserId
 		static void BindKarusUserId(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.KarusUserId = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.KarusUserId.reset();
+			}
+			else
+			{
+				m.KarusUserId = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to KarusKnightsName
 		static void BindKarusKnightsName(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.KarusKnightsName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.KarusKnightsName.reset();
+			}
+			else
+			{
+				m.KarusKnightsName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to KarusLoyalty
 		static void BindKarusLoyalty(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.KarusLoyalty = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.KarusLoyalty.reset();
+			}
+			else
+			{
+				m.KarusLoyalty = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Money

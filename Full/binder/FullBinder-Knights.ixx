@@ -63,19 +63,19 @@ namespace full_binder
 		/// \brief Binds a result's column to Flag
 		static void BindFlag(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Flag);
+			m.Flag = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Nation
 		static void BindNation(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Nation);
+			m.Nation = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Ranking
 		static void BindRanking(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Ranking);
+			m.Ranking = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Name
@@ -99,31 +99,59 @@ namespace full_binder
 		/// \brief Binds a result's column to ViceChief1
 		static void BindViceChief1(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ViceChief1 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ViceChief1.reset();
+			}
+			else
+			{
+				m.ViceChief1 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ViceChief2
 		static void BindViceChief2(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ViceChief2 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ViceChief2.reset();
+			}
+			else
+			{
+				m.ViceChief2 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ViceChief3
 		static void BindViceChief3(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ViceChief3 = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ViceChief3.reset();
+			}
+			else
+			{
+				m.ViceChief3 = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to EnemyName
 		static void BindEnemyName(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.EnemyName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.EnemyName.reset();
+			}
+			else
+			{
+				m.EnemyName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to OldWarResult
 		static void BindOldWarResult(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.OldWarResult);
+			m.OldWarResult = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to WarEnemyId
@@ -159,7 +187,14 @@ namespace full_binder
 		/// \brief Binds a result's column to Points
 		static void BindPoints(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Points = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Points.reset();
+			}
+			else
+			{
+				m.Points = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to CreateTime
@@ -183,19 +218,33 @@ namespace full_binder
 		/// \brief Binds a result's column to Mark
 		static void BindMark(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Mark = result.get<std::vector<uint8_t>>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Mark.reset();
+			}
+			else
+			{
+				m.Mark = result.get<std::vector<uint8_t>>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Stash
 		static void BindStash(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Stash = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Stash.reset();
+			}
+			else
+			{
+				m.Stash = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to SiegeFlag
 		static void BindSiegeFlag(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.SiegeFlag);
+			m.SiegeFlag = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to AllianceKnights

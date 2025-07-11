@@ -31,7 +31,7 @@ namespace full_model
 		/// \brief Column [byNation]: Nation Identifier
 		///
 		/// \property Nation
-		int16_t Nation = 0;
+		uint8_t Nation = 0;
 
 		/// \brief Column [strUserName]: User Name
 		///
@@ -41,77 +41,77 @@ namespace full_model
 		/// \brief Column [byElmoArea]: Elmorad Area: TODO Doc
 		///
 		/// \property ElmoArea
-		int16_t ElmoArea = 0;
+		uint8_t ElmoArea = 0;
 
 		/// \brief Column [byKarusArea]: Karus Area: TODO Doc
 		///
 		/// \property KarusArea
-		int16_t KarusArea = 0;
+		uint8_t KarusArea = 0;
 
 		/// \brief Column [byElmoAdvantage]: Elmorad Advantage: TODO Doc
 		///
 		/// \property ElmoAdvantage
-		int16_t ElmoAdvantage = 0;
+		uint8_t ElmoAdvantage = 0;
 
 		/// \brief Column [byKarusAdvantage]: Karus Advantage: TODO Doc
 		///
 		/// \property KarusAdvantage
-		int16_t KarusAdvantage = 0;
+		uint8_t KarusAdvantage = 0;
 
 		/// \brief Column [byArea_1]: Area1: TODO Doc
 		///
 		/// \property Area1
-		int16_t Area1 = 0;
+		uint8_t Area1 = 0;
 
 		/// \brief Column [byArea_2]: Area2: TODO Doc
 		///
 		/// \property Area2
-		int16_t Area2 = 0;
+		uint8_t Area2 = 0;
 
 		/// \brief Column [byArea_3]: Area3: TODO Doc
 		///
 		/// \property Area3
-		int16_t Area3 = 0;
+		uint8_t Area3 = 0;
 
 		/// \brief Column [byArea_4]: Area4: TODO Doc
 		///
 		/// \property Area4
-		int16_t Area4 = 0;
+		uint8_t Area4 = 0;
 
 		/// \brief Column [byArea_5]: Area5: TODO Doc
 		///
 		/// \property Area5
-		int16_t Area5 = 0;
+		uint8_t Area5 = 0;
 
 		/// \brief Column [byArea_6]: Area6: TODO Doc
 		///
 		/// \property Area6
-		int16_t Area6 = 0;
+		uint8_t Area6 = 0;
 
 		/// \brief Column [byArea_7]: Area7: TODO Doc
 		///
 		/// \property Area7
-		int16_t Area7 = 0;
+		uint8_t Area7 = 0;
 
 		/// \brief Column [byArea_8]: Area8: TODO Doc
 		///
 		/// \property Area8
-		int16_t Area8 = 0;
+		uint8_t Area8 = 0;
 
 		/// \brief Column [byArea_9]: Area9: TODO Doc
 		///
 		/// \property Area9
-		int16_t Area9 = 0;
+		uint8_t Area9 = 0;
 
 		/// \brief Column [byArea_10]: Area10: TODO Doc
 		///
 		/// \property Area10
-		int16_t Area10 = 0;
+		uint8_t Area10 = 0;
 
 		/// \brief Column [byArea_11]: Area11: TODO Doc
 		///
 		/// \property Area11
-		int16_t Area11 = 0;
+		uint8_t Area11 = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

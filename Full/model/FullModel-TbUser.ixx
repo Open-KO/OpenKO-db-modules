@@ -46,7 +46,7 @@ namespace full_model
 		/// \brief Column [strAuthority]: Authority level
 		///
 		/// \property Authority
-		int16_t Authority = 0;
+		uint8_t Authority = 0;
 
 		/// \brief Column [PremiumExpire]: Premium expiration datetime
 		///

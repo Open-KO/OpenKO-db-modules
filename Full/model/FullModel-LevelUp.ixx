@@ -25,7 +25,7 @@ namespace full_model
 		/// \brief Column [level]: Level
 		///
 		/// \property Level
-		int16_t Level = 0;
+		uint8_t Level = 0;
 
 		/// \brief Column [Exp]: Required experience to advance to the next level
 		///
@@ -67,7 +67,7 @@ namespace full_model
 		}
 
 		/// \brief Returns a value for use in map keys based on the table's primary key
-		const int16_t& MapKey()
+		const uint8_t& MapKey()
 		{
 			return Level;
 		}

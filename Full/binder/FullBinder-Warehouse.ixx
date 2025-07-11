@@ -54,13 +54,27 @@ namespace full_binder
 		/// \brief Binds a result's column to ItemData
 		static void BindItemData(full_model::Warehouse& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemData = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ItemData.reset();
+			}
+			else
+			{
+				m.ItemData = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Serial
 		static void BindSerial(full_model::Warehouse& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Serial = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Serial.reset();
+			}
+			else
+			{
+				m.Serial = result.get<std::string>(colIndex);
+			}
 		}
 
 	};

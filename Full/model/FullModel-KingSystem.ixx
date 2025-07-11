@@ -26,12 +26,12 @@ namespace full_model
 		/// \brief Column [byNation]: Nation identifier
 		///
 		/// \property Nation
-		int16_t Nation = 0;
+		uint8_t Nation = 0;
 
 		/// \brief Column [byType]: Type TODO
 		///
 		/// \property Type
-		int16_t Type = 0;
+		uint8_t Type = 0;
 
 		/// \brief Column [sYear]: Year
 		///
@@ -41,27 +41,27 @@ namespace full_model
 		/// \brief Column [byMonth]: Month
 		///
 		/// \property Month
-		int16_t Month = 0;
+		uint8_t Month = 0;
 
 		/// \brief Column [byDay]: Day
 		///
 		/// \property Day
-		int16_t Day = 0;
+		uint8_t Day = 0;
 
 		/// \brief Column [byHour]: Hour
 		///
 		/// \property Hour
-		int16_t Hour = 0;
+		uint8_t Hour = 0;
 
 		/// \brief Column [byMinute]: Minute
 		///
 		/// \property Minute
-		int16_t Minute = 0;
+		uint8_t Minute = 0;
 
 		/// \brief Column [byImType]: ImType TODO
 		///
 		/// \property ImType
-		int16_t ImType = 0;
+		uint8_t ImType = 0;
 
 		/// \brief Column [sImYear]: ImYear
 		///
@@ -71,42 +71,42 @@ namespace full_model
 		/// \brief Column [byImMonth]: ImMonth
 		///
 		/// \property ImMonth
-		int16_t ImMonth = 0;
+		uint8_t ImMonth = 0;
 
 		/// \brief Column [byImDay]: ImDay
 		///
 		/// \property ImDay
-		int16_t ImDay = 0;
+		uint8_t ImDay = 0;
 
 		/// \brief Column [byImHour]: ImHour
 		///
 		/// \property ImHour
-		int16_t ImHour = 0;
+		uint8_t ImHour = 0;
 
 		/// \brief Column [byImMinute]: ImMinute
 		///
 		/// \property ImMinute
-		int16_t ImMinute = 0;
+		uint8_t ImMinute = 0;
 
 		/// \brief Column [byNoahEvent]: Noah Event
 		///
 		/// \property NoahEvent
-		int16_t NoahEvent = 0;
+		uint8_t NoahEvent = 0;
 
 		/// \brief Column [byNoahEvent_Day]: NoahEvent Day
 		///
 		/// \property NoahEventDay
-		int16_t NoahEventDay = 0;
+		uint8_t NoahEventDay = 0;
 
 		/// \brief Column [byNoahEvent_Hour]: NoahEvent Hour
 		///
 		/// \property NoahEventHour
-		int16_t NoahEventHour = 0;
+		uint8_t NoahEventHour = 0;
 
 		/// \brief Column [byNoahEvent_Minute]: NoahEvent Minute
 		///
 		/// \property NoahEventMinute
-		int16_t NoahEventMinute = 0;
+		uint8_t NoahEventMinute = 0;
 
 		/// \brief Column [sNoahEvent_Duration]: NoahEvent Duration
 		///
@@ -116,22 +116,22 @@ namespace full_model
 		/// \brief Column [byExpEvent]: Experience Event
 		///
 		/// \property ExpEvent
-		int16_t ExpEvent = 0;
+		uint8_t ExpEvent = 0;
 
 		/// \brief Column [byExpEvent_Day]: Experience Event Day
 		///
 		/// \property ExpEventDay
-		int16_t ExpEventDay = 0;
+		uint8_t ExpEventDay = 0;
 
 		/// \brief Column [byExpEvent_Hour]: Experience Event Hour
 		///
 		/// \property ExpEventHour
-		int16_t ExpEventHour = 0;
+		uint8_t ExpEventHour = 0;
 
 		/// \brief Column [byExpEvent_Minute]: Experience Event Minute
 		///
 		/// \property ExpEventMinute
-		int16_t ExpEventMinute = 0;
+		uint8_t ExpEventMinute = 0;
 
 		/// \brief Column [sExpEvent_Duration]: Experience Event Duration
 		///
@@ -146,7 +146,7 @@ namespace full_model
 		/// \brief Column [byTerritoryTariff]: Territory tariff
 		///
 		/// \property TerritoryTariff
-		int16_t TerritoryTariff = 0;
+		uint8_t TerritoryTariff = 0;
 
 		/// \brief Column [nTerritoryTax]: Territory tax
 		///

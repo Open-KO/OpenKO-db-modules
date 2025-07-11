@@ -43,31 +43,31 @@ namespace full_binder
 		/// \brief Binds a result's column to StartTime1
 		static void BindStartTime1(full_model::MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.StartTime1);
+			m.StartTime1 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to StartTime2
 		static void BindStartTime2(full_model::MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.StartTime2);
+			m.StartTime2 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to StartTime3
 		static void BindStartTime3(full_model::MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.StartTime3);
+			m.StartTime3 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to LevelMin
 		static void BindLevelMin(full_model::MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.LevelMin);
+			m.LevelMin = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to LevelMax
 		static void BindLevelMax(full_model::MonsterChallenge& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.LevelMax);
+			m.LevelMax = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 	};

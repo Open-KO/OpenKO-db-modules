@@ -47,19 +47,19 @@ namespace full_binder
 		/// \brief Binds a result's column to Level
 		static void BindLevel(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Level);
+			m.Level = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Stage
 		static void BindStage(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Stage);
+			m.Stage = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to StageLevel
 		static void BindStageLevel(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.StageLevel);
+			m.StageLevel = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Time
@@ -95,7 +95,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Range
 		static void BindRange(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Range);
+			m.Range = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 	};

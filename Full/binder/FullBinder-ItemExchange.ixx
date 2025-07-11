@@ -68,19 +68,33 @@ namespace full_binder
 		/// \brief Binds a result's column to NpcName
 		static void BindNpcName(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
-			m.NpcName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.NpcName.reset();
+			}
+			else
+			{
+				m.NpcName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Note
 		static void BindNote(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Note = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Note.reset();
+			}
+			else
+			{
+				m.Note = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to RandomFlag
 		static void BindRandomFlag(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RandomFlag);
+			m.RandomFlag = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to OriginItemNumber1

@@ -60,7 +60,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Grade
 		static void BindGrade(full_model::KnightsCape& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Grade);
+			m.Grade = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 	};

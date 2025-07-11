@@ -77,25 +77,53 @@ namespace full_binder
 		/// \brief Binds a result's column to ImgFileName
 		static void BindImgFileName(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ImgFileName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ImgFileName.reset();
+			}
+			else
+			{
+				m.ImgFileName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ItemName
 		static void BindItemName(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ItemName.reset();
+			}
+			else
+			{
+				m.ItemName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Price
 		static void BindPrice(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Price = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Price.reset();
+			}
+			else
+			{
+				m.Price = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to PayType
 		static void BindPayType(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			m.PayType = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.PayType.reset();
+			}
+			else
+			{
+				m.PayType = result.get<int32_t>(colIndex);
+			}
 		}
 
 	};

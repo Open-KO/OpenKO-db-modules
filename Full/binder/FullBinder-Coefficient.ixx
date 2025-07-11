@@ -94,7 +94,14 @@ namespace full_binder
 		/// \brief Binds a result's column to Bow
 		static void BindBow(full_model::Coefficient& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Bow = result.get<double>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Bow.reset();
+			}
+			else
+			{
+				m.Bow = result.get<double>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to HitPoint

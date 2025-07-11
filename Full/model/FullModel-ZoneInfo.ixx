@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [ServerNo]: Server identifier
 		///
 		/// \property ServerId
-		int16_t ServerId = 0;
+		uint8_t ServerId = 0;
 
 		/// \brief Column [ZoneNo]: Zone identifier
 		///
@@ -57,12 +57,12 @@ namespace full_model
 		/// \brief Column [Type]: Type
 		///
 		/// \property Type
-		int16_t Type = 0;
+		uint8_t Type = 0;
 
 		/// \brief Column [RoomEvent]: Map EventId
 		///
 		/// \property RoomEvent
-		int16_t RoomEvent = 0;
+		uint8_t RoomEvent = 0;
 
 		/// \brief Column [bz]: Bz TODO - just seems like a description column
 		///
@@ -104,9 +104,9 @@ namespace full_model
 		}
 
 		/// \brief Returns a value for use in map keys based on the table's primary key
-		const std::tuple<int16_t, int16_t>& MapKey()
+		const std::tuple<uint8_t, int16_t>& MapKey()
 		{
-			return std::tuple<int16_t, int16_t>{ServerId, ZoneId};
+			return std::tuple<uint8_t, int16_t>{ServerId, ZoneId};
 		}
 
 	};

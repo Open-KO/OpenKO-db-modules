@@ -41,12 +41,12 @@ namespace full_model
 		/// \brief Column [ValidGroup]: Valid group
 		///
 		/// \property ValidGroup
-		int16_t ValidGroup = 0;
+		uint8_t ValidGroup = 0;
 
 		/// \brief Column [NationChange]: Nation change
 		///
 		/// \property NationChange
-		int16_t NationChange = 0;
+		uint8_t NationChange = 0;
 
 		/// \brief Column [MonsterNum]: Monster number
 		///
@@ -56,12 +56,12 @@ namespace full_model
 		/// \brief Column [TargetChange]: Target change
 		///
 		/// \property TargetChange
-		int16_t TargetChange = 0;
+		uint8_t TargetChange = 0;
 
 		/// \brief Column [StateChange]: State change
 		///
 		/// \property StateChange
-		int16_t StateChange = 0;
+		uint8_t StateChange = 0;
 
 		/// \brief Column [Radius]: Radius
 		///

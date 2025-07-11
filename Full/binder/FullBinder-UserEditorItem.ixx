@@ -77,7 +77,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Type
 		static void BindType(full_model::UserEditorItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Type);
+			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ItemId1
@@ -95,7 +95,14 @@ namespace full_binder
 		/// \brief Binds a result's column to UpdateTime
 		static void BindUpdateTime(full_model::UserEditorItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.UpdateTime = result.get<std::time_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.UpdateTime.reset();
+			}
+			else
+			{
+				m.UpdateTime = result.get<std::time_t>(colIndex);
+			}
 		}
 
 	};

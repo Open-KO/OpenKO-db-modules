@@ -70,19 +70,19 @@ namespace full_binder
 		/// \brief Binds a result's column to RegType
 		static void BindRegType(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RegType);
+			m.RegType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ItemType
 		static void BindItemType(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ItemType);
+			m.ItemType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Class
 		static void BindClass(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Class);
+			m.Class = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RentalTime
@@ -112,19 +112,40 @@ namespace full_binder
 		/// \brief Binds a result's column to BorrowerCharId
 		static void BindBorrowerCharId(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			m.BorrowerCharId = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.BorrowerCharId.reset();
+			}
+			else
+			{
+				m.BorrowerCharId = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to BorrowerAccountId
 		static void BindBorrowerAccountId(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			m.BorrowerAccountId = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.BorrowerAccountId.reset();
+			}
+			else
+			{
+				m.BorrowerAccountId = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to LendTime
 		static void BindLendTime(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			m.LendTime = result.get<std::time_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.LendTime.reset();
+			}
+			else
+			{
+				m.LendTime = result.get<std::time_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to RegisterTime

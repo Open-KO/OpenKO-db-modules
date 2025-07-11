@@ -56,13 +56,13 @@ namespace full_binder
 		/// \brief Binds a result's column to RentalType
 		static void BindRentalType(full_model::UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RentalType);
+			m.RentalType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RegTime
 		static void BindRegTime(full_model::UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RegTime);
+			m.RegTime = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RentalIndex
@@ -110,13 +110,27 @@ namespace full_binder
 		/// \brief Binds a result's column to RentalTimestamp
 		static void BindRentalTimestamp(full_model::UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RentalTimestamp = result.get<std::time_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.RentalTimestamp.reset();
+			}
+			else
+			{
+				m.RentalTimestamp = result.get<std::time_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to RegisterTime
 		static void BindRegisterTime(full_model::UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RegisterTime = result.get<std::time_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.RegisterTime.reset();
+			}
+			else
+			{
+				m.RegisterTime = result.get<std::time_t>(colIndex);
+			}
 		}
 
 	};

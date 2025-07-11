@@ -42,25 +42,53 @@ namespace full_binder
 		/// \brief Binds a result's column to UserId
 		static void BindUserId(full_model::HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			m.UserId = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.UserId.reset();
+			}
+			else
+			{
+				m.UserId = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Nation
 		static void BindNation(full_model::HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Nation = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Nation.reset();
+			}
+			else
+			{
+				m.Nation = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ClassName
 		static void BindClassName(full_model::HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ClassName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ClassName.reset();
+			}
+			else
+			{
+				m.ClassName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Achievement
 		static void BindAchievement(full_model::HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Achievement = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Achievement.reset();
+			}
+			else
+			{
+				m.Achievement = result.get<std::string>(colIndex);
+			}
 		}
 
 	};

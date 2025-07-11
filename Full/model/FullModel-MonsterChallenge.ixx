@@ -30,27 +30,27 @@ namespace full_model
 		/// \brief Column [bStartTime1]: StartTime 1
 		///
 		/// \property StartTime1
-		int16_t StartTime1 = 0;
+		uint8_t StartTime1 = 0;
 
 		/// \brief Column [bStartTime2]: StartTime 2
 		///
 		/// \property StartTime2
-		int16_t StartTime2 = 0;
+		uint8_t StartTime2 = 0;
 
 		/// \brief Column [bStartTime3]: StartTime 3
 		///
 		/// \property StartTime3
-		int16_t StartTime3 = 0;
+		uint8_t StartTime3 = 0;
 
 		/// \brief Column [bLevelMin]: Minimum level to enter
 		///
 		/// \property LevelMin
-		int16_t LevelMin = 0;
+		uint8_t LevelMin = 0;
 
 		/// \brief Column [bLevelMax]: Maximum level to enter
 		///
 		/// \property LevelMax
-		int16_t LevelMax = 0;
+		uint8_t LevelMax = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

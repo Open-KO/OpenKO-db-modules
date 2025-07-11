@@ -26,7 +26,7 @@ namespace full_model
 		/// \brief Column [serverid]: Server Identifier
 		///
 		/// \property ServerId
-		int16_t ServerId = 0;
+		uint8_t ServerId = 0;
 
 		/// \brief Column [zone1_count]: Zone 1 Count
 		///
@@ -83,7 +83,7 @@ namespace full_model
 		}
 
 		/// \brief Returns a value for use in map keys based on the table's primary key
-		const int16_t& MapKey()
+		const uint8_t& MapKey()
 		{
 			return ServerId;
 		}

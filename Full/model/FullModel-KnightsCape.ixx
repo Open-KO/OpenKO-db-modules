@@ -45,7 +45,7 @@ namespace full_model
 		/// \brief Column [byGrade]: Required grade
 		///
 		/// \property Grade
-		int16_t Grade = 0;
+		uint8_t Grade = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

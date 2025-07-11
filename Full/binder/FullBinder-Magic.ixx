@@ -61,43 +61,64 @@ namespace full_binder
 		/// \brief Binds a result's column to EnglishName
 		static void BindEnglishName(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.EnglishName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.EnglishName.reset();
+			}
+			else
+			{
+				m.EnglishName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to KoreanName
 		static void BindKoreanName(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.KoreanName = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.KoreanName.reset();
+			}
+			else
+			{
+				m.KoreanName = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Description = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Description.reset();
+			}
+			else
+			{
+				m.Description = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to BeforeAction
 		static void BindBeforeAction(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.BeforeAction);
+			m.BeforeAction = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to TargetAction
 		static void BindTargetAction(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.TargetAction);
+			m.TargetAction = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to SelfEffect
 		static void BindSelfEffect(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.SelfEffect);
+			m.SelfEffect = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to FlyingEffect
 		static void BindFlyingEffect(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.FlyingEffect);
+			m.FlyingEffect = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to TargetEffect
@@ -109,7 +130,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Moral
 		static void BindMoral(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Moral);
+			m.Moral = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to SkillLevel
@@ -139,7 +160,7 @@ namespace full_binder
 		/// \brief Binds a result's column to ItemGroup
 		static void BindItemGroup(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ItemGroup);
+			m.ItemGroup = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to UseItem
@@ -151,31 +172,31 @@ namespace full_binder
 		/// \brief Binds a result's column to CastTime
 		static void BindCastTime(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.CastTime);
+			m.CastTime = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RecastTime
 		static void BindRecastTime(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RecastTime);
+			m.RecastTime = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to SuccessRate
 		static void BindSuccessRate(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.SuccessRate);
+			m.SuccessRate = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Type1
 		static void BindType1(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Type1);
+			m.Type1 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Type2
 		static void BindType2(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Type2);
+			m.Type2 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Range
@@ -187,13 +208,20 @@ namespace full_binder
 		/// \brief Binds a result's column to Etc
 		static void BindEtc(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Etc);
+			m.Etc = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Event
 		static void BindEvent(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Event = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Event.reset();
+			}
+			else
+			{
+				m.Event = result.get<int32_t>(colIndex);
+			}
 		}
 
 	};

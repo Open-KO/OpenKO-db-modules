@@ -61,7 +61,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Authority
 		static void BindAuthority(full_model::TbUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Authority);
+			m.Authority = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to PremiumExpire

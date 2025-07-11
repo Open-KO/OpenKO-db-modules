@@ -42,7 +42,7 @@ namespace full_model
 		///
 		/// \see EnumType
 		/// \property Type
-		int16_t Type = 0;
+		uint8_t Type = 0;
 	
 		/// \enum EnumType
 		/// \brief Known valid values for Type
@@ -58,7 +58,7 @@ namespace full_model
 		/// \brief Column [ExpRecover]: Percent of experience loss recovered
 		///
 		/// \property ExpRecover
-		int16_t ExpRecover = 0;
+		uint8_t ExpRecover = 0;
 
 		/// \brief Column [NeedStone]: Resurrection stones required
 		///

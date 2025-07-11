@@ -48,19 +48,33 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Name = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Name.reset();
+			}
+			else
+			{
+				m.Name = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Description = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Description.reset();
+			}
+			else
+			{
+				m.Description = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Radius
 		static void BindRadius(full_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Radius);
+			m.Radius = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Angle
@@ -72,7 +86,7 @@ namespace full_binder
 		/// \brief Binds a result's column to DirectType
 		static void BindDirectType(full_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.DirectType);
+			m.DirectType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to FirstDamage
@@ -96,13 +110,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Duration
 		static void BindDuration(full_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Duration);
+			m.Duration = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Attribute
 		static void BindAttribute(full_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Attribute);
+			m.Attribute = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 	};

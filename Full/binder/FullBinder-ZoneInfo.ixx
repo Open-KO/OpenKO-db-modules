@@ -40,7 +40,7 @@ namespace full_binder
 		/// \brief Binds a result's column to ServerId
 		static void BindServerId(full_model::ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ServerId);
+			m.ServerId = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ZoneId
@@ -76,19 +76,26 @@ namespace full_binder
 		/// \brief Binds a result's column to Type
 		static void BindType(full_model::ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Type);
+			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to RoomEvent
 		static void BindRoomEvent(full_model::ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RoomEvent);
+			m.RoomEvent = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Bz
 		static void BindBz(full_model::ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Bz = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Bz.reset();
+			}
+			else
+			{
+				m.Bz = result.get<std::string>(colIndex);
+			}
 		}
 
 	};

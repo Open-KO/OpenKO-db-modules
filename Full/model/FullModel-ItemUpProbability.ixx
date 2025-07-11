@@ -25,7 +25,7 @@ namespace full_model
 		/// \brief Column [bType]: Type
 		///
 		/// \property Type
-		int16_t Type = 0;
+		uint8_t Type = 0;
 
 		/// \brief Column [nMaxSuccess]: Max Success
 		///
@@ -82,7 +82,7 @@ namespace full_model
 		}
 
 		/// \brief Returns a value for use in map keys based on the table's primary key
-		const int16_t& MapKey()
+		const uint8_t& MapKey()
 		{
 			return Type;
 		}

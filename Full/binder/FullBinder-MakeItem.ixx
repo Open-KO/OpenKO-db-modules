@@ -41,7 +41,14 @@ namespace full_binder
 		/// \brief Binds a result's column to ItemInfo
 		static void BindItemInfo(full_model::MakeItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemInfo = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ItemInfo.reset();
+			}
+			else
+			{
+				m.ItemInfo = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ItemCode
@@ -53,7 +60,7 @@ namespace full_binder
 		/// \brief Binds a result's column to ItemLevel
 		static void BindItemLevel(full_model::MakeItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ItemLevel);
+			m.ItemLevel = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 	};

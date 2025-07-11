@@ -61,13 +61,27 @@ namespace full_binder
 		/// \brief Binds a result's column to ElmoUserId
 		static void BindElmoUserId(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ElmoUserId = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ElmoUserId.reset();
+			}
+			else
+			{
+				m.ElmoUserId = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ElmoLoyaltyMonthly
 		static void BindElmoLoyaltyMonthly(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ElmoLoyaltyMonthly = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ElmoLoyaltyMonthly.reset();
+			}
+			else
+			{
+				m.ElmoLoyaltyMonthly = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ElmoCheck
@@ -85,13 +99,27 @@ namespace full_binder
 		/// \brief Binds a result's column to KarusUserId
 		static void BindKarusUserId(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.KarusUserId = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.KarusUserId.reset();
+			}
+			else
+			{
+				m.KarusUserId = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to KarusLoyaltyMonthly
 		static void BindKarusLoyaltyMonthly(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.KarusLoyaltyMonthly = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.KarusLoyaltyMonthly.reset();
+			}
+			else
+			{
+				m.KarusLoyaltyMonthly = result.get<int32_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to KarusCheck

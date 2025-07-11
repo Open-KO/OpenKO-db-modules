@@ -52,7 +52,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Nation
 		static void BindNation(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Nation);
+			m.Nation = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ElmoZoneX
@@ -70,13 +70,13 @@ namespace full_binder
 		/// \brief Binds a result's column to ElmoZoneLX
 		static void BindElmoZoneLX(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ElmoZoneLX);
+			m.ElmoZoneLX = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ElmoZoneLZ
 		static void BindElmoZoneLZ(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ElmoZoneLZ);
+			m.ElmoZoneLZ = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to KarusZoneX
@@ -94,13 +94,13 @@ namespace full_binder
 		/// \brief Binds a result's column to KarusZoneLX
 		static void BindKarusZoneLX(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.KarusZoneLX);
+			m.KarusZoneLX = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to KarusZoneLZ
 		static void BindKarusZoneLZ(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.KarusZoneLZ);
+			m.KarusZoneLZ = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to FreeZoneX
@@ -118,13 +118,13 @@ namespace full_binder
 		/// \brief Binds a result's column to FreeZoneLX
 		static void BindFreeZoneLX(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.FreeZoneLX);
+			m.FreeZoneLX = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to FreeZoneLZ
 		static void BindFreeZoneLZ(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.FreeZoneLZ);
+			m.FreeZoneLZ = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to BattleZoneX
@@ -142,13 +142,13 @@ namespace full_binder
 		/// \brief Binds a result's column to BattleZoneLX
 		static void BindBattleZoneLX(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.BattleZoneLX);
+			m.BattleZoneLX = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to BattleZoneLZ
 		static void BindBattleZoneLZ(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.BattleZoneLZ);
+			m.BattleZoneLZ = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to BattleZone2X
@@ -166,13 +166,13 @@ namespace full_binder
 		/// \brief Binds a result's column to BattleZone2LX
 		static void BindBattleZone2LX(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.BattleZone2LX);
+			m.BattleZone2LX = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to BattleZone2LZ
 		static void BindBattleZone2LZ(full_model::Home& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.BattleZone2LZ);
+			m.BattleZone2LZ = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 	};

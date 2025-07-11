@@ -36,31 +36,66 @@ namespace full_binder
 		/// \brief Binds a result's column to UserId
 		static void BindUserId(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.UserId = result.get<std::vector<uint8_t>>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.UserId.reset();
+			}
+			else
+			{
+				m.UserId = result.get<std::vector<uint8_t>>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Type
 		static void BindType(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Type = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Type.reset();
+			}
+			else
+			{
+			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			}
 		}
 
 		/// \brief Binds a result's column to Pos
 		static void BindPos(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Pos = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Pos.reset();
+			}
+			else
+			{
+				m.Pos = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ItemNum
 		static void BindItemNum(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemNum = result.get<std::vector<uint8_t>>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ItemNum.reset();
+			}
+			else
+			{
+				m.ItemNum = result.get<std::vector<uint8_t>>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ItemSerial
 		static void BindItemSerial(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemSerial = result.get<std::vector<uint8_t>>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.ItemSerial.reset();
+			}
+			else
+			{
+				m.ItemSerial = result.get<std::vector<uint8_t>>(colIndex);
+			}
 		}
 
 	};

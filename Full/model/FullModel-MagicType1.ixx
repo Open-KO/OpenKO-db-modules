@@ -42,7 +42,7 @@ namespace full_model
 		///
 		/// \see EnumType
 		/// \property Type
-		int16_t Type = 0;
+		uint8_t Type = 0;
 	
 		/// \enum EnumType
 		/// \brief Known valid values for Type
@@ -71,17 +71,17 @@ namespace full_model
 		/// \brief Column [Delay]: Delay TODO
 		///
 		/// \property Delay
-		int16_t Delay = 0;
+		uint8_t Delay = 0;
 
 		/// \brief Column [ComboType]: Combo type TODO
 		///
 		/// \property ComboType
-		int16_t ComboType = 0;
+		uint8_t ComboType = 0;
 
 		/// \brief Column [ComboCount]: Combo count TODO
 		///
 		/// \property ComboCount
-		int16_t ComboCount = 0;
+		uint8_t ComboCount = 0;
 
 		/// \brief Column [ComboDamage]: Combo damage multiplier
 		///

@@ -41,19 +41,40 @@ namespace full_binder
 		/// \brief Binds a result's column to Index
 		static void BindIndex(full_model::KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Index = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Index.reset();
+			}
+			else
+			{
+				m.Index = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Name = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Name.reset();
+			}
+			else
+			{
+				m.Name = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Points
 		static void BindPoints(full_model::KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Points = result.get<int32_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Points.reset();
+			}
+			else
+			{
+				m.Points = result.get<int32_t>(colIndex);
+			}
 		}
 
 	};

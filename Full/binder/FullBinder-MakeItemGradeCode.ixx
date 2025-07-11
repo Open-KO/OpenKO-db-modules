@@ -41,7 +41,7 @@ namespace full_binder
 		/// \brief Binds a result's column to ItemIndex
 		static void BindItemIndex(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ItemIndex);
+			m.ItemIndex = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Grade1
@@ -53,49 +53,105 @@ namespace full_binder
 		/// \brief Binds a result's column to Grade2
 		static void BindGrade2(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Grade2 = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Grade2.reset();
+			}
+			else
+			{
+				m.Grade2 = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Grade3
 		static void BindGrade3(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Grade3 = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Grade3.reset();
+			}
+			else
+			{
+				m.Grade3 = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Grade4
 		static void BindGrade4(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Grade4 = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Grade4.reset();
+			}
+			else
+			{
+				m.Grade4 = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Grade5
 		static void BindGrade5(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Grade5 = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Grade5.reset();
+			}
+			else
+			{
+				m.Grade5 = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Grade6
 		static void BindGrade6(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Grade6 = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Grade6.reset();
+			}
+			else
+			{
+				m.Grade6 = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Grade7
 		static void BindGrade7(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Grade7 = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Grade7.reset();
+			}
+			else
+			{
+				m.Grade7 = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Grade8
 		static void BindGrade8(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Grade8 = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Grade8.reset();
+			}
+			else
+			{
+				m.Grade8 = result.get<int16_t>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Grade9
 		static void BindGrade9(full_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Grade9 = result.get<int16_t>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Grade9.reset();
+			}
+			else
+			{
+				m.Grade9 = result.get<int16_t>(colIndex);
+			}
 		}
 
 	};

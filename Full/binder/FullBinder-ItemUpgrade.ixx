@@ -61,13 +61,27 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Name = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Name.reset();
+			}
+			else
+			{
+				m.Name = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Note
 		static void BindNote(full_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Note = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Note.reset();
+			}
+			else
+			{
+				m.Note = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to OriginType
@@ -139,7 +153,7 @@ namespace full_binder
 		/// \brief Binds a result's column to RateType
 		static void BindRateType(full_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.RateType);
+			m.RateType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to GenRate

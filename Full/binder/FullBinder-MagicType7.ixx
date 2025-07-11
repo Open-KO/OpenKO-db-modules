@@ -51,25 +51,39 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Name = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Name.reset();
+			}
+			else
+			{
+				m.Name = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to Note
 		static void BindNote(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Note = result.get<std::string>(colIndex);
+			if (result.is_null(colIndex))
+			{
+				m.Note.reset();
+			}
+			else
+			{
+				m.Note = result.get<std::string>(colIndex);
+			}
 		}
 
 		/// \brief Binds a result's column to ValidGroup
 		static void BindValidGroup(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ValidGroup);
+			m.ValidGroup = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to NationChange
 		static void BindNationChange(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.NationChange);
+			m.NationChange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to MonsterNumber
@@ -81,19 +95,19 @@ namespace full_binder
 		/// \brief Binds a result's column to TargetChange
 		static void BindTargetChange(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.TargetChange);
+			m.TargetChange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to StateChange
 		static void BindStateChange(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.StateChange);
+			m.StateChange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Radius
 		static void BindRadius(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Radius);
+			m.Radius = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to HitRate
@@ -117,7 +131,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Vision
 		static void BindVision(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.Vision);
+			m.Vision = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to NeedItem

@@ -36,27 +36,27 @@ namespace full_model
 		/// \brief Column [ActType]: Act type TODO
 		///
 		/// \property ActType
-		std::optional<int16_t> ActType;
+		std::optional<uint8_t> ActType;
 
 		/// \brief Column [RegenType]: Regen type TODO
 		///
 		/// \property RegenType
-		std::optional<int16_t> RegenType;
+		std::optional<uint8_t> RegenType;
 
 		/// \brief Column [DungeonFamily]: Dungeon family TODO
 		///
 		/// \property DungeonFamily
-		std::optional<int16_t> DungeonFamily;
+		std::optional<uint8_t> DungeonFamily;
 
 		/// \brief Column [SpecialType]: Special type TODO
 		///
 		/// \property SpecialType
-		std::optional<int16_t> SpecialType;
+		std::optional<uint8_t> SpecialType;
 
 		/// \brief Column [TrapNumber]: Trap number
 		///
 		/// \property TrapNumber
-		std::optional<int16_t> TrapNumber;
+		std::optional<uint8_t> TrapNumber;
 
 		/// \brief Column [LeftX]: X-coordinate representing the left side of the spawn area
 		///
@@ -101,7 +101,7 @@ namespace full_model
 		/// \brief Column [NumNPC]: Target number of NPCs for the spawn area
 		///
 		/// \property NumNpc
-		std::optional<int16_t> NumNpc;
+		std::optional<uint8_t> NumNpc;
 
 		/// \brief Column [RegTime]: How long it takes for a dead NPC to respawn
 		///
@@ -116,7 +116,7 @@ namespace full_model
 		/// \brief Column [DotCnt]: Dot count TODO
 		///
 		/// \property DotCount
-		std::optional<int16_t> DotCount;
+		std::optional<uint8_t> DotCount;
 
 		/// \brief Column [path]: Pathfinding data TODO
 		///
