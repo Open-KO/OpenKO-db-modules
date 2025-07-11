@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['levelup_0',['LevelUp',['../classmodel_1_1LevelUp.html',1,'model::LevelUp'],['../classmodel__binder_1_1LevelUp.html',1,'model_binder::LevelUp']]]
+  ['levelup_0',['LevelUp',['../classfull__binder_1_1LevelUp.html',1,'full_binder::LevelUp'],['../classfull__model_1_1LevelUp.html',1,'full_model::LevelUp']]]
 ];

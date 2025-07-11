@@ -1,0 +1,28 @@
+var classfull__model_1_1Magic =
+[
+    [ "MapKey", "classfull__model_1_1Magic.html#a94f8ecfec93d10e8f30dc31773efad95", null ],
+    [ "BeforeAction", "classfull__model_1_1Magic.html#a64a4e150f3eedba1dfe9293a11d94260", null ],
+    [ "CastTime", "classfull__model_1_1Magic.html#a73c978f49e42f5e7ca0e30feb6b39a6a", null ],
+    [ "Description", "classfull__model_1_1Magic.html#a12582f1e65b1e3daa98f0f4856a9226d", null ],
+    [ "EnglishName", "classfull__model_1_1Magic.html#a5de2fd7b6267cbdd19e13ced6c6f4700", null ],
+    [ "Etc", "classfull__model_1_1Magic.html#ab0d3cd6a49a5c0c6046b41fe1ad945b0", null ],
+    [ "Event", "classfull__model_1_1Magic.html#a8873f1f7e1a3cfac5fa8075d2c192367", null ],
+    [ "FlyingEffect", "classfull__model_1_1Magic.html#aac17aef95848750a3848787cffaeb713", null ],
+    [ "HpCost", "classfull__model_1_1Magic.html#ae1093411d1dd86a1d9eecf37ebdc47d2", null ],
+    [ "ItemGroup", "classfull__model_1_1Magic.html#abc1f8f7a82366bee0bf62914675f7384", null ],
+    [ "KoreanName", "classfull__model_1_1Magic.html#af3e668bb0763f9cbcf5633a4bec41a70", null ],
+    [ "MagicNumber", "classfull__model_1_1Magic.html#accf7d150dc14ca9de6c6aa3968035d3a", null ],
+    [ "ManaCost", "classfull__model_1_1Magic.html#ae543e63c6c68a16b33e5e5c3c280fcc8", null ],
+    [ "Moral", "classfull__model_1_1Magic.html#a65f2a0203e563a7325e1e759ab15983f", null ],
+    [ "Range", "classfull__model_1_1Magic.html#a34fb3470247e88aac5987a95b7f34296", null ],
+    [ "RecastTime", "classfull__model_1_1Magic.html#abbd23f90b0616c68f07944244aa5fb01", null ],
+    [ "SelfEffect", "classfull__model_1_1Magic.html#ad67d92f621111a94e98adef0cfba868b", null ],
+    [ "Skill", "classfull__model_1_1Magic.html#ae54451a1e6accc3e4201ee1be4556b04", null ],
+    [ "SkillLevel", "classfull__model_1_1Magic.html#a4a880815282062a488b95144eab06b03", null ],
+    [ "SuccessRate", "classfull__model_1_1Magic.html#a0f96d1d2aed4d1efa1a715b301c5d23b", null ],
+    [ "TargetAction", "classfull__model_1_1Magic.html#ab79c8710e445a249f35f5ba921a602aa", null ],
+    [ "TargetEffect", "classfull__model_1_1Magic.html#a29e1b55fbd0a42187413e76f075fc80a", null ],
+    [ "Type1", "classfull__model_1_1Magic.html#a6a253e2c3494a889645ef11386cc0bf1", null ],
+    [ "Type2", "classfull__model_1_1Magic.html#aa60c7dc3ed2b7e6a58853d660a31ce9e", null ],
+    [ "UseItem", "classfull__model_1_1Magic.html#a5d456b2c04e30ae9fb09dbba17669857", null ]
+];

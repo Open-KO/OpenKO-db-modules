@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['mage_0',['Mage',['../classmodel_1_1UserData.html#ae228cf7b46f41cff71f2a4bfb46b34eea8eb9bca606e30006ccd71ab236760ce8',1,'model::UserData']]],
-  ['magicpower_1',['MagicPower',['../classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca7f98b12e59151b27631b22344a219c5f',1,'model::MagicType4']]],
-  ['movementspeed_2',['MovementSpeed',['../classmodel_1_1MagicType4.html#a79ee4ddf4cfd43c410cc82c23adec52ca6ac1a7dc525ac874fef15626633a9c9c',1,'model::MagicType4']]]
+  ['mage_0',['Mage',['../classfull__model_1_1UserData.html#a12def8a323ce5d332a0395cc21aa9cc3a8eb9bca606e30006ccd71ab236760ce8',1,'full_model::UserData']]],
+  ['magicpower_1',['MagicPower',['../classfull__model_1_1MagicType4.html#aa3e0ff5cce1e375551fc6010e670e146a7f98b12e59151b27631b22344a219c5f',1,'full_model::MagicType4']]],
+  ['movementspeed_2',['MovementSpeed',['../classfull__model_1_1MagicType4.html#aa3e0ff5cce1e375551fc6010e670e146a6ac1a7dc525ac874fef15626633a9c9c',1,'full_model::MagicType4']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['friendlist_0',['FriendList',['../classmodel_1_1FriendList.html',1,'model::FriendList'],['../classmodel__binder_1_1FriendList.html',1,'model_binder::FriendList']]]
+  ['friendlist_0',['FriendList',['../classfull__binder_1_1FriendList.html',1,'full_binder::FriendList'],['../classfull__model_1_1FriendList.html',1,'full_model::FriendList']]]
 ];

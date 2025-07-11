@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rentalitem_0',['RentalItem',['../classmodel_1_1RentalItem.html',1,'model::RentalItem'],['../classmodel__binder_1_1RentalItem.html',1,'model_binder::RentalItem']]],
-  ['rentalitemlist_1',['RentalItemList',['../classmodel_1_1RentalItemList.html',1,'model::RentalItemList'],['../classmodel__binder_1_1RentalItemList.html',1,'model_binder::RentalItemList']]]
+  ['rentalitem_0',['RentalItem',['../classfull__binder_1_1RentalItem.html',1,'full_binder::RentalItem'],['../classfull__model_1_1RentalItem.html',1,'full_model::RentalItem']]],
+  ['rentalitemlist_1',['RentalItemList',['../classfull__binder_1_1RentalItemList.html',1,'full_binder::RentalItemList'],['../classfull__model_1_1RentalItemList.html',1,'full_model::RentalItemList']]]
 ];

@@ -43,12 +43,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmodel_1_1Event.html#abb4f3ec2993f537d4b2dccafcfa770af",
-"classmodel_1_1ItemExchange.html#aa678aad404ddf30f202deee090247523",
-"classmodel_1_1MagicType1.html#ad80f6e7d2270008edee8150ac8d4b798",
-"classmodel_1_1MakeWeapon.html#ab80dab8cd4c2044f0f3e81cabd569eb9",
-"classmodel_1_1RentalItemList.html#af951359a2fa5865d5f3aae3cbf618300",
-"classmodel__binder_1_1Concurrent.html"
+"classfull__model_1_1AccountChar.html#a285e3e033136ce698c0dae0894a36725",
+"classfull__model_1_1Item.html#aa436b8f83d485cc62a9e1433eab1be7a",
+"classfull__model_1_1KnightsSiegeWarfare.html#a4e9154964e47bc16e5879c3ef826da40",
+"classfull__model_1_1MagicType9.html#ac0723111515324a61e831ee14d0dac9c",
+"classfull__model_1_1NpcItem.html#a6a3a53a88cd276068d1f1606f04d010e",
+"classfull__model_1_1UserSavedMagic.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

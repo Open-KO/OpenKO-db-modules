@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['year_0',['Year',['../classmodel_1_1KingSystem.html#af5f635a0b78394d3c29d3d5164a4c81d',1,'model::KingSystem']]]
+  ['year_0',['Year',['../classfull__model_1_1KingSystem.html#a554288de457d7d6cad5b8acc5846f413',1,'full_model::KingSystem']]]
 ];
