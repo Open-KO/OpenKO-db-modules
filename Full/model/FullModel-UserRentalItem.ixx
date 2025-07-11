@@ -8,12 +8,12 @@ module;
 
 export module FullModel:UserRentalItem;
 
-namespace model_binder
+namespace full_binder
 {
 	export class UserRentalItem;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [USER_RENTAL_ITEM] User rental item
 	/// \class UserRentalItem
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::UserRentalItem;
+		using BinderType = full_binder::UserRentalItem;
 
 		/// \brief Column [strUserID]: User identifier
 		///

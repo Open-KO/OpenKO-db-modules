@@ -8,12 +8,12 @@ module;
 
 export module FullModel:Knights;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Knights;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KNIGHTS] Knights are the clan/guild system of the game
 	/// \class Knights
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Knights;
+		using BinderType = full_binder::Knights;
 
 		/// \brief Column [IDNum]: Identification number
 		///

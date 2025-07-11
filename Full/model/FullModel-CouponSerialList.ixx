@@ -6,12 +6,12 @@ module;
 
 export module FullModel:CouponSerialList;
 
-namespace model_binder
+namespace full_binder
 {
 	export class CouponSerialList;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [COUPON_SERIAL_LIST] Coupon Serial List
 	/// \class CouponSerialList
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::CouponSerialList;
+		using BinderType = full_binder::CouponSerialList;
 
 		/// \brief Column [nIndex]: Index
 		///

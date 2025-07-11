@@ -6,12 +6,12 @@ module;
 
 export module FullModel:KingBallotBox;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KingBallotBox;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KING_BALLOT_BOX] King Ballot Box TODO
 	/// \class KingBallotBox
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KingBallotBox;
+		using BinderType = full_binder::KingBallotBox;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

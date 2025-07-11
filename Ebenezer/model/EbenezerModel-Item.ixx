@@ -11,7 +11,7 @@ namespace ebenezer_binder
 	export class Item;
 }
 
-namespace ebenezer
+namespace ebenezer_model
 {
 	/// \brief [ITEM] Item information
 	/// \class Item

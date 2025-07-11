@@ -8,14 +8,14 @@ export module FullBinder:NpcMoveItem;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::NpcMoveItem
+	/// \brief generated nanodbc column binder for full_model::NpcMoveItem
 	export class NpcMoveItem
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -37,49 +37,49 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to CastleIndex
-		static void BindCastleIndex(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
+		static void BindCastleIndex(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.CastleIndex);
 		}
 
 		/// \brief Binds a result's column to ChangeItem
-		static void BindChangeItem(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
+		static void BindChangeItem(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ChangeItem = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ChangeId
-		static void BindChangeId(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
+		static void BindChangeId(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ChangeId = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to MoveItem
-		static void BindMoveItem(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
+		static void BindMoveItem(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.MoveItem = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to MoveMinX
-		static void BindMoveMinX(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
+		static void BindMoveMinX(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.MoveMinX = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to MoveMinY
-		static void BindMoveMinY(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
+		static void BindMoveMinY(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.MoveMinY = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to MoveMaxX
-		static void BindMoveMaxX(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
+		static void BindMoveMaxX(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.MoveMaxX = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to MoveMaxY
-		static void BindMoveMaxY(model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
+		static void BindMoveMaxY(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.MoveMaxY = result.get<int16_t>(colIndex);
 		}

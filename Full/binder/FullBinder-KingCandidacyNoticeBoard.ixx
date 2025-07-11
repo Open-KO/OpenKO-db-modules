@@ -8,14 +8,14 @@ export module FullBinder:KingCandidacyNoticeBoard;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::KingCandidacyNoticeBoard
+	/// \brief generated nanodbc column binder for full_model::KingCandidacyNoticeBoard
 	export class KingCandidacyNoticeBoard
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to CandidateId
-		static void BindCandidateId(model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
+		static void BindCandidateId(full_model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CandidateId);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
+		static void BindNation(full_model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to NoticeLength
-		static void BindNoticeLength(model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
+		static void BindNoticeLength(full_model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NoticeLength);
 		}
 
 		/// \brief Binds a result's column to Notice
-		static void BindNotice(model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
+		static void BindNotice(full_model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::vector<uint8_t>>(colIndex, m.Notice);
 		}

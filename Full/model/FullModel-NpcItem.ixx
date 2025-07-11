@@ -7,12 +7,12 @@ module;
 
 export module FullModel:NpcItem;
 
-namespace model_binder
+namespace full_binder
 {
 	export class NpcItem;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [K_NPC_ITEM] NPC loot table
 	/// \class NpcItem
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::NpcItem;
+		using BinderType = full_binder::NpcItem;
 
 		/// \brief Column [sIndex]: NPC identifier (K_NPC.sSid)
 		///

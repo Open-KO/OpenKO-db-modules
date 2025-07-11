@@ -8,14 +8,14 @@ export module FullBinder:Concurrent;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::Concurrent
+	/// \brief generated nanodbc column binder for full_model::Concurrent
 	export class Concurrent
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::Concurrent& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::Concurrent& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to ServerId
-		static void BindServerId(model::Concurrent& m, const nanodbc::result& result, short colIndex)
+		static void BindServerId(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to Zone1Count
-		static void BindZone1Count(model::Concurrent& m, const nanodbc::result& result, short colIndex)
+		static void BindZone1Count(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Zone1Count = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Zone2Count
-		static void BindZone2Count(model::Concurrent& m, const nanodbc::result& result, short colIndex)
+		static void BindZone2Count(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Zone2Count = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Zone3Count
-		static void BindZone3Count(model::Concurrent& m, const nanodbc::result& result, short colIndex)
+		static void BindZone3Count(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Zone3Count = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Bz
-		static void BindBz(model::Concurrent& m, const nanodbc::result& result, short colIndex)
+		static void BindBz(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Bz = result.get<std::string>(colIndex);
 		}

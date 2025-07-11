@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MagicType6;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MagicType6;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC_TYPE6] Supports transformation magic
 	/// \class MagicType6
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MagicType6;
+		using BinderType = full_binder::MagicType6;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

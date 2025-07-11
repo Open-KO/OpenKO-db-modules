@@ -8,12 +8,12 @@ module;
 
 export module FullModel:UserPersonalRank;
 
-namespace model_binder
+namespace full_binder
 {
 	export class UserPersonalRank;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [USER_PERSONAL_RANK] User personal ranking
 	/// \class UserPersonalRank
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::UserPersonalRank;
+		using BinderType = full_binder::UserPersonalRank;
 
 		/// \brief Column [nRank]: Ranking
 		///

@@ -7,12 +7,12 @@ module;
 
 export module FullModel:ProgramListLog;
 
-namespace model_binder
+namespace full_binder
 {
 	export class ProgramListLog;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [PROGRAMLIST_LOG] Program list log
 	/// \class ProgramListLog
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::ProgramListLog;
+		using BinderType = full_binder::ProgramListLog;
 
 		/// \brief Column [id]: Identifier
 		///

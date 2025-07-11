@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MakeItem;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MakeItem;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAKE_ITEM] Make item
 	/// \class MakeItem
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MakeItem;
+		using BinderType = full_binder::MakeItem;
 
 		/// \brief Column [sIndex]: Index
 		///

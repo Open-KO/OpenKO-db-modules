@@ -8,12 +8,12 @@ module;
 
 export module FullModel:ZoneInfo;
 
-namespace model_binder
+namespace full_binder
 {
 	export class ZoneInfo;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [ZONE_INFO] Zone (map) information
 	/// \class ZoneInfo
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::ZoneInfo;
+		using BinderType = full_binder::ZoneInfo;
 
 		/// \brief Column [ServerNo]: Server identifier
 		///

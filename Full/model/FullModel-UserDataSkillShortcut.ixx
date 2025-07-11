@@ -6,12 +6,12 @@ module;
 
 export module FullModel:UserDataSkillShortcut;
 
-namespace model_binder
+namespace full_binder
 {
 	export class UserDataSkillShortcut;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [USERDATA_SKILLSHORTCUT] User data skill shortcut
 	/// \class UserDataSkillShortcut
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::UserDataSkillShortcut;
+		using BinderType = full_binder::UserDataSkillShortcut;
 
 		/// \brief Column [strCharID]: Character identifier
 		///

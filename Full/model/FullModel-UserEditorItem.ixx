@@ -8,12 +8,12 @@ module;
 
 export module FullModel:UserEditorItem;
 
-namespace model_binder
+namespace full_binder
 {
 	export class UserEditorItem;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [USER_EDITOR_ITEM] User editor item
 	/// \class UserEditorItem
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::UserEditorItem;
+		using BinderType = full_binder::UserEditorItem;
 
 		/// \brief Column [strCharID]: Character identifier
 		///

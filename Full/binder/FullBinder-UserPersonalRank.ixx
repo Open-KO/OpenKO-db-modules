@@ -8,14 +8,14 @@ export module FullBinder:UserPersonalRank;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::UserPersonalRank
+	/// \brief generated nanodbc column binder for full_model::UserPersonalRank
 	export class UserPersonalRank
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -41,73 +41,73 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to Rank
-		static void BindRank(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindRank(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Rank);
 		}
 
 		/// \brief Binds a result's column to Position
-		static void BindPosition(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindPosition(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Position);
 		}
 
 		/// \brief Binds a result's column to ElmoUp
-		static void BindElmoUp(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindElmoUp(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ElmoUp);
 		}
 
 		/// \brief Binds a result's column to ElmoUserId
-		static void BindElmoUserId(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindElmoUserId(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ElmoUserId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ElmoLoyaltyMonthly
-		static void BindElmoLoyaltyMonthly(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindElmoLoyaltyMonthly(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ElmoLoyaltyMonthly = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ElmoCheck
-		static void BindElmoCheck(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindElmoCheck(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ElmoCheck);
 		}
 
 		/// \brief Binds a result's column to KarusUp
-		static void BindKarusUp(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindKarusUp(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.KarusUp);
 		}
 
 		/// \brief Binds a result's column to KarusUserId
-		static void BindKarusUserId(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindKarusUserId(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			m.KarusUserId = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to KarusLoyaltyMonthly
-		static void BindKarusLoyaltyMonthly(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindKarusLoyaltyMonthly(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			m.KarusLoyaltyMonthly = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to KarusCheck
-		static void BindKarusCheck(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindKarusCheck(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.KarusCheck);
 		}
 
 		/// \brief Binds a result's column to Salary
-		static void BindSalary(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindSalary(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Salary);
 		}
 
 		/// \brief Binds a result's column to UpdateDate
-		static void BindUpdateDate(model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
+		static void BindUpdateDate(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::time_t>(colIndex, m.UpdateDate);
 		}

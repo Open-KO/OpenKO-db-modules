@@ -7,12 +7,12 @@ module;
 
 export module FullModel:KnightsUser;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KnightsUser;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KNIGHTS_USER] Knights to character relationships
 	/// \class KnightsUser
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KnightsUser;
+		using BinderType = full_binder::KnightsUser;
 
 		/// \brief Column [sIDNum]: Knights identifier
 		///

@@ -8,14 +8,14 @@ export module FullBinder:CopyTest;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::CopyTest
+	/// \brief generated nanodbc column binder for full_model::CopyTest
 	export class CopyTest
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::CopyTest& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::CopyTest& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -30,7 +30,7 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to ItemSerial
-		static void BindItemSerial(model::CopyTest& m, const nanodbc::result& result, short colIndex)
+		static void BindItemSerial(full_model::CopyTest& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int64_t>(colIndex, m.ItemSerial);
 		}

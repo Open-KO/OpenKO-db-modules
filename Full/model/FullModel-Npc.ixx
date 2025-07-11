@@ -7,12 +7,12 @@ module;
 
 export module FullModel:Npc;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Npc;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [K_NPC] Non-Player Character
 	/// \class Npc
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Npc;
+		using BinderType = full_binder::Npc;
 
 		/// \brief Column [sSid]: NPC Identifier
 		///

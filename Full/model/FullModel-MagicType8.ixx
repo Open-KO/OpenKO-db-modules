@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MagicType8;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MagicType8;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC_TYPE8] Supports warp magic
 	/// \class MagicType8
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MagicType8;
+		using BinderType = full_binder::MagicType8;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

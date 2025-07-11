@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MakeWeapon;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MakeWeapon;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAKE_WEAPON] Make weapon
 	/// \class MakeWeapon
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MakeWeapon;
+		using BinderType = full_binder::MakeWeapon;
 
 		/// \brief Column [byLevel]: Level
 		///

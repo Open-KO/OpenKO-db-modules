@@ -6,12 +6,12 @@ module;
 
 export module FullModel:MonsterChallengeSummonList;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MonsterChallengeSummonList;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MONSTER_CHALLENGE_SUMMON_LIST] Forgotten Temple summon list
 	/// \class MonsterChallengeSummonList
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MonsterChallengeSummonList;
+		using BinderType = full_binder::MonsterChallengeSummonList;
 
 		/// \brief Column [sIndex]: Index
 		///

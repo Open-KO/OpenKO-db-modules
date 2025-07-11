@@ -7,12 +7,12 @@ module;
 
 export module FullModel:ItemExchange;
 
-namespace model_binder
+namespace full_binder
 {
 	export class ItemExchange;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [ITEM_EXCHANGE] Enables players to be able to give items in exchange for an item from an NPC
 	/// \class ItemExchange
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::ItemExchange;
+		using BinderType = full_binder::ItemExchange;
 
 		/// \brief Column [nIndex]: Index
 		///

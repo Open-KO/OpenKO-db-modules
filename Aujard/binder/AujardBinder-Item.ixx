@@ -10,12 +10,12 @@ import AujardModel;
 
 namespace aujard_binder
 {
-	/// \brief generated nanodbc column binder for aujard::Item
+	/// \brief generated nanodbc column binder for aujard_model::Item
 	export class Item
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(aujard::Item& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(aujard_model::Item& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -31,13 +31,13 @@ namespace aujard_binder
 		}
 
 		/// \brief Binds a result's column to Number
-		static void BindNumber(aujard::Item& m, const nanodbc::result& result, short colIndex)
+		static void BindNumber(aujard_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Number);
 		}
 
 		/// \brief Binds a result's column to Countable
-		static void BindCountable(aujard::Item& m, const nanodbc::result& result, short colIndex)
+		static void BindCountable(aujard_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Countable);
 		}

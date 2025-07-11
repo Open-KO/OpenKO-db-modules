@@ -8,12 +8,12 @@ module;
 
 export module FullModel:UserData;
 
-namespace model_binder
+namespace full_binder
 {
 	export class UserData;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [USERDATA] User data contains saved character information
 	/// \class UserData
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::UserData;
+		using BinderType = full_binder::UserData;
 
 		/// \brief Column [strUserId]: User identifier
 		///

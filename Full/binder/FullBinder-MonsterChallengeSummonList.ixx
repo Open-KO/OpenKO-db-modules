@@ -8,14 +8,14 @@ export module FullBinder:MonsterChallengeSummonList;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::MonsterChallengeSummonList
+	/// \brief generated nanodbc column binder for full_model::MonsterChallengeSummonList
 	export class MonsterChallengeSummonList
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -39,61 +39,61 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindIndex(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to Level
-		static void BindLevel(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindLevel(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Stage
-		static void BindStage(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindStage(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Stage);
 		}
 
 		/// \brief Binds a result's column to StageLevel
-		static void BindStageLevel(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindStageLevel(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.StageLevel);
 		}
 
 		/// \brief Binds a result's column to Time
-		static void BindTime(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindTime(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Time);
 		}
 
 		/// \brief Binds a result's column to MonsterId
-		static void BindMonsterId(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindMonsterId(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MonsterId);
 		}
 
 		/// \brief Binds a result's column to Count
-		static void BindCount(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindCount(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Count);
 		}
 
 		/// \brief Binds a result's column to PosX
-		static void BindPosX(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindPosX(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.PosX);
 		}
 
 		/// \brief Binds a result's column to PosZ
-		static void BindPosZ(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindPosZ(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.PosZ);
 		}
 
 		/// \brief Binds a result's column to Range
-		static void BindRange(model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
+		static void BindRange(full_model::MonsterChallengeSummonList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Range);
 		}

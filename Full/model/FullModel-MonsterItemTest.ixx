@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MonsterItemTest;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MonsterItemTest;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MONSTER_ITEM_TEST] Monster item test
 	/// \class MonsterItemTest
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MonsterItemTest;
+		using BinderType = full_binder::MonsterItemTest;
 
 		/// \brief Column [sIndex]: Index
 		///

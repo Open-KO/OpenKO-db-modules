@@ -6,12 +6,12 @@ module;
 
 export module FullModel:Home;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Home;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [HOME] TODO Doc
 	/// \class Home
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Home;
+		using BinderType = full_binder::Home;
 
 		/// \brief Column [Nation]: Nation Identifier
 		///

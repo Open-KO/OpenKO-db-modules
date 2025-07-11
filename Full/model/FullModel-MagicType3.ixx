@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MagicType3;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MagicType3;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC_TYPE3] Supports Area of Effect and Damage over Time effects
 	/// \class MagicType3
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MagicType3;
+		using BinderType = full_binder::MagicType3;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

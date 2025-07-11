@@ -6,12 +6,12 @@ module;
 
 export module FullModel:StartPosition;
 
-namespace model_binder
+namespace full_binder
 {
 	export class StartPosition;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [START_POSITION] Start position
 	/// \class StartPosition
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::StartPosition;
+		using BinderType = full_binder::StartPosition;
 
 		/// \brief Column [ZoneID]: Zone identifier
 		///

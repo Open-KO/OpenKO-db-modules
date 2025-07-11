@@ -6,12 +6,12 @@ module;
 
 export module FullModel:Version;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Version;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [VERSION] Version data and patch management
 	/// \class Version
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Version;
+		using BinderType = full_binder::Version;
 
 		/// \brief Column [sVersion]: Game version number
 		///

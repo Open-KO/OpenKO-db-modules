@@ -6,12 +6,12 @@ module;
 
 export module FullModel:LevelUp;
 
-namespace model_binder
+namespace full_binder
 {
 	export class LevelUp;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [LEVEL_UP] Level experience requirements
 	/// \class LevelUp
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::LevelUp;
+		using BinderType = full_binder::LevelUp;
 
 		/// \brief Column [level]: Level
 		///

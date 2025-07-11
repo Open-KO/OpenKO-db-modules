@@ -7,12 +7,12 @@ module;
 
 export module FullModel:Battle;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Battle;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [BATTLE] Battle data for the game server
 	/// \class Battle
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Battle;
+		using BinderType = full_binder::Battle;
 
 		/// \brief Column [sIndex]: Server Index
 		///

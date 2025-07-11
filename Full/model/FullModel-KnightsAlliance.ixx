@@ -6,12 +6,12 @@ module;
 
 export module FullModel:KnightsAlliance;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KnightsAlliance;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KNIGHTS_ALLIANCE] Knights alliance formations
 	/// \class KnightsAlliance
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KnightsAlliance;
+		using BinderType = full_binder::KnightsAlliance;
 
 		/// \brief Column [sMainAllianceKnights]: Alliance leader clan
 		///

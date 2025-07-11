@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MagicType5;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MagicType5;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC_TYPE5] Supports recovery skills
 	/// \class MagicType5
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MagicType5;
+		using BinderType = full_binder::MagicType5;
 
 		/// \brief Column [iNum]: Magic number identifier
 		///

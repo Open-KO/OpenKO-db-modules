@@ -6,12 +6,12 @@ module;
 
 export module FullModel:EventTrigger;
 
-namespace model_binder
+namespace full_binder
 {
 	export class EventTrigger;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [EVENT_TRIGGER] NPC Event Triggers
 	/// \class EventTrigger
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::EventTrigger;
+		using BinderType = full_binder::EventTrigger;
 
 		/// \brief Column [nIndex]: Index
 		///

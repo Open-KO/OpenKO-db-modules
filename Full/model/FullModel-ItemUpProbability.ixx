@@ -6,12 +6,12 @@ module;
 
 export module FullModel:ItemUpProbability;
 
-namespace model_binder
+namespace full_binder
 {
 	export class ItemUpProbability;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [ITEMUP_PROBABILITY] TODO: Doc usage
 	/// \class ItemUpProbability
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::ItemUpProbability;
+		using BinderType = full_binder::ItemUpProbability;
 
 		/// \brief Column [bType]: Type
 		///

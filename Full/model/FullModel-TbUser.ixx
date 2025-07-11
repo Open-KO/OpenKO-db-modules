@@ -7,12 +7,12 @@ module;
 
 export module FullModel:TbUser;
 
-namespace model_binder
+namespace full_binder
 {
 	export class TbUser;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [TB_USER] User Account Information
 	/// \class TbUser
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::TbUser;
+		using BinderType = full_binder::TbUser;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

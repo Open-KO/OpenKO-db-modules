@@ -7,12 +7,12 @@ module;
 
 export module FullModel:WebpageAddress;
 
-namespace model_binder
+namespace full_binder
 {
 	export class WebpageAddress;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [WEBPAGE_ADDRESS] Webpage URL list
 	/// \class WebpageAddress
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::WebpageAddress;
+		using BinderType = full_binder::WebpageAddress;
 
 		/// \brief Column [nIndex]: Index
 		///

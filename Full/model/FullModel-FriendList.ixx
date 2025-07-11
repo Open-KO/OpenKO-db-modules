@@ -6,12 +6,12 @@ module;
 
 export module FullModel:FriendList;
 
-namespace model_binder
+namespace full_binder
 {
 	export class FriendList;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [FRIEND_LIST] User friend list
 	/// \class FriendList
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::FriendList;
+		using BinderType = full_binder::FriendList;
 
 		/// \brief Column [strUserID]: User Identifier
 		///

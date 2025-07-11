@@ -8,14 +8,14 @@ export module FullBinder:MagicType2;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::MagicType2
+	/// \brief generated nanodbc column binder for full_model::MagicType2
 	export class MagicType2
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MagicType2& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::MagicType2& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -38,55 +38,55 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindMagicNumber(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.MagicNumber);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindName(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Name = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Description
-		static void BindDescription(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindDescription(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Description = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to HitType
-		static void BindHitType(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindHitType(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.HitType);
 		}
 
 		/// \brief Binds a result's column to HitRateMod
-		static void BindHitRateMod(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindHitRateMod(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.HitRateMod);
 		}
 
 		/// \brief Binds a result's column to DamageMod
-		static void BindDamageMod(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindDamageMod(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.DamageMod);
 		}
 
 		/// \brief Binds a result's column to RangeMod
-		static void BindRangeMod(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindRangeMod(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.RangeMod);
 		}
 
 		/// \brief Binds a result's column to NeedArrow
-		static void BindNeedArrow(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindNeedArrow(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NeedArrow);
 		}
 
 		/// \brief Binds a result's column to AddDamagePlus
-		static void BindAddDamagePlus(model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		static void BindAddDamagePlus(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
 			m.AddDamagePlus = result.get<int16_t>(colIndex);
 		}

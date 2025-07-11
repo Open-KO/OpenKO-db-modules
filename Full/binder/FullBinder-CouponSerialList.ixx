@@ -8,14 +8,14 @@ export module FullBinder:CouponSerialList;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::CouponSerialList
+	/// \brief generated nanodbc column binder for full_model::CouponSerialList
 	export class CouponSerialList
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::CouponSerialList& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::CouponSerialList& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::CouponSerialList& m, const nanodbc::result& result, short colIndex)
+		static void BindIndex(full_model::CouponSerialList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to SerialNum
-		static void BindSerialNum(model::CouponSerialList& m, const nanodbc::result& result, short colIndex)
+		static void BindSerialNum(full_model::CouponSerialList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.SerialNum);
 		}
 
 		/// \brief Binds a result's column to ItemNumber
-		static void BindItemNumber(model::CouponSerialList& m, const nanodbc::result& result, short colIndex)
+		static void BindItemNumber(full_model::CouponSerialList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ItemNumber);
 		}
 
 		/// \brief Binds a result's column to ItemCount
-		static void BindItemCount(model::CouponSerialList& m, const nanodbc::result& result, short colIndex)
+		static void BindItemCount(full_model::CouponSerialList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ItemCount);
 		}

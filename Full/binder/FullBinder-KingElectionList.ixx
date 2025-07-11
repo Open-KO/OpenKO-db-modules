@@ -8,14 +8,14 @@ export module FullBinder:KingElectionList;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::KingElectionList
+	/// \brief generated nanodbc column binder for full_model::KingElectionList
 	export class KingElectionList
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::KingElectionList& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::KingElectionList& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(model::KingElectionList& m, const nanodbc::result& result, short colIndex)
+		static void BindType(full_model::KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(model::KingElectionList& m, const nanodbc::result& result, short colIndex)
+		static void BindNation(full_model::KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Knights
-		static void BindKnights(model::KingElectionList& m, const nanodbc::result& result, short colIndex)
+		static void BindKnights(full_model::KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Knights = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(model::KingElectionList& m, const nanodbc::result& result, short colIndex)
+		static void BindName(full_model::KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Name = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Money
-		static void BindMoney(model::KingElectionList& m, const nanodbc::result& result, short colIndex)
+		static void BindMoney(full_model::KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Money);
 		}

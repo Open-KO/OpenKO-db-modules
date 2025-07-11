@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MagicType1;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MagicType1;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC_TYPE1] Supports melee abilities
 	/// \class MagicType1
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MagicType1;
+		using BinderType = full_binder::MagicType1;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

@@ -7,12 +7,12 @@ module;
 
 export module FullModel:HeroUser;
 
-namespace model_binder
+namespace full_binder
 {
 	export class HeroUser;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [HERO_USER] TODO Doc
 	/// \class HeroUser
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::HeroUser;
+		using BinderType = full_binder::HeroUser;
 
 		/// \brief Column [shIndex]: Index
 		///

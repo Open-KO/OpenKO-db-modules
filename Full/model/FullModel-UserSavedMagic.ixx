@@ -6,12 +6,12 @@ module;
 
 export module FullModel:UserSavedMagic;
 
-namespace model_binder
+namespace full_binder
 {
 	export class UserSavedMagic;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [USER_SAVED_MAGIC] User saved magic
 	/// \class UserSavedMagic
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::UserSavedMagic;
+		using BinderType = full_binder::UserSavedMagic;
 
 		/// \brief Column [strCharID]: Character identifier
 		///

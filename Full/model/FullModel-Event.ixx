@@ -7,12 +7,12 @@ module;
 
 export module FullModel:Event;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Event;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [EVENT] Event Information
 	/// \class Event
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Event;
+		using BinderType = full_binder::Event;
 
 		/// \brief Column [ZoneNum]: Zone Number
 		///

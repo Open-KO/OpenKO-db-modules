@@ -8,14 +8,14 @@ export module FullBinder:LevelUp;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::LevelUp
+	/// \brief generated nanodbc column binder for full_model::LevelUp
 	export class LevelUp
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::LevelUp& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::LevelUp& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -31,13 +31,13 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to Level
-		static void BindLevel(model::LevelUp& m, const nanodbc::result& result, short colIndex)
+		static void BindLevel(full_model::LevelUp& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to RequiredExp
-		static void BindRequiredExp(model::LevelUp& m, const nanodbc::result& result, short colIndex)
+		static void BindRequiredExp(full_model::LevelUp& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.RequiredExp);
 		}

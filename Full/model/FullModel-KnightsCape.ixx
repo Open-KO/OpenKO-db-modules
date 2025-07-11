@@ -6,12 +6,12 @@ module;
 
 export module FullModel:KnightsCape;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KnightsCape;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KNIGHTS_CAPE] Knights cape information
 	/// \class KnightsCape
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KnightsCape;
+		using BinderType = full_binder::KnightsCape;
 
 		/// \brief Column [sCapeIndex]: Cape identifier
 		///

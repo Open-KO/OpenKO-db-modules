@@ -8,14 +8,14 @@ export module FullBinder:EventTrigger;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::EventTrigger
+	/// \brief generated nanodbc column binder for full_model::EventTrigger
 	export class EventTrigger
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::EventTrigger& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::EventTrigger& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::EventTrigger& m, const nanodbc::result& result, short colIndex)
+		static void BindIndex(full_model::EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to NpcType
-		static void BindNpcType(model::EventTrigger& m, const nanodbc::result& result, short colIndex)
+		static void BindNpcType(full_model::EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NpcType);
 		}
 
 		/// \brief Binds a result's column to NpcId
-		static void BindNpcId(model::EventTrigger& m, const nanodbc::result& result, short colIndex)
+		static void BindNpcId(full_model::EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NpcId);
 		}
 
 		/// \brief Binds a result's column to TriggerNumber
-		static void BindTriggerNumber(model::EventTrigger& m, const nanodbc::result& result, short colIndex)
+		static void BindTriggerNumber(full_model::EventTrigger& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.TriggerNumber);
 		}

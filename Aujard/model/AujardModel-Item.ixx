@@ -11,7 +11,7 @@ namespace aujard_binder
 	export class Item;
 }
 
-namespace aujard
+namespace aujard_model
 {
 	/// \brief [ITEM] Item information
 	/// \class Item

@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MagicType9;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MagicType9;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC_TYPE9] Supports stealth and detection abilities
 	/// \class MagicType9
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MagicType9;
+		using BinderType = full_binder::MagicType9;
 
 		/// \brief Column [iNum]: Magic number identifier
 		///

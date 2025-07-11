@@ -6,12 +6,12 @@ module;
 
 export module FullModel:Item;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Item;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [ITEM] Item information
 	/// \class Item
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Item;
+		using BinderType = full_binder::Item;
 
 		/// \brief Column [Num]: Item number
 		///

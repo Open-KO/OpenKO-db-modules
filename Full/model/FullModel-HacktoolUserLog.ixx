@@ -7,12 +7,12 @@ module;
 
 export module FullModel:HacktoolUserLog;
 
-namespace model_binder
+namespace full_binder
 {
 	export class HacktoolUserLog;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [HACKTOOL_USERLOG] Tracks possible detections of a hack tool by a user
 	/// \class HacktoolUserLog
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::HacktoolUserLog;
+		using BinderType = full_binder::HacktoolUserLog;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MonsterSummonList;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MonsterSummonList;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MONSTER_SUMMON_LIST] Monster summon list
 	/// \class MonsterSummonList
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MonsterSummonList;
+		using BinderType = full_binder::MonsterSummonList;
 
 		/// \brief Column [sSid]: Monster identifier (K_MONSTER.sSid)
 		///

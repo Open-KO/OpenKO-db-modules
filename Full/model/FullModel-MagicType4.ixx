@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MagicType4;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MagicType4;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC_TYPE4] Supports stat modification skills
 	/// \class MagicType4
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MagicType4;
+		using BinderType = full_binder::MagicType4;
 
 		/// \brief Column [iNum]: Magic identification number
 		///

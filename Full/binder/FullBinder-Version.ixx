@@ -8,14 +8,14 @@ export module FullBinder:Version;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::Version
+	/// \brief generated nanodbc column binder for full_model::Version
 	export class Version
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::Version& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::Version& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to Number
-		static void BindNumber(model::Version& m, const nanodbc::result& result, short colIndex)
+		static void BindNumber(full_model::Version& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Number);
 		}
 
 		/// \brief Binds a result's column to FileName
-		static void BindFileName(model::Version& m, const nanodbc::result& result, short colIndex)
+		static void BindFileName(full_model::Version& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.FileName);
 		}
 
 		/// \brief Binds a result's column to CompressName
-		static void BindCompressName(model::Version& m, const nanodbc::result& result, short colIndex)
+		static void BindCompressName(full_model::Version& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CompressName);
 		}
 
 		/// \brief Binds a result's column to HistoryVersion
-		static void BindHistoryVersion(model::Version& m, const nanodbc::result& result, short colIndex)
+		static void BindHistoryVersion(full_model::Version& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.HistoryVersion);
 		}

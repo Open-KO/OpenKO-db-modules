@@ -7,12 +7,12 @@ module;
 
 export module FullModel:Coefficient;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Coefficient;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [COEFFICIENT] Coefficient relationship between a character class, weapon types, and stats
 	/// \class Coefficient
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Coefficient;
+		using BinderType = full_binder::Coefficient;
 
 		/// \brief Column [sClass]: ClassIdentifier
 		///

@@ -7,12 +7,12 @@ module;
 
 export module FullModel:Magic;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Magic;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC] Contains the configuration for magic and abilities
 	/// \class Magic
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Magic;
+		using BinderType = full_binder::Magic;
 
 		/// \brief Column [MagicNum]: Magic identification number
 		///

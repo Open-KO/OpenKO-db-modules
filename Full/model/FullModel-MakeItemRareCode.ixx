@@ -6,12 +6,12 @@ module;
 
 export module FullModel:MakeItemRareCode;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MakeItemRareCode;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAKE_ITEM_LARECODE] Make item rarity codes
 	/// \class MakeItemRareCode
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MakeItemRareCode;
+		using BinderType = full_binder::MakeItemRareCode;
 
 		/// \brief Column [byLevelGrade]: Level grade
 		///

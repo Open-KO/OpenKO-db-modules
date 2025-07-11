@@ -7,12 +7,12 @@ module;
 
 export module FullModel:ItemUpgrade;
 
-namespace model_binder
+namespace full_binder
 {
 	export class ItemUpgrade;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [ITEM_UPGRADE] Item upgrade configuration
 	/// \class ItemUpgrade
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::ItemUpgrade;
+		using BinderType = full_binder::ItemUpgrade;
 
 		/// \brief Column [nIndex]: Index
 		///

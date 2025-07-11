@@ -7,12 +7,12 @@ module;
 
 export module FullModel:KingElectionList;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KingElectionList;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KING_ELECTION_LIST] King election list
 	/// \class KingElectionList
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KingElectionList;
+		using BinderType = full_binder::KingElectionList;
 
 		/// \brief Column [byType]: Type TODO
 		///

@@ -7,12 +7,12 @@ module;
 
 export module FullModel:Warehouse;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Warehouse;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [WAREHOUSE] The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
 	/// \class Warehouse
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Warehouse;
+		using BinderType = full_binder::Warehouse;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

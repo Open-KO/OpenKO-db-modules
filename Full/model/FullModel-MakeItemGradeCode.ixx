@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MakeItemGradeCode;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MakeItemGradeCode;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAKE_ITEM_GRADECODE] Make item grade code
 	/// \class MakeItemGradeCode
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MakeItemGradeCode;
+		using BinderType = full_binder::MakeItemGradeCode;
 
 		/// \brief Column [byItemIndex]: Item index
 		///

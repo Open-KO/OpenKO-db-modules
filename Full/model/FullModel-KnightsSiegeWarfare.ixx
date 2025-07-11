@@ -7,12 +7,12 @@ module;
 
 export module FullModel:KnightsSiegeWarfare;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KnightsSiegeWarfare;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KNIGHTS_SIEGE_WARFARE] Knights Siege Warfare
 	/// \class KnightsSiegeWarfare
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KnightsSiegeWarfare;
+		using BinderType = full_binder::KnightsSiegeWarfare;
 
 		/// \brief Column [sCastleIndex]: Castle index TODO
 		///

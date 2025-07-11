@@ -7,12 +7,12 @@ module;
 
 export module FullModel:CopySerialItem;
 
-namespace model_binder
+namespace full_binder
 {
 	export class CopySerialItem;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [COPY_SERIAL_ITEM] TODO: Doc
 	/// \class CopySerialItem
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::CopySerialItem;
+		using BinderType = full_binder::CopySerialItem;
 
 		/// \brief Column [strUserId]: User Identifier
 		///

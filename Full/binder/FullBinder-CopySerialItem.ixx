@@ -8,14 +8,14 @@ export module FullBinder:CopySerialItem;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::CopySerialItem
+	/// \brief generated nanodbc column binder for full_model::CopySerialItem
 	export class CopySerialItem
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::CopySerialItem& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -34,31 +34,31 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to UserId
-		static void BindUserId(model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
+		static void BindUserId(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.UserId = result.get<std::vector<uint8_t>>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Type
-		static void BindType(model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
+		static void BindType(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Type = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Pos
-		static void BindPos(model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
+		static void BindPos(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Pos = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemNum
-		static void BindItemNum(model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
+		static void BindItemNum(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ItemNum = result.get<std::vector<uint8_t>>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemSerial
-		static void BindItemSerial(model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
+		static void BindItemSerial(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ItemSerial = result.get<std::vector<uint8_t>>(colIndex);
 		}

@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MonsterItem;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MonsterItem;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [K_MONSTER_ITEM] Monster loot table
 	/// \class MonsterItem
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MonsterItem;
+		using BinderType = full_binder::MonsterItem;
 
 		/// \brief Column [sIndex]: Monster identifier (K_MONSTER.sSid)
 		///

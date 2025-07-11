@@ -7,12 +7,12 @@ module;
 
 export module FullModel:AccountChar;
 
-namespace model_binder
+namespace full_binder
 {
 	export class AccountChar;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [ACCOUNT_CHAR] Represents the relationship between accounts and characters
 	/// \class AccountChar
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::AccountChar;
+		using BinderType = full_binder::AccountChar;
 
 		/// \brief Column [strAccountID]: Account Identifier
 		///

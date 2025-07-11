@@ -7,12 +7,12 @@ module;
 
 export module FullModel:KnightsRating;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KnightsRating;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KNIGHTS_RATING] Knights Ratings
 	/// \class KnightsRating
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KnightsRating;
+		using BinderType = full_binder::KnightsRating;
 
 		/// \brief Column [nRank]: Rank
 		///

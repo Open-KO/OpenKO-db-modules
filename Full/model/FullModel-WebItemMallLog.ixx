@@ -8,12 +8,12 @@ module;
 
 export module FullModel:WebItemMallLog;
 
-namespace model_binder
+namespace full_binder
 {
 	export class WebItemMallLog;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [WEB_ITEMMALL_LOG] Power-up store purchase log
 	/// \class WebItemMallLog
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::WebItemMallLog;
+		using BinderType = full_binder::WebItemMallLog;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

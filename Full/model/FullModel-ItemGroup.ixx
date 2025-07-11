@@ -7,12 +7,12 @@ module;
 
 export module FullModel:ItemGroup;
 
-namespace model_binder
+namespace full_binder
 {
 	export class ItemGroup;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [ITEM_GROUP] TODO Doc; No Data in table
 	/// \class ItemGroup
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::ItemGroup;
+		using BinderType = full_binder::ItemGroup;
 
 		/// \brief Column [group]: Group
 		///

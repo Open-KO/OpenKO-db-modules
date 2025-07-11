@@ -8,12 +8,12 @@ module;
 
 export module FullModel:RentalItemList;
 
-namespace model_binder
+namespace full_binder
 {
 	export class RentalItemList;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [RENTAL_ITEM_LIST] Rental item list
 	/// \class RentalItemList
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::RentalItemList;
+		using BinderType = full_binder::RentalItemList;
 
 		/// \brief Column [nRentalIndex]: Rental index
 		///

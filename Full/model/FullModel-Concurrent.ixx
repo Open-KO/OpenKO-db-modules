@@ -7,12 +7,12 @@ module;
 
 export module FullModel:Concurrent;
 
-namespace model_binder
+namespace full_binder
 {
 	export class Concurrent;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [CONCURRENT] Keeps track of concurrent user counts
 	/// \class Concurrent
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::Concurrent;
+		using BinderType = full_binder::Concurrent;
 
 		/// \brief Column [serverid]: Server Identifier
 		///

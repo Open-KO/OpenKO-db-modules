@@ -7,12 +7,12 @@ module;
 
 export module FullModel:UserKnightsRank;
 
-namespace model_binder
+namespace full_binder
 {
 	export class UserKnightsRank;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [USER_KNIGHTS_RANK] User Knights Ranking
 	/// \class UserKnightsRank
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::UserKnightsRank;
+		using BinderType = full_binder::UserKnightsRank;
 
 		/// \brief Column [shIndex]: Index
 		///

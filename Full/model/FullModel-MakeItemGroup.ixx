@@ -6,12 +6,12 @@ module;
 
 export module FullModel:MakeItemGroup;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MakeItemGroup;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAKE_ITEM_GROUP] Make item group
 	/// \class MakeItemGroup
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MakeItemGroup;
+		using BinderType = full_binder::MakeItemGroup;
 
 		/// \brief Column [iItemGroupNum]: Item group number
 		///

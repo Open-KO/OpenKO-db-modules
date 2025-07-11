@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MagicType7;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MagicType7;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAGIC_TYPE7] Supports targeting modifications
 	/// \class MagicType7
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MagicType7;
+		using BinderType = full_binder::MagicType7;
 
 		/// \brief Column [nIndex]: Magic identification number
 		///

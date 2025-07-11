@@ -7,12 +7,12 @@ module;
 
 export module FullModel:NpcPos;
 
-namespace model_binder
+namespace full_binder
 {
 	export class NpcPos;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [K_NPCPOS] NPC Spawn Positions
 	/// \class NpcPos
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::NpcPos;
+		using BinderType = full_binder::NpcPos;
 
 		/// \brief Column [ZoneID]: Zone Identifier
 		///

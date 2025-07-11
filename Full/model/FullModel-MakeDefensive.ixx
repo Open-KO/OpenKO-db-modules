@@ -7,12 +7,12 @@ module;
 
 export module FullModel:MakeDefensive;
 
-namespace model_binder
+namespace full_binder
 {
 	export class MakeDefensive;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [MAKE_DEFENSIVE] Make defensive
 	/// \class MakeDefensive
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::MakeDefensive;
+		using BinderType = full_binder::MakeDefensive;
 
 		/// \brief Column [byLevel]: Level
 		///

@@ -8,14 +8,14 @@ export module FullBinder:Knights;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::Knights
+	/// \brief generated nanodbc column binder for full_model::Knights
 	export class Knights
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::Knights& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::Knights& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -55,157 +55,157 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to IdNumber
-		static void BindIdNumber(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindIdNumber(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.IdNumber);
 		}
 
 		/// \brief Binds a result's column to Flag
-		static void BindFlag(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindFlag(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Flag);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindNation(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Ranking
-		static void BindRanking(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindRanking(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Ranking);
 		}
 
 		/// \brief Binds a result's column to Name
-		static void BindName(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindName(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Members
-		static void BindMembers(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindMembers(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Members);
 		}
 
 		/// \brief Binds a result's column to Chief
-		static void BindChief(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindChief(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.Chief);
 		}
 
 		/// \brief Binds a result's column to ViceChief1
-		static void BindViceChief1(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindViceChief1(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ViceChief1 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ViceChief2
-		static void BindViceChief2(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindViceChief2(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ViceChief2 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ViceChief3
-		static void BindViceChief3(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindViceChief3(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ViceChief3 = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to EnemyName
-		static void BindEnemyName(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindEnemyName(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			m.EnemyName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to OldWarResult
-		static void BindOldWarResult(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindOldWarResult(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.OldWarResult);
 		}
 
 		/// \brief Binds a result's column to WarEnemyId
-		static void BindWarEnemyId(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindWarEnemyId(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.WarEnemyId);
 		}
 
 		/// \brief Binds a result's column to Victory
-		static void BindVictory(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindVictory(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Victory);
 		}
 
 		/// \brief Binds a result's column to Lose
-		static void BindLose(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindLose(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Lose);
 		}
 
 		/// \brief Binds a result's column to Gold
-		static void BindGold(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindGold(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int64_t>(colIndex, m.Gold);
 		}
 
 		/// \brief Binds a result's column to Domination
-		static void BindDomination(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindDomination(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Domination);
 		}
 
 		/// \brief Binds a result's column to Points
-		static void BindPoints(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindPoints(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Points = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to CreateTime
-		static void BindCreateTime(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindCreateTime(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::time_t>(colIndex, m.CreateTime);
 		}
 
 		/// \brief Binds a result's column to MarkVersion
-		static void BindMarkVersion(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindMarkVersion(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MarkVersion);
 		}
 
 		/// \brief Binds a result's column to MarkLength
-		static void BindMarkLength(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindMarkLength(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MarkLength);
 		}
 
 		/// \brief Binds a result's column to Mark
-		static void BindMark(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindMark(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Mark = result.get<std::vector<uint8_t>>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Stash
-		static void BindStash(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindStash(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Stash = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to SiegeFlag
-		static void BindSiegeFlag(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindSiegeFlag(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.SiegeFlag);
 		}
 
 		/// \brief Binds a result's column to AllianceKnights
-		static void BindAllianceKnights(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindAllianceKnights(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.AllianceKnights);
 		}
 
 		/// \brief Binds a result's column to Cape
-		static void BindCape(model::Knights& m, const nanodbc::result& result, short colIndex)
+		static void BindCape(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Cape);
 		}

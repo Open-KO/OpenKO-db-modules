@@ -8,14 +8,14 @@ export module FullBinder:KingBallotBox;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::KingBallotBox
+	/// \brief generated nanodbc column binder for full_model::KingBallotBox
 	export class KingBallotBox
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::KingBallotBox& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::KingBallotBox& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -33,25 +33,25 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to AccountId
-		static void BindAccountId(model::KingBallotBox& m, const nanodbc::result& result, short colIndex)
+		static void BindAccountId(full_model::KingBallotBox& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.AccountId);
 		}
 
 		/// \brief Binds a result's column to CharId
-		static void BindCharId(model::KingBallotBox& m, const nanodbc::result& result, short colIndex)
+		static void BindCharId(full_model::KingBallotBox& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CharId);
 		}
 
 		/// \brief Binds a result's column to Nation
-		static void BindNation(model::KingBallotBox& m, const nanodbc::result& result, short colIndex)
+		static void BindNation(full_model::KingBallotBox& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to CandidateId
-		static void BindCandidateId(model::KingBallotBox& m, const nanodbc::result& result, short colIndex)
+		static void BindCandidateId(full_model::KingBallotBox& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<std::string>(colIndex, m.CandidateId);
 		}

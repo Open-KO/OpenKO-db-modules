@@ -7,12 +7,12 @@ module;
 
 export module FullModel:NpcMoveItem;
 
-namespace model_binder
+namespace full_binder
 {
 	export class NpcMoveItem;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [K_NPC_MOVE_ITEM] NPC Move Item: TODO
 	/// \class NpcMoveItem
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::NpcMoveItem;
+		using BinderType = full_binder::NpcMoveItem;
 
 		/// \brief Column [sCastleIndex]: Castle identifier TODO mostly lines up with k_npc.ssid
 		///

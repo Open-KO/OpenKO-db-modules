@@ -7,12 +7,12 @@ module;
 
 export module FullModel:KingSystem;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KingSystem;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KING_SYSTEM] King System
 	/// \class KingSystem
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KingSystem;
+		using BinderType = full_binder::KingSystem;
 
 		/// \brief Column [byNation]: Nation identifier
 		///

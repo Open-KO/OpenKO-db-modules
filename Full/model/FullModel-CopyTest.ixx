@@ -6,12 +6,12 @@ module;
 
 export module FullModel:CopyTest;
 
-namespace model_binder
+namespace full_binder
 {
 	export class CopyTest;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [COPY_TEST] TODO: Doc
 	/// \class CopyTest
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::CopyTest;
+		using BinderType = full_binder::CopyTest;
 
 		/// \brief Column [ITEMSERIAL]: Item Serial
 		///

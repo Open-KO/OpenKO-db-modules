@@ -6,12 +6,12 @@ module;
 
 export module FullModel:KingCandidacyNoticeBoard;
 
-namespace model_binder
+namespace full_binder
 {
 	export class KingCandidacyNoticeBoard;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [KING_CANDIDACY_NOTICE_BOARD] King candidacy notice board
 	/// \class KingCandidacyNoticeBoard
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::KingCandidacyNoticeBoard;
+		using BinderType = full_binder::KingCandidacyNoticeBoard;
 
 		/// \brief Column [strUserID]: Candidate identifier
 		///

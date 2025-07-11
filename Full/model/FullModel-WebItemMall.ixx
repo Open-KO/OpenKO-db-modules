@@ -8,12 +8,12 @@ module;
 
 export module FullModel:WebItemMall;
 
-namespace model_binder
+namespace full_binder
 {
 	export class WebItemMall;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [WEB_ITEMMALL] Power-up store purchases
 	/// \class WebItemMall
@@ -22,7 +22,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::WebItemMall;
+		using BinderType = full_binder::WebItemMall;
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

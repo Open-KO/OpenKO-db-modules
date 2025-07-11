@@ -7,12 +7,12 @@ module;
 
 export module FullModel:ServerResource;
 
-namespace model_binder
+namespace full_binder
 {
 	export class ServerResource;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [SERVER_RESOURCE] Server resource
 	/// \class ServerResource
@@ -21,7 +21,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::ServerResource;
+		using BinderType = full_binder::ServerResource;
 
 		/// \brief Column [nResourceID]: Resource Identifier
 		///

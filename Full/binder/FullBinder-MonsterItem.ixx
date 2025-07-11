@@ -8,14 +8,14 @@ export module FullBinder:MonsterItem;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::MonsterItem
+	/// \brief generated nanodbc column binder for full_model::MonsterItem
 	export class MonsterItem
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::MonsterItem& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -40,67 +40,67 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to MonsterId
-		static void BindMonsterId(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindMonsterId(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.MonsterId);
 		}
 
 		/// \brief Binds a result's column to ItemId1
-		static void BindItemId1(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindItemId1(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ItemId1 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance1
-		static void BindDropChance1(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindDropChance1(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.DropChance1 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemId2
-		static void BindItemId2(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindItemId2(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ItemId2 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance2
-		static void BindDropChance2(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindDropChance2(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.DropChance2 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemId3
-		static void BindItemId3(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindItemId3(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ItemId3 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance3
-		static void BindDropChance3(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindDropChance3(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.DropChance3 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemId4
-		static void BindItemId4(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindItemId4(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ItemId4 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance4
-		static void BindDropChance4(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindDropChance4(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.DropChance4 = result.get<int16_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to ItemId5
-		static void BindItemId5(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindItemId5(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.ItemId5 = result.get<int32_t>(colIndex);
 		}
 
 		/// \brief Binds a result's column to DropChance5
-		static void BindDropChance5(model::MonsterItem& m, const nanodbc::result& result, short colIndex)
+		static void BindDropChance5(full_model::MonsterItem& m, const nanodbc::result& result, short colIndex)
 		{
 			m.DropChance5 = result.get<int16_t>(colIndex);
 		}

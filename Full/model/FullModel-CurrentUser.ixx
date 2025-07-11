@@ -6,12 +6,12 @@ module;
 
 export module FullModel:CurrentUser;
 
-namespace model_binder
+namespace full_binder
 {
 	export class CurrentUser;
 }
 
-namespace model
+namespace full_model
 {
 	/// \brief [CURRENTUSER] Keeps track of users currently connected to the server
 	/// \class CurrentUser
@@ -20,7 +20,7 @@ namespace model
 	{
 	/// \publicsection
 	public:
-		using BinderType = model_binder::CurrentUser;
+		using BinderType = full_binder::CurrentUser;
 
 		/// \brief Column [nServerNo]: Server Index
 		///

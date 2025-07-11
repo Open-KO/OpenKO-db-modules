@@ -8,14 +8,14 @@ export module FullBinder:ItemExchange;
 
 import FullModel;
 
-namespace model_binder
+namespace full_binder
 {
-	/// \brief generated nanodbc column binder for model::ItemExchange
+	/// \brief generated nanodbc column binder for full_model::ItemExchange
 	export class ItemExchange
 	{
 	/// \publicsection
 	public:
-		typedef void (*BindColumnFunction_t)(model::ItemExchange& m, const nanodbc::result& result, short colIndex);
+		typedef void (*BindColumnFunction_t)(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex);
 
 		using BindingsMapType = std::unordered_map<std::string, BindColumnFunction_t>;
 
@@ -54,151 +54,151 @@ namespace model_binder
 		}
 
 		/// \brief Binds a result's column to Index
-		static void BindIndex(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindIndex(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to NpcNumber
-		static void BindNpcNumber(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindNpcNumber(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.NpcNumber);
 		}
 
 		/// \brief Binds a result's column to NpcName
-		static void BindNpcName(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindNpcName(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			m.NpcName = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to Note
-		static void BindNote(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindNote(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			m.Note = result.get<std::string>(colIndex);
 		}
 
 		/// \brief Binds a result's column to RandomFlag
-		static void BindRandomFlag(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindRandomFlag(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.RandomFlag);
 		}
 
 		/// \brief Binds a result's column to OriginItemNumber1
-		static void BindOriginItemNumber1(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemNumber1(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.OriginItemNumber1);
 		}
 
 		/// \brief Binds a result's column to OriginItemCount1
-		static void BindOriginItemCount1(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemCount1(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.OriginItemCount1);
 		}
 
 		/// \brief Binds a result's column to OriginItemNumber2
-		static void BindOriginItemNumber2(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemNumber2(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.OriginItemNumber2);
 		}
 
 		/// \brief Binds a result's column to OriginItemCount2
-		static void BindOriginItemCount2(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemCount2(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.OriginItemCount2);
 		}
 
 		/// \brief Binds a result's column to OriginItemNumber3
-		static void BindOriginItemNumber3(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemNumber3(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.OriginItemNumber3);
 		}
 
 		/// \brief Binds a result's column to OriginItemCount3
-		static void BindOriginItemCount3(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemCount3(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.OriginItemCount3);
 		}
 
 		/// \brief Binds a result's column to OriginItemNumber4
-		static void BindOriginItemNumber4(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemNumber4(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.OriginItemNumber4);
 		}
 
 		/// \brief Binds a result's column to OriginItemCount4
-		static void BindOriginItemCount4(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemCount4(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.OriginItemCount4);
 		}
 
 		/// \brief Binds a result's column to OriginItemNumber5
-		static void BindOriginItemNumber5(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemNumber5(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.OriginItemNumber5);
 		}
 
 		/// \brief Binds a result's column to OriginItemCount5
-		static void BindOriginItemCount5(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindOriginItemCount5(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.OriginItemCount5);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemNumber1
-		static void BindExchangeItemNumber1(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemNumber1(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ExchangeItemNumber1);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemCount1
-		static void BindExchangeItemCount1(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemCount1(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ExchangeItemCount1);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemNumber2
-		static void BindExchangeItemNumber2(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemNumber2(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ExchangeItemNumber2);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemCount2
-		static void BindExchangeItemCount2(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemCount2(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ExchangeItemCount2);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemNumber3
-		static void BindExchangeItemNumber3(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemNumber3(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ExchangeItemNumber3);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemCount3
-		static void BindExchangeItemCount3(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemCount3(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ExchangeItemCount3);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemNumber4
-		static void BindExchangeItemNumber4(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemNumber4(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ExchangeItemNumber4);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemCount4
-		static void BindExchangeItemCount4(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemCount4(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ExchangeItemCount4);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemNumber5
-		static void BindExchangeItemNumber5(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemNumber5(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int32_t>(colIndex, m.ExchangeItemNumber5);
 		}
 
 		/// \brief Binds a result's column to ExchangeItemCount5
-		static void BindExchangeItemCount5(model::ItemExchange& m, const nanodbc::result& result, short colIndex)
+		static void BindExchangeItemCount5(full_model::ItemExchange& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.ExchangeItemCount5);
 		}
