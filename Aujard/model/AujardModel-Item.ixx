@@ -6,6 +6,8 @@ module;
 
 export module AujardModel:Item;
 
+import ModelUtil;
+
 namespace aujard_binder
 {
 	export class Item;
@@ -60,10 +62,9 @@ namespace aujard_model
 		}
 
 		/// \brief Returns the associated database type for the table
-		static const std::string& DbType()
+		static const modelUtil::DbType& DbType()
 		{
-			static const std::string dbType = "GAME";
-			return dbType;
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Returns the columns associated with the table's Primary Key

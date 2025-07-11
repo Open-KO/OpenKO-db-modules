@@ -7,6 +7,8 @@ module;
 
 export module FullModel:HeroUser;
 
+import ModelUtil;
+
 namespace full_binder
 {
 	export class HeroUser;
@@ -66,10 +68,9 @@ namespace full_model
 		}
 
 		/// \brief Returns the associated database type for the table
-		static const std::string& DbType()
+		static const modelUtil::DbType& DbType()
 		{
-			static const std::string dbType = "GAME";
-			return dbType;
+			return modelUtil::DbType::GAME;
 		}
 
 	};

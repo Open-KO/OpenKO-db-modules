@@ -6,6 +6,8 @@ module;
 
 export module FullModel:KingCandidacyNoticeBoard;
 
+import ModelUtil;
+
 namespace full_binder
 {
 	export class KingCandidacyNoticeBoard;
@@ -60,10 +62,9 @@ namespace full_model
 		}
 
 		/// \brief Returns the associated database type for the table
-		static const std::string& DbType()
+		static const modelUtil::DbType& DbType()
 		{
-			static const std::string dbType = "GAME";
-			return dbType;
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Returns the columns associated with the table's Primary Key
