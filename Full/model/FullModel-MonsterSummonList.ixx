@@ -68,7 +68,7 @@ namespace full_model
 		}
 
 		/// \brief Returns the associated database type for the table
-		static const modelUtil::DbType DbType() const
+		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
 		}
