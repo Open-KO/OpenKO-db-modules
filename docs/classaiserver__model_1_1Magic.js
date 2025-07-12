@@ -1,0 +1,25 @@
+var classaiserver__model_1_1Magic =
+[
+    [ "MapKey", "classaiserver__model_1_1Magic.html#ab2eeaa7081ac5a1374d690e1dd143e5e", null ],
+    [ "BeforeAction", "classaiserver__model_1_1Magic.html#af62620f58cbdbcf04afc0d9cc82a3738", null ],
+    [ "CastTime", "classaiserver__model_1_1Magic.html#a9420d6173f006fb33d0266eeefadd8e2", null ],
+    [ "Etc", "classaiserver__model_1_1Magic.html#ac4c7113aa10f3361cc183164b725ddd5", null ],
+    [ "Event", "classaiserver__model_1_1Magic.html#a3bcd09601cabd413cb4987a581331d0e", null ],
+    [ "FlyingEffect", "classaiserver__model_1_1Magic.html#a49dbed8fdd604638e8f8ded5d4f3721a", null ],
+    [ "HpCost", "classaiserver__model_1_1Magic.html#a30edc5e473d1494efe2113f77ba7c7ba", null ],
+    [ "ItemGroup", "classaiserver__model_1_1Magic.html#a74c12595987d8a7306b7cf287da84bd0", null ],
+    [ "MagicNumber", "classaiserver__model_1_1Magic.html#a71c415af1dcc49977f1fc849155ee8b0", null ],
+    [ "ManaCost", "classaiserver__model_1_1Magic.html#a76b561307c001c5cdc4c0c9b92cff06b", null ],
+    [ "Moral", "classaiserver__model_1_1Magic.html#a877ff050081c9499f5caa838f1ed9d74", null ],
+    [ "Range", "classaiserver__model_1_1Magic.html#aad90d628a35fcc924a8391db6fddd5df", null ],
+    [ "RecastTime", "classaiserver__model_1_1Magic.html#a70d30298f3cb9b701f472c47a16c7da4", null ],
+    [ "SelfEffect", "classaiserver__model_1_1Magic.html#ab48bdf35496c558b558891bf85211652", null ],
+    [ "Skill", "classaiserver__model_1_1Magic.html#a3ecfed17aa7a92ca2d0c49c3f35d6a10", null ],
+    [ "SkillLevel", "classaiserver__model_1_1Magic.html#a750cb01c29006390fce8889ec83abebb", null ],
+    [ "SuccessRate", "classaiserver__model_1_1Magic.html#a821314ca682a8de08ddcd6203168d9e1", null ],
+    [ "TargetAction", "classaiserver__model_1_1Magic.html#a428ec58e2efc35b926d0eac919908e6b", null ],
+    [ "TargetEffect", "classaiserver__model_1_1Magic.html#a3de08b11083726e4b63fd76cdf7aea93", null ],
+    [ "Type1", "classaiserver__model_1_1Magic.html#a2e22e4badb62154df0e245a76f10cb0b", null ],
+    [ "Type2", "classaiserver__model_1_1Magic.html#a0d6155633ea21e5699990dc85cb4cf32", null ],
+    [ "UseItem", "classaiserver__model_1_1Magic.html#a88fb770436cd938556c2af1f6f0b9226", null ]
+];

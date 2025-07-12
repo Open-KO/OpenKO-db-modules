@@ -1,0 +1,27 @@
+var classebenezer__model_1_1MagicType6 =
+[
+    [ "MapKey", "classebenezer__model_1_1MagicType6.html#a906b59103b515d64784895a481c03ba3", null ],
+    [ "AttackSpeed", "classebenezer__model_1_1MagicType6.html#ac37727c9381cfecfafa2c9931c81b321", null ],
+    [ "Class", "classebenezer__model_1_1MagicType6.html#acbd4af6666a3e91a76dfa9ed31778d42", null ],
+    [ "Duration", "classebenezer__model_1_1MagicType6.html#a3edf4312e287d236ec690522a2a46df3", null ],
+    [ "MagicNumber", "classebenezer__model_1_1MagicType6.html#a6fcf5898c8ab65789474d4db49ea3fef", null ],
+    [ "MaxHp", "classebenezer__model_1_1MagicType6.html#a73c8289d0cbbef813a135f5c8ff2f4b0", null ],
+    [ "MaxMp", "classebenezer__model_1_1MagicType6.html#a9b394ad28df5e3329a45da90deabb565", null ],
+    [ "MonsterFriendly", "classebenezer__model_1_1MagicType6.html#afc63bdcb135a12ab3f5b2a89a23d5a40", null ],
+    [ "NeedItem", "classebenezer__model_1_1MagicType6.html#a70185c4d74226169f7df677b3211f0c9", null ],
+    [ "Size", "classebenezer__model_1_1MagicType6.html#abde98ed3028fd9c85d9afded0142c4af", null ],
+    [ "SkillSuccessRate", "classebenezer__model_1_1MagicType6.html#aef1c60731863cf739a53654eb6b2db0d", null ],
+    [ "Speed", "classebenezer__model_1_1MagicType6.html#ac6ec9dc74f0df547967f3fd88e339bc4", null ],
+    [ "TotalArmor", "classebenezer__model_1_1MagicType6.html#aff7c14a726ede0fc4b5e883845affc04", null ],
+    [ "TotalColdResist", "classebenezer__model_1_1MagicType6.html#a85154d9d2ed69eb43bde46f990eed411", null ],
+    [ "TotalDiseaseResist", "classebenezer__model_1_1MagicType6.html#ae76194c6cf26a8dd9becd4bc5e319075", null ],
+    [ "TotalEvasionRate", "classebenezer__model_1_1MagicType6.html#ac061287a33f3d6a6fb62696765c7aabb", null ],
+    [ "TotalFireResist", "classebenezer__model_1_1MagicType6.html#ad6054db60a7167e7738f08a4aa9ceabc", null ],
+    [ "TotalHit", "classebenezer__model_1_1MagicType6.html#ab6147ae01bfba1523424bb71b733510d", null ],
+    [ "TotalHitRate", "classebenezer__model_1_1MagicType6.html#ac829d4ffef3bb26773522679cd2f315a", null ],
+    [ "TotalLightningResist", "classebenezer__model_1_1MagicType6.html#a8c044e6f5916cc4fee558067a1bcf4d4", null ],
+    [ "TotalMagicResist", "classebenezer__model_1_1MagicType6.html#ad986c07b894777fd1988eddf07758d56", null ],
+    [ "TotalPoisonResist", "classebenezer__model_1_1MagicType6.html#ad9fee05bcd5b46d84739ac2842781b47", null ],
+    [ "TransformId", "classebenezer__model_1_1MagicType6.html#a55e896d070690cce2c1ac1c80d35571b", null ],
+    [ "UserSkillUse", "classebenezer__model_1_1MagicType6.html#a682b3c93b5d5004a8142b24d7028f543", null ]
+];

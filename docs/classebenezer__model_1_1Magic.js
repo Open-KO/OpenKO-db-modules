@@ -1,0 +1,25 @@
+var classebenezer__model_1_1Magic =
+[
+    [ "MapKey", "classebenezer__model_1_1Magic.html#a582a6b8a8535ed1122682df1807c8b5b", null ],
+    [ "BeforeAction", "classebenezer__model_1_1Magic.html#af67da3494db6ea231459cfb5ebabd06c", null ],
+    [ "CastTime", "classebenezer__model_1_1Magic.html#ab78c293ead437a26e66fbc7e5bd20d44", null ],
+    [ "Etc", "classebenezer__model_1_1Magic.html#a977453eb33b11d8a01a026e6c3e93fc4", null ],
+    [ "Event", "classebenezer__model_1_1Magic.html#a1c25ba5819d9c94bc3807a4e3b3a3079", null ],
+    [ "FlyingEffect", "classebenezer__model_1_1Magic.html#a79d71221b4e3b661ef3ca9ae4425e162", null ],
+    [ "HpCost", "classebenezer__model_1_1Magic.html#ad7b12657227059d0e54552b32a5ec986", null ],
+    [ "ItemGroup", "classebenezer__model_1_1Magic.html#a6c06cbb06a8c2ece97e40da11b8fa50d", null ],
+    [ "MagicNumber", "classebenezer__model_1_1Magic.html#a0e77ad75246b7d2dbe2d02e7e185934e", null ],
+    [ "ManaCost", "classebenezer__model_1_1Magic.html#a38f33ea420d2376a1c3d9591068ed070", null ],
+    [ "Moral", "classebenezer__model_1_1Magic.html#a2dabda4cb4bcf0f7d2fbb0d3de68473a", null ],
+    [ "Range", "classebenezer__model_1_1Magic.html#a8200f1bb5892ec0aeaaaf1259ab2f00e", null ],
+    [ "RecastTime", "classebenezer__model_1_1Magic.html#a69575d0a208b4395a85a17dcd1ff81fd", null ],
+    [ "SelfEffect", "classebenezer__model_1_1Magic.html#a49f01a674ae2925f68a42a5db5b73b56", null ],
+    [ "Skill", "classebenezer__model_1_1Magic.html#a7e59987b4d50a2901a366756cd309af8", null ],
+    [ "SkillLevel", "classebenezer__model_1_1Magic.html#a5dcf827d89d1e22ec60937e55551cafd", null ],
+    [ "SuccessRate", "classebenezer__model_1_1Magic.html#a5de0e4ee65f7c82deef4f45dc025762e", null ],
+    [ "TargetAction", "classebenezer__model_1_1Magic.html#abd2e409e33857c2e83aea150dd9197f4", null ],
+    [ "TargetEffect", "classebenezer__model_1_1Magic.html#aaf2090656a00ea8e622ab863706f25f9", null ],
+    [ "Type1", "classebenezer__model_1_1Magic.html#a922c9840fb7bd01500ff0e9931b56783", null ],
+    [ "Type2", "classebenezer__model_1_1Magic.html#a3ce6c100672a81984cf5783799785866", null ],
+    [ "UseItem", "classebenezer__model_1_1Magic.html#a3eec2c70fca9a2268caf8c953c737218", null ]
+];

@@ -1,5 +1,6 @@
 var classfull__model_1_1MakeItemRareCode =
 [
+    [ "MapKey", "classfull__model_1_1MakeItemRareCode.html#a2f03320400614d69544c6b7452762443", null ],
     [ "GeneralItem", "classfull__model_1_1MakeItemRareCode.html#aad991f8c747df6c310c2a8a1d8ede9fb", null ],
     [ "LevelGrade", "classfull__model_1_1MakeItemRareCode.html#ac72c60938b3e65c67f323d738d5a409d", null ],
     [ "MagicItem", "classfull__model_1_1MakeItemRareCode.html#abca1177108cdd06eb61707596fe22086", null ],

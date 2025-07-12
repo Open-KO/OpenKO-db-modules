@@ -1,5 +1,6 @@
 var classfull__model_1_1Battle =
 [
+    [ "MapKey", "classfull__model_1_1Battle.html#a3ba55cc5ff490c6fe756b3677741e86a", null ],
     [ "Area1", "classfull__model_1_1Battle.html#a089a1fb0e080ddab66a3937fbac0cfc8", null ],
     [ "Area10", "classfull__model_1_1Battle.html#a8af50d25cf997a5e118d7348bb899cbc", null ],
     [ "Area11", "classfull__model_1_1Battle.html#a467db6a8375d428c37b8ab32d83718c4", null ],

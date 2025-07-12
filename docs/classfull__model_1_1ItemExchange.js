@@ -1,5 +1,6 @@
 var classfull__model_1_1ItemExchange =
 [
+    [ "MapKey", "classfull__model_1_1ItemExchange.html#a5380514a63e55df3834113a92e0377b8", null ],
     [ "ExchangeItemCount1", "classfull__model_1_1ItemExchange.html#a46a6600891d0046e8d56c641443cea1e", null ],
     [ "ExchangeItemCount2", "classfull__model_1_1ItemExchange.html#a7542b15219238d9a9a3005b5a7df0034", null ],
     [ "ExchangeItemCount3", "classfull__model_1_1ItemExchange.html#a199ab564e836999c8aa429a7f92be253", null ],

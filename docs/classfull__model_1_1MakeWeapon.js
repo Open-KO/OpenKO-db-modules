@@ -1,5 +1,6 @@
 var classfull__model_1_1MakeWeapon =
 [
+    [ "MapKey", "classfull__model_1_1MakeWeapon.html#a972674fcee74e5d74596e3bc0c9a7a0c", null ],
     [ "Class1", "classfull__model_1_1MakeWeapon.html#a6e0367ef8cc2c92b785a5df64221c4b6", null ],
     [ "Class10", "classfull__model_1_1MakeWeapon.html#a8264df2365d4ff9be66284ea70073f5d", null ],
     [ "Class11", "classfull__model_1_1MakeWeapon.html#a70e32db5c3a33d41484b06c461603ce3", null ],

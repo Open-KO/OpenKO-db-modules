@@ -93,4 +93,5 @@ var menudata={children:[
 {text:"w",url:"functions_vars_w.html#index_w"},
 {text:"y",url:"functions_vars_y.html#index_y"},
 {text:"z",url:"functions_vars_z.html#index_z"}]},
-{text:"Enumerations",url:"functions_enum.html"}]}]}]}
+{text:"Enumerations",url:"functions_enum.html",children:[
+{text:"e",url:"functions_enum.html#index_e"}]}]}]}]}

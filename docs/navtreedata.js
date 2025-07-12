@@ -51,18 +51,26 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classebenezer__model_1_1Item.html#a9fdbc49683bbbaf3ed9c4724eaf8ec3ba96b60453c2ae7f7cc04b9ecbe7a34b0f",
-"classfull__model_1_1AccountChar.html#a2eb4de67e382cdb086ad22d675833de4",
-"classfull__model_1_1Home.html#a0b691d0db396eced53df81637bb7d31e",
-"classfull__model_1_1Item.html#aa75babd775d50fd949971da1a0e1d252",
-"classfull__model_1_1ItemUpgrade.html#a112e71dd8fb633ddd220da261d9d3662",
-"classfull__model_1_1KnightsSiegeWarfare.html#a55e8399ac15743f1f6521051fa10bec5",
-"classfull__model_1_1MagicType4.html#a33f12a2c1b4d90ecae30834286659119",
-"classfull__model_1_1MagicType9.html#ac488c6373534bf988ada973f0249565a",
-"classfull__model_1_1Monster.html#ab68da83319e3de7d22b42ceb9e0a3f8d",
-"classfull__model_1_1NpcItem.html#a78305911b621ec0b2d26121a58a8e3e3",
-"classfull__model_1_1UserData.html#a12def8a323ce5d332a0395cc21aa9cc3a8eb9bca606e30006ccd71ab236760ce8",
-"classfull__model_1_1UserSavedMagic.html#a008e53e4ea3d03d8a7f2937bdae2518d"
+"classaiserver__model_1_1MagicType4.html#a59f41dd5ed303aa5e47122e34cb1e725",
+"classaiserver__model_1_1Monster.html#a3e0d17baa5ef5e48783f242739884167",
+"classaiserver__model_1_1Npc.html#ae73b08302df52203fe810f21d2cdc300",
+"classebenezer__model_1_1EventTrigger.html#a02e7bcf116f76f4415eb240449dd9e23",
+"classebenezer__model_1_1Item.html#a997fa7b6db456cbd8943f80e87ee7f9c",
+"classebenezer__model_1_1Knights.html#ab02d3ce9e277fe664665a62d01eddadf",
+"classebenezer__model_1_1MagicType3.html#a14e798a5f8cce08fe77a17441f41ff42",
+"classebenezer__model_1_1MagicType8.html#a62defd2ac40da826f21dfb6e18675843",
+"classfull__binder_1_1KnightsCape.html",
+"classfull__model_1_1Event.html#a2c4ecd22956241ba1d9b00ca54771b71",
+"classfull__model_1_1Item.html#a1655cc1e18b9605fb520df5572900b55ae7b1c3af3203c42e8a5450beb229c09e",
+"classfull__model_1_1ItemExchange.html#a54f6719243d686a409a4bd55af447b76",
+"classfull__model_1_1Knights.html#a0da13cbc648558c33977de58d0445f00",
+"classfull__model_1_1MagicType1.html#a10ac3a53ca3ebc4de08cf4c04ddcba45acb751d8de9918479f5ccccab7d41e6f9",
+"classfull__model_1_1MagicType6.html#a6712ed6353e87c3c9b729ce3c5d34701",
+"classfull__model_1_1MakeItemRareCode.html",
+"classfull__model_1_1MonsterSummonList.html#a1e6cc03cc17e0c1643e557c93fac42bb",
+"classfull__model_1_1RentalItem.html#ac5b7705dc5492c96ad39dce227f8a1f3",
+"classfull__model_1_1UserDataSkillShortcut.html#a996fd8ed0b00fcdf018646935bed8043",
+"classfull__model_1_1WebItemMallLog.html#aa59e47f32d0b729a708f845f7486929b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,6 @@
 var classfull__model_1_1KnightsSiegeWarfare =
 [
+    [ "MapKey", "classfull__model_1_1KnightsSiegeWarfare.html#ae4cbf88a6b6b18280b9422efcf2b0345", null ],
     [ "CastleIndex", "classfull__model_1_1KnightsSiegeWarfare.html#aedbd07707b6457d0bbdb91b0ce494e0a", null ],
     [ "ChallengeList", "classfull__model_1_1KnightsSiegeWarfare.html#a93a57dc5cfcfc27df2504581b7167857", null ],
     [ "ChallengeList1", "classfull__model_1_1KnightsSiegeWarfare.html#aeea9173461dcdcad752bed400207ffb4", null ],

@@ -1,5 +1,6 @@
 var classfull__model_1_1MonsterChallenge =
 [
+    [ "MapKey", "classfull__model_1_1MonsterChallenge.html#a9cabb2695e21d62e834defd6d575b4f9", null ],
     [ "Index", "classfull__model_1_1MonsterChallenge.html#af3fdb07e68ce854b3d4a168cebb78a66", null ],
     [ "LevelMax", "classfull__model_1_1MonsterChallenge.html#a73aec558c7b4a60d50eba462d9fab69f", null ],
     [ "LevelMin", "classfull__model_1_1MonsterChallenge.html#a96e751260faed0cbec3efd98816a91bb", null ],
