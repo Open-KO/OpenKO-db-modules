@@ -14,7 +14,7 @@ var classfull__model_1_1MagicType1 =
     [ "Delay", "classfull__model_1_1MagicType1.html#acb1deb3875ea6a47bd18c87691f7c838", null ],
     [ "Description", "classfull__model_1_1MagicType1.html#a555f097af5494c8be52a6125107b0804", null ],
     [ "HitRateMod", "classfull__model_1_1MagicType1.html#af586dd03d3294c8eb15f32c1c1a2e8ca", null ],
-    [ "MagicNumber", "classfull__model_1_1MagicType1.html#a04452de4cfc3c4591a855d790dee23c8", null ],
+    [ "ID", "classfull__model_1_1MagicType1.html#af9cf9e1cf4c112c0e038e84d328ed170", null ],
     [ "Name", "classfull__model_1_1MagicType1.html#a438107736c001da1d56dedc748dd4f42", null ],
     [ "Range", "classfull__model_1_1MagicType1.html#ad294ad690aabb32b87c2e66d3a92ac69", null ],
     [ "Type", "classfull__model_1_1MagicType1.html#a5e713217caa9b5e937f6854038d81c40", null ]

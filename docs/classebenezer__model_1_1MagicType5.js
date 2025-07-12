@@ -9,7 +9,7 @@ var classebenezer__model_1_1MagicType5 =
     ] ],
     [ "MapKey", "classebenezer__model_1_1MagicType5.html#aa88d49d10e4e6f717f93980711246d3c", null ],
     [ "ExpRecover", "classebenezer__model_1_1MagicType5.html#a75ec676fc1e6b272e6d4943b0895dff6", null ],
-    [ "MagicNumber", "classebenezer__model_1_1MagicType5.html#af0614c2d7139f655ca9ad4bc5d18c354", null ],
+    [ "ID", "classebenezer__model_1_1MagicType5.html#ad5327ec29524ee2dcf319541bc74d0d6", null ],
     [ "NeedStone", "classebenezer__model_1_1MagicType5.html#a61368d984191fe1af03c3c76b4c1f56f", null ],
     [ "Type", "classebenezer__model_1_1MagicType5.html#ac3a58488dcd9ac5654425bbbaeacb640", null ]
 ];

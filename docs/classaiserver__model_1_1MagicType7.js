@@ -8,7 +8,7 @@ var classaiserver__model_1_1MagicType7 =
     [ "Damage", "classaiserver__model_1_1MagicType7.html#a9677b90765b3dcd873172ca9212529c4", null ],
     [ "Duration", "classaiserver__model_1_1MagicType7.html#a9f6a0624844675e50729afb8b43d668f", null ],
     [ "HitRate", "classaiserver__model_1_1MagicType7.html#a1795592dc7ae6fe63bb39491e8644ec5", null ],
-    [ "MagicNumber", "classaiserver__model_1_1MagicType7.html#a7d1bdebc0e5ec88d8d017896f7f8949d", null ],
+    [ "ID", "classaiserver__model_1_1MagicType7.html#aeb7e51286e762158843daa1692c60c9b", null ],
     [ "MonsterNumber", "classaiserver__model_1_1MagicType7.html#acccf2416a596533f876f930c4436666e", null ],
     [ "NationChange", "classaiserver__model_1_1MagicType7.html#ad27b63c2e521b6237ff04eb185d2b8ab", null ],
     [ "NeedItem", "classaiserver__model_1_1MagicType7.html#af1fba4541c733b48d051efa418570312", null ],

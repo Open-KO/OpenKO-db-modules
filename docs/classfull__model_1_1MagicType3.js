@@ -20,7 +20,7 @@ var classfull__model_1_1MagicType3 =
     [ "Duration", "classfull__model_1_1MagicType3.html#a40d0faf218d969b75370c0884d872d1d", null ],
     [ "EndDamage", "classfull__model_1_1MagicType3.html#abec434f53e1518c924ed5668536ca884", null ],
     [ "FirstDamage", "classfull__model_1_1MagicType3.html#a1f3a3fc6a36e7765c05b039e05017312", null ],
-    [ "MagicNumber", "classfull__model_1_1MagicType3.html#abecff4680bf4146cdde77da6c01ae9a1", null ],
+    [ "ID", "classfull__model_1_1MagicType3.html#a0fa5a937bb039543e9ff02dfe862281b", null ],
     [ "Name", "classfull__model_1_1MagicType3.html#a788d15da2af3672775ef8a72d191fc42", null ],
     [ "Radius", "classfull__model_1_1MagicType3.html#a0e736c5c7e7c9c2bddcc21b2dd1e8d6b", null ],
     [ "TimeDamage", "classfull__model_1_1MagicType3.html#af310a5a08752b6cbc09d948885fe6dcc", null ]

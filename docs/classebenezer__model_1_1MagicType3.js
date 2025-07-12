@@ -19,7 +19,7 @@ var classebenezer__model_1_1MagicType3 =
     [ "Duration", "classebenezer__model_1_1MagicType3.html#a5d5160bae895a8f22b1fff883483450e", null ],
     [ "EndDamage", "classebenezer__model_1_1MagicType3.html#af3326bd5ed7d06018dff135c59b96ba9", null ],
     [ "FirstDamage", "classebenezer__model_1_1MagicType3.html#aecd94c797b9047507ecc789728d58021", null ],
-    [ "MagicNumber", "classebenezer__model_1_1MagicType3.html#a14e798a5f8cce08fe77a17441f41ff42", null ],
+    [ "ID", "classebenezer__model_1_1MagicType3.html#adf758dcdd659124eb9953df6463a905c", null ],
     [ "Radius", "classebenezer__model_1_1MagicType3.html#a864f647032396215a9204a2de7962edf", null ],
     [ "TimeDamage", "classebenezer__model_1_1MagicType3.html#a61cfc3ce24d323d5201a74841208a2cc", null ]
 ];

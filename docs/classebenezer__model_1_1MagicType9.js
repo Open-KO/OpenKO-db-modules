@@ -4,7 +4,7 @@ var classebenezer__model_1_1MagicType9 =
     [ "AddDamage", "classebenezer__model_1_1MagicType9.html#a7bfd4cc248afd8cad38ff4972950e721", null ],
     [ "Duration", "classebenezer__model_1_1MagicType9.html#a269d774a32091ef898beadbeab1b6fe4", null ],
     [ "HitRate", "classebenezer__model_1_1MagicType9.html#a885d8fa55cbe66409c495e670448e804", null ],
-    [ "MagicNumber", "classebenezer__model_1_1MagicType9.html#a07260ac137965dd2859d39ce25804a0c", null ],
+    [ "ID", "classebenezer__model_1_1MagicType9.html#ae92fc18aa32b6d915767c9fa5bece5a5", null ],
     [ "MonsterNumber", "classebenezer__model_1_1MagicType9.html#afbb85c47a0e84e9d73c541c84a6bbdae", null ],
     [ "NationChange", "classebenezer__model_1_1MagicType9.html#a98b96a07ccc202ccd6894d06d5f94502", null ],
     [ "NeedItem", "classebenezer__model_1_1MagicType9.html#a6daf4338dbfd8900325c4880dec208ad", null ],

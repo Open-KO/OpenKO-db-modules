@@ -9,7 +9,7 @@ var classfull__model_1_1MagicType8 =
     [ "MapKey", "classfull__model_1_1MagicType8.html#a249db186011f36d9ea216dc5cfd60ca4", null ],
     [ "Description", "classfull__model_1_1MagicType8.html#a834fb13ffaedf4393b5a40aa550b3135", null ],
     [ "ExpRecover", "classfull__model_1_1MagicType8.html#adaeb9ff9cf458b7445bc6103d1ac8b26", null ],
-    [ "MagicNumber", "classfull__model_1_1MagicType8.html#ae89faeb29b249601c91f6d545cf9fa5d", null ],
+    [ "ID", "classfull__model_1_1MagicType8.html#af8c42d0830d427193b467abf9f9f420e", null ],
     [ "Name", "classfull__model_1_1MagicType8.html#a9c3ce17a1ac126ea619f18b7be5276f3", null ],
     [ "Radius", "classfull__model_1_1MagicType8.html#a93167fc2a98ef430c73c98c5a6a6ef65", null ],
     [ "Target", "classfull__model_1_1MagicType8.html#aa4df3e2fac73ab850760791fbb5f45b5", null ],

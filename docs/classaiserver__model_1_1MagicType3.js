@@ -19,7 +19,7 @@ var classaiserver__model_1_1MagicType3 =
     [ "Duration", "classaiserver__model_1_1MagicType3.html#a9f2517daf3bff02b3beaaf370808947d", null ],
     [ "EndDamage", "classaiserver__model_1_1MagicType3.html#a6d671079aa63aedad448044e9cdb5b3f", null ],
     [ "FirstDamage", "classaiserver__model_1_1MagicType3.html#a8753958c2a92df1f754cd3404bfe9b4d", null ],
-    [ "MagicNumber", "classaiserver__model_1_1MagicType3.html#a4611689f41aa36edf4a57142926f5e69", null ],
+    [ "ID", "classaiserver__model_1_1MagicType3.html#af633e8a335a061b10ccfceae56d87fb8", null ],
     [ "Radius", "classaiserver__model_1_1MagicType3.html#a1e514a09c4b8bbc15d8aab6619b85a50", null ],
     [ "TimeDamage", "classaiserver__model_1_1MagicType3.html#a8445e19406c1aa96b170e2723726a1d6", null ]
 ];

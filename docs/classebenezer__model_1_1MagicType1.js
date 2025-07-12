@@ -13,7 +13,7 @@ var classebenezer__model_1_1MagicType1 =
     [ "DamageMod", "classebenezer__model_1_1MagicType1.html#a4394810a9de8e1a8cb790d437580243d", null ],
     [ "Delay", "classebenezer__model_1_1MagicType1.html#ae7b58c03a7dc19e282121a8744e05b4e", null ],
     [ "HitRateMod", "classebenezer__model_1_1MagicType1.html#a944fc506f7d9ddeb3e29e1a32227aa37", null ],
-    [ "MagicNumber", "classebenezer__model_1_1MagicType1.html#aad95d282b2c1e8684b716322915b3a64", null ],
+    [ "ID", "classebenezer__model_1_1MagicType1.html#ac1188575b7a6e1b50b775993fa669020", null ],
     [ "Range", "classebenezer__model_1_1MagicType1.html#ab1bbc1268bf2ddaaf237a06dd15b55a2", null ],
     [ "Type", "classebenezer__model_1_1MagicType1.html#ae7c658d07b4e070a9d8edadefa4df8f1", null ]
 ];

@@ -9,7 +9,7 @@ var classaiserver__model_1_1MagicType2 =
     [ "DamageMod", "classaiserver__model_1_1MagicType2.html#a3986a93cc5234bbda932d9703ec762b4", null ],
     [ "HitRateMod", "classaiserver__model_1_1MagicType2.html#abce02c13344637d1bd12cb77d5cd196b", null ],
     [ "HitType", "classaiserver__model_1_1MagicType2.html#adea0e3a5ee674599796b6d2decd47b70", null ],
-    [ "MagicNumber", "classaiserver__model_1_1MagicType2.html#a25f1cc39c74d074b85f9e82303820e79", null ],
+    [ "ID", "classaiserver__model_1_1MagicType2.html#a8ad304d98a2715ce0d10bfad10313943", null ],
     [ "NeedArrow", "classaiserver__model_1_1MagicType2.html#a7e380b63fb5993265ef6e433931ec614", null ],
     [ "RangeMod", "classaiserver__model_1_1MagicType2.html#af5a86789233bfaac1c537a34b9883804", null ]
 ];

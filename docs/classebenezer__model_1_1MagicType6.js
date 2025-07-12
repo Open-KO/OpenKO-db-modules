@@ -4,7 +4,7 @@ var classebenezer__model_1_1MagicType6 =
     [ "AttackSpeed", "classebenezer__model_1_1MagicType6.html#ac37727c9381cfecfafa2c9931c81b321", null ],
     [ "Class", "classebenezer__model_1_1MagicType6.html#acbd4af6666a3e91a76dfa9ed31778d42", null ],
     [ "Duration", "classebenezer__model_1_1MagicType6.html#a3edf4312e287d236ec690522a2a46df3", null ],
-    [ "MagicNumber", "classebenezer__model_1_1MagicType6.html#a6fcf5898c8ab65789474d4db49ea3fef", null ],
+    [ "ID", "classebenezer__model_1_1MagicType6.html#a1e76788236b748fbed836a2cec17f419", null ],
     [ "MaxHp", "classebenezer__model_1_1MagicType6.html#a73c8289d0cbbef813a135f5c8ff2f4b0", null ],
     [ "MaxMp", "classebenezer__model_1_1MagicType6.html#a9b394ad28df5e3329a45da90deabb565", null ],
     [ "MonsterFriendly", "classebenezer__model_1_1MagicType6.html#afc63bdcb135a12ab3f5b2a89a23d5a40", null ],
