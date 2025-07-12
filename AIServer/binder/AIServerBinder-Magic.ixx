@@ -172,14 +172,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Event
 		static void BindEvent(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Event.reset();
-			}
-			else
-			{
-				m.Event = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<int32_t>(colIndex, m.Event);
 		}
 
 	};

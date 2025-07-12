@@ -137,7 +137,7 @@ namespace full_binder
 		/// \brief Binds a result's column to UpdateDate
 		static void BindUpdateDate(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int64_t>(colIndex, m.UpdateDate);
+			result.get_ref<std::time_t>(colIndex, m.UpdateDate);
 		}
 
 	};

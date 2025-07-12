@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <ctime>
 #include <optional>
 #include <string>
 #include <unordered_set>
@@ -53,7 +54,7 @@ namespace full_model
 		/// \brief Column [BuyTime]: Time of purchase
 		///
 		/// \property BuyTime
-		int64_t BuyTime = 0;
+		std::time_t BuyTime;
 
 		/// \brief Column [img_file_name]: Item image file name
 		///

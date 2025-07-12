@@ -42,14 +42,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MonsterSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Level

@@ -50,157 +50,73 @@ namespace full_binder
 		/// \brief Binds a result's column to Class1
 		static void BindClass1(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class1.reset();
-			}
-			else
-			{
-				m.Class1 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class1);
 		}
 
 		/// \brief Binds a result's column to Class2
 		static void BindClass2(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class2.reset();
-			}
-			else
-			{
-				m.Class2 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class2);
 		}
 
 		/// \brief Binds a result's column to Class3
 		static void BindClass3(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class3.reset();
-			}
-			else
-			{
-				m.Class3 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class3);
 		}
 
 		/// \brief Binds a result's column to Class4
 		static void BindClass4(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class4.reset();
-			}
-			else
-			{
-				m.Class4 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class4);
 		}
 
 		/// \brief Binds a result's column to Class5
 		static void BindClass5(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class5.reset();
-			}
-			else
-			{
-				m.Class5 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class5);
 		}
 
 		/// \brief Binds a result's column to Class6
 		static void BindClass6(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class6.reset();
-			}
-			else
-			{
-				m.Class6 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class6);
 		}
 
 		/// \brief Binds a result's column to Class7
 		static void BindClass7(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class7.reset();
-			}
-			else
-			{
-				m.Class7 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class7);
 		}
 
 		/// \brief Binds a result's column to Class8
 		static void BindClass8(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class8.reset();
-			}
-			else
-			{
-				m.Class8 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class8);
 		}
 
 		/// \brief Binds a result's column to Class9
 		static void BindClass9(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class9.reset();
-			}
-			else
-			{
-				m.Class9 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class9);
 		}
 
 		/// \brief Binds a result's column to Class10
 		static void BindClass10(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class10.reset();
-			}
-			else
-			{
-				m.Class10 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class10);
 		}
 
 		/// \brief Binds a result's column to Class11
 		static void BindClass11(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class11.reset();
-			}
-			else
-			{
-				m.Class11 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class11);
 		}
 
 		/// \brief Binds a result's column to Class12
 		static void BindClass12(full_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class12.reset();
-			}
-			else
-			{
-				m.Class12 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class12);
 		}
 
 	};

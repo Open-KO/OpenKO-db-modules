@@ -71,7 +71,7 @@ namespace full_binder
 		/// \brief Binds a result's column to BuyTime
 		static void BindBuyTime(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int64_t>(colIndex, m.BuyTime);
+			result.get_ref<std::time_t>(colIndex, m.BuyTime);
 		}
 
 		/// \brief Binds a result's column to ImgFileName

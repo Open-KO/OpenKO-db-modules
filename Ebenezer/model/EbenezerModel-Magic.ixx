@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -128,7 +127,7 @@ namespace ebenezer_model
 		/// \brief Column [Event]: Event TODO
 		///
 		/// \property Event
-		std::optional<int32_t> Event;
+		int32_t Event = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

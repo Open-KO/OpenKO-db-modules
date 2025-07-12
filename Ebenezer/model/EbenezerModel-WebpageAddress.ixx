@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -33,7 +32,7 @@ namespace ebenezer_model
 		/// \brief Column [strWebPageAddress]: Webpage address
 		///
 		/// \property WebPageAddress
-		std::optional<std::string> WebPageAddress;
+		std::string WebPageAddress;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

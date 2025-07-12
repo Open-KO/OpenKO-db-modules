@@ -116,7 +116,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.RentalTimestamp = result.get<int64_t>(colIndex);
+				m.RentalTimestamp = result.get<std::time_t>(colIndex);
 			}
 		}
 
@@ -129,7 +129,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.RegisterTime = result.get<int64_t>(colIndex);
+				m.RegisterTime = result.get<std::time_t>(colIndex);
 			}
 		}
 

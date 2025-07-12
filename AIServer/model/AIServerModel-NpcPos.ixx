@@ -28,97 +28,97 @@ namespace aiserver_model
 		/// \brief Column [ZoneID]: Zone Identifier
 		///
 		/// \property ZoneId
-		std::optional<int16_t> ZoneId;
+		int16_t ZoneId = 0;
 
 		/// \brief Column [NpcID]: NPC Identifier (K_NPC.sSid)
 		///
 		/// \property NpcId
-		std::optional<int32_t> NpcId;
+		int32_t NpcId = 0;
 
 		/// \brief Column [ActType]: Act type TODO
 		///
 		/// \property ActType
-		std::optional<uint8_t> ActType;
+		uint8_t ActType = 0;
 
 		/// \brief Column [RegenType]: Regen type TODO
 		///
 		/// \property RegenType
-		std::optional<uint8_t> RegenType;
+		uint8_t RegenType = 0;
 
 		/// \brief Column [DungeonFamily]: Dungeon family TODO
 		///
 		/// \property DungeonFamily
-		std::optional<uint8_t> DungeonFamily;
+		uint8_t DungeonFamily = 0;
 
 		/// \brief Column [SpecialType]: Special type TODO
 		///
 		/// \property SpecialType
-		std::optional<uint8_t> SpecialType;
+		uint8_t SpecialType = 0;
 
 		/// \brief Column [TrapNumber]: Trap number
 		///
 		/// \property TrapNumber
-		std::optional<uint8_t> TrapNumber;
+		uint8_t TrapNumber = 0;
 
 		/// \brief Column [LeftX]: X-coordinate representing the left side of the spawn area
 		///
 		/// \property LeftX
-		std::optional<int32_t> LeftX;
+		int32_t LeftX = 0;
 
 		/// \brief Column [TopZ]: Z-coordinate representing the top side of the spawn area
 		///
 		/// \property TopZ
-		std::optional<int32_t> TopZ;
+		int32_t TopZ = 0;
 
 		/// \brief Column [RightX]: X-coordinate representing the right side of the spawn area
 		///
 		/// \property RightX
-		std::optional<int32_t> RightX;
+		int32_t RightX = 0;
 
 		/// \brief Column [BottomZ]: Z-coordinate representing the bottom side of the spawn area
 		///
 		/// \property BottomZ
-		std::optional<int32_t> BottomZ;
+		int32_t BottomZ = 0;
 
 		/// \brief Column [LimitMinZ]: Minimum z-coordinate value for valid roaming
 		///
 		/// \property LimitMinZ
-		std::optional<int32_t> LimitMinZ;
+		int32_t LimitMinZ = 0;
 
 		/// \brief Column [LimitMinX]: Minimum x-coordinate value for valid roaming
 		///
 		/// \property LimitMinX
-		std::optional<int32_t> LimitMinX;
+		int32_t LimitMinX = 0;
 
 		/// \brief Column [LimitMaxX]: Maximum x-coordinate value for valid roaming
 		///
 		/// \property LimitMaxX
-		std::optional<int32_t> LimitMaxX;
+		int32_t LimitMaxX = 0;
 
 		/// \brief Column [LimitMaxZ]: Maximum z-coordinate value for valid roaming
 		///
 		/// \property LimitMaxZ
-		std::optional<int32_t> LimitMaxZ;
+		int32_t LimitMaxZ = 0;
 
 		/// \brief Column [NumNPC]: Target number of NPCs for the spawn area
 		///
 		/// \property NumNpc
-		std::optional<uint8_t> NumNpc;
+		uint8_t NumNpc = 0;
 
 		/// \brief Column [RegTime]: How long it takes for a dead NPC to respawn
 		///
 		/// \property RespawnTime
-		std::optional<int16_t> RespawnTime;
+		int16_t RespawnTime = 0;
 
 		/// \brief Column [byDirection]: Direction TODO
 		///
 		/// \property Direction
-		std::optional<int32_t> Direction;
+		int32_t Direction = 0;
 
 		/// \brief Column [DotCnt]: Dot count TODO
 		///
 		/// \property DotCount
-		std::optional<uint8_t> DotCount;
+		uint8_t DotCount = 0;
 
 		/// \brief Column [path]: Pathfinding data TODO
 		///

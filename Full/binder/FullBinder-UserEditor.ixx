@@ -130,7 +130,7 @@ namespace full_binder
 		/// \brief Binds a result's column to EditorTime
 		static void BindEditorTime(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int64_t>(colIndex, m.EditorTime);
+			result.get_ref<std::time_t>(colIndex, m.EditorTime);
 		}
 
 	};

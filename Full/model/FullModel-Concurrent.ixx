@@ -33,17 +33,17 @@ namespace full_model
 		/// \brief Column [zone1_count]: Zone 1 Count
 		///
 		/// \property Zone1Count
-		std::optional<int16_t> Zone1Count;
+		int16_t Zone1Count = 0;
 
 		/// \brief Column [zone2_count]: Zone 2 Count
 		///
 		/// \property Zone2Count
-		std::optional<int16_t> Zone2Count;
+		int16_t Zone2Count = 0;
 
 		/// \brief Column [zone3_count]: Zone 3 Count
 		///
 		/// \property Zone3Count
-		std::optional<int16_t> Zone3Count;
+		int16_t Zone3Count = 0;
 
 		/// \brief Column [bz]: Bz: TODO
 		///

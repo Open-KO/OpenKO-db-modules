@@ -144,14 +144,14 @@ namespace full_binder
 			}
 			else
 			{
-				m.LendTime = result.get<int64_t>(colIndex);
+				m.LendTime = result.get<std::time_t>(colIndex);
 			}
 		}
 
 		/// \brief Binds a result's column to RegisterTime
 		static void BindRegisterTime(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int64_t>(colIndex, m.RegisterTime);
+			result.get_ref<std::time_t>(colIndex, m.RegisterTime);
 		}
 
 	};

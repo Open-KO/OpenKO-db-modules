@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <ctime>
 #include <string>
 #include <unordered_set>
 
@@ -97,7 +98,7 @@ namespace full_model
 		/// \brief Column [EditorTime]: Record create time
 		///
 		/// \property EditorTime
-		int64_t EditorTime = 0;
+		std::time_t EditorTime;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

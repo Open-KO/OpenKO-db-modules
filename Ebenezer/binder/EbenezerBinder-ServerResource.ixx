@@ -39,14 +39,7 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to Resource
 		static void BindResource(ebenezer_model::ServerResource& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Resource.reset();
-			}
-			else
-			{
-				m.Resource = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Resource);
 		}
 
 	};

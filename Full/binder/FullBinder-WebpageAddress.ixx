@@ -39,14 +39,7 @@ namespace full_binder
 		/// \brief Binds a result's column to WebPageAddress
 		static void BindWebPageAddress(full_model::WebpageAddress& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.WebPageAddress.reset();
-			}
-			else
-			{
-				m.WebPageAddress = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.WebPageAddress);
 		}
 
 	};

@@ -45,92 +45,43 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Class1
 		static void BindClass1(aiserver_model::MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class1.reset();
-			}
-			else
-			{
-				m.Class1 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class1);
 		}
 
 		/// \brief Binds a result's column to Class2
 		static void BindClass2(aiserver_model::MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class2.reset();
-			}
-			else
-			{
-				m.Class2 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class2);
 		}
 
 		/// \brief Binds a result's column to Class3
 		static void BindClass3(aiserver_model::MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class3.reset();
-			}
-			else
-			{
-				m.Class3 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class3);
 		}
 
 		/// \brief Binds a result's column to Class4
 		static void BindClass4(aiserver_model::MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class4.reset();
-			}
-			else
-			{
-				m.Class4 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class4);
 		}
 
 		/// \brief Binds a result's column to Class5
 		static void BindClass5(aiserver_model::MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class5.reset();
-			}
-			else
-			{
-				m.Class5 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class5);
 		}
 
 		/// \brief Binds a result's column to Class6
 		static void BindClass6(aiserver_model::MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class6.reset();
-			}
-			else
-			{
-				m.Class6 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class6);
 		}
 
 		/// \brief Binds a result's column to Class7
 		static void BindClass7(aiserver_model::MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Class7.reset();
-			}
-			else
-			{
-				m.Class7 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Class7);
 		}
 
 	};

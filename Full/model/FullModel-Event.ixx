@@ -68,27 +68,27 @@ namespace full_model
 		/// \brief Column [Exec1]: Execute 1
 		///
 		/// \property Execute1
-		std::optional<std::string> Execute1;
+		std::string Execute1;
 
 		/// \brief Column [Exec2]: Execute 2
 		///
 		/// \property Execute2
-		std::optional<std::string> Execute2;
+		std::string Execute2;
 
 		/// \brief Column [Exec3]: Execute 3
 		///
 		/// \property Execute3
-		std::optional<std::string> Execute3;
+		std::string Execute3;
 
 		/// \brief Column [Exec4]: Execute 4
 		///
 		/// \property Execute4
-		std::optional<std::string> Execute4;
+		std::string Execute4;
 
 		/// \brief Column [Exec5]: Execute 5
 		///
 		/// \property Execute5
-		std::optional<std::string> Execute5;
+		std::string Execute5;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

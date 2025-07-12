@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <ctime>
 #include <string>
 #include <unordered_set>
 
@@ -47,7 +48,7 @@ namespace full_model
 		/// \brief Column [tWriteTime]: Write time
 		///
 		/// \property WriteTime
-		int64_t WriteTime = 0;
+		std::time_t WriteTime;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

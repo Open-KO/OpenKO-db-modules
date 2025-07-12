@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -38,12 +37,12 @@ namespace full_model
 		/// \brief Column [strName]: Name
 		///
 		/// \property Name
-		std::optional<std::string> Name;
+		std::string Name;
 
 		/// \brief Column [strNote]: Note
 		///
 		/// \property Note
-		std::optional<std::string> Note;
+		std::string Note;
 
 		/// \brief Column [nOriginType]: Origin Type
 		///

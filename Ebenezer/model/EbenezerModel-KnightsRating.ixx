@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -33,12 +32,12 @@ namespace ebenezer_model
 		/// \brief Column [shIndex]: Knights identifier
 		///
 		/// \property Index
-		std::optional<int16_t> Index;
+		int16_t Index = 0;
 
 		/// \brief Column [nPoints]: National points
 		///
 		/// \property Points
-		std::optional<int32_t> Points;
+		int32_t Points = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

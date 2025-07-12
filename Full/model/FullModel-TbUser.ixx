@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <ctime>
 #include <string>
 #include <unordered_set>
 
@@ -52,7 +53,7 @@ namespace full_model
 		/// \brief Column [PremiumExpire]: Premium expiration datetime
 		///
 		/// \property PremiumExpire
-		int64_t PremiumExpire = 0;
+		std::time_t PremiumExpire;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

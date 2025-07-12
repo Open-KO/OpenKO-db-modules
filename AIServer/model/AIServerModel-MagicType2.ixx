@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -67,7 +66,7 @@ namespace aiserver_model
 		/// \brief Column [AddDamagePlus]: Additional flat damage caused by ability
 		///
 		/// \property AddDamagePlus
-		std::optional<int16_t> AddDamagePlus;
+		int16_t AddDamagePlus = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

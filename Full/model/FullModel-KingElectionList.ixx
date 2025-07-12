@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -38,12 +37,12 @@ namespace full_model
 		/// \brief Column [nKnights]: Knights identifier (Knights.IDNum)
 		///
 		/// \property Knights
-		std::optional<int16_t> Knights;
+		int16_t Knights = 0;
 
 		/// \brief Column [strName]: Name TODO
 		///
 		/// \property Name
-		std::optional<std::string> Name;
+		std::string Name;
 
 		/// \brief Column [nMoney]: Money TODO
 		///

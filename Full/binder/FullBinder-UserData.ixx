@@ -334,7 +334,7 @@ namespace full_binder
 		/// \brief Binds a result's column to CreateTime
 		static void BindCreateTime(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int64_t>(colIndex, m.CreateTime);
+			result.get_ref<std::time_t>(colIndex, m.CreateTime);
 		}
 
 		/// \brief Binds a result's column to UpdateTime
@@ -346,7 +346,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.UpdateTime = result.get<int64_t>(colIndex);
+				m.UpdateTime = result.get<std::time_t>(colIndex);
 			}
 		}
 

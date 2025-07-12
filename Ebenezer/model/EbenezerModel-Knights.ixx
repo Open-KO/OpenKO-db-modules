@@ -27,8 +27,8 @@ namespace ebenezer_model
 
 		/// \brief Column [IDNum]: Identification number
 		///
-		/// \property IdNumber
-		int16_t IdNumber = 0;
+		/// \property ID
+		int16_t ID = 0;
 
 		/// \brief Column [Flag]: Flag TODO
 		///
@@ -113,12 +113,7 @@ namespace ebenezer_model
 		/// \brief Column [Points]: National points
 		///
 		/// \property Points
-		std::optional<int32_t> Points;
-
-		/// \brief Column [CreateTime]: Create time
-		///
-		/// \property CreateTime
-		int64_t CreateTime = 0;
+		int32_t Points = 0;
 
 		/// \brief Column [sMarkVersion]: Mark version
 		///
@@ -134,11 +129,6 @@ namespace ebenezer_model
 		///
 		/// \property Mark
 		std::optional<std::vector<uint8_t>> Mark;
-
-		/// \brief Column [Stash]: Stash TODO
-		///
-		/// \property Stash
-		std::optional<std::string> Stash;
 
 		/// \brief Column [bySiegeFlag]: Siege flag
 		///
@@ -167,7 +157,7 @@ namespace ebenezer_model
 		{
 			static const std::unordered_set<std::string> columnNames =
 			{
-				"IDNum", "Flag", "Nation", "Ranking", "IDName", "Members", "Chief", "ViceChief_1", "ViceChief_2", "ViceChief_3", "strEnemyName", "byOldWarResult", "nWarEnemyID", "nVictory", "nLose", "Gold", "Domination", "Points", "CreateTime", "sMarkVersion", "sMarkLen", "Mark", "Stash", "bySiegeFlag", "sAllianceKnights", "sCape"
+				"IDNum", "Flag", "Nation", "Ranking", "IDName", "Members", "Chief", "ViceChief_1", "ViceChief_2", "ViceChief_3", "strEnemyName", "byOldWarResult", "nWarEnemyID", "nVictory", "nLose", "Gold", "Domination", "Points", "sMarkVersion", "sMarkLen", "Mark", "bySiegeFlag", "sAllianceKnights", "sCape"
 			};
 			return columnNames;
 		}
@@ -191,7 +181,7 @@ namespace ebenezer_model
 		/// \brief Returns a value for use in map keys based on the table's primary key
 		const int16_t& MapKey() const
 		{
-			return IdNumber;
+			return ID;
 		}
 
 	};

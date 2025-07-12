@@ -24,7 +24,7 @@ namespace ebenezer_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"IDNum", &Knights::BindIdNumber},
+				{"IDNum", &Knights::BindID},
 				{"Flag", &Knights::BindFlag},
 				{"Nation", &Knights::BindNation},
 				{"Ranking", &Knights::BindRanking},
@@ -42,11 +42,9 @@ namespace ebenezer_binder
 				{"Gold", &Knights::BindGold},
 				{"Domination", &Knights::BindDomination},
 				{"Points", &Knights::BindPoints},
-				{"CreateTime", &Knights::BindCreateTime},
 				{"sMarkVersion", &Knights::BindMarkVersion},
 				{"sMarkLen", &Knights::BindMarkLength},
 				{"Mark", &Knights::BindMark},
-				{"Stash", &Knights::BindStash},
 				{"bySiegeFlag", &Knights::BindSiegeFlag},
 				{"sAllianceKnights", &Knights::BindAllianceKnights},
 				{"sCape", &Knights::BindCape}
@@ -54,10 +52,10 @@ namespace ebenezer_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to IdNumber
-		static void BindIdNumber(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.IdNumber);
+			result.get_ref<int16_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to Flag
@@ -187,20 +185,7 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to Points
 		static void BindPoints(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Points.reset();
-			}
-			else
-			{
-				m.Points = result.get<int32_t>(colIndex);
-			}
-		}
-
-		/// \brief Binds a result's column to CreateTime
-		static void BindCreateTime(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
-		{
-			result.get_ref<int64_t>(colIndex, m.CreateTime);
+			result.get_ref<int32_t>(colIndex, m.Points);
 		}
 
 		/// \brief Binds a result's column to MarkVersion
@@ -225,19 +210,6 @@ namespace ebenezer_binder
 			else
 			{
 				m.Mark = result.get<std::vector<uint8_t>>(colIndex);
-			}
-		}
-
-		/// \brief Binds a result's column to Stash
-		static void BindStash(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
-		{
-			if (result.is_null(colIndex))
-			{
-				m.Stash.reset();
-			}
-			else
-			{
-				m.Stash = result.get<std::string>(colIndex);
 			}
 		}
 

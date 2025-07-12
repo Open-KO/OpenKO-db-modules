@@ -74,14 +74,7 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to AddDamagePlus
 		static void BindAddDamagePlus(ebenezer_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.AddDamagePlus.reset();
-			}
-			else
-			{
-				m.AddDamagePlus = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.AddDamagePlus);
 		}
 
 	};

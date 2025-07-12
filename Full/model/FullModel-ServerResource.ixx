@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -38,7 +37,7 @@ namespace full_model
 		/// \brief Column [strResource]: Sprintf supported string
 		///
 		/// \property Resource
-		std::optional<std::string> Resource;
+		std::string Resource;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

@@ -48,27 +48,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Knights
 		static void BindKnights(full_model::KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Knights.reset();
-			}
-			else
-			{
-				m.Knights = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Knights);
 		}
 
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::KingElectionList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Money

@@ -127,66 +127,31 @@ namespace full_binder
 		/// \brief Binds a result's column to Execute1
 		static void BindExecute1(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Execute1.reset();
-			}
-			else
-			{
-				m.Execute1 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Execute1);
 		}
 
 		/// \brief Binds a result's column to Execute2
 		static void BindExecute2(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Execute2.reset();
-			}
-			else
-			{
-				m.Execute2 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Execute2);
 		}
 
 		/// \brief Binds a result's column to Execute3
 		static void BindExecute3(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Execute3.reset();
-			}
-			else
-			{
-				m.Execute3 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Execute3);
 		}
 
 		/// \brief Binds a result's column to Execute4
 		static void BindExecute4(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Execute4.reset();
-			}
-			else
-			{
-				m.Execute4 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Execute4);
 		}
 
 		/// \brief Binds a result's column to Execute5
 		static void BindExecute5(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Execute5.reset();
-			}
-			else
-			{
-				m.Execute5 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Execute5);
 		}
 
 	};

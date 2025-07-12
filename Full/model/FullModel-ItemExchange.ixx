@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -38,12 +37,12 @@ namespace full_model
 		/// \brief Column [strNpcName]: NPC Name
 		///
 		/// \property NpcName
-		std::optional<std::string> NpcName;
+		std::string NpcName;
 
 		/// \brief Column [strNote]: Note
 		///
 		/// \property Note
-		std::optional<std::string> Note;
+		std::string Note;
 
 		/// \brief Column [bRandomFlag]: Random Flag
 		///

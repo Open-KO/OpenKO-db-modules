@@ -1,7 +1,6 @@
 module;
 
-#include <cstdint>
-#include <optional>
+#include <ctime>
 #include <string>
 #include <unordered_set>
 
@@ -38,12 +37,12 @@ namespace full_model
 		/// \brief Column [strHackToolName]: Name of the hack tool detected
 		///
 		/// \property HackToolName
-		std::optional<std::string> HackToolName;
+		std::string HackToolName;
 
 		/// \brief Column [tWriteTime]: Log time
 		///
 		/// \property WriteTime
-		int64_t WriteTime = 0;
+		std::time_t WriteTime;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

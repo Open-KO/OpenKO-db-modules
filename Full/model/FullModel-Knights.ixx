@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <ctime>
 #include <optional>
 #include <string>
 #include <unordered_set>
@@ -27,8 +28,8 @@ namespace full_model
 
 		/// \brief Column [IDNum]: Identification number
 		///
-		/// \property IdNumber
-		int16_t IdNumber = 0;
+		/// \property ID
+		int16_t ID = 0;
 
 		/// \brief Column [Flag]: Flag TODO
 		///
@@ -113,12 +114,12 @@ namespace full_model
 		/// \brief Column [Points]: National points
 		///
 		/// \property Points
-		std::optional<int32_t> Points;
+		int32_t Points = 0;
 
 		/// \brief Column [CreateTime]: Create time
 		///
 		/// \property CreateTime
-		int64_t CreateTime = 0;
+		std::time_t CreateTime;
 
 		/// \brief Column [sMarkVersion]: Mark version
 		///
@@ -191,7 +192,7 @@ namespace full_model
 		/// \brief Returns a value for use in map keys based on the table's primary key
 		const int16_t& MapKey() const
 		{
-			return IdNumber;
+			return ID;
 		}
 
 	};

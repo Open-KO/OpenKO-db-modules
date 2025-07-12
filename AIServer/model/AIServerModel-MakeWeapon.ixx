@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -33,62 +32,62 @@ namespace aiserver_model
 		/// \brief Column [sClass_1]: Class 1
 		///
 		/// \property Class1
-		std::optional<int16_t> Class1;
+		int16_t Class1 = 0;
 
 		/// \brief Column [sClass_2]: Class 2
 		///
 		/// \property Class2
-		std::optional<int16_t> Class2;
+		int16_t Class2 = 0;
 
 		/// \brief Column [sClass_3]: Class 3
 		///
 		/// \property Class3
-		std::optional<int16_t> Class3;
+		int16_t Class3 = 0;
 
 		/// \brief Column [sClass_4]: Class 4
 		///
 		/// \property Class4
-		std::optional<int16_t> Class4;
+		int16_t Class4 = 0;
 
 		/// \brief Column [sClass_5]: Class 5
 		///
 		/// \property Class5
-		std::optional<int16_t> Class5;
+		int16_t Class5 = 0;
 
 		/// \brief Column [sClass_6]: Class 6
 		///
 		/// \property Class6
-		std::optional<int16_t> Class6;
+		int16_t Class6 = 0;
 
 		/// \brief Column [sClass_7]: Class 7
 		///
 		/// \property Class7
-		std::optional<int16_t> Class7;
+		int16_t Class7 = 0;
 
 		/// \brief Column [sClass_8]: Class 8
 		///
 		/// \property Class8
-		std::optional<int16_t> Class8;
+		int16_t Class8 = 0;
 
 		/// \brief Column [sClass_9]: Class 9
 		///
 		/// \property Class9
-		std::optional<int16_t> Class9;
+		int16_t Class9 = 0;
 
 		/// \brief Column [sClass_10]: Class 10
 		///
 		/// \property Class10
-		std::optional<int16_t> Class10;
+		int16_t Class10 = 0;
 
 		/// \brief Column [sClass_11]: Class 11
 		///
 		/// \property Class11
-		std::optional<int16_t> Class11;
+		int16_t Class11 = 0;
 
 		/// \brief Column [sClass_12]: Class 12
 		///
 		/// \property Class12
-		std::optional<int16_t> Class12;
+		int16_t Class12 = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

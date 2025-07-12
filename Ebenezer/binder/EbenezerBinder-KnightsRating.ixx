@@ -40,27 +40,13 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to Index
 		static void BindIndex(ebenezer_model::KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Index.reset();
-			}
-			else
-			{
-				m.Index = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<int16_t>(colIndex, m.Index);
 		}
 
 		/// \brief Binds a result's column to Points
 		static void BindPoints(ebenezer_model::KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Points.reset();
-			}
-			else
-			{
-				m.Points = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<int32_t>(colIndex, m.Points);
 		}
 
 	};

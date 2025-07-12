@@ -101,7 +101,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.UpdateTime = result.get<int64_t>(colIndex);
+				m.UpdateTime = result.get<std::time_t>(colIndex);
 			}
 		}
 

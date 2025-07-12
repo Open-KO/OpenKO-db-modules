@@ -24,7 +24,7 @@ namespace full_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"IDNum", &Knights::BindIdNumber},
+				{"IDNum", &Knights::BindID},
 				{"Flag", &Knights::BindFlag},
 				{"Nation", &Knights::BindNation},
 				{"Ranking", &Knights::BindRanking},
@@ -54,10 +54,10 @@ namespace full_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to IdNumber
-		static void BindIdNumber(full_model::Knights& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.IdNumber);
+			result.get_ref<int16_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to Flag
@@ -187,20 +187,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Points
 		static void BindPoints(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Points.reset();
-			}
-			else
-			{
-				m.Points = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<int32_t>(colIndex, m.Points);
 		}
 
 		/// \brief Binds a result's column to CreateTime
 		static void BindCreateTime(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int64_t>(colIndex, m.CreateTime);
+			result.get_ref<std::time_t>(colIndex, m.CreateTime);
 		}
 
 		/// \brief Binds a result's column to MarkVersion

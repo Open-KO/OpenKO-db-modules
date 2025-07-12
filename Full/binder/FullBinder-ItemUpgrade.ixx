@@ -61,27 +61,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Note
 		static void BindNote(full_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Note.reset();
-			}
-			else
-			{
-				m.Note = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::string>(colIndex, m.Note);
 		}
 
 		/// \brief Binds a result's column to OriginType
