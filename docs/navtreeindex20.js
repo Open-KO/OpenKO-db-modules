@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classfull__model_1_1WebItemMallLog.html#aea475bca6d0dcac86d337a1868bab778":[3,0,7,73,0],
+"classfull__model_1_1WebItemMallLog.html#aea475bca6d0dcac86d337a1868bab778":[2,0,8,73,0],
 "classfull__model_1_1WebpageAddress.html":[3,0,7,74],
 "classfull__model_1_1WebpageAddress.html":[2,0,8,74],
 "classfull__model_1_1WebpageAddress.html#a5e13d10d2d56c91e9e9731674ccf1db3":[3,0,7,74,2],
