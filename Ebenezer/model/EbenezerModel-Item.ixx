@@ -239,23 +239,23 @@ namespace ebenezer_model
 
 		/// \brief Column [ReqLevel]: Minimum level required to use item
 		///
-		/// \property RequireLevel
-		uint8_t RequireLevel = 0;
+		/// \property MinLevel
+		uint8_t MinLevel = 0;
 
 		/// \brief Column [ReqRank]: Rank required to use item
 		///
-		/// \property RequireRank
-		uint8_t RequireRank = 0;
+		/// \property RequiredRank
+		uint8_t RequiredRank = 0;
 
 		/// \brief Column [ReqTitle]: Title required to use item
 		///
-		/// \see EnumRequireTitle
-		/// \property RequireTitle
-		uint8_t RequireTitle = 0;
+		/// \see EnumRequiredTitle
+		/// \property RequiredTitle
+		uint8_t RequiredTitle = 0;
 	
-		/// \enum EnumRequireTitle
+		/// \enum EnumRequiredTitle
 		/// \brief Known valid values for ReqTitle
-		enum class EnumRequireTitle
+		enum class EnumRequiredTitle
 		{
 			Any = 0,
 			King = 1,
@@ -269,28 +269,28 @@ namespace ebenezer_model
 
 		/// \brief Column [ReqStr]: Strength required to use item
 		///
-		/// \property RequireStrength
-		uint8_t RequireStrength = 0;
+		/// \property RequiredStrength
+		uint8_t RequiredStrength = 0;
 
 		/// \brief Column [ReqSta]: Stamina required to use item
 		///
-		/// \property RequireStamina
-		uint8_t RequireStamina = 0;
+		/// \property RequiredStamina
+		uint8_t RequiredStamina = 0;
 
 		/// \brief Column [ReqDex]: Dexterity required to use item
 		///
-		/// \property RequireDexterity
-		uint8_t RequireDexterity = 0;
+		/// \property RequiredDexterity
+		uint8_t RequiredDexterity = 0;
 
 		/// \brief Column [ReqIntel]: Intelligence required to use item
 		///
-		/// \property RequireIntelligence
-		uint8_t RequireIntelligence = 0;
+		/// \property RequiredIntelligence
+		uint8_t RequiredIntelligence = 0;
 
 		/// \brief Column [ReqCha]: Charisma required to use item
 		///
-		/// \property RequireCharisma
-		uint8_t RequireCharisma = 0;
+		/// \property RequiredCharisma
+		uint8_t RequiredCharisma = 0;
 
 		/// \brief Column [SellingGroup]: NPC Selling Group
 		///

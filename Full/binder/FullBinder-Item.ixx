@@ -41,15 +41,15 @@ namespace full_binder
 				{"Countable", &Item::BindCountable},
 				{"Effect1", &Item::BindMagicEffect},
 				{"Effect2", &Item::BindSpecialEffect},
-				{"ReqLevel", &Item::BindRequireLevel},
+				{"ReqLevel", &Item::BindMinLevel},
 				{"ReqLevelMax", &Item::BindMaxLevel},
-				{"ReqRank", &Item::BindRequireRank},
-				{"ReqTitle", &Item::BindRequireTitle},
-				{"ReqStr", &Item::BindRequireStrength},
-				{"ReqSta", &Item::BindRequireStamina},
-				{"ReqDex", &Item::BindRequireDexterity},
-				{"ReqIntel", &Item::BindRequireIntelligence},
-				{"ReqCha", &Item::BindRequireCharisma},
+				{"ReqRank", &Item::BindRequiredRank},
+				{"ReqTitle", &Item::BindRequiredTitle},
+				{"ReqStr", &Item::BindRequiredStrength},
+				{"ReqSta", &Item::BindRequiredStamina},
+				{"ReqDex", &Item::BindRequiredDexterity},
+				{"ReqIntel", &Item::BindRequiredIntelligence},
+				{"ReqCha", &Item::BindRequiredCharisma},
 				{"SellingGroup", &Item::BindSellingGroup},
 				{"ItemType", &Item::BindType},
 				{"Hitrate", &Item::BindHitRate},
@@ -188,10 +188,10 @@ namespace full_binder
 			result.get_ref<int32_t>(colIndex, m.SpecialEffect);
 		}
 
-		/// \brief Binds a result's column to RequireLevel
-		static void BindRequireLevel(full_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to MinLevel
+		static void BindMinLevel(full_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RequireLevel = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.MinLevel = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to MaxLevel
@@ -200,46 +200,46 @@ namespace full_binder
 			m.MaxLevel = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
-		/// \brief Binds a result's column to RequireRank
-		static void BindRequireRank(full_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredRank
+		static void BindRequiredRank(full_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RequireRank = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.RequiredRank = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
-		/// \brief Binds a result's column to RequireTitle
-		static void BindRequireTitle(full_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredTitle
+		static void BindRequiredTitle(full_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RequireTitle = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.RequiredTitle = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
-		/// \brief Binds a result's column to RequireStrength
-		static void BindRequireStrength(full_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredStrength
+		static void BindRequiredStrength(full_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RequireStrength = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.RequiredStrength = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
-		/// \brief Binds a result's column to RequireStamina
-		static void BindRequireStamina(full_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredStamina
+		static void BindRequiredStamina(full_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RequireStamina = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.RequiredStamina = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
-		/// \brief Binds a result's column to RequireDexterity
-		static void BindRequireDexterity(full_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredDexterity
+		static void BindRequiredDexterity(full_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RequireDexterity = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.RequiredDexterity = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
-		/// \brief Binds a result's column to RequireIntelligence
-		static void BindRequireIntelligence(full_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredIntelligence
+		static void BindRequiredIntelligence(full_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RequireIntelligence = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.RequiredIntelligence = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
-		/// \brief Binds a result's column to RequireCharisma
-		static void BindRequireCharisma(full_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredCharisma
+		static void BindRequiredCharisma(full_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RequireCharisma = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.RequiredCharisma = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to SellingGroup

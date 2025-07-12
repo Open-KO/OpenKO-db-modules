@@ -57,48 +57,48 @@ namespace full_model
 
 		/// \brief Column [nReqItem1]: Required item 1 identifier
 		///
-		/// \property RequireItem1
-		int32_t RequireItem1 = 0;
+		/// \property RequiredItem1
+		int32_t RequiredItem1 = 0;
 
 		/// \brief Column [nReqItem2]: Required item 2 identifier
 		///
-		/// \property RequireItem2
-		int32_t RequireItem2 = 0;
+		/// \property RequiredItem2
+		int32_t RequiredItem2 = 0;
 
 		/// \brief Column [nReqItem3]: Required item 3 identifier
 		///
-		/// \property RequireItem3
-		int32_t RequireItem3 = 0;
+		/// \property RequiredItem3
+		int32_t RequiredItem3 = 0;
 
 		/// \brief Column [nReqItem4]: Required item 4 identifier
 		///
-		/// \property RequireItem4
-		int32_t RequireItem4 = 0;
+		/// \property RequiredItem4
+		int32_t RequiredItem4 = 0;
 
 		/// \brief Column [nReqItem5]: Required item 5 identifier
 		///
-		/// \property RequireItem5
-		int32_t RequireItem5 = 0;
+		/// \property RequiredItem5
+		int32_t RequiredItem5 = 0;
 
 		/// \brief Column [nReqItem6]: Required item 6 identifier
 		///
-		/// \property RequireItem6
-		int32_t RequireItem6 = 0;
+		/// \property RequiredItem6
+		int32_t RequiredItem6 = 0;
 
 		/// \brief Column [nReqItem7]: Required item 7 identifier
 		///
-		/// \property RequireItem7
-		int32_t RequireItem7 = 0;
+		/// \property RequiredItem7
+		int32_t RequiredItem7 = 0;
 
 		/// \brief Column [nReqItem8]: Required item 8 identifier
 		///
-		/// \property RequireItem8
-		int32_t RequireItem8 = 0;
+		/// \property RequiredItem8
+		int32_t RequiredItem8 = 0;
 
 		/// \brief Column [nReqNoah]: Coins required to upgrade
 		///
-		/// \property RequireCoin
-		int32_t RequireCoin = 0;
+		/// \property RequiredCoins
+		int32_t RequiredCoins = 0;
 
 		/// \brief Column [bRateType]: Rate type
 		///

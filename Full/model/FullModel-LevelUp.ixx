@@ -29,7 +29,7 @@ namespace full_model
 		/// \property Level
 		uint8_t Level = 0;
 
-		/// \brief Column [Exp]: Required experience to advance to the next level
+		/// \brief Column [Exp]: Experience required to advance to the next level
 		///
 		/// \property RequiredExp
 		int32_t RequiredExp = 0;
