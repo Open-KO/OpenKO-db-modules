@@ -24,7 +24,7 @@ namespace ebenezer_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"Num", &Item::BindNumber},
+				{"Num", &Item::BindID},
 				{"strName", &Item::BindName},
 				{"Kind", &Item::BindKind},
 				{"Slot", &Item::BindSlot},
@@ -85,10 +85,10 @@ namespace ebenezer_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to Number
-		static void BindNumber(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(ebenezer_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.Number);
+			result.get_ref<int32_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to Name

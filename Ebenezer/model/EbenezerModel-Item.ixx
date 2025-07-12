@@ -26,8 +26,8 @@ namespace ebenezer_model
 
 		/// \brief Column [Num]: Item number
 		///
-		/// \property Number
-		int32_t Number = 0;
+		/// \property ID
+		int32_t ID = 0;
 
 		/// \brief Column [strName]: Item name
 		///
@@ -488,7 +488,7 @@ namespace ebenezer_model
 		/// \brief Returns a value for use in map keys based on the table's primary key
 		const int32_t& MapKey() const
 		{
-			return Number;
+			return ID;
 		}
 
 	};

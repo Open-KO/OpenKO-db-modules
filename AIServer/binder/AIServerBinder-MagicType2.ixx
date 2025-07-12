@@ -24,7 +24,7 @@ namespace aiserver_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType2::BindMagicNumber},
+				{"iNum", &MagicType2::BindID},
 				{"HitType", &MagicType2::BindHitType},
 				{"HitRate", &MagicType2::BindHitRateMod},
 				{"AddDamage", &MagicType2::BindDamageMod},
@@ -35,10 +35,10 @@ namespace aiserver_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(aiserver_model::MagicType2& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(aiserver_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.MagicNumber);
+			result.get_ref<int32_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to HitType

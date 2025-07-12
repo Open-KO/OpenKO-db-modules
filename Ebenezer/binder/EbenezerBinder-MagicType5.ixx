@@ -24,7 +24,7 @@ namespace ebenezer_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType5::BindMagicNumber},
+				{"iNum", &MagicType5::BindID},
 				{"Type", &MagicType5::BindType},
 				{"ExpRecover", &MagicType5::BindExpRecover},
 				{"NeedStone", &MagicType5::BindNeedStone}
@@ -32,10 +32,10 @@ namespace ebenezer_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(ebenezer_model::MagicType5& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(ebenezer_model::MagicType5& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.MagicNumber);
+			result.get_ref<int32_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to Type

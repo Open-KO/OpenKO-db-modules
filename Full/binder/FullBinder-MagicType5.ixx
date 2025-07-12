@@ -24,7 +24,7 @@ namespace full_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"iNum", &MagicType5::BindMagicNumber},
+				{"iNum", &MagicType5::BindID},
 				{"Name", &MagicType5::BindName},
 				{"Description", &MagicType5::BindDescription},
 				{"Type", &MagicType5::BindType},
@@ -34,10 +34,10 @@ namespace full_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(full_model::MagicType5& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(full_model::MagicType5& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.MagicNumber);
+			result.get_ref<int32_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to Name

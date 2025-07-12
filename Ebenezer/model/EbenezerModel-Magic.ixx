@@ -27,8 +27,8 @@ namespace ebenezer_model
 
 		/// \brief Column [MagicNum]: Magic identification number
 		///
-		/// \property MagicNumber
-		int32_t MagicNumber = 0;
+		/// \property ID
+		int32_t ID = 0;
 
 		/// \brief Column [BeforeAction]: Before action check
 		///
@@ -166,7 +166,7 @@ namespace ebenezer_model
 		/// \brief Returns a value for use in map keys based on the table's primary key
 		const int32_t& MapKey() const
 		{
-			return MagicNumber;
+			return ID;
 		}
 
 	};
