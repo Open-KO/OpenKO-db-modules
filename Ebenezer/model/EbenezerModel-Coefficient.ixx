@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <optional>
 #include <string>
 #include <unordered_set>
 
@@ -68,17 +67,17 @@ namespace ebenezer_model
 		/// \brief Column [Bow]: Bow Coefficient
 		///
 		/// \property Bow
-		std::optional<double> Bow;
+		double Bow = 0;
 
 		/// \brief Column [Hp]: Hit Point Coefficient
 		///
 		/// \property HitPoint
 		double HitPoint = 0;
 
-		/// \brief Column [Mp]: Magic Power Coefficient
+		/// \brief Column [Mp]: Mana Point Coefficient
 		///
-		/// \property MagicPower
-		double MagicPower = 0;
+		/// \property ManaPoint
+		double ManaPoint = 0;
 
 		/// \brief Column [Sp]: Sp Coefficient
 		///

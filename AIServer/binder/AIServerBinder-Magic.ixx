@@ -24,7 +24,7 @@ namespace aiserver_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"MagicNum", &Magic::BindMagicNumber},
+				{"MagicNum", &Magic::BindID},
 				{"BeforeAction", &Magic::BindBeforeAction},
 				{"TargetAction", &Magic::BindTargetAction},
 				{"SelfEffect", &Magic::BindSelfEffect},
@@ -49,10 +49,10 @@ namespace aiserver_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.MagicNumber);
+			result.get_ref<int32_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to BeforeAction

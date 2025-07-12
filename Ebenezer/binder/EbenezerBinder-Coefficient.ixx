@@ -34,7 +34,7 @@ namespace ebenezer_binder
 				{"Staff", &Coefficient::BindStaff},
 				{"Bow", &Coefficient::BindBow},
 				{"Hp", &Coefficient::BindHitPoint},
-				{"Mp", &Coefficient::BindMagicPower},
+				{"Mp", &Coefficient::BindManaPoint},
 				{"Sp", &Coefficient::BindSp},
 				{"Ac", &Coefficient::BindArmor},
 				{"Hitrate", &Coefficient::BindHitRate},
@@ -94,14 +94,7 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to Bow
 		static void BindBow(ebenezer_model::Coefficient& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Bow.reset();
-			}
-			else
-			{
-				m.Bow = result.get<double>(colIndex);
-			}
+			result.get_ref<double>(colIndex, m.Bow);
 		}
 
 		/// \brief Binds a result's column to HitPoint
@@ -110,10 +103,10 @@ namespace ebenezer_binder
 			result.get_ref<double>(colIndex, m.HitPoint);
 		}
 
-		/// \brief Binds a result's column to MagicPower
-		static void BindMagicPower(ebenezer_model::Coefficient& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ManaPoint
+		static void BindManaPoint(ebenezer_model::Coefficient& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<double>(colIndex, m.MagicPower);
+			result.get_ref<double>(colIndex, m.ManaPoint);
 		}
 
 		/// \brief Binds a result's column to Sp

@@ -26,8 +26,8 @@ namespace full_model
 
 		/// \brief Column [Num]: Item number
 		///
-		/// \property Number
-		int32_t Number = 0;
+		/// \property ID
+		int32_t ID = 0;
 
 		/// \brief Column [strName]: Item name
 		///
@@ -239,8 +239,8 @@ namespace full_model
 
 		/// \brief Column [ReqLevel]: Minimum level required to use item
 		///
-		/// \property RequireLevel
-		uint8_t RequireLevel = 0;
+		/// \property MinLevel
+		uint8_t MinLevel = 0;
 
 		/// \brief Column [ReqLevelMax]: Maximum level allowed to use item
 		///
@@ -249,18 +249,18 @@ namespace full_model
 
 		/// \brief Column [ReqRank]: Rank required to use item
 		///
-		/// \property RequireRank
-		uint8_t RequireRank = 0;
+		/// \property RequiredRank
+		uint8_t RequiredRank = 0;
 
 		/// \brief Column [ReqTitle]: Title required to use item
 		///
-		/// \see EnumRequireTitle
-		/// \property RequireTitle
-		uint8_t RequireTitle = 0;
+		/// \see EnumRequiredTitle
+		/// \property RequiredTitle
+		uint8_t RequiredTitle = 0;
 	
-		/// \enum EnumRequireTitle
+		/// \enum EnumRequiredTitle
 		/// \brief Known valid values for ReqTitle
-		enum class EnumRequireTitle
+		enum class EnumRequiredTitle
 		{
 			Any = 0,
 			King = 1,
@@ -274,28 +274,28 @@ namespace full_model
 
 		/// \brief Column [ReqStr]: Strength required to use item
 		///
-		/// \property RequireStrength
-		uint8_t RequireStrength = 0;
+		/// \property RequiredStrength
+		uint8_t RequiredStrength = 0;
 
 		/// \brief Column [ReqSta]: Stamina required to use item
 		///
-		/// \property RequireStamina
-		uint8_t RequireStamina = 0;
+		/// \property RequiredStamina
+		uint8_t RequiredStamina = 0;
 
 		/// \brief Column [ReqDex]: Dexterity required to use item
 		///
-		/// \property RequireDexterity
-		uint8_t RequireDexterity = 0;
+		/// \property RequiredDexterity
+		uint8_t RequiredDexterity = 0;
 
 		/// \brief Column [ReqIntel]: Intelligence required to use item
 		///
-		/// \property RequireIntelligence
-		uint8_t RequireIntelligence = 0;
+		/// \property RequiredIntelligence
+		uint8_t RequiredIntelligence = 0;
 
 		/// \brief Column [ReqCha]: Charisma required to use item
 		///
-		/// \property RequireCharisma
-		uint8_t RequireCharisma = 0;
+		/// \property RequiredCharisma
+		uint8_t RequiredCharisma = 0;
 
 		/// \brief Column [SellingGroup]: NPC Selling Group
 		///
@@ -429,33 +429,33 @@ namespace full_model
 
 		/// \brief Column [FireR]: Fire resistance
 		///
-		/// \property FireResistance
-		int16_t FireResistance = 0;
+		/// \property FireResist
+		int16_t FireResist = 0;
 
 		/// \brief Column [ColdR]: Cold resistance
 		///
-		/// \property ColdResistance
-		int16_t ColdResistance = 0;
+		/// \property ColdResist
+		int16_t ColdResist = 0;
 
 		/// \brief Column [LightningR]: Lightning resistance
 		///
-		/// \property LightningResistance
-		int16_t LightningResistance = 0;
+		/// \property LightningResist
+		int16_t LightningResist = 0;
 
 		/// \brief Column [MagicR]: Magic resistance
 		///
-		/// \property MagicResistance
-		int16_t MagicResistance = 0;
+		/// \property MagicResist
+		int16_t MagicResist = 0;
 
 		/// \brief Column [PoisonR]: Poison resistance
 		///
-		/// \property PoisonResistance
-		int16_t PoisonResistance = 0;
+		/// \property PoisonResist
+		int16_t PoisonResist = 0;
 
 		/// \brief Column [CurseR]: Curse resistance
 		///
-		/// \property CurseResistance
-		int16_t CurseResistance = 0;
+		/// \property CurseResist
+		int16_t CurseResist = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()
@@ -493,7 +493,7 @@ namespace full_model
 		/// \brief Returns a value for use in map keys based on the table's primary key
 		const int32_t& MapKey() const
 		{
-			return Number;
+			return ID;
 		}
 
 	};

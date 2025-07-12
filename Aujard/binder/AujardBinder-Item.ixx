@@ -24,16 +24,16 @@ namespace aujard_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"Num", &Item::BindNumber},
+				{"Num", &Item::BindID},
 				{"Countable", &Item::BindCountable}
 			};
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to Number
-		static void BindNumber(aujard_model::Item& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(aujard_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.Number);
+			result.get_ref<int32_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to Countable

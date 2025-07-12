@@ -27,8 +27,8 @@ namespace aiserver_model
 
 		/// \brief Column [iNum]: Magic identification number
 		///
-		/// \property MagicNumber
-		int32_t MagicNumber = 0;
+		/// \property ID
+		int32_t ID = 0;
 
 		/// \brief Column [HitType]: Projectile type
 		///
@@ -105,7 +105,7 @@ namespace aiserver_model
 		/// \brief Returns a value for use in map keys based on the table's primary key
 		const int32_t& MapKey() const
 		{
-			return MagicNumber;
+			return ID;
 		}
 
 	};

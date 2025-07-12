@@ -28,15 +28,15 @@ namespace ebenezer_binder
 				{"nNPCNum", &ItemUpgrade::BindNpcNumber},
 				{"nOriginType", &ItemUpgrade::BindOriginType},
 				{"nOriginItem", &ItemUpgrade::BindOriginItem},
-				{"nReqItem1", &ItemUpgrade::BindRequireItem1},
-				{"nReqItem2", &ItemUpgrade::BindRequireItem2},
-				{"nReqItem3", &ItemUpgrade::BindRequireItem3},
-				{"nReqItem4", &ItemUpgrade::BindRequireItem4},
-				{"nReqItem5", &ItemUpgrade::BindRequireItem5},
-				{"nReqItem6", &ItemUpgrade::BindRequireItem6},
-				{"nReqItem7", &ItemUpgrade::BindRequireItem7},
-				{"nReqItem8", &ItemUpgrade::BindRequireItem8},
-				{"nReqNoah", &ItemUpgrade::BindRequireCoin},
+				{"nReqItem1", &ItemUpgrade::BindRequiredItem1},
+				{"nReqItem2", &ItemUpgrade::BindRequiredItem2},
+				{"nReqItem3", &ItemUpgrade::BindRequiredItem3},
+				{"nReqItem4", &ItemUpgrade::BindRequiredItem4},
+				{"nReqItem5", &ItemUpgrade::BindRequiredItem5},
+				{"nReqItem6", &ItemUpgrade::BindRequiredItem6},
+				{"nReqItem7", &ItemUpgrade::BindRequiredItem7},
+				{"nReqItem8", &ItemUpgrade::BindRequiredItem8},
+				{"nReqNoah", &ItemUpgrade::BindRequiredCoins},
 				{"bRateType", &ItemUpgrade::BindRateType},
 				{"nGenRate", &ItemUpgrade::BindGenRate},
 				{"nGiveItem", &ItemUpgrade::BindGiveItem}
@@ -68,58 +68,58 @@ namespace ebenezer_binder
 			result.get_ref<int16_t>(colIndex, m.OriginItem);
 		}
 
-		/// \brief Binds a result's column to RequireItem1
-		static void BindRequireItem1(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredItem1
+		static void BindRequiredItem1(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireItem1);
+			result.get_ref<int32_t>(colIndex, m.RequiredItem1);
 		}
 
-		/// \brief Binds a result's column to RequireItem2
-		static void BindRequireItem2(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredItem2
+		static void BindRequiredItem2(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireItem2);
+			result.get_ref<int32_t>(colIndex, m.RequiredItem2);
 		}
 
-		/// \brief Binds a result's column to RequireItem3
-		static void BindRequireItem3(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredItem3
+		static void BindRequiredItem3(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireItem3);
+			result.get_ref<int32_t>(colIndex, m.RequiredItem3);
 		}
 
-		/// \brief Binds a result's column to RequireItem4
-		static void BindRequireItem4(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredItem4
+		static void BindRequiredItem4(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireItem4);
+			result.get_ref<int32_t>(colIndex, m.RequiredItem4);
 		}
 
-		/// \brief Binds a result's column to RequireItem5
-		static void BindRequireItem5(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredItem5
+		static void BindRequiredItem5(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireItem5);
+			result.get_ref<int32_t>(colIndex, m.RequiredItem5);
 		}
 
-		/// \brief Binds a result's column to RequireItem6
-		static void BindRequireItem6(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredItem6
+		static void BindRequiredItem6(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireItem6);
+			result.get_ref<int32_t>(colIndex, m.RequiredItem6);
 		}
 
-		/// \brief Binds a result's column to RequireItem7
-		static void BindRequireItem7(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredItem7
+		static void BindRequiredItem7(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireItem7);
+			result.get_ref<int32_t>(colIndex, m.RequiredItem7);
 		}
 
-		/// \brief Binds a result's column to RequireItem8
-		static void BindRequireItem8(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredItem8
+		static void BindRequiredItem8(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireItem8);
+			result.get_ref<int32_t>(colIndex, m.RequiredItem8);
 		}
 
-		/// \brief Binds a result's column to RequireCoin
-		static void BindRequireCoin(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to RequiredCoins
+		static void BindRequiredCoins(ebenezer_model::ItemUpgrade& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.RequireCoin);
+			result.get_ref<int32_t>(colIndex, m.RequiredCoins);
 		}
 
 		/// \brief Binds a result's column to RateType

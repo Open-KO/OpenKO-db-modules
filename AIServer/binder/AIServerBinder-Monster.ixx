@@ -54,13 +54,13 @@ namespace aiserver_binder
 				{"iMagic1", &Monster::BindMagic1},
 				{"iMagic2", &Monster::BindMagic2},
 				{"iMagic3", &Monster::BindMagic3},
-				{"sFireR", &Monster::BindFireResistance},
-				{"sColdR", &Monster::BindColdResistance},
-				{"sLightningR", &Monster::BindLightningResistance},
-				{"sMagicR", &Monster::BindMagicResistance},
-				{"sDiseaseR", &Monster::BindDiseaseResistance},
-				{"sPoisonR", &Monster::BindPoisonResistance},
-				{"sLightR", &Monster::BindLightResistance},
+				{"sFireR", &Monster::BindFireResist},
+				{"sColdR", &Monster::BindColdResist},
+				{"sLightningR", &Monster::BindLightningResist},
+				{"sMagicR", &Monster::BindMagicResist},
+				{"sDiseaseR", &Monster::BindDiseaseResist},
+				{"sPoisonR", &Monster::BindPoisonResist},
+				{"sLightR", &Monster::BindLightResist},
 				{"sBulk", &Monster::BindBulk},
 				{"byAttackRange", &Monster::BindAttackRange},
 				{"bySearchRange", &Monster::BindSearchRange},
@@ -261,46 +261,46 @@ namespace aiserver_binder
 			result.get_ref<int32_t>(colIndex, m.Magic3);
 		}
 
-		/// \brief Binds a result's column to FireResistance
-		static void BindFireResistance(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to FireResist
+		static void BindFireResist(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.FireResistance);
+			result.get_ref<int16_t>(colIndex, m.FireResist);
 		}
 
-		/// \brief Binds a result's column to ColdResistance
-		static void BindColdResistance(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ColdResist
+		static void BindColdResist(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ColdResistance);
+			result.get_ref<int16_t>(colIndex, m.ColdResist);
 		}
 
-		/// \brief Binds a result's column to LightningResistance
-		static void BindLightningResistance(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to LightningResist
+		static void BindLightningResist(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.LightningResistance);
+			result.get_ref<int16_t>(colIndex, m.LightningResist);
 		}
 
-		/// \brief Binds a result's column to MagicResistance
-		static void BindMagicResistance(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to MagicResist
+		static void BindMagicResist(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.MagicResistance);
+			result.get_ref<int16_t>(colIndex, m.MagicResist);
 		}
 
-		/// \brief Binds a result's column to DiseaseResistance
-		static void BindDiseaseResistance(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to DiseaseResist
+		static void BindDiseaseResist(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.DiseaseResistance);
+			result.get_ref<int16_t>(colIndex, m.DiseaseResist);
 		}
 
-		/// \brief Binds a result's column to PoisonResistance
-		static void BindPoisonResistance(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to PoisonResist
+		static void BindPoisonResist(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.PoisonResistance);
+			result.get_ref<int16_t>(colIndex, m.PoisonResist);
 		}
 
-		/// \brief Binds a result's column to LightResistance
-		static void BindLightResistance(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to LightResist
+		static void BindLightResist(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.LightResistance);
+			result.get_ref<int16_t>(colIndex, m.LightResist);
 		}
 
 		/// \brief Binds a result's column to Bulk

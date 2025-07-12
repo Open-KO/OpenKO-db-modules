@@ -54,13 +54,13 @@ namespace full_binder
 				{"iMagic1", &Npc::BindMagic1},
 				{"iMagic2", &Npc::BindMagic2},
 				{"iMagic3", &Npc::BindMagic3},
-				{"sFireR", &Npc::BindFireResistance},
-				{"sColdR", &Npc::BindColdResistance},
-				{"sLightningR", &Npc::BindLightningResistance},
-				{"sMagicR", &Npc::BindMagicResistance},
-				{"sDiseaseR", &Npc::BindDiseaseResistance},
-				{"sPoisonR", &Npc::BindPoisonResistance},
-				{"sLightR", &Npc::BindLightResistance},
+				{"sFireR", &Npc::BindFireResist},
+				{"sColdR", &Npc::BindColdResist},
+				{"sLightningR", &Npc::BindLightningResist},
+				{"sMagicR", &Npc::BindMagicResist},
+				{"sDiseaseR", &Npc::BindDiseaseResist},
+				{"sPoisonR", &Npc::BindPoisonResist},
+				{"sLightR", &Npc::BindLightResist},
 				{"sBulk", &Npc::BindBulk},
 				{"byAttackRange", &Npc::BindAttackRange},
 				{"bySearchRange", &Npc::BindSearchRange},
@@ -261,46 +261,46 @@ namespace full_binder
 			result.get_ref<int32_t>(colIndex, m.Magic3);
 		}
 
-		/// \brief Binds a result's column to FireResistance
-		static void BindFireResistance(full_model::Npc& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to FireResist
+		static void BindFireResist(full_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.FireResistance);
+			result.get_ref<int16_t>(colIndex, m.FireResist);
 		}
 
-		/// \brief Binds a result's column to ColdResistance
-		static void BindColdResistance(full_model::Npc& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ColdResist
+		static void BindColdResist(full_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.ColdResistance);
+			result.get_ref<int16_t>(colIndex, m.ColdResist);
 		}
 
-		/// \brief Binds a result's column to LightningResistance
-		static void BindLightningResistance(full_model::Npc& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to LightningResist
+		static void BindLightningResist(full_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.LightningResistance);
+			result.get_ref<int16_t>(colIndex, m.LightningResist);
 		}
 
-		/// \brief Binds a result's column to MagicResistance
-		static void BindMagicResistance(full_model::Npc& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to MagicResist
+		static void BindMagicResist(full_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.MagicResistance);
+			result.get_ref<int16_t>(colIndex, m.MagicResist);
 		}
 
-		/// \brief Binds a result's column to DiseaseResistance
-		static void BindDiseaseResistance(full_model::Npc& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to DiseaseResist
+		static void BindDiseaseResist(full_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.DiseaseResistance);
+			result.get_ref<int16_t>(colIndex, m.DiseaseResist);
 		}
 
-		/// \brief Binds a result's column to PoisonResistance
-		static void BindPoisonResistance(full_model::Npc& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to PoisonResist
+		static void BindPoisonResist(full_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.PoisonResistance);
+			result.get_ref<int16_t>(colIndex, m.PoisonResist);
 		}
 
-		/// \brief Binds a result's column to LightResistance
-		static void BindLightResistance(full_model::Npc& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to LightResist
+		static void BindLightResist(full_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int16_t>(colIndex, m.LightResistance);
+			result.get_ref<int16_t>(colIndex, m.LightResist);
 		}
 
 		/// \brief Binds a result's column to Bulk

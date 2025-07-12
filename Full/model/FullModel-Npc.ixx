@@ -192,38 +192,38 @@ namespace full_model
 
 		/// \brief Column [sFireR]: Fire resistance
 		///
-		/// \property FireResistance
-		int16_t FireResistance = 0;
+		/// \property FireResist
+		int16_t FireResist = 0;
 
 		/// \brief Column [sColdR]: Cold resistance
 		///
-		/// \property ColdResistance
-		int16_t ColdResistance = 0;
+		/// \property ColdResist
+		int16_t ColdResist = 0;
 
 		/// \brief Column [sLightningR]: Lightning resistance
 		///
-		/// \property LightningResistance
-		int16_t LightningResistance = 0;
+		/// \property LightningResist
+		int16_t LightningResist = 0;
 
 		/// \brief Column [sMagicR]: Magic resistance
 		///
-		/// \property MagicResistance
-		int16_t MagicResistance = 0;
+		/// \property MagicResist
+		int16_t MagicResist = 0;
 
 		/// \brief Column [sDiseaseR]: Disease resistance
 		///
-		/// \property DiseaseResistance
-		int16_t DiseaseResistance = 0;
+		/// \property DiseaseResist
+		int16_t DiseaseResist = 0;
 
 		/// \brief Column [sPoisonR]: Poison resistance
 		///
-		/// \property PoisonResistance
-		int16_t PoisonResistance = 0;
+		/// \property PoisonResist
+		int16_t PoisonResist = 0;
 
 		/// \brief Column [sLightR]: Light resistance
 		///
-		/// \property LightResistance
-		int16_t LightResistance = 0;
+		/// \property LightResist
+		int16_t LightResist = 0;
 
 		/// \brief Column [sBulk]: Bulk
 		///

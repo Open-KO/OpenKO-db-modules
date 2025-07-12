@@ -24,7 +24,7 @@ namespace aiserver_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nIndex", &MagicType7::BindMagicNumber},
+				{"nIndex", &MagicType7::BindID},
 				{"byValidGroup", &MagicType7::BindValidGroup},
 				{"byNatoinChange", &MagicType7::BindNationChange},
 				{"shMonsterNum", &MagicType7::BindMonsterNumber},
@@ -40,10 +40,10 @@ namespace aiserver_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to MagicNumber
-		static void BindMagicNumber(aiserver_model::MagicType7& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ID
+		static void BindID(aiserver_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.MagicNumber);
+			result.get_ref<int32_t>(colIndex, m.ID);
 		}
 
 		/// \brief Binds a result's column to ValidGroup
