@@ -53,7 +53,7 @@ namespace full_model
 		}
 
 		/// \brief Returns the associated database type for the table
-		static const modelUtil::DbType DbType()
+		static const modelUtil::DbType DbType() const
 		{
 			return modelUtil::DbType::GAME;
 		}
@@ -69,9 +69,9 @@ namespace full_model
 		}
 
 		/// \brief Returns a value for use in map keys based on the table's primary key
-		const std::tuple<int16_t, std::string>& MapKey()
+		std::tuple<const int16_t&, const std::string&> MapKey() const
 		{
-			return std::tuple<int16_t, std::string>{KnightsId, UserId};
+			return std::tuple<const int16_t&, const std::string&>{KnightsId, UserId};
 		}
 
 	};

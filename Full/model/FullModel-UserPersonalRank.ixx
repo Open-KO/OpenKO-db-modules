@@ -104,7 +104,7 @@ namespace full_model
 		}
 
 		/// \brief Returns the associated database type for the table
-		static const modelUtil::DbType DbType()
+		static const modelUtil::DbType DbType() const
 		{
 			return modelUtil::DbType::GAME;
 		}
@@ -120,7 +120,7 @@ namespace full_model
 		}
 
 		/// \brief Returns a value for use in map keys based on the table's primary key
-		const int16_t& MapKey()
+		const int16_t& MapKey() const
 		{
 			return Rank;
 		}
