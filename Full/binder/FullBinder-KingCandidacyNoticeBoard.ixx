@@ -53,7 +53,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Notice
 		static void BindNotice(full_model::KingCandidacyNoticeBoard& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>(colIndex, m.Notice);
+			result.get_ref<std::vector<uint8_t>>(colIndex, m.Notice);
 		}
 
 	};
