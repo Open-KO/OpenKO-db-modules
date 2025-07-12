@@ -1,6 +1,9 @@
-export module ModelUtil;
+module;
+
 #include <cstdint>
 #include <string>
+
+export module ModelUtil;
 
 /// \brief Collection of hand-written utilities and types
 export namespace modelUtil
