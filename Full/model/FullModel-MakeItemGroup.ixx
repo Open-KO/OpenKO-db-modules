@@ -202,5 +202,21 @@ namespace full_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				"iItemGroupNum"
+			};
+			return primaryKey;
+		}
+
+		/// \brief Returns a value for use in map keys based on the table's primary key
+		const int32_t& MapKey()
+		{
+			return ItemGroupNumber;
+		}
+
 	};
 }

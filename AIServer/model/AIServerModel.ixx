@@ -1,2 +1,22 @@
 export module AIServerModel;
 
+export import :Monster;
+export import :MonsterItem;
+export import :Npc;
+export import :NpcMoveItem;
+export import :NpcPos;
+export import :LevelUp;
+export import :Magic;
+export import :MagicType1;
+export import :MagicType2;
+export import :MagicType3;
+export import :MagicType4;
+export import :MagicType7;
+export import :MakeDefensive;
+export import :MakeItem;
+export import :MakeItemGradeCode;
+export import :MakeItemGroup;
+export import :MakeItemRareCode;
+export import :MakeWeapon;
+export import :MonsterSummonList;
+export import :ZoneInfo;

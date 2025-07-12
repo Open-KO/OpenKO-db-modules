@@ -3,7 +3,6 @@ module;
 #include <cstdint>
 #include <optional>
 #include <string>
-#include <tuple>
 #include <unordered_set>
 
 export module FullModel:ZoneInfo;
@@ -99,15 +98,15 @@ namespace full_model
 		{
 			static const std::vector<std::string> primaryKey =
 			{
-				"ServerNo", "ZoneNo"
+				"ZoneNo"
 			};
 			return primaryKey;
 		}
 
 		/// \brief Returns a value for use in map keys based on the table's primary key
-		const std::tuple<uint8_t, int16_t>& MapKey()
+		const int16_t& MapKey()
 		{
-			return std::tuple<uint8_t, int16_t>{ServerId, ZoneId};
+			return ZoneId;
 		}
 
 	};
