@@ -200,7 +200,7 @@ namespace full_binder
 		/// \brief Binds a result's column to CreateTime
 		static void BindCreateTime(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::time_t>(colIndex, m.CreateTime);
+			result.get_ref<int64_t>(colIndex, m.CreateTime);
 		}
 
 		/// \brief Binds a result's column to MarkVersion

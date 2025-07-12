@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <ctime>
 #include <optional>
 #include <string>
 #include <unordered_set>
@@ -84,7 +83,7 @@ namespace full_model
 		/// \brief Column [UpdateDate]: Update date
 		///
 		/// \property UpdateDate
-		std::time_t UpdateDate;
+		int64_t UpdateDate = 0;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

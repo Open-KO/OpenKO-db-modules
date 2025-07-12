@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <ctime>
 #include <optional>
 #include <string>
 #include <unordered_set>
@@ -84,12 +83,12 @@ namespace full_model
 		/// \brief Column [timeRental]: Rental time
 		///
 		/// \property RentalTimestamp
-		std::optional<std::time_t> RentalTimestamp;
+		std::optional<int64_t> RentalTimestamp;
 
 		/// \brief Column [timeRegister]: Registration time
 		///
 		/// \property RegisterTime
-		std::optional<std::time_t> RegisterTime;
+		std::optional<int64_t> RegisterTime;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

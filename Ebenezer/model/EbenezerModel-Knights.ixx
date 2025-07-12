@@ -1,7 +1,6 @@
 module;
 
 #include <cstdint>
-#include <ctime>
 #include <optional>
 #include <string>
 #include <unordered_set>
@@ -119,7 +118,7 @@ namespace ebenezer_model
 		/// \brief Column [CreateTime]: Create time
 		///
 		/// \property CreateTime
-		std::time_t CreateTime;
+		int64_t CreateTime = 0;
 
 		/// \brief Column [sMarkVersion]: Mark version
 		///
