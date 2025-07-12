@@ -9,7 +9,7 @@ var classfull__model_1_1Knights =
     [ "EnemyName", "classfull__model_1_1Knights.html#a4f92ccb348d8633c7efe8555410715e8", null ],
     [ "Flag", "classfull__model_1_1Knights.html#ae8d99454fefeadaa6cdbb7541eab1651", null ],
     [ "Gold", "classfull__model_1_1Knights.html#ab3ff99c9d3f4e62c9092ccd22f650808", null ],
-    [ "IdNumber", "classfull__model_1_1Knights.html#ac0470f197d42431f8daa81004192caaf", null ],
+    [ "ID", "classfull__model_1_1Knights.html#a505c98de66116520367a7b123a275fc6", null ],
     [ "Lose", "classfull__model_1_1Knights.html#a0db7462ab317b9a7133824caf614856b", null ],
     [ "Mark", "classfull__model_1_1Knights.html#a4b49743a4a8ab398d8758e5e3da8afcf", null ],
     [ "MarkLength", "classfull__model_1_1Knights.html#a34777baa1003c1a3da1cd93182fdd978", null ],

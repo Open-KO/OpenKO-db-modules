@@ -130,10 +130,10 @@ static const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItem
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a63ba612069ce94089e1a68e1abf05691"><td class="memItemLeft" align="right" valign="top"><a id="a63ba612069ce94089e1a68e1abf05691" name="a63ba612069ce94089e1a68e1abf05691"></a>
-int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>IdNumber</b> = 0</td></tr>
-<tr class="memdesc:a63ba612069ce94089e1a68e1abf05691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [IDNum]: Identification number. <br /></td></tr>
-<tr class="separator:a63ba612069ce94089e1a68e1abf05691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26797831952c36c6a1c6277b5cf834e5"><td class="memItemLeft" align="right" valign="top"><a id="a26797831952c36c6a1c6277b5cf834e5" name="a26797831952c36c6a1c6277b5cf834e5"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>ID</b> = 0</td></tr>
+<tr class="memdesc:a26797831952c36c6a1c6277b5cf834e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [IDNum]: Identification number. <br /></td></tr>
+<tr class="separator:a26797831952c36c6a1c6277b5cf834e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af31cfafd20f73ceafed070e47fc35fee"><td class="memItemLeft" align="right" valign="top"><a id="af31cfafd20f73ceafed070e47fc35fee" name="af31cfafd20f73ceafed070e47fc35fee"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Flag</b> = 0</td></tr>
 <tr class="memdesc:af31cfafd20f73ceafed070e47fc35fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Flag]: Flag TODO. <br /></td></tr>
@@ -199,13 +199,9 @@ int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>Domination</b> = 0
 <tr class="memdesc:a4b38313e031a0531f2787adf397d7bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Domination]: Domination TODO. <br /></td></tr>
 <tr class="separator:a4b38313e031a0531f2787adf397d7bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab063e7a31a1f825db62d5610b7b7d270"><td class="memItemLeft" align="right" valign="top"><a id="ab063e7a31a1f825db62d5610b7b7d270" name="ab063e7a31a1f825db62d5610b7b7d270"></a>
-std::optional&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Points</b></td></tr>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Points</b> = 0</td></tr>
 <tr class="memdesc:ab063e7a31a1f825db62d5610b7b7d270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Points]: National points. <br /></td></tr>
 <tr class="separator:ab063e7a31a1f825db62d5610b7b7d270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e0a4692c124511fdb1e0fc12e883353"><td class="memItemLeft" align="right" valign="top"><a id="a7e0a4692c124511fdb1e0fc12e883353" name="a7e0a4692c124511fdb1e0fc12e883353"></a>
-int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTime</b> = 0</td></tr>
-<tr class="memdesc:a7e0a4692c124511fdb1e0fc12e883353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [CreateTime]: Create time. <br /></td></tr>
-<tr class="separator:a7e0a4692c124511fdb1e0fc12e883353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc30659aec5e7e453532e138e1814498"><td class="memItemLeft" align="right" valign="top"><a id="acc30659aec5e7e453532e138e1814498" name="acc30659aec5e7e453532e138e1814498"></a>
 int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MarkVersion</b> = 0</td></tr>
 <tr class="memdesc:acc30659aec5e7e453532e138e1814498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [sMarkVersion]: Mark version. <br /></td></tr>
@@ -218,10 +214,6 @@ int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MarkLength</b> = 0
 std::optional&lt; std::vector&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Mark</b></td></tr>
 <tr class="memdesc:a6dfb2ef8a73f194eb3963d9e58b273e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Mark]: Mark image. <br /></td></tr>
 <tr class="separator:a6dfb2ef8a73f194eb3963d9e58b273e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a75f7c787673532d52f653d6c269e4"><td class="memItemLeft" align="right" valign="top"><a id="a44a75f7c787673532d52f653d6c269e4" name="a44a75f7c787673532d52f653d6c269e4"></a>
-std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Stash</b></td></tr>
-<tr class="memdesc:a44a75f7c787673532d52f653d6c269e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [Stash]: Stash TODO. <br /></td></tr>
-<tr class="separator:a44a75f7c787673532d52f653d6c269e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a221b0133928b4da3a70a8d5b6242fc1d"><td class="memItemLeft" align="right" valign="top"><a id="a221b0133928b4da3a70a8d5b6242fc1d" name="a221b0133928b4da3a70a8d5b6242fc1d"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>SiegeFlag</b> = 0</td></tr>
 <tr class="memdesc:a221b0133928b4da3a70a8d5b6242fc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [bySiegeFlag]: Siege flag. <br /></td></tr>
