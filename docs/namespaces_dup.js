@@ -50,6 +50,7 @@ var namespaces_dup =
     [ "aujard_model", null, [
       [ "Item", "classaujard__model_1_1Item.html", "classaujard__model_1_1Item" ]
     ] ],
+    [ "binderUtil", "namespacebinderUtil.html", null ],
     [ "ebenezer_binder", null, [
       [ "Battle", "classebenezer__binder_1_1Battle.html", null ],
       [ "Coefficient", "classebenezer__binder_1_1Coefficient.html", null ],
