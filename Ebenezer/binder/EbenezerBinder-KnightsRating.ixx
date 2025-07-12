@@ -27,6 +27,7 @@ namespace ebenezer_binder
 			{
 				{"nRank", &KnightsRating::BindRank},
 				{"shIndex", &KnightsRating::BindIndex},
+				{"strName", &KnightsRating::BindName},
 				{"nPoints", &KnightsRating::BindPoints}
 			};
 			return bindingsMap;
@@ -42,6 +43,12 @@ namespace ebenezer_binder
 		static void BindIndex(ebenezer_model::KnightsRating& m, const nanodbc::result& result, short colIndex)
 		{
 			result.get_ref<int16_t>(colIndex, m.Index);
+		}
+
+		/// \brief Binds a result's column to Name
+		static void BindName(ebenezer_model::KnightsRating& m, const nanodbc::result& result, short colIndex)
+		{
+			result.get_ref<std::string>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Points

@@ -34,6 +34,11 @@ namespace ebenezer_model
 		/// \property Index
 		int16_t Index = 0;
 
+		/// \brief Column [strName]: Knights name
+		///
+		/// \property Name
+		std::string Name;
+
 		/// \brief Column [nPoints]: National points
 		///
 		/// \property Points
@@ -51,7 +56,7 @@ namespace ebenezer_model
 		{
 			static const std::unordered_set<std::string> columnNames =
 			{
-				"nRank", "shIndex", "nPoints"
+				"nRank", "shIndex", "strName", "nPoints"
 			};
 			return columnNames;
 		}
