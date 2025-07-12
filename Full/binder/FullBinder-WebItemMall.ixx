@@ -7,6 +7,7 @@ module;
 export module FullBinder:WebItemMall;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -71,7 +72,7 @@ namespace full_binder
 		/// \brief Binds a result's column to BuyTime
 		static void BindBuyTime(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::time_t>(colIndex, m.BuyTime);
+			m.BuyTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 		}
 
 		/// \brief Binds a result's column to ImgFileName

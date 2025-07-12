@@ -7,6 +7,7 @@ module;
 export module EbenezerBinder:MagicType8;
 
 import EbenezerModel;
+import BinderUtil;
 
 namespace ebenezer_binder
 {

@@ -7,6 +7,7 @@ module;
 export module AIServerBinder:MakeItemGradeCode;
 
 import AIServerModel;
+import BinderUtil;
 
 namespace aiserver_binder
 {

@@ -7,6 +7,7 @@ module;
 export module FullBinder:Knights;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -193,7 +194,7 @@ namespace full_binder
 		/// \brief Binds a result's column to CreateTime
 		static void BindCreateTime(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::time_t>(colIndex, m.CreateTime);
+			m.CreateTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 		}
 
 		/// \brief Binds a result's column to MarkVersion

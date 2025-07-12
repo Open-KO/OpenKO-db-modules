@@ -7,6 +7,7 @@ module;
 export module FullBinder:MagicType8;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {

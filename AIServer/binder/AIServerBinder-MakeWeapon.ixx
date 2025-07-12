@@ -7,6 +7,7 @@ module;
 export module AIServerBinder:MakeWeapon;
 
 import AIServerModel;
+import BinderUtil;
 
 namespace aiserver_binder
 {

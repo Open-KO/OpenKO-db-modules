@@ -7,6 +7,7 @@ module;
 export module FullBinder:TbUser;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -67,7 +68,7 @@ namespace full_binder
 		/// \brief Binds a result's column to PremiumExpire
 		static void BindPremiumExpire(full_model::TbUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::time_t>(colIndex, m.PremiumExpire);
+			m.PremiumExpire = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 		}
 
 	};

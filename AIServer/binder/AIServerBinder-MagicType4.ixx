@@ -7,6 +7,7 @@ module;
 export module AIServerBinder:MagicType4;
 
 import AIServerModel;
+import BinderUtil;
 
 namespace aiserver_binder
 {

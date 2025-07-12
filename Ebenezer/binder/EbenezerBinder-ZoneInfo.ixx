@@ -7,6 +7,7 @@ module;
 export module EbenezerBinder:ZoneInfo;
 
 import EbenezerModel;
+import BinderUtil;
 
 namespace ebenezer_binder
 {

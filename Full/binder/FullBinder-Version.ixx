@@ -7,6 +7,7 @@ module;
 export module FullBinder:Version;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {

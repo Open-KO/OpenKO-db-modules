@@ -7,6 +7,7 @@ module;
 export module FullBinder:UserEditorItem;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -101,7 +102,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.UpdateTime = result.get<std::time_t>(colIndex);
+			m.UpdateTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 			}
 		}
 

@@ -7,6 +7,7 @@ module;
 export module EbenezerBinder:WebpageAddress;
 
 import EbenezerModel;
+import BinderUtil;
 
 namespace ebenezer_binder
 {

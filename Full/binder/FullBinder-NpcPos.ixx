@@ -7,6 +7,7 @@ module;
 export module FullBinder:NpcPos;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {

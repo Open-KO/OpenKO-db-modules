@@ -7,6 +7,7 @@ module;
 export module EbenezerBinder:Home;
 
 import EbenezerModel;
+import BinderUtil;
 
 namespace ebenezer_binder
 {

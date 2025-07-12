@@ -7,6 +7,7 @@ module;
 export module FullBinder:RentalItem;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -144,14 +145,14 @@ namespace full_binder
 			}
 			else
 			{
-				m.LendTime = result.get<std::time_t>(colIndex);
+			m.LendTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 			}
 		}
 
 		/// \brief Binds a result's column to RegisterTime
 		static void BindRegisterTime(full_model::RentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::time_t>(colIndex, m.RegisterTime);
+			m.RegisterTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 		}
 
 	};

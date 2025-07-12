@@ -7,6 +7,7 @@ module;
 export module FullBinder:LevelUp;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {

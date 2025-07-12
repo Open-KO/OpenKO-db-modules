@@ -7,6 +7,7 @@ module;
 export module FullBinder:UserPersonalRank;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -137,7 +138,7 @@ namespace full_binder
 		/// \brief Binds a result's column to UpdateDate
 		static void BindUpdateDate(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::time_t>(colIndex, m.UpdateDate);
+			m.UpdateDate = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 		}
 
 	};

@@ -7,6 +7,7 @@ module;
 export module EbenezerBinder:MonsterChallenge;
 
 import EbenezerModel;
+import BinderUtil;
 
 namespace ebenezer_binder
 {

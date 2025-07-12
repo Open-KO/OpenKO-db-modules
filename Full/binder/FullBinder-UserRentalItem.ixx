@@ -7,6 +7,7 @@ module;
 export module FullBinder:UserRentalItem;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -116,7 +117,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.RentalTimestamp = result.get<std::time_t>(colIndex);
+			m.RentalTimestamp = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 			}
 		}
 
@@ -129,7 +130,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.RegisterTime = result.get<std::time_t>(colIndex);
+			m.RegisterTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 			}
 		}
 

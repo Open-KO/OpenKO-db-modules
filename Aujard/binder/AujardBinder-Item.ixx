@@ -7,6 +7,7 @@ module;
 export module AujardBinder:Item;
 
 import AujardModel;
+import BinderUtil;
 
 namespace aujard_binder
 {

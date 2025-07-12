@@ -7,6 +7,7 @@ module;
 export module EbenezerBinder:KnightsCape;
 
 import EbenezerModel;
+import BinderUtil;
 
 namespace ebenezer_binder
 {

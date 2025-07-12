@@ -7,6 +7,7 @@ module;
 export module FullBinder:UserData;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -334,7 +335,7 @@ namespace full_binder
 		/// \brief Binds a result's column to CreateTime
 		static void BindCreateTime(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::time_t>(colIndex, m.CreateTime);
+			m.CreateTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 		}
 
 		/// \brief Binds a result's column to UpdateTime
@@ -346,7 +347,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.UpdateTime = result.get<std::time_t>(colIndex);
+			m.UpdateTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 			}
 		}
 

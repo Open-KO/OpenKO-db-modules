@@ -7,6 +7,7 @@ module;
 export module EbenezerBinder:Event;
 
 import EbenezerModel;
+import BinderUtil;
 
 namespace ebenezer_binder
 {

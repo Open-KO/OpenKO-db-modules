@@ -7,6 +7,7 @@ module;
 export module AIServerBinder:MonsterItem;
 
 import AIServerModel;
+import BinderUtil;
 
 namespace aiserver_binder
 {

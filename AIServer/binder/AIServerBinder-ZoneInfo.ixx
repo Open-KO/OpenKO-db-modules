@@ -7,6 +7,7 @@ module;
 export module AIServerBinder:ZoneInfo;
 
 import AIServerModel;
+import BinderUtil;
 
 namespace aiserver_binder
 {

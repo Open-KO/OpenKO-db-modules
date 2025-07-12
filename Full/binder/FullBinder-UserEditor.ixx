@@ -7,6 +7,7 @@ module;
 export module FullBinder:UserEditor;
 
 import FullModel;
+import BinderUtil;
 
 namespace full_binder
 {
@@ -130,7 +131,7 @@ namespace full_binder
 		/// \brief Binds a result's column to EditorTime
 		static void BindEditorTime(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::time_t>(colIndex, m.EditorTime);
+			m.EditorTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
 		}
 
 	};
