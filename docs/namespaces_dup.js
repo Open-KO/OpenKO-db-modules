@@ -282,10 +282,10 @@ var namespaces_dup =
     ] ],
     [ "modelUtil", "namespacemodelUtil.html", [
       [ "DbType", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334", [
-        [ "INVALID", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334abd5104ae5c5355bdc7f2f6b641e079e7", null ],
-        [ "ACCOUNT", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334a0afb748928c14ca409cc05780ba469b5", null ],
-        [ "GAME", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334a66444cfd519874405e33b2aa5b61e420", null ],
-        [ "LOG", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334a06678b56c11da5326119bef9e4f2d721", null ]
+        [ "INVALID", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334accc0377a8afbf50e7094f5c23a8af223", null ],
+        [ "ACCOUNT", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334ac40eb667c7e828cfdcfb437c5d221bf6", null ],
+        [ "GAME", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334a4504e1ed59cd9732b8a844e5424e6f13", null ],
+        [ "LOG", "namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334a4b5ffcdaf38ce4d463171f5c977c5ab3", null ]
       ] ],
       [ "DbTypeString", "namespacemodelUtil.html#aff57c7612e37d21faca12882b7fa50eb", null ]
     ] ]
