@@ -14,7 +14,7 @@ export namespace modelUtil
     const std::string DbInvalidString = "INVALID";
 
     /// \brief Database type identifier
-    enum DbType : int8_t
+    enum class DbType : int8_t
     {
         INVALID = -1,
         ACCOUNT = 0,
