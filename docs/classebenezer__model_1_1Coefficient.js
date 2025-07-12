@@ -9,7 +9,7 @@ var classebenezer__model_1_1Coefficient =
     [ "Evasionrate", "classebenezer__model_1_1Coefficient.html#aa925bdf139b94ef9a32cae1576545cec", null ],
     [ "HitPoint", "classebenezer__model_1_1Coefficient.html#aac940ee08e069226efa4f805d597ec76", null ],
     [ "HitRate", "classebenezer__model_1_1Coefficient.html#a43ec69d34e5aa6636e3ff9f7d1726e6f", null ],
-    [ "MagicPower", "classebenezer__model_1_1Coefficient.html#a2e7a01792fc2125cc2769f9e2211c925", null ],
+    [ "ManaPoint", "classebenezer__model_1_1Coefficient.html#a3a58545e0b926cb7ad6e56a248754a37", null ],
     [ "Pole", "classebenezer__model_1_1Coefficient.html#a23f2e4ee290cc42dc0b1fad5aedd3261", null ],
     [ "ShortSword", "classebenezer__model_1_1Coefficient.html#a1b3bb5a19e5efb2dd03d48976abbf7b2", null ],
     [ "Sp", "classebenezer__model_1_1Coefficient.html#a191e4c07cd27ea16909b760b5ef4fda4", null ],
