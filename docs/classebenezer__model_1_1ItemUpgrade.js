@@ -8,13 +8,13 @@ var classebenezer__model_1_1ItemUpgrade =
     [ "OriginItem", "classebenezer__model_1_1ItemUpgrade.html#acd553b0d4c700e3a82c351e0012106bd", null ],
     [ "OriginType", "classebenezer__model_1_1ItemUpgrade.html#a1ab9bb9d52281d4e4a7a8b0fc866cb28", null ],
     [ "RateType", "classebenezer__model_1_1ItemUpgrade.html#a37f51d08b2420a21a4c5046c9a4ce506", null ],
-    [ "RequireCoin", "classebenezer__model_1_1ItemUpgrade.html#a651880e1da821f9ffb60b668c45c8bdb", null ],
-    [ "RequireItem1", "classebenezer__model_1_1ItemUpgrade.html#a9c73247a35cb1ced64381261888f1b59", null ],
-    [ "RequireItem2", "classebenezer__model_1_1ItemUpgrade.html#a8166420d51c778f5b50ad0203a3990c9", null ],
-    [ "RequireItem3", "classebenezer__model_1_1ItemUpgrade.html#a6ccca422b8905969a07b572c3a5eeb04", null ],
-    [ "RequireItem4", "classebenezer__model_1_1ItemUpgrade.html#a6bf21ea7398dfdd18b26450c342fad52", null ],
-    [ "RequireItem5", "classebenezer__model_1_1ItemUpgrade.html#a9f19f0ad55712c97ab2bfab75d175301", null ],
-    [ "RequireItem6", "classebenezer__model_1_1ItemUpgrade.html#a0e2758cc4d07fa6b005fc213e0e91a17", null ],
-    [ "RequireItem7", "classebenezer__model_1_1ItemUpgrade.html#aeba90c83d218ba581b1575cbcae6e022", null ],
-    [ "RequireItem8", "classebenezer__model_1_1ItemUpgrade.html#a2acdd4c9201440ded0993dfac3c537b6", null ]
+    [ "RequiredCoins", "classebenezer__model_1_1ItemUpgrade.html#a855158bfa731b55489ef6b7e8ae71d19", null ],
+    [ "RequiredItem1", "classebenezer__model_1_1ItemUpgrade.html#a0afce0705cf406bdd32e6a21e4444e7b", null ],
+    [ "RequiredItem2", "classebenezer__model_1_1ItemUpgrade.html#af72d8ccb920c41fd66bef1039579e234", null ],
+    [ "RequiredItem3", "classebenezer__model_1_1ItemUpgrade.html#ad8f7cde858b82a1f79c910149e21e3ad", null ],
+    [ "RequiredItem4", "classebenezer__model_1_1ItemUpgrade.html#a08bc2a5d0ea19505e3b62564aa75b386", null ],
+    [ "RequiredItem5", "classebenezer__model_1_1ItemUpgrade.html#a7123eabfbcf91996eed78e0a412f4708", null ],
+    [ "RequiredItem6", "classebenezer__model_1_1ItemUpgrade.html#a991e4687e6472c8596b65abc14a1fbcb", null ],
+    [ "RequiredItem7", "classebenezer__model_1_1ItemUpgrade.html#aec73cfe22443bb2226fee0dd108b1efa", null ],
+    [ "RequiredItem8", "classebenezer__model_1_1ItemUpgrade.html#ae0f0c2cf1a22f2bda7fc787113c5d7da", null ]
 ];
