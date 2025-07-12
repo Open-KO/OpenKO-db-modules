@@ -1,6 +1,6 @@
 var classaiserver__model_1_1Magic =
 [
-    [ "MapKey", "classaiserver__model_1_1Magic.html#ab2eeaa7081ac5a1374d690e1dd143e5e", null ],
+    [ "MapKey", "classaiserver__model_1_1Magic.html#a9bd7cb9b29b5654f82bcf2f3d7bdc372", null ],
     [ "BeforeAction", "classaiserver__model_1_1Magic.html#af62620f58cbdbcf04afc0d9cc82a3738", null ],
     [ "CastTime", "classaiserver__model_1_1Magic.html#a9420d6173f006fb33d0266eeefadd8e2", null ],
     [ "Etc", "classaiserver__model_1_1Magic.html#ac4c7113aa10f3361cc183164b725ddd5", null ],

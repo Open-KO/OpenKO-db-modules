@@ -17,7 +17,7 @@ var classebenezer__model_1_1MagicType4 =
       [ "WeaponEnchant", "classebenezer__model_1_1MagicType4.html#af072301477237e884dc5ad578f859b9ea59baac9e19ed966c644a04cd9acaba22", null ],
       [ "ArmorEnchant", "classebenezer__model_1_1MagicType4.html#af072301477237e884dc5ad578f859b9ead85f7ee4833db75186467342b89d542c", null ]
     ] ],
-    [ "MapKey", "classebenezer__model_1_1MagicType4.html#a331951c908b0731044cae01bf0f96073", null ],
+    [ "MapKey", "classebenezer__model_1_1MagicType4.html#a61626894a6c84d793bd41088890a18c3", null ],
     [ "Armor", "classebenezer__model_1_1MagicType4.html#a041ebcf6d90fe3fc891cac10a93c6829", null ],
     [ "ArmorPercent", "classebenezer__model_1_1MagicType4.html#af7753480f497f584bafdd41b164631be", null ],
     [ "AttackPower", "classebenezer__model_1_1MagicType4.html#a2a9fc76b95b3e76c0dbf76e6244048ef", null ],

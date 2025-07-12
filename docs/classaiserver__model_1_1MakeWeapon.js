@@ -1,6 +1,6 @@
 var classaiserver__model_1_1MakeWeapon =
 [
-    [ "MapKey", "classaiserver__model_1_1MakeWeapon.html#abae1c30031771c68765c920a2ac0d261", null ],
+    [ "MapKey", "classaiserver__model_1_1MakeWeapon.html#a4661fef6a8af661ef64d8ea2e6d9d67d", null ],
     [ "Class1", "classaiserver__model_1_1MakeWeapon.html#a4d1be1e08c2518b845e85423b6c7273d", null ],
     [ "Class10", "classaiserver__model_1_1MakeWeapon.html#a229099a5c5226d1914aba7b06d3af96c", null ],
     [ "Class11", "classaiserver__model_1_1MakeWeapon.html#af2c23e973a73ee3e315d281938166a73", null ],

@@ -10,7 +10,7 @@ var classaiserver__model_1_1Monster =
       [ "RangedOrc", "classaiserver__model_1_1Monster.html#aea72d5aa37de9469d29354f2baa50482a65c06ff45df88966a09f7575b1f12f8e", null ],
       [ "Unknown9", "classaiserver__model_1_1Monster.html#aea72d5aa37de9469d29354f2baa50482afb06e135ac9816e3ee68dcd380274aa5", null ]
     ] ],
-    [ "MapKey", "classaiserver__model_1_1Monster.html#ac9de8911d3fc4f5802539b6ec1f3ea97", null ],
+    [ "MapKey", "classaiserver__model_1_1Monster.html#a69b56baf8c0ec1a252de217ecce58329", null ],
     [ "ActType", "classaiserver__model_1_1Monster.html#a0211b0dc40d150f84635866d55ad8f71", null ],
     [ "Armor", "classaiserver__model_1_1Monster.html#a4ead32d6165b118caaef8fa6fc04e64f", null ],
     [ "Attack", "classaiserver__model_1_1Monster.html#afd9f20eb9f500304d8a2497203119264", null ],

@@ -1,6 +1,6 @@
 var classfull__model_1_1NpcItem =
 [
-    [ "MapKey", "classfull__model_1_1NpcItem.html#a78305911b621ec0b2d26121a58a8e3e3", null ],
+    [ "MapKey", "classfull__model_1_1NpcItem.html#abbab298879b253d9da897632a990e453", null ],
     [ "DropChance1", "classfull__model_1_1NpcItem.html#ae001114fbd29d4a87ecc1042cc2b0541", null ],
     [ "DropChance2", "classfull__model_1_1NpcItem.html#af0b4157e409c40178b7cb3cae95c1950", null ],
     [ "DropChance3", "classfull__model_1_1NpcItem.html#a6a3a53a88cd276068d1f1606f04d010e", null ],

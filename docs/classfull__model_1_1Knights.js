@@ -1,6 +1,6 @@
 var classfull__model_1_1Knights =
 [
-    [ "MapKey", "classfull__model_1_1Knights.html#ae2b431659d6748342b6203ad11d37c7e", null ],
+    [ "MapKey", "classfull__model_1_1Knights.html#a3a0a211234579afaa24133754fd46f1c", null ],
     [ "AllianceKnights", "classfull__model_1_1Knights.html#a0da13cbc648558c33977de58d0445f00", null ],
     [ "Cape", "classfull__model_1_1Knights.html#adac320e7d095154c745a694462c8b24c", null ],
     [ "Chief", "classfull__model_1_1Knights.html#a6bab0c11b6d829055b4b5c2a29a308b0", null ],

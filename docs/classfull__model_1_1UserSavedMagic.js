@@ -1,6 +1,6 @@
 var classfull__model_1_1UserSavedMagic =
 [
-    [ "MapKey", "classfull__model_1_1UserSavedMagic.html#aedb137357d99620598aeb4aa20156884", null ],
+    [ "MapKey", "classfull__model_1_1UserSavedMagic.html#a1b5ff78b7248d78cc14a3afcd06e5b23", null ],
     [ "CharId", "classfull__model_1_1UserSavedMagic.html#a79e380b315cb628c025b182eed5e2808", null ],
     [ "During1", "classfull__model_1_1UserSavedMagic.html#a8dcd286b8e23c8cc513c90e2991bbb6f", null ],
     [ "During10", "classfull__model_1_1UserSavedMagic.html#a45e5a6fc17e10d2f29d36e948f2c5866", null ],

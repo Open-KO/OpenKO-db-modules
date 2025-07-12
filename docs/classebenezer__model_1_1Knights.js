@@ -1,6 +1,6 @@
 var classebenezer__model_1_1Knights =
 [
-    [ "MapKey", "classebenezer__model_1_1Knights.html#af55b149cae266b6bf04847c2b322d795", null ],
+    [ "MapKey", "classebenezer__model_1_1Knights.html#a47ed6f96f3021c79d851c5635d656d7c", null ],
     [ "AllianceKnights", "classebenezer__model_1_1Knights.html#a303f493d16de7121cdf10031a138b402", null ],
     [ "Cape", "classebenezer__model_1_1Knights.html#af731aa797214c5f205a91c6b929be27a", null ],
     [ "Chief", "classebenezer__model_1_1Knights.html#a793921c99123e5d8ea9f257b2672cfe8", null ],

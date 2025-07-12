@@ -1,6 +1,6 @@
 var classebenezer__model_1_1ItemUpgrade =
 [
-    [ "MapKey", "classebenezer__model_1_1ItemUpgrade.html#a53d237948b2a5193fdb34e918617bb37", null ],
+    [ "MapKey", "classebenezer__model_1_1ItemUpgrade.html#aad2aa478eaf9190f23e09b50d4fcc184", null ],
     [ "GenRate", "classebenezer__model_1_1ItemUpgrade.html#a462c76c0d20f8fe65865bc44d1e2f711", null ],
     [ "GiveItem", "classebenezer__model_1_1ItemUpgrade.html#a0d3db7e72d3989db38cf67eaedaf81b3", null ],
     [ "Index", "classebenezer__model_1_1ItemUpgrade.html#afc989b24cb411214d8b6b36f7e80798e", null ],

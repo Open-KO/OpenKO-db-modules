@@ -1,6 +1,6 @@
 var classaiserver__model_1_1MonsterItem =
 [
-    [ "MapKey", "classaiserver__model_1_1MonsterItem.html#a2b206b8371ccc66c1ebb61593c64cd14", null ],
+    [ "MapKey", "classaiserver__model_1_1MonsterItem.html#aeb4c1a18bb08c49aac6075667ef3a5a7", null ],
     [ "DropChance1", "classaiserver__model_1_1MonsterItem.html#ac892b6130ae88f627eb93a76fee5be52", null ],
     [ "DropChance2", "classaiserver__model_1_1MonsterItem.html#af0ee5b64ee8e9926248fd29c86b4d8cf", null ],
     [ "DropChance3", "classaiserver__model_1_1MonsterItem.html#ac4f38fe0759be9e2aa5d4feebf33e806", null ],

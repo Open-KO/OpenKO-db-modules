@@ -1,6 +1,6 @@
 var classebenezer__model_1_1MonsterChallenge =
 [
-    [ "MapKey", "classebenezer__model_1_1MonsterChallenge.html#a521113af85def769789cb3e4f26df1e1", null ],
+    [ "MapKey", "classebenezer__model_1_1MonsterChallenge.html#a361bad7d9f40ab2ea1e380b67754fc1d", null ],
     [ "Index", "classebenezer__model_1_1MonsterChallenge.html#a5af405cf0823982edb45ea743b774e5e", null ],
     [ "LevelMax", "classebenezer__model_1_1MonsterChallenge.html#a92a7764236b82b1c76136ce65da48266", null ],
     [ "LevelMin", "classebenezer__model_1_1MonsterChallenge.html#a7dd8351b0e7bafa970b0a1196dce02bc", null ],

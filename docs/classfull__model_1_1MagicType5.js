@@ -7,7 +7,7 @@ var classfull__model_1_1MagicType5 =
       [ "Resurrection4", "classfull__model_1_1MagicType5.html#a751c23d9e53d6b567ef38fead595521aadb88483b352980ffa176eec3c4700fe4", null ],
       [ "Unknown5", "classfull__model_1_1MagicType5.html#a751c23d9e53d6b567ef38fead595521aa9438fee56697232b35b5fddd839f5557", null ]
     ] ],
-    [ "MapKey", "classfull__model_1_1MagicType5.html#a6e12ac98d11380081424b84ea046f98a", null ],
+    [ "MapKey", "classfull__model_1_1MagicType5.html#ac01c9f9160948ab709cdedc9b3204221", null ],
     [ "Description", "classfull__model_1_1MagicType5.html#a37b89fcebbec2b584869387c56d227c3", null ],
     [ "ExpRecover", "classfull__model_1_1MagicType5.html#a4e2389709f57469206f6c5f118bf6c41", null ],
     [ "MagicNumber", "classfull__model_1_1MagicType5.html#aad58ae57152d90d606e94836324cf43a", null ],

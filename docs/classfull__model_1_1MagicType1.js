@@ -5,7 +5,7 @@ var classfull__model_1_1MagicType1 =
       [ "AlwaysHit", "classfull__model_1_1MagicType1.html#a10ac3a53ca3ebc4de08cf4c04ddcba45acb751d8de9918479f5ccccab7d41e6f9", null ],
       [ "IgnoreDefense", "classfull__model_1_1MagicType1.html#a10ac3a53ca3ebc4de08cf4c04ddcba45a9c941887bc8b134e44206806c110327d", null ]
     ] ],
-    [ "MapKey", "classfull__model_1_1MagicType1.html#af3658c511507b47513db830cad18f829", null ],
+    [ "MapKey", "classfull__model_1_1MagicType1.html#a02bd3cbd6039537a1be62cd224cba16e", null ],
     [ "AddDamage", "classfull__model_1_1MagicType1.html#adaa6e08d46b543e1fbd4d294e4ae9aa4", null ],
     [ "ComboCount", "classfull__model_1_1MagicType1.html#a7b237e1fbd685ae757cbec52908a65f5", null ],
     [ "ComboDamage", "classfull__model_1_1MagicType1.html#a5526f924efb880c1d9197484a7f898e9", null ],

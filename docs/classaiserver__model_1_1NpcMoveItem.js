@@ -1,6 +1,6 @@
 var classaiserver__model_1_1NpcMoveItem =
 [
-    [ "MapKey", "classaiserver__model_1_1NpcMoveItem.html#a953f2e73f9624a042e1ab07b13d2b4fc", null ],
+    [ "MapKey", "classaiserver__model_1_1NpcMoveItem.html#acf74d8f32f2386117606984e03a47adf", null ],
     [ "CastleIndex", "classaiserver__model_1_1NpcMoveItem.html#a928ab62b47a5fc9ebfc3f7b5761ab680", null ],
     [ "ChangeId", "classaiserver__model_1_1NpcMoveItem.html#ac33d821f0a5213f39f7b20887fe81c95", null ],
     [ "ChangeItem", "classaiserver__model_1_1NpcMoveItem.html#a5d064273b5c37d43b052d47e7232cb24", null ],

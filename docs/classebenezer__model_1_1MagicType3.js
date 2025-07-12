@@ -12,7 +12,7 @@ var classebenezer__model_1_1MagicType3 =
       [ "Unknown12", "classebenezer__model_1_1MagicType3.html#ab20c2bcaf9818841bbbcb45f3c6a552daecefa5080ae765056ba0aa2b7e049f07", null ],
       [ "Unknown255", "classebenezer__model_1_1MagicType3.html#ab20c2bcaf9818841bbbcb45f3c6a552da30e18c0831a82d5d8041820425b1ea43", null ]
     ] ],
-    [ "MapKey", "classebenezer__model_1_1MagicType3.html#a37121cd370cc62f6cbc2909292e4dfd7", null ],
+    [ "MapKey", "classebenezer__model_1_1MagicType3.html#a5ae5121c3508b58a065d2089eed38459", null ],
     [ "Angle", "classebenezer__model_1_1MagicType3.html#afae7707722856ec9fff2ed3733a972ce", null ],
     [ "Attribute", "classebenezer__model_1_1MagicType3.html#a88573f4c13e9c85941fc8b47b839ea6b", null ],
     [ "DirectType", "classebenezer__model_1_1MagicType3.html#a6ff78196f34f5440eb6fcc0423ef8532", null ],

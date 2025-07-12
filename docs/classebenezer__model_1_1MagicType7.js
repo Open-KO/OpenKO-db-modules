@@ -4,7 +4,7 @@ var classebenezer__model_1_1MagicType7 =
       [ "Provoke", "classebenezer__model_1_1MagicType7.html#a9d2ad4dee9ce512ddafd0c68648e065aa61f2d5bf6ecc681c319d47d1543a7629", null ],
       [ "Sleep", "classebenezer__model_1_1MagicType7.html#a9d2ad4dee9ce512ddafd0c68648e065aa243924bfd56a682be235638b53961e09", null ]
     ] ],
-    [ "MapKey", "classebenezer__model_1_1MagicType7.html#a6b366748e5481715124f8da4c9e65745", null ],
+    [ "MapKey", "classebenezer__model_1_1MagicType7.html#a39bba8c875a6712c7ce1156544155f11", null ],
     [ "Damage", "classebenezer__model_1_1MagicType7.html#a008bbaa603320a5362ad141b319457fc", null ],
     [ "Duration", "classebenezer__model_1_1MagicType7.html#ab8da29e648268a701f32f771a3585ead", null ],
     [ "HitRate", "classebenezer__model_1_1MagicType7.html#ad7b808b7bae125611ba1d22413ff94e1", null ],

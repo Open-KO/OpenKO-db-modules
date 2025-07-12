@@ -108,7 +108,7 @@ var classebenezer__model_1_1Item =
       [ "UniqueMace", "classebenezer__model_1_1Item.html#a36971a3adce748e4368c6de967d59c9aa9eb24ddb20cad66faf156dc77f579545", null ],
       [ "UniqueStaff", "classebenezer__model_1_1Item.html#a36971a3adce748e4368c6de967d59c9aa2832189dd9ab930973303aaf89745a03", null ]
     ] ],
-    [ "MapKey", "classebenezer__model_1_1Item.html#a27f5da522f896e1aa3b7f0cfdd7082c9", null ],
+    [ "MapKey", "classebenezer__model_1_1Item.html#a12ae78bba15858904352fd6b0101d107", null ],
     [ "Armor", "classebenezer__model_1_1Item.html#a27ee50cc383dbab25c946f6cb5a425ad", null ],
     [ "AxeArmor", "classebenezer__model_1_1Item.html#a3eb638351e0e54cf14fd54fe1d157788", null ],
     [ "BowArmor", "classebenezer__model_1_1Item.html#a0e8ff5634d58d75e338934a19238207f", null ],

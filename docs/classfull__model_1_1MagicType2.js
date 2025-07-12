@@ -4,7 +4,7 @@ var classfull__model_1_1MagicType2 =
       [ "Normal", "classfull__model_1_1MagicType2.html#ac64db29f453ce251792ccffff0d34cbfa960b44c579bc2f6818d2daaf9e4c16f0", null ],
       [ "Seeking", "classfull__model_1_1MagicType2.html#ac64db29f453ce251792ccffff0d34cbfadfa6bb51bca02efb16d45113cd76c1f4", null ]
     ] ],
-    [ "MapKey", "classfull__model_1_1MagicType2.html#a5dca892c8da148f0faf0e353c6f0eed1", null ],
+    [ "MapKey", "classfull__model_1_1MagicType2.html#aa23a523582ca346f20fdd54fc776f9bc", null ],
     [ "AddDamagePlus", "classfull__model_1_1MagicType2.html#ad093890e2ebaccd66cd398560d38737b", null ],
     [ "DamageMod", "classfull__model_1_1MagicType2.html#a9d470d49722a9139465328257ba46c17", null ],
     [ "Description", "classfull__model_1_1MagicType2.html#a32b3ac16207326de6533f595fa8a7dd9", null ],

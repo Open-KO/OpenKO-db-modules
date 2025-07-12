@@ -17,7 +17,7 @@ var classfull__model_1_1MagicType4 =
       [ "WeaponEnchant", "classfull__model_1_1MagicType4.html#aa3e0ff5cce1e375551fc6010e670e146a59baac9e19ed966c644a04cd9acaba22", null ],
       [ "ArmorEnchant", "classfull__model_1_1MagicType4.html#aa3e0ff5cce1e375551fc6010e670e146ad85f7ee4833db75186467342b89d542c", null ]
     ] ],
-    [ "MapKey", "classfull__model_1_1MagicType4.html#adce6a727f5aa09b644c2ec71c4b671b4", null ],
+    [ "MapKey", "classfull__model_1_1MagicType4.html#a29954842f943ce9495ac787bd1b34261", null ],
     [ "Armor", "classfull__model_1_1MagicType4.html#a7e6bec956af7c2cbe2403772b4d7abf1", null ],
     [ "ArmorPercent", "classfull__model_1_1MagicType4.html#ac05563480d9a737f6ee4ded7cfe44af0", null ],
     [ "AttackPower", "classfull__model_1_1MagicType4.html#aca0b5d280eb51dd4b188ff8e02617f43", null ],

@@ -1,6 +1,6 @@
 var classebenezer__model_1_1Magic =
 [
-    [ "MapKey", "classebenezer__model_1_1Magic.html#a582a6b8a8535ed1122682df1807c8b5b", null ],
+    [ "MapKey", "classebenezer__model_1_1Magic.html#a4ad13e29e79b45b034aa41010f95074c", null ],
     [ "BeforeAction", "classebenezer__model_1_1Magic.html#af67da3494db6ea231459cfb5ebabd06c", null ],
     [ "CastTime", "classebenezer__model_1_1Magic.html#ab78c293ead437a26e66fbc7e5bd20d44", null ],
     [ "Etc", "classebenezer__model_1_1Magic.html#a977453eb33b11d8a01a026e6c3e93fc4", null ],

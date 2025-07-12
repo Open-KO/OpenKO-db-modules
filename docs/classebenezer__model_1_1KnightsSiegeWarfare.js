@@ -1,6 +1,6 @@
 var classebenezer__model_1_1KnightsSiegeWarfare =
 [
-    [ "MapKey", "classebenezer__model_1_1KnightsSiegeWarfare.html#acdf521700eccbebcb75336767a09640b", null ],
+    [ "MapKey", "classebenezer__model_1_1KnightsSiegeWarfare.html#a5995fb2edb709ade6dc9dec63b806138", null ],
     [ "CastleIndex", "classebenezer__model_1_1KnightsSiegeWarfare.html#ae200af17c074f356ce1c49cc105dfa93", null ],
     [ "ChallengeList", "classebenezer__model_1_1KnightsSiegeWarfare.html#a7ba3f2cb7527760439ab5ff72f75dd34", null ],
     [ "ChallengeList1", "classebenezer__model_1_1KnightsSiegeWarfare.html#a37bde1382a90aaca8453574543b46dba", null ],

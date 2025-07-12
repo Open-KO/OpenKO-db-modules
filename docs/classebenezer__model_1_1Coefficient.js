@@ -1,6 +1,6 @@
 var classebenezer__model_1_1Coefficient =
 [
-    [ "MapKey", "classebenezer__model_1_1Coefficient.html#a2dcd5f1be13cda11dc5128ecd125bcae", null ],
+    [ "MapKey", "classebenezer__model_1_1Coefficient.html#a63469a8890710254d9ea572c84f68309", null ],
     [ "Armor", "classebenezer__model_1_1Coefficient.html#acd184dd00373f2e75d73bfb695050a95", null ],
     [ "Axe", "classebenezer__model_1_1Coefficient.html#a0f5a45696fc4dc15256ecd427d79f95a", null ],
     [ "Bow", "classebenezer__model_1_1Coefficient.html#a276e42d2da4375cf1584037f85a68119", null ],

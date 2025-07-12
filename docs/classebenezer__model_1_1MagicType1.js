@@ -5,7 +5,7 @@ var classebenezer__model_1_1MagicType1 =
       [ "AlwaysHit", "classebenezer__model_1_1MagicType1.html#a9599c7c8ee1ce8ee2ff88e77d79ea6abacb751d8de9918479f5ccccab7d41e6f9", null ],
       [ "IgnoreDefense", "classebenezer__model_1_1MagicType1.html#a9599c7c8ee1ce8ee2ff88e77d79ea6aba9c941887bc8b134e44206806c110327d", null ]
     ] ],
-    [ "MapKey", "classebenezer__model_1_1MagicType1.html#a15eaa7cc2bfa5710d465f8058ce1b07d", null ],
+    [ "MapKey", "classebenezer__model_1_1MagicType1.html#abb14bb2700a766db44beebdc4ea57d03", null ],
     [ "AddDamage", "classebenezer__model_1_1MagicType1.html#a2867342cd520d1e9ad0aa48494f36434", null ],
     [ "ComboCount", "classebenezer__model_1_1MagicType1.html#a0d8d62ffe4c10de3f28fc3388da9e91c", null ],
     [ "ComboDamage", "classebenezer__model_1_1MagicType1.html#a3e26226708577deec72a3b774260526a", null ],

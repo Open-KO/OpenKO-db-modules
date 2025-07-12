@@ -4,7 +4,7 @@ var classaiserver__model_1_1MagicType7 =
       [ "Provoke", "classaiserver__model_1_1MagicType7.html#a74badb7c1029b35d24095a03ebac93aba61f2d5bf6ecc681c319d47d1543a7629", null ],
       [ "Sleep", "classaiserver__model_1_1MagicType7.html#a74badb7c1029b35d24095a03ebac93aba243924bfd56a682be235638b53961e09", null ]
     ] ],
-    [ "MapKey", "classaiserver__model_1_1MagicType7.html#abeeb9ae6a7ae1b87f4b9539df7034afb", null ],
+    [ "MapKey", "classaiserver__model_1_1MagicType7.html#a1a7369958c5ee86c60859214665ea98e", null ],
     [ "Damage", "classaiserver__model_1_1MagicType7.html#a9677b90765b3dcd873172ca9212529c4", null ],
     [ "Duration", "classaiserver__model_1_1MagicType7.html#a9f6a0624844675e50729afb8b43d668f", null ],
     [ "HitRate", "classaiserver__model_1_1MagicType7.html#a1795592dc7ae6fe63bb39491e8644ec5", null ],
