@@ -271,7 +271,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.SkillData = result.get<std::string>(colIndex);
+				m.SkillData = result.get<std::vector<uint8_t>>(colIndex);
 			}
 		}
 

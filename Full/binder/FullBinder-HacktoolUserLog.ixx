@@ -48,7 +48,7 @@ namespace full_binder
 		/// \brief Binds a result's column to HackToolName
 		static void BindHackToolName(full_model::HacktoolUserLog& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::vector<uint8_t>>(colIndex, m.HackToolName);
+			result.get_ref<std::string>(colIndex, m.HackToolName);
 		}
 
 		/// \brief Binds a result's column to WriteTime

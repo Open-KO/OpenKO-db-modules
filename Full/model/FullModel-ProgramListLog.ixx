@@ -43,7 +43,7 @@ namespace full_model
 		/// \brief Column [strHackToolName]: Hack tool name
 		///
 		/// \property HackToolName
-		std::vector<uint8_t> HackToolName;
+		std::string HackToolName;
 
 		/// \brief Column [tWriteTime]: Write time
 		///

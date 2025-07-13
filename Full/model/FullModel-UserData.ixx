@@ -229,7 +229,7 @@ namespace full_model
 		/// \brief Column [strSkill]: Skill data
 		///
 		/// \property SkillData
-		std::optional<std::string> SkillData;
+		std::optional<std::vector<uint8_t>> SkillData;
 
 		/// \brief Column [strItem]: Character inventory
 		///
