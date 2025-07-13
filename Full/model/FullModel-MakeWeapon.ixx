@@ -89,6 +89,29 @@ namespace full_model
 		/// \property Class12
 		int16_t Class12 = 0;
 
+		/// \brief Union grouping for columns sClass_N
+		/// \union ClassUnion
+		union
+		{
+			struct
+			{
+				int16_t sClass_1;
+				int16_t sClass_2;
+				int16_t sClass_3;
+				int16_t sClass_4;
+				int16_t sClass_5;
+				int16_t sClass_6;
+				int16_t sClass_7;
+				int16_t sClass_8;
+				int16_t sClass_9;
+				int16_t sClass_10;
+				int16_t sClass_11;
+				int16_t sClass_12;
+			};
+			
+			int16_t ClassUnion[12];
+		};
+
 		/// \brief Returns the table name
 		static const std::string& TableName()
 		{
