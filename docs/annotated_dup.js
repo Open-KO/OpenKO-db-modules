@@ -280,5 +280,13 @@ var annotated_dup =
       [ "WebpageAddress", "classfull__model_1_1WebpageAddress.html", "classfull__model_1_1WebpageAddress" ],
       [ "ZoneInfo", "classfull__model_1_1ZoneInfo.html", "classfull__model_1_1ZoneInfo" ]
     ] ],
-    [ "ClassUnion", "unionClassUnion.html", null ]
+    [ "Class", "unionClass.html", null ],
+    [ "DropChance", "unionDropChance.html", null ],
+    [ "ExchangeItemCount", "unionExchangeItemCount.html", null ],
+    [ "ExchangeItemNumber", "unionExchangeItemNumber.html", null ],
+    [ "Item", "unionItem.html", null ],
+    [ "ItemId", "unionItemId.html", null ],
+    [ "OriginItemCount", "unionOriginItemCount.html", null ],
+    [ "OriginItemNumber", "unionOriginItemNumber.html", null ],
+    [ "RequiredItem", "unionRequiredItem.html", null ]
 ];

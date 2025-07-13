@@ -1,27 +1,7 @@
 var classebenezer__model_1_1ItemExchange =
 [
     [ "MapKey", "classebenezer__model_1_1ItemExchange.html#a91b94bba5507b328c205bb936629a5ff", null ],
-    [ "ExchangeItemCount1", "classebenezer__model_1_1ItemExchange.html#a672c49629c245fa497ebff0c5f5bbd67", null ],
-    [ "ExchangeItemCount2", "classebenezer__model_1_1ItemExchange.html#a5a67b9f916bfa82d15af2349ebcadab1", null ],
-    [ "ExchangeItemCount3", "classebenezer__model_1_1ItemExchange.html#a675e5a9b46c3ff8f3115724e4abccac0", null ],
-    [ "ExchangeItemCount4", "classebenezer__model_1_1ItemExchange.html#ae911d9c61a29cae11458e902c4d8223f", null ],
-    [ "ExchangeItemCount5", "classebenezer__model_1_1ItemExchange.html#ae80cb939f718de2a88d46429b7fce29b", null ],
-    [ "ExchangeItemNumber1", "classebenezer__model_1_1ItemExchange.html#a4c84e560144a3567cd13c4782750bd76", null ],
-    [ "ExchangeItemNumber2", "classebenezer__model_1_1ItemExchange.html#a95d6a5be5f9431930f712e41b0ad48e7", null ],
-    [ "ExchangeItemNumber3", "classebenezer__model_1_1ItemExchange.html#a02776a3e9bb8caf2d3975fde80d8670f", null ],
-    [ "ExchangeItemNumber4", "classebenezer__model_1_1ItemExchange.html#a217d5273c76843aebba29630f5abc41b", null ],
-    [ "ExchangeItemNumber5", "classebenezer__model_1_1ItemExchange.html#a44715975635289dea9ca9e4ab29bffc1", null ],
     [ "Index", "classebenezer__model_1_1ItemExchange.html#a9be8ea34f34529a419efcd4630ac94bc", null ],
     [ "NpcNumber", "classebenezer__model_1_1ItemExchange.html#a02484516488a457143e33df2bb746586", null ],
-    [ "OriginItemCount1", "classebenezer__model_1_1ItemExchange.html#ab97841ea2143c67424975c653cd95356", null ],
-    [ "OriginItemCount2", "classebenezer__model_1_1ItemExchange.html#a8e8e4511ce0639d200a4249a292a1bf0", null ],
-    [ "OriginItemCount3", "classebenezer__model_1_1ItemExchange.html#a3ecc0a15c177e050e9d9d58c0853e496", null ],
-    [ "OriginItemCount4", "classebenezer__model_1_1ItemExchange.html#a03816f109510b8aa7f9a8ec1f36075cc", null ],
-    [ "OriginItemCount5", "classebenezer__model_1_1ItemExchange.html#a5dbcb2e815c6950a7625dbaa73b589e4", null ],
-    [ "OriginItemNumber1", "classebenezer__model_1_1ItemExchange.html#a4d90c1490eadbad31d48b465f6feda8d", null ],
-    [ "OriginItemNumber2", "classebenezer__model_1_1ItemExchange.html#a9a9b9094257495f9ccbc6db8911bd8c9", null ],
-    [ "OriginItemNumber3", "classebenezer__model_1_1ItemExchange.html#a513ec24cfcb8235c042c198498242675", null ],
-    [ "OriginItemNumber4", "classebenezer__model_1_1ItemExchange.html#abb304f65250255e8e26d0d482c50ed8f", null ],
-    [ "OriginItemNumber5", "classebenezer__model_1_1ItemExchange.html#afb1e44fb51d0e7d57c6ad54afc05ea32", null ],
     [ "RandomFlag", "classebenezer__model_1_1ItemExchange.html#a2724abc5e288b45943a6f97c1d67a168", null ]
 ];

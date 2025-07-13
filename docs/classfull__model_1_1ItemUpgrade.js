@@ -10,13 +10,5 @@ var classfull__model_1_1ItemUpgrade =
     [ "OriginItem", "classfull__model_1_1ItemUpgrade.html#a4b014f8f9ce640cdfe8996bb96e368fd", null ],
     [ "OriginType", "classfull__model_1_1ItemUpgrade.html#a8b19298752e694f8c3b703414f595dfd", null ],
     [ "RateType", "classfull__model_1_1ItemUpgrade.html#a522d0c36825bf0ddc4ff00e9c8cfd9ed", null ],
-    [ "RequiredCoins", "classfull__model_1_1ItemUpgrade.html#ab266942dfced398e900b7f25cf3b8f38", null ],
-    [ "RequiredItem1", "classfull__model_1_1ItemUpgrade.html#a081a82e73dc245681e84c641cffca2c9", null ],
-    [ "RequiredItem2", "classfull__model_1_1ItemUpgrade.html#adb1fd1862041d15f9aee1f70dd2be9e6", null ],
-    [ "RequiredItem3", "classfull__model_1_1ItemUpgrade.html#af3c06c0ff820af883981a1d46f6da3ac", null ],
-    [ "RequiredItem4", "classfull__model_1_1ItemUpgrade.html#af7533fb3cf1f5344924857d685ca5b2e", null ],
-    [ "RequiredItem5", "classfull__model_1_1ItemUpgrade.html#a6c5fc3784a0fab4e57098f78c05331dc", null ],
-    [ "RequiredItem6", "classfull__model_1_1ItemUpgrade.html#a80371731da35ade71fcc27ef8553922b", null ],
-    [ "RequiredItem7", "classfull__model_1_1ItemUpgrade.html#a97a25bd0c5044d8e785b66d68d695baa", null ],
-    [ "RequiredItem8", "classfull__model_1_1ItemUpgrade.html#a4ef8f2716a80314ee614224f89947acb", null ]
+    [ "RequiredCoins", "classfull__model_1_1ItemUpgrade.html#ab266942dfced398e900b7f25cf3b8f38", null ]
 ];
