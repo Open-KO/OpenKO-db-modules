@@ -1,14 +1,14 @@
 var NAVTREEINDEX3 =
 {
-"classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62":[3,0,3,0,0],
+"classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62":[2,0,3,0,0],
 "classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62a2f926bb2101ec30b73983332ddb9f661":[3,0,3,0,0,1],
 "classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62a2f926bb2101ec30b73983332ddb9f661":[2,0,3,0,0,1],
 "classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62a62c8ee3c11201a801365481dd9ca6d66":[2,0,3,0,0,0],
 "classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62a62c8ee3c11201a801365481dd9ca6d66":[3,0,3,0,0,0],
-"classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62aa2aa6b4bebf569d55787e53bb224c072":[3,0,3,0,0,2],
 "classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62aa2aa6b4bebf569d55787e53bb224c072":[2,0,3,0,0,2],
-"classebenezer__binder_1_1Battle.html":[2,0,5,0],
+"classaujard__model_1_1Item.html#af6a4566c568f7c66f6614407abeb7e62aa2aa6b4bebf569d55787e53bb224c072":[3,0,3,0,0,2],
 "classebenezer__binder_1_1Battle.html":[3,0,4,0],
+"classebenezer__binder_1_1Battle.html":[2,0,5,0],
 "classebenezer__binder_1_1Coefficient.html":[3,0,4,1],
 "classebenezer__binder_1_1Coefficient.html":[2,0,5,1],
 "classebenezer__binder_1_1CouponSerialList.html":[2,0,5,2],

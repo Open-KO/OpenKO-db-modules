@@ -111,6 +111,10 @@ static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom
 static const std::unordered_set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ColumnNames</b> ()</td></tr>
 <tr class="memdesc:a57ecd187d866eefd6eb3a8f43bd423c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a set of column names for the table. <br /></td></tr>
 <tr class="separator:a57ecd187d866eefd6eb3a8f43bd423c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93d42532d0b532a46034e4da91559bf"><td class="memItemLeft" align="right" valign="top"><a id="ae93d42532d0b532a46034e4da91559bf" name="ae93d42532d0b532a46034e4da91559bf"></a>
+static const std::unordered_set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>BlobColumns</b> ()</td></tr>
+<tr class="memdesc:ae93d42532d0b532a46034e4da91559bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a set of blob column names for the table. <br /></td></tr>
+<tr class="separator:ae93d42532d0b532a46034e4da91559bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa556237f5e5ecc3222c9e968f46ecc12"><td class="memItemLeft" align="right" valign="top"><a id="aa556237f5e5ecc3222c9e968f46ecc12" name="aa556237f5e5ecc3222c9e968f46ecc12"></a>
 static const <a class="el" href="namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334">modelUtil::DbType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DbType</b> ()</td></tr>
 <tr class="memdesc:aa556237f5e5ecc3222c9e968f46ecc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the associated database type for the table. <br /></td></tr>
@@ -190,13 +194,13 @@ int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>RespawnTime</b> = 
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Direction</b> = {}</td></tr>
 <tr class="memdesc:a8159afb237ba3197c346e1c479026cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [byDirection]: Direction TODO. <br /></td></tr>
 <tr class="separator:a8159afb237ba3197c346e1c479026cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af73a0689b9aa384e5d8c898b310665f1"><td class="memItemLeft" align="right" valign="top"><a id="af73a0689b9aa384e5d8c898b310665f1" name="af73a0689b9aa384e5d8c898b310665f1"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>DotCount</b> = {}</td></tr>
-<tr class="memdesc:af73a0689b9aa384e5d8c898b310665f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [DotCnt]: Dot count TODO. <br /></td></tr>
-<tr class="separator:af73a0689b9aa384e5d8c898b310665f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67de394cad5487448e6b4bb760373ad5"><td class="memItemLeft" align="right" valign="top"><a id="a67de394cad5487448e6b4bb760373ad5" name="a67de394cad5487448e6b4bb760373ad5"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>PathPointCount</b> = {}</td></tr>
+<tr class="memdesc:a67de394cad5487448e6b4bb760373ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [DotCnt]: The number of points contained within Path. <br /></td></tr>
+<tr class="separator:a67de394cad5487448e6b4bb760373ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f1d7feceb41362d0193ccabbe0459e0"><td class="memItemLeft" align="right" valign="top"><a id="a6f1d7feceb41362d0193ccabbe0459e0" name="a6f1d7feceb41362d0193ccabbe0459e0"></a>
 std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Path</b></td></tr>
-<tr class="memdesc:a6f1d7feceb41362d0193ccabbe0459e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [path]: Pathfinding data TODO. <br /></td></tr>
+<tr class="memdesc:a6f1d7feceb41362d0193ccabbe0459e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column [path]: Pathfinding data. Each point contains an x and z coordinate. Each coordinate is 4-digits wide and zero-padded. <br /></td></tr>
 <tr class="separator:a6f1d7feceb41362d0193ccabbe0459e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
