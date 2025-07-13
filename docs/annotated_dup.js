@@ -279,5 +279,6 @@ var annotated_dup =
       [ "WebItemMallLog", "classfull__model_1_1WebItemMallLog.html", "classfull__model_1_1WebItemMallLog" ],
       [ "WebpageAddress", "classfull__model_1_1WebpageAddress.html", "classfull__model_1_1WebpageAddress" ],
       [ "ZoneInfo", "classfull__model_1_1ZoneInfo.html", "classfull__model_1_1ZoneInfo" ]
-    ] ]
+    ] ],
+    [ "ClassUnion", "unionClassUnion.html", null ]
 ];
