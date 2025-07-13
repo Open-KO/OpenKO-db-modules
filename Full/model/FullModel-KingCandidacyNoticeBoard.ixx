@@ -32,12 +32,12 @@ namespace full_model
 		/// \brief Column [byNation]: Nation identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		uint8_t Nation = {};
 
 		/// \brief Column [sNoticeLen]: Notice length
 		///
 		/// \property NoticeLength
-		int16_t NoticeLength = 0;
+		int16_t NoticeLength = {};
 
 		/// \brief Column [strNotice]: Candidate notice
 		///

@@ -37,7 +37,7 @@ namespace full_model
 		/// \brief Column [byNation]: Nation identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		uint8_t Nation = {};
 
 		/// \brief Column [strCandidacyID]: Candidate identifier
 		///

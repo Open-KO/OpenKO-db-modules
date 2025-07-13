@@ -27,22 +27,22 @@ namespace full_model
 		/// \brief Column [sMainAllianceKnights]: Alliance leader clan
 		///
 		/// \property MainAllianceKnights
-		int16_t MainAllianceKnights = 0;
+		int16_t MainAllianceKnights = {};
 
 		/// \brief Column [sSubAllianceKnights]: Second Knights group
 		///
 		/// \property SubAllianceKnights
-		int16_t SubAllianceKnights = 0;
+		int16_t SubAllianceKnights = {};
 
 		/// \brief Column [sMercenaryClan_1]: Mercenary clan 1
 		///
 		/// \property MercenaryClan1
-		int16_t MercenaryClan1 = 0;
+		int16_t MercenaryClan1 = {};
 
 		/// \brief Column [sMercenaryClan_2]: Mercenary clan 2
 		///
 		/// \property MercenaryClan2
-		int16_t MercenaryClan2 = 0;
+		int16_t MercenaryClan2 = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

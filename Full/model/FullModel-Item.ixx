@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [Num]: Item number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [strName]: Item name
 		///
@@ -38,7 +38,7 @@ namespace full_model
 		///
 		/// \see EnumKind
 		/// \property Kind
-		uint8_t Kind = 0;
+		uint8_t Kind = {};
 
 		/// \enum EnumKind
 		/// \brief Known valid values for Kind
@@ -66,7 +66,7 @@ namespace full_model
 		///
 		/// \see EnumSlot
 		/// \property Slot
-		uint8_t Slot = 0;
+		uint8_t Slot = {};
 
 		/// \enum EnumSlot
 		/// \brief Known valid values for Slot
@@ -93,7 +93,7 @@ namespace full_model
 		///
 		/// \see EnumRace
 		/// \property Race
-		uint8_t Race = 0;
+		uint8_t Race = {};
 
 		/// \enum EnumRace
 		/// \brief Known valid values for Race
@@ -108,7 +108,7 @@ namespace full_model
 		///
 		/// \see EnumClassId
 		/// \property ClassId
-		uint8_t ClassId = 0;
+		uint8_t ClassId = {};
 
 		/// \enum EnumClassId
 		/// \brief Known valid values for Class
@@ -156,48 +156,48 @@ namespace full_model
 		/// \brief Column [Damage]: Physical damage
 		///
 		/// \property Damage
-		int16_t Damage = 0;
+		int16_t Damage = {};
 
 		/// \brief Column [Delay]: Animation windup time before activation
 		///
 		/// \property Delay
-		int16_t Delay = 0;
+		int16_t Delay = {};
 
 		/// \brief Column [Range]: Maximum distance from a target before item cannot activate
 		///
 		/// \property Range
-		int16_t Range = 0;
+		int16_t Range = {};
 
 		/// \brief Column [Weight]: Weight
 		///
 		/// \property Weight
-		int16_t Weight = 0;
+		int16_t Weight = {};
 
 		/// \brief Column [Duration]: Durability
 		///
 		/// \property Durability
-		int16_t Durability = 0;
+		int16_t Durability = {};
 
 		/// \brief Column [BuyPrice]: Price at which item can be bought from a merchant
 		///
 		/// \property BuyPrice
-		int32_t BuyPrice = 0;
+		int32_t BuyPrice = {};
 
 		/// \brief Column [SellPrice]: Price at which item can be sold to a merchant
 		///
 		/// \property SellPrice
-		int32_t SellPrice = 0;
+		int32_t SellPrice = {};
 
 		/// \brief Column [Ac]: Amount contributed to armor value, when equipped
 		///
 		/// \property Armor
-		int16_t Armor = 0;
+		int16_t Armor = {};
 
 		/// \brief Column [Countable]: Price at which item can be sold to a merchant
 		///
 		/// \see EnumCountable
 		/// \property Countable
-		uint8_t Countable = 0;
+		uint8_t Countable = {};
 
 		/// \enum EnumCountable
 		/// \brief Known valid values for Countable
@@ -211,13 +211,13 @@ namespace full_model
 		/// \brief Column [Effect1]: Magic effect in MAGIC.MagicNum
 		///
 		/// \property MagicEffect
-		int32_t MagicEffect = 0;
+		int32_t MagicEffect = {};
 
 		/// \brief Column [Effect2]: Special Effect
 		///
 		/// \see EnumSpecialEffect
 		/// \property SpecialEffect
-		int32_t SpecialEffect = 0;
+		int32_t SpecialEffect = {};
 
 		/// \enum EnumSpecialEffect
 		/// \brief Known valid values for Effect2
@@ -240,23 +240,23 @@ namespace full_model
 		/// \brief Column [ReqLevel]: Minimum level required to use item
 		///
 		/// \property MinLevel
-		uint8_t MinLevel = 0;
+		uint8_t MinLevel = {};
 
 		/// \brief Column [ReqLevelMax]: Maximum level allowed to use item
 		///
 		/// \property MaxLevel
-		uint8_t MaxLevel = 0;
+		uint8_t MaxLevel = {};
 
 		/// \brief Column [ReqRank]: Rank required to use item
 		///
 		/// \property RequiredRank
-		uint8_t RequiredRank = 0;
+		uint8_t RequiredRank = {};
 
 		/// \brief Column [ReqTitle]: Title required to use item
 		///
 		/// \see EnumRequiredTitle
 		/// \property RequiredTitle
-		uint8_t RequiredTitle = 0;
+		uint8_t RequiredTitle = {};
 
 		/// \enum EnumRequiredTitle
 		/// \brief Known valid values for ReqTitle
@@ -275,187 +275,187 @@ namespace full_model
 		/// \brief Column [ReqStr]: Strength required to use item
 		///
 		/// \property RequiredStrength
-		uint8_t RequiredStrength = 0;
+		uint8_t RequiredStrength = {};
 
 		/// \brief Column [ReqSta]: Stamina required to use item
 		///
 		/// \property RequiredStamina
-		uint8_t RequiredStamina = 0;
+		uint8_t RequiredStamina = {};
 
 		/// \brief Column [ReqDex]: Dexterity required to use item
 		///
 		/// \property RequiredDexterity
-		uint8_t RequiredDexterity = 0;
+		uint8_t RequiredDexterity = {};
 
 		/// \brief Column [ReqIntel]: Intelligence required to use item
 		///
 		/// \property RequiredIntelligence
-		uint8_t RequiredIntelligence = 0;
+		uint8_t RequiredIntelligence = {};
 
 		/// \brief Column [ReqCha]: Charisma required to use item
 		///
 		/// \property RequiredCharisma
-		uint8_t RequiredCharisma = 0;
+		uint8_t RequiredCharisma = {};
 
 		/// \brief Column [SellingGroup]: NPC Selling Group
 		///
 		/// \property SellingGroup
-		uint8_t SellingGroup = 0;
+		uint8_t SellingGroup = {};
 
 		/// \brief Column [ItemType]: Item grade
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		uint8_t Type = {};
 
 		/// \brief Column [Hitrate]: Attack power modifier
 		///
 		/// \property HitRate
-		int16_t HitRate = 0;
+		int16_t HitRate = {};
 
 		/// \brief Column [Evasionrate]: Dodge chance modifier
 		///
 		/// \property EvasionRate
-		int16_t EvasionRate = 0;
+		int16_t EvasionRate = {};
 
 		/// \brief Column [DaggerAc]: Dagger defense modifier
 		///
 		/// \property DaggerArmor
-		int16_t DaggerArmor = 0;
+		int16_t DaggerArmor = {};
 
 		/// \brief Column [SwordAc]: Sword defense modifier
 		///
 		/// \property SwordArmor
-		int16_t SwordArmor = 0;
+		int16_t SwordArmor = {};
 
 		/// \brief Column [MaceAc]: Mace defense modifier
 		///
 		/// \property MaceArmor
-		int16_t MaceArmor = 0;
+		int16_t MaceArmor = {};
 
 		/// \brief Column [AxeAc]: Axe defense modifier
 		///
 		/// \property AxeArmor
-		int16_t AxeArmor = 0;
+		int16_t AxeArmor = {};
 
 		/// \brief Column [SpearAc]: Spear defense modifier
 		///
 		/// \property SpearArmor
-		int16_t SpearArmor = 0;
+		int16_t SpearArmor = {};
 
 		/// \brief Column [BowAc]: Bow defense modifier
 		///
 		/// \property BowArmor
-		int16_t BowArmor = 0;
+		int16_t BowArmor = {};
 
 		/// \brief Column [FireDamage]: Fire damage
 		///
 		/// \property FireDamage
-		uint8_t FireDamage = 0;
+		uint8_t FireDamage = {};
 
 		/// \brief Column [IceDamage]: Ice damage
 		///
 		/// \property IceDamage
-		uint8_t IceDamage = 0;
+		uint8_t IceDamage = {};
 
 		/// \brief Column [LightningDamage]: Lightning damage
 		///
 		/// \property LightningDamage
-		uint8_t LightningDamage = 0;
+		uint8_t LightningDamage = {};
 
 		/// \brief Column [PoisonDamage]: Poison damage
 		///
 		/// \property PoisonDamage
-		uint8_t PoisonDamage = 0;
+		uint8_t PoisonDamage = {};
 
 		/// \brief Column [HPDrain]: Percent of damage recovered as health
 		///
 		/// \property HpDrain
-		uint8_t HpDrain = 0;
+		uint8_t HpDrain = {};
 
 		/// \brief Column [MPDamage]: Percent of damage dealt to target mana
 		///
 		/// \property MpDamage
-		uint8_t MpDamage = 0;
+		uint8_t MpDamage = {};
 
 		/// \brief Column [MPDrain]: Percent of damage recovered as mana
 		///
 		/// \property MpDrain
-		uint8_t MpDrain = 0;
+		uint8_t MpDrain = {};
 
 		/// \brief Column [MirrorDamage]: Percent of damage reflected to attacker
 		///
 		/// \property MirrorDamage
-		uint8_t MirrorDamage = 0;
+		uint8_t MirrorDamage = {};
 
 		/// \brief Column [Droprate]: TODO: Unused? Drop rates dictated by K_NPC_ITEM
 		///
 		/// \property DropRate
-		uint8_t DropRate = 0;
+		uint8_t DropRate = {};
 
 		/// \brief Column [StrB]: Strength bonus when item equipped
 		///
 		/// \property StrengthBonus
-		int16_t StrengthBonus = 0;
+		int16_t StrengthBonus = {};
 
 		/// \brief Column [StaB]: Stamina bonus when item equipped
 		///
 		/// \property StaminaBonus
-		int16_t StaminaBonus = 0;
+		int16_t StaminaBonus = {};
 
 		/// \brief Column [DexB]: Dexterity bonus when item equipped
 		///
 		/// \property DexterityBonus
-		int16_t DexterityBonus = 0;
+		int16_t DexterityBonus = {};
 
 		/// \brief Column [IntelB]: Intelligence bonus when item equipped
 		///
 		/// \property IntelligenceBonus
-		int16_t IntelligenceBonus = 0;
+		int16_t IntelligenceBonus = {};
 
 		/// \brief Column [ChaB]: Charisma bonus when item equipped
 		///
 		/// \property CharismaBonus
-		int16_t CharismaBonus = 0;
+		int16_t CharismaBonus = {};
 
 		/// \brief Column [MaxHpB]: Maximum health bonus when item equipped
 		///
 		/// \property MaxHpBonus
-		int16_t MaxHpBonus = 0;
+		int16_t MaxHpBonus = {};
 
 		/// \brief Column [MaxMpB]: Maximum mana bonus when item equipped
 		///
 		/// \property MaxMpBonus
-		int16_t MaxMpBonus = 0;
+		int16_t MaxMpBonus = {};
 
 		/// \brief Column [FireR]: Fire resistance
 		///
 		/// \property FireResist
-		int16_t FireResist = 0;
+		int16_t FireResist = {};
 
 		/// \brief Column [ColdR]: Cold resistance
 		///
 		/// \property ColdResist
-		int16_t ColdResist = 0;
+		int16_t ColdResist = {};
 
 		/// \brief Column [LightningR]: Lightning resistance
 		///
 		/// \property LightningResist
-		int16_t LightningResist = 0;
+		int16_t LightningResist = {};
 
 		/// \brief Column [MagicR]: Magic resistance
 		///
 		/// \property MagicResist
-		int16_t MagicResist = 0;
+		int16_t MagicResist = {};
 
 		/// \brief Column [PoisonR]: Poison resistance
 		///
 		/// \property PoisonResist
-		int16_t PoisonResist = 0;
+		int16_t PoisonResist = {};
 
 		/// \brief Column [CurseR]: Curse resistance
 		///
 		/// \property CurseResist
-		int16_t CurseResist = 0;
+		int16_t CurseResist = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

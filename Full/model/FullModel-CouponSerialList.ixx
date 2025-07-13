@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [nIndex]: Index
 		///
 		/// \property Index
-		int32_t Index = 0;
+		int32_t Index = {};
 
 		/// \brief Column [strSerialNum]: Serial Number
 		///
@@ -37,12 +37,12 @@ namespace full_model
 		/// \brief Column [nItemNum]: Item Number
 		///
 		/// \property ItemNumber
-		int32_t ItemNumber = 0;
+		int32_t ItemNumber = {};
 
 		/// \brief Column [sItemCount]: Item Count
 		///
 		/// \property ItemCount
-		int16_t ItemCount = 0;
+		int16_t ItemCount = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

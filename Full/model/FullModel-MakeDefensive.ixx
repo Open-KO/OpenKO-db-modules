@@ -27,42 +27,42 @@ namespace full_model
 		/// \brief Column [byLevel]: Level
 		///
 		/// \property Level
-		uint8_t Level = 0;
+		uint8_t Level = {};
 
 		/// \brief Column [sClass_1]: Class 1
 		///
 		/// \property Class1
-		int16_t Class1 = 0;
+		int16_t Class1 = {};
 
 		/// \brief Column [sClass_2]: Class 2
 		///
 		/// \property Class2
-		int16_t Class2 = 0;
+		int16_t Class2 = {};
 
 		/// \brief Column [sClass_3]: Class 3
 		///
 		/// \property Class3
-		int16_t Class3 = 0;
+		int16_t Class3 = {};
 
 		/// \brief Column [sClass_4]: Class 4
 		///
 		/// \property Class4
-		int16_t Class4 = 0;
+		int16_t Class4 = {};
 
 		/// \brief Column [sClass_5]: Class 5
 		///
 		/// \property Class5
-		int16_t Class5 = 0;
+		int16_t Class5 = {};
 
 		/// \brief Column [sClass_6]: Class 6
 		///
 		/// \property Class6
-		int16_t Class6 = 0;
+		int16_t Class6 = {};
 
 		/// \brief Column [sClass_7]: Class 7
 		///
 		/// \property Class7
-		int16_t Class7 = 0;
+		int16_t Class7 = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

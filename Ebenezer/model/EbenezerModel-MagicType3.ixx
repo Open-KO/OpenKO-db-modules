@@ -27,23 +27,23 @@ namespace ebenezer_model
 		/// \brief Column [iNum]: Magic identification number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Radius]: Area of effect circle radius
 		///
 		/// \property Radius
-		uint8_t Radius = 0;
+		uint8_t Radius = {};
 
 		/// \brief Column [Angle]: Angle seems unused/unimplemented TODO
 		///
 		/// \property Angle
-		int16_t Angle = 0;
+		int16_t Angle = {};
 
 		/// \brief Column [DirectType]: Damage calculation type
 		///
 		/// \see EnumDirectType
 		/// \property DirectType
-		uint8_t DirectType = 0;
+		uint8_t DirectType = {};
 
 		/// \enum EnumDirectType
 		/// \brief Known valid values for DirectType
@@ -64,27 +64,27 @@ namespace ebenezer_model
 		/// \brief Column [FirstDamage]: Damage applied on hit
 		///
 		/// \property FirstDamage
-		int16_t FirstDamage = 0;
+		int16_t FirstDamage = {};
 
 		/// \brief Column [EndDamage]: Damage taken at end of effect
 		///
 		/// \property EndDamage
-		int16_t EndDamage = 0;
+		int16_t EndDamage = {};
 
 		/// \brief Column [TimeDamage]: Total damage dealt over Duration
 		///
 		/// \property TimeDamage
-		int16_t TimeDamage = 0;
+		int16_t TimeDamage = {};
 
 		/// \brief Column [Duration]: Duration of damage over time effects
 		///
 		/// \property Duration
-		uint8_t Duration = 0;
+		uint8_t Duration = {};
 
 		/// \brief Column [Attribute]: Attribute TODO
 		///
 		/// \property Attribute
-		uint8_t Attribute = 0;
+		uint8_t Attribute = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

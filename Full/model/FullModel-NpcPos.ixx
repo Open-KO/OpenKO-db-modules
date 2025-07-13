@@ -28,97 +28,97 @@ namespace full_model
 		/// \brief Column [ZoneID]: Zone Identifier
 		///
 		/// \property ZoneId
-		int16_t ZoneId = 0;
+		int16_t ZoneId = {};
 
 		/// \brief Column [NpcID]: NPC Identifier (K_NPC.sSid)
 		///
 		/// \property NpcId
-		int32_t NpcId = 0;
+		int32_t NpcId = {};
 
 		/// \brief Column [ActType]: Act type TODO
 		///
 		/// \property ActType
-		uint8_t ActType = 0;
+		uint8_t ActType = {};
 
 		/// \brief Column [RegenType]: Regen type TODO
 		///
 		/// \property RegenType
-		uint8_t RegenType = 0;
+		uint8_t RegenType = {};
 
 		/// \brief Column [DungeonFamily]: Dungeon family TODO
 		///
 		/// \property DungeonFamily
-		uint8_t DungeonFamily = 0;
+		uint8_t DungeonFamily = {};
 
 		/// \brief Column [SpecialType]: Special type TODO
 		///
 		/// \property SpecialType
-		uint8_t SpecialType = 0;
+		uint8_t SpecialType = {};
 
 		/// \brief Column [TrapNumber]: Trap number
 		///
 		/// \property TrapNumber
-		uint8_t TrapNumber = 0;
+		uint8_t TrapNumber = {};
 
 		/// \brief Column [LeftX]: X-coordinate representing the left side of the spawn area
 		///
 		/// \property LeftX
-		int32_t LeftX = 0;
+		int32_t LeftX = {};
 
 		/// \brief Column [TopZ]: Z-coordinate representing the top side of the spawn area
 		///
 		/// \property TopZ
-		int32_t TopZ = 0;
+		int32_t TopZ = {};
 
 		/// \brief Column [RightX]: X-coordinate representing the right side of the spawn area
 		///
 		/// \property RightX
-		int32_t RightX = 0;
+		int32_t RightX = {};
 
 		/// \brief Column [BottomZ]: Z-coordinate representing the bottom side of the spawn area
 		///
 		/// \property BottomZ
-		int32_t BottomZ = 0;
+		int32_t BottomZ = {};
 
 		/// \brief Column [LimitMinZ]: Minimum z-coordinate value for valid roaming
 		///
 		/// \property LimitMinZ
-		int32_t LimitMinZ = 0;
+		int32_t LimitMinZ = {};
 
 		/// \brief Column [LimitMinX]: Minimum x-coordinate value for valid roaming
 		///
 		/// \property LimitMinX
-		int32_t LimitMinX = 0;
+		int32_t LimitMinX = {};
 
 		/// \brief Column [LimitMaxX]: Maximum x-coordinate value for valid roaming
 		///
 		/// \property LimitMaxX
-		int32_t LimitMaxX = 0;
+		int32_t LimitMaxX = {};
 
 		/// \brief Column [LimitMaxZ]: Maximum z-coordinate value for valid roaming
 		///
 		/// \property LimitMaxZ
-		int32_t LimitMaxZ = 0;
+		int32_t LimitMaxZ = {};
 
 		/// \brief Column [NumNPC]: Target number of NPCs for the spawn area
 		///
 		/// \property NumNpc
-		uint8_t NumNpc = 0;
+		uint8_t NumNpc = {};
 
 		/// \brief Column [RegTime]: How long it takes for a dead NPC to respawn
 		///
 		/// \property RespawnTime
-		int16_t RespawnTime = 0;
+		int16_t RespawnTime = {};
 
 		/// \brief Column [byDirection]: Direction TODO
 		///
 		/// \property Direction
-		int32_t Direction = 0;
+		int32_t Direction = {};
 
 		/// \brief Column [DotCnt]: Dot count TODO
 		///
 		/// \property DotCount
-		uint8_t DotCount = 0;
+		uint8_t DotCount = {};
 
 		/// \brief Column [path]: Pathfinding data TODO
 		///

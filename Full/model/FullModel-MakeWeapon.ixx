@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [byLevel]: Level
 		///
 		/// \property Level
-		uint8_t Level = 0;
+		uint8_t Level = {};
 
 		union
 		{

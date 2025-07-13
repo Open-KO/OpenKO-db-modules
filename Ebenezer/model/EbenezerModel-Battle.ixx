@@ -27,12 +27,12 @@ namespace ebenezer_model
 		/// \brief Column [sIndex]: Server Index
 		///
 		/// \property Index
-		int16_t Index = 0;
+		int16_t Index = {};
 
 		/// \brief Column [byNation]: Nation Identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		uint8_t Nation = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

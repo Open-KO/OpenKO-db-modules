@@ -27,27 +27,27 @@ namespace aiserver_model
 		/// \brief Column [byLevelGrade]: Level grade
 		///
 		/// \property LevelGrade
-		uint8_t LevelGrade = 0;
+		uint8_t LevelGrade = {};
 
 		/// \brief Column [sUpgradeItem]: Upgrade item
 		///
 		/// \property UpgradeItem
-		int16_t UpgradeItem = 0;
+		int16_t UpgradeItem = {};
 
 		/// \brief Column [sLareItem]: Rare item
 		///
 		/// \property RareItem
-		int16_t RareItem = 0;
+		int16_t RareItem = {};
 
 		/// \brief Column [sMagicItem]: Magic item
 		///
 		/// \property MagicItem
-		int16_t MagicItem = 0;
+		int16_t MagicItem = {};
 
 		/// \brief Column [sGereralItem]: General item
 		///
 		/// \property GeneralItem
-		int16_t GeneralItem = 0;
+		int16_t GeneralItem = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

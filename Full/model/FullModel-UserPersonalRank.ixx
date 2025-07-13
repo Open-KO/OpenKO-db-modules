@@ -29,7 +29,7 @@ namespace full_model
 		/// \brief Column [nRank]: Ranking
 		///
 		/// \property Rank
-		int16_t Rank = 0;
+		int16_t Rank = {};
 
 		/// \brief Column [strPosition]: Position
 		///
@@ -39,7 +39,7 @@ namespace full_model
 		/// \brief Column [nElmoUP]: ElMorad Up?
 		///
 		/// \property ElmoUp
-		int16_t ElmoUp = 0;
+		int16_t ElmoUp = {};
 
 		/// \brief Column [strElmoUserID]: ElMorad user identifier
 		///
@@ -54,12 +54,12 @@ namespace full_model
 		/// \brief Column [nElmoCheck]: ElMorad check
 		///
 		/// \property ElmoCheck
-		int32_t ElmoCheck = 0;
+		int32_t ElmoCheck = {};
 
 		/// \brief Column [nKarusUP]: Karus Up?
 		///
 		/// \property KarusUp
-		int16_t KarusUp = 0;
+		int16_t KarusUp = {};
 
 		/// \brief Column [strKarusUserID]: Karus user identifier
 		///
@@ -74,12 +74,12 @@ namespace full_model
 		/// \brief Column [nKarusCheck]: Karus check
 		///
 		/// \property KarusCheck
-		int32_t KarusCheck = 0;
+		int32_t KarusCheck = {};
 
 		/// \brief Column [nSalary]: Salary
 		///
 		/// \property Salary
-		int32_t Salary = 0;
+		int32_t Salary = {};
 
 		/// \brief Column [UpdateDate]: Update date
 		///

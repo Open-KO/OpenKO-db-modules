@@ -27,7 +27,7 @@ namespace ebenezer_model
 		/// \brief Column [nResourceID]: Resource Identifier
 		///
 		/// \property ResourceId
-		int32_t ResourceId = 0;
+		int32_t ResourceId = {};
 
 		/// \brief Column [strResource]: Sprintf supported string
 		///

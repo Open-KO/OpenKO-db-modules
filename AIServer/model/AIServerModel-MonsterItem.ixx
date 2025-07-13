@@ -27,7 +27,7 @@ namespace aiserver_model
 		/// \brief Column [sIndex]: Monster identifier (K_MONSTER.sSid)
 		///
 		/// \property MonsterId
-		int16_t MonsterId = 0;
+		int16_t MonsterId = {};
 
 		union
 		{

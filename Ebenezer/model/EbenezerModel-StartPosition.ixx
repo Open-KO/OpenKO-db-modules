@@ -27,57 +27,57 @@ namespace ebenezer_model
 		/// \brief Column [ZoneID]: Zone identifier
 		///
 		/// \property ZoneId
-		int16_t ZoneId = 0;
+		int16_t ZoneId = {};
 
 		/// \brief Column [sKarusX]: Karus X
 		///
 		/// \property KarusX
-		int16_t KarusX = 0;
+		int16_t KarusX = {};
 
 		/// \brief Column [sKarusZ]: Karus Z
 		///
 		/// \property KarusZ
-		int16_t KarusZ = 0;
+		int16_t KarusZ = {};
 
 		/// \brief Column [sElmoradX]: ElMorad X
 		///
 		/// \property ElmoX
-		int16_t ElmoX = 0;
+		int16_t ElmoX = {};
 
 		/// \brief Column [sElmoradZ]: ElMorad Z
 		///
 		/// \property ElmoZ
-		int16_t ElmoZ = 0;
+		int16_t ElmoZ = {};
 
 		/// \brief Column [bRangeX]: Maximum distance from spawn X
 		///
 		/// \property RangeX
-		uint8_t RangeX = 0;
+		uint8_t RangeX = {};
 
 		/// \brief Column [bRangeZ]: Maximum distance from spawn Z
 		///
 		/// \property RangeZ
-		uint8_t RangeZ = 0;
+		uint8_t RangeZ = {};
 
 		/// \brief Column [sKarusGateX]: Karus gate X
 		///
 		/// \property KarusGateX
-		int16_t KarusGateX = 0;
+		int16_t KarusGateX = {};
 
 		/// \brief Column [sKarusGateZ]: Karus gate Z
 		///
 		/// \property KarusGateZ
-		int16_t KarusGateZ = 0;
+		int16_t KarusGateZ = {};
 
 		/// \brief Column [sElmoGateX]: ElMorad gate X
 		///
 		/// \property ElmoGateX
-		int16_t ElmoGateX = 0;
+		int16_t ElmoGateX = {};
 
 		/// \brief Column [sElmoGateZ]: ElMorad gate Z
 		///
 		/// \property ElmoGateZ
-		int16_t ElmoGateZ = 0;
+		int16_t ElmoGateZ = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

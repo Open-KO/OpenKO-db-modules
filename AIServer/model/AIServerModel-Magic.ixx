@@ -27,107 +27,107 @@ namespace aiserver_model
 		/// \brief Column [MagicNum]: Magic identification number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [BeforeAction]: Before action check
 		///
 		/// \property BeforeAction
-		uint8_t BeforeAction = 0;
+		uint8_t BeforeAction = {};
 
 		/// \brief Column [TargetAction]: Target action check
 		///
 		/// \property TargetAction
-		uint8_t TargetAction = 0;
+		uint8_t TargetAction = {};
 
 		/// \brief Column [SelfEffect]: Self effect TODO
 		///
 		/// \property SelfEffect
-		uint8_t SelfEffect = 0;
+		uint8_t SelfEffect = {};
 
 		/// \brief Column [FlyingEffect]: Does the skill fire a projectile
 		///
 		/// \property FlyingEffect
-		uint8_t FlyingEffect = 0;
+		uint8_t FlyingEffect = {};
 
 		/// \brief Column [TargetEffect]: Effect identifier to use on the target
 		///
 		/// \property TargetEffect
-		int16_t TargetEffect = 0;
+		int16_t TargetEffect = {};
 
 		/// \brief Column [Moral]: Targeting constraints
 		///
 		/// \property Moral
-		uint8_t Moral = 0;
+		uint8_t Moral = {};
 
 		/// \brief Column [SkillLevel]: Skill points required in the tree to unlock the skill
 		///
 		/// \property SkillLevel
-		int16_t SkillLevel = 0;
+		int16_t SkillLevel = {};
 
 		/// \brief Column [Skill]: Associated skill tree
 		///
 		/// \property Skill
-		int16_t Skill = 0;
+		int16_t Skill = {};
 
 		/// \brief Column [Msp]: Mana cost
 		///
 		/// \property ManaCost
-		int16_t ManaCost = 0;
+		int16_t ManaCost = {};
 
 		/// \brief Column [HP]: Health cost
 		///
 		/// \property HpCost
-		int16_t HpCost = 0;
+		int16_t HpCost = {};
 
 		/// \brief Column [ItemGroup]: Item group allows a skill to be constrained to having an item type equipped
 		///
 		/// \property ItemGroup
-		uint8_t ItemGroup = 0;
+		uint8_t ItemGroup = {};
 
 		/// \brief Column [UseItem]: Must consume this item from inventory in order to activate ability
 		///
 		/// \property UseItem
-		int32_t UseItem = 0;
+		int32_t UseItem = {};
 
 		/// \brief Column [CastTime]: Time needed to cast the ability
 		///
 		/// \property CastTime
-		uint8_t CastTime = 0;
+		uint8_t CastTime = {};
 
 		/// \brief Column [ReCastTime]: Cooldown
 		///
 		/// \property RecastTime
-		uint8_t RecastTime = 0;
+		uint8_t RecastTime = {};
 
 		/// \brief Column [SuccessRate]: Chance the skill will hit target
 		///
 		/// \property SuccessRate
-		uint8_t SuccessRate = 0;
+		uint8_t SuccessRate = {};
 
 		/// \brief Column [Type1]: Look up effect in MAGIC_TYPEX table
 		///
 		/// \property Type1
-		uint8_t Type1 = 0;
+		uint8_t Type1 = {};
 
 		/// \brief Column [Type2]: Look up effect in MAGIC_TYPEX table
 		///
 		/// \property Type2
-		uint8_t Type2 = 0;
+		uint8_t Type2 = {};
 
 		/// \brief Column [Range]: Maximum range from target
 		///
 		/// \property Range
-		int16_t Range = 0;
+		int16_t Range = {};
 
 		/// \brief Column [Etc]: Etc TODO
 		///
 		/// \property Etc
-		uint8_t Etc = 0;
+		uint8_t Etc = {};
 
 		/// \brief Column [Event]: Event TODO
 		///
 		/// \property Event
-		int32_t Event = 0;
+		int32_t Event = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [id]: Identifier
 		///
 		/// \property Id
-		int32_t Id = 0;
+		int32_t Id = {};
 
 		/// \brief Column [strAccountID]: Account identifier
 		///

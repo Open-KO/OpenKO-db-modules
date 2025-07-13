@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [sIndex]: Index
 		///
 		/// \property Index
-		int16_t Index = 0;
+		int16_t Index = {};
 
 		/// \brief Column [iItem01]: Item 1
 		///

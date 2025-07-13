@@ -27,12 +27,12 @@ namespace ebenezer_model
 		/// \brief Column [nRank]: Rank
 		///
 		/// \property Rank
-		int32_t Rank = 0;
+		int32_t Rank = {};
 
 		/// \brief Column [shIndex]: Knights identifier
 		///
 		/// \property Index
-		int16_t Index = 0;
+		int16_t Index = {};
 
 		/// \brief Column [strName]: Knights name
 		///
@@ -42,7 +42,7 @@ namespace ebenezer_model
 		/// \brief Column [nPoints]: National points
 		///
 		/// \property Points
-		int32_t Points = 0;
+		int32_t Points = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

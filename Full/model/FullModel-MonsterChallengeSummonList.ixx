@@ -27,52 +27,52 @@ namespace full_model
 		/// \brief Column [sIndex]: Index
 		///
 		/// \property Index
-		int16_t Index = 0;
+		int16_t Index = {};
 
 		/// \brief Column [bLevel]: Level
 		///
 		/// \property Level
-		uint8_t Level = 0;
+		uint8_t Level = {};
 
 		/// \brief Column [bStage]: Stage
 		///
 		/// \property Stage
-		uint8_t Stage = 0;
+		uint8_t Stage = {};
 
 		/// \brief Column [bStageLevel]: Stage level
 		///
 		/// \property StageLevel
-		uint8_t StageLevel = 0;
+		uint8_t StageLevel = {};
 
 		/// \brief Column [sTime]: Time to spawn(?)
 		///
 		/// \property Time
-		int16_t Time = 0;
+		int16_t Time = {};
 
 		/// \brief Column [sSid]: Monster identifier (K_MONSTER.sSid)
 		///
 		/// \property MonsterId
-		int16_t MonsterId = 0;
+		int16_t MonsterId = {};
 
 		/// \brief Column [sCount]: Number to spawn
 		///
 		/// \property Count
-		int16_t Count = 0;
+		int16_t Count = {};
 
 		/// \brief Column [sPosX]: Monster spawn point center x-coordinate
 		///
 		/// \property PosX
-		int16_t PosX = 0;
+		int16_t PosX = {};
 
 		/// \brief Column [sPosZ]: Monster spawn point center z-coordinate
 		///
 		/// \property PosZ
-		int16_t PosZ = 0;
+		int16_t PosZ = {};
 
 		/// \brief Column [bRange]: Radius from spawn point center to spawn monsters
 		///
 		/// \property Range
-		uint8_t Range = 0;
+		uint8_t Range = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

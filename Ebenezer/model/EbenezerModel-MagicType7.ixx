@@ -27,28 +27,28 @@ namespace ebenezer_model
 		/// \brief Column [nIndex]: Magic identification number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [byValidGroup]: Valid group
 		///
 		/// \property ValidGroup
-		uint8_t ValidGroup = 0;
+		uint8_t ValidGroup = {};
 
 		/// \brief Column [byNatoinChange]: Nation change
 		///
 		/// \property NationChange
-		uint8_t NationChange = 0;
+		uint8_t NationChange = {};
 
 		/// \brief Column [shMonsterNum]: Monster number
 		///
 		/// \property MonsterNumber
-		int16_t MonsterNumber = 0;
+		int16_t MonsterNumber = {};
 
 		/// \brief Column [byTargetChange]: Monster target mode change
 		///
 		/// \see EnumTargetChange
 		/// \property TargetChange
-		uint8_t TargetChange = 0;
+		uint8_t TargetChange = {};
 
 		/// \enum EnumTargetChange
 		/// \brief Known valid values for byTargetChange
@@ -61,37 +61,37 @@ namespace ebenezer_model
 		/// \brief Column [byStateChange]: State change
 		///
 		/// \property StateChange
-		uint8_t StateChange = 0;
+		uint8_t StateChange = {};
 
 		/// \brief Column [byRadius]: Area of effect circle radius
 		///
 		/// \property Radius
-		uint8_t Radius = 0;
+		uint8_t Radius = {};
 
 		/// \brief Column [shHitrate]: Hit rate
 		///
 		/// \property HitRate
-		int16_t HitRate = 0;
+		int16_t HitRate = {};
 
 		/// \brief Column [shDuration]: Duration
 		///
 		/// \property Duration
-		int16_t Duration = 0;
+		int16_t Duration = {};
 
 		/// \brief Column [shDamage]: Damage
 		///
 		/// \property Damage
-		int16_t Damage = 0;
+		int16_t Damage = {};
 
 		/// \brief Column [byVisoin]: Vision
 		///
 		/// \property Vision
-		uint8_t Vision = 0;
+		uint8_t Vision = {};
 
 		/// \brief Column [nNeedItem]: Needs item
 		///
 		/// \property NeedItem
-		int32_t NeedItem = 0;
+		int32_t NeedItem = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

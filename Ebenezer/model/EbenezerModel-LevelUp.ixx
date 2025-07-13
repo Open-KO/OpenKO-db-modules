@@ -27,12 +27,12 @@ namespace ebenezer_model
 		/// \brief Column [level]: Level
 		///
 		/// \property Level
-		uint8_t Level = 0;
+		uint8_t Level = {};
 
 		/// \brief Column [Exp]: Experience required to advance to the next level
 		///
 		/// \property RequiredExp
-		int32_t RequiredExp = 0;
+		int32_t RequiredExp = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

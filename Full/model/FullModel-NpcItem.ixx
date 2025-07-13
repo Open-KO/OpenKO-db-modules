@@ -28,12 +28,12 @@ namespace full_model
 		/// \brief Column [sIndex]: NPC identifier (K_NPC.sSid)
 		///
 		/// \property NpcId
-		int16_t NpcId = 0;
+		int16_t NpcId = {};
 
 		/// \brief Column [iItem01]: Item identifier 1
 		///
 		/// \property ItemId1
-		int32_t ItemId1 = 0;
+		int32_t ItemId1 = {};
 
 		union
 		{

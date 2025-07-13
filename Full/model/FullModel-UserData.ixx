@@ -34,13 +34,13 @@ namespace full_model
 		/// \brief Column [Nation]: Nation identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		uint8_t Nation = {};
 
 		/// \brief Column [Race]: Racial subtype
 		///
 		/// \see EnumRace
 		/// \property Race
-		uint8_t Race = 0;
+		uint8_t Race = {};
 
 		/// \enum EnumRace
 		/// \brief Known valid values for Race
@@ -59,7 +59,7 @@ namespace full_model
 		///
 		/// \see EnumClass
 		/// \property Class
-		int16_t Class = 0;
+		int16_t Class = {};
 
 		/// \enum EnumClass
 		/// \brief Known valid values for Class
@@ -94,112 +94,112 @@ namespace full_model
 		/// \brief Column [HairColor]: Hair color
 		///
 		/// \property HairColor
-		uint8_t HairColor = 0;
+		uint8_t HairColor = {};
 
 		/// \brief Column [Rank]: User ranking
 		///
 		/// \property Rank
-		uint8_t Rank = 0;
+		uint8_t Rank = {};
 
 		/// \brief Column [Title]: Title
 		///
 		/// \property Title
-		uint8_t Title = 0;
+		uint8_t Title = {};
 
 		/// \brief Column [Level]: Level
 		///
 		/// \property Level
-		uint8_t Level = 0;
+		uint8_t Level = {};
 
 		/// \brief Column [Exp]: Experience
 		///
 		/// \property Exp
-		int32_t Exp = 0;
+		int32_t Exp = {};
 
 		/// \brief Column [Loyalty]: National points
 		///
 		/// \property Loyalty
-		int32_t Loyalty = 0;
+		int32_t Loyalty = {};
 
 		/// \brief Column [Face]: Face
 		///
 		/// \property Face
-		uint8_t Face = 0;
+		uint8_t Face = {};
 
 		/// \brief Column [City]: City
 		///
 		/// \property City
-		uint8_t City = 0;
+		uint8_t City = {};
 
 		/// \brief Column [Knights]: Knights identifier (guild/clan)
 		///
 		/// \property KnightsId
-		int16_t KnightsId = 0;
+		int16_t KnightsId = {};
 
 		/// \brief Column [Fame]: Fame
 		///
 		/// \property Fame
-		uint8_t Fame = 0;
+		uint8_t Fame = {};
 
 		/// \brief Column [Hp]: Health
 		///
 		/// \property Hp
-		int16_t Hp = 0;
+		int16_t Hp = {};
 
 		/// \brief Column [Mp]: Mana
 		///
 		/// \property Mp
-		int16_t Mp = 0;
+		int16_t Mp = {};
 
 		/// \brief Column [Sp]: Sp TODO
 		///
 		/// \property Sp
-		int16_t Sp = 0;
+		int16_t Sp = {};
 
 		/// \brief Column [Strong]: Strength
 		///
 		/// \property Strength
-		uint8_t Strength = 0;
+		uint8_t Strength = {};
 
 		/// \brief Column [Sta]: Stamina
 		///
 		/// \property Stamina
-		uint8_t Stamina = 0;
+		uint8_t Stamina = {};
 
 		/// \brief Column [Dex]: Dexterity
 		///
 		/// \property Dexterity
-		uint8_t Dexterity = 0;
+		uint8_t Dexterity = {};
 
 		/// \brief Column [Intel]: Intelligence
 		///
 		/// \property Intelligence
-		uint8_t Intelligence = 0;
+		uint8_t Intelligence = {};
 
 		/// \brief Column [Cha]: Charisma
 		///
 		/// \property Charisma
-		uint8_t Charisma = 0;
+		uint8_t Charisma = {};
 
 		/// \brief Column [Authority]: Authorization level
 		///
 		/// \property Authority
-		uint8_t Authority = 0;
+		uint8_t Authority = {};
 
 		/// \brief Column [Points]: Unspent stat points
 		///
 		/// \property StatPoints
-		uint8_t StatPoints = 0;
+		uint8_t StatPoints = {};
 
 		/// \brief Column [Gold]: Gold
 		///
 		/// \property Gold
-		int32_t Gold = 0;
+		int32_t Gold = {};
 
 		/// \brief Column [Zone]: Current zone
 		///
 		/// \property Zone
-		uint8_t Zone = 0;
+		uint8_t Zone = {};
 
 		/// \brief Column [Bind]: Bind
 		///
@@ -209,22 +209,22 @@ namespace full_model
 		/// \brief Column [PX]: X-axis position coordinate
 		///
 		/// \property PosX
-		int32_t PosX = 0;
+		int32_t PosX = {};
 
 		/// \brief Column [PZ]: Z-axis position coordinate
 		///
 		/// \property PosZ
-		int32_t PosZ = 0;
+		int32_t PosZ = {};
 
 		/// \brief Column [PY]: Y-axis position coordinate
 		///
 		/// \property PosY
-		int32_t PosY = 0;
+		int32_t PosY = {};
 
 		/// \brief Column [dwTime]: DwTime TODO
 		///
 		/// \property DwTime
-		int32_t DwTime = 0;
+		int32_t DwTime = {};
 
 		/// \brief Column [strSkill]: Skill data
 		///
@@ -244,7 +244,7 @@ namespace full_model
 		/// \brief Column [sQuestCount]: Completed quest count
 		///
 		/// \property QuestCount
-		int16_t QuestCount = 0;
+		int16_t QuestCount = {};
 
 		/// \brief Column [strQuest]: Quest data
 		///
@@ -254,12 +254,12 @@ namespace full_model
 		/// \brief Column [MannerPoint]: Manner points are awarded when a higher level character helps a Beginner Knight level up
 		///
 		/// \property MannerPoint
-		int32_t MannerPoint = 0;
+		int32_t MannerPoint = {};
 
 		/// \brief Column [LoyaltyMonthly]: Monthly national points
 		///
 		/// \property LoyaltyMonthly
-		int32_t LoyaltyMonthly = 0;
+		int32_t LoyaltyMonthly = {};
 
 		/// \brief Column [CreateTime]: Creation time
 		///

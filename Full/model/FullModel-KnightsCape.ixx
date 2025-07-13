@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [sCapeIndex]: Cape identifier
 		///
 		/// \property CapeIndex
-		int16_t CapeIndex = 0;
+		int16_t CapeIndex = {};
 
 		/// \brief Column [strName]: Name
 		///
@@ -37,17 +37,17 @@ namespace full_model
 		/// \brief Column [nBuyPrice]: Buy price
 		///
 		/// \property BuyPrice
-		int32_t BuyPrice = 0;
+		int32_t BuyPrice = {};
 
 		/// \brief Column [nDuration]: Duration TODO
 		///
 		/// \property Duration
-		int32_t Duration = 0;
+		int32_t Duration = {};
 
 		/// \brief Column [byGrade]: Required grade
 		///
 		/// \property Grade
-		uint8_t Grade = 0;
+		uint8_t Grade = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

@@ -49,27 +49,27 @@ namespace full_model
 		/// \brief Column [sDBIndex]: DbIndex
 		///
 		/// \property DbIndex
-		int16_t DbIndex = 0;
+		int16_t DbIndex = {};
 
 		/// \brief Column [sPos]: Pos
 		///
 		/// \property Pos
-		int16_t Pos = 0;
+		int16_t Pos = {};
 
 		/// \brief Column [byType]: Type
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		uint8_t Type = {};
 
 		/// \brief Column [nItemID1]: Item 1 identifier
 		///
 		/// \property ItemId1
-		int32_t ItemId1 = 0;
+		int32_t ItemId1 = {};
 
 		/// \brief Column [nItemID2]: Item 2 identifier
 		///
 		/// \property ItemId2
-		int32_t ItemId2 = 0;
+		int32_t ItemId2 = {};
 
 		/// \brief Column [UpdateTime]: Update time
 		///

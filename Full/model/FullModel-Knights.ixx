@@ -29,22 +29,22 @@ namespace full_model
 		/// \brief Column [IDNum]: Identification number
 		///
 		/// \property ID
-		int16_t ID = 0;
+		int16_t ID = {};
 
 		/// \brief Column [Flag]: Flag TODO
 		///
 		/// \property Flag
-		uint8_t Flag = 0;
+		uint8_t Flag = {};
 
 		/// \brief Column [Nation]: Nation identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		uint8_t Nation = {};
 
 		/// \brief Column [Ranking]: Ranking by sum of members National Points
 		///
 		/// \property Ranking
-		uint8_t Ranking = 0;
+		uint8_t Ranking = {};
 
 		/// \brief Column [IDName]: Name of the Knights clan
 		///
@@ -54,7 +54,7 @@ namespace full_model
 		/// \brief Column [Members]: Member count
 		///
 		/// \property Members
-		int16_t Members = 0;
+		int16_t Members = {};
 
 		/// \brief Column [Chief]: Leader character identifier
 		///
@@ -84,37 +84,37 @@ namespace full_model
 		/// \brief Column [byOldWarResult]: Old war result
 		///
 		/// \property OldWarResult
-		uint8_t OldWarResult = 0;
+		uint8_t OldWarResult = {};
 
 		/// \brief Column [nWarEnemyID]: War enemy identifier
 		///
 		/// \property WarEnemyId
-		int32_t WarEnemyId = 0;
+		int32_t WarEnemyId = {};
 
 		/// \brief Column [nVictory]: Victory TODO
 		///
 		/// \property Victory
-		int32_t Victory = 0;
+		int32_t Victory = {};
 
 		/// \brief Column [nLose]: Lose TODO
 		///
 		/// \property Lose
-		int32_t Lose = 0;
+		int32_t Lose = {};
 
 		/// \brief Column [Gold]: Gold
 		///
 		/// \property Gold
-		int64_t Gold = 0;
+		int64_t Gold = {};
 
 		/// \brief Column [Domination]: Domination TODO
 		///
 		/// \property Domination
-		int16_t Domination = 0;
+		int16_t Domination = {};
 
 		/// \brief Column [Points]: National points
 		///
 		/// \property Points
-		int32_t Points = 0;
+		int32_t Points = {};
 
 		/// \brief Column [CreateTime]: Create time
 		///
@@ -124,12 +124,12 @@ namespace full_model
 		/// \brief Column [sMarkVersion]: Mark version
 		///
 		/// \property MarkVersion
-		int16_t MarkVersion = 0;
+		int16_t MarkVersion = {};
 
 		/// \brief Column [sMarkLen]: Mark length
 		///
 		/// \property MarkLength
-		int16_t MarkLength = 0;
+		int16_t MarkLength = {};
 
 		/// \brief Column [Mark]: Mark image
 		///
@@ -144,17 +144,17 @@ namespace full_model
 		/// \brief Column [bySiegeFlag]: Siege flag
 		///
 		/// \property SiegeFlag
-		uint8_t SiegeFlag = 0;
+		uint8_t SiegeFlag = {};
 
 		/// \brief Column [sAllianceKnights]: Alliance Knights TODO
 		///
 		/// \property AllianceKnights
-		int16_t AllianceKnights = 0;
+		int16_t AllianceKnights = {};
 
 		/// \brief Column [sCape]: Cape identifier
 		///
 		/// \property Cape
-		int16_t Cape = 0;
+		int16_t Cape = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

@@ -27,22 +27,22 @@ namespace ebenezer_model
 		/// \brief Column [nIndex]: Index
 		///
 		/// \property Index
-		int32_t Index = 0;
+		int32_t Index = {};
 
 		/// \brief Column [nNPCNum]: NPC Identifier (K_NPC.sSid)
 		///
 		/// \property NpcNumber
-		int16_t NpcNumber = 0;
+		int16_t NpcNumber = {};
 
 		/// \brief Column [nOriginType]: Origin Type
 		///
 		/// \property OriginType
-		int16_t OriginType = 0;
+		int16_t OriginType = {};
 
 		/// \brief Column [nOriginItem]: Origin Item
 		///
 		/// \property OriginItem
-		int16_t OriginItem = 0;
+		int16_t OriginItem = {};
 
 		union
 		{
@@ -98,22 +98,22 @@ namespace ebenezer_model
 		/// \brief Column [nReqNoah]: Coins required to upgrade
 		///
 		/// \property RequiredCoins
-		int32_t RequiredCoins = 0;
+		int32_t RequiredCoins = {};
 
 		/// \brief Column [bRateType]: Rate type
 		///
 		/// \property RateType
-		uint8_t RateType = 0;
+		uint8_t RateType = {};
 
 		/// \brief Column [nGenRate]: Upgrade success rate
 		///
 		/// \property GenRate
-		int16_t GenRate = 0;
+		int16_t GenRate = {};
 
 		/// \brief Column [nGiveItem]: Item acquired on successful upgrade
 		///
 		/// \property GiveItem
-		int16_t GiveItem = 0;
+		int16_t GiveItem = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

@@ -27,7 +27,7 @@ namespace ebenezer_model
 		/// \brief Column [nIndex]: Index
 		///
 		/// \property Index
-		int32_t Index = 0;
+		int32_t Index = {};
 
 		/// \brief Column [strWebPageAddress]: Webpage address
 		///

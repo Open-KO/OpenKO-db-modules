@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [ITEMSERIAL]: Item Serial
 		///
 		/// \property ItemSerial
-		int64_t ItemSerial = 0;
+		int64_t ItemSerial = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

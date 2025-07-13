@@ -39,47 +39,47 @@ namespace full_model
 		/// \brief Column [byRentalType]: Rental type
 		///
 		/// \property RentalType
-		uint8_t RentalType = 0;
+		uint8_t RentalType = {};
 
 		/// \brief Column [byRegType]: Reg time
 		///
 		/// \property RegTime
-		uint8_t RegTime = 0;
+		uint8_t RegTime = {};
 
 		/// \brief Column [nRentalIndex]: Rental index
 		///
 		/// \property RentalIndex
-		int32_t RentalIndex = 0;
+		int32_t RentalIndex = {};
 
 		/// \brief Column [nItemIndex]: Item index
 		///
 		/// \property ItemIndex
-		int32_t ItemIndex = 0;
+		int32_t ItemIndex = {};
 
 		/// \brief Column [sDurability]: Durability
 		///
 		/// \property Durability
-		int16_t Durability = 0;
+		int16_t Durability = {};
 
 		/// \brief Column [nSerialNumber]: Serial number
 		///
 		/// \property SerialNumber
-		int64_t SerialNumber = 0;
+		int64_t SerialNumber = {};
 
 		/// \brief Column [nRentalMoney]: Rental money
 		///
 		/// \property RentalMoney
-		int32_t RentalMoney = 0;
+		int32_t RentalMoney = {};
 
 		/// \brief Column [sRentalTime]: Rental time
 		///
 		/// \property RentalTime
-		int16_t RentalTime = 0;
+		int16_t RentalTime = {};
 
 		/// \brief Column [sDuringTime]: During time
 		///
 		/// \property DuringTime
-		int16_t DuringTime = 0;
+		int16_t DuringTime = {};
 
 		/// \brief Column [timeRental]: Rental time
 		///

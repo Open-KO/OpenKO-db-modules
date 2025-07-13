@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [sVersion]: Game version number
 		///
 		/// \property Number
-		int16_t Number = 0;
+		int16_t Number = {};
 
 		/// \brief Column [strFileName]: Patch file name
 		///
@@ -42,7 +42,7 @@ namespace full_model
 		/// \brief Column [sHistoryVersion]: Previous patch version
 		///
 		/// \property HistoryVersion
-		int16_t HistoryVersion = 0;
+		int16_t HistoryVersion = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

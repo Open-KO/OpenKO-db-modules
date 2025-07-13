@@ -27,23 +27,23 @@ namespace ebenezer_model
 		/// \brief Column [iNum]: Magic identification number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Target]: Target
 		///
 		/// \property Target
-		uint8_t Target = 0;
+		uint8_t Target = {};
 
 		/// \brief Column [Radius]: Radius
 		///
 		/// \property Radius
-		int16_t Radius = 0;
+		int16_t Radius = {};
 
 		/// \brief Column [WarpType]: Warp type
 		///
 		/// \see EnumWarpType
 		/// \property WarpType
-		uint8_t WarpType = 0;
+		uint8_t WarpType = {};
 
 		/// \enum EnumWarpType
 		/// \brief Known valid values for WarpType
@@ -58,7 +58,7 @@ namespace ebenezer_model
 		/// \brief Column [ExpRecover]: Experience recovery
 		///
 		/// \property ExpRecover
-		int16_t ExpRecover = 0;
+		int16_t ExpRecover = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

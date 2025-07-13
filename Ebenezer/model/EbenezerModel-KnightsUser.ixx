@@ -28,7 +28,7 @@ namespace ebenezer_model
 		/// \brief Column [sIDNum]: Knights identifier
 		///
 		/// \property KnightsId
-		int16_t KnightsId = 0;
+		int16_t KnightsId = {};
 
 		/// \brief Column [strUserID]: Character Identifier
 		///

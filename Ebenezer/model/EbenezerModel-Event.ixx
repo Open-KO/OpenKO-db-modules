@@ -27,17 +27,17 @@ namespace ebenezer_model
 		/// \brief Column [ZoneNum]: Zone Number
 		///
 		/// \property ZoneNumber
-		uint8_t ZoneNumber = 0;
+		uint8_t ZoneNumber = {};
 
 		/// \brief Column [EventNum]: Event Number
 		///
 		/// \property EventNumber
-		int16_t EventNumber = 0;
+		int16_t EventNumber = {};
 
 		/// \brief Column [Type]: Event Type
 		///
 		/// \property EventType
-		uint8_t EventType = 0;
+		uint8_t EventType = {};
 
 		/// \brief Column [Exec1]: Execute 1
 		///

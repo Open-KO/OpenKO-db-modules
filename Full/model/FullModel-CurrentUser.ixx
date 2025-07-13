@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [nServerNo]: Server Index
 		///
 		/// \property ServerNumber
-		int32_t ServerNumber = 0;
+		int32_t ServerNumber = {};
 
 		/// \brief Column [strServerIP]: Server IP Address
 		///

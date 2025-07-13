@@ -27,22 +27,22 @@ namespace full_model
 		/// \brief Column [nIndex]: Index
 		///
 		/// \property Index
-		int32_t Index = 0;
+		int32_t Index = {};
 
 		/// \brief Column [bNpcType]: NPC type
 		///
 		/// \property NpcType
-		uint8_t NpcType = 0;
+		uint8_t NpcType = {};
 
 		/// \brief Column [sNpcID]: NPC identifer
 		///
 		/// \property NpcId
-		int16_t NpcId = 0;
+		int16_t NpcId = {};
 
 		/// \brief Column [nTriggerNum]: Trigger number
 		///
 		/// \property TriggerNumber
-		int32_t TriggerNumber = 0;
+		int32_t TriggerNumber = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

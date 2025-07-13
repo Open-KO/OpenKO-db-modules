@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [shIndex]: Index
 		///
 		/// \property Index
-		int16_t Index = 0;
+		int16_t Index = {};
 
 		/// \brief Column [strName]: Name
 		///
@@ -68,7 +68,7 @@ namespace full_model
 		/// \brief Column [nMoney]: Money
 		///
 		/// \property Money
-		int32_t Money = 0;
+		int32_t Money = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

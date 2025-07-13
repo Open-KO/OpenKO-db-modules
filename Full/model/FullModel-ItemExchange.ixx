@@ -27,12 +27,12 @@ namespace full_model
 		/// \brief Column [nIndex]: Index
 		///
 		/// \property Index
-		int32_t Index = 0;
+		int32_t Index = {};
 
 		/// \brief Column [nNpcNum]: NPC identifier (K_NPC.sSid)
 		///
 		/// \property NpcNumber
-		int16_t NpcNumber = 0;
+		int16_t NpcNumber = {};
 
 		/// \brief Column [strNpcName]: NPC Name
 		///
@@ -47,7 +47,7 @@ namespace full_model
 		/// \brief Column [bRandomFlag]: Random Flag
 		///
 		/// \property RandomFlag
-		uint8_t RandomFlag = 0;
+		uint8_t RandomFlag = {};
 
 		union
 		{

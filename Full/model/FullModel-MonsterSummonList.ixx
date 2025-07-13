@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [sSid]: Monster identifier (K_MONSTER.sSid)
 		///
 		/// \property MonsterId
-		int16_t MonsterId = 0;
+		int16_t MonsterId = {};
 
 		/// \brief Column [strName]: Name
 		///
@@ -37,17 +37,17 @@ namespace full_model
 		/// \brief Column [sLevel]: Level
 		///
 		/// \property Level
-		int16_t Level = 0;
+		int16_t Level = {};
 
 		/// \brief Column [sProbability]: Probability
 		///
 		/// \property Probability
-		int16_t Probability = 0;
+		int16_t Probability = {};
 
 		/// \brief Column [bType]: Type
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		uint8_t Type = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

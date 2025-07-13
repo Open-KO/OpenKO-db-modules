@@ -27,27 +27,27 @@ namespace full_model
 		/// \brief Column [bType]: Type
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		uint8_t Type = {};
 
 		/// \brief Column [nMaxSuccess]: Max Success
 		///
 		/// \property MaxSuccess
-		int16_t MaxSuccess = 0;
+		int16_t MaxSuccess = {};
 
 		/// \brief Column [nMaxFail]: Max Fail
 		///
 		/// \property MaxFail
-		int16_t MaxFail = 0;
+		int16_t MaxFail = {};
 
 		/// \brief Column [nCurSuccess]: Current success
 		///
 		/// \property CurrentSuccess
-		int16_t CurrentSuccess = 0;
+		int16_t CurrentSuccess = {};
 
 		/// \brief Column [nCurFail]: Current failure
 		///
 		/// \property CurrentFailure
-		int16_t CurrentFailure = 0;
+		int16_t CurrentFailure = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

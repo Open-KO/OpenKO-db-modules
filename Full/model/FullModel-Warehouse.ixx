@@ -33,12 +33,12 @@ namespace full_model
 		/// \brief Column [nMoney]: Money stored in the warehouse
 		///
 		/// \property Money
-		int32_t Money = 0;
+		int32_t Money = {};
 
 		/// \brief Column [dwTime]: DwTime TODO
 		///
 		/// \property DwTime
-		int32_t DwTime = 0;
+		int32_t DwTime = {};
 
 		/// \brief Column [WarehouseData]: Data on items stored in the warehouse
 		///

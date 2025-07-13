@@ -32,7 +32,7 @@ namespace full_model
 		/// \brief Column [nCount]: Count
 		///
 		/// \property Count
-		int16_t Count = 0;
+		int16_t Count = {};
 
 		/// \brief Column [strSkillData]: Skill data
 		///

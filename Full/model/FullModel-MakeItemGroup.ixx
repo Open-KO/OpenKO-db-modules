@@ -27,7 +27,7 @@ namespace full_model
 		/// \brief Column [iItemGroupNum]: Item group number
 		///
 		/// \property ItemGroupNumber
-		int32_t ItemGroupNumber = 0;
+		int32_t ItemGroupNumber = {};
 
 		union
 		{

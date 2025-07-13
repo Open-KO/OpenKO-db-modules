@@ -27,17 +27,17 @@ namespace aiserver_model
 		/// \brief Column [sIndex]: Index
 		///
 		/// \property Index
-		int16_t Index = 0;
+		int16_t Index = {};
 
 		/// \brief Column [iItemCode]: Item Code
 		///
 		/// \property ItemCode
-		int32_t ItemCode = 0;
+		int32_t ItemCode = {};
 
 		/// \brief Column [byItemLevel]: Item level
 		///
 		/// \property ItemLevel
-		uint8_t ItemLevel = 0;
+		uint8_t ItemLevel = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

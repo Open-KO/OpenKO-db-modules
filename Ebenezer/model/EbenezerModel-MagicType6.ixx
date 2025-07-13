@@ -27,117 +27,117 @@ namespace ebenezer_model
 		/// \brief Column [iNum]: Magic identification number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Size]: Size modifier
 		///
 		/// \property Size
-		int16_t Size = 0;
+		int16_t Size = {};
 
 		/// \brief Column [TransformID]: Transformation picture identifier (K_NPC.sPid)
 		///
 		/// \property TransformId
-		int16_t TransformId = 0;
+		int16_t TransformId = {};
 
 		/// \brief Column [Duration]: Duration
 		///
 		/// \property Duration
-		int16_t Duration = 0;
+		int16_t Duration = {};
 
 		/// \brief Column [MaxHp]: Maximum health
 		///
 		/// \property MaxHp
-		int16_t MaxHp = 0;
+		int16_t MaxHp = {};
 
 		/// \brief Column [MaxMp]: Maximum mana
 		///
 		/// \property MaxMp
-		int16_t MaxMp = 0;
+		int16_t MaxMp = {};
 
 		/// \brief Column [Speed]: Movement speed
 		///
 		/// \property Speed
-		uint8_t Speed = 0;
+		uint8_t Speed = {};
 
 		/// \brief Column [AttackSpeed]: Attack speed
 		///
 		/// \property AttackSpeed
-		int16_t AttackSpeed = 0;
+		int16_t AttackSpeed = {};
 
 		/// \brief Column [TotalHit]: Total hit
 		///
 		/// \property TotalHit
-		int16_t TotalHit = 0;
+		int16_t TotalHit = {};
 
 		/// \brief Column [TotalAc]: Total armor
 		///
 		/// \property TotalArmor
-		int16_t TotalArmor = 0;
+		int16_t TotalArmor = {};
 
 		/// \brief Column [TotalHitRate]: Total hit rate
 		///
 		/// \property TotalHitRate
-		int16_t TotalHitRate = 0;
+		int16_t TotalHitRate = {};
 
 		/// \brief Column [TotalEvasionRate]: Total evasion rate
 		///
 		/// \property TotalEvasionRate
-		int16_t TotalEvasionRate = 0;
+		int16_t TotalEvasionRate = {};
 
 		/// \brief Column [TotalFireR]: Total fire resistance
 		///
 		/// \property TotalFireResist
-		int16_t TotalFireResist = 0;
+		int16_t TotalFireResist = {};
 
 		/// \brief Column [TotalColdR]: Total cold resistance
 		///
 		/// \property TotalColdResist
-		int16_t TotalColdResist = 0;
+		int16_t TotalColdResist = {};
 
 		/// \brief Column [TotalLightningR]: Total lightning resistance
 		///
 		/// \property TotalLightningResist
-		int16_t TotalLightningResist = 0;
+		int16_t TotalLightningResist = {};
 
 		/// \brief Column [TotalMagicR]: Total magic resistance
 		///
 		/// \property TotalMagicResist
-		int16_t TotalMagicResist = 0;
+		int16_t TotalMagicResist = {};
 
 		/// \brief Column [TotalDiseaseR]: Total disease resistance
 		///
 		/// \property TotalDiseaseResist
-		int16_t TotalDiseaseResist = 0;
+		int16_t TotalDiseaseResist = {};
 
 		/// \brief Column [TotalPoisonR]: Total poison resistance
 		///
 		/// \property TotalPoisonResist
-		int16_t TotalPoisonResist = 0;
+		int16_t TotalPoisonResist = {};
 
 		/// \brief Column [Class]: Class
 		///
 		/// \property Class
-		int16_t Class = 0;
+		int16_t Class = {};
 
 		/// \brief Column [UserSkillUse]: User skill use TODO - allow skill use?
 		///
 		/// \property UserSkillUse
-		uint8_t UserSkillUse = 0;
+		uint8_t UserSkillUse = {};
 
 		/// \brief Column [NeedItem]: Needs item
 		///
 		/// \property NeedItem
-		uint8_t NeedItem = 0;
+		uint8_t NeedItem = {};
 
 		/// \brief Column [SkillSuccessRate]: Skill success rate
 		///
 		/// \property SkillSuccessRate
-		uint8_t SkillSuccessRate = 0;
+		uint8_t SkillSuccessRate = {};
 
 		/// \brief Column [MonsterFriendly]: Do monsters ignore the player while transformed?
 		///
 		/// \property MonsterFriendly
-		uint8_t MonsterFriendly = 0;
+		uint8_t MonsterFriendly = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

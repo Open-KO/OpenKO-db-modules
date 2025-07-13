@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [iNum]: Magic number identifier
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Name]: Name
 		///
@@ -43,57 +43,57 @@ namespace full_model
 		/// \brief Column [ValidGroup]: Valid group
 		///
 		/// \property ValidGroup
-		uint8_t ValidGroup = 0;
+		uint8_t ValidGroup = {};
 
 		/// \brief Column [NationChange]: Nation change
 		///
 		/// \property NationChange
-		uint8_t NationChange = 0;
+		uint8_t NationChange = {};
 
 		/// \brief Column [MonsterNum]: Monster number
 		///
 		/// \property MonsterNumber
-		int16_t MonsterNumber = 0;
+		int16_t MonsterNumber = {};
 
 		/// \brief Column [TargetChange]: Target change
 		///
 		/// \property TargetChange
-		uint8_t TargetChange = 0;
+		uint8_t TargetChange = {};
 
 		/// \brief Column [StateChange]: State change
 		///
 		/// \property StateChange
-		uint8_t StateChange = 0;
+		uint8_t StateChange = {};
 
 		/// \brief Column [Radius]: Radius
 		///
 		/// \property Radius
-		int16_t Radius = 0;
+		int16_t Radius = {};
 
 		/// \brief Column [Hitrate]: Hit rate
 		///
 		/// \property HitRate
-		int16_t HitRate = 0;
+		int16_t HitRate = {};
 
 		/// \brief Column [Duration]: Duration
 		///
 		/// \property Duration
-		int16_t Duration = 0;
+		int16_t Duration = {};
 
 		/// \brief Column [AddDamage]: AddDamage
 		///
 		/// \property AddDamage
-		int16_t AddDamage = 0;
+		int16_t AddDamage = {};
 
 		/// \brief Column [Vision]: Vision
 		///
 		/// \property Vision
-		int16_t Vision = 0;
+		int16_t Vision = {};
 
 		/// \brief Column [NeedItem]: Needs item
 		///
 		/// \property NeedItem
-		int32_t NeedItem = 0;
+		int32_t NeedItem = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

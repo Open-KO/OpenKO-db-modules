@@ -28,7 +28,7 @@ namespace ebenezer_model
 		/// \brief Column [nRank]: Ranking
 		///
 		/// \property Rank
-		int16_t Rank = 0;
+		int16_t Rank = {};
 
 		/// \brief Column [strElmoUserID]: ElMorad user identifier
 		///
@@ -43,7 +43,7 @@ namespace ebenezer_model
 		/// \brief Column [nSalary]: Salary
 		///
 		/// \property Salary
-		int32_t Salary = 0;
+		int32_t Salary = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

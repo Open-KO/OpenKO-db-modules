@@ -27,77 +27,77 @@ namespace ebenezer_model
 		/// \brief Column [sClass]: ClassIdentifier
 		///
 		/// \property ClassId
-		int16_t ClassId = 0;
+		int16_t ClassId = {};
 
 		/// \brief Column [ShortSword]: Short Sword Coefficient
 		///
 		/// \property ShortSword
-		double ShortSword = 0;
+		double ShortSword = {};
 
 		/// \brief Column [Sword]: Sword Coefficient
 		///
 		/// \property Sword
-		double Sword = 0;
+		double Sword = {};
 
 		/// \brief Column [Axe]: Axe Coefficient
 		///
 		/// \property Axe
-		double Axe = 0;
+		double Axe = {};
 
 		/// \brief Column [Club]: Club Coefficient
 		///
 		/// \property Club
-		double Club = 0;
+		double Club = {};
 
 		/// \brief Column [Spear]: Spear Coefficient
 		///
 		/// \property Spear
-		double Spear = 0;
+		double Spear = {};
 
 		/// \brief Column [Pole]: Polearm Coefficient
 		///
 		/// \property Pole
-		double Pole = 0;
+		double Pole = {};
 
 		/// \brief Column [Staff]: Staff Coefficient
 		///
 		/// \property Staff
-		double Staff = 0;
+		double Staff = {};
 
 		/// \brief Column [Bow]: Bow Coefficient
 		///
 		/// \property Bow
-		double Bow = 0;
+		double Bow = {};
 
 		/// \brief Column [Hp]: Hit Point Coefficient
 		///
 		/// \property HitPoint
-		double HitPoint = 0;
+		double HitPoint = {};
 
 		/// \brief Column [Mp]: Mana Point Coefficient
 		///
 		/// \property ManaPoint
-		double ManaPoint = 0;
+		double ManaPoint = {};
 
 		/// \brief Column [Sp]: Sp Coefficient
 		///
 		/// \property Sp
-		double Sp = 0;
+		double Sp = {};
 
 		/// \brief Column [Ac]: Armor Coefficient
 		///
 		/// \property Armor
-		double Armor = 0;
+		double Armor = {};
 
 		/// \brief Column [Hitrate]: Hit Rate Coefficient
 		///
 		/// \property HitRate
-		double HitRate = 0;
+		double HitRate = {};
 
 		/// \brief Column [Evasionrate]: Evasion Rate Coefficient
 		///
 		/// \property Evasionrate
-		double Evasionrate = 0;
+		double Evasionrate = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

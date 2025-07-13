@@ -27,13 +27,13 @@ namespace aujard_model
 		/// \brief Column [Num]: Item number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Countable]: Price at which item can be sold to a merchant
 		///
 		/// \see EnumCountable
 		/// \property Countable
-		uint8_t Countable = 0;
+		uint8_t Countable = {};
 
 		/// \enum EnumCountable
 		/// \brief Known valid values for Countable

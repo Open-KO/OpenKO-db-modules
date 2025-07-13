@@ -32,102 +32,102 @@ namespace full_model
 		/// \brief Column [nSkill1]: Skill 1
 		///
 		/// \property Skill1
-		int32_t Skill1 = 0;
+		int32_t Skill1 = {};
 
 		/// \brief Column [nDuring1]: During 1
 		///
 		/// \property During1
-		int16_t During1 = 0;
+		int16_t During1 = {};
 
 		/// \brief Column [nSkill2]: Skill 2
 		///
 		/// \property Skill2
-		int32_t Skill2 = 0;
+		int32_t Skill2 = {};
 
 		/// \brief Column [nDuring2]: During 2
 		///
 		/// \property During2
-		int16_t During2 = 0;
+		int16_t During2 = {};
 
 		/// \brief Column [nSkill3]: Skill 3
 		///
 		/// \property Skill3
-		int32_t Skill3 = 0;
+		int32_t Skill3 = {};
 
 		/// \brief Column [nDuring3]: During 3
 		///
 		/// \property During3
-		int16_t During3 = 0;
+		int16_t During3 = {};
 
 		/// \brief Column [nSkill4]: Skill 4
 		///
 		/// \property Skill4
-		int32_t Skill4 = 0;
+		int32_t Skill4 = {};
 
 		/// \brief Column [nDuring4]: During 4
 		///
 		/// \property During4
-		int16_t During4 = 0;
+		int16_t During4 = {};
 
 		/// \brief Column [nSkill5]: Skill 5
 		///
 		/// \property Skill5
-		int32_t Skill5 = 0;
+		int32_t Skill5 = {};
 
 		/// \brief Column [nDuring5]: During 5
 		///
 		/// \property During5
-		int16_t During5 = 0;
+		int16_t During5 = {};
 
 		/// \brief Column [nSkill6]: Skill 6
 		///
 		/// \property Skill6
-		int32_t Skill6 = 0;
+		int32_t Skill6 = {};
 
 		/// \brief Column [nDuring6]: During 6
 		///
 		/// \property During6
-		int16_t During6 = 0;
+		int16_t During6 = {};
 
 		/// \brief Column [nSkill7]: Skill 7
 		///
 		/// \property Skill7
-		int32_t Skill7 = 0;
+		int32_t Skill7 = {};
 
 		/// \brief Column [nDuring7]: During 7
 		///
 		/// \property During7
-		int16_t During7 = 0;
+		int16_t During7 = {};
 
 		/// \brief Column [nSkill8]: Skill 8
 		///
 		/// \property Skill8
-		int32_t Skill8 = 0;
+		int32_t Skill8 = {};
 
 		/// \brief Column [nDuring8]: During 8
 		///
 		/// \property During8
-		int16_t During8 = 0;
+		int16_t During8 = {};
 
 		/// \brief Column [nSkill9]: Skill 9
 		///
 		/// \property Skill9
-		int32_t Skill9 = 0;
+		int32_t Skill9 = {};
 
 		/// \brief Column [nDuring9]: During 9
 		///
 		/// \property During9
-		int16_t During9 = 0;
+		int16_t During9 = {};
 
 		/// \brief Column [nSkill10]: Skill 10
 		///
 		/// \property Skill10
-		int32_t Skill10 = 0;
+		int32_t Skill10 = {};
 
 		/// \brief Column [nDuring10]: During 10
 		///
 		/// \property During10
-		int16_t During10 = 0;
+		int16_t During10 = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

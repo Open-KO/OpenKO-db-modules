@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [iNum]: Magic identification number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Name]: Name
 		///
@@ -44,7 +44,7 @@ namespace full_model
 		///
 		/// \see EnumType
 		/// \property Type
-		uint8_t Type = 0;
+		uint8_t Type = {};
 
 		/// \enum EnumType
 		/// \brief Known valid values for Type
@@ -58,42 +58,42 @@ namespace full_model
 		/// \brief Column [HitRate]: Hit chance modifier - 100 is normal
 		///
 		/// \property HitRateMod
-		int16_t HitRateMod = 0;
+		int16_t HitRateMod = {};
 
 		/// \brief Column [Hit]: Hit damage modifier - 100 is normal
 		///
 		/// \property DamageMod
-		int16_t DamageMod = 0;
+		int16_t DamageMod = {};
 
 		/// \brief Column [AddDamage]: Additional flat damage caused by ability
 		///
 		/// \property AddDamage
-		int16_t AddDamage = 0;
+		int16_t AddDamage = {};
 
 		/// \brief Column [Delay]: Delay TODO
 		///
 		/// \property Delay
-		uint8_t Delay = 0;
+		uint8_t Delay = {};
 
 		/// \brief Column [ComboType]: Combo type TODO
 		///
 		/// \property ComboType
-		uint8_t ComboType = 0;
+		uint8_t ComboType = {};
 
 		/// \brief Column [ComboCount]: Combo count TODO
 		///
 		/// \property ComboCount
-		uint8_t ComboCount = 0;
+		uint8_t ComboCount = {};
 
 		/// \brief Column [ComboDamage]: Combo damage multiplier
 		///
 		/// \property ComboDamage
-		int16_t ComboDamage = 0;
+		int16_t ComboDamage = {};
 
 		/// \brief Column [Range]: Maximum distance to target
 		///
 		/// \property Range
-		int16_t Range = 0;
+		int16_t Range = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

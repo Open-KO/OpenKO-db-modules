@@ -39,17 +39,17 @@ namespace full_model
 		/// \brief Column [ServerNo]: Server identifier
 		///
 		/// \property ServerId
-		int16_t ServerId = 0;
+		int16_t ServerId = {};
 
 		/// \brief Column [ItemID]: Item identifier
 		///
 		/// \property ItemId
-		int32_t ItemId = 0;
+		int32_t ItemId = {};
 
 		/// \brief Column [ItemCount]: Number of items granted on purchase
 		///
 		/// \property ItemCount
-		int16_t ItemCount = 0;
+		int16_t ItemCount = {};
 
 		/// \brief Column [BuyTime]: Time of purchase
 		///

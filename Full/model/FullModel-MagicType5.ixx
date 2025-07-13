@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [iNum]: Magic number identifier
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Name]: Name
 		///
@@ -44,7 +44,7 @@ namespace full_model
 		///
 		/// \see EnumType
 		/// \property Type
-		uint8_t Type = 0;
+		uint8_t Type = {};
 
 		/// \enum EnumType
 		/// \brief Known valid values for Type
@@ -60,12 +60,12 @@ namespace full_model
 		/// \brief Column [ExpRecover]: Percent of experience loss recovered
 		///
 		/// \property ExpRecover
-		uint8_t ExpRecover = 0;
+		uint8_t ExpRecover = {};
 
 		/// \brief Column [NeedStone]: Resurrection stones required
 		///
 		/// \property NeedStone
-		int16_t NeedStone = 0;
+		int16_t NeedStone = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

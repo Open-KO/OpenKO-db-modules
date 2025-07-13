@@ -27,52 +27,52 @@ namespace aiserver_model
 		/// \brief Column [byItemIndex]: Item index
 		///
 		/// \property ItemIndex
-		uint8_t ItemIndex = 0;
+		uint8_t ItemIndex = {};
 
 		/// \brief Column [byGrade_1]: Grade 1
 		///
 		/// \property Grade1
-		int16_t Grade1 = 0;
+		int16_t Grade1 = {};
 
 		/// \brief Column [byGrade_2]: Grade 2
 		///
 		/// \property Grade2
-		int16_t Grade2 = 0;
+		int16_t Grade2 = {};
 
 		/// \brief Column [byGrade_3]: Grade 3
 		///
 		/// \property Grade3
-		int16_t Grade3 = 0;
+		int16_t Grade3 = {};
 
 		/// \brief Column [byGrade_4]: Grade 4
 		///
 		/// \property Grade4
-		int16_t Grade4 = 0;
+		int16_t Grade4 = {};
 
 		/// \brief Column [byGrade_5]: Grade 5
 		///
 		/// \property Grade5
-		int16_t Grade5 = 0;
+		int16_t Grade5 = {};
 
 		/// \brief Column [byGrade_6]: Grade 6
 		///
 		/// \property Grade6
-		int16_t Grade6 = 0;
+		int16_t Grade6 = {};
 
 		/// \brief Column [byGrade_7]: Grade 7
 		///
 		/// \property Grade7
-		int16_t Grade7 = 0;
+		int16_t Grade7 = {};
 
 		/// \brief Column [byGrade_8]: Grade 8
 		///
 		/// \property Grade8
-		int16_t Grade8 = 0;
+		int16_t Grade8 = {};
 
 		/// \brief Column [byGrade_9]: Grade 9
 		///
 		/// \property Grade9
-		int16_t Grade9 = 0;
+		int16_t Grade9 = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

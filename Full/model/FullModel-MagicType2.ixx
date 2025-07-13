@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [iNum]: Magic identification number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Name]: Name
 		///
@@ -44,7 +44,7 @@ namespace full_model
 		///
 		/// \see EnumHitType
 		/// \property HitType
-		uint8_t HitType = 0;
+		uint8_t HitType = {};
 
 		/// \enum EnumHitType
 		/// \brief Known valid values for HitType
@@ -57,27 +57,27 @@ namespace full_model
 		/// \brief Column [HitRate]: Hit chance modifier - 100 is normal
 		///
 		/// \property HitRateMod
-		int16_t HitRateMod = 0;
+		int16_t HitRateMod = {};
 
 		/// \brief Column [AddDamage]: Hit damage modifier - 100 is normal
 		///
 		/// \property DamageMod
-		int16_t DamageMod = 0;
+		int16_t DamageMod = {};
 
 		/// \brief Column [AddRange]: Range modifier - 100 is normal
 		///
 		/// \property RangeMod
-		int16_t RangeMod = 0;
+		int16_t RangeMod = {};
 
 		/// \brief Column [NeedArrow]: Number of arrows needed for ability
 		///
 		/// \property NeedArrow
-		uint8_t NeedArrow = 0;
+		uint8_t NeedArrow = {};
 
 		/// \brief Column [AddDamagePlus]: Additional flat damage caused by ability
 		///
 		/// \property AddDamagePlus
-		int16_t AddDamagePlus = 0;
+		int16_t AddDamagePlus = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [iNum]: Magic identification number
 		///
 		/// \property ID
-		int32_t ID = 0;
+		int32_t ID = {};
 
 		/// \brief Column [Name]: Name
 		///
@@ -44,7 +44,7 @@ namespace full_model
 		///
 		/// \see EnumBuffType
 		/// \property BuffType
-		uint8_t BuffType = 0;
+		uint8_t BuffType = {};
 
 		/// \enum EnumBuffType
 		/// \brief Known valid values for BuffType
@@ -70,132 +70,132 @@ namespace full_model
 		/// \brief Column [Radius]: Area of effect circle radius
 		///
 		/// \property Radius
-		uint8_t Radius = 0;
+		uint8_t Radius = {};
 
 		/// \brief Column [Duration]: Effect duration
 		///
 		/// \property Duration
-		int16_t Duration = 0;
+		int16_t Duration = {};
 
 		/// \brief Column [AttackSpeed]: Attack speed modifier - 100 is normal
 		///
 		/// \property AttackSpeed
-		uint8_t AttackSpeed = 0;
+		uint8_t AttackSpeed = {};
 
 		/// \brief Column [Speed]: Movement speed modifier - 100 is normal
 		///
 		/// \property Speed
-		uint8_t Speed = 0;
+		uint8_t Speed = {};
 
 		/// \brief Column [AC]: Armor modifier
 		///
 		/// \property Armor
-		int16_t Armor = 0;
+		int16_t Armor = {};
 
 		/// \brief Column [ACPct]: Armor percent modifier
 		///
 		/// \property ArmorPercent
-		int16_t ArmorPercent = 0;
+		int16_t ArmorPercent = {};
 
 		/// \brief Column [Attack]: Attack power modifier
 		///
 		/// \property AttackPower
-		uint8_t AttackPower = 0;
+		uint8_t AttackPower = {};
 
 		/// \brief Column [MagicAttack]: Magic power modifier
 		///
 		/// \property MagicPower
-		uint8_t MagicPower = 0;
+		uint8_t MagicPower = {};
 
 		/// \brief Column [MaxHP]: Maximum health modifier
 		///
 		/// \property MaxHp
-		int16_t MaxHp = 0;
+		int16_t MaxHp = {};
 
 		/// \brief Column [MaxHpPct]: Maximum health percent modifier
 		///
 		/// \property MaxHpPercent
-		int16_t MaxHpPercent = 0;
+		int16_t MaxHpPercent = {};
 
 		/// \brief Column [MaxMP]: Maximum mana modifier
 		///
 		/// \property MaxMp
-		int16_t MaxMp = 0;
+		int16_t MaxMp = {};
 
 		/// \brief Column [MaxMpPct]: Maximum mana percent modifier
 		///
 		/// \property MaxMpPercent
-		int16_t MaxMpPercent = 0;
+		int16_t MaxMpPercent = {};
 
 		/// \brief Column [HitRate]: Hit chance multiplier
 		///
 		/// \property HitRate
-		uint8_t HitRate = 0;
+		uint8_t HitRate = {};
 
 		/// \brief Column [AvoidRate]: Evasion chance multiplier
 		///
 		/// \property AvoidRate
-		int16_t AvoidRate = 0;
+		int16_t AvoidRate = {};
 
 		/// \brief Column [Str]: Strength modifier
 		///
 		/// \property Strength
-		int16_t Strength = 0;
+		int16_t Strength = {};
 
 		/// \brief Column [Sta]: Stamina modifier
 		///
 		/// \property Stamina
-		int16_t Stamina = 0;
+		int16_t Stamina = {};
 
 		/// \brief Column [Dex]: Dexterity modifier
 		///
 		/// \property Dexterity
-		int16_t Dexterity = 0;
+		int16_t Dexterity = {};
 
 		/// \brief Column [Intel]: Intelligence modifier
 		///
 		/// \property Intelligence
-		int16_t Intelligence = 0;
+		int16_t Intelligence = {};
 
 		/// \brief Column [Cha]: Charisma modifier
 		///
 		/// \property Charisma
-		int16_t Charisma = 0;
+		int16_t Charisma = {};
 
 		/// \brief Column [FireR]: Fire resistance
 		///
 		/// \property FireResist
-		uint8_t FireResist = 0;
+		uint8_t FireResist = {};
 
 		/// \brief Column [ColdR]: Cold resistance
 		///
 		/// \property ColdResist
-		uint8_t ColdResist = 0;
+		uint8_t ColdResist = {};
 
 		/// \brief Column [LightningR]: Lightning resistance
 		///
 		/// \property LightningResist
-		uint8_t LightningResist = 0;
+		uint8_t LightningResist = {};
 
 		/// \brief Column [MagicR]: Magic resistance
 		///
 		/// \property MagicResist
-		uint8_t MagicResist = 0;
+		uint8_t MagicResist = {};
 
 		/// \brief Column [DiseaseR]: Disease resistance
 		///
 		/// \property DiseaseResist
-		uint8_t DiseaseResist = 0;
+		uint8_t DiseaseResist = {};
 
 		/// \brief Column [PoisonR]: Poison resistance
 		///
 		/// \property PoisonResist
-		uint8_t PoisonResist = 0;
+		uint8_t PoisonResist = {};
 
 		/// \brief Column [ExpPct]: Experience percentage modifier
 		///
 		/// \property ExpPercent
-		uint8_t ExpPercent = 0;
+		uint8_t ExpPercent = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

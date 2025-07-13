@@ -27,17 +27,17 @@ namespace full_model
 		/// \brief Column [byType]: Type TODO
 		///
 		/// \property Type
-		uint8_t Type = 0;
+		uint8_t Type = {};
 
 		/// \brief Column [byNation]: Nation identifier
 		///
 		/// \property Nation
-		uint8_t Nation = 0;
+		uint8_t Nation = {};
 
 		/// \brief Column [nKnights]: Knights identifier (Knights.IDNum)
 		///
 		/// \property Knights
-		int16_t Knights = 0;
+		int16_t Knights = {};
 
 		/// \brief Column [strName]: Name TODO
 		///
@@ -47,7 +47,7 @@ namespace full_model
 		/// \brief Column [nMoney]: Money TODO
 		///
 		/// \property Money
-		int32_t Money = 0;
+		int32_t Money = {};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

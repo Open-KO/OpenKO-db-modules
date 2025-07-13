@@ -28,7 +28,7 @@ namespace full_model
 		/// \brief Column [sCastleIndex]: Castle identifier TODO mostly lines up with k_npc.ssid
 		///
 		/// \property CastleIndex
-		int16_t CastleIndex = 0;
+		int16_t CastleIndex = {};
 
 		/// \brief Column [byChangeItem]: Change Item TODO
 		///

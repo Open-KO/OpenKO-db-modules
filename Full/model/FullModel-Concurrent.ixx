@@ -28,22 +28,22 @@ namespace full_model
 		/// \brief Column [serverid]: Server Identifier
 		///
 		/// \property ServerId
-		uint8_t ServerId = 0;
+		uint8_t ServerId = {};
 
 		/// \brief Column [zone1_count]: Zone 1 Count
 		///
 		/// \property Zone1Count
-		int16_t Zone1Count = 0;
+		int16_t Zone1Count = {};
 
 		/// \brief Column [zone2_count]: Zone 2 Count
 		///
 		/// \property Zone2Count
-		int16_t Zone2Count = 0;
+		int16_t Zone2Count = {};
 
 		/// \brief Column [zone3_count]: Zone 3 Count
 		///
 		/// \property Zone3Count
-		int16_t Zone3Count = 0;
+		int16_t Zone3Count = {};
 
 		/// \brief Column [bz]: Bz: TODO
 		///
