@@ -1,5 +1,6 @@
 module;
 
+#include <cstdint>
 #include <ctime>
 #include <string>
 #include <unordered_set>
@@ -37,7 +38,7 @@ namespace full_model
 		/// \brief Column [strHackToolName]: Name of the hack tool detected
 		///
 		/// \property HackToolName
-		std::string HackToolName;
+		std::vector<uint8_t> HackToolName;
 
 		/// \brief Column [tWriteTime]: Log time
 		///

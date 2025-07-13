@@ -47,7 +47,7 @@ namespace full_binder
 		/// \brief Binds a result's column to SkillData
 		static void BindSkillData(full_model::UserDataSkillShortcut& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<std::string>(colIndex, m.SkillData);
+			result.get_ref<std::vector<uint8_t>>(colIndex, m.SkillData);
 		}
 
 	};

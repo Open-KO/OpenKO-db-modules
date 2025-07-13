@@ -231,7 +231,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.Stash = result.get<std::string>(colIndex);
+				m.Stash = result.get<std::vector<uint8_t>>(colIndex);
 			}
 		}
 

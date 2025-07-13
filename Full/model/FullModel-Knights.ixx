@@ -139,7 +139,7 @@ namespace full_model
 		/// \brief Column [Stash]: Stash TODO
 		///
 		/// \property Stash
-		std::optional<std::string> Stash;
+		std::optional<std::vector<uint8_t>> Stash;
 
 		/// \brief Column [bySiegeFlag]: Siege flag
 		///

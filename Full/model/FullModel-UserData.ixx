@@ -234,12 +234,12 @@ namespace full_model
 		/// \brief Column [strItem]: Character inventory
 		///
 		/// \property ItemData
-		std::optional<std::string> ItemData;
+		std::optional<std::vector<uint8_t>> ItemData;
 
 		/// \brief Column [strSerial]: Serial TODO
 		///
 		/// \property Serial
-		std::optional<std::string> Serial;
+		std::optional<std::vector<uint8_t>> Serial;
 
 		/// \brief Column [sQuestCount]: Completed quest count
 		///
@@ -249,7 +249,7 @@ namespace full_model
 		/// \brief Column [strQuest]: Quest data
 		///
 		/// \property QuestData
-		std::optional<std::string> QuestData;
+		std::optional<std::vector<uint8_t>> QuestData;
 
 		/// \brief Column [MannerPoint]: Manner points are awarded when a higher level character helps a Beginner Knight level up
 		///

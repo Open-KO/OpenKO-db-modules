@@ -61,7 +61,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.ItemData = result.get<std::string>(colIndex);
+				m.ItemData = result.get<std::vector<uint8_t>>(colIndex);
 			}
 		}
 
@@ -74,7 +74,7 @@ namespace full_binder
 			}
 			else
 			{
-				m.Serial = result.get<std::string>(colIndex);
+				m.Serial = result.get<std::vector<uint8_t>>(colIndex);
 			}
 		}
 

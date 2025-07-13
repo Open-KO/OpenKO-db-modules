@@ -43,12 +43,12 @@ namespace full_model
 		/// \brief Column [WarehouseData]: Data on items stored in the warehouse
 		///
 		/// \property ItemData
-		std::optional<std::string> ItemData;
+		std::optional<std::vector<uint8_t>> ItemData;
 
 		/// \brief Column [strSerial]: Serial TODO
 		///
 		/// \property Serial
-		std::optional<std::string> Serial;
+		std::optional<std::vector<uint8_t>> Serial;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

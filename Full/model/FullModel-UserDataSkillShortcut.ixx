@@ -37,7 +37,7 @@ namespace full_model
 		/// \brief Column [strSkillData]: Skill data
 		///
 		/// \property SkillData
-		std::string SkillData;
+		std::vector<uint8_t> SkillData;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()
