@@ -39,7 +39,7 @@ namespace ebenezer_model
 		/// \see EnumKind
 		/// \property Kind
 		uint8_t Kind = 0;
-	
+
 		/// \enum EnumKind
 		/// \brief Known valid values for Kind
 		enum class EnumKind
@@ -67,7 +67,7 @@ namespace ebenezer_model
 		/// \see EnumSlot
 		/// \property Slot
 		uint8_t Slot = 0;
-	
+
 		/// \enum EnumSlot
 		/// \brief Known valid values for Slot
 		enum class EnumSlot
@@ -94,7 +94,7 @@ namespace ebenezer_model
 		/// \see EnumRace
 		/// \property Race
 		uint8_t Race = 0;
-	
+
 		/// \enum EnumRace
 		/// \brief Known valid values for Race
 		enum class EnumRace
@@ -109,7 +109,7 @@ namespace ebenezer_model
 		/// \see EnumClassId
 		/// \property ClassId
 		uint8_t ClassId = 0;
-	
+
 		/// \enum EnumClassId
 		/// \brief Known valid values for Class
 		enum class EnumClassId
@@ -198,7 +198,7 @@ namespace ebenezer_model
 		/// \see EnumCountable
 		/// \property Countable
 		uint8_t Countable = 0;
-	
+
 		/// \enum EnumCountable
 		/// \brief Known valid values for Countable
 		enum class EnumCountable
@@ -218,7 +218,7 @@ namespace ebenezer_model
 		/// \see EnumSpecialEffect
 		/// \property SpecialEffect
 		int32_t SpecialEffect = 0;
-	
+
 		/// \enum EnumSpecialEffect
 		/// \brief Known valid values for Effect2
 		enum class EnumSpecialEffect
@@ -252,7 +252,7 @@ namespace ebenezer_model
 		/// \see EnumRequiredTitle
 		/// \property RequiredTitle
 		uint8_t RequiredTitle = 0;
-	
+
 		/// \enum EnumRequiredTitle
 		/// \brief Known valid values for ReqTitle
 		enum class EnumRequiredTitle

@@ -34,7 +34,7 @@ namespace aiserver_model
 		/// \see EnumHitType
 		/// \property HitType
 		uint8_t HitType = 0;
-	
+
 		/// \enum EnumHitType
 		/// \brief Known valid values for HitType
 		enum class EnumHitType

@@ -60,7 +60,7 @@ namespace full_model
 		/// \see EnumTargetChange
 		/// \property TargetChange
 		uint8_t TargetChange = 0;
-	
+
 		/// \enum EnumTargetChange
 		/// \brief Known valid values for byTargetChange
 		enum class EnumTargetChange

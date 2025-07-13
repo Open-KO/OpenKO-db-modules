@@ -35,50 +35,60 @@ namespace full_model
 		/// \property ItemId1
 		int32_t ItemId1 = 0;
 
-		/// \brief Column [sPersent01]: Chance for item 1 to drop
-		///
-		/// \property DropChance1
-		std::optional<int16_t> DropChance1;
+		/// \brief Union array grouping for columns sPersent_N
+		/// \union DropChance
+		union
+		{
+			std::optional<int16_t> DropChance[5];
+
+			struct
+			{
+				/// \brief Column [sPersent01]: Chance for item 1 to drop
+				///
+				/// \property DropChance1
+				std::optional<int16_t> DropChance1;
+
+				/// \brief Column [sPersent02]: Chance for item 2 to drop
+				///
+				/// \property DropChance2
+				std::optional<int16_t> DropChance2;
+
+				/// \brief Column [sPersent03]: Chance for item 3 to drop
+				///
+				/// \property DropChance3
+				std::optional<int16_t> DropChance3;
+
+				/// \brief Column [sPersent04]: Chance for item 4 to drop
+				///
+				/// \property DropChance4
+				std::optional<int16_t> DropChance4;
+
+				/// \brief Column [sPersent05]: Chance for item 5 to drop
+				///
+				/// \property DropChance5
+				std::optional<int16_t> DropChance5;
+			};
+		};
 
 		/// \brief Column [iItem02]: Item identifier 2
 		///
 		/// \property ItemId2
 		std::optional<int32_t> ItemId2;
 
-		/// \brief Column [sPersent02]: Chance for item 2 to drop
-		///
-		/// \property DropChance2
-		std::optional<int16_t> DropChance2;
-
 		/// \brief Column [iItem03]: Item identifier 3
 		///
 		/// \property ItemId3
 		std::optional<int32_t> ItemId3;
-
-		/// \brief Column [sPersent03]: Chance for item 3 to drop
-		///
-		/// \property DropChance3
-		std::optional<int16_t> DropChance3;
 
 		/// \brief Column [iItem04]: Item identifier 4
 		///
 		/// \property ItemId4
 		std::optional<int32_t> ItemId4;
 
-		/// \brief Column [sPersent04]: Chance for item 4 to drop
-		///
-		/// \property DropChance4
-		std::optional<int16_t> DropChance4;
-
 		/// \brief Column [iItem05]: Item identifier 5
 		///
 		/// \property ItemId5
 		std::optional<int32_t> ItemId5;
-
-		/// \brief Column [sPersent05]: Chance for item 5 to drop
-		///
-		/// \property DropChance5
-		std::optional<int16_t> DropChance5;
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

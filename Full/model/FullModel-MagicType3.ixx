@@ -55,7 +55,7 @@ namespace full_model
 		/// \see EnumDirectType
 		/// \property DirectType
 		uint8_t DirectType = 0;
-	
+
 		/// \enum EnumDirectType
 		/// \brief Known valid values for DirectType
 		enum class EnumDirectType

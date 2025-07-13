@@ -29,155 +29,165 @@ namespace aiserver_model
 		/// \property ItemGroupNumber
 		int32_t ItemGroupNumber = 0;
 
-		/// \brief Column [iItem_1]: Item 1
-		///
-		/// \property Item1
-		int32_t Item1 = 0;
+		/// \brief Union array grouping for columns iItem_N
+		/// \union Item
+		union
+		{
+			int32_t Item[30] = {};
 
-		/// \brief Column [iItem_2]: Item 2
-		///
-		/// \property Item2
-		int32_t Item2 = 0;
+			struct
+			{
+				/// \brief Column [iItem_1]: Item 1
+				///
+				/// \property Item1
+				int32_t Item1;
 
-		/// \brief Column [iItem_3]: Item 3
-		///
-		/// \property Item3
-		int32_t Item3 = 0;
+				/// \brief Column [iItem_2]: Item 2
+				///
+				/// \property Item2
+				int32_t Item2;
 
-		/// \brief Column [iItem_4]: Item 4
-		///
-		/// \property Item4
-		int32_t Item4 = 0;
+				/// \brief Column [iItem_3]: Item 3
+				///
+				/// \property Item3
+				int32_t Item3;
 
-		/// \brief Column [iItem_5]: Item 5
-		///
-		/// \property Item5
-		int32_t Item5 = 0;
+				/// \brief Column [iItem_4]: Item 4
+				///
+				/// \property Item4
+				int32_t Item4;
 
-		/// \brief Column [iItem_6]: Item 6
-		///
-		/// \property Item6
-		int32_t Item6 = 0;
+				/// \brief Column [iItem_5]: Item 5
+				///
+				/// \property Item5
+				int32_t Item5;
 
-		/// \brief Column [iItem_7]: Item 7
-		///
-		/// \property Item7
-		int32_t Item7 = 0;
+				/// \brief Column [iItem_6]: Item 6
+				///
+				/// \property Item6
+				int32_t Item6;
 
-		/// \brief Column [iItem_8]: Item 8
-		///
-		/// \property Item8
-		int32_t Item8 = 0;
+				/// \brief Column [iItem_7]: Item 7
+				///
+				/// \property Item7
+				int32_t Item7;
 
-		/// \brief Column [iItem_9]: Item 9
-		///
-		/// \property Item9
-		int32_t Item9 = 0;
+				/// \brief Column [iItem_8]: Item 8
+				///
+				/// \property Item8
+				int32_t Item8;
 
-		/// \brief Column [iItem_10]: Item10
-		///
-		/// \property Item10
-		int32_t Item10 = 0;
+				/// \brief Column [iItem_9]: Item 9
+				///
+				/// \property Item9
+				int32_t Item9;
 
-		/// \brief Column [iItem_11]: Item 11
-		///
-		/// \property Item11
-		int32_t Item11 = 0;
+				/// \brief Column [iItem_10]: Item10
+				///
+				/// \property Item10
+				int32_t Item10;
 
-		/// \brief Column [iItem_12]: Item 12
-		///
-		/// \property Item12
-		int32_t Item12 = 0;
+				/// \brief Column [iItem_11]: Item 11
+				///
+				/// \property Item11
+				int32_t Item11;
 
-		/// \brief Column [iItem_13]: Item 13
-		///
-		/// \property Item13
-		int32_t Item13 = 0;
+				/// \brief Column [iItem_12]: Item 12
+				///
+				/// \property Item12
+				int32_t Item12;
 
-		/// \brief Column [iItem_14]: Item 14
-		///
-		/// \property Item14
-		int32_t Item14 = 0;
+				/// \brief Column [iItem_13]: Item 13
+				///
+				/// \property Item13
+				int32_t Item13;
 
-		/// \brief Column [iItem_15]: Item 15
-		///
-		/// \property Item15
-		int32_t Item15 = 0;
+				/// \brief Column [iItem_14]: Item 14
+				///
+				/// \property Item14
+				int32_t Item14;
 
-		/// \brief Column [iItem_16]: Item 16
-		///
-		/// \property Item16
-		int32_t Item16 = 0;
+				/// \brief Column [iItem_15]: Item 15
+				///
+				/// \property Item15
+				int32_t Item15;
 
-		/// \brief Column [iItem_17]: Item 17
-		///
-		/// \property Item17
-		int32_t Item17 = 0;
+				/// \brief Column [iItem_16]: Item 16
+				///
+				/// \property Item16
+				int32_t Item16;
 
-		/// \brief Column [iItem_18]: Item 18
-		///
-		/// \property Item18
-		int32_t Item18 = 0;
+				/// \brief Column [iItem_17]: Item 17
+				///
+				/// \property Item17
+				int32_t Item17;
 
-		/// \brief Column [iItem_19]: Item 19
-		///
-		/// \property Item19
-		int32_t Item19 = 0;
+				/// \brief Column [iItem_18]: Item 18
+				///
+				/// \property Item18
+				int32_t Item18;
 
-		/// \brief Column [iItem_20]: Item 20
-		///
-		/// \property Item20
-		int32_t Item20 = 0;
+				/// \brief Column [iItem_19]: Item 19
+				///
+				/// \property Item19
+				int32_t Item19;
 
-		/// \brief Column [iItem_21]: Item 21
-		///
-		/// \property Item21
-		int32_t Item21 = 0;
+				/// \brief Column [iItem_20]: Item 20
+				///
+				/// \property Item20
+				int32_t Item20;
 
-		/// \brief Column [iItem_22]: Item 22
-		///
-		/// \property Item22
-		int32_t Item22 = 0;
+				/// \brief Column [iItem_21]: Item 21
+				///
+				/// \property Item21
+				int32_t Item21;
 
-		/// \brief Column [iItem_23]: Item 23
-		///
-		/// \property Item23
-		int32_t Item23 = 0;
+				/// \brief Column [iItem_22]: Item 22
+				///
+				/// \property Item22
+				int32_t Item22;
 
-		/// \brief Column [iItem_24]: Item 24
-		///
-		/// \property Item24
-		int32_t Item24 = 0;
+				/// \brief Column [iItem_23]: Item 23
+				///
+				/// \property Item23
+				int32_t Item23;
 
-		/// \brief Column [iItem_25]: Item 25
-		///
-		/// \property Item25
-		int32_t Item25 = 0;
+				/// \brief Column [iItem_24]: Item 24
+				///
+				/// \property Item24
+				int32_t Item24;
 
-		/// \brief Column [iItem_26]: Item 26
-		///
-		/// \property Item26
-		int32_t Item26 = 0;
+				/// \brief Column [iItem_25]: Item 25
+				///
+				/// \property Item25
+				int32_t Item25;
 
-		/// \brief Column [iItem_27]: Item 27
-		///
-		/// \property Item27
-		int32_t Item27 = 0;
+				/// \brief Column [iItem_26]: Item 26
+				///
+				/// \property Item26
+				int32_t Item26;
 
-		/// \brief Column [iItem_28]: Item 28
-		///
-		/// \property Item28
-		int32_t Item28 = 0;
+				/// \brief Column [iItem_27]: Item 27
+				///
+				/// \property Item27
+				int32_t Item27;
 
-		/// \brief Column [iItem_29]: Item 29
-		///
-		/// \property Item29
-		int32_t Item29 = 0;
+				/// \brief Column [iItem_28]: Item 28
+				///
+				/// \property Item28
+				int32_t Item28;
 
-		/// \brief Column [iItem_30]: Item 30
-		///
-		/// \property Item30
-		int32_t Item30 = 0;
+				/// \brief Column [iItem_29]: Item 29
+				///
+				/// \property Item29
+				int32_t Item29;
+
+				/// \brief Column [iItem_30]: Item 30
+				///
+				/// \property Item30
+				int32_t Item30;
+			};
+		};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

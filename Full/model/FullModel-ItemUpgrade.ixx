@@ -54,45 +54,55 @@ namespace full_model
 		/// \property OriginItem
 		int16_t OriginItem = 0;
 
-		/// \brief Column [nReqItem1]: Required item 1 identifier
-		///
-		/// \property RequiredItem1
-		int32_t RequiredItem1 = 0;
+		/// \brief Union array grouping for columns nReqItemN
+		/// \union RequiredItem
+		union
+		{
+			int32_t RequiredItem[8] = {};
 
-		/// \brief Column [nReqItem2]: Required item 2 identifier
-		///
-		/// \property RequiredItem2
-		int32_t RequiredItem2 = 0;
+			struct
+			{
+				/// \brief Column [nReqItem1]: Required item 1 identifier
+				///
+				/// \property RequiredItem1
+				int32_t RequiredItem1;
 
-		/// \brief Column [nReqItem3]: Required item 3 identifier
-		///
-		/// \property RequiredItem3
-		int32_t RequiredItem3 = 0;
+				/// \brief Column [nReqItem2]: Required item 2 identifier
+				///
+				/// \property RequiredItem2
+				int32_t RequiredItem2;
 
-		/// \brief Column [nReqItem4]: Required item 4 identifier
-		///
-		/// \property RequiredItem4
-		int32_t RequiredItem4 = 0;
+				/// \brief Column [nReqItem3]: Required item 3 identifier
+				///
+				/// \property RequiredItem3
+				int32_t RequiredItem3;
 
-		/// \brief Column [nReqItem5]: Required item 5 identifier
-		///
-		/// \property RequiredItem5
-		int32_t RequiredItem5 = 0;
+				/// \brief Column [nReqItem4]: Required item 4 identifier
+				///
+				/// \property RequiredItem4
+				int32_t RequiredItem4;
 
-		/// \brief Column [nReqItem6]: Required item 6 identifier
-		///
-		/// \property RequiredItem6
-		int32_t RequiredItem6 = 0;
+				/// \brief Column [nReqItem5]: Required item 5 identifier
+				///
+				/// \property RequiredItem5
+				int32_t RequiredItem5;
 
-		/// \brief Column [nReqItem7]: Required item 7 identifier
-		///
-		/// \property RequiredItem7
-		int32_t RequiredItem7 = 0;
+				/// \brief Column [nReqItem6]: Required item 6 identifier
+				///
+				/// \property RequiredItem6
+				int32_t RequiredItem6;
 
-		/// \brief Column [nReqItem8]: Required item 8 identifier
-		///
-		/// \property RequiredItem8
-		int32_t RequiredItem8 = 0;
+				/// \brief Column [nReqItem7]: Required item 7 identifier
+				///
+				/// \property RequiredItem7
+				int32_t RequiredItem7;
+
+				/// \brief Column [nReqItem8]: Required item 8 identifier
+				///
+				/// \property RequiredItem8
+				int32_t RequiredItem8;
+			};
+		};
 
 		/// \brief Column [nReqNoah]: Coins required to upgrade
 		///

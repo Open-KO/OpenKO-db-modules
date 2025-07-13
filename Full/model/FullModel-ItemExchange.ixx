@@ -49,105 +49,145 @@ namespace full_model
 		/// \property RandomFlag
 		uint8_t RandomFlag = 0;
 
-		/// \brief Column [nOriginItemNum1]: Player item 1 needed for exchange
-		///
-		/// \property OriginItemNumber1
-		int32_t OriginItemNumber1 = 0;
+		/// \brief Union array grouping for columns nOriginItemNumN
+		/// \union OriginItemNumber
+		union
+		{
+			int32_t OriginItemNumber[5] = {};
 
-		/// \brief Column [nOriginItemCount1]: Number of item 1 needed for exchange
-		///
-		/// \property OriginItemCount1
-		int16_t OriginItemCount1 = 0;
+			struct
+			{
+				/// \brief Column [nOriginItemNum1]: Player item 1 needed for exchange
+				///
+				/// \property OriginItemNumber1
+				int32_t OriginItemNumber1;
 
-		/// \brief Column [nOriginItemNum2]: Player item 2 needed for exchange
-		///
-		/// \property OriginItemNumber2
-		int32_t OriginItemNumber2 = 0;
+				/// \brief Column [nOriginItemNum2]: Player item 2 needed for exchange
+				///
+				/// \property OriginItemNumber2
+				int32_t OriginItemNumber2;
 
-		/// \brief Column [nOriginItemCount2]: Number of item 2 needed for exchange
-		///
-		/// \property OriginItemCount2
-		int16_t OriginItemCount2 = 0;
+				/// \brief Column [nOriginItemNum3]: Player item 3 needed for exchange
+				///
+				/// \property OriginItemNumber3
+				int32_t OriginItemNumber3;
 
-		/// \brief Column [nOriginItemNum3]: Player item 3 needed for exchange
-		///
-		/// \property OriginItemNumber3
-		int32_t OriginItemNumber3 = 0;
+				/// \brief Column [nOriginItemNum4]: Player item 4 needed for exchange
+				///
+				/// \property OriginItemNumber4
+				int32_t OriginItemNumber4;
 
-		/// \brief Column [nOriginItemCount3]: Number of item 3 needed for exchange
-		///
-		/// \property OriginItemCount3
-		int16_t OriginItemCount3 = 0;
+				/// \brief Column [nOriginItemNum5]: Player item 5 needed for exchange
+				///
+				/// \property OriginItemNumber5
+				int32_t OriginItemNumber5;
+			};
+		};
 
-		/// \brief Column [nOriginItemNum4]: Player item 4 needed for exchange
-		///
-		/// \property OriginItemNumber4
-		int32_t OriginItemNumber4 = 0;
+		/// \brief Union array grouping for columns nOriginItemCountN
+		/// \union OriginItemCount
+		union
+		{
+			int16_t OriginItemCount[5] = {};
 
-		/// \brief Column [nOriginItemCount4]: Number of item 4 needed for exchange
-		///
-		/// \property OriginItemCount4
-		int16_t OriginItemCount4 = 0;
+			struct
+			{
+				/// \brief Column [nOriginItemCount1]: Number of item 1 needed for exchange
+				///
+				/// \property OriginItemCount1
+				int16_t OriginItemCount1;
 
-		/// \brief Column [nOriginItemNum5]: Player item 5 needed for exchange
-		///
-		/// \property OriginItemNumber5
-		int32_t OriginItemNumber5 = 0;
+				/// \brief Column [nOriginItemCount2]: Number of item 2 needed for exchange
+				///
+				/// \property OriginItemCount2
+				int16_t OriginItemCount2;
 
-		/// \brief Column [nOriginItemCount5]: Number of item 5 needed for exchange
-		///
-		/// \property OriginItemCount5
-		int16_t OriginItemCount5 = 0;
+				/// \brief Column [nOriginItemCount3]: Number of item 3 needed for exchange
+				///
+				/// \property OriginItemCount3
+				int16_t OriginItemCount3;
 
-		/// \brief Column [nExchangeItemNum1]: NPC item 1 given in exchange
-		///
-		/// \property ExchangeItemNumber1
-		int32_t ExchangeItemNumber1 = 0;
+				/// \brief Column [nOriginItemCount4]: Number of item 4 needed for exchange
+				///
+				/// \property OriginItemCount4
+				int16_t OriginItemCount4;
 
-		/// \brief Column [nExchangeItemCount1]: Number of item 1 given for exchange
-		///
-		/// \property ExchangeItemCount1
-		int16_t ExchangeItemCount1 = 0;
+				/// \brief Column [nOriginItemCount5]: Number of item 5 needed for exchange
+				///
+				/// \property OriginItemCount5
+				int16_t OriginItemCount5;
+			};
+		};
 
-		/// \brief Column [nExchangeItemNum2]: NPC item 2 given in exchange
-		///
-		/// \property ExchangeItemNumber2
-		int32_t ExchangeItemNumber2 = 0;
+		/// \brief Union array grouping for columns nExchangeItemNumN
+		/// \union ExchangeItemNumber
+		union
+		{
+			int32_t ExchangeItemNumber[5] = {};
 
-		/// \brief Column [nExchangeItemCount2]: Number of item 2 given for exchange
-		///
-		/// \property ExchangeItemCount2
-		int16_t ExchangeItemCount2 = 0;
+			struct
+			{
+				/// \brief Column [nExchangeItemNum1]: NPC item 1 given in exchange
+				///
+				/// \property ExchangeItemNumber1
+				int32_t ExchangeItemNumber1;
 
-		/// \brief Column [nExchangeItemNum3]: NPC item 3 given in exchange
-		///
-		/// \property ExchangeItemNumber3
-		int32_t ExchangeItemNumber3 = 0;
+				/// \brief Column [nExchangeItemNum2]: NPC item 2 given in exchange
+				///
+				/// \property ExchangeItemNumber2
+				int32_t ExchangeItemNumber2;
 
-		/// \brief Column [nExchangeItemCount3]: Number of item 3 given for exchange
-		///
-		/// \property ExchangeItemCount3
-		int16_t ExchangeItemCount3 = 0;
+				/// \brief Column [nExchangeItemNum3]: NPC item 3 given in exchange
+				///
+				/// \property ExchangeItemNumber3
+				int32_t ExchangeItemNumber3;
 
-		/// \brief Column [nExchangeItemNum4]: NPC item 4 given in exchange
-		///
-		/// \property ExchangeItemNumber4
-		int32_t ExchangeItemNumber4 = 0;
+				/// \brief Column [nExchangeItemNum4]: NPC item 4 given in exchange
+				///
+				/// \property ExchangeItemNumber4
+				int32_t ExchangeItemNumber4;
 
-		/// \brief Column [nExchangeItemCount4]: Number of item 4 given for exchange
-		///
-		/// \property ExchangeItemCount4
-		int16_t ExchangeItemCount4 = 0;
+				/// \brief Column [nExchangeItemNum5]: NPC item 5 given in exchange
+				///
+				/// \property ExchangeItemNumber5
+				int32_t ExchangeItemNumber5;
+			};
+		};
 
-		/// \brief Column [nExchangeItemNum5]: NPC item 5 given in exchange
-		///
-		/// \property ExchangeItemNumber5
-		int32_t ExchangeItemNumber5 = 0;
+		/// \brief Union array grouping for columns nExchangeItemCountN
+		/// \union ExchangeItemCount
+		union
+		{
+			int16_t ExchangeItemCount[5] = {};
 
-		/// \brief Column [nExchangeItemCount5]: Number of item 5 given for exchange
-		///
-		/// \property ExchangeItemCount5
-		int16_t ExchangeItemCount5 = 0;
+			struct
+			{
+				/// \brief Column [nExchangeItemCount1]: Number of item 1 given for exchange
+				///
+				/// \property ExchangeItemCount1
+				int16_t ExchangeItemCount1;
+
+				/// \brief Column [nExchangeItemCount2]: Number of item 2 given for exchange
+				///
+				/// \property ExchangeItemCount2
+				int16_t ExchangeItemCount2;
+
+				/// \brief Column [nExchangeItemCount3]: Number of item 3 given for exchange
+				///
+				/// \property ExchangeItemCount3
+				int16_t ExchangeItemCount3;
+
+				/// \brief Column [nExchangeItemCount4]: Number of item 4 given for exchange
+				///
+				/// \property ExchangeItemCount4
+				int16_t ExchangeItemCount4;
+
+				/// \brief Column [nExchangeItemCount5]: Number of item 5 given for exchange
+				///
+				/// \property ExchangeItemCount5
+				int16_t ExchangeItemCount5;
+			};
+		};
 
 		/// \brief Returns the table name
 		static const std::string& TableName()

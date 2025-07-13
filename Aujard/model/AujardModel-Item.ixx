@@ -34,7 +34,7 @@ namespace aujard_model
 		/// \see EnumCountable
 		/// \property Countable
 		uint8_t Countable = 0;
-	
+
 		/// \enum EnumCountable
 		/// \brief Known valid values for Countable
 		enum class EnumCountable

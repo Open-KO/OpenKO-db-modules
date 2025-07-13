@@ -45,7 +45,7 @@ namespace full_model
 		/// \see EnumBuffType
 		/// \property BuffType
 		uint8_t BuffType = 0;
-	
+
 		/// \enum EnumBuffType
 		/// \brief Known valid values for BuffType
 		enum class EnumBuffType

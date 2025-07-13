@@ -34,7 +34,7 @@ namespace ebenezer_model
 		/// \see EnumType
 		/// \property Type
 		uint8_t Type = 0;
-	
+
 		/// \enum EnumType
 		/// \brief Known valid values for Type
 		enum class EnumType

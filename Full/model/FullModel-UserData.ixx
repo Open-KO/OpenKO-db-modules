@@ -41,7 +41,7 @@ namespace full_model
 		/// \see EnumRace
 		/// \property Race
 		uint8_t Race = 0;
-	
+
 		/// \enum EnumRace
 		/// \brief Known valid values for Race
 		enum class EnumRace
@@ -60,7 +60,7 @@ namespace full_model
 		/// \see EnumClass
 		/// \property Class
 		int16_t Class = 0;
-	
+
 		/// \enum EnumClass
 		/// \brief Known valid values for Class
 		enum class EnumClass

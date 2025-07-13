@@ -29,87 +29,74 @@ namespace full_model
 		/// \property Level
 		uint8_t Level = 0;
 
-		/// \brief Column [sClass_1]: Class 1
-		///
-		/// \property Class1
-		int16_t Class1 = 0;
-
-		/// \brief Column [sClass_2]: Class 2
-		///
-		/// \property Class2
-		int16_t Class2 = 0;
-
-		/// \brief Column [sClass_3]: Class 3
-		///
-		/// \property Class3
-		int16_t Class3 = 0;
-
-		/// \brief Column [sClass_4]: Class 4
-		///
-		/// \property Class4
-		int16_t Class4 = 0;
-
-		/// \brief Column [sClass_5]: Class 5
-		///
-		/// \property Class5
-		int16_t Class5 = 0;
-
-		/// \brief Column [sClass_6]: Class 6
-		///
-		/// \property Class6
-		int16_t Class6 = 0;
-
-		/// \brief Column [sClass_7]: Class 7
-		///
-		/// \property Class7
-		int16_t Class7 = 0;
-
-		/// \brief Column [sClass_8]: Class 8
-		///
-		/// \property Class8
-		int16_t Class8 = 0;
-
-		/// \brief Column [sClass_9]: Class 9
-		///
-		/// \property Class9
-		int16_t Class9 = 0;
-
-		/// \brief Column [sClass_10]: Class 10
-		///
-		/// \property Class10
-		int16_t Class10 = 0;
-
-		/// \brief Column [sClass_11]: Class 11
-		///
-		/// \property Class11
-		int16_t Class11 = 0;
-
-		/// \brief Column [sClass_12]: Class 12
-		///
-		/// \property Class12
-		int16_t Class12 = 0;
-
-		/// \brief Union grouping for columns sClass_N
-		/// \union ClassUnion
+		/// \brief Union array grouping for columns sClass_N
+		/// \union Class
 		union
 		{
+			int16_t Class[12] = {};
+
 			struct
 			{
-				int16_t sClass_1;
-				int16_t sClass_2;
-				int16_t sClass_3;
-				int16_t sClass_4;
-				int16_t sClass_5;
-				int16_t sClass_6;
-				int16_t sClass_7;
-				int16_t sClass_8;
-				int16_t sClass_9;
-				int16_t sClass_10;
-				int16_t sClass_11;
-				int16_t sClass_12;
+				/// \brief Column [sClass_1]: Class 1
+				///
+				/// \property Class1
+				int16_t Class1;
+
+				/// \brief Column [sClass_2]: Class 2
+				///
+				/// \property Class2
+				int16_t Class2;
+
+				/// \brief Column [sClass_3]: Class 3
+				///
+				/// \property Class3
+				int16_t Class3;
+
+				/// \brief Column [sClass_4]: Class 4
+				///
+				/// \property Class4
+				int16_t Class4;
+
+				/// \brief Column [sClass_5]: Class 5
+				///
+				/// \property Class5
+				int16_t Class5;
+
+				/// \brief Column [sClass_6]: Class 6
+				///
+				/// \property Class6
+				int16_t Class6;
+
+				/// \brief Column [sClass_7]: Class 7
+				///
+				/// \property Class7
+				int16_t Class7;
+
+				/// \brief Column [sClass_8]: Class 8
+				///
+				/// \property Class8
+				int16_t Class8;
+
+				/// \brief Column [sClass_9]: Class 9
+				///
+				/// \property Class9
+				int16_t Class9;
+
+				/// \brief Column [sClass_10]: Class 10
+				///
+				/// \property Class10
+				int16_t Class10;
+
+				/// \brief Column [sClass_11]: Class 11
+				///
+				/// \property Class11
+				int16_t Class11;
+
+				/// \brief Column [sClass_12]: Class 12
+				///
+				/// \property Class12
+				int16_t Class12;
 			};
-			
-			int16_t ClassUnion[12];
 		};
 
 		/// \brief Returns the table name

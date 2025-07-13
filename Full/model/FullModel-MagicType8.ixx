@@ -55,7 +55,7 @@ namespace full_model
 		/// \see EnumWarpType
 		/// \property WarpType
 		uint8_t WarpType = 0;
-	
+
 		/// \enum EnumWarpType
 		/// \brief Known valid values for WarpType
 		enum class EnumWarpType
