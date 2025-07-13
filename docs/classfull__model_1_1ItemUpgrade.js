@@ -10,5 +10,6 @@ var classfull__model_1_1ItemUpgrade =
     [ "OriginItem", "classfull__model_1_1ItemUpgrade.html#a4b014f8f9ce640cdfe8996bb96e368fd", null ],
     [ "OriginType", "classfull__model_1_1ItemUpgrade.html#a8b19298752e694f8c3b703414f595dfd", null ],
     [ "RateType", "classfull__model_1_1ItemUpgrade.html#a522d0c36825bf0ddc4ff00e9c8cfd9ed", null ],
-    [ "RequiredCoins", "classfull__model_1_1ItemUpgrade.html#ab266942dfced398e900b7f25cf3b8f38", null ]
+    [ "RequiredCoins", "classfull__model_1_1ItemUpgrade.html#ab266942dfced398e900b7f25cf3b8f38", null ],
+    [ "RequiredItem", "classfull__model_1_1ItemUpgrade.html#a25a55edfab95c0e75f17f378553eca21", null ]
 ];
