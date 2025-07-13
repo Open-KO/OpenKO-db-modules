@@ -41,7 +41,6 @@ namespace ebenezer_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nOriginItemNum1] to [nOriginItemNum5]
 			///
 			// \\property OriginItemNumber
@@ -78,7 +77,6 @@ namespace ebenezer_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nOriginItemCount1] to [nOriginItemCount5]
 			///
 			// \\property OriginItemCount
@@ -115,7 +113,6 @@ namespace ebenezer_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nExchangeItemNum1] to [nExchangeItemNum5]
 			///
 			// \\property ExchangeItemNumber
@@ -152,7 +149,6 @@ namespace ebenezer_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nExchangeItemCount1] to [nExchangeItemCount5]
 			///
 			// \\property ExchangeItemCount

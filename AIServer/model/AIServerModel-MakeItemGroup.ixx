@@ -31,7 +31,6 @@ namespace aiserver_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [iItem_1] to [iItem_30]
 			///
 			// \\property Item

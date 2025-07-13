@@ -56,7 +56,6 @@ namespace full_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nReqItem1] to [nReqItem8]
 			///
 			// \\property RequiredItem

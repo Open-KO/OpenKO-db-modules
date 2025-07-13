@@ -31,7 +31,6 @@ namespace full_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [sClass_1] to [sClass_12]
 			///
 			// \\property Class

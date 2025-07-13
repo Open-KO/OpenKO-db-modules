@@ -37,7 +37,6 @@ namespace full_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [sPersent01] to [sPersent05]
 			///
 			// \\property DropChance

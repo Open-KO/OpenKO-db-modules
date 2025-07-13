@@ -31,7 +31,6 @@ namespace aiserver_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [iItem01] to [iItem05]
 			///
 			// \\property ItemId
@@ -68,7 +67,6 @@ namespace aiserver_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [sPersent01] to [sPersent05]
 			///
 			// \\property DropChance

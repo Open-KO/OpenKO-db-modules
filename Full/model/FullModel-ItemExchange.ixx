@@ -51,7 +51,6 @@ namespace full_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nOriginItemNum1] to [nOriginItemNum5]
 			///
 			// \\property OriginItemNumber
@@ -88,7 +87,6 @@ namespace full_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nOriginItemCount1] to [nOriginItemCount5]
 			///
 			// \\property OriginItemCount
@@ -125,7 +123,6 @@ namespace full_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nExchangeItemNum1] to [nExchangeItemNum5]
 			///
 			// \\property ExchangeItemNumber
@@ -162,7 +159,6 @@ namespace full_model
 
 		union
 		{
-
 			/// \\brief Union array grouping for columns [nExchangeItemCount1] to [nExchangeItemCount5]
 			///
 			// \\property ExchangeItemCount
