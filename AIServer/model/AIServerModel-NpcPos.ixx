@@ -115,12 +115,12 @@ namespace aiserver_model
 		/// \property Direction
 		int32_t Direction = {};
 
-		/// \brief Column [DotCnt]: Dot count TODO
+		/// \brief Column [DotCnt]: The number of points contained within Path
 		///
-		/// \property DotCount
-		uint8_t DotCount = {};
+		/// \property PathPointCount
+		uint8_t PathPointCount = {};
 
-		/// \brief Column [path]: Pathfinding data TODO
+		/// \brief Column [path]: Pathfinding data. Each point contains an x and z coordinate. Each coordinate is 4-digits wide and zero-padded
 		///
 		/// \property Path
 		std::optional<std::string> Path;
@@ -140,6 +140,16 @@ namespace aiserver_model
 				"ZoneID", "NpcID", "ActType", "RegenType", "DungeonFamily", "SpecialType", "TrapNumber", "LeftX", "TopZ", "RightX", "BottomZ", "LimitMinZ", "LimitMinX", "LimitMaxX", "LimitMaxZ", "NumNPC", "RegTime", "byDirection", "DotCnt", "path"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns a set of blob column names for the table
+		static const std::unordered_set<std::string>& BlobColumns()
+		{
+			static const std::unordered_set<std::string> blobColumns =
+			{
+				"path"
+			};
+			return blobColumns;
 		}
 
 		/// \brief Returns the associated database type for the table

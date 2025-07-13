@@ -162,6 +162,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+        /// \brief Returns a set of blob column names for the table
+        static const std::unordered_set<std::string>& BlobColumns()
+        {
+            static const std::unordered_set<std::string> blobColumns =
+            {
+                "Mark"
+            };
+            return blobColumns;
+        }
+
 		/// \brief Returns the associated database type for the table
 		static const modelUtil::DbType DbType()
 		{

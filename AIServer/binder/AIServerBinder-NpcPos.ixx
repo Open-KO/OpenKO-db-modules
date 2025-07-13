@@ -43,7 +43,7 @@ namespace aiserver_binder
 				{"NumNPC", &NpcPos::BindNumNpc},
 				{"RegTime", &NpcPos::BindRespawnTime},
 				{"byDirection", &NpcPos::BindDirection},
-				{"DotCnt", &NpcPos::BindDotCount},
+				{"DotCnt", &NpcPos::BindPathPointCount},
 				{"path", &NpcPos::BindPath}
 			};
 			return bindingsMap;
@@ -157,10 +157,10 @@ namespace aiserver_binder
 			result.get_ref<int32_t>(colIndex, m.Direction);
 		}
 
-		/// \brief Binds a result's column to DotCount
-		static void BindDotCount(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to PathPointCount
+		static void BindPathPointCount(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.DotCount = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			m.PathPointCount = static_cast<uint8_t>(result.get<int16_t>(colIndex));
 		}
 
 		/// \brief Binds a result's column to Path
