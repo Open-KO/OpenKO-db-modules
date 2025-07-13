@@ -54,10 +54,12 @@ namespace full_model
 		/// \property OriginItem
 		int16_t OriginItem = 0;
 
-		/// \brief Union array grouping for columns nReqItemN
-		/// \union RequiredItem
 		union
 		{
+
+			/// \\brief Union array grouping for columns [nReqItem1] to [nReqItem8]
+			///
+			// \\property RequiredItem
 			int32_t RequiredItem[8] = {};
 
 			struct

@@ -29,10 +29,12 @@ namespace full_model
 		/// \property Level
 		uint8_t Level = 0;
 
-		/// \brief Union array grouping for columns sClass_N
-		/// \union Class
 		union
 		{
+
+			/// \\brief Union array grouping for columns [sClass_1] to [sClass_12]
+			///
+			// \\property Class
 			int16_t Class[12] = {};
 
 			struct

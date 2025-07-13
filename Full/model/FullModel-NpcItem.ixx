@@ -35,10 +35,12 @@ namespace full_model
 		/// \property ItemId1
 		int32_t ItemId1 = 0;
 
-		/// \brief Union array grouping for columns sPersent_N
-		/// \union DropChance
 		union
 		{
+
+			/// \\brief Union array grouping for columns [sPersent01] to [sPersent05]
+			///
+			// \\property DropChance
 			std::optional<int16_t> DropChance[5];
 
 			struct

@@ -29,10 +29,12 @@ namespace full_model
 		/// \property ItemGroupNumber
 		int32_t ItemGroupNumber = 0;
 
-		/// \brief Union array grouping for columns iItem_N
-		/// \union Item
 		union
 		{
+
+			/// \\brief Union array grouping for columns [iItem_1] to [iItem_30]
+			///
+			// \\property Item
 			int32_t Item[30] = {};
 
 			struct

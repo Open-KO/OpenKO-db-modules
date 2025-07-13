@@ -39,10 +39,12 @@ namespace ebenezer_model
 		/// \property RandomFlag
 		uint8_t RandomFlag = 0;
 
-		/// \brief Union array grouping for columns nOriginItemNumN
-		/// \union OriginItemNumber
 		union
 		{
+
+			/// \\brief Union array grouping for columns [nOriginItemNum1] to [nOriginItemNum5]
+			///
+			// \\property OriginItemNumber
 			int32_t OriginItemNumber[5] = {};
 
 			struct
@@ -74,10 +76,12 @@ namespace ebenezer_model
 			};
 		};
 
-		/// \brief Union array grouping for columns nOriginItemCountN
-		/// \union OriginItemCount
 		union
 		{
+
+			/// \\brief Union array grouping for columns [nOriginItemCount1] to [nOriginItemCount5]
+			///
+			// \\property OriginItemCount
 			int16_t OriginItemCount[5] = {};
 
 			struct
@@ -109,10 +113,12 @@ namespace ebenezer_model
 			};
 		};
 
-		/// \brief Union array grouping for columns nExchangeItemNumN
-		/// \union ExchangeItemNumber
 		union
 		{
+
+			/// \\brief Union array grouping for columns [nExchangeItemNum1] to [nExchangeItemNum5]
+			///
+			// \\property ExchangeItemNumber
 			int32_t ExchangeItemNumber[5] = {};
 
 			struct
@@ -144,10 +150,12 @@ namespace ebenezer_model
 			};
 		};
 
-		/// \brief Union array grouping for columns nExchangeItemCountN
-		/// \union ExchangeItemCount
 		union
 		{
+
+			/// \\brief Union array grouping for columns [nExchangeItemCount1] to [nExchangeItemCount5]
+			///
+			// \\property ExchangeItemCount
 			int16_t ExchangeItemCount[5] = {};
 
 			struct

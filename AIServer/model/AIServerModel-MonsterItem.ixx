@@ -29,10 +29,12 @@ namespace aiserver_model
 		/// \property MonsterId
 		int16_t MonsterId = 0;
 
-		/// \brief Union array grouping for columns iItemN
-		/// \union ItemId
 		union
 		{
+
+			/// \\brief Union array grouping for columns [iItem01] to [iItem05]
+			///
+			// \\property ItemId
 			int32_t ItemId[5] = {};
 
 			struct
@@ -64,10 +66,12 @@ namespace aiserver_model
 			};
 		};
 
-		/// \brief Union array grouping for columns sPersentN
-		/// \union DropChance
 		union
 		{
+
+			/// \\brief Union array grouping for columns [sPersent01] to [sPersent05]
+			///
+			// \\property DropChance
 			int16_t DropChance[5] = {};
 
 			struct
