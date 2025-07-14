@@ -70,7 +70,7 @@ var NAVTREEINDEX =
 "classfull__model_1_1Npc.html#a66ebe2ae59556d4d3fe40fa13faab555",
 "classfull__model_1_1StartPosition.html#a911051f713f10b74879f6f7106776fc3",
 "classfull__model_1_1UserKnightsRank.html#abdbfbb290a6271cb30bde05eb2895c13",
-"classprocedure_1_1CreateNewChar.html#a78794bd5c8184aface30b9b108b864ff",
+"classprocedures_1_1CreateNewChar.html#a5ab50aecb53721b050c1f4975b31dd47",
 "functions_func_m.html"
 ];
 
