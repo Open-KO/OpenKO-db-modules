@@ -102,9 +102,14 @@ Public Member Functions</h2></td></tr>
 std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (const char *charID, const char *AccountID, const int16_t sRentalTime, const int32_t nItemID, const int16_t sDurability, const int32_t nMoney, const int16_t bGameBangType, const int16_t bItemType, const int16_t bItemClass, const int64_t nSerialNumber, int32_t *nRet_Index, int16_t *nRet)</td></tr>
 <tr class="memdesc:ae4902e665c7645c2ec85816fcc8d80e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the stored procedure. <br /></td></tr>
 <tr class="separator:ae4902e665c7645c2ec85816fcc8d80e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bbed9f46d00ca1f6aed6937fc146cc"><td class="memItemLeft" align="right" valign="top"><a id="ae9bbed9f46d00ca1f6aed6937fc146cc" name="ae9bbed9f46d00ca1f6aed6937fc146cc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~RentalItemRegister</b> ()</td></tr>
+<tr class="memdesc:ae9bbed9f46d00ca1f6aed6937fc146cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
+<tr class="separator:ae9bbed9f46d00ca1f6aed6937fc146cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classprocedures_1_1StoredProcedure"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classprocedures_1_1StoredProcedure')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classprocedures_1_1StoredProcedure.html">procedures::StoredProcedure</a></td></tr>
 <tr class="memitem:a0dfeea3a1ff627527caf3117ae9881cd inherit pub_methods_classprocedures_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a0dfeea3a1ff627527caf3117ae9881cd" name="a0dfeea3a1ff627527caf3117ae9881cd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr>
+<tr class="memdesc:a0dfeea3a1ff627527caf3117ae9881cd inherit pub_methods_classprocedures_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values by reading any and all result sets. <br /></td></tr>
 <tr class="separator:a0dfeea3a1ff627527caf3117ae9881cd inherit pub_methods_classprocedures_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -113,8 +118,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:abb7fd571f6079c0b135bed1d5f27b851 inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="abb7fd571f6079c0b135bed1d5f27b851" name="abb7fd571f6079c0b135bed1d5f27b851"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StoredProcedure</b> (nanodbc::connection &amp;conn)</td></tr>
 <tr class="separator:abb7fd571f6079c0b135bed1d5f27b851 inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9659da04ca91b62c2c4eb604d5f89d21 inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a9659da04ca91b62c2c4eb604d5f89d21" name="a9659da04ca91b62c2c4eb604d5f89d21"></a>
-std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> ()</td></tr>
+<tr class="memitem:a3a03caf0fb3970c48cf6c0095ad3ea8f inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a3a03caf0fb3970c48cf6c0095ad3ea8f" name="a3a03caf0fb3970c48cf6c0095ad3ea8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b> ()</td></tr>
+<tr class="memdesc:a3a03caf0fb3970c48cf6c0095ad3ea8f inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
+<tr class="separator:a3a03caf0fb3970c48cf6c0095ad3ea8f inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9659da04ca91b62c2c4eb604d5f89d21 inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprocedures_1_1StoredProcedure.html#a9659da04ca91b62c2c4eb604d5f89d21">execute</a> ()</td></tr>
+<tr class="memdesc:a9659da04ca91b62c2c4eb604d5f89d21 inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the currently prepared statement.  <a href="classprocedures_1_1StoredProcedure.html#a9659da04ca91b62c2c4eb604d5f89d21">More...</a><br /></td></tr>
 <tr class="separator:a9659da04ca91b62c2c4eb604d5f89d21 inherit pro_methods_classprocedures_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classprocedures_1_1StoredProcedure"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classprocedures_1_1StoredProcedure')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classprocedures_1_1StoredProcedure.html">procedures::StoredProcedure</a></td></tr>
 <tr class="memitem:a5325bfc193070a23d4dfd75ba5db68b3 inherit pro_attribs_classprocedures_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a5325bfc193070a23d4dfd75ba5db68b3" name="a5325bfc193070a23d4dfd75ba5db68b3"></a>

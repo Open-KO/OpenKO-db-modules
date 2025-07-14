@@ -70,8 +70,8 @@ var NAVTREEINDEX =
 "classfull__model_1_1Npc.html#ace560f0e8df908d779f7febc9044ecaa",
 "classfull__model_1_1UserData.html#a12def8a323ce5d332a0395cc21aa9cc3a1ea52f26e7e0ce08e462f87f5e35096c",
 "classfull__model_1_1UserRentalItem.html#a51ea072cc56759c46d96b25ca8d9f34c",
-"classprocedures_1_1KingChangeTax.html",
-"functions_vars_z.html"
+"classprocedures_1_1InsertHacktoolUser.html",
+"classprocedures_1_1UserKnightsRatingUpdate.html#a27cb4d4ac90f7ba6a789b357837e056d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -343,7 +343,7 @@ var namespaces_dup =
       [ "ResetLoyaltyMonthly", "classprocedures_1_1ResetLoyaltyMonthly.html", "classprocedures_1_1ResetLoyaltyMonthly" ],
       [ "SkillshortcutLoad", "classprocedures_1_1SkillshortcutLoad.html", "classprocedures_1_1SkillshortcutLoad" ],
       [ "SkillshortcutSave", "classprocedures_1_1SkillshortcutSave.html", "classprocedures_1_1SkillshortcutSave" ],
-      [ "StoredProcedure", "classprocedures_1_1StoredProcedure.html", null ],
+      [ "StoredProcedure", "classprocedures_1_1StoredProcedure.html", "classprocedures_1_1StoredProcedure" ],
       [ "UpdateBattleHero", "classprocedures_1_1UpdateBattleHero.html", "classprocedures_1_1UpdateBattleHero" ],
       [ "UpdateBattleResult", "classprocedures_1_1UpdateBattleResult.html", "classprocedures_1_1UpdateBattleResult" ],
       [ "UpdateEditorItemData", "classprocedures_1_1UpdateEditorItemData.html", "classprocedures_1_1UpdateEditorItemData" ],

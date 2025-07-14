@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('classprocedures_1_1StoredProcedure.htm
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0dfeea3a1ff627527caf3117ae9881cd"><td class="memItemLeft" align="right" valign="top"><a id="a0dfeea3a1ff627527caf3117ae9881cd" name="a0dfeea3a1ff627527caf3117ae9881cd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr>
+<tr class="memdesc:a0dfeea3a1ff627527caf3117ae9881cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values by reading any and all result sets. <br /></td></tr>
 <tr class="separator:a0dfeea3a1ff627527caf3117ae9881cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -104,8 +105,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:abb7fd571f6079c0b135bed1d5f27b851"><td class="memItemLeft" align="right" valign="top"><a id="abb7fd571f6079c0b135bed1d5f27b851" name="abb7fd571f6079c0b135bed1d5f27b851"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StoredProcedure</b> (nanodbc::connection &amp;conn)</td></tr>
 <tr class="separator:abb7fd571f6079c0b135bed1d5f27b851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9659da04ca91b62c2c4eb604d5f89d21"><td class="memItemLeft" align="right" valign="top"><a id="a9659da04ca91b62c2c4eb604d5f89d21" name="a9659da04ca91b62c2c4eb604d5f89d21"></a>
-std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> ()</td></tr>
+<tr class="memitem:a3a03caf0fb3970c48cf6c0095ad3ea8f"><td class="memItemLeft" align="right" valign="top"><a id="a3a03caf0fb3970c48cf6c0095ad3ea8f" name="a3a03caf0fb3970c48cf6c0095ad3ea8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b> ()</td></tr>
+<tr class="memdesc:a3a03caf0fb3970c48cf6c0095ad3ea8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
+<tr class="separator:a3a03caf0fb3970c48cf6c0095ad3ea8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9659da04ca91b62c2c4eb604d5f89d21"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprocedures_1_1StoredProcedure.html#a9659da04ca91b62c2c4eb604d5f89d21">execute</a> ()</td></tr>
+<tr class="memdesc:a9659da04ca91b62c2c4eb604d5f89d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the currently prepared statement.  <a href="classprocedures_1_1StoredProcedure.html#a9659da04ca91b62c2c4eb604d5f89d21">More...</a><br /></td></tr>
 <tr class="separator:a9659da04ca91b62c2c4eb604d5f89d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -129,6 +134,35 @@ Static Protected Attributes</h2></td></tr>
 static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom"><b>SqlState_InvalidCursorState</b> = NANODBC_TEXT(&quot;24000&quot;)</td></tr>
 <tr class="separator:a3103059d762a008f5c34158a66e84185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9659da04ca91b62c2c4eb604d5f89d21" name="a9659da04ca91b62c2c4eb604d5f89d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9659da04ca91b62c2c4eb604d5f89d21">&#9670;&nbsp;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::weak_ptr&lt; nanodbc::result &gt; procedures::StoredProcedure::execute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes the currently prepared statement. </p>
+<dl class="section return"><dt>Returns</dt><dd>a result set, if applicable </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Procedures/Procedures.ixx</li>
 </ul>
