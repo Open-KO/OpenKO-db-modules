@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		LoadKnightsMembers(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL LOAD_KNIGHTS_MEMBERS(?)}");
+			_stmt.prepare("{CALL LOAD_KNIGHTS_MEMBERS(?)}");
 		}
 		
 		using StoredProcedure::returnValue;

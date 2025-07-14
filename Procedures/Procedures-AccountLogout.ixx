@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		AccountLogout(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL ACCOUNT_LOGOUT(?,?,?,?)}");
+			_stmt.prepare("{CALL ACCOUNT_LOGOUT(?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

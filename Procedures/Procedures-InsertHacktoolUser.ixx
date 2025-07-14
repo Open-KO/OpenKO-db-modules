@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		InsertHacktoolUser(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL INSERT_HACKTOOL_USER(?,?,?)}");
+			_stmt.prepare("{CALL INSERT_HACKTOOL_USER(?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

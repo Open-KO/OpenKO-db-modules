@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		RentalItemDestory(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL RENTAL_ITEM_DESTORY(?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL RENTAL_ITEM_DESTORY(?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

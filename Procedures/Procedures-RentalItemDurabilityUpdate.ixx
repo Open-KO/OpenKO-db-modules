@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		RentalItemDurabilityUpdate(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL RENTAL_ITEM_DURABILITY_UPDATE(?,?)}");
+			_stmt.prepare("{CALL RENTAL_ITEM_DURABILITY_UPDATE(?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		GivePremium(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL GIVE_PREMIUM(?,?,?)}");
+			_stmt.prepare("{CALL GIVE_PREMIUM(?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

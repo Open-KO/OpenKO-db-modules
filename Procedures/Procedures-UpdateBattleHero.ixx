@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		UpdateBattleHero(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL UPDATE_BATTLE_HERO(?,?,?,?,?)}");
+			_stmt.prepare("{CALL UPDATE_BATTLE_HERO(?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

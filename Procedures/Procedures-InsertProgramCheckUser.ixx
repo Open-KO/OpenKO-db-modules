@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		InsertProgramCheckUser(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL INSERT_PROGRAM_CHECK_USER(?,?,?)}");
+			_stmt.prepare("{CALL INSERT_PROGRAM_CHECK_USER(?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		ClearRemainUsers(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL CLEAR_REMAIN_USERS(?)}");
+			_stmt.prepare("{CALL CLEAR_REMAIN_USERS(?)}");
 		}
 		
 		using StoredProcedure::returnValue;

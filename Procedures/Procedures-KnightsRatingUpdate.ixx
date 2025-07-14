@@ -13,7 +13,7 @@ namespace procedures {
 	public:
 		KnightsRatingUpdate(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL KNIGHTS_RATING_UPDATE()}");
+			_stmt.prepare("{CALL KNIGHTS_RATING_UPDATE()}");
 		}
 		
 		using StoredProcedure::returnValue;
@@ -21,9 +21,6 @@ namespace procedures {
 		/// \brief Executes the stored procedure
 		nanodbc::result* execute()
 		{
-			_stmt.reset_parameters();
-
-	
 			_result = std::make_unique<nanodbc::result>(_stmt.execute());
 			return _result.get();
 		}

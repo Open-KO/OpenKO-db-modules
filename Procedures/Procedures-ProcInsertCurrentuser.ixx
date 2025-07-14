@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		ProcInsertCurrentuser(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL PROC_INSERT_CURRENTUSER(?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL PROC_INSERT_CURRENTUSER(?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		SkillshortcutLoad(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL SKILLSHORTCUT_LOAD(?)}");
+			_stmt.prepare("{CALL SKILLSHORTCUT_LOAD(?)}");
 		}
 		
 		using StoredProcedure::returnValue;

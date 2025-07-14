@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		KingInsertPrizeEvent(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL KING_INSERT_PRIZE_EVENT(?,?,?,?)}");
+			_stmt.prepare("{CALL KING_INSERT_PRIZE_EVENT(?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

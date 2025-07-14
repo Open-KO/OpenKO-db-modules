@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		LoadCharInfo(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL LOAD_CHAR_INFO(?,?)}");
+			_stmt.prepare("{CALL LOAD_CHAR_INFO(?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

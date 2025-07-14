@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		LoadPremiumServiceUser(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL LOAD_PREMIUM_SERVICE_USER(?,?,?)}");
+			_stmt.prepare("{CALL LOAD_PREMIUM_SERVICE_USER(?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

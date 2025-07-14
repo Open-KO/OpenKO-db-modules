@@ -25,8 +25,9 @@ namespace procedures {
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, AccountID);
-			_stmt.bind(1, Days);
+			_stmt.bind(0, &_returnValue, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(1, AccountID);
+			_stmt.bind(2, Days);
 	
 			_result = std::make_unique<nanodbc::result>(_stmt.execute());
 			return _result.get();

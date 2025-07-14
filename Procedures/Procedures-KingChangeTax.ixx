@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		KingChangeTax(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL KING_CHANGE_TAX(?,?,?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL KING_CHANGE_TAX(?,?,?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

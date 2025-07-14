@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		UpdateWarehouse(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL UPDATE_WAREHOUSE(?,?,?,?,?)}");
+			_stmt.prepare("{CALL UPDATE_WAREHOUSE(?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

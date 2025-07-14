@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		AccountLogin(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL ACCOUNT_LOGIN(?,?,?)}");
+			_stmt.prepare("{CALL ACCOUNT_LOGIN(?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		CreateNewChar(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL CREATE_NEW_CHAR(?,?,?,?,?,?,?,?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL CREATE_NEW_CHAR(?,?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

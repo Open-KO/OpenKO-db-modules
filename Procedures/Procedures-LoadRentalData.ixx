@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		LoadRentalData(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL LOAD_RENTAL_DATA(?)}");
+			_stmt.prepare("{CALL LOAD_RENTAL_DATA(?)}");
 		}
 		
 		using StoredProcedure::returnValue;

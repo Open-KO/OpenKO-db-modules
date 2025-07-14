@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		KingUpdateImpeachmentStatus(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL KING_UPDATE_IMPEACHMENT_STATUS(?,?,?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL KING_UPDATE_IMPEACHMENT_STATUS(?,?,?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

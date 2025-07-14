@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		InsertFriendList(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL INSERT_FRIEND_LIST(?,?,?)}");
+			_stmt.prepare("{CALL INSERT_FRIEND_LIST(?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

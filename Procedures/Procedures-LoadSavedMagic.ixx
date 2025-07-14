@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		LoadSavedMagic(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL LOAD_SAVED_MAGIC(?,?)}");
+			_stmt.prepare("{CALL LOAD_SAVED_MAGIC(?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

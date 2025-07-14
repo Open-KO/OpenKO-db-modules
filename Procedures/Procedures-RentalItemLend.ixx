@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		RentalItemLend(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL RENTAL_ITEM_LEND(?,?,?,?,?)}");
+			_stmt.prepare("{CALL RENTAL_ITEM_LEND(?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

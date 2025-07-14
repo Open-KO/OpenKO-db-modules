@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		ChangeKnightsCape(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL CHANGE_KNIGHTS_CAPE(?,?)}");
+			_stmt.prepare("{CALL CHANGE_KNIGHTS_CAPE(?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

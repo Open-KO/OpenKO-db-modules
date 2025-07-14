@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		KingUpdateNoahOrExpEvent(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL KING_UPDATE_NOAH_OR_EXP_EVENT(?,?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL KING_UPDATE_NOAH_OR_EXP_EVENT(?,?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

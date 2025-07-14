@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		UpdateEditorItemData(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL UPDATE_EDITOR_ITEM_DATA(?,?,?,?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL UPDATE_EDITOR_ITEM_DATA(?,?,?,?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

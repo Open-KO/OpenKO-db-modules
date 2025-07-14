@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		DeleteFriendList(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL DELETE_FRIEND_LIST(?,?,?)}");
+			_stmt.prepare("{CALL DELETE_FRIEND_LIST(?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

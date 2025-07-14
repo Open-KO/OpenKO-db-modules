@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		KingUpdateElectionSchdule(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL KING_UPDATE_ELECTION_SCHDULE(?,?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL KING_UPDATE_ELECTION_SCHDULE(?,?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

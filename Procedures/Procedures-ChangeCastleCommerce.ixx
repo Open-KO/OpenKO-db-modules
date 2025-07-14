@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		ChangeCastleCommerce(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL CHANGE_CASTLE_COMMERCE(?,?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL CHANGE_CASTLE_COMMERCE(?,?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		RentalItemCancel(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL RENTAL_ITEM_CANCEL(?,?,?,?,?)}");
+			_stmt.prepare("{CALL RENTAL_ITEM_CANCEL(?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

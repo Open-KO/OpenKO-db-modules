@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		KingCandidacyRecommend(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL KING_CANDIDACY_RECOMMEND(?,?,?,?)}");
+			_stmt.prepare("{CALL KING_CANDIDACY_RECOMMEND(?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

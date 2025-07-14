@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		DeleteKnights(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL DELETE_KNIGHTS(?,?)}");
+			_stmt.prepare("{CALL DELETE_KNIGHTS(?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

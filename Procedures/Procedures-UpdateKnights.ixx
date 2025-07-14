@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		UpdateKnights(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL UPDATE_KNIGHTS(?,?,?,?,?)}");
+			_stmt.prepare("{CALL UPDATE_KNIGHTS(?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		NationSelect(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL NATION_SELECT(?,?,?)}");
+			_stmt.prepare("{CALL NATION_SELECT(?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

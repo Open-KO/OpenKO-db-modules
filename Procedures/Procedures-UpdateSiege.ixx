@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		UpdateSiege(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL UPDATE_SIEGE(?,?,?,?,?,?,?)}");
+			_stmt.prepare("{CALL UPDATE_SIEGE(?,?,?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

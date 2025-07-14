@@ -15,7 +15,7 @@ namespace procedures {
 	public:
 		KingElectionProc(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL KING_ELECTION_PROC(?,?,?,?,?)}");
+			_stmt.prepare("{CALL KING_ELECTION_PROC(?,?,?,?,?)}");
 		}
 		
 		using StoredProcedure::returnValue;

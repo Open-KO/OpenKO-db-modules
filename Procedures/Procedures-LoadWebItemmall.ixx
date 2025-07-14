@@ -14,7 +14,7 @@ namespace procedures {
 	public:
 		LoadWebItemmall(nanodbc::connection& conn) 
 		{
-			_stmt.prepare("{? = CALL LOAD_WEB_ITEMMALL(?)}");
+			_stmt.prepare("{CALL LOAD_WEB_ITEMMALL(?)}");
 		}
 		
 		using StoredProcedure::returnValue;
