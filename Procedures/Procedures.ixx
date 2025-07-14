@@ -18,20 +18,23 @@ namespace procedures
 			_flushed = false;
 		}
 
-		~StoredProcedure()
+		/// \brief Flushes any output variables or return values on destruction
+		// This must be called in the destructor of a stored procedure with any output & return values.
+		void flush_on_destruct()
 		{
 			try
 			{
-				// Flush to ensure all output and return variables are always written.
 				flush();
 			}
+			// We should not throw exceptions from within a destructor.
+			// We no longer care about the state of this statement anyway.
 			catch (const nanodbc::database_error&)
 			{
-				// We should not throw exceptions from within a destructor.
-				// We no longer care about the state of this statement anyway.
 			}
 		}
 
+		/// \brief Executes the currently prepared statement
+		/// \returns a result set, if applicable
 		std::weak_ptr<nanodbc::result> execute()
 		{
 			_flushed = false;
@@ -40,6 +43,7 @@ namespace procedures
 		}
 
 	public:
+		/// \brief Flushes any output variables or return values by reading any and all result sets
 		void flush()
 		{
 			if (_flushed
@@ -74,7 +78,7 @@ namespace procedures
 	};
 
 	const nanodbc::string StoredProcedure::SqlState_InvalidCursorState = NANODBC_TEXT("24000");
-	
+
 	/// \brief MANUAL_TODO
 	/// \class AccountLogin
 	export class AccountLogin : public StoredProcedure
@@ -96,6 +100,12 @@ namespace procedures
 			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~AccountLogin()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -121,6 +131,12 @@ namespace procedures
 			_stmt.bind(3, nRet2, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~AccountLogout()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -276,6 +292,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~CreateKnights()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -302,6 +324,12 @@ namespace procedures
 			_stmt.bind(5, strChief);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~CreateKnights2()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -337,6 +365,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~CreateNewChar()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -361,6 +395,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~DeleteFriendList()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -383,6 +423,12 @@ namespace procedures
 			_stmt.bind(1, &knightsindex);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~DeleteKnights()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -467,6 +513,12 @@ namespace procedures
 			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~InsertFriendList()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -566,6 +618,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~KingCandidacyRecommend()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -621,6 +679,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~KingElectionProc()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -646,6 +710,12 @@ namespace procedures
 			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~KingImpeachmentElection()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -694,6 +764,12 @@ namespace procedures
 			_stmt.bind(2, nAgreeMan, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~KingImpeachmentResult()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -896,6 +972,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~LoadAccountCharid()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -918,6 +1000,12 @@ namespace procedures
 			_stmt.bind(1, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~LoadCharInfo()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -965,6 +1053,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~LoadPremiumServiceUser()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -1010,6 +1104,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~LoadSavedMagic()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -1033,6 +1133,12 @@ namespace procedures
 			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~LoadUserData()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -1080,6 +1186,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~NationSelect()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -1106,6 +1218,12 @@ namespace procedures
 			_stmt.bind(5, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~ProcInsertCurrentuser()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -1151,6 +1269,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~RentalItemCancel()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -1177,6 +1301,12 @@ namespace procedures
 			_stmt.bind(5, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~RentalItemDestory()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -1227,6 +1357,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~RentalItemLend()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -1259,6 +1395,12 @@ namespace procedures
 			_stmt.bind(11, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~RentalItemRegister()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -1430,6 +1572,12 @@ namespace procedures
 	
 			return StoredProcedure::execute();
 		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~UpdateKnights()
+		{
+			flush_on_destruct();
+		}
 	};
 
 	/// \brief MANUAL_TODO
@@ -1480,6 +1628,12 @@ namespace procedures
 			_stmt.bind(3, KnightMark);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~UpdateKnightsMark()
+		{
+			flush_on_destruct();
 		}
 	};
 
@@ -1546,6 +1700,12 @@ namespace procedures
 			_stmt.bind(2, &Days);
 	
 			return StoredProcedure::execute();
+		}
+
+		/// \brief Flushes any output variables or return values on destruction
+		~UpdatePremiumServiceUser()
+		{
+			flush_on_destruct();
 		}
 	};
 
