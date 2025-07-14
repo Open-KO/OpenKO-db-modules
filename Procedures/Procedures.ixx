@@ -81,6 +81,7 @@ namespace procedures
 	{
 	public:
 		AccountLogin(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL ACCOUNT_LOGIN(?,?,?)}");
 		}
@@ -104,6 +105,7 @@ namespace procedures
 	{
 	public:
 		AccountLogout(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL ACCOUNT_LOGOUT(?,?,?,?)}");
 		}
@@ -128,6 +130,7 @@ namespace procedures
 	{
 	public:
 		ChangeCastleCommerce(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHANGE_CASTLE_COMMERCE(?,?,?,?,?,?,?)}");
 		}
@@ -155,6 +158,7 @@ namespace procedures
 	{
 	public:
 		ChangeCopySerialItem(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHANGE_COPY_SERIAL_ITEM()}");
 		}
@@ -172,6 +176,7 @@ namespace procedures
 	{
 	public:
 		ChangeCopySerialItemTable(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHANGE_COPY_SERIAL_ITEM_TABLE()}");
 		}
@@ -189,6 +194,7 @@ namespace procedures
 	{
 	public:
 		ChangeKnightsCape(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHANGE_KNIGHTS_CAPE(?,?)}");
 		}
@@ -211,6 +217,7 @@ namespace procedures
 	{
 	public:
 		CheckKnights(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHECK_KNIGHTS()}");
 		}
@@ -228,6 +235,7 @@ namespace procedures
 	{
 	public:
 		ClearRemainUsers(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CLEAR_REMAIN_USERS(?)}");
 		}
@@ -249,6 +257,7 @@ namespace procedures
 	{
 	public:
 		CreateKnights(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CREATE_KNIGHTS(?,?,?,?,?,?)}");
 		}
@@ -275,6 +284,7 @@ namespace procedures
 	{
 	public:
 		CreateKnights2(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CREATE_KNIGHTS2(?,?,?,?,?,?)}");
 		}
@@ -301,6 +311,7 @@ namespace procedures
 	{
 	public:
 		CreateNewChar(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CREATE_NEW_CHAR(?,?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
@@ -334,6 +345,7 @@ namespace procedures
 	{
 	public:
 		DeleteFriendList(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL DELETE_FRIEND_LIST(?,?,?)}");
 		}
@@ -357,6 +369,7 @@ namespace procedures
 	{
 	public:
 		DeleteKnights(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL DELETE_KNIGHTS(?,?)}");
 		}
@@ -379,6 +392,7 @@ namespace procedures
 	{
 	public:
 		EditerKnights(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL EDITER_KNIGHTS()}");
 		}
@@ -396,6 +410,7 @@ namespace procedures
 	{
 	public:
 		ExecKnightsUser(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL EXEC_KNIGHTS_USER()}");
 		}
@@ -413,6 +428,7 @@ namespace procedures
 	{
 	public:
 		GivePremium(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL GIVE_PREMIUM(?,?,?)}");
 		}
@@ -436,6 +452,7 @@ namespace procedures
 	{
 	public:
 		InsertFriendList(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL INSERT_FRIEND_LIST(?,?,?)}");
 		}
@@ -459,6 +476,7 @@ namespace procedures
 	{
 	public:
 		InsertHacktoolUser(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL INSERT_HACKTOOL_USER(?,?,?)}");
 		}
@@ -482,6 +500,7 @@ namespace procedures
 	{
 	public:
 		InsertProgramCheckUser(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL INSERT_PROGRAM_CHECK_USER(?,?,?)}");
 		}
@@ -505,6 +524,7 @@ namespace procedures
 	{
 	public:
 		KingCandidacyNoticeBoardProc(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_CANDIDACY_NOTICE_BOARD_PROC(?,?,?,?)}");
 		}
@@ -529,6 +549,7 @@ namespace procedures
 	{
 	public:
 		KingCandidacyRecommend(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_CANDIDACY_RECOMMEND(?,?,?,?)}");
 		}
@@ -553,6 +574,7 @@ namespace procedures
 	{
 	public:
 		KingChangeTax(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_CHANGE_TAX(?,?,?,?,?,?,?,?)}");
 		}
@@ -581,6 +603,7 @@ namespace procedures
 	{
 	public:
 		KingElectionProc(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_ELECTION_PROC(?,?,?,?,?)}");
 		}
@@ -606,6 +629,7 @@ namespace procedures
 	{
 	public:
 		KingImpeachmentElection(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_IMPEACHMENT_ELECTION(?,?,?,?,?)}");
 		}
@@ -631,6 +655,7 @@ namespace procedures
 	{
 	public:
 		KingImpeachmentRequestElection(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_IMPEACHMENT_REQUEST_ELECTION(?,?,?)}");
 		}
@@ -654,6 +679,7 @@ namespace procedures
 	{
 	public:
 		KingImpeachmentResult(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_IMPEACHMENT_RESULT(?,?,?)}");
 		}
@@ -677,6 +703,7 @@ namespace procedures
 	{
 	public:
 		KingInsertPrizeEvent(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_INSERT_PRIZE_EVENT(?,?,?,?)}");
 		}
@@ -701,6 +728,7 @@ namespace procedures
 	{
 	public:
 		KingUpdateElectionList(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_ELECTION_LIST(?,?,?,?,?,?)}");
 		}
@@ -727,6 +755,7 @@ namespace procedures
 	{
 	public:
 		KingUpdateElectionSchdule(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_ELECTION_SCHDULE(?,?,?,?,?,?,?)}");
 		}
@@ -754,6 +783,7 @@ namespace procedures
 	{
 	public:
 		KingUpdateElectionStatus(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_ELECTION_STATUS(?,?)}");
 		}
@@ -776,6 +806,7 @@ namespace procedures
 	{
 	public:
 		KingUpdateImpeachmentStatus(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_IMPEACHMENT_STATUS(?,?,?,?,?,?,?,?)}");
 		}
@@ -804,6 +835,7 @@ namespace procedures
 	{
 	public:
 		KingUpdateNoahOrExpEvent(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_NOAH_OR_EXP_EVENT(?,?,?,?,?,?,?)}");
 		}
@@ -831,6 +863,7 @@ namespace procedures
 	{
 	public:
 		KnightsRatingUpdate(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KNIGHTS_RATING_UPDATE()}");
 		}
@@ -848,6 +881,7 @@ namespace procedures
 	{
 	public:
 		LoadAccountCharid(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{? = CALL LOAD_ACCOUNT_CHARID(?)}");
 		}
@@ -870,6 +904,7 @@ namespace procedures
 	{
 	public:
 		LoadCharInfo(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_CHAR_INFO(?,?)}");
 		}
@@ -892,6 +927,7 @@ namespace procedures
 	{
 	public:
 		LoadKnightsMembers(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_KNIGHTS_MEMBERS(?)}");
 		}
@@ -913,6 +949,7 @@ namespace procedures
 	{
 	public:
 		LoadPremiumServiceUser(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_PREMIUM_SERVICE_USER(?,?,?)}");
 		}
@@ -936,6 +973,7 @@ namespace procedures
 	{
 	public:
 		LoadRentalData(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_RENTAL_DATA(?)}");
 		}
@@ -957,6 +995,7 @@ namespace procedures
 	{
 	public:
 		LoadSavedMagic(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_SAVED_MAGIC(?,?)}");
 		}
@@ -979,6 +1018,7 @@ namespace procedures
 	{
 	public:
 		LoadUserData(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_USER_DATA(?,?,?)}");
 		}
@@ -1002,6 +1042,7 @@ namespace procedures
 	{
 	public:
 		LoadWebItemmall(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_WEB_ITEMMALL(?)}");
 		}
@@ -1023,6 +1064,7 @@ namespace procedures
 	{
 	public:
 		NationSelect(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL NATION_SELECT(?,?,?)}");
 		}
@@ -1046,6 +1088,7 @@ namespace procedures
 	{
 	public:
 		ProcInsertCurrentuser(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL PROC_INSERT_CURRENTUSER(?,?,?,?,?,?)}");
 		}
@@ -1072,6 +1115,7 @@ namespace procedures
 	{
 	public:
 		RankKnights(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RANK_KNIGHTS()}");
 		}
@@ -1089,6 +1133,7 @@ namespace procedures
 	{
 	public:
 		RentalItemCancel(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_CANCEL(?,?,?,?,?)}");
 		}
@@ -1114,6 +1159,7 @@ namespace procedures
 	{
 	public:
 		RentalItemDestory(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_DESTORY(?,?,?,?,?,?)}");
 		}
@@ -1140,6 +1186,7 @@ namespace procedures
 	{
 	public:
 		RentalItemDurabilityUpdate(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_DURABILITY_UPDATE(?,?)}");
 		}
@@ -1162,6 +1209,7 @@ namespace procedures
 	{
 	public:
 		RentalItemLend(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_LEND(?,?,?,?,?)}");
 		}
@@ -1187,6 +1235,7 @@ namespace procedures
 	{
 	public:
 		RentalItemRegister(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_REGISTER(?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
@@ -1219,6 +1268,7 @@ namespace procedures
 	{
 	public:
 		ResetLoyaltyMonthly(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RESET_LOYALTY_MONTHLY()}");
 		}
@@ -1236,6 +1286,7 @@ namespace procedures
 	{
 	public:
 		SkillshortcutLoad(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL SKILLSHORTCUT_LOAD(?)}");
 		}
@@ -1257,6 +1308,7 @@ namespace procedures
 	{
 	public:
 		SkillshortcutSave(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL SKILLSHORTCUT_SAVE(?,?,?)}");
 		}
@@ -1280,6 +1332,7 @@ namespace procedures
 	{
 	public:
 		UpdateBattleHero(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_BATTLE_HERO(?,?,?,?,?)}");
 		}
@@ -1305,6 +1358,7 @@ namespace procedures
 	{
 	public:
 		UpdateBattleResult(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_BATTLE_RESULT(?,?,?)}");
 		}
@@ -1328,6 +1382,7 @@ namespace procedures
 	{
 	public:
 		UpdateEditorItemData(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_EDITOR_ITEM_DATA(?,?,?,?,?,?,?,?,?)}");
 		}
@@ -1357,6 +1412,7 @@ namespace procedures
 	{
 	public:
 		UpdateKnights(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS(?,?,?,?,?)}");
 		}
@@ -1382,6 +1438,7 @@ namespace procedures
 	{
 	public:
 		UpdateKnightsAlliance(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS_ALLIANCE(?,?,?,?,?)}");
 		}
@@ -1407,6 +1464,7 @@ namespace procedures
 	{
 	public:
 		UpdateKnightsMark(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS_MARK(?,?,?,?)}");
 		}
@@ -1431,6 +1489,7 @@ namespace procedures
 	{
 	public:
 		UpdateKnightsWar(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS_WAR(?,?,?)}");
 		}
@@ -1454,6 +1513,7 @@ namespace procedures
 	{
 	public:
 		UpdatePersonalRank(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_PERSONAL_RANK()}");
 		}
@@ -1471,6 +1531,7 @@ namespace procedures
 	{
 	public:
 		UpdatePremiumServiceUser(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{? = CALL UPDATE_PREMIUM_SERVICE_USER(?,?)}");
 		}
@@ -1494,6 +1555,7 @@ namespace procedures
 	{
 	public:
 		UpdateSavedMagic(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SAVED_MAGIC(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
@@ -1535,6 +1597,7 @@ namespace procedures
 	{
 	public:
 		UpdateSiege(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE(?,?,?,?,?,?,?)}");
 		}
@@ -1562,6 +1625,7 @@ namespace procedures
 	{
 	public:
 		UpdateSiegeChallenger(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE_CHALLENGER(?,?)}");
 		}
@@ -1584,6 +1648,7 @@ namespace procedures
 	{
 	public:
 		UpdateSiegeChallenger2(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE_CHALLENGER2(?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
@@ -1616,6 +1681,7 @@ namespace procedures
 	{
 	public:
 		UpdateSiegeDecideChallenger(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE_DECIDE_CHALLENGER(?,?,?,?,?,?,?,?,?,?,?)}");
 		}
@@ -1647,6 +1713,7 @@ namespace procedures
 	{
 	public:
 		UpdateUserData(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_USER_DATA(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
@@ -1705,6 +1772,7 @@ namespace procedures
 	{
 	public:
 		UpdateWarehouse(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_WAREHOUSE(?,?,?,?,?)}");
 		}
@@ -1730,6 +1798,7 @@ namespace procedures
 	{
 	public:
 		UserKnightsRatingUpdate(nanodbc::connection& conn) 
+			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL USER_KNIGHTS_RATING_UPDATE()}");
 		}
