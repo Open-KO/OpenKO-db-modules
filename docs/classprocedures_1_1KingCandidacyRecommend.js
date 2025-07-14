@@ -1,4 +1,4 @@
 var classprocedures_1_1KingCandidacyRecommend =
 [
-    [ "execute", "classprocedures_1_1KingCandidacyRecommend.html#ad746c942a318f7b77e5812c252d1f11e", null ]
+    [ "execute", "classprocedures_1_1KingCandidacyRecommend.html#af04df33286536ac49c75401da74e8d8c", null ]
 ];
