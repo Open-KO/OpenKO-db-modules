@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['warehouse_0',['Warehouse',['../classfull__binder_1_1Warehouse.html',1,'full_binder::Warehouse'],['../classfull__model_1_1Warehouse.html',1,'full_model::Warehouse']]],
-  ['webitemmall_1',['WebItemMall',['../classfull__binder_1_1WebItemMall.html',1,'full_binder::WebItemMall'],['../classfull__model_1_1WebItemMall.html',1,'full_model::WebItemMall']]],
-  ['webitemmalllog_2',['WebItemMallLog',['../classfull__binder_1_1WebItemMallLog.html',1,'full_binder::WebItemMallLog'],['../classfull__model_1_1WebItemMallLog.html',1,'full_model::WebItemMallLog']]],
-  ['webpageaddress_3',['WebpageAddress',['../classebenezer__binder_1_1WebpageAddress.html',1,'ebenezer_binder::WebpageAddress'],['../classebenezer__model_1_1WebpageAddress.html',1,'ebenezer_model::WebpageAddress'],['../classfull__binder_1_1WebpageAddress.html',1,'full_binder::WebpageAddress'],['../classfull__model_1_1WebpageAddress.html',1,'full_model::WebpageAddress']]]
+  ['updatebattlehero_0',['UpdateBattleHero',['../classprocedure_1_1UpdateBattleHero.html',1,'procedure']]],
+  ['updatebattleresult_1',['UpdateBattleResult',['../classprocedure_1_1UpdateBattleResult.html',1,'procedure']]],
+  ['updateeditoritemdata_2',['UpdateEditorItemData',['../classprocedure_1_1UpdateEditorItemData.html',1,'procedure']]],
+  ['updateknights_3',['UpdateKnights',['../classprocedure_1_1UpdateKnights.html',1,'procedure']]],
+  ['updateknightsalliance_4',['UpdateKnightsAlliance',['../classprocedure_1_1UpdateKnightsAlliance.html',1,'procedure']]],
+  ['updateknightsmark_5',['UpdateKnightsMark',['../classprocedure_1_1UpdateKnightsMark.html',1,'procedure']]],
+  ['updateknightswar_6',['UpdateKnightsWar',['../classprocedure_1_1UpdateKnightsWar.html',1,'procedure']]],
+  ['updatepersonalrank_7',['UpdatePersonalRank',['../classprocedure_1_1UpdatePersonalRank.html',1,'procedure']]],
+  ['updatepremiumserviceuser_8',['UpdatePremiumServiceUser',['../classprocedure_1_1UpdatePremiumServiceUser.html',1,'procedure']]],
+  ['updatesavedmagic_9',['UpdateSavedMagic',['../classprocedure_1_1UpdateSavedMagic.html',1,'procedure']]],
+  ['updatesiege_10',['UpdateSiege',['../classprocedure_1_1UpdateSiege.html',1,'procedure']]],
+  ['updatesiegechallenger_11',['UpdateSiegeChallenger',['../classprocedure_1_1UpdateSiegeChallenger.html',1,'procedure']]],
+  ['updatesiegechallenger2_12',['UpdateSiegeChallenger2',['../classprocedure_1_1UpdateSiegeChallenger2.html',1,'procedure']]],
+  ['updatesiegedecidechallenger_13',['UpdateSiegeDecideChallenger',['../classprocedure_1_1UpdateSiegeDecideChallenger.html',1,'procedure']]],
+  ['updateuserdata_14',['UpdateUserData',['../classprocedure_1_1UpdateUserData.html',1,'procedure']]],
+  ['updatewarehouse_15',['UpdateWarehouse',['../classprocedure_1_1UpdateWarehouse.html',1,'procedure']]],
+  ['userdata_16',['UserData',['../classfull__binder_1_1UserData.html',1,'full_binder::UserData'],['../classfull__model_1_1UserData.html',1,'full_model::UserData']]],
+  ['userdataskillshortcut_17',['UserDataSkillShortcut',['../classfull__binder_1_1UserDataSkillShortcut.html',1,'full_binder::UserDataSkillShortcut'],['../classfull__model_1_1UserDataSkillShortcut.html',1,'full_model::UserDataSkillShortcut']]],
+  ['usereditor_18',['UserEditor',['../classfull__binder_1_1UserEditor.html',1,'full_binder::UserEditor'],['../classfull__model_1_1UserEditor.html',1,'full_model::UserEditor']]],
+  ['usereditoritem_19',['UserEditorItem',['../classfull__binder_1_1UserEditorItem.html',1,'full_binder::UserEditorItem'],['../classfull__model_1_1UserEditorItem.html',1,'full_model::UserEditorItem']]],
+  ['userknightsrank_20',['UserKnightsRank',['../classebenezer__binder_1_1UserKnightsRank.html',1,'ebenezer_binder::UserKnightsRank'],['../classebenezer__model_1_1UserKnightsRank.html',1,'ebenezer_model::UserKnightsRank'],['../classfull__binder_1_1UserKnightsRank.html',1,'full_binder::UserKnightsRank'],['../classfull__model_1_1UserKnightsRank.html',1,'full_model::UserKnightsRank']]],
+  ['userknightsratingupdate_21',['UserKnightsRatingUpdate',['../classprocedure_1_1UserKnightsRatingUpdate.html',1,'procedure']]],
+  ['userpersonalrank_22',['UserPersonalRank',['../classebenezer__binder_1_1UserPersonalRank.html',1,'ebenezer_binder::UserPersonalRank'],['../classebenezer__model_1_1UserPersonalRank.html',1,'ebenezer_model::UserPersonalRank'],['../classfull__binder_1_1UserPersonalRank.html',1,'full_binder::UserPersonalRank'],['../classfull__model_1_1UserPersonalRank.html',1,'full_model::UserPersonalRank']]],
+  ['userrentalitem_23',['UserRentalItem',['../classfull__binder_1_1UserRentalItem.html',1,'full_binder::UserRentalItem'],['../classfull__model_1_1UserRentalItem.html',1,'full_model::UserRentalItem']]],
+  ['usersavedmagic_24',['UserSavedMagic',['../classfull__binder_1_1UserSavedMagic.html',1,'full_binder::UserSavedMagic'],['../classfull__model_1_1UserSavedMagic.html',1,'full_model::UserSavedMagic']]]
 ];
