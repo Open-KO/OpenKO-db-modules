@@ -1,0 +1,31 @@
+module;
+
+
+export module Procedure:ChangeCopySerialItemTable;
+import :StoredProcedure;
+
+namespace procedure {
+
+	/// \brief MANUAL_TODO
+	/// \class ChangeCopySerialItemTable
+	export class ChangeCopySerialItemTable : public StoredProcedure
+	{
+	public:
+		ChangeCopySerialItemTable(nanodbc::connection& conn) 
+		{
+			_stmt.prepare("{? = CALL CHANGE_COPY_SERIAL_ITEM_TABLE()}");
+		}
+		
+		using StoredProcedure::returnValue;
+
+		/// \brief Executes the stored procedure
+		nanodbc::result* execute()
+		{
+			_stmt.reset_parameters();
+
+	
+			_result = std::make_unique<nanodbc::result>(_stmt.execute());
+			return _result.get();
+		}
+	};
+}
