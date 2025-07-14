@@ -530,7 +530,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t sNoticeLen, const int16_t byNation, const uint8_t* strNotice)
+		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t sNoticeLen, const int16_t byNation, const char* strNotice)
 		{
 			_stmt.reset_parameters();
 
@@ -1470,7 +1470,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t IDNum, const int16_t MarkLen, const uint8_t* KnightMark)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t IDNum, const int16_t MarkLen, const char* KnightMark)
 		{
 			_stmt.reset_parameters();
 
