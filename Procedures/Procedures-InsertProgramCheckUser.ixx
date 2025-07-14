@@ -2,10 +2,10 @@ module;
 
 #include <string>
 
-export module Procedure:InsertProgramCheckUser;
+export module Procedures:InsertProgramCheckUser;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class InsertProgramCheckUser

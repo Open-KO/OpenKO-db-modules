@@ -3,10 +3,10 @@ module;
 #include <cstdint>
 #include <string>
 
-export module Procedure:RentalItemCancel;
+export module Procedures:RentalItemCancel;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class RentalItemCancel

@@ -1,10 +1,10 @@
 module;
 
 
-export module Procedure:ChangeCopySerialItem;
+export module Procedures:ChangeCopySerialItem;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class ChangeCopySerialItem

@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:UpdateSiegeDecideChallenger;
+export module Procedures:UpdateSiegeDecideChallenger;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateSiegeDecideChallenger

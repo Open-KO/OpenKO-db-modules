@@ -3,10 +3,10 @@ module;
 #include <cstdint>
 #include <string>
 
-export module Procedure:DeleteFriendList;
+export module Procedures:DeleteFriendList;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class DeleteFriendList

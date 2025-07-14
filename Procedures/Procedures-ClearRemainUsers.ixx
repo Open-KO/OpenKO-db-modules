@@ -2,10 +2,10 @@ module;
 
 #include <string>
 
-export module Procedure:ClearRemainUsers;
+export module Procedures:ClearRemainUsers;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class ClearRemainUsers

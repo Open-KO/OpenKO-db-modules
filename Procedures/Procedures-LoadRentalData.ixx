@@ -2,10 +2,10 @@ module;
 
 #include <string>
 
-export module Procedure:LoadRentalData;
+export module Procedures:LoadRentalData;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class LoadRentalData

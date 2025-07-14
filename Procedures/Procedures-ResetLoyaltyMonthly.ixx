@@ -1,10 +1,10 @@
 module;
 
 
-export module Procedure:ResetLoyaltyMonthly;
+export module Procedures:ResetLoyaltyMonthly;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class ResetLoyaltyMonthly

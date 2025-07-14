@@ -2,10 +2,10 @@ module;
 
 #include <string>
 
-export module Procedure:InsertHacktoolUser;
+export module Procedures:InsertHacktoolUser;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class InsertHacktoolUser

@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:KingImpeachmentResult;
+export module Procedures:KingImpeachmentResult;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class KingImpeachmentResult

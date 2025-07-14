@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:UpdateSiege;
+export module Procedures:UpdateSiege;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateSiege

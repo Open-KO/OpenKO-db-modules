@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:DeleteKnights;
+export module Procedures:DeleteKnights;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class DeleteKnights

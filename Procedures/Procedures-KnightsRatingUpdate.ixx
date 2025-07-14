@@ -1,10 +1,10 @@
 module;
 
 
-export module Procedure:KnightsRatingUpdate;
+export module Procedures:KnightsRatingUpdate;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class KnightsRatingUpdate

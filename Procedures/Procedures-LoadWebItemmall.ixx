@@ -2,10 +2,10 @@ module;
 
 #include <string>
 
-export module Procedure:LoadWebItemmall;
+export module Procedures:LoadWebItemmall;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class LoadWebItemmall

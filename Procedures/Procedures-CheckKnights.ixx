@@ -1,10 +1,10 @@
 module;
 
 
-export module Procedure:CheckKnights;
+export module Procedures:CheckKnights;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class CheckKnights

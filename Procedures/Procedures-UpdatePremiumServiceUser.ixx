@@ -3,10 +3,10 @@ module;
 #include <cstdint>
 #include <string>
 
-export module Procedure:UpdatePremiumServiceUser;
+export module Procedures:UpdatePremiumServiceUser;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class UpdatePremiumServiceUser

@@ -1,10 +1,10 @@
 module;
 
 
-export module Procedure:RankKnights;
+export module Procedures:RankKnights;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class RankKnights

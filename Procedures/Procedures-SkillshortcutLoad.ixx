@@ -2,10 +2,10 @@ module;
 
 #include <string>
 
-export module Procedure:SkillshortcutLoad;
+export module Procedures:SkillshortcutLoad;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class SkillshortcutLoad

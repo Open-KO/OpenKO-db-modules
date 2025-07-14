@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:UpdateKnightsAlliance;
+export module Procedures:UpdateKnightsAlliance;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateKnightsAlliance

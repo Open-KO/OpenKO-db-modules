@@ -1,10 +1,10 @@
 module;
 
 
-export module Procedure:UpdatePersonalRank;
+export module Procedures:UpdatePersonalRank;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class UpdatePersonalRank

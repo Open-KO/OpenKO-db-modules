@@ -3,10 +3,10 @@ module;
 #include <cstdint>
 #include <string>
 
-export module Procedure:KingCandidacyNoticeBoardProc;
+export module Procedures:KingCandidacyNoticeBoardProc;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class KingCandidacyNoticeBoardProc

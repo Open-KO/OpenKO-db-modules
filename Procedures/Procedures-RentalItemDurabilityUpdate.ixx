@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:RentalItemDurabilityUpdate;
+export module Procedures:RentalItemDurabilityUpdate;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class RentalItemDurabilityUpdate

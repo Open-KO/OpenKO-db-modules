@@ -1,10 +1,10 @@
 module;
 
 
-export module Procedure:ExecKnightsUser;
+export module Procedures:ExecKnightsUser;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class ExecKnightsUser

@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:KingChangeTax;
+export module Procedures:KingChangeTax;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class KingChangeTax

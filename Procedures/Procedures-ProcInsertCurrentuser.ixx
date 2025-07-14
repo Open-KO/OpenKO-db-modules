@@ -3,10 +3,10 @@ module;
 #include <cstdint>
 #include <string>
 
-export module Procedure:ProcInsertCurrentuser;
+export module Procedures:ProcInsertCurrentuser;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class ProcInsertCurrentuser

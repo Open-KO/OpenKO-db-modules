@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:LoadKnightsMembers;
+export module Procedures:LoadKnightsMembers;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class LoadKnightsMembers

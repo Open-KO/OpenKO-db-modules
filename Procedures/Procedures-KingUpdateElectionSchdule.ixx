@@ -2,10 +2,10 @@ module;
 
 #include <cstdint>
 
-export module Procedure:KingUpdateElectionSchdule;
+export module Procedures:KingUpdateElectionSchdule;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class KingUpdateElectionSchdule

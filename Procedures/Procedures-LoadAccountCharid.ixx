@@ -2,10 +2,10 @@ module;
 
 #include <string>
 
-export module Procedure:LoadAccountCharid;
+export module Procedures:LoadAccountCharid;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class LoadAccountCharid

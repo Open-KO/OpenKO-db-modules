@@ -1,10 +1,10 @@
 module;
 
 
-export module Procedure:EditerKnights;
+export module Procedures:EditerKnights;
 import :StoredProcedure;
 
-namespace procedure {
+namespace procedures {
 
 	/// \brief MANUAL_TODO
 	/// \class EditerKnights
