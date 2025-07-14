@@ -136,7 +136,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t* sCastleIndex, const uint8_t* byType, const int32_t* nMoradonTariff, const int32_t* nDellosTariff, const int32_t* nMoney, const char* strACID, const char* strCharID)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* sCastleIndex, const int16_t* byType, const int32_t* nMoradonTariff, const int32_t* nDellosTariff, const int32_t* nMoney, const char* strACID, const char* strCharID)
 		{
 			_stmt.reset_parameters();
 
@@ -263,7 +263,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t* index, const uint8_t* nation, const uint8_t* community, const char* strName, const char* strChief)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t* index, const int16_t* nation, const int16_t* community, const char* strName, const char* strChief)
 		{
 			_stmt.reset_parameters();
 
@@ -290,7 +290,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, int16_t* index, const uint8_t* nation, const uint8_t* community, const char* strName, const char* strChief)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, int16_t* index, const int16_t* nation, const int16_t* community, const char* strName, const char* strChief)
 		{
 			_stmt.reset_parameters();
 
@@ -317,7 +317,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const uint8_t* index, const char* CharID, const uint8_t* Race, const int16_t* Class, const uint8_t* Hair, const uint8_t* Face, const uint8_t* Str, const uint8_t* Sta, const uint8_t* Dex, const uint8_t* Intel, const uint8_t* Cha)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const int16_t* index, const char* CharID, const int16_t* Race, const int16_t* Class, const int16_t* Hair, const int16_t* Face, const int16_t* Str, const int16_t* Sta, const int16_t* Dex, const int16_t* Intel, const int16_t* Cha)
 		{
 			_stmt.reset_parameters();
 
@@ -530,7 +530,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t* sNoticeLen, const uint8_t* byNation, const std::vector<uint8_t>* strNotice)
+		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t* sNoticeLen, const int16_t* byNation, const char* strNotice)
 		{
 			_stmt.reset_parameters();
 
@@ -555,7 +555,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* CharID_1, const char* CharID_2, const uint8_t* nNation, int16_t* nRet)
+		std::weak_ptr<nanodbc::result> execute(const char* CharID_1, const char* CharID_2, const int16_t* nNation, int16_t* nRet)
 		{
 			_stmt.reset_parameters();
 
@@ -580,7 +580,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation, const int32_t* nKarusTax1, const int32_t* nKarusTax2, const int32_t* nKarusTax3, const int32_t* nElmoTax1, const int32_t* nElmoTax2, const int32_t* nElmoTax3)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* byNation, const int32_t* nKarusTax1, const int32_t* nKarusTax2, const int32_t* nKarusTax3, const int32_t* nElmoTax1, const int32_t* nElmoTax2, const int32_t* nElmoTax3)
 		{
 			_stmt.reset_parameters();
 
@@ -609,7 +609,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strCharID, const uint8_t* byNation, const char* strCandidacyID, int16_t* nRet)
+		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strCharID, const int16_t* byNation, const char* strCandidacyID, int16_t* nRet)
 		{
 			_stmt.reset_parameters();
 
@@ -635,7 +635,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byResult, const uint8_t* byNation, const char* strAccountID, const char* strCharID, int16_t* nRet)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byResult, const int16_t* byNation, const char* strAccountID, const char* strCharID, int16_t* nRet)
 		{
 			_stmt.reset_parameters();
 
@@ -661,7 +661,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const uint8_t* byNation, const char* strUserID)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* byNation, const char* strUserID)
 		{
 			_stmt.reset_parameters();
 
@@ -685,7 +685,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byNation, int16_t* nTotalMan, int16_t* nAgreeMan)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byNation, int16_t* nTotalMan, int16_t* nAgreeMan)
 		{
 			_stmt.reset_parameters();
 
@@ -709,7 +709,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation, const int32_t* nAmount, const char* strUserID)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* byNation, const int32_t* nAmount, const char* strUserID)
 		{
 			_stmt.reset_parameters();
 
@@ -734,7 +734,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byDBType, const uint8_t* byType, const uint8_t* byNation, const int16_t* nKnights, const int32_t* nAmount, const char* strUserID)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byDBType, const int16_t* byType, const int16_t* byNation, const int16_t* nKnights, const int32_t* nAmount, const char* strUserID)
 		{
 			_stmt.reset_parameters();
 
@@ -761,7 +761,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation, const int16_t* sYear, const uint8_t* byMonth, const uint8_t* byDay, const uint8_t* byHour, const uint8_t* byMinute)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* byNation, const int16_t* sYear, const int16_t* byMonth, const int16_t* byDay, const int16_t* byHour, const int16_t* byMinute)
 		{
 			_stmt.reset_parameters();
 
@@ -789,7 +789,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* byNation)
 		{
 			_stmt.reset_parameters();
 
@@ -812,7 +812,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation, const int16_t* sYear, const uint8_t* byMonth, const uint8_t* byDay, const uint8_t* byHour, const uint8_t* byMinute, const char* strUserID)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* byNation, const int16_t* sYear, const int16_t* byMonth, const int16_t* byDay, const int16_t* byHour, const int16_t* byMinute, const char* strUserID)
 		{
 			_stmt.reset_parameters();
 
@@ -841,7 +841,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation, const uint8_t* byAmount, const uint8_t* byDay, const uint8_t* byHout, const uint8_t* byMinute, const int16_t* sDurationTime)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* byNation, const int16_t* byAmount, const int16_t* byDay, const int16_t* byHout, const int16_t* byMinute, const int16_t* sDurationTime)
 		{
 			_stmt.reset_parameters();
 
@@ -1070,7 +1070,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const uint8_t* Nation)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const int16_t* Nation)
 		{
 			_stmt.reset_parameters();
 
@@ -1241,7 +1241,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* charID, const char* AccountID, const int16_t* sRentalTime, const int32_t* nItemID, const int16_t* sDurability, const int32_t* nMoney, const uint8_t* bGameBangType, const uint8_t* bItemType, const uint8_t* bItemClass, const int64_t* nSerialNumber, int32_t* nRet_Index, int16_t* nRet)
+		std::weak_ptr<nanodbc::result> execute(const char* charID, const char* AccountID, const int16_t* sRentalTime, const int32_t* nItemID, const int16_t* sDurability, const int32_t* nMoney, const int16_t* bGameBangType, const int16_t* bItemType, const int16_t* bItemClass, const int64_t* nSerialNumber, int32_t* nRet_Index, int16_t* nRet)
 		{
 			_stmt.reset_parameters();
 
@@ -1364,7 +1364,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* UserId, const uint8_t* byNation, const int16_t* index)
+		std::weak_ptr<nanodbc::result> execute(const char* UserId, const int16_t* byNation, const int16_t* index)
 		{
 			_stmt.reset_parameters();
 
@@ -1388,7 +1388,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* charid, const char* accountid, const char* opid, const char* opip, const int16_t* sPos, const int32_t* nItemID1, const int32_t* nItemID2, const uint8_t* byType, const int16_t* sDBIndex)
+		std::weak_ptr<nanodbc::result> execute(const char* charid, const char* accountid, const char* opid, const char* opip, const int16_t* sPos, const int32_t* nItemID1, const int32_t* nItemID2, const int16_t* byType, const int16_t* sDBIndex)
 		{
 			_stmt.reset_parameters();
 
@@ -1418,7 +1418,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const uint8_t* Type, const char* UserId, const int16_t* KnightsIndex, const uint8_t* Domanation)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t* Type, const char* UserId, const int16_t* KnightsIndex, const int16_t* Domanation)
 		{
 			_stmt.reset_parameters();
 
@@ -1444,7 +1444,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const int16_t* shAlliancIndex, const int16_t* shKnightsIndex, const uint8_t* byEmptyIndex, const uint8_t* bySiegeFlag)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* shAlliancIndex, const int16_t* shKnightsIndex, const int16_t* byEmptyIndex, const int16_t* bySiegeFlag)
 		{
 			_stmt.reset_parameters();
 
@@ -1470,7 +1470,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t* IDNum, const int16_t* MarkLen, const std::vector<uint8_t>* KnightMark)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t* IDNum, const int16_t* MarkLen, const char* KnightMark)
 		{
 			_stmt.reset_parameters();
 
@@ -1495,7 +1495,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const int16_t* shWhite, const int16_t* shBlue)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* byType, const int16_t* shWhite, const int16_t* shBlue)
 		{
 			_stmt.reset_parameters();
 
@@ -1603,7 +1603,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t* sCastleIndex, const int16_t* sKnightsIndex, const uint8_t* byWarType, const uint8_t* byUpdateType, const uint8_t* byWarDay, const uint8_t* byWarTime, const uint8_t* byWarMinute)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* sCastleIndex, const int16_t* sKnightsIndex, const int16_t* byWarType, const int16_t* byUpdateType, const int16_t* byWarDay, const int16_t* byWarTime, const int16_t* byWarMinute)
 		{
 			_stmt.reset_parameters();
 
@@ -1719,7 +1719,7 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* id, const uint8_t* Nation, const uint8_t* Race, const int16_t* Class, const uint8_t* HairColor, const uint8_t* Rank, const uint8_t* Title, const uint8_t* Level, const int32_t* Exp, const int32_t* Loyalty, const uint8_t* Face, const uint8_t* City, const int16_t* Knights, const uint8_t* Fame, const int16_t* Hp, const int16_t* Mp, const int16_t* Sp, const uint8_t* Str, const uint8_t* Sta, const uint8_t* Dex, const uint8_t* Intel, const uint8_t* Cha, const uint8_t* Authority, const uint8_t* Points, const int32_t* Gold, const uint8_t* Zone, const int16_t* Bind, const int32_t* PX, const int32_t* PZ, const int32_t* PY, const int32_t* dwTime, const int16_t* QuestTotal, const char* strSkill, const char* strItem, const char* strSerial, const char* strQuest, const int32_t* MannerPoint, const int32_t* LoyaltyMonthly)
+		std::weak_ptr<nanodbc::result> execute(const char* id, const int16_t* Nation, const int16_t* Race, const int16_t* Class, const int16_t* HairColor, const int16_t* Rank, const int16_t* Title, const int16_t* Level, const int32_t* Exp, const int32_t* Loyalty, const int16_t* Face, const int16_t* City, const int16_t* Knights, const int16_t* Fame, const int16_t* Hp, const int16_t* Mp, const int16_t* Sp, const int16_t* Str, const int16_t* Sta, const int16_t* Dex, const int16_t* Intel, const int16_t* Cha, const int16_t* Authority, const int16_t* Points, const int32_t* Gold, const int16_t* Zone, const int16_t* Bind, const int32_t* PX, const int32_t* PZ, const int32_t* PY, const int32_t* dwTime, const int16_t* QuestTotal, const char* strSkill, const char* strItem, const char* strSerial, const char* strQuest, const int32_t* MannerPoint, const int32_t* LoyaltyMonthly)
 		{
 			_stmt.reset_parameters();
 
