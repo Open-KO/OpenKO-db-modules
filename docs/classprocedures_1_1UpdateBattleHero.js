@@ -1,4 +1,4 @@
 var classprocedures_1_1UpdateBattleHero =
 [
-    [ "execute", "classprocedures_1_1UpdateBattleHero.html#a06acd851d02ac2f1fcaeac5c2299ecd5", null ]
+    [ "execute", "classprocedures_1_1UpdateBattleHero.html#a51cb53dabff006f97fd76a2126f6a07d", null ]
 ];

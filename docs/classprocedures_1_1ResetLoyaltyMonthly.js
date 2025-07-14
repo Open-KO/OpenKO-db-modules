@@ -1,4 +1,4 @@
 var classprocedures_1_1ResetLoyaltyMonthly =
 [
-    [ "execute", "classprocedures_1_1ResetLoyaltyMonthly.html#a755b9e0cf669711fb56b524d5e5affda", null ]
+    [ "execute", "classprocedures_1_1ResetLoyaltyMonthly.html#a1a0efb1bf9257af9872d580659fe46cc", null ]
 ];

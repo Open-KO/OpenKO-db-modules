@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classprocedures_1_1StoredProcedure.htm
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classprocedures_1_1StoredProcedure-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">procedures::StoredProcedure Class Reference</div></div>
@@ -93,15 +94,18 @@ $(document).ready(function(){initNavTree('classprocedures_1_1StoredProcedure.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0dfeea3a1ff627527caf3117ae9881cd"><td class="memItemLeft" align="right" valign="top"><a id="a0dfeea3a1ff627527caf3117ae9881cd" name="a0dfeea3a1ff627527caf3117ae9881cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr>
+<tr class="separator:a0dfeea3a1ff627527caf3117ae9881cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
 <tr class="memitem:abb7fd571f6079c0b135bed1d5f27b851"><td class="memItemLeft" align="right" valign="top"><a id="abb7fd571f6079c0b135bed1d5f27b851" name="abb7fd571f6079c0b135bed1d5f27b851"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StoredProcedure</b> (nanodbc::connection &amp;conn)</td></tr>
 <tr class="separator:abb7fd571f6079c0b135bed1d5f27b851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55001b058f1ec54c66d22050f60c7a35"><td class="memItemLeft" align="right" valign="top"><a id="a55001b058f1ec54c66d22050f60c7a35" name="a55001b058f1ec54c66d22050f60c7a35"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>returnValue</b> ()</td></tr>
-<tr class="separator:a55001b058f1ec54c66d22050f60c7a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73213cb9502492cf269fa175c5f37435"><td class="memItemLeft" align="right" valign="top"><a id="a73213cb9502492cf269fa175c5f37435" name="a73213cb9502492cf269fa175c5f37435"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>finalize</b> ()</td></tr>
-<tr class="separator:a73213cb9502492cf269fa175c5f37435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9659da04ca91b62c2c4eb604d5f89d21"><td class="memItemLeft" align="right" valign="top"><a id="a9659da04ca91b62c2c4eb604d5f89d21" name="a9659da04ca91b62c2c4eb604d5f89d21"></a>
+std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> ()</td></tr>
+<tr class="separator:a9659da04ca91b62c2c4eb604d5f89d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -111,15 +115,12 @@ nanodbc::connection &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:add4dca98665ced196b30ad5b1b021608"><td class="memItemLeft" align="right" valign="top"><a id="add4dca98665ced196b30ad5b1b021608" name="add4dca98665ced196b30ad5b1b021608"></a>
 nanodbc::statement&#160;</td><td class="memItemRight" valign="bottom"><b>_stmt</b></td></tr>
 <tr class="separator:add4dca98665ced196b30ad5b1b021608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55771fa163cd8bde4cd6ffedda82b9b1"><td class="memItemLeft" align="right" valign="top"><a id="a55771fa163cd8bde4cd6ffedda82b9b1" name="a55771fa163cd8bde4cd6ffedda82b9b1"></a>
-std::unique_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_result</b></td></tr>
-<tr class="separator:a55771fa163cd8bde4cd6ffedda82b9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b98e8d14f27be6715628ba5246dcdcd"><td class="memItemLeft" align="right" valign="top"><a id="a7b98e8d14f27be6715628ba5246dcdcd" name="a7b98e8d14f27be6715628ba5246dcdcd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_returnValue</b></td></tr>
-<tr class="separator:a7b98e8d14f27be6715628ba5246dcdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b163139a08101c6d93c02b935aebeeb"><td class="memItemLeft" align="right" valign="top"><a id="a1b163139a08101c6d93c02b935aebeeb" name="a1b163139a08101c6d93c02b935aebeeb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_finalized</b></td></tr>
-<tr class="separator:a1b163139a08101c6d93c02b935aebeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6301d77bca112f678cb4e82afa9371b"><td class="memItemLeft" align="right" valign="top"><a id="aa6301d77bca112f678cb4e82afa9371b" name="aa6301d77bca112f678cb4e82afa9371b"></a>
+std::shared_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_result</b></td></tr>
+<tr class="separator:aa6301d77bca112f678cb4e82afa9371b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0370ccdcaba981d4a225c125a76784e"><td class="memItemLeft" align="right" valign="top"><a id="ac0370ccdcaba981d4a225c125a76784e" name="ac0370ccdcaba981d4a225c125a76784e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_flushed</b></td></tr>
+<tr class="separator:ac0370ccdcaba981d4a225c125a76784e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Procedures/Procedures-StoredProcedure.ixx</li>

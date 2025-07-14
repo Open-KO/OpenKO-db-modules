@@ -1,4 +1,4 @@
 var classprocedures_1_1KnightsRatingUpdate =
 [
-    [ "execute", "classprocedures_1_1KnightsRatingUpdate.html#ad5a36b889bd199448658863c6145d176", null ]
+    [ "execute", "classprocedures_1_1KnightsRatingUpdate.html#a8ebd53580de9ef3e4b667c7dcc7fcd91", null ]
 ];
