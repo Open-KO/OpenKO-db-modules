@@ -116,7 +116,7 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
-			_stmt.bind(1, LogoutCode);
+			_stmt.bind(1, &LogoutCode);
 			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
 			_stmt.bind(3, nRet2, nanodbc::statement::PARAM_RETURN);
 	
@@ -140,11 +140,11 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, sCastleIndex);
-			_stmt.bind(1, byType);
-			_stmt.bind(2, nMoradonTariff);
-			_stmt.bind(3, nDellosTariff);
-			_stmt.bind(4, nMoney);
+			_stmt.bind(0, &sCastleIndex);
+			_stmt.bind(1, &byType);
+			_stmt.bind(2, &nMoradonTariff);
+			_stmt.bind(3, &nDellosTariff);
+			_stmt.bind(4, &nMoney);
 			_stmt.bind(5, strACID);
 			_stmt.bind(6, strCharID);
 	
@@ -204,8 +204,8 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, KnightsIndex);
-			_stmt.bind(1, CapeIndex);
+			_stmt.bind(0, &KnightsIndex);
+			_stmt.bind(1, &CapeIndex);
 	
 			return StoredProcedure::execute();
 		}
@@ -268,9 +268,9 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(1, index);
-			_stmt.bind(2, nation);
-			_stmt.bind(3, community);
+			_stmt.bind(1, &index);
+			_stmt.bind(2, &nation);
+			_stmt.bind(3, &community);
 			_stmt.bind(4, strName);
 			_stmt.bind(5, strChief);
 	
@@ -296,8 +296,8 @@ namespace procedures
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
 			_stmt.bind(1, index, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(2, nation);
-			_stmt.bind(3, community);
+			_stmt.bind(2, &nation);
+			_stmt.bind(3, &community);
 			_stmt.bind(4, strName);
 			_stmt.bind(5, strChief);
 	
@@ -323,17 +323,17 @@ namespace procedures
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
 			_stmt.bind(1, AccountID);
-			_stmt.bind(2, index);
+			_stmt.bind(2, &index);
 			_stmt.bind(3, CharID);
-			_stmt.bind(4, Race);
-			_stmt.bind(5, Class);
-			_stmt.bind(6, Hair);
-			_stmt.bind(7, Face);
-			_stmt.bind(8, Str);
-			_stmt.bind(9, Sta);
-			_stmt.bind(10, Dex);
-			_stmt.bind(11, Intel);
-			_stmt.bind(12, Cha);
+			_stmt.bind(4, &Race);
+			_stmt.bind(5, &Class);
+			_stmt.bind(6, &Hair);
+			_stmt.bind(7, &Face);
+			_stmt.bind(8, &Str);
+			_stmt.bind(9, &Sta);
+			_stmt.bind(10, &Dex);
+			_stmt.bind(11, &Intel);
+			_stmt.bind(12, &Cha);
 	
 			return StoredProcedure::execute();
 		}
@@ -380,7 +380,7 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(1, knightsindex);
+			_stmt.bind(1, &knightsindex);
 	
 			return StoredProcedure::execute();
 		}
@@ -440,7 +440,7 @@ namespace procedures
 
 			_stmt.bind(0, strAccountID);
 			_stmt.bind(1, strUserID);
-			_stmt.bind(2, days);
+			_stmt.bind(2, &days);
 	
 			return StoredProcedure::execute();
 		}
@@ -535,8 +535,8 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strUserID);
-			_stmt.bind(1, sNoticeLen);
-			_stmt.bind(2, byNation);
+			_stmt.bind(1, &sNoticeLen);
+			_stmt.bind(2, &byNation);
 			_stmt.bind(3, strNotice);
 	
 			return StoredProcedure::execute();
@@ -561,7 +561,7 @@ namespace procedures
 
 			_stmt.bind(0, CharID_1);
 			_stmt.bind(1, CharID_2);
-			_stmt.bind(2, nNation);
+			_stmt.bind(2, &nNation);
 			_stmt.bind(3, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
@@ -584,14 +584,14 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, byNation);
-			_stmt.bind(2, nKarusTax1);
-			_stmt.bind(3, nKarusTax2);
-			_stmt.bind(4, nKarusTax3);
-			_stmt.bind(5, nElmoTax1);
-			_stmt.bind(6, nElmoTax2);
-			_stmt.bind(7, nElmoTax3);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &byNation);
+			_stmt.bind(2, &nKarusTax1);
+			_stmt.bind(3, &nKarusTax2);
+			_stmt.bind(4, &nKarusTax3);
+			_stmt.bind(5, &nElmoTax1);
+			_stmt.bind(6, &nElmoTax2);
+			_stmt.bind(7, &nElmoTax3);
 	
 			return StoredProcedure::execute();
 		}
@@ -615,7 +615,7 @@ namespace procedures
 
 			_stmt.bind(0, strAccountID);
 			_stmt.bind(1, strCharID);
-			_stmt.bind(2, byNation);
+			_stmt.bind(2, &byNation);
 			_stmt.bind(3, strCandidacyID);
 			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
 	
@@ -639,8 +639,8 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byResult);
-			_stmt.bind(1, byNation);
+			_stmt.bind(0, &byResult);
+			_stmt.bind(1, &byNation);
 			_stmt.bind(2, strAccountID);
 			_stmt.bind(3, strCharID);
 			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
@@ -665,8 +665,8 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, byNation);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &byNation);
 			_stmt.bind(2, strUserID);
 	
 			return StoredProcedure::execute();
@@ -689,7 +689,7 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byNation);
+			_stmt.bind(0, &byNation);
 			_stmt.bind(1, nTotalMan, nanodbc::statement::PARAM_RETURN);
 			_stmt.bind(2, nAgreeMan, nanodbc::statement::PARAM_RETURN);
 	
@@ -713,9 +713,9 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, byNation);
-			_stmt.bind(2, nAmount);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &byNation);
+			_stmt.bind(2, &nAmount);
 			_stmt.bind(3, strUserID);
 	
 			return StoredProcedure::execute();
@@ -738,11 +738,11 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byDBType);
-			_stmt.bind(1, byType);
-			_stmt.bind(2, byNation);
-			_stmt.bind(3, nKnights);
-			_stmt.bind(4, nAmount);
+			_stmt.bind(0, &byDBType);
+			_stmt.bind(1, &byType);
+			_stmt.bind(2, &byNation);
+			_stmt.bind(3, &nKnights);
+			_stmt.bind(4, &nAmount);
 			_stmt.bind(5, strUserID);
 	
 			return StoredProcedure::execute();
@@ -765,13 +765,13 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, byNation);
-			_stmt.bind(2, sYear);
-			_stmt.bind(3, byMonth);
-			_stmt.bind(4, byDay);
-			_stmt.bind(5, byHour);
-			_stmt.bind(6, byMinute);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &byNation);
+			_stmt.bind(2, &sYear);
+			_stmt.bind(3, &byMonth);
+			_stmt.bind(4, &byDay);
+			_stmt.bind(5, &byHour);
+			_stmt.bind(6, &byMinute);
 	
 			return StoredProcedure::execute();
 		}
@@ -793,8 +793,8 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, byNation);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &byNation);
 	
 			return StoredProcedure::execute();
 		}
@@ -816,13 +816,13 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, byNation);
-			_stmt.bind(2, sYear);
-			_stmt.bind(3, byMonth);
-			_stmt.bind(4, byDay);
-			_stmt.bind(5, byHour);
-			_stmt.bind(6, byMinute);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &byNation);
+			_stmt.bind(2, &sYear);
+			_stmt.bind(3, &byMonth);
+			_stmt.bind(4, &byDay);
+			_stmt.bind(5, &byHour);
+			_stmt.bind(6, &byMinute);
 			_stmt.bind(7, strUserID);
 	
 			return StoredProcedure::execute();
@@ -845,13 +845,13 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, byNation);
-			_stmt.bind(2, byAmount);
-			_stmt.bind(3, byDay);
-			_stmt.bind(4, byHout);
-			_stmt.bind(5, byMinute);
-			_stmt.bind(6, sDurationTime);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &byNation);
+			_stmt.bind(2, &byAmount);
+			_stmt.bind(3, &byDay);
+			_stmt.bind(4, &byHout);
+			_stmt.bind(5, &byMinute);
+			_stmt.bind(6, &sDurationTime);
 	
 			return StoredProcedure::execute();
 		}
@@ -937,7 +937,7 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, knightsindex);
+			_stmt.bind(0, &knightsindex);
 	
 			return StoredProcedure::execute();
 		}
@@ -1076,7 +1076,7 @@ namespace procedures
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
 			_stmt.bind(1, AccountID);
-			_stmt.bind(2, Nation);
+			_stmt.bind(2, &Nation);
 	
 			return StoredProcedure::execute();
 		}
@@ -1100,7 +1100,7 @@ namespace procedures
 
 			_stmt.bind(0, AccountID);
 			_stmt.bind(1, CharID);
-			_stmt.bind(2, nServerNo);
+			_stmt.bind(2, &nServerNo);
 			_stmt.bind(3, strServerIP);
 			_stmt.bind(4, ClientIP);
 			_stmt.bind(5, nRet, nanodbc::statement::PARAM_RETURN);
@@ -1145,8 +1145,8 @@ namespace procedures
 
 			_stmt.bind(0, AccountID);
 			_stmt.bind(1, CharID);
-			_stmt.bind(2, nRentalIndex);
-			_stmt.bind(3, nItemNumber);
+			_stmt.bind(2, &nRentalIndex);
+			_stmt.bind(3, &nItemNumber);
 			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
@@ -1171,9 +1171,9 @@ namespace procedures
 
 			_stmt.bind(0, AccountID);
 			_stmt.bind(1, CharID);
-			_stmt.bind(2, nItemNumber);
-			_stmt.bind(3, nRentalIndex);
-			_stmt.bind(4, nDurability);
+			_stmt.bind(2, &nItemNumber);
+			_stmt.bind(3, &nRentalIndex);
+			_stmt.bind(4, &nDurability);
 			_stmt.bind(5, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
@@ -1196,8 +1196,8 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, nRentalIndex);
-			_stmt.bind(1, nDurability);
+			_stmt.bind(0, &nRentalIndex);
+			_stmt.bind(1, &nDurability);
 	
 			return StoredProcedure::execute();
 		}
@@ -1221,8 +1221,8 @@ namespace procedures
 
 			_stmt.bind(0, AccountID);
 			_stmt.bind(1, CharID);
-			_stmt.bind(2, nRentalIndex);
-			_stmt.bind(3, nItemNumber);
+			_stmt.bind(2, &nRentalIndex);
+			_stmt.bind(3, &nItemNumber);
 			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
 	
 			return StoredProcedure::execute();
@@ -1247,14 +1247,14 @@ namespace procedures
 
 			_stmt.bind(0, charID);
 			_stmt.bind(1, AccountID);
-			_stmt.bind(2, sRentalTime);
-			_stmt.bind(3, nItemID);
-			_stmt.bind(4, sDurability);
-			_stmt.bind(5, nMoney);
-			_stmt.bind(6, bGameBangType);
-			_stmt.bind(7, bItemType);
-			_stmt.bind(8, bItemClass);
-			_stmt.bind(9, nSerialNumber);
+			_stmt.bind(2, &sRentalTime);
+			_stmt.bind(3, &nItemID);
+			_stmt.bind(4, &sDurability);
+			_stmt.bind(5, &nMoney);
+			_stmt.bind(6, &bGameBangType);
+			_stmt.bind(7, &bItemType);
+			_stmt.bind(8, &bItemClass);
+			_stmt.bind(9, &nSerialNumber);
 			_stmt.bind(10, nRet_Index, nanodbc::statement::PARAM_RETURN);
 			_stmt.bind(11, nRet, nanodbc::statement::PARAM_RETURN);
 	
@@ -1319,7 +1319,7 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strCharID);
-			_stmt.bind(1, nCount);
+			_stmt.bind(1, &nCount);
 			_stmt.bind(2, strSkillData);
 	
 			return StoredProcedure::execute();
@@ -1346,7 +1346,7 @@ namespace procedures
 			_stmt.bind(1, strNation);
 			_stmt.bind(2, strClass);
 			_stmt.bind(3, strAchievement);
-			_stmt.bind(4, nIndex);
+			_stmt.bind(4, &nIndex);
 	
 			return StoredProcedure::execute();
 		}
@@ -1369,8 +1369,8 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, UserId);
-			_stmt.bind(1, byNation);
-			_stmt.bind(2, index);
+			_stmt.bind(1, &byNation);
+			_stmt.bind(2, &index);
 	
 			return StoredProcedure::execute();
 		}
@@ -1396,11 +1396,11 @@ namespace procedures
 			_stmt.bind(1, accountid);
 			_stmt.bind(2, opid);
 			_stmt.bind(3, opip);
-			_stmt.bind(4, sPos);
-			_stmt.bind(5, nItemID1);
-			_stmt.bind(6, nItemID2);
-			_stmt.bind(7, byType);
-			_stmt.bind(8, sDBIndex);
+			_stmt.bind(4, &sPos);
+			_stmt.bind(5, &nItemID1);
+			_stmt.bind(6, &nItemID2);
+			_stmt.bind(7, &byType);
+			_stmt.bind(8, &sDBIndex);
 	
 			return StoredProcedure::execute();
 		}
@@ -1423,10 +1423,10 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(1, Type);
+			_stmt.bind(1, &Type);
 			_stmt.bind(2, UserId);
-			_stmt.bind(3, KnightsIndex);
-			_stmt.bind(4, Domanation);
+			_stmt.bind(3, &KnightsIndex);
+			_stmt.bind(4, &Domanation);
 	
 			return StoredProcedure::execute();
 		}
@@ -1448,11 +1448,11 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, shAlliancIndex);
-			_stmt.bind(2, shKnightsIndex);
-			_stmt.bind(3, byEmptyIndex);
-			_stmt.bind(4, bySiegeFlag);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &shAlliancIndex);
+			_stmt.bind(2, &shKnightsIndex);
+			_stmt.bind(3, &byEmptyIndex);
+			_stmt.bind(4, &bySiegeFlag);
 	
 			return StoredProcedure::execute();
 		}
@@ -1475,8 +1475,8 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(1, IDNum);
-			_stmt.bind(2, MarkLen);
+			_stmt.bind(1, &IDNum);
+			_stmt.bind(2, &MarkLen);
 			_stmt.bind(3, KnightMark);
 	
 			return StoredProcedure::execute();
@@ -1499,9 +1499,9 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, byType);
-			_stmt.bind(1, shWhite);
-			_stmt.bind(2, shBlue);
+			_stmt.bind(0, &byType);
+			_stmt.bind(1, &shWhite);
+			_stmt.bind(2, &shBlue);
 	
 			return StoredProcedure::execute();
 		}
@@ -1543,7 +1543,7 @@ namespace procedures
 
 			_stmt.bind(0, returnValue, nanodbc::statement::PARAM_RETURN);
 			_stmt.bind(1, AccountID);
-			_stmt.bind(2, Days);
+			_stmt.bind(2, &Days);
 	
 			return StoredProcedure::execute();
 		}
@@ -1566,26 +1566,26 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strCharID);
-			_stmt.bind(1, Skill1);
-			_stmt.bind(2, During1);
-			_stmt.bind(3, Skill2);
-			_stmt.bind(4, During2);
-			_stmt.bind(5, Skill3);
-			_stmt.bind(6, During3);
-			_stmt.bind(7, Skill4);
-			_stmt.bind(8, During4);
-			_stmt.bind(9, Skill5);
-			_stmt.bind(10, During5);
-			_stmt.bind(11, Skill6);
-			_stmt.bind(12, During6);
-			_stmt.bind(13, Skill7);
-			_stmt.bind(14, During7);
-			_stmt.bind(15, Skill8);
-			_stmt.bind(16, During8);
-			_stmt.bind(17, Skill9);
-			_stmt.bind(18, During9);
-			_stmt.bind(19, Skill10);
-			_stmt.bind(20, During10);
+			_stmt.bind(1, &Skill1);
+			_stmt.bind(2, &During1);
+			_stmt.bind(3, &Skill2);
+			_stmt.bind(4, &During2);
+			_stmt.bind(5, &Skill3);
+			_stmt.bind(6, &During3);
+			_stmt.bind(7, &Skill4);
+			_stmt.bind(8, &During4);
+			_stmt.bind(9, &Skill5);
+			_stmt.bind(10, &During5);
+			_stmt.bind(11, &Skill6);
+			_stmt.bind(12, &During6);
+			_stmt.bind(13, &Skill7);
+			_stmt.bind(14, &During7);
+			_stmt.bind(15, &Skill8);
+			_stmt.bind(16, &During8);
+			_stmt.bind(17, &Skill9);
+			_stmt.bind(18, &During9);
+			_stmt.bind(19, &Skill10);
+			_stmt.bind(20, &During10);
 	
 			return StoredProcedure::execute();
 		}
@@ -1607,13 +1607,13 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, sCastleIndex);
-			_stmt.bind(1, sKnightsIndex);
-			_stmt.bind(2, byWarType);
-			_stmt.bind(3, byUpdateType);
-			_stmt.bind(4, byWarDay);
-			_stmt.bind(5, byWarTime);
-			_stmt.bind(6, byWarMinute);
+			_stmt.bind(0, &sCastleIndex);
+			_stmt.bind(1, &sKnightsIndex);
+			_stmt.bind(2, &byWarType);
+			_stmt.bind(3, &byUpdateType);
+			_stmt.bind(4, &byWarDay);
+			_stmt.bind(5, &byWarTime);
+			_stmt.bind(6, &byWarMinute);
 	
 			return StoredProcedure::execute();
 		}
@@ -1635,7 +1635,7 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, sCastleIndex);
+			_stmt.bind(0, &sCastleIndex);
 			_stmt.bind(1, strChallengerList);
 	
 			return StoredProcedure::execute();
@@ -1658,17 +1658,17 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, sCastleIndex);
-			_stmt.bind(1, sKnights_1);
-			_stmt.bind(2, sKnights_2);
-			_stmt.bind(3, sKnights_3);
-			_stmt.bind(4, sKnights_4);
-			_stmt.bind(5, sKnights_5);
-			_stmt.bind(6, sKnights_6);
-			_stmt.bind(7, sKnights_7);
-			_stmt.bind(8, sKnights_8);
-			_stmt.bind(9, sKnights_9);
-			_stmt.bind(10, sKnights_10);
+			_stmt.bind(0, &sCastleIndex);
+			_stmt.bind(1, &sKnights_1);
+			_stmt.bind(2, &sKnights_2);
+			_stmt.bind(3, &sKnights_3);
+			_stmt.bind(4, &sKnights_4);
+			_stmt.bind(5, &sKnights_5);
+			_stmt.bind(6, &sKnights_6);
+			_stmt.bind(7, &sKnights_7);
+			_stmt.bind(8, &sKnights_8);
+			_stmt.bind(9, &sKnights_9);
+			_stmt.bind(10, &sKnights_10);
 			_stmt.bind(11, strChallengerList);
 	
 			return StoredProcedure::execute();
@@ -1691,17 +1691,17 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, sCastleIndex);
-			_stmt.bind(1, sKnights_1);
-			_stmt.bind(2, sKnights_2);
-			_stmt.bind(3, sKnights_3);
-			_stmt.bind(4, sKnights_4);
-			_stmt.bind(5, sKnights_5);
-			_stmt.bind(6, sKnights_6);
-			_stmt.bind(7, sKnights_7);
-			_stmt.bind(8, sKnights_8);
-			_stmt.bind(9, sKnights_9);
-			_stmt.bind(10, sKnights_10);
+			_stmt.bind(0, &sCastleIndex);
+			_stmt.bind(1, &sKnights_1);
+			_stmt.bind(2, &sKnights_2);
+			_stmt.bind(3, &sKnights_3);
+			_stmt.bind(4, &sKnights_4);
+			_stmt.bind(5, &sKnights_5);
+			_stmt.bind(6, &sKnights_6);
+			_stmt.bind(7, &sKnights_7);
+			_stmt.bind(8, &sKnights_8);
+			_stmt.bind(9, &sKnights_9);
+			_stmt.bind(10, &sKnights_10);
 	
 			return StoredProcedure::execute();
 		}
@@ -1724,43 +1724,43 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, id);
-			_stmt.bind(1, Nation);
-			_stmt.bind(2, Race);
-			_stmt.bind(3, Class);
-			_stmt.bind(4, HairColor);
-			_stmt.bind(5, Rank);
-			_stmt.bind(6, Title);
-			_stmt.bind(7, Level);
-			_stmt.bind(8, Exp);
-			_stmt.bind(9, Loyalty);
-			_stmt.bind(10, Face);
-			_stmt.bind(11, City);
-			_stmt.bind(12, Knights);
-			_stmt.bind(13, Fame);
-			_stmt.bind(14, Hp);
-			_stmt.bind(15, Mp);
-			_stmt.bind(16, Sp);
-			_stmt.bind(17, Str);
-			_stmt.bind(18, Sta);
-			_stmt.bind(19, Dex);
-			_stmt.bind(20, Intel);
-			_stmt.bind(21, Cha);
-			_stmt.bind(22, Authority);
-			_stmt.bind(23, Points);
-			_stmt.bind(24, Gold);
-			_stmt.bind(25, Zone);
-			_stmt.bind(26, Bind);
-			_stmt.bind(27, PX);
-			_stmt.bind(28, PZ);
-			_stmt.bind(29, PY);
-			_stmt.bind(30, dwTime);
-			_stmt.bind(31, QuestTotal);
+			_stmt.bind(1, &Nation);
+			_stmt.bind(2, &Race);
+			_stmt.bind(3, &Class);
+			_stmt.bind(4, &HairColor);
+			_stmt.bind(5, &Rank);
+			_stmt.bind(6, &Title);
+			_stmt.bind(7, &Level);
+			_stmt.bind(8, &Exp);
+			_stmt.bind(9, &Loyalty);
+			_stmt.bind(10, &Face);
+			_stmt.bind(11, &City);
+			_stmt.bind(12, &Knights);
+			_stmt.bind(13, &Fame);
+			_stmt.bind(14, &Hp);
+			_stmt.bind(15, &Mp);
+			_stmt.bind(16, &Sp);
+			_stmt.bind(17, &Str);
+			_stmt.bind(18, &Sta);
+			_stmt.bind(19, &Dex);
+			_stmt.bind(20, &Intel);
+			_stmt.bind(21, &Cha);
+			_stmt.bind(22, &Authority);
+			_stmt.bind(23, &Points);
+			_stmt.bind(24, &Gold);
+			_stmt.bind(25, &Zone);
+			_stmt.bind(26, &Bind);
+			_stmt.bind(27, &PX);
+			_stmt.bind(28, &PZ);
+			_stmt.bind(29, &PY);
+			_stmt.bind(30, &dwTime);
+			_stmt.bind(31, &QuestTotal);
 			_stmt.bind(32, strSkill);
 			_stmt.bind(33, strItem);
 			_stmt.bind(34, strSerial);
 			_stmt.bind(35, strQuest);
-			_stmt.bind(36, MannerPoint);
-			_stmt.bind(37, LoyaltyMonthly);
+			_stmt.bind(36, &MannerPoint);
+			_stmt.bind(37, &LoyaltyMonthly);
 	
 			return StoredProcedure::execute();
 		}
@@ -1783,8 +1783,8 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, accountid);
-			_stmt.bind(1, Money);
-			_stmt.bind(2, dwTime);
+			_stmt.bind(1, &Money);
+			_stmt.bind(2, &dwTime);
 			_stmt.bind(3, strItem);
 			_stmt.bind(4, strSerial);
 	
