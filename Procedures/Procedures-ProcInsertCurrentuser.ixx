@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:ProcInsertCurrentuser;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL PROC_INSERT_CURRENTUSER(?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& AccountID, const std::string& CharID, const int16_t& nServerNo, const std::string& strServerIP, const std::string& ClientIP, int16_t& nRet)
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int16_t* nServerNo, const char* strServerIP, const char* ClientIP, int16_t* nRet)
 		{
 			_stmt.reset_parameters();
 
@@ -32,8 +31,7 @@ namespace procedures {
 			_stmt.bind(4, ClientIP);
 			_stmt.bind(5, nRet, nanodbc::statement::PARAM_RETURN);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

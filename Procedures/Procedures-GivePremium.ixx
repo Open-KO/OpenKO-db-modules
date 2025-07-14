@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:GivePremium;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL GIVE_PREMIUM(?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& strAccountID, const std::string& strUserID, const int32_t& days)
+		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strUserID, const int32_t* days)
 		{
 			_stmt.reset_parameters();
 
@@ -29,8 +28,7 @@ namespace procedures {
 			_stmt.bind(1, strUserID);
 			_stmt.bind(2, days);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

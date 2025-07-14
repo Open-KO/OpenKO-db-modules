@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 
 export module Procedures:ChangeKnightsCape;
 import :StoredProcedure;
@@ -16,19 +17,16 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL CHANGE_KNIGHTS_CAPE(?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const int16_t& KnightsIndex, const int16_t& CapeIndex)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* KnightsIndex, const int16_t* CapeIndex)
 		{
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, KnightsIndex);
 			_stmt.bind(1, CapeIndex);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

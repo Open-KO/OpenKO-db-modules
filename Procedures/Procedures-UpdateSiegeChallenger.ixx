@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:UpdateSiegeChallenger;
@@ -17,19 +18,16 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE_CHALLENGER(?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const int16_t& sCastleIndex, const std::string& strChallengerList)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* sCastleIndex, const char* strChallengerList)
 		{
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, sCastleIndex);
 			_stmt.bind(1, strChallengerList);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:UpdateKnights;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS(?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(int16_t& nRet, const uint8_t& Type, const std::string& UserId, const int16_t& KnightsIndex, const uint8_t& Domanation)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const uint8_t* Type, const char* UserId, const int16_t* KnightsIndex, const uint8_t* Domanation)
 		{
 			_stmt.reset_parameters();
 
@@ -31,8 +30,7 @@ namespace procedures {
 			_stmt.bind(3, KnightsIndex);
 			_stmt.bind(4, Domanation);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

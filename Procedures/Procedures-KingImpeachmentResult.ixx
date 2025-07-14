@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 
 export module Procedures:KingImpeachmentResult;
 import :StoredProcedure;
@@ -16,11 +17,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL KING_IMPEACHMENT_RESULT(?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const uint8_t& byNation, int16_t& nTotalMan, int16_t& nAgreeMan)
+		std::weak_ptr<nanodbc::result> execute(const uint8_t* byNation, int16_t* nTotalMan, int16_t* nAgreeMan)
 		{
 			_stmt.reset_parameters();
 
@@ -28,8 +27,7 @@ namespace procedures {
 			_stmt.bind(1, nTotalMan, nanodbc::statement::PARAM_RETURN);
 			_stmt.bind(2, nAgreeMan, nanodbc::statement::PARAM_RETURN);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

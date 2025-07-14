@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 
 export module Procedures:KingUpdateNoahOrExpEvent;
 import :StoredProcedure;
@@ -16,11 +17,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL KING_UPDATE_NOAH_OR_EXP_EVENT(?,?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const uint8_t& byType, const uint8_t& byNation, const uint8_t& byAmount, const uint8_t& byDay, const uint8_t& byHout, const uint8_t& byMinute, const int16_t& sDurationTime)
+		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation, const uint8_t* byAmount, const uint8_t* byDay, const uint8_t* byHout, const uint8_t* byMinute, const int16_t* sDurationTime)
 		{
 			_stmt.reset_parameters();
 
@@ -32,8 +31,7 @@ namespace procedures {
 			_stmt.bind(5, byMinute);
 			_stmt.bind(6, sDurationTime);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

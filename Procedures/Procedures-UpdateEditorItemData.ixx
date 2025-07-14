@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:UpdateEditorItemData;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL UPDATE_EDITOR_ITEM_DATA(?,?,?,?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& charid, const std::string& accountid, const std::string& opid, const std::string& opip, const int16_t& sPos, const int32_t& nItemID1, const int32_t& nItemID2, const uint8_t& byType, const int16_t& sDBIndex)
+		std::weak_ptr<nanodbc::result> execute(const char* charid, const char* accountid, const char* opid, const char* opip, const int16_t* sPos, const int32_t* nItemID1, const int32_t* nItemID2, const uint8_t* byType, const int16_t* sDBIndex)
 		{
 			_stmt.reset_parameters();
 
@@ -35,8 +34,7 @@ namespace procedures {
 			_stmt.bind(7, byType);
 			_stmt.bind(8, sDBIndex);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:NationSelect;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL NATION_SELECT(?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(int16_t& nRet, const std::string& AccountID, const uint8_t& Nation)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const uint8_t* Nation)
 		{
 			_stmt.reset_parameters();
 
@@ -29,8 +28,7 @@ namespace procedures {
 			_stmt.bind(1, AccountID);
 			_stmt.bind(2, Nation);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

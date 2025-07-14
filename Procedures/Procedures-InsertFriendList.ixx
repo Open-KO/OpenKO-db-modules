@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:InsertFriendList;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL INSERT_FRIEND_LIST(?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& strUserID, const std::string& strFriend, int16_t& nRet)
+		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const char* strFriend, int16_t* nRet)
 		{
 			_stmt.reset_parameters();
 
@@ -29,8 +28,7 @@ namespace procedures {
 			_stmt.bind(1, strFriend);
 			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

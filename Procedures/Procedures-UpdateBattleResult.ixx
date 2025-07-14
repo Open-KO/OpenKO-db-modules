@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:UpdateBattleResult;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL UPDATE_BATTLE_RESULT(?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& UserId, const uint8_t& byNation, const int16_t& index)
+		std::weak_ptr<nanodbc::result> execute(const char* UserId, const uint8_t* byNation, const int16_t* index)
 		{
 			_stmt.reset_parameters();
 
@@ -29,8 +28,7 @@ namespace procedures {
 			_stmt.bind(1, byNation);
 			_stmt.bind(2, index);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:CreateNewChar;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL CREATE_NEW_CHAR(?,?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(int16_t& nRet, const std::string& AccountID, const uint8_t& index, const std::string& CharID, const uint8_t& Race, const int16_t& Class, const uint8_t& Hair, const uint8_t& Face, const uint8_t& Str, const uint8_t& Sta, const uint8_t& Dex, const uint8_t& Intel, const uint8_t& Cha)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const uint8_t* index, const char* CharID, const uint8_t* Race, const int16_t* Class, const uint8_t* Hair, const uint8_t* Face, const uint8_t* Str, const uint8_t* Sta, const uint8_t* Dex, const uint8_t* Intel, const uint8_t* Cha)
 		{
 			_stmt.reset_parameters();
 
@@ -39,8 +38,7 @@ namespace procedures {
 			_stmt.bind(11, Intel);
 			_stmt.bind(12, Cha);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

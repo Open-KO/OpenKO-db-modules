@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:UpdateWarehouse;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL UPDATE_WAREHOUSE(?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& accountid, const int32_t& Money, const int32_t& dwTime, const std::string& strItem, const std::string& strSerial)
+		std::weak_ptr<nanodbc::result> execute(const char* accountid, const int32_t* Money, const int32_t* dwTime, const char* strItem, const char* strSerial)
 		{
 			_stmt.reset_parameters();
 
@@ -31,8 +30,7 @@ namespace procedures {
 			_stmt.bind(3, strItem);
 			_stmt.bind(4, strSerial);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

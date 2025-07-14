@@ -1,5 +1,6 @@
 module;
 
+#include <memory>
 
 export module Procedures:UserKnightsRatingUpdate;
 import :StoredProcedure;
@@ -15,14 +16,11 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL USER_KNIGHTS_RATING_UPDATE()}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute()
+		std::weak_ptr<nanodbc::result> execute()
 		{
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

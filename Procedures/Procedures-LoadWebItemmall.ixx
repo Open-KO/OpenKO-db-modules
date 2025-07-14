@@ -1,5 +1,6 @@
 module;
 
+#include <memory>
 #include <string>
 
 export module Procedures:LoadWebItemmall;
@@ -16,18 +17,15 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL LOAD_WEB_ITEMMALL(?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& strCharID)
+		std::weak_ptr<nanodbc::result> execute(const char* strCharID)
 		{
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strCharID);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

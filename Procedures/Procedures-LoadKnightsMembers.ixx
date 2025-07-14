@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 
 export module Procedures:LoadKnightsMembers;
 import :StoredProcedure;
@@ -16,18 +17,15 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL LOAD_KNIGHTS_MEMBERS(?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const int16_t& knightsindex)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* knightsindex)
 		{
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, knightsindex);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

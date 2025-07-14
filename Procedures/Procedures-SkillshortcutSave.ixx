@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:SkillshortcutSave;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL SKILLSHORTCUT_SAVE(?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& strCharID, const int16_t& nCount, const std::string& strSkillData)
+		std::weak_ptr<nanodbc::result> execute(const char* strCharID, const int16_t* nCount, const char* strSkillData)
 		{
 			_stmt.reset_parameters();
 
@@ -29,8 +28,7 @@ namespace procedures {
 			_stmt.bind(1, nCount);
 			_stmt.bind(2, strSkillData);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

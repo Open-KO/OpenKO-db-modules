@@ -1,5 +1,6 @@
 module;
 
+#include <memory>
 
 export module Procedures:RankKnights;
 import :StoredProcedure;
@@ -15,14 +16,11 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL RANK_KNIGHTS()}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute()
+		std::weak_ptr<nanodbc::result> execute()
 		{
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

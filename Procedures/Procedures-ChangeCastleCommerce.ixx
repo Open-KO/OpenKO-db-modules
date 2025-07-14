@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:ChangeCastleCommerce;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL CHANGE_CASTLE_COMMERCE(?,?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const int16_t& sCastleIndex, const uint8_t& byType, const int32_t& nMoradonTariff, const int32_t& nDellosTariff, const int32_t& nMoney, const std::string& strACID, const std::string& strCharID)
+		std::weak_ptr<nanodbc::result> execute(const int16_t* sCastleIndex, const uint8_t* byType, const int32_t* nMoradonTariff, const int32_t* nDellosTariff, const int32_t* nMoney, const char* strACID, const char* strCharID)
 		{
 			_stmt.reset_parameters();
 
@@ -33,8 +32,7 @@ namespace procedures {
 			_stmt.bind(5, strACID);
 			_stmt.bind(6, strCharID);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:UpdateSavedMagic;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL UPDATE_SAVED_MAGIC(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& strCharID, const int32_t& Skill1, const int16_t& During1, const int32_t& Skill2, const int16_t& During2, const int32_t& Skill3, const int16_t& During3, const int32_t& Skill4, const int16_t& During4, const int32_t& Skill5, const int16_t& During5, const int32_t& Skill6, const int16_t& During6, const int32_t& Skill7, const int16_t& During7, const int32_t& Skill8, const int16_t& During8, const int32_t& Skill9, const int16_t& During9, const int32_t& Skill10, const int16_t& During10)
+		std::weak_ptr<nanodbc::result> execute(const char* strCharID, const int32_t* Skill1, const int16_t* During1, const int32_t* Skill2, const int16_t* During2, const int32_t* Skill3, const int16_t* During3, const int32_t* Skill4, const int16_t* During4, const int32_t* Skill5, const int16_t* During5, const int32_t* Skill6, const int16_t* During6, const int32_t* Skill7, const int16_t* During7, const int32_t* Skill8, const int16_t* During8, const int32_t* Skill9, const int16_t* During9, const int32_t* Skill10, const int16_t* During10)
 		{
 			_stmt.reset_parameters();
 
@@ -47,8 +46,7 @@ namespace procedures {
 			_stmt.bind(19, Skill10);
 			_stmt.bind(20, During10);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

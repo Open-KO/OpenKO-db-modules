@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:UpdateUserData;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL UPDATE_USER_DATA(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& id, const uint8_t& Nation, const uint8_t& Race, const int16_t& Class, const uint8_t& HairColor, const uint8_t& Rank, const uint8_t& Title, const uint8_t& Level, const int32_t& Exp, const int32_t& Loyalty, const uint8_t& Face, const uint8_t& City, const int16_t& Knights, const uint8_t& Fame, const int16_t& Hp, const int16_t& Mp, const int16_t& Sp, const uint8_t& Str, const uint8_t& Sta, const uint8_t& Dex, const uint8_t& Intel, const uint8_t& Cha, const uint8_t& Authority, const uint8_t& Points, const int32_t& Gold, const uint8_t& Zone, const int16_t& Bind, const int32_t& PX, const int32_t& PZ, const int32_t& PY, const int32_t& dwTime, const int16_t& QuestTotal, const std::string& strSkill, const std::string& strItem, const std::string& strSerial, const std::string& strQuest, const int32_t& MannerPoint, const int32_t& LoyaltyMonthly)
+		std::weak_ptr<nanodbc::result> execute(const char* id, const uint8_t* Nation, const uint8_t* Race, const int16_t* Class, const uint8_t* HairColor, const uint8_t* Rank, const uint8_t* Title, const uint8_t* Level, const int32_t* Exp, const int32_t* Loyalty, const uint8_t* Face, const uint8_t* City, const int16_t* Knights, const uint8_t* Fame, const int16_t* Hp, const int16_t* Mp, const int16_t* Sp, const uint8_t* Str, const uint8_t* Sta, const uint8_t* Dex, const uint8_t* Intel, const uint8_t* Cha, const uint8_t* Authority, const uint8_t* Points, const int32_t* Gold, const uint8_t* Zone, const int16_t* Bind, const int32_t* PX, const int32_t* PZ, const int32_t* PY, const int32_t* dwTime, const int16_t* QuestTotal, const char* strSkill, const char* strItem, const char* strSerial, const char* strQuest, const int32_t* MannerPoint, const int32_t* LoyaltyMonthly)
 		{
 			_stmt.reset_parameters();
 
@@ -64,8 +63,7 @@ namespace procedures {
 			_stmt.bind(36, MannerPoint);
 			_stmt.bind(37, LoyaltyMonthly);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

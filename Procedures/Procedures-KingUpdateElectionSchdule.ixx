@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 
 export module Procedures:KingUpdateElectionSchdule;
 import :StoredProcedure;
@@ -16,11 +17,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL KING_UPDATE_ELECTION_SCHDULE(?,?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const uint8_t& byType, const uint8_t& byNation, const int16_t& sYear, const uint8_t& byMonth, const uint8_t& byDay, const uint8_t& byHour, const uint8_t& byMinute)
+		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation, const int16_t* sYear, const uint8_t* byMonth, const uint8_t* byDay, const uint8_t* byHour, const uint8_t* byMinute)
 		{
 			_stmt.reset_parameters();
 
@@ -32,8 +31,7 @@ namespace procedures {
 			_stmt.bind(5, byHour);
 			_stmt.bind(6, byMinute);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

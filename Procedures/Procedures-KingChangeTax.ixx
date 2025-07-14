@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 
 export module Procedures:KingChangeTax;
 import :StoredProcedure;
@@ -16,11 +17,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL KING_CHANGE_TAX(?,?,?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const uint8_t& byType, const uint8_t& byNation, const int32_t& nKarusTax1, const int32_t& nKarusTax2, const int32_t& nKarusTax3, const int32_t& nElmoTax1, const int32_t& nElmoTax2, const int32_t& nElmoTax3)
+		std::weak_ptr<nanodbc::result> execute(const uint8_t* byType, const uint8_t* byNation, const int32_t* nKarusTax1, const int32_t* nKarusTax2, const int32_t* nKarusTax3, const int32_t* nElmoTax1, const int32_t* nElmoTax2, const int32_t* nElmoTax3)
 		{
 			_stmt.reset_parameters();
 
@@ -33,8 +32,7 @@ namespace procedures {
 			_stmt.bind(6, nElmoTax2);
 			_stmt.bind(7, nElmoTax3);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

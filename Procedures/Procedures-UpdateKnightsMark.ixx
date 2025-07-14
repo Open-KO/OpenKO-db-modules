@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 
 export module Procedures:UpdateKnightsMark;
 import :StoredProcedure;
@@ -16,11 +17,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS_MARK(?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(int16_t& nRet, const int16_t& IDNum, const int16_t& MarkLen, const std::vector<uint8_t>& KnightMark)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t* IDNum, const int16_t* MarkLen, const std::vector<uint8_t>* KnightMark)
 		{
 			_stmt.reset_parameters();
 
@@ -29,8 +28,7 @@ namespace procedures {
 			_stmt.bind(2, MarkLen);
 			_stmt.bind(3, KnightMark);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

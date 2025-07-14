@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:KingCandidacyRecommend;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL KING_CANDIDACY_RECOMMEND(?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& CharID_1, const std::string& CharID_2, const uint8_t& nNation, int16_t& nRet)
+		std::weak_ptr<nanodbc::result> execute(const char* CharID_1, const char* CharID_2, const uint8_t* nNation, int16_t* nRet)
 		{
 			_stmt.reset_parameters();
 
@@ -30,8 +29,7 @@ namespace procedures {
 			_stmt.bind(2, nNation);
 			_stmt.bind(3, nRet, nanodbc::statement::PARAM_RETURN);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

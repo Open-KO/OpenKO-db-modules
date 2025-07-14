@@ -1,5 +1,6 @@
 module;
 
+#include <memory>
 #include <string>
 
 export module Procedures:InsertHacktoolUser;
@@ -16,11 +17,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL INSERT_HACKTOOL_USER(?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& AccountID, const std::string& CharID, const std::string& HackToolName)
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const char* HackToolName)
 		{
 			_stmt.reset_parameters();
 
@@ -28,8 +27,7 @@ namespace procedures {
 			_stmt.bind(1, CharID);
 			_stmt.bind(2, HackToolName);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

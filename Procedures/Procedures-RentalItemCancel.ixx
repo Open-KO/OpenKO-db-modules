@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:RentalItemCancel;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_CANCEL(?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& AccountID, const std::string& CharID, const int32_t& nRentalIndex, const int32_t& nItemNumber, int16_t& nRet)
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int32_t* nRentalIndex, const int32_t* nItemNumber, int16_t* nRet)
 		{
 			_stmt.reset_parameters();
 
@@ -31,8 +30,7 @@ namespace procedures {
 			_stmt.bind(3, nItemNumber);
 			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

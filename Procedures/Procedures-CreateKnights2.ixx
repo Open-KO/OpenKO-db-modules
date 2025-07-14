@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:CreateKnights2;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL CREATE_KNIGHTS2(?,?,?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(int16_t& nRet, int16_t& index, const uint8_t& nation, const uint8_t& community, const std::string& strName, const std::string& strChief)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, int16_t* index, const uint8_t* nation, const uint8_t* community, const char* strName, const char* strChief)
 		{
 			_stmt.reset_parameters();
 
@@ -32,8 +31,7 @@ namespace procedures {
 			_stmt.bind(4, strName);
 			_stmt.bind(5, strChief);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }

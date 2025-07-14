@@ -1,6 +1,7 @@
 module;
 
 #include <cstdint>
+#include <memory>
 #include <string>
 
 export module Procedures:KingCandidacyNoticeBoardProc;
@@ -17,11 +18,9 @@ namespace procedures {
 		{
 			_stmt.prepare("{CALL KING_CANDIDACY_NOTICE_BOARD_PROC(?,?,?,?)}");
 		}
-		
-		using StoredProcedure::returnValue;
 
 		/// \brief Executes the stored procedure
-		nanodbc::result* execute(const std::string& strUserID, const int16_t& sNoticeLen, const uint8_t& byNation, const std::vector<uint8_t>& strNotice)
+		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t* sNoticeLen, const uint8_t* byNation, const std::vector<uint8_t>* strNotice)
 		{
 			_stmt.reset_parameters();
 
@@ -30,8 +29,7 @@ namespace procedures {
 			_stmt.bind(2, byNation);
 			_stmt.bind(3, strNotice);
 	
-			_result = std::make_unique<nanodbc::result>(_stmt.execute());
-			return _result.get();
+			return StoredProcedure::execute();
 		}
 	};
 }
