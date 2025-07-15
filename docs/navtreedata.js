@@ -71,7 +71,7 @@ var NAVTREEINDEX =
 "classfull__model_1_1UserData.html#a12def8a323ce5d332a0395cc21aa9cc3a1ea52f26e7e0ce08e462f87f5e35096c",
 "classfull__model_1_1UserRentalItem.html#a51ea072cc56759c46d96b25ca8d9f34c",
 "classstoredProc_1_1InsertHacktoolUser.html",
-"classstoredProc_1_1UserKnightsRatingUpdate.html#a78cdaa6a99cc769e467c9685d3596d15"
+"classstoredProc_1_1UserKnightsRatingUpdate.html#a18cca64885f3d4cb80f2c3e504b87628"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

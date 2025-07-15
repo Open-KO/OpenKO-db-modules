@@ -109,9 +109,9 @@ Protected Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b> ()</td></tr>
 <tr class="memdesc:a069320371583ff819e0cb16c7e753e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
 <tr class="separator:a069320371583ff819e0cb16c7e753e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90ac9eedbb3b9dd8e46e2e451b36abb2"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1StoredProcedure.html#a90ac9eedbb3b9dd8e46e2e451b36abb2">execute</a> ()</td></tr>
-<tr class="memdesc:a90ac9eedbb3b9dd8e46e2e451b36abb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the currently prepared statement.  <a href="classstoredProc_1_1StoredProcedure.html#a90ac9eedbb3b9dd8e46e2e451b36abb2">More...</a><br /></td></tr>
-<tr class="separator:a90ac9eedbb3b9dd8e46e2e451b36abb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0eac4b254a4bf761d7d2939889c9b2"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1StoredProcedure.html#a3b0eac4b254a4bf761d7d2939889c9b2">execute</a> () noexcept(false)</td></tr>
+<tr class="memdesc:a3b0eac4b254a4bf761d7d2939889c9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the currently prepared statement.  <a href="classstoredProc_1_1StoredProcedure.html#a3b0eac4b254a4bf761d7d2939889c9b2">More...</a><br /></td></tr>
+<tr class="separator:a3b0eac4b254a4bf761d7d2939889c9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -135,8 +135,8 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="separator:ad34f057e9fb29eaf952d1f548c0314f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a90ac9eedbb3b9dd8e46e2e451b36abb2" name="a90ac9eedbb3b9dd8e46e2e451b36abb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90ac9eedbb3b9dd8e46e2e451b36abb2">&#9670;&nbsp;</a></span>execute()</h2>
+<a id="a3b0eac4b254a4bf761d7d2939889c9b2" name="a3b0eac4b254a4bf761d7d2939889c9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0eac4b254a4bf761d7d2939889c9b2">&#9670;&nbsp;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,12 +153,18 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Executes the currently prepared statement. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">nanodbc::database_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>a result set, if applicable </dd></dl>
 
 </div>

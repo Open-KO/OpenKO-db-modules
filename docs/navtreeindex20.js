@@ -1,7 +1,7 @@
 var NAVTREEINDEX20 =
 {
-"classstoredProc_1_1UserKnightsRatingUpdate.html#a78cdaa6a99cc769e467c9685d3596d15":[2,0,10,69,0],
-"classstoredProc_1_1UserKnightsRatingUpdate.html#a78cdaa6a99cc769e467c9685d3596d15":[3,0,8,69,0],
+"classstoredProc_1_1UserKnightsRatingUpdate.html#a18cca64885f3d4cb80f2c3e504b87628":[2,0,10,69,0],
+"classstoredProc_1_1UserKnightsRatingUpdate.html#a18cca64885f3d4cb80f2c3e504b87628":[3,0,8,69,0],
 "classversionmanager__binder_1_1Version.html":[2,0,11,0],
 "classversionmanager__binder_1_1Version.html":[3,0,9,0],
 "classversionmanager__model_1_1Version.html":[2,0,12,0],

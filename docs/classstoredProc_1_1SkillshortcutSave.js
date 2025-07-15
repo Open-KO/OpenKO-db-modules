@@ -1,4 +1,4 @@
 var classstoredProc_1_1SkillshortcutSave =
 [
-    [ "execute", "classstoredProc_1_1SkillshortcutSave.html#a6d79552584485c6eac0ae0edf7c8a0ac", null ]
+    [ "execute", "classstoredProc_1_1SkillshortcutSave.html#a62f6a70983b2dddd37ff2a96b55b6ca9", null ]
 ];
