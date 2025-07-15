@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tbuser_0',['TbUser',['../classfull__binder_1_1TbUser.html',1,'full_binder::TbUser'],['../classfull__model_1_1TbUser.html',1,'full_model::TbUser']]]
+  ['tbuser_0',['TbUser',['../classfull__binder_1_1TbUser.html',1,'full_binder::TbUser'],['../classfull__model_1_1TbUser.html',1,'full_model::TbUser'],['../classversionmanager__binder_1_1TbUser.html',1,'versionmanager_binder::TbUser'],['../classversionmanager__model_1_1TbUser.html',1,'versionmanager_model::TbUser']]]
 ];

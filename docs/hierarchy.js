@@ -297,6 +297,8 @@ var hierarchy =
     ] ],
     [ "full_binder::TbUser", "classfull__binder_1_1TbUser.html", null ],
     [ "full_model::TbUser", "classfull__model_1_1TbUser.html", null ],
+    [ "versionmanager_binder::TbUser", "classversionmanager__binder_1_1TbUser.html", null ],
+    [ "versionmanager_model::TbUser", "classversionmanager__model_1_1TbUser.html", null ],
     [ "full_binder::UserData", "classfull__binder_1_1UserData.html", null ],
     [ "full_model::UserData", "classfull__model_1_1UserData.html", null ],
     [ "full_binder::UserDataSkillShortcut", "classfull__binder_1_1UserDataSkillShortcut.html", null ],

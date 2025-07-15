@@ -363,9 +363,11 @@ var namespaces_dup =
       [ "UserKnightsRatingUpdate", "classstoredProc_1_1UserKnightsRatingUpdate.html", "classstoredProc_1_1UserKnightsRatingUpdate" ]
     ] ],
     [ "versionmanager_binder", null, [
+      [ "TbUser", "classversionmanager__binder_1_1TbUser.html", null ],
       [ "Version", "classversionmanager__binder_1_1Version.html", null ]
     ] ],
     [ "versionmanager_model", null, [
+      [ "TbUser", "classversionmanager__model_1_1TbUser.html", "classversionmanager__model_1_1TbUser" ],
       [ "Version", "classversionmanager__model_1_1Version.html", "classversionmanager__model_1_1Version" ]
     ] ]
 ];
