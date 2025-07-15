@@ -319,6 +319,8 @@ var hierarchy =
     [ "full_model::UserSavedMagic", "classfull__model_1_1UserSavedMagic.html", null ],
     [ "full_binder::Version", "classfull__binder_1_1Version.html", null ],
     [ "full_model::Version", "classfull__model_1_1Version.html", null ],
+    [ "versionmanager_binder::Version", "classversionmanager__binder_1_1Version.html", null ],
+    [ "versionmanager_model::Version", "classversionmanager__model_1_1Version.html", null ],
     [ "full_binder::Warehouse", "classfull__binder_1_1Warehouse.html", null ],
     [ "full_model::Warehouse", "classfull__model_1_1Warehouse.html", null ],
     [ "full_binder::WebItemMall", "classfull__binder_1_1WebItemMall.html", null ],

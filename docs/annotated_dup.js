@@ -351,5 +351,11 @@ var annotated_dup =
       [ "UpdateUserData", "classprocedures_1_1UpdateUserData.html", "classprocedures_1_1UpdateUserData" ],
       [ "UpdateWarehouse", "classprocedures_1_1UpdateWarehouse.html", "classprocedures_1_1UpdateWarehouse" ],
       [ "UserKnightsRatingUpdate", "classprocedures_1_1UserKnightsRatingUpdate.html", "classprocedures_1_1UserKnightsRatingUpdate" ]
+    ] ],
+    [ "versionmanager_binder", null, [
+      [ "Version", "classversionmanager__binder_1_1Version.html", null ]
+    ] ],
+    [ "versionmanager_model", null, [
+      [ "Version", "classversionmanager__model_1_1Version.html", "classversionmanager__model_1_1Version" ]
     ] ]
 ];
