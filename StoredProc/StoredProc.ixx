@@ -4,10 +4,10 @@ module;
 #include <memory>
 #include <nanodbc/nanodbc.h>
 
-export module Procedures;
+export module StoredProc;
 
 
-namespace procedures
+namespace storedProc
 {
 	export class StoredProcedure
 	{
