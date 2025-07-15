@@ -97,7 +97,7 @@ namespace procedures
 
 			_stmt.bind(0, AccountID);
 			_stmt.bind(1, Password);
-			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(2, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -127,8 +127,8 @@ namespace procedures
 
 			_stmt.bind(0, AccountID);
 			_stmt.bind(1, &LogoutCode);
-			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(3, nRet2, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(2, nRet, nanodbc::statement::PARAM_OUTPUT);
+			_stmt.bind(3, nRet2, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -283,7 +283,7 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUTPUT);
 			_stmt.bind(1, &index);
 			_stmt.bind(2, &nation);
 			_stmt.bind(3, &community);
@@ -316,8 +316,8 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(1, index, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUTPUT);
+			_stmt.bind(1, index, nanodbc::statement::PARAM_OUTPUT);
 			_stmt.bind(2, &nation);
 			_stmt.bind(3, &community);
 			_stmt.bind(4, strName);
@@ -349,7 +349,7 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUTPUT);
 			_stmt.bind(1, AccountID);
 			_stmt.bind(2, &index);
 			_stmt.bind(3, CharID);
@@ -391,7 +391,7 @@ namespace procedures
 
 			_stmt.bind(0, strUserID);
 			_stmt.bind(1, strFriend);
-			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(2, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -419,7 +419,7 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUTPUT);
 			_stmt.bind(1, &knightsindex);
 	
 			return StoredProcedure::execute();
@@ -510,7 +510,7 @@ namespace procedures
 
 			_stmt.bind(0, strUserID);
 			_stmt.bind(1, strFriend);
-			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(2, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -582,14 +582,14 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t sNoticeLen, const int16_t byNation, const char* strNotice)
+		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t sNoticeLen, const int16_t byNation, const std::vector<uint8_t>& strNotice)
 		{
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strUserID);
 			_stmt.bind(1, &sNoticeLen);
 			_stmt.bind(2, &byNation);
-			_stmt.bind(3, strNotice);
+			_stmt.bind_binary(3, strNotice);
 	
 			return StoredProcedure::execute();
 		}
@@ -614,7 +614,7 @@ namespace procedures
 			_stmt.bind(0, CharID_1);
 			_stmt.bind(1, CharID_2);
 			_stmt.bind(2, &nNation);
-			_stmt.bind(3, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(3, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -675,7 +675,7 @@ namespace procedures
 			_stmt.bind(1, strCharID);
 			_stmt.bind(2, &byNation);
 			_stmt.bind(3, strCandidacyID);
-			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(4, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -707,7 +707,7 @@ namespace procedures
 			_stmt.bind(1, &byNation);
 			_stmt.bind(2, strAccountID);
 			_stmt.bind(3, strCharID);
-			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(4, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -760,8 +760,8 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byNation);
-			_stmt.bind(1, nTotalMan, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(2, nAgreeMan, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(1, nTotalMan, nanodbc::statement::PARAM_OUTPUT);
+			_stmt.bind(2, nAgreeMan, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -997,7 +997,7 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, CharId);
-			_stmt.bind(1, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(1, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1048,8 +1048,8 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
-			_stmt.bind(1, type, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(2, days, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(1, type, nanodbc::statement::PARAM_OUTPUT);
+			_stmt.bind(2, days, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1100,7 +1100,7 @@ namespace procedures
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, CharId);
-			_stmt.bind(1, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(1, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1130,7 +1130,7 @@ namespace procedures
 
 			_stmt.bind(0, AccountID);
 			_stmt.bind(1, id);
-			_stmt.bind(2, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(2, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1180,7 +1180,7 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUTPUT);
 			_stmt.bind(1, AccountID);
 			_stmt.bind(2, &Nation);
 	
@@ -1215,7 +1215,7 @@ namespace procedures
 			_stmt.bind(2, &nServerNo);
 			_stmt.bind(3, strServerIP);
 			_stmt.bind(4, ClientIP);
-			_stmt.bind(5, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(5, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1265,7 +1265,7 @@ namespace procedures
 			_stmt.bind(1, CharID);
 			_stmt.bind(2, &nRentalIndex);
 			_stmt.bind(3, &nItemNumber);
-			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(4, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1298,7 +1298,7 @@ namespace procedures
 			_stmt.bind(2, &nItemNumber);
 			_stmt.bind(3, &nRentalIndex);
 			_stmt.bind(4, &nDurability);
-			_stmt.bind(5, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(5, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1353,7 +1353,7 @@ namespace procedures
 			_stmt.bind(1, CharID);
 			_stmt.bind(2, &nRentalIndex);
 			_stmt.bind(3, &nItemNumber);
-			_stmt.bind(4, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(4, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1391,8 +1391,8 @@ namespace procedures
 			_stmt.bind(7, &bItemType);
 			_stmt.bind(8, &bItemClass);
 			_stmt.bind(9, &nSerialNumber);
-			_stmt.bind(10, nRet_Index, nanodbc::statement::PARAM_RETURN);
-			_stmt.bind(11, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(10, nRet_Index, nanodbc::statement::PARAM_OUTPUT);
+			_stmt.bind(11, nRet, nanodbc::statement::PARAM_OUTPUT);
 	
 			return StoredProcedure::execute();
 		}
@@ -1564,7 +1564,7 @@ namespace procedures
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUTPUT);
 			_stmt.bind(1, &Type);
 			_stmt.bind(2, UserId);
 			_stmt.bind(3, &KnightsIndex);
@@ -1618,14 +1618,14 @@ namespace procedures
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t IDNum, const int16_t MarkLen, const char* KnightMark)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t IDNum, const int16_t MarkLen, const std::vector<uint8_t>& KnightMark)
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, nRet, nanodbc::statement::PARAM_RETURN);
+			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUTPUT);
 			_stmt.bind(1, &IDNum);
 			_stmt.bind(2, &MarkLen);
-			_stmt.bind(3, KnightMark);
+			_stmt.bind_binary(3, KnightMark);
 	
 			return StoredProcedure::execute();
 		}
