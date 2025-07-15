@@ -34,8 +34,9 @@ namespace storedProc
 		}
 
 		/// \brief Executes the currently prepared statement
+		/// \throws nanodbc::database_error
 		/// \returns a result set, if applicable
-		std::weak_ptr<nanodbc::result> execute()
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			_flushed = false;
 			_result = std::make_shared<nanodbc::result>(_stmt.execute());
@@ -91,7 +92,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* Password, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* Password, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -121,7 +123,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const int32_t LogoutCode, int16_t* nRet, int16_t* nRet2)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const int32_t LogoutCode, int16_t* nRet, int16_t* nRet2) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -152,7 +155,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t byType, const int32_t nMoradonTariff, const int32_t nDellosTariff, const int32_t nMoney, const char* strACID, const char* strCharID)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t byType, const int32_t nMoradonTariff, const int32_t nDellosTariff, const int32_t nMoney, const char* strACID, const char* strCharID) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -180,7 +184,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -198,7 +203,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -216,7 +222,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t KnightsIndex, const int16_t CapeIndex)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t KnightsIndex, const int16_t CapeIndex) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -239,7 +246,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -257,7 +265,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strServerIP)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strServerIP) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -279,7 +288,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t index, const int16_t nation, const int16_t community, const char* strName, const char* strChief)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t index, const int16_t nation, const int16_t community, const char* strName, const char* strChief) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -312,7 +322,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, int16_t* index, const int16_t nation, const int16_t community, const char* strName, const char* strChief)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, int16_t* index, const int16_t nation, const int16_t community, const char* strName, const char* strChief) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -345,7 +356,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const int16_t index, const char* CharID, const int16_t Race, const int16_t Class, const int16_t Hair, const int16_t Face, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const int16_t index, const char* CharID, const int16_t Race, const int16_t Class, const int16_t Hair, const int16_t Face, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -385,7 +397,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const char* strFriend, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const char* strFriend, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -415,7 +428,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t knightsindex)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t knightsindex) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -444,7 +458,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -462,7 +477,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -480,7 +496,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strUserID, const int32_t days)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strUserID, const int32_t days) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -504,7 +521,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const char* strFriend, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const char* strFriend, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -534,7 +552,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const char* HackToolName)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const char* HackToolName) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -558,7 +577,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strCharID, const char* HackToolName)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strCharID, const char* HackToolName) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -582,7 +602,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t sNoticeLen, const int16_t byNation, const std::vector<uint8_t>& strNotice)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strUserID, const int16_t sNoticeLen, const int16_t byNation, const std::vector<uint8_t>& strNotice) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -607,7 +628,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* CharID_1, const char* CharID_2, const int16_t nNation, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* CharID_1, const char* CharID_2, const int16_t nNation, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -638,7 +660,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int32_t nKarusTax1, const int32_t nKarusTax2, const int32_t nKarusTax3, const int32_t nElmoTax1, const int32_t nElmoTax2, const int32_t nElmoTax3)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int32_t nKarusTax1, const int32_t nKarusTax2, const int32_t nKarusTax3, const int32_t nElmoTax1, const int32_t nElmoTax2, const int32_t nElmoTax3) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -667,7 +690,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strCharID, const int16_t byNation, const char* strCandidacyID, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strAccountID, const char* strCharID, const int16_t byNation, const char* strCandidacyID, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -699,7 +723,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byResult, const int16_t byNation, const char* strAccountID, const char* strCharID, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byResult, const int16_t byNation, const char* strAccountID, const char* strCharID, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -731,7 +756,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const char* strUserID)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const char* strUserID) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -755,7 +781,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byNation, int16_t* nTotalMan, int16_t* nAgreeMan)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byNation, int16_t* nTotalMan, int16_t* nAgreeMan) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -785,7 +812,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int32_t nAmount, const char* strUserID)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int32_t nAmount, const char* strUserID) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -810,7 +838,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byDBType, const int16_t byType, const int16_t byNation, const int16_t nKnights, const int32_t nAmount, const char* strUserID)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byDBType, const int16_t byType, const int16_t byNation, const int16_t nKnights, const int32_t nAmount, const char* strUserID) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -837,7 +866,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int16_t sYear, const int16_t byMonth, const int16_t byDay, const int16_t byHour, const int16_t byMinute)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int16_t sYear, const int16_t byMonth, const int16_t byDay, const int16_t byHour, const int16_t byMinute) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -865,7 +895,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -888,7 +919,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int16_t sYear, const int16_t byMonth, const int16_t byDay, const int16_t byHour, const int16_t byMinute, const char* strUserID)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int16_t sYear, const int16_t byMonth, const int16_t byDay, const int16_t byHour, const int16_t byMinute, const char* strUserID) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -917,7 +949,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int16_t byAmount, const int16_t byDay, const int16_t byHout, const int16_t byMinute, const int16_t sDurationTime)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t byNation, const int16_t byAmount, const int16_t byDay, const int16_t byHout, const int16_t byMinute, const int16_t sDurationTime) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -945,7 +978,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -963,7 +997,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int* returnValue, const char* Accountid)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int* returnValue, const char* Accountid) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -992,7 +1027,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* CharId, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* CharId, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1021,7 +1057,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t knightsindex)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t knightsindex) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1043,7 +1080,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, int32_t* type, int32_t* days)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, int32_t* type, int32_t* days) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1073,7 +1111,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strAccountID)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strAccountID) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1095,7 +1134,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* CharId, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* CharId, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1124,7 +1164,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* id, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* id, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1154,7 +1195,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strCharID)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strCharID) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1176,7 +1218,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const int16_t Nation)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const char* AccountID, const int16_t Nation) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1206,7 +1249,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int16_t nServerNo, const char* strServerIP, const char* ClientIP, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int16_t nServerNo, const char* strServerIP, const char* ClientIP, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1239,7 +1283,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -1257,7 +1302,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int32_t nRentalIndex, const int32_t nItemNumber, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int32_t nRentalIndex, const int32_t nItemNumber, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1289,7 +1335,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int32_t nItemNumber, const int32_t nRentalIndex, const int16_t nDurability, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int32_t nItemNumber, const int32_t nRentalIndex, const int16_t nDurability, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1322,7 +1369,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int32_t nRentalIndex, const int32_t nDurability)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int32_t nRentalIndex, const int32_t nDurability) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1345,7 +1393,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int32_t nRentalIndex, const int32_t nItemNumber, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* CharID, const int32_t nRentalIndex, const int32_t nItemNumber, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1377,7 +1426,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* charID, const char* AccountID, const int16_t sRentalTime, const int32_t nItemID, const int16_t sDurability, const int32_t nMoney, const int16_t bGameBangType, const int16_t bItemType, const int16_t bItemClass, const int64_t nSerialNumber, int32_t* nRet_Index, int16_t* nRet)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* charID, const char* AccountID, const int16_t sRentalTime, const int32_t nItemID, const int16_t sDurability, const int32_t nMoney, const int16_t bGameBangType, const int16_t bItemType, const int16_t bItemClass, const int64_t nSerialNumber, int32_t* nRet_Index, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1416,7 +1466,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -1434,7 +1485,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strCharID)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strCharID) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1456,7 +1508,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strCharID, const int16_t nCount, const char* strSkillData)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strCharID, const int16_t nCount, const char* strSkillData) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1480,7 +1533,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strCharID, const char* strNation, const char* strClass, const char* strAchievement, const int16_t nIndex)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strCharID, const char* strNation, const char* strClass, const char* strAchievement, const int16_t nIndex) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1506,7 +1560,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* UserId, const int16_t byNation, const int16_t index)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* UserId, const int16_t byNation, const int16_t index) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1530,7 +1585,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* charid, const char* accountid, const char* opid, const char* opip, const int16_t sPos, const int32_t nItemID1, const int32_t nItemID2, const int16_t byType, const int16_t sDBIndex)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* charid, const char* accountid, const char* opid, const char* opip, const int16_t sPos, const int32_t nItemID1, const int32_t nItemID2, const int16_t byType, const int16_t sDBIndex) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1560,7 +1616,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t Type, const char* UserId, const int16_t KnightsIndex, const int16_t Domanation)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t Type, const char* UserId, const int16_t KnightsIndex, const int16_t Domanation) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1592,7 +1649,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t shAlliancIndex, const int16_t shKnightsIndex, const int16_t byEmptyIndex, const int16_t bySiegeFlag)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t shAlliancIndex, const int16_t shKnightsIndex, const int16_t byEmptyIndex, const int16_t bySiegeFlag) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1618,7 +1676,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t IDNum, const int16_t MarkLen, const std::vector<uint8_t>& KnightMark)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t IDNum, const int16_t MarkLen, const std::vector<uint8_t>& KnightMark) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1649,7 +1708,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t shWhite, const int16_t shBlue)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t byType, const int16_t shWhite, const int16_t shBlue) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1673,7 +1733,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
@@ -1691,7 +1752,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(int* returnValue, const char* AccountID, const int16_t Days)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(int* returnValue, const char* AccountID, const int16_t Days) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1721,7 +1783,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* strCharID, const int32_t Skill1, const int16_t During1, const int32_t Skill2, const int16_t During2, const int32_t Skill3, const int16_t During3, const int32_t Skill4, const int16_t During4, const int32_t Skill5, const int16_t During5, const int32_t Skill6, const int16_t During6, const int32_t Skill7, const int16_t During7, const int32_t Skill8, const int16_t During8, const int32_t Skill9, const int16_t During9, const int32_t Skill10, const int16_t During10)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* strCharID, const int32_t Skill1, const int16_t During1, const int32_t Skill2, const int16_t During2, const int32_t Skill3, const int16_t During3, const int32_t Skill4, const int16_t During4, const int32_t Skill5, const int16_t During5, const int32_t Skill6, const int16_t During6, const int32_t Skill7, const int16_t During7, const int32_t Skill8, const int16_t During8, const int32_t Skill9, const int16_t During9, const int32_t Skill10, const int16_t During10) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1763,7 +1826,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t sKnightsIndex, const int16_t byWarType, const int16_t byUpdateType, const int16_t byWarDay, const int16_t byWarTime, const int16_t byWarMinute)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t sKnightsIndex, const int16_t byWarType, const int16_t byUpdateType, const int16_t byWarDay, const int16_t byWarTime, const int16_t byWarMinute) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1791,7 +1855,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const char* strChallengerList)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const char* strChallengerList) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1814,7 +1879,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t sKnights_1, const int16_t sKnights_2, const int16_t sKnights_3, const int16_t sKnights_4, const int16_t sKnights_5, const int16_t sKnights_6, const int16_t sKnights_7, const int16_t sKnights_8, const int16_t sKnights_9, const int16_t sKnights_10, const char* strChallengerList)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t sKnights_1, const int16_t sKnights_2, const int16_t sKnights_3, const int16_t sKnights_4, const int16_t sKnights_5, const int16_t sKnights_6, const int16_t sKnights_7, const int16_t sKnights_8, const int16_t sKnights_9, const int16_t sKnights_10, const char* strChallengerList) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1847,7 +1913,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t sKnights_1, const int16_t sKnights_2, const int16_t sKnights_3, const int16_t sKnights_4, const int16_t sKnights_5, const int16_t sKnights_6, const int16_t sKnights_7, const int16_t sKnights_8, const int16_t sKnights_9, const int16_t sKnights_10)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t sKnights_1, const int16_t sKnights_2, const int16_t sKnights_3, const int16_t sKnights_4, const int16_t sKnights_5, const int16_t sKnights_6, const int16_t sKnights_7, const int16_t sKnights_8, const int16_t sKnights_9, const int16_t sKnights_10) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1879,7 +1946,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* id, const int16_t Nation, const int16_t Race, const int16_t Class, const int16_t HairColor, const int16_t Rank, const int16_t Title, const int16_t Level, const int32_t Exp, const int32_t Loyalty, const int16_t Face, const int16_t City, const int16_t Knights, const int16_t Fame, const int16_t Hp, const int16_t Mp, const int16_t Sp, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha, const int16_t Authority, const int16_t Points, const int32_t Gold, const int16_t Zone, const int16_t Bind, const int32_t PX, const int32_t PZ, const int32_t PY, const int32_t dwTime, const int16_t QuestTotal, const char* strSkill, const char* strItem, const char* strSerial, const char* strQuest, const int32_t MannerPoint, const int32_t LoyaltyMonthly)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* id, const int16_t Nation, const int16_t Race, const int16_t Class, const int16_t HairColor, const int16_t Rank, const int16_t Title, const int16_t Level, const int32_t Exp, const int32_t Loyalty, const int16_t Face, const int16_t City, const int16_t Knights, const int16_t Fame, const int16_t Hp, const int16_t Mp, const int16_t Sp, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha, const int16_t Authority, const int16_t Points, const int32_t Gold, const int16_t Zone, const int16_t Bind, const int32_t PX, const int32_t PZ, const int32_t PY, const int32_t dwTime, const int16_t QuestTotal, const char* strSkill, const char* strItem, const char* strSerial, const char* strQuest, const int32_t MannerPoint, const int32_t LoyaltyMonthly) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1938,7 +2006,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute(const char* accountid, const int32_t Money, const int32_t dwTime, const char* strItem, const char* strSerial)
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute(const char* accountid, const int32_t Money, const int32_t dwTime, const char* strItem, const char* strSerial) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1964,7 +2033,8 @@ namespace storedProc
 		}
 
 		/// \brief Executes the stored procedure
-		std::weak_ptr<nanodbc::result> execute()
+		/// \throws nanodbc::database_error
+		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
 			return StoredProcedure::execute();
 		}
