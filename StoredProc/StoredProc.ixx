@@ -12,7 +12,7 @@ namespace storedProc
 	export class StoredProcedure
 	{
 	protected:
-		StoredProcedure(nanodbc::connection& conn)
+		StoredProcedure(std::shared_ptr<nanodbc::connection> conn)
 			: _conn(conn), _stmt(conn)
 		{
 			_flushed = false;
@@ -69,7 +69,7 @@ namespace storedProc
 		}
 
 	protected:
-		nanodbc::connection& _conn;
+		std::shared_ptr<nanodbc::connection> _conn;
 		nanodbc::statement _stmt;
 		std::shared_ptr<nanodbc::result> _result;
 		bool _flushed;
@@ -84,7 +84,7 @@ namespace storedProc
 	export class AccountLogin : public StoredProcedure
 	{
 	public:
-		AccountLogin(nanodbc::connection& conn) 
+		AccountLogin(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL ACCOUNT_LOGIN(?,?,?)}");
@@ -114,7 +114,7 @@ namespace storedProc
 	export class AccountLogout : public StoredProcedure
 	{
 	public:
-		AccountLogout(nanodbc::connection& conn) 
+		AccountLogout(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL ACCOUNT_LOGOUT(?,?,?,?)}");
@@ -145,7 +145,7 @@ namespace storedProc
 	export class ChangeCastleCommerce : public StoredProcedure
 	{
 	public:
-		ChangeCastleCommerce(nanodbc::connection& conn) 
+		ChangeCastleCommerce(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHANGE_CASTLE_COMMERCE(?,?,?,?,?,?,?)}");
@@ -173,7 +173,7 @@ namespace storedProc
 	export class ChangeCopySerialItem : public StoredProcedure
 	{
 	public:
-		ChangeCopySerialItem(nanodbc::connection& conn) 
+		ChangeCopySerialItem(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHANGE_COPY_SERIAL_ITEM()}");
@@ -191,7 +191,7 @@ namespace storedProc
 	export class ChangeCopySerialItemTable : public StoredProcedure
 	{
 	public:
-		ChangeCopySerialItemTable(nanodbc::connection& conn) 
+		ChangeCopySerialItemTable(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHANGE_COPY_SERIAL_ITEM_TABLE()}");
@@ -209,7 +209,7 @@ namespace storedProc
 	export class ChangeKnightsCape : public StoredProcedure
 	{
 	public:
-		ChangeKnightsCape(nanodbc::connection& conn) 
+		ChangeKnightsCape(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHANGE_KNIGHTS_CAPE(?,?)}");
@@ -232,7 +232,7 @@ namespace storedProc
 	export class CheckKnights : public StoredProcedure
 	{
 	public:
-		CheckKnights(nanodbc::connection& conn) 
+		CheckKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CHECK_KNIGHTS()}");
@@ -250,7 +250,7 @@ namespace storedProc
 	export class ClearRemainUsers : public StoredProcedure
 	{
 	public:
-		ClearRemainUsers(nanodbc::connection& conn) 
+		ClearRemainUsers(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CLEAR_REMAIN_USERS(?)}");
@@ -272,7 +272,7 @@ namespace storedProc
 	export class CreateKnights : public StoredProcedure
 	{
 	public:
-		CreateKnights(nanodbc::connection& conn) 
+		CreateKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CREATE_KNIGHTS(?,?,?,?,?,?)}");
@@ -305,7 +305,7 @@ namespace storedProc
 	export class CreateKnights2 : public StoredProcedure
 	{
 	public:
-		CreateKnights2(nanodbc::connection& conn) 
+		CreateKnights2(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CREATE_KNIGHTS2(?,?,?,?,?,?)}");
@@ -338,7 +338,7 @@ namespace storedProc
 	export class CreateNewChar : public StoredProcedure
 	{
 	public:
-		CreateNewChar(nanodbc::connection& conn) 
+		CreateNewChar(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL CREATE_NEW_CHAR(?,?,?,?,?,?,?,?,?,?,?,?,?)}");
@@ -378,7 +378,7 @@ namespace storedProc
 	export class DeleteFriendList : public StoredProcedure
 	{
 	public:
-		DeleteFriendList(nanodbc::connection& conn) 
+		DeleteFriendList(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL DELETE_FRIEND_LIST(?,?,?)}");
@@ -408,7 +408,7 @@ namespace storedProc
 	export class DeleteKnights : public StoredProcedure
 	{
 	public:
-		DeleteKnights(nanodbc::connection& conn) 
+		DeleteKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL DELETE_KNIGHTS(?,?)}");
@@ -437,7 +437,7 @@ namespace storedProc
 	export class EditerKnights : public StoredProcedure
 	{
 	public:
-		EditerKnights(nanodbc::connection& conn) 
+		EditerKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL EDITER_KNIGHTS()}");
@@ -455,7 +455,7 @@ namespace storedProc
 	export class ExecKnightsUser : public StoredProcedure
 	{
 	public:
-		ExecKnightsUser(nanodbc::connection& conn) 
+		ExecKnightsUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL EXEC_KNIGHTS_USER()}");
@@ -473,7 +473,7 @@ namespace storedProc
 	export class GivePremium : public StoredProcedure
 	{
 	public:
-		GivePremium(nanodbc::connection& conn) 
+		GivePremium(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL GIVE_PREMIUM(?,?,?)}");
@@ -497,7 +497,7 @@ namespace storedProc
 	export class InsertFriendList : public StoredProcedure
 	{
 	public:
-		InsertFriendList(nanodbc::connection& conn) 
+		InsertFriendList(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL INSERT_FRIEND_LIST(?,?,?)}");
@@ -527,7 +527,7 @@ namespace storedProc
 	export class InsertHacktoolUser : public StoredProcedure
 	{
 	public:
-		InsertHacktoolUser(nanodbc::connection& conn) 
+		InsertHacktoolUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL INSERT_HACKTOOL_USER(?,?,?)}");
@@ -551,7 +551,7 @@ namespace storedProc
 	export class InsertProgramCheckUser : public StoredProcedure
 	{
 	public:
-		InsertProgramCheckUser(nanodbc::connection& conn) 
+		InsertProgramCheckUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL INSERT_PROGRAM_CHECK_USER(?,?,?)}");
@@ -575,7 +575,7 @@ namespace storedProc
 	export class KingCandidacyNoticeBoardProc : public StoredProcedure
 	{
 	public:
-		KingCandidacyNoticeBoardProc(nanodbc::connection& conn) 
+		KingCandidacyNoticeBoardProc(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_CANDIDACY_NOTICE_BOARD_PROC(?,?,?,?)}");
@@ -600,7 +600,7 @@ namespace storedProc
 	export class KingCandidacyRecommend : public StoredProcedure
 	{
 	public:
-		KingCandidacyRecommend(nanodbc::connection& conn) 
+		KingCandidacyRecommend(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_CANDIDACY_RECOMMEND(?,?,?,?)}");
@@ -631,7 +631,7 @@ namespace storedProc
 	export class KingChangeTax : public StoredProcedure
 	{
 	public:
-		KingChangeTax(nanodbc::connection& conn) 
+		KingChangeTax(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_CHANGE_TAX(?,?,?,?,?,?,?,?)}");
@@ -660,7 +660,7 @@ namespace storedProc
 	export class KingElectionProc : public StoredProcedure
 	{
 	public:
-		KingElectionProc(nanodbc::connection& conn) 
+		KingElectionProc(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_ELECTION_PROC(?,?,?,?,?)}");
@@ -692,7 +692,7 @@ namespace storedProc
 	export class KingImpeachmentElection : public StoredProcedure
 	{
 	public:
-		KingImpeachmentElection(nanodbc::connection& conn) 
+		KingImpeachmentElection(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_IMPEACHMENT_ELECTION(?,?,?,?,?)}");
@@ -724,7 +724,7 @@ namespace storedProc
 	export class KingImpeachmentRequestElection : public StoredProcedure
 	{
 	public:
-		KingImpeachmentRequestElection(nanodbc::connection& conn) 
+		KingImpeachmentRequestElection(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_IMPEACHMENT_REQUEST_ELECTION(?,?,?)}");
@@ -748,7 +748,7 @@ namespace storedProc
 	export class KingImpeachmentResult : public StoredProcedure
 	{
 	public:
-		KingImpeachmentResult(nanodbc::connection& conn) 
+		KingImpeachmentResult(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_IMPEACHMENT_RESULT(?,?,?)}");
@@ -778,7 +778,7 @@ namespace storedProc
 	export class KingInsertPrizeEvent : public StoredProcedure
 	{
 	public:
-		KingInsertPrizeEvent(nanodbc::connection& conn) 
+		KingInsertPrizeEvent(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_INSERT_PRIZE_EVENT(?,?,?,?)}");
@@ -803,7 +803,7 @@ namespace storedProc
 	export class KingUpdateElectionList : public StoredProcedure
 	{
 	public:
-		KingUpdateElectionList(nanodbc::connection& conn) 
+		KingUpdateElectionList(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_ELECTION_LIST(?,?,?,?,?,?)}");
@@ -830,7 +830,7 @@ namespace storedProc
 	export class KingUpdateElectionSchdule : public StoredProcedure
 	{
 	public:
-		KingUpdateElectionSchdule(nanodbc::connection& conn) 
+		KingUpdateElectionSchdule(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_ELECTION_SCHDULE(?,?,?,?,?,?,?)}");
@@ -858,7 +858,7 @@ namespace storedProc
 	export class KingUpdateElectionStatus : public StoredProcedure
 	{
 	public:
-		KingUpdateElectionStatus(nanodbc::connection& conn) 
+		KingUpdateElectionStatus(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_ELECTION_STATUS(?,?)}");
@@ -881,7 +881,7 @@ namespace storedProc
 	export class KingUpdateImpeachmentStatus : public StoredProcedure
 	{
 	public:
-		KingUpdateImpeachmentStatus(nanodbc::connection& conn) 
+		KingUpdateImpeachmentStatus(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_IMPEACHMENT_STATUS(?,?,?,?,?,?,?,?)}");
@@ -910,7 +910,7 @@ namespace storedProc
 	export class KingUpdateNoahOrExpEvent : public StoredProcedure
 	{
 	public:
-		KingUpdateNoahOrExpEvent(nanodbc::connection& conn) 
+		KingUpdateNoahOrExpEvent(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KING_UPDATE_NOAH_OR_EXP_EVENT(?,?,?,?,?,?,?)}");
@@ -938,7 +938,7 @@ namespace storedProc
 	export class KnightsRatingUpdate : public StoredProcedure
 	{
 	public:
-		KnightsRatingUpdate(nanodbc::connection& conn) 
+		KnightsRatingUpdate(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL KNIGHTS_RATING_UPDATE()}");
@@ -956,7 +956,7 @@ namespace storedProc
 	export class LoadAccountCharid : public StoredProcedure
 	{
 	public:
-		LoadAccountCharid(nanodbc::connection& conn) 
+		LoadAccountCharid(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{? = CALL LOAD_ACCOUNT_CHARID(?)}");
@@ -985,7 +985,7 @@ namespace storedProc
 	export class LoadCharInfo : public StoredProcedure
 	{
 	public:
-		LoadCharInfo(nanodbc::connection& conn) 
+		LoadCharInfo(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_CHAR_INFO(?,?)}");
@@ -1014,7 +1014,7 @@ namespace storedProc
 	export class LoadKnightsMembers : public StoredProcedure
 	{
 	public:
-		LoadKnightsMembers(nanodbc::connection& conn) 
+		LoadKnightsMembers(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_KNIGHTS_MEMBERS(?)}");
@@ -1036,7 +1036,7 @@ namespace storedProc
 	export class LoadPremiumServiceUser : public StoredProcedure
 	{
 	public:
-		LoadPremiumServiceUser(nanodbc::connection& conn) 
+		LoadPremiumServiceUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_PREMIUM_SERVICE_USER(?,?,?)}");
@@ -1066,7 +1066,7 @@ namespace storedProc
 	export class LoadRentalData : public StoredProcedure
 	{
 	public:
-		LoadRentalData(nanodbc::connection& conn) 
+		LoadRentalData(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_RENTAL_DATA(?)}");
@@ -1088,7 +1088,7 @@ namespace storedProc
 	export class LoadSavedMagic : public StoredProcedure
 	{
 	public:
-		LoadSavedMagic(nanodbc::connection& conn) 
+		LoadSavedMagic(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_SAVED_MAGIC(?,?)}");
@@ -1117,7 +1117,7 @@ namespace storedProc
 	export class LoadUserData : public StoredProcedure
 	{
 	public:
-		LoadUserData(nanodbc::connection& conn) 
+		LoadUserData(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_USER_DATA(?,?,?)}");
@@ -1147,7 +1147,7 @@ namespace storedProc
 	export class LoadWebItemmall : public StoredProcedure
 	{
 	public:
-		LoadWebItemmall(nanodbc::connection& conn) 
+		LoadWebItemmall(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL LOAD_WEB_ITEMMALL(?)}");
@@ -1169,7 +1169,7 @@ namespace storedProc
 	export class NationSelect : public StoredProcedure
 	{
 	public:
-		NationSelect(nanodbc::connection& conn) 
+		NationSelect(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL NATION_SELECT(?,?,?)}");
@@ -1199,7 +1199,7 @@ namespace storedProc
 	export class ProcInsertCurrentuser : public StoredProcedure
 	{
 	public:
-		ProcInsertCurrentuser(nanodbc::connection& conn) 
+		ProcInsertCurrentuser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL PROC_INSERT_CURRENTUSER(?,?,?,?,?,?)}");
@@ -1232,7 +1232,7 @@ namespace storedProc
 	export class RankKnights : public StoredProcedure
 	{
 	public:
-		RankKnights(nanodbc::connection& conn) 
+		RankKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RANK_KNIGHTS()}");
@@ -1250,7 +1250,7 @@ namespace storedProc
 	export class RentalItemCancel : public StoredProcedure
 	{
 	public:
-		RentalItemCancel(nanodbc::connection& conn) 
+		RentalItemCancel(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_CANCEL(?,?,?,?,?)}");
@@ -1282,7 +1282,7 @@ namespace storedProc
 	export class RentalItemDestory : public StoredProcedure
 	{
 	public:
-		RentalItemDestory(nanodbc::connection& conn) 
+		RentalItemDestory(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_DESTORY(?,?,?,?,?,?)}");
@@ -1315,7 +1315,7 @@ namespace storedProc
 	export class RentalItemDurabilityUpdate : public StoredProcedure
 	{
 	public:
-		RentalItemDurabilityUpdate(nanodbc::connection& conn) 
+		RentalItemDurabilityUpdate(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_DURABILITY_UPDATE(?,?)}");
@@ -1338,7 +1338,7 @@ namespace storedProc
 	export class RentalItemLend : public StoredProcedure
 	{
 	public:
-		RentalItemLend(nanodbc::connection& conn) 
+		RentalItemLend(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_LEND(?,?,?,?,?)}");
@@ -1370,7 +1370,7 @@ namespace storedProc
 	export class RentalItemRegister : public StoredProcedure
 	{
 	public:
-		RentalItemRegister(nanodbc::connection& conn) 
+		RentalItemRegister(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RENTAL_ITEM_REGISTER(?,?,?,?,?,?,?,?,?,?,?,?)}");
@@ -1409,7 +1409,7 @@ namespace storedProc
 	export class ResetLoyaltyMonthly : public StoredProcedure
 	{
 	public:
-		ResetLoyaltyMonthly(nanodbc::connection& conn) 
+		ResetLoyaltyMonthly(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL RESET_LOYALTY_MONTHLY()}");
@@ -1427,7 +1427,7 @@ namespace storedProc
 	export class SkillshortcutLoad : public StoredProcedure
 	{
 	public:
-		SkillshortcutLoad(nanodbc::connection& conn) 
+		SkillshortcutLoad(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL SKILLSHORTCUT_LOAD(?)}");
@@ -1449,7 +1449,7 @@ namespace storedProc
 	export class SkillshortcutSave : public StoredProcedure
 	{
 	public:
-		SkillshortcutSave(nanodbc::connection& conn) 
+		SkillshortcutSave(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL SKILLSHORTCUT_SAVE(?,?,?)}");
@@ -1473,7 +1473,7 @@ namespace storedProc
 	export class UpdateBattleHero : public StoredProcedure
 	{
 	public:
-		UpdateBattleHero(nanodbc::connection& conn) 
+		UpdateBattleHero(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_BATTLE_HERO(?,?,?,?,?)}");
@@ -1499,7 +1499,7 @@ namespace storedProc
 	export class UpdateBattleResult : public StoredProcedure
 	{
 	public:
-		UpdateBattleResult(nanodbc::connection& conn) 
+		UpdateBattleResult(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_BATTLE_RESULT(?,?,?)}");
@@ -1523,7 +1523,7 @@ namespace storedProc
 	export class UpdateEditorItemData : public StoredProcedure
 	{
 	public:
-		UpdateEditorItemData(nanodbc::connection& conn) 
+		UpdateEditorItemData(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_EDITOR_ITEM_DATA(?,?,?,?,?,?,?,?,?)}");
@@ -1553,7 +1553,7 @@ namespace storedProc
 	export class UpdateKnights : public StoredProcedure
 	{
 	public:
-		UpdateKnights(nanodbc::connection& conn) 
+		UpdateKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS(?,?,?,?,?)}");
@@ -1585,7 +1585,7 @@ namespace storedProc
 	export class UpdateKnightsAlliance : public StoredProcedure
 	{
 	public:
-		UpdateKnightsAlliance(nanodbc::connection& conn) 
+		UpdateKnightsAlliance(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS_ALLIANCE(?,?,?,?,?)}");
@@ -1611,7 +1611,7 @@ namespace storedProc
 	export class UpdateKnightsMark : public StoredProcedure
 	{
 	public:
-		UpdateKnightsMark(nanodbc::connection& conn) 
+		UpdateKnightsMark(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS_MARK(?,?,?,?)}");
@@ -1642,7 +1642,7 @@ namespace storedProc
 	export class UpdateKnightsWar : public StoredProcedure
 	{
 	public:
-		UpdateKnightsWar(nanodbc::connection& conn) 
+		UpdateKnightsWar(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_KNIGHTS_WAR(?,?,?)}");
@@ -1666,7 +1666,7 @@ namespace storedProc
 	export class UpdatePersonalRank : public StoredProcedure
 	{
 	public:
-		UpdatePersonalRank(nanodbc::connection& conn) 
+		UpdatePersonalRank(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_PERSONAL_RANK()}");
@@ -1684,7 +1684,7 @@ namespace storedProc
 	export class UpdatePremiumServiceUser : public StoredProcedure
 	{
 	public:
-		UpdatePremiumServiceUser(nanodbc::connection& conn) 
+		UpdatePremiumServiceUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{? = CALL UPDATE_PREMIUM_SERVICE_USER(?,?)}");
@@ -1714,7 +1714,7 @@ namespace storedProc
 	export class UpdateSavedMagic : public StoredProcedure
 	{
 	public:
-		UpdateSavedMagic(nanodbc::connection& conn) 
+		UpdateSavedMagic(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SAVED_MAGIC(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
@@ -1756,7 +1756,7 @@ namespace storedProc
 	export class UpdateSiege : public StoredProcedure
 	{
 	public:
-		UpdateSiege(nanodbc::connection& conn) 
+		UpdateSiege(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE(?,?,?,?,?,?,?)}");
@@ -1784,7 +1784,7 @@ namespace storedProc
 	export class UpdateSiegeChallenger : public StoredProcedure
 	{
 	public:
-		UpdateSiegeChallenger(nanodbc::connection& conn) 
+		UpdateSiegeChallenger(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE_CHALLENGER(?,?)}");
@@ -1807,7 +1807,7 @@ namespace storedProc
 	export class UpdateSiegeChallenger2 : public StoredProcedure
 	{
 	public:
-		UpdateSiegeChallenger2(nanodbc::connection& conn) 
+		UpdateSiegeChallenger2(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE_CHALLENGER2(?,?,?,?,?,?,?,?,?,?,?,?)}");
@@ -1840,7 +1840,7 @@ namespace storedProc
 	export class UpdateSiegeDecideChallenger : public StoredProcedure
 	{
 	public:
-		UpdateSiegeDecideChallenger(nanodbc::connection& conn) 
+		UpdateSiegeDecideChallenger(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_SIEGE_DECIDE_CHALLENGER(?,?,?,?,?,?,?,?,?,?,?)}");
@@ -1872,7 +1872,7 @@ namespace storedProc
 	export class UpdateUserData : public StoredProcedure
 	{
 	public:
-		UpdateUserData(nanodbc::connection& conn) 
+		UpdateUserData(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_USER_DATA(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
@@ -1931,7 +1931,7 @@ namespace storedProc
 	export class UpdateWarehouse : public StoredProcedure
 	{
 	public:
-		UpdateWarehouse(nanodbc::connection& conn) 
+		UpdateWarehouse(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL UPDATE_WAREHOUSE(?,?,?,?,?)}");
@@ -1957,7 +1957,7 @@ namespace storedProc
 	export class UserKnightsRatingUpdate : public StoredProcedure
 	{
 	public:
-		UserKnightsRatingUpdate(nanodbc::connection& conn) 
+		UserKnightsRatingUpdate(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
 			_stmt.prepare("{CALL USER_KNIGHTS_RATING_UPDATE()}");
