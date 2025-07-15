@@ -13,7 +13,7 @@ namespace storedProc
 	{
 	protected:
 		StoredProcedure(std::shared_ptr<nanodbc::connection> conn)
-			: _conn(conn), _stmt(conn)
+			: _conn(conn), _stmt(*conn.get())
 		{
 			_flushed = false;
 		}
