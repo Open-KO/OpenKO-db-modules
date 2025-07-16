@@ -70,6 +70,7 @@ var menudata={children:[
 {text:"f",url:"functions_func_f.html#index_f"},
 {text:"g",url:"functions_func_g.html#index_g"},
 {text:"m",url:"functions_func_m.html#index_m"},
+{text:"o",url:"functions_func_o.html#index_o"},
 {text:"p",url:"functions_func_p.html#index_p"},
 {text:"t",url:"functions_func_t.html#index_t"},
 {text:"~",url:"functions_func_~.html#index__7E"}]},
