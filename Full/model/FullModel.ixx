@@ -9534,15 +9534,15 @@ namespace full_model
 		{
 			static const std::vector<std::string> primaryKey =
 			{
-				"sVersion"
+				"strFileName"
 			};
 			return primaryKey;
 		}
 
 		/// \brief Returns a value for use in map keys based on the table's primary key
-		const int16_t& MapKey() const
+		const std::string& MapKey() const
 		{
-			return Number;
+			return FileName;
 		}
 
 	};
