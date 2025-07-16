@@ -87,6 +87,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "byNation"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -222,6 +232,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sClass", "ShortSword", "Sword", "Axe", "Club", "Spear", "Pole", "Staff", "Bow", "Hp", "Mp", "Sp", "Ac", "Hitrate", "Evasionrate"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -300,6 +320,16 @@ namespace ebenezer_model
 				"nIndex", "strSerialNum", "nItemNum", "sItemCount"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "strSerialNum", "nItemNum", "sItemCount"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -402,6 +432,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"ZoneNum", "EventNum", "Type", "Exec1", "Exec2", "Exec3", "Exec4", "Exec5"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -474,6 +514,16 @@ namespace ebenezer_model
 				"nIndex", "bNpcType", "sNpcID", "nTriggerNum"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "bNpcType", "sNpcID", "nTriggerNum"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -639,6 +689,16 @@ namespace ebenezer_model
 				"Nation", "ElmoZoneX", "ElmoZoneZ", "ElmoZoneLX", "ElmoZoneLZ", "KarusZoneX", "KarusZoneZ", "KarusZoneLX", "KarusZoneLZ", "FreeZoneX", "FreeZoneZ", "FreeZoneLX", "FreeZoneLZ", "BattleZoneX", "BattleZoneZ", "BattleZoneLX", "BattleZoneLZ", "BattleZone2X", "BattleZone2Z", "BattleZone2LX", "BattleZone2LZ"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"Nation", "ElmoZoneX", "ElmoZoneZ", "ElmoZoneLX", "ElmoZoneLZ", "KarusZoneX", "KarusZoneZ", "KarusZoneLX", "KarusZoneLZ", "FreeZoneX", "FreeZoneZ", "FreeZoneLX", "FreeZoneLZ", "BattleZoneX", "BattleZoneZ", "BattleZoneLX", "BattleZoneLZ", "BattleZone2X", "BattleZone2Z", "BattleZone2LX", "BattleZone2LZ"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -1129,6 +1189,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"Num", "strName", "Kind", "Slot", "Race", "Class", "Damage", "Delay", "Range", "Weight", "Duration", "BuyPrice", "SellPrice", "Ac", "Countable", "Effect1", "Effect2", "ReqLevel", "ReqRank", "ReqTitle", "ReqStr", "ReqSta", "ReqDex", "ReqIntel", "ReqCha", "SellingGroup", "ItemType", "Hitrate", "Evasionrate", "DaggerAc", "SwordAc", "MaceAc", "AxeAc", "SpearAc", "BowAc", "FireDamage", "IceDamage", "LightningDamage", "PoisonDamage", "HPDrain", "MPDamage", "MPDrain", "MirrorDamage", "Droprate", "StrB", "StaB", "DexB", "IntelB", "ChaB", "MaxHpB", "MaxMpB", "FireR", "ColdR", "LightningR", "MagicR", "PoisonR", "CurseR"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -1348,6 +1418,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "nNpcNum", "bRandomFlag", "nOriginItemNum1", "nOriginItemCount1", "nOriginItemNum2", "nOriginItemCount2", "nOriginItemNum3", "nOriginItemCount3", "nOriginItemNum4", "nOriginItemCount4", "nOriginItemNum5", "nOriginItemCount5", "nExchangeItemNum1", "nExchangeItemCount1", "nExchangeItemNum2", "nExchangeItemCount2", "nExchangeItemNum3", "nExchangeItemCount3", "nExchangeItemNum4", "nExchangeItemCount4", "nExchangeItemNum5", "nExchangeItemCount5"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -1497,6 +1577,16 @@ namespace ebenezer_model
 				"nIndex", "nNPCNum", "nOriginType", "nOriginItem", "nReqItem1", "nReqItem2", "nReqItem3", "nReqItem4", "nReqItem5", "nReqItem6", "nReqItem7", "nReqItem8", "nReqNoah", "bRateType", "nGenRate", "nGiveItem"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "nNPCNum", "nOriginType", "nOriginItem", "nReqItem1", "nReqItem2", "nReqItem3", "nReqItem4", "nReqItem5", "nReqItem6", "nReqItem7", "nReqItem8", "nReqNoah", "bRateType", "nGenRate", "nGiveItem"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -1679,6 +1769,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"IDNum", "Flag", "Nation", "Ranking", "IDName", "Members", "Chief", "ViceChief_1", "ViceChief_2", "ViceChief_3", "strEnemyName", "byOldWarResult", "nWarEnemyID", "nVictory", "nLose", "Gold", "Domination", "Points", "sMarkVersion", "sMarkLen", "Mark", "bySiegeFlag", "sAllianceKnights", "sCape"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -1757,6 +1857,16 @@ namespace ebenezer_model
 				"sMainAllianceKnights", "sSubAllianceKnights", "sMercenaryClan_1", "sMercenaryClan_2"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sMainAllianceKnights", "sSubAllianceKnights", "sMercenaryClan_1", "sMercenaryClan_2"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -1839,6 +1949,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sCapeIndex", "nBuyPrice", "nDuration", "byGrade"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -1917,6 +2037,16 @@ namespace ebenezer_model
 				"nRank", "shIndex", "strName", "nPoints"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nRank", "shIndex", "strName", "nPoints"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -2169,6 +2299,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sCastleIndex", "sMasterKnights", "bySiegeType", "byWarDay", "byWarTime", "byWarMinute", "sChallengeList_1", "sChallengeList_2", "sChallengeList_3", "sChallengeList_4", "sChallengeList_5", "sChallengeList_6", "sChallengeList_7", "sChallengeList_8", "sChallengeList_9", "sChallengeList_10", "byWarRequestDay", "byWarRequestTime", "byWarRequestMinute", "byGuerrillaWarDay", "byGuerrillaWarTime", "byGuerrillaWarMinute", "strChallengeList", "sMoradonTariff", "sDellosTariff", "nDungeonCharge", "nMoradonTax", "nDellosTax", "sRequestList_1", "sRequestList_2", "sRequestList_3", "sRequestList_4", "sRequestList_5", "sRequestList_6", "sRequestList_7", "sRequestList_8", "sRequestList_9", "sRequestList_10"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -2239,6 +2379,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIDNum", "strUserID"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -2307,6 +2457,16 @@ namespace ebenezer_model
 				"level", "Exp"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"level", "Exp"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -2474,6 +2634,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"MagicNum", "BeforeAction", "TargetAction", "SelfEffect", "FlyingEffect", "TargetEffect", "Moral", "SkillLevel", "Skill", "Msp", "HP", "ItemGroup", "UseItem", "CastTime", "ReCastTime", "SuccessRate", "Type1", "Type2", "Range", "Etc", "Event"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -2594,6 +2764,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Type", "HitRate", "Hit", "AddDamage", "Delay", "ComboType", "ComboCount", "ComboDamage", "Range"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -2696,6 +2876,16 @@ namespace ebenezer_model
 				"iNum", "HitType", "HitRate", "AddDamage", "AddRange", "NeedArrow", "AddDamagePlus"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "HitType", "HitRate", "AddDamage", "AddRange", "NeedArrow", "AddDamagePlus"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -2818,6 +3008,16 @@ namespace ebenezer_model
 				"iNum", "Radius", "Angle", "DirectType", "FirstDamage", "EndDamage", "TimeDamage", "Duration", "Attribute"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Radius", "Angle", "DirectType", "FirstDamage", "EndDamage", "TimeDamage", "Duration", "Attribute"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -3042,6 +3242,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "BuffType", "Radius", "Duration", "AttackSpeed", "Speed", "AC", "ACPct", "Attack", "MagicAttack", "MaxHP", "MaxHpPct", "MaxMP", "MaxMpPct", "HitRate", "AvoidRate", "Str", "Sta", "Dex", "Intel", "Cha", "FireR", "ColdR", "LightningR", "MagicR", "DiseaseR", "PoisonR", "ExpPct"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3132,6 +3342,16 @@ namespace ebenezer_model
 				"iNum", "Type", "ExpRecover", "NeedStone"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Type", "ExpRecover", "NeedStone"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -3309,6 +3529,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Size", "TransformID", "Duration", "MaxHp", "MaxMp", "Speed", "AttackSpeed", "TotalHit", "TotalAc", "TotalHitRate", "TotalEvasionRate", "TotalFireR", "TotalColdR", "TotalLightningR", "TotalMagicR", "TotalDiseaseR", "TotalPoisonR", "Class", "UserSkillUse", "NeedItem", "SkillSuccessRate", "MonsterFriendly"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3438,6 +3668,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "byValidGroup", "byNatoinChange", "shMonsterNum", "byTargetChange", "byStateChange", "byRadius", "shHitrate", "shDuration", "shDamage", "byVisoin", "nNeedItem"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3532,6 +3772,16 @@ namespace ebenezer_model
 				"iNum", "Target", "Radius", "WarpType", "ExpRecover"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Target", "Radius", "WarpType", "ExpRecover"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -3654,6 +3904,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "ValidGroup", "NationChange", "MonsterNum", "TargetChange", "StateChange", "Radius", "Hitrate", "Duration", "AddDamage", "Vision", "NeedItem"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3742,6 +4002,16 @@ namespace ebenezer_model
 				"sIndex", "bStartTime1", "bStartTime2", "bStartTime3", "bLevelMin", "bLevelMax"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "bStartTime1", "bStartTime2", "bStartTime3", "bLevelMin", "bLevelMax"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -3852,6 +4122,16 @@ namespace ebenezer_model
 				"sIndex", "bLevel", "bStage", "bStageLevel", "sTime", "sSid", "sCount", "sPosX", "sPosZ", "bRange"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "bLevel", "bStage", "bStageLevel", "sTime", "sSid", "sCount", "sPosX", "sPosZ", "bRange"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -3979,6 +4259,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nRentalIndex", "nItemIndex", "sDurability", "nSerialNumber", "byRegType", "byItemType", "byClass", "sRentalTime", "nRentalMoney", "strLenderCharID", "strLenderAcID", "strBorrowerCharID", "strBorrowerAcID"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -4047,6 +4337,16 @@ namespace ebenezer_model
 				"nResourceID", "strResource"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nResourceID", "strResource"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -4164,6 +4464,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"ZoneID", "sKarusX", "sKarusZ", "sElmoradX", "sElmoradZ", "bRangeX", "bRangeZ", "sKarusGateX", "sKarusGateZ", "sElmoGateX", "sElmoGateZ"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -4242,6 +4552,16 @@ namespace ebenezer_model
 				"shIndex", "strElmoUserID", "strKarusUserID", "nMoney"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"shIndex", "strElmoUserID", "strKarusUserID", "nMoney"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -4324,6 +4644,16 @@ namespace ebenezer_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nRank", "strElmoUserID", "strKarusUserID", "nSalary"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -4392,6 +4722,16 @@ namespace ebenezer_model
 				"nIndex", "strWebPageAddress"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "strWebPageAddress"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -4492,6 +4832,16 @@ namespace ebenezer_model
 				"ServerNo", "ZoneNo", "strZoneName", "InitX", "InitZ", "InitY", "Type", "RoomEvent"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"ServerNo", "ZoneNo", "strZoneName", "InitX", "InitZ", "InitY", "Type", "RoomEvent"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table

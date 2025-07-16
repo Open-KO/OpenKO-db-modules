@@ -61,6 +61,16 @@ namespace aujard_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"Num", "Countable"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{

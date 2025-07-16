@@ -149,6 +149,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strAccountID", "bNation", "bCharNum", "strCharID1", "strCharID2", "strCharID3"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -299,6 +309,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "byNation", "strUserName", "byElmoArea", "byKarusArea", "byElmoAdvantage", "byKarusAdvantage", "byArea_1", "byArea_2", "byArea_3", "byArea_4", "byArea_5", "byArea_6", "byArea_7", "byArea_8", "byArea_9", "byArea_10", "byArea_11"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -434,6 +454,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sClass", "ShortSword", "Sword", "Axe", "Club", "Spear", "Pole", "Staff", "Bow", "Hp", "Mp", "Sp", "Ac", "Hitrate", "Evasionrate"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -517,6 +547,16 @@ namespace full_model
 				"serverid", "zone1_count", "zone2_count", "zone3_count", "bz"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"serverid", "zone1_count", "zone2_count", "zone3_count", "bz"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -604,6 +644,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strUserId", "byType", "nPos", "ItemNum", "ItemSerial"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -661,6 +711,16 @@ namespace full_model
 				"ITEMSERIAL"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"ITEMSERIAL"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -735,6 +795,16 @@ namespace full_model
 				"nIndex", "strSerialNum", "nItemNum", "sItemCount"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "strSerialNum", "nItemNum", "sItemCount"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -820,6 +890,16 @@ namespace full_model
 				"nServerNo", "strServerIP", "strAccountID", "strCharID", "strClientIP"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nServerNo", "strServerIP", "strAccountID", "strCharID", "strClientIP"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -947,6 +1027,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"ZoneNum", "EventNum", "Type", "Cond1", "Cond2", "Cond3", "Cond4", "Cond5", "Exec1", "Exec2", "Exec3", "Exec4", "Exec5"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -1019,6 +1109,16 @@ namespace full_model
 				"nIndex", "bNpcType", "sNpcID", "nTriggerNum"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "bNpcType", "sNpcID", "nTriggerNum"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -1206,6 +1306,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strUserID", "strFriend1", "strFriend2", "strFriend3", "strFriend4", "strFriend5", "strFriend6", "strFriend7", "strFriend8", "strFriend9", "strFriend10", "strFriend11", "strFriend12", "strFriend13", "strFriend14", "strFriend15", "strFriend16", "strFriend17", "strFriend18", "strFriend19", "strFriend20", "strFriend21", "strFriend22", "strFriend23", "strFriend24"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -1286,6 +1396,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strAccountID", "strCharID", "strHackToolName", "tWriteTime"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -1363,6 +1483,16 @@ namespace full_model
 				"shIndex", "strUserID", "strNation", "strClass", "strAchievement"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"shIndex", "strUserID", "strNation", "strClass", "strAchievement"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -1522,6 +1652,16 @@ namespace full_model
 				"Nation", "ElmoZoneX", "ElmoZoneZ", "ElmoZoneLX", "ElmoZoneLZ", "KarusZoneX", "KarusZoneZ", "KarusZoneLX", "KarusZoneLZ", "FreeZoneX", "FreeZoneZ", "FreeZoneLX", "FreeZoneLZ", "BattleZoneX", "BattleZoneZ", "BattleZoneLX", "BattleZoneLZ", "BattleZone2X", "BattleZone2Z", "BattleZone2LX", "BattleZone2LZ"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"Nation", "ElmoZoneX", "ElmoZoneZ", "ElmoZoneLX", "ElmoZoneLZ", "KarusZoneX", "KarusZoneZ", "KarusZoneLX", "KarusZoneLZ", "FreeZoneX", "FreeZoneZ", "FreeZoneLX", "FreeZoneLZ", "BattleZoneX", "BattleZoneZ", "BattleZoneLX", "BattleZoneLZ", "BattleZone2X", "BattleZone2Z", "BattleZone2LX", "BattleZone2LZ"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -2017,6 +2157,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"Num", "strName", "Kind", "Slot", "Race", "Class", "Damage", "Delay", "Range", "Weight", "Duration", "BuyPrice", "SellPrice", "Ac", "Countable", "Effect1", "Effect2", "ReqLevel", "ReqLevelMax", "ReqRank", "ReqTitle", "ReqStr", "ReqSta", "ReqDex", "ReqIntel", "ReqCha", "SellingGroup", "ItemType", "Hitrate", "Evasionrate", "DaggerAc", "SwordAc", "MaceAc", "AxeAc", "SpearAc", "BowAc", "FireDamage", "IceDamage", "LightningDamage", "PoisonDamage", "HPDrain", "MPDamage", "MPDrain", "MirrorDamage", "Droprate", "StrB", "StaB", "DexB", "IntelB", "ChaB", "MaxHpB", "MaxMpB", "FireR", "ColdR", "LightningR", "MagicR", "PoisonR", "CurseR"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -2246,6 +2396,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "nNpcNum", "strNpcName", "strNote", "bRandomFlag", "nOriginItemNum1", "nOriginItemCount1", "nOriginItemNum2", "nOriginItemCount2", "nOriginItemNum3", "nOriginItemCount3", "nOriginItemNum4", "nOriginItemCount4", "nOriginItemNum5", "nOriginItemCount5", "nExchangeItemNum1", "nExchangeItemCount1", "nExchangeItemNum2", "nExchangeItemCount2", "nExchangeItemNum3", "nExchangeItemCount3", "nExchangeItemNum4", "nExchangeItemCount4", "nExchangeItemNum5", "nExchangeItemCount5"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -2466,6 +2626,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"group", "name", "item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10", "item11", "item12", "item13", "item14", "item15", "item16", "item17", "item18", "item19", "item20", "item21", "item22", "item23", "item24", "item25", "item26", "item27", "item28", "item29", "item30"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -2621,6 +2791,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "nNPCNum", "strName", "strNote", "nOriginType", "nOriginItem", "nReqItem1", "nReqItem2", "nReqItem3", "nReqItem4", "nReqItem5", "nReqItem6", "nReqItem7", "nReqItem8", "nReqNoah", "bRateType", "nGenRate", "nGiveItem"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -2704,6 +2884,16 @@ namespace full_model
 				"bType", "nMaxSuccess", "nMaxFail", "nCurSuccess", "nCurFail"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"bType", "nMaxSuccess", "nMaxFail", "nCurSuccess", "nCurFail"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -3011,6 +3201,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sSid", "strName", "sPid", "sSize", "iWeapon1", "iWeapon2", "byGroup", "byActType", "byType", "byFamily", "byRank", "byTitle", "iSellingGroup", "sLevel", "iExp", "iLoyalty", "iHpPoint", "sMpPoint", "sAtk", "sAc", "sHitRate", "sEvadeRate", "sDamage", "sAttackDelay", "bySpeed1", "bySpeed2", "sStandtime", "iMagic1", "iMagic2", "iMagic3", "sFireR", "sColdR", "sLightningR", "sMagicR", "sDiseaseR", "sPoisonR", "sLightR", "sBulk", "byAttackRange", "bySearchRange", "byTracingRange", "iMoney", "sItem", "byDirectAttack", "byMagicAttack", "byMoneyType"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3146,6 +3346,16 @@ namespace full_model
 				"sIndex", "iItem01", "sPersent01", "iItem02", "sPersent02", "iItem03", "sPersent03", "iItem04", "sPersent04", "iItem05", "sPersent05"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "iItem01", "sPersent01", "iItem02", "sPersent02", "iItem03", "sPersent03", "iItem04", "sPersent04", "iItem05", "sPersent05"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -3453,6 +3663,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sSid", "strName", "sPid", "sSize", "iWeapon1", "iWeapon2", "byGroup", "byActType", "byType", "byFamily", "byRank", "byTitle", "iSellingGroup", "sLevel", "iExp", "iLoyalty", "iHpPoint", "sMpPoint", "sAtk", "sAc", "sHitRate", "sEvadeRate", "sDamage", "sAttackDelay", "bySpeed1", "bySpeed2", "sStandtime", "iMagic1", "iMagic2", "iMagic3", "sFireR", "sColdR", "sLightningR", "sMagicR", "sDiseaseR", "sPoisonR", "sLightR", "sBulk", "byAttackRange", "bySearchRange", "byTracingRange", "iMoney", "sItem", "byDirectAttack", "byMagicAttack", "byMoneyType"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3579,6 +3799,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "iItem01", "sPersent01", "iItem02", "sPersent02", "iItem03", "sPersent03", "iItem04", "sPersent04", "iItem05", "sPersent05"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3677,6 +3907,16 @@ namespace full_model
 				"sCastleIndex", "byChangeItem", "sChangeSid", "byMoveItem", "sMoveMinX", "sMoveMinY", "sMoveMaxX", "sMoveMaxY"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sCastleIndex", "byChangeItem", "sChangeSid", "byMoveItem", "sMoveMinX", "sMoveMinY", "sMoveMaxX", "sMoveMaxY"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -3839,6 +4079,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"ZoneID", "NpcID", "ActType", "RegenType", "DungeonFamily", "SpecialType", "TrapNumber", "LeftX", "TopZ", "RightX", "BottomZ", "LimitMinZ", "LimitMinX", "LimitMaxX", "LimitMaxZ", "NumNPC", "RegTime", "byDirection", "DotCnt", "path"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3913,6 +4163,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strAccountID", "strCharID", "byNation", "strCandidacyID"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -3985,6 +4245,16 @@ namespace full_model
 				"strUserID", "byNation", "sNoticeLen", "strNotice"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strUserID", "byNation", "sNoticeLen", "strNotice"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -4070,6 +4340,16 @@ namespace full_model
 				"byType", "byNation", "nKnights", "strName", "nMoney"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"byType", "byNation", "nKnights", "strName", "nMoney"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -4271,6 +4551,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"byNation", "byType", "sYear", "byMonth", "byDay", "byHour", "byMinute", "byImType", "sImYear", "byImMonth", "byImDay", "byImHour", "byImMinute", "byNoahEvent", "byNoahEvent_Day", "byNoahEvent_Hour", "byNoahEvent_Minute", "sNoahEvent_Duration", "byExpEvent", "byExpEvent_Day", "byExpEvent_Hour", "byExpEvent_Minute", "sExpEvent_Duration", "nTribute", "byTerritoryTariff", "nTerritoryTax", "nNationalTreasury", "strKingName", "strImRequestID"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -4455,6 +4745,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"IDNum", "Flag", "Nation", "Ranking", "IDName", "Members", "Chief", "ViceChief_1", "ViceChief_2", "ViceChief_3", "strEnemyName", "byOldWarResult", "nWarEnemyID", "nVictory", "nLose", "Gold", "Domination", "Points", "CreateTime", "sMarkVersion", "sMarkLen", "Mark", "Stash", "bySiegeFlag", "sAllianceKnights", "sCape"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -4533,6 +4833,16 @@ namespace full_model
 				"sMainAllianceKnights", "sSubAllianceKnights", "sMercenaryClan_1", "sMercenaryClan_2"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sMainAllianceKnights", "sSubAllianceKnights", "sMercenaryClan_1", "sMercenaryClan_2"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -4620,6 +4930,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sCapeIndex", "strName", "nBuyPrice", "nDuration", "byGrade"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -4698,6 +5018,16 @@ namespace full_model
 				"nRank", "shIndex", "strName", "nPoints"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nRank", "shIndex", "strName", "nPoints"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -4950,6 +5280,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sCastleIndex", "sMasterKnights", "bySiegeType", "byWarDay", "byWarTime", "byWarMinute", "sChallengeList_1", "sChallengeList_2", "sChallengeList_3", "sChallengeList_4", "sChallengeList_5", "sChallengeList_6", "sChallengeList_7", "sChallengeList_8", "sChallengeList_9", "sChallengeList_10", "byWarRequestDay", "byWarRequestTime", "byWarRequestMinute", "byGuerrillaWarDay", "byGuerrillaWarTime", "byGuerrillaWarMinute", "strChallengeList", "sMoradonTariff", "sDellosTariff", "nDungeonCharge", "nMoradonTax", "nDellosTax", "sRequestList_1", "sRequestList_2", "sRequestList_3", "sRequestList_4", "sRequestList_5", "sRequestList_6", "sRequestList_7", "sRequestList_8", "sRequestList_9", "sRequestList_10"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -5020,6 +5360,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIDNum", "strUserID"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -5088,6 +5438,16 @@ namespace full_model
 				"level", "Exp"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"level", "Exp"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -5270,6 +5630,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"MagicNum", "EnName", "KrName", "Description", "BeforeAction", "TargetAction", "SelfEffect", "FlyingEffect", "TargetEffect", "Moral", "SkillLevel", "Skill", "Msp", "HP", "ItemGroup", "UseItem", "CastTime", "ReCastTime", "SuccessRate", "Type1", "Type2", "Range", "Etc", "Event"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -5400,6 +5770,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Name", "Description", "Type", "HitRate", "Hit", "AddDamage", "Delay", "ComboType", "ComboCount", "ComboDamage", "Range"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -5512,6 +5892,16 @@ namespace full_model
 				"iNum", "Name", "Description", "HitType", "HitRate", "AddDamage", "AddRange", "NeedArrow", "AddDamagePlus"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Name", "Description", "HitType", "HitRate", "AddDamage", "AddRange", "NeedArrow", "AddDamagePlus"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -5644,6 +6034,16 @@ namespace full_model
 				"iNum", "Name", "Description", "Radius", "Angle", "DirectType", "FirstDamage", "EndDamage", "TimeDamage", "Duration", "Attribute"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Name", "Description", "Radius", "Angle", "DirectType", "FirstDamage", "EndDamage", "TimeDamage", "Duration", "Attribute"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -5878,6 +6278,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Name", "Description", "BuffType", "Radius", "Duration", "AttackSpeed", "Speed", "AC", "ACPct", "Attack", "MagicAttack", "MaxHP", "MaxHpPct", "MaxMP", "MaxMpPct", "HitRate", "AvoidRate", "Str", "Sta", "Dex", "Intel", "Cha", "FireR", "ColdR", "LightningR", "MagicR", "DiseaseR", "PoisonR", "ExpPct"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -5978,6 +6388,16 @@ namespace full_model
 				"iNum", "Name", "Description", "Type", "ExpRecover", "NeedStone"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Name", "Description", "Type", "ExpRecover", "NeedStone"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -6165,6 +6585,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Name", "Description", "Size", "TransformID", "Duration", "MaxHp", "MaxMp", "Speed", "AttackSpeed", "TotalHit", "TotalAc", "TotalHitRate", "TotalEvasionRate", "TotalFireR", "TotalColdR", "TotalLightningR", "TotalMagicR", "TotalDiseaseR", "TotalPoisonR", "Class", "UserSkillUse", "NeedItem", "SkillSuccessRate", "MonsterFriendly"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -6304,6 +6734,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "strName", "strNote", "byValidGroup", "byNatoinChange", "shMonsterNum", "byTargetChange", "byStateChange", "byRadius", "shHitrate", "shDuration", "shDamage", "byVisoin", "nNeedItem"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -6408,6 +6848,16 @@ namespace full_model
 				"iNum", "Name", "Description", "Target", "Radius", "WarpType", "ExpRecover"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Name", "Description", "Target", "Radius", "WarpType", "ExpRecover"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -6540,6 +6990,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iNum", "Name", "Description", "ValidGroup", "NationChange", "MonsterNum", "TargetChange", "StateChange", "Radius", "Hitrate", "Duration", "AddDamage", "Vision", "NeedItem"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -6640,6 +7100,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"byLevel", "sClass_1", "sClass_2", "sClass_3", "sClass_4", "sClass_5", "sClass_6", "sClass_7"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -6718,6 +7188,16 @@ namespace full_model
 				"sIndex", "strItemInfo", "iItemCode", "byItemLevel"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "strItemInfo", "iItemCode", "byItemLevel"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -6839,6 +7319,16 @@ namespace full_model
 				"byItemIndex", "byGrade_1", "byGrade_2", "byGrade_3", "byGrade_4", "byGrade_5", "byGrade_6", "byGrade_7", "byGrade_8", "byGrade_9"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"byItemIndex", "byGrade_1", "byGrade_2", "byGrade_3", "byGrade_4", "byGrade_5", "byGrade_6", "byGrade_7", "byGrade_8", "byGrade_9"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -7067,6 +7557,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"iItemGroupNum", "iItem_1", "iItem_2", "iItem_3", "iItem_4", "iItem_5", "iItem_6", "iItem_7", "iItem_8", "iItem_9", "iItem_10", "iItem_11", "iItem_12", "iItem_13", "iItem_14", "iItem_15", "iItem_16", "iItem_17", "iItem_18", "iItem_19", "iItem_20", "iItem_21", "iItem_22", "iItem_23", "iItem_24", "iItem_25", "iItem_26", "iItem_27", "iItem_28", "iItem_29", "iItem_30"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -7150,6 +7650,16 @@ namespace full_model
 				"byLevelGrade", "sUpgradeItem", "sLareItem", "sMagicItem", "sGereralItem"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"byLevelGrade", "sUpgradeItem", "sLareItem", "sMagicItem", "sGereralItem"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -7288,6 +7798,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"byLevel", "sClass_1", "sClass_2", "sClass_3", "sClass_4", "sClass_5", "sClass_6", "sClass_7", "sClass_8", "sClass_9", "sClass_10", "sClass_11", "sClass_12"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -7376,6 +7896,16 @@ namespace full_model
 				"sIndex", "bStartTime1", "bStartTime2", "bStartTime3", "bLevelMin", "bLevelMax"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "bStartTime1", "bStartTime2", "bStartTime3", "bLevelMin", "bLevelMax"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -7486,6 +8016,16 @@ namespace full_model
 				"sIndex", "bLevel", "bStage", "bStageLevel", "sTime", "sSid", "sCount", "sPosX", "sPosZ", "bRange"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "bLevel", "bStage", "bStageLevel", "sTime", "sSid", "sCount", "sPosX", "sPosZ", "bRange"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -7603,6 +8143,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sIndex", "iItem01", "sPersent01", "iItem02", "sPersent02", "iItem03", "sPersent03", "iItem04", "sPersent04", "iItem05", "sPersent05"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -7680,6 +8230,16 @@ namespace full_model
 				"sSid", "strName", "sLevel", "sProbability", "bType"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sSid", "strName", "sLevel", "sProbability", "bType"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -7765,6 +8325,16 @@ namespace full_model
 				"id", "strAccountID", "strCharID", "strHackToolName", "tWriteTime"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"id", "strAccountID", "strCharID", "strHackToolName", "tWriteTime"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -7902,6 +8472,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nRentalIndex", "nItemIndex", "sDurability", "nSerialNumber", "byRegType", "byItemType", "byClass", "sRentalTime", "nRentalMoney", "strLenderCharID", "strLenderAcID", "strBorrowerCharID", "strBorrowerAcID", "timeLender", "timeRegister"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -8037,6 +8617,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nRentalIndex", "nItemIndex", "sDurability", "nSerialNumber", "byRegType", "byItemType", "byClass", "sRentalTime", "nRentalMoney", "strLenderCharID", "strLenderAcID", "strBorrowerCharID", "strBorrowerAcID", "timeLender", "timeRegister"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -8104,6 +8694,16 @@ namespace full_model
 				"nResourceID", "strName", "strResource"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nResourceID", "strName", "strResource"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -8221,6 +8821,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"ZoneID", "sKarusX", "sKarusZ", "sElmoradX", "sElmoradZ", "bRangeX", "bRangeZ", "sKarusGateX", "sKarusGateZ", "sElmoGateX", "sElmoGateZ"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -8309,6 +8919,16 @@ namespace full_model
 				"strAccountID", "strPasswd", "strSocNo", "strEmail", "strAuthority", "PremiumExpire"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strAccountID", "strPasswd", "strSocNo", "strEmail", "strAuthority", "PremiumExpire"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -8446,6 +9066,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strCharID", "strAccountID", "strOpID", "strOpIP", "strOldUserValue", "strNewUserValue", "strOldUserSkill", "strNewUserSkill", "strOldUserItem", "strNewUserItem", "strOldWHValue", "strNewWHValue", "strOldWHItem", "strNewWHItem", "EditorTime"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -8550,6 +9180,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strCharID", "strAccountID", "strOpID", "strOpIP", "sDBIndex", "sPos", "byType", "nItemID1", "nItemID2", "UpdateTime"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -8647,6 +9287,16 @@ namespace full_model
 				"shIndex", "strName", "strElmoUserID", "strElmoKnightsName", "nElmoLoyalty", "strKarusUserID", "strKarusKnightsName", "nKarusLoyalty", "nMoney"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"shIndex", "strName", "strElmoUserID", "strElmoKnightsName", "nElmoLoyalty", "strKarusUserID", "strKarusKnightsName", "nKarusLoyalty", "nMoney"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -8767,6 +9417,16 @@ namespace full_model
 				"nRank", "strPosition", "nElmoUP", "strElmoUserID", "nElmoLoyaltyMonthly", "nElmoCheck", "nKarusUP", "strKarusUserID", "nKarusLoyaltyMonthly", "nKarusCheck", "nSalary", "UpdateDate"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nRank", "strPosition", "nElmoUP", "strElmoUserID", "nElmoLoyaltyMonthly", "nElmoCheck", "nKarusUP", "strKarusUserID", "nKarusLoyaltyMonthly", "nKarusCheck", "nSalary", "UpdateDate"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -8892,6 +9552,16 @@ namespace full_model
 				"strUserID", "strAccountID", "byRentalType", "byRegType", "nRentalIndex", "nItemIndex", "sDurability", "nSerialNumber", "nRentalMoney", "sRentalTime", "sDuringTime", "timeRental", "timeRegister"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strUserID", "strAccountID", "byRentalType", "byRegType", "nRentalIndex", "nItemIndex", "sDurability", "nSerialNumber", "nRentalMoney", "sRentalTime", "sDuringTime", "timeRental", "timeRegister"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -9051,6 +9721,16 @@ namespace full_model
 				"strCharID", "nSkill1", "nDuring1", "nSkill2", "nDuring2", "nSkill3", "nDuring3", "nSkill4", "nDuring4", "nSkill5", "nDuring5", "nSkill6", "nDuring6", "nSkill7", "nDuring7", "nSkill8", "nDuring8", "nSkill9", "nDuring9", "nSkill10", "nDuring10"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strCharID", "nSkill1", "nDuring1", "nSkill2", "nDuring2", "nSkill3", "nDuring3", "nSkill4", "nDuring4", "nSkill5", "nDuring5", "nSkill6", "nDuring6", "nSkill7", "nDuring7", "nSkill8", "nDuring8", "nSkill9", "nDuring9", "nSkill10", "nDuring10"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -9358,6 +10038,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strUserId", "Nation", "Race", "Class", "HairColor", "Rank", "Title", "Level", "Exp", "Loyalty", "Face", "City", "Knights", "Fame", "Hp", "Mp", "Sp", "Strong", "Sta", "Dex", "Intel", "Cha", "Authority", "Points", "Gold", "Zone", "Bind", "PX", "PZ", "PY", "dwTime", "strSkill", "strItem", "strSerial", "sQuestCount", "strQuest", "MannerPoint", "LoyaltyMonthly", "CreateTime", "UpdateTime"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -9431,6 +10121,16 @@ namespace full_model
 				"strCharID", "nCount", "strSkillData"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strCharID", "nCount", "strSkillData"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -9511,6 +10211,16 @@ namespace full_model
 				"sVersion", "strFileName", "strCompressName", "sHistoryVersion"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sVersion", "strFileName", "strCompressName", "sHistoryVersion"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -9596,6 +10306,16 @@ namespace full_model
 				"strAccountID", "nMoney", "dwTime", "WarehouseData", "strSerial"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strAccountID", "nMoney", "dwTime", "WarehouseData", "strSerial"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -9708,6 +10428,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strAccountID", "strCharID", "ServerNo", "ItemID", "ItemCount", "BuyTime", "img_file_name", "strItemName", "price", "pay_type"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -9812,6 +10542,16 @@ namespace full_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strAccountID", "strCharID", "ServerNo", "ItemID", "ItemCount", "BuyTime", "img_file_name", "strItemName", "price", "pay_type"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -9874,6 +10614,16 @@ namespace full_model
 				"nIndex", "strWebPageAddress"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nIndex", "strWebPageAddress"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -9979,6 +10729,16 @@ namespace full_model
 				"ServerNo", "ZoneNo", "strZoneName", "InitX", "InitZ", "InitY", "Type", "RoomEvent", "bz"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"ServerNo", "ZoneNo", "strZoneName", "InitX", "InitZ", "InitY", "Type", "RoomEvent", "bz"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table

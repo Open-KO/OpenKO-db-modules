@@ -64,6 +64,16 @@ namespace versionmanager_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"serverid", "zone1_count", "zone2_count", "zone3_count"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -139,6 +149,16 @@ namespace versionmanager_model
 			return columnNames;
 		}
 
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nServerNo", "strServerIP", "strAccountID"
+			};
+			return orderedColumnNames;
+		}
+
 		/// \brief Returns a set of blob column names for the table
 		static const std::unordered_set<std::string>& BlobColumns()
 		{
@@ -212,6 +232,16 @@ namespace versionmanager_model
 				"strAccountID", "strPasswd", "strAuthority"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"strAccountID", "strPasswd", "strAuthority"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
@@ -292,6 +322,16 @@ namespace versionmanager_model
 				"sVersion", "strFileName", "strCompressName", "sHistoryVersion"
 			};
 			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"sVersion", "strFileName", "strCompressName", "sHistoryVersion"
+			};
+			return orderedColumnNames;
 		}
 
 		/// \brief Returns a set of blob column names for the table
