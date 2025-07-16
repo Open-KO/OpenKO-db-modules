@@ -353,10 +353,14 @@ var annotated_dup =
       [ "UserKnightsRatingUpdate", "classstoredProc_1_1UserKnightsRatingUpdate.html", "classstoredProc_1_1UserKnightsRatingUpdate" ]
     ] ],
     [ "versionmanager_binder", null, [
+      [ "Concurrent", "classversionmanager__binder_1_1Concurrent.html", null ],
+      [ "CurrentUser", "classversionmanager__binder_1_1CurrentUser.html", null ],
       [ "TbUser", "classversionmanager__binder_1_1TbUser.html", null ],
       [ "Version", "classversionmanager__binder_1_1Version.html", null ]
     ] ],
     [ "versionmanager_model", null, [
+      [ "Concurrent", "classversionmanager__model_1_1Concurrent.html", "classversionmanager__model_1_1Concurrent" ],
+      [ "CurrentUser", "classversionmanager__model_1_1CurrentUser.html", "classversionmanager__model_1_1CurrentUser" ],
       [ "TbUser", "classversionmanager__model_1_1TbUser.html", "classversionmanager__model_1_1TbUser" ],
       [ "Version", "classversionmanager__model_1_1Version.html", "classversionmanager__model_1_1Version" ]
     ] ]
