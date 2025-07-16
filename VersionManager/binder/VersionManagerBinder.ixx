@@ -73,17 +73,17 @@ namespace versionmanager_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nServerNo", &CurrentUser::BindServerNumber},
+				{"nServerNo", &CurrentUser::BindServerId},
 				{"strServerIP", &CurrentUser::BindServerIP},
 				{"strAccountID", &CurrentUser::BindAccountId}
 			};
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to ServerNumber
-		static void BindServerNumber(versionmanager_model::CurrentUser& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ServerId
+		static void BindServerId(versionmanager_model::CurrentUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.ServerNumber);
+			result.get_ref<int32_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to ServerIP

@@ -613,7 +613,7 @@ namespace full_binder
 		{
 			static const BindingsMapType bindingsMap =
 			{
-				{"nServerNo", &CurrentUser::BindServerNumber},
+				{"nServerNo", &CurrentUser::BindServerId},
 				{"strServerIP", &CurrentUser::BindServerIP},
 				{"strAccountID", &CurrentUser::BindAccountId},
 				{"strCharID", &CurrentUser::BindCharId},
@@ -622,10 +622,10 @@ namespace full_binder
 			return bindingsMap;
 		}
 
-		/// \brief Binds a result's column to ServerNumber
-		static void BindServerNumber(full_model::CurrentUser& m, const nanodbc::result& result, short colIndex)
+		/// \brief Binds a result's column to ServerId
+		static void BindServerId(full_model::CurrentUser& m, const nanodbc::result& result, short colIndex)
 		{
-			result.get_ref<int32_t>(colIndex, m.ServerNumber);
+			result.get_ref<int32_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to ServerIP

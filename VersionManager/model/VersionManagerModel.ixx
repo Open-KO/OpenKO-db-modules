@@ -109,8 +109,8 @@ namespace versionmanager_model
 
 		/// \brief Column [nServerNo]: Server Index
 		///
-		/// \property ServerNumber
-		int32_t ServerNumber = {};
+		/// \property ServerId
+		int32_t ServerId = {};
 
 		/// \brief Column [strServerIP]: Server IP Address
 		///
