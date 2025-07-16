@@ -1024,6 +1024,16 @@ namespace aiserver_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
+		}
+
 	};
 
 	/// \brief [LEVEL_UP] Level experience requirements

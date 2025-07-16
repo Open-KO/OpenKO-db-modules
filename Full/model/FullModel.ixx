@@ -620,6 +620,16 @@ namespace full_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
+		}
+
 	};
 
 	/// \brief [COPY_TEST] TODO: Doc
@@ -667,6 +677,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -941,6 +961,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -1272,6 +1302,16 @@ namespace full_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
+		}
+
 	};
 
 	/// \brief [HERO_USER] TODO Doc
@@ -1339,6 +1379,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -2430,6 +2480,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -3795,6 +3855,16 @@ namespace full_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
+		}
+
 	};
 
 	/// \brief [KING_BALLOT_BOX] King Ballot Box TODO
@@ -3857,6 +3927,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -4006,6 +4086,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -4195,6 +4285,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -7519,6 +7619,16 @@ namespace full_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
+		}
+
 	};
 
 	/// \brief [MONSTER_SUMMON_LIST] Monster summon list
@@ -7943,6 +8053,16 @@ namespace full_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
+		}
+
 	};
 
 	/// \brief [SERVER_RESOURCE] Server resource
@@ -8342,6 +8462,16 @@ namespace full_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
+		}
+
 	};
 
 	/// \brief [USER_EDITOR_ITEM] User editor item
@@ -8434,6 +8564,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -8768,6 +8908,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
@@ -9574,6 +9724,16 @@ namespace full_model
 			return modelUtil::DbType::GAME;
 		}
 
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
+		}
+
 	};
 
 	/// \brief [WEB_ITEMMALL_LOG] Power-up store purchase log
@@ -9666,6 +9826,16 @@ namespace full_model
 		static const modelUtil::DbType DbType()
 		{
 			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				
+			};
+			return primaryKey;
 		}
 
 	};
