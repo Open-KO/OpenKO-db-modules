@@ -61,17 +61,17 @@ var NAVTREEINDEX =
 "classebenezer__model_1_1MagicType6.html#ab6147ae01bfba1523424bb71b733510d",
 "classebenezer__model_1_1ZoneInfo.html",
 "classfull__model_1_1Coefficient.html#a928fb20523539aa91a24b34e8ada56c7",
-"classfull__model_1_1Item.html#a1655cc1e18b9605fb520df5572900b55a0c8a9580743c71ed8244b8e079a1046f",
-"classfull__model_1_1Item.html#ad960420f523aea1580e7c7f67d29f826af1273262e995fa7637a758d9be7a8c81",
-"classfull__model_1_1KingSystem.html#ac8026efb38fc0fcad1fc21c12cb2521f",
-"classfull__model_1_1Magic.html#ae54451a1e6accc3e4201ee1be4556b04",
-"classfull__model_1_1MagicType6.html#a3e1bc888d4bd4db66a02a709718aedae",
-"classfull__model_1_1Monster.html#a73b19404d4d044c8af757b1e65da8c1e",
-"classfull__model_1_1Npc.html#ace560f0e8df908d779f7febc9044ecaa",
-"classfull__model_1_1UserData.html#a12def8a323ce5d332a0395cc21aa9cc3a1ea52f26e7e0ce08e462f87f5e35096c",
-"classfull__model_1_1UserRentalItem.html#a51ea072cc56759c46d96b25ca8d9f34c",
-"classstoredProc_1_1InsertHacktoolUser.html",
-"classstoredProc_1_1UserKnightsRatingUpdate.html#a18cca64885f3d4cb80f2c3e504b87628"
+"classfull__model_1_1Item.html#a1655cc1e18b9605fb520df5572900b55a0918b858343b2bf86bb2d92f571710a7",
+"classfull__model_1_1Item.html#ad960420f523aea1580e7c7f67d29f826ad96414f5cfbd621bb6368bb260d5240c",
+"classfull__model_1_1KingSystem.html#ac5684ce3b663a80d3aee99b77a3b8b13",
+"classfull__model_1_1Magic.html#ae543e63c6c68a16b33e5e5c3c280fcc8",
+"classfull__model_1_1MagicType6.html#a220b80639fe6eb8f0369d4f7656bde5e",
+"classfull__model_1_1Monster.html#a6ea0a108dec48d48fa5a342fa9382d36",
+"classfull__model_1_1Npc.html#ac5f461de96c11101b0b6a9d9b3848dfe",
+"classfull__model_1_1UserData.html#a12def8a323ce5d332a0395cc21aa9cc3a1d1b8aa5c3de8020ffaf24d233accd8d",
+"classfull__model_1_1UserRentalItem.html#a4c3367dec657ef099f91ea5fb785e6a6",
+"classstoredProc_1_1InsertFriendList.html#a8569a3a47dd006f3dad898a748fc6afa",
+"classstoredProc_1_1UserKnightsRatingUpdate.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
