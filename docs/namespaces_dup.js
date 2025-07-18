@@ -45,10 +45,18 @@ var namespaces_dup =
       [ "ZoneInfo", "classaiserver__model_1_1ZoneInfo.html", "classaiserver__model_1_1ZoneInfo" ]
     ] ],
     [ "aujard_binder", null, [
-      [ "Item", "classaujard__binder_1_1Item.html", null ]
+      [ "Battle", "classaujard__binder_1_1Battle.html", null ],
+      [ "Item", "classaujard__binder_1_1Item.html", null ],
+      [ "Knights", "classaujard__binder_1_1Knights.html", null ],
+      [ "UserData", "classaujard__binder_1_1UserData.html", null ],
+      [ "Warehouse", "classaujard__binder_1_1Warehouse.html", null ]
     ] ],
     [ "aujard_model", null, [
-      [ "Item", "classaujard__model_1_1Item.html", "classaujard__model_1_1Item" ]
+      [ "Battle", "classaujard__model_1_1Battle.html", "classaujard__model_1_1Battle" ],
+      [ "Item", "classaujard__model_1_1Item.html", "classaujard__model_1_1Item" ],
+      [ "Knights", "classaujard__model_1_1Knights.html", "classaujard__model_1_1Knights" ],
+      [ "UserData", "classaujard__model_1_1UserData.html", "classaujard__model_1_1UserData" ],
+      [ "Warehouse", "classaujard__model_1_1Warehouse.html", "classaujard__model_1_1Warehouse" ]
     ] ],
     [ "binderUtil", "namespacebinderUtil.html", null ],
     [ "ebenezer_binder", null, [

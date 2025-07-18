@@ -16,7 +16,7 @@ var searchData=
   ['updatesiegedecidechallenger_13',['UpdateSiegeDecideChallenger',['../classstoredProc_1_1UpdateSiegeDecideChallenger.html',1,'storedProc']]],
   ['updateuserdata_14',['UpdateUserData',['../classstoredProc_1_1UpdateUserData.html',1,'storedProc']]],
   ['updatewarehouse_15',['UpdateWarehouse',['../classstoredProc_1_1UpdateWarehouse.html',1,'storedProc']]],
-  ['userdata_16',['UserData',['../classfull__binder_1_1UserData.html',1,'full_binder::UserData'],['../classfull__model_1_1UserData.html',1,'full_model::UserData']]],
+  ['userdata_16',['UserData',['../classaujard__binder_1_1UserData.html',1,'aujard_binder::UserData'],['../classaujard__model_1_1UserData.html',1,'aujard_model::UserData'],['../classfull__binder_1_1UserData.html',1,'full_binder::UserData'],['../classfull__model_1_1UserData.html',1,'full_model::UserData']]],
   ['userdataskillshortcut_17',['UserDataSkillShortcut',['../classfull__binder_1_1UserDataSkillShortcut.html',1,'full_binder::UserDataSkillShortcut'],['../classfull__model_1_1UserDataSkillShortcut.html',1,'full_model::UserDataSkillShortcut']]],
   ['usereditor_18',['UserEditor',['../classfull__binder_1_1UserEditor.html',1,'full_binder::UserEditor'],['../classfull__model_1_1UserEditor.html',1,'full_model::UserEditor']]],
   ['usereditoritem_19',['UserEditorItem',['../classfull__binder_1_1UserEditorItem.html',1,'full_binder::UserEditorItem'],['../classfull__model_1_1UserEditorItem.html',1,'full_model::UserEditorItem']]],
