@@ -1947,7 +1947,7 @@ namespace storedProc
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
-		std::weak_ptr<nanodbc::result> execute(const char* id, const int16_t Nation, const int16_t Race, const int16_t Class, const int16_t HairColor, const int16_t Rank, const int16_t Title, const int16_t Level, const int32_t Exp, const int32_t Loyalty, const int16_t Face, const int16_t City, const int16_t Knights, const int16_t Fame, const int16_t Hp, const int16_t Mp, const int16_t Sp, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha, const int16_t Authority, const int16_t Points, const int32_t Gold, const int16_t Zone, const int16_t Bind, const int32_t PX, const int32_t PZ, const int32_t PY, const int32_t dwTime, const int16_t QuestTotal, const char* strSkill, const char* strItem, const char* strSerial, const char* strQuest, const int32_t MannerPoint, const int32_t LoyaltyMonthly) noexcept(false)
+		std::weak_ptr<nanodbc::result> execute(const char* id, const int16_t Nation, const int16_t Race, const int16_t Class, const int16_t HairColor, const int16_t Rank, const int16_t Title, const int16_t Level, const int32_t Exp, const int32_t Loyalty, const int16_t Face, const int16_t City, const int16_t Knights, const int16_t Fame, const int16_t Hp, const int16_t Mp, const int16_t Sp, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha, const int16_t Authority, const int16_t Points, const int32_t Gold, const int16_t Zone, const int16_t Bind, const int32_t PX, const int32_t PZ, const int32_t PY, const int32_t dwTime, const int16_t QuestTotal, const char* strSkill, const std::vector<uint8_t>& strItem, const std::vector<uint8_t>& strSerial, const char* strQuest, const int32_t MannerPoint, const int32_t LoyaltyMonthly) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1984,8 +1984,8 @@ namespace storedProc
 			_stmt.bind(30, &dwTime);
 			_stmt.bind(31, &QuestTotal);
 			_stmt.bind(32, strSkill);
-			_stmt.bind(33, strItem);
-			_stmt.bind(34, strSerial);
+			_stmt.bind_binary(33, strItem);
+			_stmt.bind_binary(34, strSerial);
 			_stmt.bind(35, strQuest);
 			_stmt.bind(36, &MannerPoint);
 			_stmt.bind(37, &LoyaltyMonthly);
