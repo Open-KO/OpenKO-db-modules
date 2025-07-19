@@ -93,12 +93,12 @@ namespace storedProc
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const char* Password, int16_t* nRet) noexcept(false)
+		std::weak_ptr<nanodbc::result> execute(const char* accountID, const char* password, int16_t* nRet) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, AccountID);
-			_stmt.bind(1, Password);
+			_stmt.bind(0, accountID);
+			_stmt.bind(1, password);
 			_stmt.bind(2, nRet, nanodbc::statement::PARAM_OUT);
 	
 			return StoredProcedure::execute();
@@ -124,12 +124,12 @@ namespace storedProc
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
-		std::weak_ptr<nanodbc::result> execute(const char* AccountID, const int32_t LogoutCode, int16_t* nRet, int16_t* nRet2) noexcept(false)
+		std::weak_ptr<nanodbc::result> execute(const char* accountID, const int32_t logoutCode, int16_t* nRet, int16_t* nRet2) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
-			_stmt.bind(0, AccountID);
-			_stmt.bind(1, &LogoutCode);
+			_stmt.bind(0, accountID);
+			_stmt.bind(1, &logoutCode);
 			_stmt.bind(2, nRet, nanodbc::statement::PARAM_OUT);
 			_stmt.bind(3, nRet2, nanodbc::statement::PARAM_OUT);
 	
@@ -156,17 +156,17 @@ namespace storedProc
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
-		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t byType, const int32_t nMoradonTariff, const int32_t nDellosTariff, const int32_t nMoney, const char* strACID, const char* strCharID) noexcept(false)
+		std::weak_ptr<nanodbc::result> execute(const int16_t sCastleIndex, const int16_t byType, const int32_t nMoradonTariff, const int32_t nDelosTariff, const int32_t nMoney, const char* accountId, const char* charId) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &sCastleIndex);
 			_stmt.bind(1, &byType);
 			_stmt.bind(2, &nMoradonTariff);
-			_stmt.bind(3, &nDellosTariff);
+			_stmt.bind(3, &nDelosTariff);
 			_stmt.bind(4, &nMoney);
-			_stmt.bind(5, strACID);
-			_stmt.bind(6, strCharID);
+			_stmt.bind(5, accountId);
+			_stmt.bind(6, charId);
 	
 			return StoredProcedure::execute();
 		}
@@ -1617,7 +1617,7 @@ namespace storedProc
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
-		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t Type, const char* UserId, const int16_t KnightsIndex, const int16_t Domanation) noexcept(false)
+		std::weak_ptr<nanodbc::result> execute(int16_t* nRet, const int16_t Type, const char* UserId, const int16_t KnightsIndex, const int16_t Domination) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1625,7 +1625,7 @@ namespace storedProc
 			_stmt.bind(1, &Type);
 			_stmt.bind(2, UserId);
 			_stmt.bind(3, &KnightsIndex);
-			_stmt.bind(4, &Domanation);
+			_stmt.bind(4, &Domination);
 	
 			return StoredProcedure::execute();
 		}
@@ -1947,7 +1947,7 @@ namespace storedProc
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
-		std::weak_ptr<nanodbc::result> execute(const char* id, const int16_t Nation, const int16_t Race, const int16_t Class, const int16_t HairColor, const int16_t Rank, const int16_t Title, const int16_t Level, const int32_t Exp, const int32_t Loyalty, const int16_t Face, const int16_t City, const int16_t Knights, const int16_t Fame, const int16_t Hp, const int16_t Mp, const int16_t Sp, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha, const int16_t Authority, const int16_t Points, const int32_t Gold, const int16_t Zone, const int16_t Bind, const int32_t PX, const int32_t PZ, const int32_t PY, const int32_t dwTime, const int16_t QuestTotal, const char* strSkill, const std::vector<uint8_t>& strItem, const std::vector<uint8_t>& strSerial, const char* strQuest, const int32_t MannerPoint, const int32_t LoyaltyMonthly) noexcept(false)
+		std::weak_ptr<nanodbc::result> execute(const char* id, const int16_t Nation, const int16_t Race, const int16_t Class, const int16_t HairColor, const int16_t Rank, const int16_t Title, const int16_t Level, const int32_t Exp, const int32_t Loyalty, const int16_t Face, const int16_t City, const int16_t Knights, const int16_t Fame, const int16_t Hp, const int16_t Mp, const int16_t Sp, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha, const int16_t Authority, const int16_t Points, const int32_t Gold, const int16_t Zone, const int16_t Bind, const int32_t PX, const int32_t PZ, const int32_t PY, const int32_t dwTime, const int16_t QuestTotal, const std::vector<uint8_t>& strSkill, const std::vector<uint8_t>& strItem, const std::vector<uint8_t>& strSerial, const std::vector<uint8_t>& strQuest, const int32_t MannerPoint, const int32_t LoyaltyMonthly) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
@@ -1983,10 +1983,10 @@ namespace storedProc
 			_stmt.bind(29, &PY);
 			_stmt.bind(30, &dwTime);
 			_stmt.bind(31, &QuestTotal);
-			_stmt.bind(32, strSkill);
+			_stmt.bind_binary(32, strSkill);
 			_stmt.bind_binary(33, strItem);
 			_stmt.bind_binary(34, strSerial);
-			_stmt.bind(35, strQuest);
+			_stmt.bind_binary(35, strQuest);
 			_stmt.bind(36, &MannerPoint);
 			_stmt.bind(37, &LoyaltyMonthly);
 	
@@ -2007,15 +2007,15 @@ namespace storedProc
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
-		std::weak_ptr<nanodbc::result> execute(const char* accountid, const int32_t Money, const int32_t dwTime, const char* strItem, const char* strSerial) noexcept(false)
+		std::weak_ptr<nanodbc::result> execute(const char* accountid, const int32_t Money, const int32_t dwTime, const std::vector<uint8_t>& strItem, const std::vector<uint8_t>& strSerial) noexcept(false)
 		{
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, accountid);
 			_stmt.bind(1, &Money);
 			_stmt.bind(2, &dwTime);
-			_stmt.bind(3, strItem);
-			_stmt.bind(4, strSerial);
+			_stmt.bind_binary(3, strItem);
+			_stmt.bind_binary(4, strSerial);
 	
 			return StoredProcedure::execute();
 		}
