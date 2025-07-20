@@ -3,19 +3,40 @@ module;
 #include <cstdint>
 #include <memory>
 #include <nanodbc/nanodbc.h>
+#include <string>
+#include <vector>
 
 export module StoredProc;
 
+import ModelUtil;
 
 namespace storedProc
 {
 	export class StoredProcedure
 	{
 	protected:
-		StoredProcedure(std::shared_ptr<nanodbc::connection> conn)
-			: _conn(conn), _stmt(*conn.get())
+		StoredProcedure()
 		{
 			_flushed = false;
+		}
+
+		StoredProcedure(std::shared_ptr<nanodbc::connection> conn)
+			: StoredProcedure()
+		{
+			_conn = conn;
+		}
+
+		/// \brief Opens and prepares the statement with the associated query
+		/// \throws nanodbc::database_error
+		void prepare(const std::string& query) noexcept(false)
+		{
+			if (_stmt.open())
+				return;
+
+			if (_conn == nullptr)
+				throw std::logic_error("prepare() unexpectedly called before a connection has been assigned");
+
+			_stmt = nanodbc::statement(*_conn.get(), query);
 		}
 
 		/// \brief Flushes any output variables or return values on destruction
@@ -44,6 +65,18 @@ namespace storedProc
 		}
 
 	public:
+		/// \brief Sets the associated database connection.
+		void set_connection(const std::shared_ptr<nanodbc::connection>& conn)
+		{
+			_result.reset();
+
+			if (_stmt.open())
+				_stmt.close();
+
+			_conn = conn;
+			_flushed = false;
+		}
+
 		/// \brief Flushes any output variables or return values by reading any and all result sets
 		void flush()
 		{
@@ -103,10 +136,27 @@ namespace storedProc
 	export class AccountLogin : public StoredProcedure
 	{
 	public:
+		AccountLogin() 
+			: StoredProcedure()
+		{
+		}
+
 		AccountLogin(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL ACCOUNT_LOGIN(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL ACCOUNT_LOGIN(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -114,6 +164,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* accountID, const char* password, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, accountID);
@@ -135,10 +186,27 @@ namespace storedProc
 	export class AccountLogout : public StoredProcedure
 	{
 	public:
+		AccountLogout() 
+			: StoredProcedure()
+		{
+		}
+
 		AccountLogout(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL ACCOUNT_LOGOUT(?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL ACCOUNT_LOGOUT(?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -147,6 +215,7 @@ namespace storedProc
 			const char* accountID, const int32_t logoutCode, int16_t* nRet, 
 			int16_t* nRet2) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, accountID);
@@ -169,10 +238,27 @@ namespace storedProc
 	export class ChangeCastleCommerce : public StoredProcedure
 	{
 	public:
+		ChangeCastleCommerce() 
+			: StoredProcedure()
+		{
+		}
+
 		ChangeCastleCommerce(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CHANGE_CASTLE_COMMERCE(?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CHANGE_CASTLE_COMMERCE(?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -182,6 +268,7 @@ namespace storedProc
 			const int32_t nDelosTariff, const int32_t nMoney, const char* accountId, 
 			const char* charId) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &sCastleIndex);
@@ -201,16 +288,34 @@ namespace storedProc
 	export class ChangeCopySerialItem : public StoredProcedure
 	{
 	public:
+		ChangeCopySerialItem() 
+			: StoredProcedure()
+		{
+		}
+
 		ChangeCopySerialItem(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CHANGE_COPY_SERIAL_ITEM()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CHANGE_COPY_SERIAL_ITEM()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -220,16 +325,34 @@ namespace storedProc
 	export class ChangeCopySerialItemTable : public StoredProcedure
 	{
 	public:
+		ChangeCopySerialItemTable() 
+			: StoredProcedure()
+		{
+		}
+
 		ChangeCopySerialItemTable(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CHANGE_COPY_SERIAL_ITEM_TABLE()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CHANGE_COPY_SERIAL_ITEM_TABLE()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -239,10 +362,27 @@ namespace storedProc
 	export class ChangeKnightsCape : public StoredProcedure
 	{
 	public:
+		ChangeKnightsCape() 
+			: StoredProcedure()
+		{
+		}
+
 		ChangeKnightsCape(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CHANGE_KNIGHTS_CAPE(?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CHANGE_KNIGHTS_CAPE(?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -250,6 +390,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const int16_t KnightsIndex, const int16_t CapeIndex) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &KnightsIndex);
@@ -264,16 +405,34 @@ namespace storedProc
 	export class CheckKnights : public StoredProcedure
 	{
 	public:
+		CheckKnights() 
+			: StoredProcedure()
+		{
+		}
+
 		CheckKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CHECK_KNIGHTS()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CHECK_KNIGHTS()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -283,10 +442,27 @@ namespace storedProc
 	export class ClearRemainUsers : public StoredProcedure
 	{
 	public:
+		ClearRemainUsers() 
+			: StoredProcedure()
+		{
+		}
+
 		ClearRemainUsers(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CLEAR_REMAIN_USERS(?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CLEAR_REMAIN_USERS(?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -294,6 +470,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strServerIP) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strServerIP);
@@ -307,10 +484,27 @@ namespace storedProc
 	export class CreateKnights : public StoredProcedure
 	{
 	public:
+		CreateKnights() 
+			: StoredProcedure()
+		{
+		}
+
 		CreateKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CREATE_KNIGHTS(?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CREATE_KNIGHTS(?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -319,6 +513,7 @@ namespace storedProc
 			int16_t* nRet, const int16_t index, const int16_t nation, 
 			const int16_t community, const char* strName, const char* strChief) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUT);
@@ -343,10 +538,27 @@ namespace storedProc
 	export class CreateKnights2 : public StoredProcedure
 	{
 	public:
+		CreateKnights2() 
+			: StoredProcedure()
+		{
+		}
+
 		CreateKnights2(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CREATE_KNIGHTS2(?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CREATE_KNIGHTS2(?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -355,6 +567,7 @@ namespace storedProc
 			int16_t* nRet, int16_t* index, const int16_t nation, 
 			const int16_t community, const char* strName, const char* strChief) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUT);
@@ -379,10 +592,27 @@ namespace storedProc
 	export class CreateNewChar : public StoredProcedure
 	{
 	public:
+		CreateNewChar() 
+			: StoredProcedure()
+		{
+		}
+
 		CreateNewChar(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL CREATE_NEW_CHAR(?,?,?,?,?,?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL CREATE_NEW_CHAR(?,?,?,?,?,?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -394,6 +624,7 @@ namespace storedProc
 			const int16_t Sta, const int16_t Dex, const int16_t Intel, 
 			const int16_t Cha) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUT);
@@ -425,10 +656,27 @@ namespace storedProc
 	export class DeleteFriendList : public StoredProcedure
 	{
 	public:
+		DeleteFriendList() 
+			: StoredProcedure()
+		{
+		}
+
 		DeleteFriendList(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL DELETE_FRIEND_LIST(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL DELETE_FRIEND_LIST(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -436,6 +684,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strUserID, const char* strFriend, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strUserID);
@@ -457,10 +706,27 @@ namespace storedProc
 	export class DeleteKnights : public StoredProcedure
 	{
 	public:
+		DeleteKnights() 
+			: StoredProcedure()
+		{
+		}
+
 		DeleteKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL DELETE_KNIGHTS(?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL DELETE_KNIGHTS(?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -468,6 +734,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			int16_t* nRet, const int16_t knightsindex) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUT);
@@ -488,16 +755,34 @@ namespace storedProc
 	export class EditerKnights : public StoredProcedure
 	{
 	public:
+		EditerKnights() 
+			: StoredProcedure()
+		{
+		}
+
 		EditerKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL EDITER_KNIGHTS()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL EDITER_KNIGHTS()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -507,16 +792,34 @@ namespace storedProc
 	export class ExecKnightsUser : public StoredProcedure
 	{
 	public:
+		ExecKnightsUser() 
+			: StoredProcedure()
+		{
+		}
+
 		ExecKnightsUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL EXEC_KNIGHTS_USER()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL EXEC_KNIGHTS_USER()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -526,10 +829,27 @@ namespace storedProc
 	export class GivePremium : public StoredProcedure
 	{
 	public:
+		GivePremium() 
+			: StoredProcedure()
+		{
+		}
+
 		GivePremium(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL GIVE_PREMIUM(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL GIVE_PREMIUM(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -537,6 +857,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strAccountID, const char* strUserID, const int32_t days) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strAccountID);
@@ -552,10 +873,27 @@ namespace storedProc
 	export class InsertFriendList : public StoredProcedure
 	{
 	public:
+		InsertFriendList() 
+			: StoredProcedure()
+		{
+		}
+
 		InsertFriendList(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL INSERT_FRIEND_LIST(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL INSERT_FRIEND_LIST(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -563,6 +901,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strUserID, const char* strFriend, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strUserID);
@@ -584,10 +923,27 @@ namespace storedProc
 	export class InsertHacktoolUser : public StoredProcedure
 	{
 	public:
+		InsertHacktoolUser() 
+			: StoredProcedure()
+		{
+		}
+
 		InsertHacktoolUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL INSERT_HACKTOOL_USER(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL INSERT_HACKTOOL_USER(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -595,6 +951,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* AccountID, const char* CharID, const char* HackToolName) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
@@ -610,10 +967,27 @@ namespace storedProc
 	export class InsertProgramCheckUser : public StoredProcedure
 	{
 	public:
+		InsertProgramCheckUser() 
+			: StoredProcedure()
+		{
+		}
+
 		InsertProgramCheckUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL INSERT_PROGRAM_CHECK_USER(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL INSERT_PROGRAM_CHECK_USER(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -621,6 +995,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strAccountID, const char* strCharID, const char* HackToolName) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strAccountID);
@@ -636,10 +1011,27 @@ namespace storedProc
 	export class KingCandidacyNoticeBoardProc : public StoredProcedure
 	{
 	public:
+		KingCandidacyNoticeBoardProc() 
+			: StoredProcedure()
+		{
+		}
+
 		KingCandidacyNoticeBoardProc(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_CANDIDACY_NOTICE_BOARD_PROC(?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_CANDIDACY_NOTICE_BOARD_PROC(?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -648,6 +1040,7 @@ namespace storedProc
 			const char* strUserID, const int16_t sNoticeLen, const int16_t byNation, 
 			const std::vector<uint8_t>& strNotice) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strUserID);
@@ -664,10 +1057,27 @@ namespace storedProc
 	export class KingCandidacyRecommend : public StoredProcedure
 	{
 	public:
+		KingCandidacyRecommend() 
+			: StoredProcedure()
+		{
+		}
+
 		KingCandidacyRecommend(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_CANDIDACY_RECOMMEND(?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_CANDIDACY_RECOMMEND(?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -676,6 +1086,7 @@ namespace storedProc
 			const char* CharID_1, const char* CharID_2, const int16_t nNation, 
 			int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, CharID_1);
@@ -698,10 +1109,27 @@ namespace storedProc
 	export class KingChangeTax : public StoredProcedure
 	{
 	public:
+		KingChangeTax() 
+			: StoredProcedure()
+		{
+		}
+
 		KingChangeTax(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_CHANGE_TAX(?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_CHANGE_TAX(?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -711,6 +1139,7 @@ namespace storedProc
 			const int32_t nKarusTax2, const int32_t nKarusTax3, const int32_t nElmoTax1, 
 			const int32_t nElmoTax2, const int32_t nElmoTax3) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -731,10 +1160,27 @@ namespace storedProc
 	export class KingElectionProc : public StoredProcedure
 	{
 	public:
+		KingElectionProc() 
+			: StoredProcedure()
+		{
+		}
+
 		KingElectionProc(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_ELECTION_PROC(?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_ELECTION_PROC(?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -743,6 +1189,7 @@ namespace storedProc
 			const char* strAccountID, const char* strCharID, const int16_t byNation, 
 			const char* strCandidacyID, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strAccountID);
@@ -766,10 +1213,27 @@ namespace storedProc
 	export class KingImpeachmentElection : public StoredProcedure
 	{
 	public:
+		KingImpeachmentElection() 
+			: StoredProcedure()
+		{
+		}
+
 		KingImpeachmentElection(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_IMPEACHMENT_ELECTION(?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_IMPEACHMENT_ELECTION(?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -778,6 +1242,7 @@ namespace storedProc
 			const int16_t byResult, const int16_t byNation, const char* strAccountID, 
 			const char* strCharID, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byResult);
@@ -801,10 +1266,27 @@ namespace storedProc
 	export class KingImpeachmentRequestElection : public StoredProcedure
 	{
 	public:
+		KingImpeachmentRequestElection() 
+			: StoredProcedure()
+		{
+		}
+
 		KingImpeachmentRequestElection(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_IMPEACHMENT_REQUEST_ELECTION(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_IMPEACHMENT_REQUEST_ELECTION(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -812,6 +1294,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const int16_t byType, const int16_t byNation, const char* strUserID) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -827,10 +1310,27 @@ namespace storedProc
 	export class KingImpeachmentResult : public StoredProcedure
 	{
 	public:
+		KingImpeachmentResult() 
+			: StoredProcedure()
+		{
+		}
+
 		KingImpeachmentResult(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_IMPEACHMENT_RESULT(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_IMPEACHMENT_RESULT(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -838,6 +1338,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const int16_t byNation, int16_t* nTotalMan, int16_t* nAgreeMan) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byNation);
@@ -859,10 +1360,27 @@ namespace storedProc
 	export class KingInsertPrizeEvent : public StoredProcedure
 	{
 	public:
+		KingInsertPrizeEvent() 
+			: StoredProcedure()
+		{
+		}
+
 		KingInsertPrizeEvent(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_INSERT_PRIZE_EVENT(?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_INSERT_PRIZE_EVENT(?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -871,6 +1389,7 @@ namespace storedProc
 			const int16_t byType, const int16_t byNation, const int32_t nAmount, 
 			const char* strUserID) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -887,10 +1406,27 @@ namespace storedProc
 	export class KingUpdateElectionList : public StoredProcedure
 	{
 	public:
+		KingUpdateElectionList() 
+			: StoredProcedure()
+		{
+		}
+
 		KingUpdateElectionList(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_UPDATE_ELECTION_LIST(?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_UPDATE_ELECTION_LIST(?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -899,6 +1435,7 @@ namespace storedProc
 			const int16_t byDBType, const int16_t byType, const int16_t byNation, 
 			const int16_t nKnights, const int32_t nAmount, const char* strUserID) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byDBType);
@@ -917,10 +1454,27 @@ namespace storedProc
 	export class KingUpdateElectionSchdule : public StoredProcedure
 	{
 	public:
+		KingUpdateElectionSchdule() 
+			: StoredProcedure()
+		{
+		}
+
 		KingUpdateElectionSchdule(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_UPDATE_ELECTION_SCHDULE(?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_UPDATE_ELECTION_SCHDULE(?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -930,6 +1484,7 @@ namespace storedProc
 			const int16_t byMonth, const int16_t byDay, const int16_t byHour, 
 			const int16_t byMinute) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -949,10 +1504,27 @@ namespace storedProc
 	export class KingUpdateElectionStatus : public StoredProcedure
 	{
 	public:
+		KingUpdateElectionStatus() 
+			: StoredProcedure()
+		{
+		}
+
 		KingUpdateElectionStatus(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_UPDATE_ELECTION_STATUS(?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_UPDATE_ELECTION_STATUS(?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -960,6 +1532,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const int16_t byType, const int16_t byNation) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -974,10 +1547,27 @@ namespace storedProc
 	export class KingUpdateImpeachmentStatus : public StoredProcedure
 	{
 	public:
+		KingUpdateImpeachmentStatus() 
+			: StoredProcedure()
+		{
+		}
+
 		KingUpdateImpeachmentStatus(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_UPDATE_IMPEACHMENT_STATUS(?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_UPDATE_IMPEACHMENT_STATUS(?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -987,6 +1577,7 @@ namespace storedProc
 			const int16_t byMonth, const int16_t byDay, const int16_t byHour, 
 			const int16_t byMinute, const char* strUserID) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -1007,10 +1598,27 @@ namespace storedProc
 	export class KingUpdateNoahOrExpEvent : public StoredProcedure
 	{
 	public:
+		KingUpdateNoahOrExpEvent() 
+			: StoredProcedure()
+		{
+		}
+
 		KingUpdateNoahOrExpEvent(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KING_UPDATE_NOAH_OR_EXP_EVENT(?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KING_UPDATE_NOAH_OR_EXP_EVENT(?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1020,6 +1628,7 @@ namespace storedProc
 			const int16_t byDay, const int16_t byHout, const int16_t byMinute, 
 			const int16_t sDurationTime) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -1039,16 +1648,34 @@ namespace storedProc
 	export class KnightsRatingUpdate : public StoredProcedure
 	{
 	public:
+		KnightsRatingUpdate() 
+			: StoredProcedure()
+		{
+		}
+
 		KnightsRatingUpdate(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL KNIGHTS_RATING_UPDATE()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL KNIGHTS_RATING_UPDATE()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -1058,10 +1685,27 @@ namespace storedProc
 	export class LoadAccountCharid : public StoredProcedure
 	{
 	public:
+		LoadAccountCharid() 
+			: StoredProcedure()
+		{
+		}
+
 		LoadAccountCharid(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{? = CALL LOAD_ACCOUNT_CHARID(?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{? = CALL LOAD_ACCOUNT_CHARID(?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1069,6 +1713,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(int* returnValue, 
 			const char* Accountid) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, returnValue, nanodbc::statement::PARAM_RETURN);
@@ -1089,10 +1734,27 @@ namespace storedProc
 	export class LoadCharInfo : public StoredProcedure
 	{
 	public:
+		LoadCharInfo() 
+			: StoredProcedure()
+		{
+		}
+
 		LoadCharInfo(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL LOAD_CHAR_INFO(?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL LOAD_CHAR_INFO(?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1100,6 +1762,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* CharId, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, CharId);
@@ -1120,10 +1783,27 @@ namespace storedProc
 	export class LoadKnightsMembers : public StoredProcedure
 	{
 	public:
+		LoadKnightsMembers() 
+			: StoredProcedure()
+		{
+		}
+
 		LoadKnightsMembers(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL LOAD_KNIGHTS_MEMBERS(?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL LOAD_KNIGHTS_MEMBERS(?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1131,6 +1811,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const int16_t knightsindex) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &knightsindex);
@@ -1144,10 +1825,27 @@ namespace storedProc
 	export class LoadPremiumServiceUser : public StoredProcedure
 	{
 	public:
+		LoadPremiumServiceUser() 
+			: StoredProcedure()
+		{
+		}
+
 		LoadPremiumServiceUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL LOAD_PREMIUM_SERVICE_USER(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL LOAD_PREMIUM_SERVICE_USER(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1155,6 +1853,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* AccountID, int32_t* type, int32_t* days) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
@@ -1176,10 +1875,27 @@ namespace storedProc
 	export class LoadRentalData : public StoredProcedure
 	{
 	public:
+		LoadRentalData() 
+			: StoredProcedure()
+		{
+		}
+
 		LoadRentalData(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL LOAD_RENTAL_DATA(?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL LOAD_RENTAL_DATA(?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1187,6 +1903,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strAccountID) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strAccountID);
@@ -1200,10 +1917,27 @@ namespace storedProc
 	export class LoadSavedMagic : public StoredProcedure
 	{
 	public:
+		LoadSavedMagic() 
+			: StoredProcedure()
+		{
+		}
+
 		LoadSavedMagic(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL LOAD_SAVED_MAGIC(?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL LOAD_SAVED_MAGIC(?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1211,6 +1945,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* CharId, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, CharId);
@@ -1231,10 +1966,27 @@ namespace storedProc
 	export class LoadUserData : public StoredProcedure
 	{
 	public:
+		LoadUserData() 
+			: StoredProcedure()
+		{
+		}
+
 		LoadUserData(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL LOAD_USER_DATA(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL LOAD_USER_DATA(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1242,6 +1994,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* AccountID, const char* id, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
@@ -1263,10 +2016,27 @@ namespace storedProc
 	export class LoadWebItemmall : public StoredProcedure
 	{
 	public:
+		LoadWebItemmall() 
+			: StoredProcedure()
+		{
+		}
+
 		LoadWebItemmall(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL LOAD_WEB_ITEMMALL(?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL LOAD_WEB_ITEMMALL(?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1274,6 +2044,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strCharID) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strCharID);
@@ -1287,10 +2058,27 @@ namespace storedProc
 	export class NationSelect : public StoredProcedure
 	{
 	public:
+		NationSelect() 
+			: StoredProcedure()
+		{
+		}
+
 		NationSelect(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL NATION_SELECT(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL NATION_SELECT(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1298,6 +2086,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			int16_t* nRet, const char* AccountID, const int16_t Nation) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUT);
@@ -1319,10 +2108,27 @@ namespace storedProc
 	export class ProcInsertCurrentuser : public StoredProcedure
 	{
 	public:
+		ProcInsertCurrentuser() 
+			: StoredProcedure()
+		{
+		}
+
 		ProcInsertCurrentuser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL PROC_INSERT_CURRENTUSER(?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL PROC_INSERT_CURRENTUSER(?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1331,6 +2137,7 @@ namespace storedProc
 			const char* AccountID, const char* CharID, const int16_t nServerNo, 
 			const char* strServerIP, const char* ClientIP, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
@@ -1355,16 +2162,34 @@ namespace storedProc
 	export class RankKnights : public StoredProcedure
 	{
 	public:
+		RankKnights() 
+			: StoredProcedure()
+		{
+		}
+
 		RankKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL RANK_KNIGHTS()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL RANK_KNIGHTS()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -1374,10 +2199,27 @@ namespace storedProc
 	export class RentalItemCancel : public StoredProcedure
 	{
 	public:
+		RentalItemCancel() 
+			: StoredProcedure()
+		{
+		}
+
 		RentalItemCancel(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL RENTAL_ITEM_CANCEL(?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL RENTAL_ITEM_CANCEL(?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1386,6 +2228,7 @@ namespace storedProc
 			const char* AccountID, const char* CharID, const int32_t nRentalIndex, 
 			const int32_t nItemNumber, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
@@ -1409,10 +2252,27 @@ namespace storedProc
 	export class RentalItemDestory : public StoredProcedure
 	{
 	public:
+		RentalItemDestory() 
+			: StoredProcedure()
+		{
+		}
+
 		RentalItemDestory(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL RENTAL_ITEM_DESTORY(?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL RENTAL_ITEM_DESTORY(?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1421,6 +2281,7 @@ namespace storedProc
 			const char* AccountID, const char* CharID, const int32_t nItemNumber, 
 			const int32_t nRentalIndex, const int16_t nDurability, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
@@ -1445,10 +2306,27 @@ namespace storedProc
 	export class RentalItemDurabilityUpdate : public StoredProcedure
 	{
 	public:
+		RentalItemDurabilityUpdate() 
+			: StoredProcedure()
+		{
+		}
+
 		RentalItemDurabilityUpdate(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL RENTAL_ITEM_DURABILITY_UPDATE(?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL RENTAL_ITEM_DURABILITY_UPDATE(?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1456,6 +2334,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const int32_t nRentalIndex, const int32_t nDurability) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &nRentalIndex);
@@ -1470,10 +2349,27 @@ namespace storedProc
 	export class RentalItemLend : public StoredProcedure
 	{
 	public:
+		RentalItemLend() 
+			: StoredProcedure()
+		{
+		}
+
 		RentalItemLend(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL RENTAL_ITEM_LEND(?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL RENTAL_ITEM_LEND(?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1482,6 +2378,7 @@ namespace storedProc
 			const char* AccountID, const char* CharID, const int32_t nRentalIndex, 
 			const int32_t nItemNumber, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, AccountID);
@@ -1505,10 +2402,27 @@ namespace storedProc
 	export class RentalItemRegister : public StoredProcedure
 	{
 	public:
+		RentalItemRegister() 
+			: StoredProcedure()
+		{
+		}
+
 		RentalItemRegister(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL RENTAL_ITEM_REGISTER(?,?,?,?,?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL RENTAL_ITEM_REGISTER(?,?,?,?,?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1519,6 +2433,7 @@ namespace storedProc
 			const int16_t bGameBangType, const int16_t bItemType, const int16_t bItemClass, 
 			const int64_t nSerialNumber, int32_t* nRet_Index, int16_t* nRet) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, charID);
@@ -1549,16 +2464,34 @@ namespace storedProc
 	export class ResetLoyaltyMonthly : public StoredProcedure
 	{
 	public:
+		ResetLoyaltyMonthly() 
+			: StoredProcedure()
+		{
+		}
+
 		ResetLoyaltyMonthly(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL RESET_LOYALTY_MONTHLY()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL RESET_LOYALTY_MONTHLY()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -1568,10 +2501,27 @@ namespace storedProc
 	export class SkillshortcutLoad : public StoredProcedure
 	{
 	public:
+		SkillshortcutLoad() 
+			: StoredProcedure()
+		{
+		}
+
 		SkillshortcutLoad(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL SKILLSHORTCUT_LOAD(?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL SKILLSHORTCUT_LOAD(?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1579,6 +2529,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strCharID) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strCharID);
@@ -1592,10 +2543,27 @@ namespace storedProc
 	export class SkillshortcutSave : public StoredProcedure
 	{
 	public:
+		SkillshortcutSave() 
+			: StoredProcedure()
+		{
+		}
+
 		SkillshortcutSave(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL SKILLSHORTCUT_SAVE(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL SKILLSHORTCUT_SAVE(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1603,6 +2571,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* strCharID, const int16_t nCount, const char* strSkillData) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strCharID);
@@ -1618,10 +2587,27 @@ namespace storedProc
 	export class UpdateBattleHero : public StoredProcedure
 	{
 	public:
+		UpdateBattleHero() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateBattleHero(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_BATTLE_HERO(?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_BATTLE_HERO(?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1630,6 +2616,7 @@ namespace storedProc
 			const char* strCharID, const char* strNation, const char* strClass, 
 			const char* strAchievement, const int16_t nIndex) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strCharID);
@@ -1647,10 +2634,27 @@ namespace storedProc
 	export class UpdateBattleResult : public StoredProcedure
 	{
 	public:
+		UpdateBattleResult() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateBattleResult(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_BATTLE_RESULT(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_BATTLE_RESULT(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1658,6 +2662,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const char* UserId, const int16_t byNation, const int16_t index) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, UserId);
@@ -1673,10 +2678,27 @@ namespace storedProc
 	export class UpdateEditorItemData : public StoredProcedure
 	{
 	public:
+		UpdateEditorItemData() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateEditorItemData(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_EDITOR_ITEM_DATA(?,?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_EDITOR_ITEM_DATA(?,?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1686,6 +2708,7 @@ namespace storedProc
 			const char* opip, const int16_t sPos, const int32_t nItemID1, 
 			const int32_t nItemID2, const int16_t byType, const int16_t sDBIndex) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, charid);
@@ -1707,10 +2730,27 @@ namespace storedProc
 	export class UpdateKnights : public StoredProcedure
 	{
 	public:
+		UpdateKnights() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateKnights(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_KNIGHTS(?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_KNIGHTS(?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1719,6 +2759,7 @@ namespace storedProc
 			int16_t* nRet, const int16_t Type, const char* UserId, 
 			const int16_t KnightsIndex, const int16_t Domination) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUT);
@@ -1742,10 +2783,27 @@ namespace storedProc
 	export class UpdateKnightsAlliance : public StoredProcedure
 	{
 	public:
+		UpdateKnightsAlliance() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateKnightsAlliance(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_KNIGHTS_ALLIANCE(?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_KNIGHTS_ALLIANCE(?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1754,6 +2812,7 @@ namespace storedProc
 			const int16_t byType, const int16_t shAlliancIndex, const int16_t shKnightsIndex, 
 			const int16_t byEmptyIndex, const int16_t bySiegeFlag) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -1771,10 +2830,27 @@ namespace storedProc
 	export class UpdateKnightsMark : public StoredProcedure
 	{
 	public:
+		UpdateKnightsMark() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateKnightsMark(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_KNIGHTS_MARK(?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_KNIGHTS_MARK(?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1783,6 +2859,7 @@ namespace storedProc
 			int16_t* nRet, const int16_t IDNum, const int16_t MarkLen, 
 			const std::vector<uint8_t>& KnightMark) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, nRet, nanodbc::statement::PARAM_OUT);
@@ -1805,10 +2882,27 @@ namespace storedProc
 	export class UpdateKnightsWar : public StoredProcedure
 	{
 	public:
+		UpdateKnightsWar() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateKnightsWar(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_KNIGHTS_WAR(?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_KNIGHTS_WAR(?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1816,6 +2910,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const int16_t byType, const int16_t shWhite, const int16_t shBlue) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &byType);
@@ -1831,16 +2926,34 @@ namespace storedProc
 	export class UpdatePersonalRank : public StoredProcedure
 	{
 	public:
+		UpdatePersonalRank() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdatePersonalRank(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_PERSONAL_RANK()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_PERSONAL_RANK()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
@@ -1850,10 +2963,27 @@ namespace storedProc
 	export class UpdatePremiumServiceUser : public StoredProcedure
 	{
 	public:
+		UpdatePremiumServiceUser() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdatePremiumServiceUser(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{? = CALL UPDATE_PREMIUM_SERVICE_USER(?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{? = CALL UPDATE_PREMIUM_SERVICE_USER(?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1861,6 +2991,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(int* returnValue, 
 			const char* AccountID, const int16_t Days) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, returnValue, nanodbc::statement::PARAM_RETURN);
@@ -1882,10 +3013,27 @@ namespace storedProc
 	export class UpdateSavedMagic : public StoredProcedure
 	{
 	public:
+		UpdateSavedMagic() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateSavedMagic(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_SAVED_MAGIC(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_SAVED_MAGIC(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1899,6 +3047,7 @@ namespace storedProc
 			const int32_t Skill8, const int16_t During8, const int32_t Skill9, 
 			const int16_t During9, const int32_t Skill10, const int16_t During10) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, strCharID);
@@ -1932,10 +3081,27 @@ namespace storedProc
 	export class UpdateSiege : public StoredProcedure
 	{
 	public:
+		UpdateSiege() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateSiege(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_SIEGE(?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_SIEGE(?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1945,6 +3111,7 @@ namespace storedProc
 			const int16_t byUpdateType, const int16_t byWarDay, const int16_t byWarTime, 
 			const int16_t byWarMinute) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &sCastleIndex);
@@ -1964,10 +3131,27 @@ namespace storedProc
 	export class UpdateSiegeChallenger : public StoredProcedure
 	{
 	public:
+		UpdateSiegeChallenger() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateSiegeChallenger(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_SIEGE_CHALLENGER(?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_SIEGE_CHALLENGER(?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -1975,6 +3159,7 @@ namespace storedProc
 		std::weak_ptr<nanodbc::result> execute(
 			const int16_t sCastleIndex, const char* strChallengerList) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &sCastleIndex);
@@ -1989,10 +3174,27 @@ namespace storedProc
 	export class UpdateSiegeChallenger2 : public StoredProcedure
 	{
 	public:
+		UpdateSiegeChallenger2() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateSiegeChallenger2(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_SIEGE_CHALLENGER2(?,?,?,?,?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_SIEGE_CHALLENGER2(?,?,?,?,?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -2003,6 +3205,7 @@ namespace storedProc
 			const int16_t sKnights_6, const int16_t sKnights_7, const int16_t sKnights_8, 
 			const int16_t sKnights_9, const int16_t sKnights_10, const char* strChallengerList) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &sCastleIndex);
@@ -2027,10 +3230,27 @@ namespace storedProc
 	export class UpdateSiegeDecideChallenger : public StoredProcedure
 	{
 	public:
+		UpdateSiegeDecideChallenger() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateSiegeDecideChallenger(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_SIEGE_DECIDE_CHALLENGER(?,?,?,?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_SIEGE_DECIDE_CHALLENGER(?,?,?,?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -2041,6 +3261,7 @@ namespace storedProc
 			const int16_t sKnights_6, const int16_t sKnights_7, const int16_t sKnights_8, 
 			const int16_t sKnights_9, const int16_t sKnights_10) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, &sCastleIndex);
@@ -2064,10 +3285,27 @@ namespace storedProc
 	export class UpdateUserData : public StoredProcedure
 	{
 	public:
+		UpdateUserData() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateUserData(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_USER_DATA(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_USER_DATA(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -2087,6 +3325,7 @@ namespace storedProc
 			const std::vector<uint8_t>& strItem, const std::vector<uint8_t>& strSerial, const std::vector<uint8_t>& strQuest, 
 			const int32_t MannerPoint, const int32_t LoyaltyMonthly) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, id);
@@ -2137,10 +3376,27 @@ namespace storedProc
 	export class UpdateWarehouse : public StoredProcedure
 	{
 	public:
+		UpdateWarehouse() 
+			: StoredProcedure()
+		{
+		}
+
 		UpdateWarehouse(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL UPDATE_WAREHOUSE(?,?,?,?,?)}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL UPDATE_WAREHOUSE(?,?,?,?,?)}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
@@ -2149,6 +3405,7 @@ namespace storedProc
 			const char* accountid, const int32_t Money, const int32_t dwTime, 
 			const std::vector<uint8_t>& strItem, const std::vector<uint8_t>& strSerial) noexcept(false)
 		{
+			prepare(Query());
 			_stmt.reset_parameters();
 
 			_stmt.bind(0, accountid);
@@ -2166,16 +3423,34 @@ namespace storedProc
 	export class UserKnightsRatingUpdate : public StoredProcedure
 	{
 	public:
+		UserKnightsRatingUpdate() 
+			: StoredProcedure()
+		{
+		}
+
 		UserKnightsRatingUpdate(std::shared_ptr<nanodbc::connection> conn) 
 			: StoredProcedure(conn)
 		{
-			_stmt.prepare("{CALL USER_KNIGHTS_RATING_UPDATE()}");
+		}
+
+		/// \brief Returns the query associated with preparing this statement
+		static const std::string& Query()
+		{
+			static const std::string query = "{CALL USER_KNIGHTS_RATING_UPDATE()}";
+			return query;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
 		}
 
 		/// \brief Executes the stored procedure
 		/// \throws nanodbc::database_error
 		std::weak_ptr<nanodbc::result> execute() noexcept(false)
 		{
+			prepare(Query());
 			return StoredProcedure::execute();
 		}
 	};
