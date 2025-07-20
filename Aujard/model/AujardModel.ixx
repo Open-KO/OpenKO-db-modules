@@ -12,6 +12,7 @@ import ModelUtil;
 namespace aujard_binder
 {
 	export class Battle;
+	export class CurrentUser;
 	export class Item;
 	export class Knights;
 	export class UserData;
@@ -101,6 +102,101 @@ namespace aujard_model
 		const int16_t& MapKey() const
 		{
 			return Index;
+		}
+
+	};
+
+	/// \brief [CURRENTUSER] Keeps track of users currently connected to the server
+	/// \class CurrentUser
+	/// \xrefitem gamedb "Game Database" "Game Database" CURRENTUSER Keeps track of users currently connected to the server
+	export class CurrentUser 
+	{
+	/// \publicsection
+	public:
+		using BinderType = aujard_binder::CurrentUser;
+
+		/// \brief Column [nServerNo]: Server Index
+		///
+		/// \property ServerId
+		int32_t ServerId = {};
+
+		/// \brief Column [strServerIP]: Server IP Address
+		///
+		/// \property ServerIP
+		std::string ServerIP;
+
+		/// \brief Column [strAccountID]: User Account Identifier
+		///
+		/// \property AccountId
+		std::string AccountId;
+
+		/// \brief Column [strCharID]: User Character Name
+		///
+		/// \property CharId
+		std::string CharId;
+
+		/// \brief Column [strClientIP]: User IP Address
+		///
+		/// \property ClientIP
+		std::string ClientIP;
+
+		/// \brief Returns the table name
+		static const std::string& TableName()
+		{
+			static const std::string tableName = "CURRENTUSER";
+			return tableName;
+		}
+
+		/// \brief Returns a set of column names for the table
+		static const std::unordered_set<std::string>& ColumnNames()
+		{
+			static const std::unordered_set<std::string> columnNames =
+			{
+				"nServerNo", "strServerIP", "strAccountID", "strCharID", "strClientIP"
+			};
+			return columnNames;
+		}
+
+		/// \brief Returns an ordered vector of column names for the table
+		static const std::vector<std::string>& OrderedColumnNames()
+		{
+			static const std::vector<std::string> orderedColumnNames =
+			{
+				"nServerNo", "strServerIP", "strAccountID", "strCharID", "strClientIP"
+			};
+			return orderedColumnNames;
+		}
+
+		/// \brief Returns a set of blob column names for the table
+		static const std::unordered_set<std::string>& BlobColumns()
+		{
+			static const std::unordered_set<std::string> blobColumns =
+			{
+				
+			};
+			return blobColumns;
+		}
+
+		/// \brief Returns the associated database type for the table
+		static const modelUtil::DbType DbType()
+		{
+			return modelUtil::DbType::GAME;
+		}
+
+		/// \brief Returns the columns associated with the table's Primary Key
+		static const std::vector<std::string>& PrimaryKey()
+		{
+			static const std::vector<std::string> primaryKey =
+			{
+				"strAccountID"
+			};
+			return primaryKey;
+		}
+
+		/// \brief Returns a value for use in map keys based on the table's primary key
+		const std::string& MapKey() const
+		{
+			return AccountId;
 		}
 
 	};
