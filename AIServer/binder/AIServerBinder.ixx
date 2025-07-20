@@ -121,37 +121,37 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Group
 		static void BindGroup(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Group = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Group);
 		}
 
 		/// \brief Binds a result's column to ActType
 		static void BindActType(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ActType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ActType);
 		}
 
 		/// \brief Binds a result's column to Type
 		static void BindType(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Family
 		static void BindFamily(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Family = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Family);
 		}
 
 		/// \brief Binds a result's column to Rank
 		static void BindRank(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Rank = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Rank);
 		}
 
 		/// \brief Binds a result's column to Title
 		static void BindTitle(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Title = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Title);
 		}
 
 		/// \brief Binds a result's column to SellingGroup
@@ -229,13 +229,13 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to WalkSpeed
 		static void BindWalkSpeed(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.WalkSpeed = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.WalkSpeed);
 		}
 
 		/// \brief Binds a result's column to RunSpeed
 		static void BindRunSpeed(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RunSpeed = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.RunSpeed);
 		}
 
 		/// \brief Binds a result's column to StandTime
@@ -313,19 +313,19 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to AttackRange
 		static void BindAttackRange(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.AttackRange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.AttackRange);
 		}
 
 		/// \brief Binds a result's column to SearchRange
 		static void BindSearchRange(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.SearchRange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.SearchRange);
 		}
 
 		/// \brief Binds a result's column to TracingRange
 		static void BindTracingRange(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.TracingRange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.TracingRange);
 		}
 
 		/// \brief Binds a result's column to Money
@@ -343,19 +343,19 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to DirectAttack
 		static void BindDirectAttack(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.DirectAttack = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.DirectAttack);
 		}
 
 		/// \brief Binds a result's column to MagicAttack
 		static void BindMagicAttack(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.MagicAttack = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.MagicAttack);
 		}
 
 		/// \brief Binds a result's column to MoneyType
 		static void BindMoneyType(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			m.MoneyType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.MoneyType);
 		}
 
 	};
@@ -567,37 +567,37 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Group
 		static void BindGroup(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Group = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Group);
 		}
 
 		/// \brief Binds a result's column to ActType
 		static void BindActType(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ActType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ActType);
 		}
 
 		/// \brief Binds a result's column to Type
 		static void BindType(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Family
 		static void BindFamily(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Family = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Family);
 		}
 
 		/// \brief Binds a result's column to Rank
 		static void BindRank(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Rank = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Rank);
 		}
 
 		/// \brief Binds a result's column to Title
 		static void BindTitle(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Title = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Title);
 		}
 
 		/// \brief Binds a result's column to SellingGroup
@@ -675,13 +675,13 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to WalkSpeed
 		static void BindWalkSpeed(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.WalkSpeed = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.WalkSpeed);
 		}
 
 		/// \brief Binds a result's column to RunSpeed
 		static void BindRunSpeed(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RunSpeed = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.RunSpeed);
 		}
 
 		/// \brief Binds a result's column to StandTime
@@ -759,19 +759,19 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to AttackRange
 		static void BindAttackRange(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.AttackRange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.AttackRange);
 		}
 
 		/// \brief Binds a result's column to SearchRange
 		static void BindSearchRange(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.SearchRange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.SearchRange);
 		}
 
 		/// \brief Binds a result's column to TracingRange
 		static void BindTracingRange(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.TracingRange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.TracingRange);
 		}
 
 		/// \brief Binds a result's column to Money
@@ -789,19 +789,19 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to DirectAttack
 		static void BindDirectAttack(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.DirectAttack = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.DirectAttack);
 		}
 
 		/// \brief Binds a result's column to MagicAttack
 		static void BindMagicAttack(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.MagicAttack = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.MagicAttack);
 		}
 
 		/// \brief Binds a result's column to MoneyType
 		static void BindMoneyType(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			m.MoneyType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.MoneyType);
 		}
 
 	};
@@ -984,31 +984,31 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to ActType
 		static void BindActType(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ActType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ActType);
 		}
 
 		/// \brief Binds a result's column to RegenType
 		static void BindRegenType(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RegenType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.RegenType);
 		}
 
 		/// \brief Binds a result's column to DungeonFamily
 		static void BindDungeonFamily(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.DungeonFamily = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.DungeonFamily);
 		}
 
 		/// \brief Binds a result's column to SpecialType
 		static void BindSpecialType(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.SpecialType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.SpecialType);
 		}
 
 		/// \brief Binds a result's column to TrapNumber
 		static void BindTrapNumber(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.TrapNumber = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.TrapNumber);
 		}
 
 		/// \brief Binds a result's column to LeftX
@@ -1062,7 +1062,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to NumNpc
 		static void BindNumNpc(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.NumNpc = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.NumNpc);
 		}
 
 		/// \brief Binds a result's column to RespawnTime
@@ -1080,7 +1080,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to PathPointCount
 		static void BindPathPointCount(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			m.PathPointCount = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.PathPointCount);
 		}
 
 		/// \brief Binds a result's column to Path
@@ -1121,7 +1121,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Level
 		static void BindLevel(aiserver_model::LevelUp& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Level = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to RequiredExp
@@ -1180,25 +1180,25 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to BeforeAction
 		static void BindBeforeAction(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.BeforeAction = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.BeforeAction);
 		}
 
 		/// \brief Binds a result's column to TargetAction
 		static void BindTargetAction(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.TargetAction = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.TargetAction);
 		}
 
 		/// \brief Binds a result's column to SelfEffect
 		static void BindSelfEffect(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.SelfEffect = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.SelfEffect);
 		}
 
 		/// \brief Binds a result's column to FlyingEffect
 		static void BindFlyingEffect(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.FlyingEffect = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.FlyingEffect);
 		}
 
 		/// \brief Binds a result's column to TargetEffect
@@ -1210,7 +1210,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Moral
 		static void BindMoral(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Moral = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Moral);
 		}
 
 		/// \brief Binds a result's column to SkillLevel
@@ -1240,7 +1240,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to ItemGroup
 		static void BindItemGroup(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemGroup = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ItemGroup);
 		}
 
 		/// \brief Binds a result's column to UseItem
@@ -1252,31 +1252,31 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to CastTime
 		static void BindCastTime(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.CastTime = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.CastTime);
 		}
 
 		/// \brief Binds a result's column to RecastTime
 		static void BindRecastTime(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RecastTime = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.RecastTime);
 		}
 
 		/// \brief Binds a result's column to SuccessRate
 		static void BindSuccessRate(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.SuccessRate = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.SuccessRate);
 		}
 
 		/// \brief Binds a result's column to Type1
 		static void BindType1(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Type1 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Type1);
 		}
 
 		/// \brief Binds a result's column to Type2
 		static void BindType2(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Type2 = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Type2);
 		}
 
 		/// \brief Binds a result's column to Range
@@ -1288,7 +1288,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Etc
 		static void BindEtc(aiserver_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Etc = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Etc);
 		}
 
 		/// \brief Binds a result's column to Event
@@ -1336,7 +1336,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Type
 		static void BindType(aiserver_model::MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to HitRateMod
@@ -1360,19 +1360,19 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Delay
 		static void BindDelay(aiserver_model::MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Delay = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Delay);
 		}
 
 		/// \brief Binds a result's column to ComboType
 		static void BindComboType(aiserver_model::MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ComboType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ComboType);
 		}
 
 		/// \brief Binds a result's column to ComboCount
 		static void BindComboCount(aiserver_model::MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ComboCount = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ComboCount);
 		}
 
 		/// \brief Binds a result's column to ComboDamage
@@ -1423,7 +1423,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to HitType
 		static void BindHitType(aiserver_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			m.HitType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.HitType);
 		}
 
 		/// \brief Binds a result's column to HitRateMod
@@ -1447,7 +1447,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to NeedArrow
 		static void BindNeedArrow(aiserver_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			m.NeedArrow = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.NeedArrow);
 		}
 
 		/// \brief Binds a result's column to AddDamagePlus
@@ -1494,7 +1494,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Radius
 		static void BindRadius(aiserver_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Radius = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Radius);
 		}
 
 		/// \brief Binds a result's column to Angle
@@ -1506,7 +1506,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to DirectType
 		static void BindDirectType(aiserver_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			m.DirectType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.DirectType);
 		}
 
 		/// \brief Binds a result's column to FirstDamage
@@ -1530,13 +1530,13 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Duration
 		static void BindDuration(aiserver_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Duration = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Duration);
 		}
 
 		/// \brief Binds a result's column to Attribute
 		static void BindAttribute(aiserver_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Attribute = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Attribute);
 		}
 
 	};
@@ -1596,13 +1596,13 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to BuffType
 		static void BindBuffType(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.BuffType = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.BuffType);
 		}
 
 		/// \brief Binds a result's column to Radius
 		static void BindRadius(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Radius = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Radius);
 		}
 
 		/// \brief Binds a result's column to Duration
@@ -1614,13 +1614,13 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to AttackSpeed
 		static void BindAttackSpeed(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.AttackSpeed = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.AttackSpeed);
 		}
 
 		/// \brief Binds a result's column to Speed
 		static void BindSpeed(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Speed = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Speed);
 		}
 
 		/// \brief Binds a result's column to Armor
@@ -1638,13 +1638,13 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to AttackPower
 		static void BindAttackPower(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.AttackPower = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.AttackPower);
 		}
 
 		/// \brief Binds a result's column to MagicPower
 		static void BindMagicPower(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.MagicPower = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.MagicPower);
 		}
 
 		/// \brief Binds a result's column to MaxHp
@@ -1674,7 +1674,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to HitRate
 		static void BindHitRate(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.HitRate = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.HitRate);
 		}
 
 		/// \brief Binds a result's column to AvoidRate
@@ -1716,43 +1716,43 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to FireResist
 		static void BindFireResist(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.FireResist = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.FireResist);
 		}
 
 		/// \brief Binds a result's column to ColdResist
 		static void BindColdResist(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ColdResist = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ColdResist);
 		}
 
 		/// \brief Binds a result's column to LightningResist
 		static void BindLightningResist(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.LightningResist = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.LightningResist);
 		}
 
 		/// \brief Binds a result's column to MagicResist
 		static void BindMagicResist(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.MagicResist = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.MagicResist);
 		}
 
 		/// \brief Binds a result's column to DiseaseResist
 		static void BindDiseaseResist(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.DiseaseResist = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.DiseaseResist);
 		}
 
 		/// \brief Binds a result's column to PoisonResist
 		static void BindPoisonResist(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.PoisonResist = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.PoisonResist);
 		}
 
 		/// \brief Binds a result's column to ExpPercent
 		static void BindExpPercent(aiserver_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ExpPercent = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ExpPercent);
 		}
 
 	};
@@ -1796,13 +1796,13 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to ValidGroup
 		static void BindValidGroup(aiserver_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ValidGroup = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ValidGroup);
 		}
 
 		/// \brief Binds a result's column to NationChange
 		static void BindNationChange(aiserver_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			m.NationChange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.NationChange);
 		}
 
 		/// \brief Binds a result's column to MonsterNumber
@@ -1814,19 +1814,19 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to TargetChange
 		static void BindTargetChange(aiserver_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			m.TargetChange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.TargetChange);
 		}
 
 		/// \brief Binds a result's column to StateChange
 		static void BindStateChange(aiserver_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			m.StateChange = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.StateChange);
 		}
 
 		/// \brief Binds a result's column to Radius
 		static void BindRadius(aiserver_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Radius = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Radius);
 		}
 
 		/// \brief Binds a result's column to HitRate
@@ -1850,7 +1850,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Vision
 		static void BindVision(aiserver_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Vision = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Vision);
 		}
 
 		/// \brief Binds a result's column to NeedItem
@@ -1890,7 +1890,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Level
 		static void BindLevel(aiserver_model::MakeDefensive& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Level = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Class1
@@ -1973,7 +1973,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to ItemLevel
 		static void BindItemLevel(aiserver_model::MakeItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemLevel = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ItemLevel);
 		}
 
 	};
@@ -2009,7 +2009,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to ItemIndex
 		static void BindItemIndex(aiserver_model::MakeItemGradeCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ItemIndex = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ItemIndex);
 		}
 
 		/// \brief Binds a result's column to Grade1
@@ -2331,7 +2331,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to LevelGrade
 		static void BindLevelGrade(aiserver_model::MakeItemRareCode& m, const nanodbc::result& result, short colIndex)
 		{
-			m.LevelGrade = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.LevelGrade);
 		}
 
 		/// \brief Binds a result's column to UpgradeItem
@@ -2394,7 +2394,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Level
 		static void BindLevel(aiserver_model::MakeWeapon& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Level = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Level);
 		}
 
 		/// \brief Binds a result's column to Class1
@@ -2521,7 +2521,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Type
 		static void BindType(aiserver_model::MonsterSummonList& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 	};
@@ -2555,7 +2555,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to ServerId
 		static void BindServerId(aiserver_model::ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ServerId = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to ZoneId
@@ -2591,13 +2591,13 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Type
 		static void BindType(aiserver_model::ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Type = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to RoomEvent
 		static void BindRoomEvent(aiserver_model::ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RoomEvent = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.RoomEvent);
 		}
 
 	};

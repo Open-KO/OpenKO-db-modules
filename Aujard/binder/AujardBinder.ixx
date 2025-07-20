@@ -41,7 +41,7 @@ namespace aujard_binder
 		/// \brief Binds a result's column to Nation
 		static void BindNation(aujard_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Nation = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to UserName
@@ -143,7 +143,7 @@ namespace aujard_binder
 		/// \brief Binds a result's column to Countable
 		static void BindCountable(aujard_model::Item& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Countable = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Countable);
 		}
 
 	};
@@ -181,13 +181,13 @@ namespace aujard_binder
 		/// \brief Binds a result's column to Nation
 		static void BindNation(aujard_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Nation = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to Ranking
 		static void BindRanking(aujard_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Ranking = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Ranking);
 		}
 
 		/// \brief Binds a result's column to Name

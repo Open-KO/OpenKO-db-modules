@@ -36,7 +36,7 @@ namespace versionmanager_binder
 		/// \brief Binds a result's column to ServerId
 		static void BindServerId(versionmanager_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			m.ServerId = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.ServerId);
 		}
 
 		/// \brief Binds a result's column to Zone1Count
@@ -136,7 +136,7 @@ namespace versionmanager_binder
 		/// \brief Binds a result's column to Authority
 		static void BindAuthority(versionmanager_model::TbUser& m, const nanodbc::result& result, short colIndex)
 		{
-			m.Authority = static_cast<uint8_t>(result.get<int16_t>(colIndex));
+			result.get_ref<uint8_t>(colIndex, m.Authority);
 		}
 
 	};
