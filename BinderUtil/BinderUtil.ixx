@@ -16,7 +16,7 @@ export namespace binderUtil
         tm.tm_hour = ts.hour;  // hours since midnight - [0, 23]
         tm.tm_mday = ts.day;  // day of the month - [1, 31]
         tm.tm_mon = ts.month;   // months since January - [0, 11]
-        tm.tm_year = ts.year;  // years since 1900
+        tm.tm_year = ts.year - 1900;  // years since 1900
         
         return std::mktime(&tm);
     }
@@ -31,7 +31,7 @@ export namespace binderUtil
         ts.hour = tm.tm_hour;
         ts.day = tm.tm_mday;
         ts.month = tm.tm_mon;
-        ts.year = tm.tm_year;
+        ts.year = tm.tm_year + 1900;
         return ts;
     }
 }
