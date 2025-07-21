@@ -46,6 +46,7 @@ var annotated_dup =
     ] ],
     [ "aujard_binder", null, [
       [ "Battle", "classaujard__binder_1_1Battle.html", null ],
+      [ "CurrentUser", "classaujard__binder_1_1CurrentUser.html", null ],
       [ "Item", "classaujard__binder_1_1Item.html", null ],
       [ "Knights", "classaujard__binder_1_1Knights.html", null ],
       [ "UserData", "classaujard__binder_1_1UserData.html", null ],
@@ -53,6 +54,7 @@ var annotated_dup =
     ] ],
     [ "aujard_model", null, [
       [ "Battle", "classaujard__model_1_1Battle.html", "classaujard__model_1_1Battle" ],
+      [ "CurrentUser", "classaujard__model_1_1CurrentUser.html", "classaujard__model_1_1CurrentUser" ],
       [ "Item", "classaujard__model_1_1Item.html", "classaujard__model_1_1Item" ],
       [ "Knights", "classaujard__model_1_1Knights.html", "classaujard__model_1_1Knights" ],
       [ "UserData", "classaujard__model_1_1UserData.html", "classaujard__model_1_1UserData" ],

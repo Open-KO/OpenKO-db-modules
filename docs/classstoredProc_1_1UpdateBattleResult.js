@@ -1,4 +1,4 @@
 var classstoredProc_1_1UpdateBattleResult =
 [
-    [ "execute", "classstoredProc_1_1UpdateBattleResult.html#a7319403e2c2a8427a268a1da36732334", null ]
+    [ "execute", "classstoredProc_1_1UpdateBattleResult.html#aeca484a2e7d2d0217c06ce6ae13d4df6", null ]
 ];

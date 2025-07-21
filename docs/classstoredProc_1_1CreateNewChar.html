@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classstoredProc_1_1CreateNewChar.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classstoredProc_1_1CreateNewChar-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">storedProc::CreateNewChar Class Reference</div></div>
 </div><!--header-->
@@ -98,18 +99,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a578cbbe84492b8f024fef4fb4e9d4b4c"><td class="memItemLeft" align="right" valign="top"><a id="a578cbbe84492b8f024fef4fb4e9d4b4c" name="a578cbbe84492b8f024fef4fb4e9d4b4c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CreateNewChar</b> (std::shared_ptr&lt; nanodbc::connection &gt; conn)</td></tr>
 <tr class="separator:a578cbbe84492b8f024fef4fb4e9d4b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9834d1047b5edff3b6dc980b4f25f47"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1CreateNewChar.html#ac9834d1047b5edff3b6dc980b4f25f47">execute</a> (int16_t *nRet, const char *AccountID, const int16_t index, const char *CharID, const int16_t Race, const int16_t Class, const int16_t Hair, const int16_t Face, const int16_t Str, const int16_t Sta, const int16_t Dex, const int16_t Intel, const int16_t Cha) noexcept(false)</td></tr>
-<tr class="memdesc:ac9834d1047b5edff3b6dc980b4f25f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the stored procedure.  <a href="classstoredProc_1_1CreateNewChar.html#ac9834d1047b5edff3b6dc980b4f25f47">More...</a><br /></td></tr>
-<tr class="separator:ac9834d1047b5edff3b6dc980b4f25f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e18a96e781ccc040e2e58627660f1d9"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1CreateNewChar.html#a3e18a96e781ccc040e2e58627660f1d9">execute</a> (int16_t *nRet, const char *AccountID, const uint8_t index, const char *CharID, const uint8_t Race, const int16_t Class, const uint8_t Hair, const uint8_t Face, const uint8_t Str, const uint8_t Sta, const uint8_t Dex, const uint8_t Intel, const uint8_t Cha) noexcept(false)</td></tr>
+<tr class="memdesc:a3e18a96e781ccc040e2e58627660f1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the stored procedure.  <a href="classstoredProc_1_1CreateNewChar.html#a3e18a96e781ccc040e2e58627660f1d9">More...</a><br /></td></tr>
+<tr class="separator:a3e18a96e781ccc040e2e58627660f1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd11ec4769e8b644f39af0f65f0f910f"><td class="memItemLeft" align="right" valign="top"><a id="acd11ec4769e8b644f39af0f65f0f910f" name="acd11ec4769e8b644f39af0f65f0f910f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~CreateNewChar</b> ()</td></tr>
 <tr class="memdesc:acd11ec4769e8b644f39af0f65f0f910f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
 <tr class="separator:acd11ec4769e8b644f39af0f65f0f910f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstoredProc_1_1StoredProcedure"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstoredProc_1_1StoredProcedure')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstoredProc_1_1StoredProcedure.html">storedProc::StoredProcedure</a></td></tr>
+<tr class="memitem:adc0b31b68fbb1c7dd99aad08ad276360 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="adc0b31b68fbb1c7dd99aad08ad276360" name="adc0b31b68fbb1c7dd99aad08ad276360"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_connection</b> (const std::shared_ptr&lt; nanodbc::connection &gt; &amp;conn)</td></tr>
+<tr class="memdesc:adc0b31b68fbb1c7dd99aad08ad276360 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the associated database connection. <br /></td></tr>
+<tr class="separator:adc0b31b68fbb1c7dd99aad08ad276360 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8381e9f5432e263fbae5aefdb94a5a82 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a8381e9f5432e263fbae5aefdb94a5a82" name="a8381e9f5432e263fbae5aefdb94a5a82"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr>
 <tr class="memdesc:a8381e9f5432e263fbae5aefdb94a5a82 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values by reading any and all result sets. <br /></td></tr>
 <tr class="separator:a8381e9f5432e263fbae5aefdb94a5a82 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abf44d6a46af6e35e84ce218ee9329595"><td class="memItemLeft" align="right" valign="top"><a id="abf44d6a46af6e35e84ce218ee9329595" name="abf44d6a46af6e35e84ce218ee9329595"></a>
+static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Query</b> ()</td></tr>
+<tr class="memdesc:abf44d6a46af6e35e84ce218ee9329595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the query associated with preparing this statement. <br /></td></tr>
+<tr class="separator:abf44d6a46af6e35e84ce218ee9329595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a69180e6ce6597f3125eff949a762c0"><td class="memItemLeft" align="right" valign="top"><a id="a3a69180e6ce6597f3125eff949a762c0" name="a3a69180e6ce6597f3125eff949a762c0"></a>
+static const <a class="el" href="namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334">modelUtil::DbType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DbType</b> ()</td></tr>
+<tr class="memdesc:a3a69180e6ce6597f3125eff949a762c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the associated database type for the table. <br /></td></tr>
+<tr class="separator:a3a69180e6ce6597f3125eff949a762c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -117,6 +133,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a23e293bd47bc1a053c0fb8f8f509695f inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a23e293bd47bc1a053c0fb8f8f509695f" name="a23e293bd47bc1a053c0fb8f8f509695f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StoredProcedure</b> (std::shared_ptr&lt; nanodbc::connection &gt; conn)</td></tr>
 <tr class="separator:a23e293bd47bc1a053c0fb8f8f509695f inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041c06e9a3fd544a4c99c42794fd1672 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1StoredProcedure.html#a041c06e9a3fd544a4c99c42794fd1672">prepare</a> (const std::string &amp;query) noexcept(false)</td></tr>
+<tr class="memdesc:a041c06e9a3fd544a4c99c42794fd1672 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens and prepares the statement with the associated query.  <a href="classstoredProc_1_1StoredProcedure.html#a041c06e9a3fd544a4c99c42794fd1672">More...</a><br /></td></tr>
+<tr class="separator:a041c06e9a3fd544a4c99c42794fd1672 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069320371583ff819e0cb16c7e753e8d inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a069320371583ff819e0cb16c7e753e8d" name="a069320371583ff819e0cb16c7e753e8d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b> ()</td></tr>
 <tr class="memdesc:a069320371583ff819e0cb16c7e753e8d inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
@@ -124,6 +143,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b>
 <tr class="memitem:a3b0eac4b254a4bf761d7d2939889c9b2 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1StoredProcedure.html#a3b0eac4b254a4bf761d7d2939889c9b2">execute</a> () noexcept(false)</td></tr>
 <tr class="memdesc:a3b0eac4b254a4bf761d7d2939889c9b2 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the currently prepared statement.  <a href="classstoredProc_1_1StoredProcedure.html#a3b0eac4b254a4bf761d7d2939889c9b2">More...</a><br /></td></tr>
 <tr class="separator:a3b0eac4b254a4bf761d7d2939889c9b2 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd970f8408be5a4573793a9da96ff10 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="afdd970f8408be5a4573793a9da96ff10" name="afdd970f8408be5a4573793a9da96ff10"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>skip_rows_in_result_set</b> ()</td></tr>
+<tr class="separator:afdd970f8408be5a4573793a9da96ff10 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstoredProc_1_1StoredProcedure"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstoredProc_1_1StoredProcedure')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstoredProc_1_1StoredProcedure.html">storedProc::StoredProcedure</a></td></tr>
 <tr class="memitem:a86597f1f0d2e8a7c988d6e3468ec7227 inherit pro_attribs_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a86597f1f0d2e8a7c988d6e3468ec7227" name="a86597f1f0d2e8a7c988d6e3468ec7227"></a>
 std::shared_ptr&lt; nanodbc::connection &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_conn</b></td></tr>
@@ -145,8 +167,8 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >MANUAL_TODO. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac9834d1047b5edff3b6dc980b4f25f47" name="ac9834d1047b5edff3b6dc980b4f25f47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9834d1047b5edff3b6dc980b4f25f47">&#9670;&nbsp;</a></span>execute()</h2>
+<a id="a3e18a96e781ccc040e2e58627660f1d9" name="a3e18a96e781ccc040e2e58627660f1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e18a96e781ccc040e2e58627660f1d9">&#9670;&nbsp;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +191,7 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
@@ -181,7 +203,7 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>Race</em>, </td>
         </tr>
         <tr>
@@ -193,43 +215,43 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>Hair</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>Face</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>Str</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>Sta</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>Dex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>Intel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>Cha</em>&#160;</td>
         </tr>
         <tr>

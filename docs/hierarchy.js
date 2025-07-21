@@ -24,6 +24,8 @@ var hierarchy =
     [ "ebenezer_model::CouponSerialList", "classebenezer__model_1_1CouponSerialList.html", null ],
     [ "full_binder::CouponSerialList", "classfull__binder_1_1CouponSerialList.html", null ],
     [ "full_model::CouponSerialList", "classfull__model_1_1CouponSerialList.html", null ],
+    [ "aujard_binder::CurrentUser", "classaujard__binder_1_1CurrentUser.html", null ],
+    [ "aujard_model::CurrentUser", "classaujard__model_1_1CurrentUser.html", null ],
     [ "full_binder::CurrentUser", "classfull__binder_1_1CurrentUser.html", null ],
     [ "full_model::CurrentUser", "classfull__model_1_1CurrentUser.html", null ],
     [ "versionmanager_binder::CurrentUser", "classversionmanager__binder_1_1CurrentUser.html", null ],

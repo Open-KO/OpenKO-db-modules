@@ -14,5 +14,5 @@ var searchData=
   ['createknights_11',['CreateKnights',['../classstoredProc_1_1CreateKnights.html',1,'storedProc']]],
   ['createknights2_12',['CreateKnights2',['../classstoredProc_1_1CreateKnights2.html',1,'storedProc']]],
   ['createnewchar_13',['CreateNewChar',['../classstoredProc_1_1CreateNewChar.html',1,'storedProc']]],
-  ['currentuser_14',['CurrentUser',['../classfull__binder_1_1CurrentUser.html',1,'full_binder::CurrentUser'],['../classfull__model_1_1CurrentUser.html',1,'full_model::CurrentUser'],['../classversionmanager__binder_1_1CurrentUser.html',1,'versionmanager_binder::CurrentUser'],['../classversionmanager__model_1_1CurrentUser.html',1,'versionmanager_model::CurrentUser']]]
+  ['currentuser_14',['CurrentUser',['../classaujard__binder_1_1CurrentUser.html',1,'aujard_binder::CurrentUser'],['../classaujard__model_1_1CurrentUser.html',1,'aujard_model::CurrentUser'],['../classfull__binder_1_1CurrentUser.html',1,'full_binder::CurrentUser'],['../classfull__model_1_1CurrentUser.html',1,'full_model::CurrentUser'],['../classversionmanager__binder_1_1CurrentUser.html',1,'versionmanager_binder::CurrentUser'],['../classversionmanager__model_1_1CurrentUser.html',1,'versionmanager_model::CurrentUser']]]
 ];

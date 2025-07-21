@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classstoredProc_1_1KingImpeachmentResu
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classstoredProc_1_1KingImpeachmentResult-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">storedProc::KingImpeachmentResult Class Reference</div></div>
 </div><!--header-->
@@ -98,18 +99,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeeb2820a900faa946196830fb2af851c"><td class="memItemLeft" align="right" valign="top"><a id="aeeb2820a900faa946196830fb2af851c" name="aeeb2820a900faa946196830fb2af851c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KingImpeachmentResult</b> (std::shared_ptr&lt; nanodbc::connection &gt; conn)</td></tr>
 <tr class="separator:aeeb2820a900faa946196830fb2af851c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff452e4431d6b1aa1147b0c7d019a559"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1KingImpeachmentResult.html#aff452e4431d6b1aa1147b0c7d019a559">execute</a> (const int16_t byNation, int16_t *nTotalMan, int16_t *nAgreeMan) noexcept(false)</td></tr>
-<tr class="memdesc:aff452e4431d6b1aa1147b0c7d019a559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the stored procedure.  <a href="classstoredProc_1_1KingImpeachmentResult.html#aff452e4431d6b1aa1147b0c7d019a559">More...</a><br /></td></tr>
-<tr class="separator:aff452e4431d6b1aa1147b0c7d019a559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0871e89c3b75d55ec563a22a02ca493e"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1KingImpeachmentResult.html#a0871e89c3b75d55ec563a22a02ca493e">execute</a> (const uint8_t byNation, int16_t *nTotalMan, int16_t *nAgreeMan) noexcept(false)</td></tr>
+<tr class="memdesc:a0871e89c3b75d55ec563a22a02ca493e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the stored procedure.  <a href="classstoredProc_1_1KingImpeachmentResult.html#a0871e89c3b75d55ec563a22a02ca493e">More...</a><br /></td></tr>
+<tr class="separator:a0871e89c3b75d55ec563a22a02ca493e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff17d9ee3c7f76d2f6bd3255c31068e1"><td class="memItemLeft" align="right" valign="top"><a id="aff17d9ee3c7f76d2f6bd3255c31068e1" name="aff17d9ee3c7f76d2f6bd3255c31068e1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~KingImpeachmentResult</b> ()</td></tr>
 <tr class="memdesc:aff17d9ee3c7f76d2f6bd3255c31068e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
 <tr class="separator:aff17d9ee3c7f76d2f6bd3255c31068e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classstoredProc_1_1StoredProcedure"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstoredProc_1_1StoredProcedure')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classstoredProc_1_1StoredProcedure.html">storedProc::StoredProcedure</a></td></tr>
+<tr class="memitem:adc0b31b68fbb1c7dd99aad08ad276360 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="adc0b31b68fbb1c7dd99aad08ad276360" name="adc0b31b68fbb1c7dd99aad08ad276360"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_connection</b> (const std::shared_ptr&lt; nanodbc::connection &gt; &amp;conn)</td></tr>
+<tr class="memdesc:adc0b31b68fbb1c7dd99aad08ad276360 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the associated database connection. <br /></td></tr>
+<tr class="separator:adc0b31b68fbb1c7dd99aad08ad276360 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8381e9f5432e263fbae5aefdb94a5a82 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a8381e9f5432e263fbae5aefdb94a5a82" name="a8381e9f5432e263fbae5aefdb94a5a82"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr>
 <tr class="memdesc:a8381e9f5432e263fbae5aefdb94a5a82 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values by reading any and all result sets. <br /></td></tr>
 <tr class="separator:a8381e9f5432e263fbae5aefdb94a5a82 inherit pub_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4449272d3356ddad878264d5fc4356ac"><td class="memItemLeft" align="right" valign="top"><a id="a4449272d3356ddad878264d5fc4356ac" name="a4449272d3356ddad878264d5fc4356ac"></a>
+static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Query</b> ()</td></tr>
+<tr class="memdesc:a4449272d3356ddad878264d5fc4356ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the query associated with preparing this statement. <br /></td></tr>
+<tr class="separator:a4449272d3356ddad878264d5fc4356ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2758375a2e4c5c57e92d805ed88d9519"><td class="memItemLeft" align="right" valign="top"><a id="a2758375a2e4c5c57e92d805ed88d9519" name="a2758375a2e4c5c57e92d805ed88d9519"></a>
+static const <a class="el" href="namespacemodelUtil.html#ab1168a77a3d000b63797d1f8f90ef334">modelUtil::DbType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DbType</b> ()</td></tr>
+<tr class="memdesc:a2758375a2e4c5c57e92d805ed88d9519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the associated database type for the table. <br /></td></tr>
+<tr class="separator:a2758375a2e4c5c57e92d805ed88d9519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -117,6 +133,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a23e293bd47bc1a053c0fb8f8f509695f inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a23e293bd47bc1a053c0fb8f8f509695f" name="a23e293bd47bc1a053c0fb8f8f509695f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StoredProcedure</b> (std::shared_ptr&lt; nanodbc::connection &gt; conn)</td></tr>
 <tr class="separator:a23e293bd47bc1a053c0fb8f8f509695f inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041c06e9a3fd544a4c99c42794fd1672 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1StoredProcedure.html#a041c06e9a3fd544a4c99c42794fd1672">prepare</a> (const std::string &amp;query) noexcept(false)</td></tr>
+<tr class="memdesc:a041c06e9a3fd544a4c99c42794fd1672 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens and prepares the statement with the associated query.  <a href="classstoredProc_1_1StoredProcedure.html#a041c06e9a3fd544a4c99c42794fd1672">More...</a><br /></td></tr>
+<tr class="separator:a041c06e9a3fd544a4c99c42794fd1672 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069320371583ff819e0cb16c7e753e8d inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a069320371583ff819e0cb16c7e753e8d" name="a069320371583ff819e0cb16c7e753e8d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b> ()</td></tr>
 <tr class="memdesc:a069320371583ff819e0cb16c7e753e8d inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
@@ -124,6 +143,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b>
 <tr class="memitem:a3b0eac4b254a4bf761d7d2939889c9b2 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1StoredProcedure.html#a3b0eac4b254a4bf761d7d2939889c9b2">execute</a> () noexcept(false)</td></tr>
 <tr class="memdesc:a3b0eac4b254a4bf761d7d2939889c9b2 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the currently prepared statement.  <a href="classstoredProc_1_1StoredProcedure.html#a3b0eac4b254a4bf761d7d2939889c9b2">More...</a><br /></td></tr>
 <tr class="separator:a3b0eac4b254a4bf761d7d2939889c9b2 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd970f8408be5a4573793a9da96ff10 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="afdd970f8408be5a4573793a9da96ff10" name="afdd970f8408be5a4573793a9da96ff10"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>skip_rows_in_result_set</b> ()</td></tr>
+<tr class="separator:afdd970f8408be5a4573793a9da96ff10 inherit pro_methods_classstoredProc_1_1StoredProcedure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstoredProc_1_1StoredProcedure"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstoredProc_1_1StoredProcedure')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstoredProc_1_1StoredProcedure.html">storedProc::StoredProcedure</a></td></tr>
 <tr class="memitem:a86597f1f0d2e8a7c988d6e3468ec7227 inherit pro_attribs_classstoredProc_1_1StoredProcedure"><td class="memItemLeft" align="right" valign="top"><a id="a86597f1f0d2e8a7c988d6e3468ec7227" name="a86597f1f0d2e8a7c988d6e3468ec7227"></a>
 std::shared_ptr&lt; nanodbc::connection &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_conn</b></td></tr>
@@ -145,8 +167,8 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >MANUAL_TODO. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aff452e4431d6b1aa1147b0c7d019a559" name="aff452e4431d6b1aa1147b0c7d019a559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff452e4431d6b1aa1147b0c7d019a559">&#9670;&nbsp;</a></span>execute()</h2>
+<a id="a0871e89c3b75d55ec563a22a02ca493e" name="a0871e89c3b75d55ec563a22a02ca493e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0871e89c3b75d55ec563a22a02ca493e">&#9670;&nbsp;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +179,7 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
         <tr>
           <td class="memname">std::weak_ptr&lt; nanodbc::result &gt; storedProc::KingImpeachmentResult::execute </td>
           <td>(</td>
-          <td class="paramtype">const int16_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>byNation</em>, </td>
         </tr>
         <tr>

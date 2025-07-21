@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['_7eaccountlogin_0',['~AccountLogin',['../classstoredProc_1_1AccountLogin.html#aa2865efa893d80becd24656926e2caeb',1,'storedProc::AccountLogin']]],
-  ['_7eaccountlogout_1',['~AccountLogout',['../classstoredProc_1_1AccountLogout.html#a1dd7c1c6bb7b82a05f39a6d047c274d9',1,'storedProc::AccountLogout']]],
-  ['_7ecreateknights_2',['~CreateKnights',['../classstoredProc_1_1CreateKnights.html#a0a5c2f447b7c776f88514a1988bb3b7f',1,'storedProc::CreateKnights']]],
-  ['_7ecreateknights2_3',['~CreateKnights2',['../classstoredProc_1_1CreateKnights2.html#ac5b8212524bc3ea9375cee154df0570d',1,'storedProc::CreateKnights2']]],
-  ['_7ecreatenewchar_4',['~CreateNewChar',['../classstoredProc_1_1CreateNewChar.html#acd11ec4769e8b644f39af0f65f0f910f',1,'storedProc::CreateNewChar']]],
-  ['_7edeletefriendlist_5',['~DeleteFriendList',['../classstoredProc_1_1DeleteFriendList.html#a80e57421a2dcc71f77be1b55d1c73726',1,'storedProc::DeleteFriendList']]],
-  ['_7edeleteknights_6',['~DeleteKnights',['../classstoredProc_1_1DeleteKnights.html#ac12bc275af3e2c9615ae804489084228',1,'storedProc::DeleteKnights']]],
-  ['_7einsertfriendlist_7',['~InsertFriendList',['../classstoredProc_1_1InsertFriendList.html#a832206caa50e92560db5319425c3b280',1,'storedProc::InsertFriendList']]],
-  ['_7ekingcandidacyrecommend_8',['~KingCandidacyRecommend',['../classstoredProc_1_1KingCandidacyRecommend.html#a11ad7abdb53bf61f5266bfd8d0ffb7cd',1,'storedProc::KingCandidacyRecommend']]],
-  ['_7ekingelectionproc_9',['~KingElectionProc',['../classstoredProc_1_1KingElectionProc.html#af25a480fbdb0e3af7b5d036939e86c37',1,'storedProc::KingElectionProc']]],
-  ['_7ekingimpeachmentelection_10',['~KingImpeachmentElection',['../classstoredProc_1_1KingImpeachmentElection.html#a19e6a56f170dad7a4586fbc363fc2c3f',1,'storedProc::KingImpeachmentElection']]],
-  ['_7ekingimpeachmentresult_11',['~KingImpeachmentResult',['../classstoredProc_1_1KingImpeachmentResult.html#aff17d9ee3c7f76d2f6bd3255c31068e1',1,'storedProc::KingImpeachmentResult']]],
-  ['_7eloadaccountcharid_12',['~LoadAccountCharid',['../classstoredProc_1_1LoadAccountCharid.html#ad6c315b9aaf0b06bb94810b54519ff7a',1,'storedProc::LoadAccountCharid']]],
-  ['_7eloadcharinfo_13',['~LoadCharInfo',['../classstoredProc_1_1LoadCharInfo.html#aa53652494de26174586a119ca87242ec',1,'storedProc::LoadCharInfo']]],
-  ['_7eloadpremiumserviceuser_14',['~LoadPremiumServiceUser',['../classstoredProc_1_1LoadPremiumServiceUser.html#a43b00fe9da8aabd7f9151af70a6db204',1,'storedProc::LoadPremiumServiceUser']]],
-  ['_7eloadsavedmagic_15',['~LoadSavedMagic',['../classstoredProc_1_1LoadSavedMagic.html#ac7ce3a599252d664d35ee04298ce1422',1,'storedProc::LoadSavedMagic']]],
-  ['_7eloaduserdata_16',['~LoadUserData',['../classstoredProc_1_1LoadUserData.html#a7fd438b909c54f029ec4c364fe8b2b20',1,'storedProc::LoadUserData']]],
-  ['_7enationselect_17',['~NationSelect',['../classstoredProc_1_1NationSelect.html#a45df7d1568fc66d56fa2f5f544195f25',1,'storedProc::NationSelect']]],
-  ['_7eprocinsertcurrentuser_18',['~ProcInsertCurrentuser',['../classstoredProc_1_1ProcInsertCurrentuser.html#a9dfec0775f168227f6a7bbeddabdcf17',1,'storedProc::ProcInsertCurrentuser']]],
-  ['_7erentalitemcancel_19',['~RentalItemCancel',['../classstoredProc_1_1RentalItemCancel.html#af0e19c860c71a4cb30d17bea09903f81',1,'storedProc::RentalItemCancel']]],
-  ['_7erentalitemdestory_20',['~RentalItemDestory',['../classstoredProc_1_1RentalItemDestory.html#af4ce1f79e7fdfe24b18dfef6d8d568b1',1,'storedProc::RentalItemDestory']]],
-  ['_7erentalitemlend_21',['~RentalItemLend',['../classstoredProc_1_1RentalItemLend.html#aec07c95de2cf11363e4545020f73758c',1,'storedProc::RentalItemLend']]],
-  ['_7erentalitemregister_22',['~RentalItemRegister',['../classstoredProc_1_1RentalItemRegister.html#af8b72abccd3b98b757b9fef6296bc3bd',1,'storedProc::RentalItemRegister']]],
-  ['_7eupdateknights_23',['~UpdateKnights',['../classstoredProc_1_1UpdateKnights.html#a8232e382f6693dff180756be00407154',1,'storedProc::UpdateKnights']]],
-  ['_7eupdateknightsmark_24',['~UpdateKnightsMark',['../classstoredProc_1_1UpdateKnightsMark.html#a13181610d475f229d3880321f93e5bc5',1,'storedProc::UpdateKnightsMark']]],
-  ['_7eupdatepremiumserviceuser_25',['~UpdatePremiumServiceUser',['../classstoredProc_1_1UpdatePremiumServiceUser.html#ab4ef73546e693a90a999b96e1d214218',1,'storedProc::UpdatePremiumServiceUser']]]
+  ['set_5fconnection_0',['set_connection',['../classstoredProc_1_1StoredProcedure.html#adc0b31b68fbb1c7dd99aad08ad276360',1,'storedProc::StoredProcedure']]]
 ];

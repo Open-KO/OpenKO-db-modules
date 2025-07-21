@@ -95,6 +95,10 @@ $(document).ready(function(){initNavTree('classstoredProc_1_1StoredProcedure.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:adc0b31b68fbb1c7dd99aad08ad276360"><td class="memItemLeft" align="right" valign="top"><a id="adc0b31b68fbb1c7dd99aad08ad276360" name="adc0b31b68fbb1c7dd99aad08ad276360"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_connection</b> (const std::shared_ptr&lt; nanodbc::connection &gt; &amp;conn)</td></tr>
+<tr class="memdesc:adc0b31b68fbb1c7dd99aad08ad276360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the associated database connection. <br /></td></tr>
+<tr class="separator:adc0b31b68fbb1c7dd99aad08ad276360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8381e9f5432e263fbae5aefdb94a5a82"><td class="memItemLeft" align="right" valign="top"><a id="a8381e9f5432e263fbae5aefdb94a5a82" name="a8381e9f5432e263fbae5aefdb94a5a82"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr>
 <tr class="memdesc:a8381e9f5432e263fbae5aefdb94a5a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values by reading any and all result sets. <br /></td></tr>
@@ -105,6 +109,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a23e293bd47bc1a053c0fb8f8f509695f"><td class="memItemLeft" align="right" valign="top"><a id="a23e293bd47bc1a053c0fb8f8f509695f" name="a23e293bd47bc1a053c0fb8f8f509695f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StoredProcedure</b> (std::shared_ptr&lt; nanodbc::connection &gt; conn)</td></tr>
 <tr class="separator:a23e293bd47bc1a053c0fb8f8f509695f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041c06e9a3fd544a4c99c42794fd1672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1StoredProcedure.html#a041c06e9a3fd544a4c99c42794fd1672">prepare</a> (const std::string &amp;query) noexcept(false)</td></tr>
+<tr class="memdesc:a041c06e9a3fd544a4c99c42794fd1672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens and prepares the statement with the associated query.  <a href="classstoredProc_1_1StoredProcedure.html#a041c06e9a3fd544a4c99c42794fd1672">More...</a><br /></td></tr>
+<tr class="separator:a041c06e9a3fd544a4c99c42794fd1672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069320371583ff819e0cb16c7e753e8d"><td class="memItemLeft" align="right" valign="top"><a id="a069320371583ff819e0cb16c7e753e8d" name="a069320371583ff819e0cb16c7e753e8d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b> ()</td></tr>
 <tr class="memdesc:a069320371583ff819e0cb16c7e753e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes any output variables or return values on destruction. <br /></td></tr>
@@ -112,6 +119,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_on_destruct</b>
 <tr class="memitem:a3b0eac4b254a4bf761d7d2939889c9b2"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; nanodbc::result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstoredProc_1_1StoredProcedure.html#a3b0eac4b254a4bf761d7d2939889c9b2">execute</a> () noexcept(false)</td></tr>
 <tr class="memdesc:a3b0eac4b254a4bf761d7d2939889c9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the currently prepared statement.  <a href="classstoredProc_1_1StoredProcedure.html#a3b0eac4b254a4bf761d7d2939889c9b2">More...</a><br /></td></tr>
 <tr class="separator:a3b0eac4b254a4bf761d7d2939889c9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd970f8408be5a4573793a9da96ff10"><td class="memItemLeft" align="right" valign="top"><a id="afdd970f8408be5a4573793a9da96ff10" name="afdd970f8408be5a4573793a9da96ff10"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>skip_rows_in_result_set</b> ()</td></tr>
+<tr class="separator:afdd970f8408be5a4573793a9da96ff10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -166,6 +176,40 @@ static const nanodbc::string&#160;</td><td class="memItemRight" valign="bottom">
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a result set, if applicable </dd></dl>
+
+</div>
+</div>
+<a id="a041c06e9a3fd544a4c99c42794fd1672" name="a041c06e9a3fd544a4c99c42794fd1672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041c06e9a3fd544a4c99c42794fd1672">&#9670;&nbsp;</a></span>prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void storedProc::StoredProcedure::prepare </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>query</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens and prepares the statement with the associated query. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">nanodbc::database_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
