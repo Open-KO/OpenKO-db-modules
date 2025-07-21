@@ -18,4 +18,4 @@ jobs:
           htmloutput: './docs'
           ghpagesbranch: 'doxygen_out'
           ghpagesdir: './docs/'
-          darkmode: 'true'
+#          darkmode: 'true'
