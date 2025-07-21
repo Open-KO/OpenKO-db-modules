@@ -56,40 +56,19 @@ namespace full_binder
 		/// \brief Binds a result's column to CharId1
 		static void BindCharId1(full_model::AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.CharId1.reset();
-			}
-			else
-			{
-				m.CharId1 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.CharId1);
 		}
 
 		/// \brief Binds a result's column to CharId2
 		static void BindCharId2(full_model::AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.CharId2.reset();
-			}
-			else
-			{
-				m.CharId2 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.CharId2);
 		}
 
 		/// \brief Binds a result's column to CharId3
 		static void BindCharId3(full_model::AccountChar& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.CharId3.reset();
-			}
-			else
-			{
-				m.CharId3 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.CharId3);
 		}
 
 	};
@@ -145,14 +124,7 @@ namespace full_binder
 		/// \brief Binds a result's column to UserName
 		static void BindUserName(full_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.UserName.reset();
-			}
-			else
-			{
-				m.UserName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.UserName);
 		}
 
 		/// \brief Binds a result's column to ElmoArea
@@ -422,14 +394,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Bz
 		static void BindBz(full_model::Concurrent& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Bz.reset();
-			}
-			else
-			{
-				m.Bz = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Bz);
 		}
 
 	};
@@ -460,66 +425,31 @@ namespace full_binder
 		/// \brief Binds a result's column to UserId
 		static void BindUserId(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.UserId.reset();
-			}
-			else
-			{
-				m.UserId = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.UserId);
 		}
 
 		/// \brief Binds a result's column to Type
 		static void BindType(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Type.reset();
-			}
-			else
-			{
-				m.Type = result.get<uint8_t>(colIndex);
-			}
+			result.get_ref<std::optional<uint8_t>>(colIndex, m.Type);
 		}
 
 		/// \brief Binds a result's column to Pos
 		static void BindPos(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Pos.reset();
-			}
-			else
-			{
-				m.Pos = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.Pos);
 		}
 
 		/// \brief Binds a result's column to ItemNum
 		static void BindItemNum(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemNum.reset();
-			}
-			else
-			{
-				m.ItemNum = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemNum);
 		}
 
 		/// \brief Binds a result's column to ItemSerial
 		static void BindItemSerial(full_model::CopySerialItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemSerial.reset();
-			}
-			else
-			{
-				m.ItemSerial = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemSerial);
 		}
 
 	};
@@ -706,66 +636,31 @@ namespace full_binder
 		/// \brief Binds a result's column to Condition1
 		static void BindCondition1(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Condition1.reset();
-			}
-			else
-			{
-				m.Condition1 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Condition1);
 		}
 
 		/// \brief Binds a result's column to Condition2
 		static void BindCondition2(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Condition2.reset();
-			}
-			else
-			{
-				m.Condition2 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Condition2);
 		}
 
 		/// \brief Binds a result's column to Condition3
 		static void BindCondition3(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Condition3.reset();
-			}
-			else
-			{
-				m.Condition3 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Condition3);
 		}
 
 		/// \brief Binds a result's column to Condition4
 		static void BindCondition4(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Condition4.reset();
-			}
-			else
-			{
-				m.Condition4 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Condition4);
 		}
 
 		/// \brief Binds a result's column to Condition5
 		static void BindCondition5(full_model::Event& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Condition5.reset();
-			}
-			else
-			{
-				m.Condition5 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Condition5);
 		}
 
 		/// \brief Binds a result's column to Execute1
@@ -900,313 +795,145 @@ namespace full_binder
 		/// \brief Binds a result's column to Friend1
 		static void BindFriend1(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend1.reset();
-			}
-			else
-			{
-				m.Friend1 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend1);
 		}
 
 		/// \brief Binds a result's column to Friend2
 		static void BindFriend2(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend2.reset();
-			}
-			else
-			{
-				m.Friend2 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend2);
 		}
 
 		/// \brief Binds a result's column to Friend3
 		static void BindFriend3(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend3.reset();
-			}
-			else
-			{
-				m.Friend3 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend3);
 		}
 
 		/// \brief Binds a result's column to Friend4
 		static void BindFriend4(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend4.reset();
-			}
-			else
-			{
-				m.Friend4 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend4);
 		}
 
 		/// \brief Binds a result's column to Friend5
 		static void BindFriend5(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend5.reset();
-			}
-			else
-			{
-				m.Friend5 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend5);
 		}
 
 		/// \brief Binds a result's column to Friend6
 		static void BindFriend6(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend6.reset();
-			}
-			else
-			{
-				m.Friend6 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend6);
 		}
 
 		/// \brief Binds a result's column to Friend7
 		static void BindFriend7(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend7.reset();
-			}
-			else
-			{
-				m.Friend7 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend7);
 		}
 
 		/// \brief Binds a result's column to Friend8
 		static void BindFriend8(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend8.reset();
-			}
-			else
-			{
-				m.Friend8 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend8);
 		}
 
 		/// \brief Binds a result's column to Friend9
 		static void BindFriend9(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend9.reset();
-			}
-			else
-			{
-				m.Friend9 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend9);
 		}
 
 		/// \brief Binds a result's column to Friend10
 		static void BindFriend10(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend10.reset();
-			}
-			else
-			{
-				m.Friend10 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend10);
 		}
 
 		/// \brief Binds a result's column to Friend11
 		static void BindFriend11(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend11.reset();
-			}
-			else
-			{
-				m.Friend11 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend11);
 		}
 
 		/// \brief Binds a result's column to Friend12
 		static void BindFriend12(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend12.reset();
-			}
-			else
-			{
-				m.Friend12 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend12);
 		}
 
 		/// \brief Binds a result's column to Friend13
 		static void BindFriend13(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend13.reset();
-			}
-			else
-			{
-				m.Friend13 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend13);
 		}
 
 		/// \brief Binds a result's column to Friend14
 		static void BindFriend14(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend14.reset();
-			}
-			else
-			{
-				m.Friend14 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend14);
 		}
 
 		/// \brief Binds a result's column to Friend15
 		static void BindFriend15(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend15.reset();
-			}
-			else
-			{
-				m.Friend15 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend15);
 		}
 
 		/// \brief Binds a result's column to Friend16
 		static void BindFriend16(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend16.reset();
-			}
-			else
-			{
-				m.Friend16 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend16);
 		}
 
 		/// \brief Binds a result's column to Friend17
 		static void BindFriend17(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend17.reset();
-			}
-			else
-			{
-				m.Friend17 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend17);
 		}
 
 		/// \brief Binds a result's column to Friend18
 		static void BindFriend18(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend18.reset();
-			}
-			else
-			{
-				m.Friend18 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend18);
 		}
 
 		/// \brief Binds a result's column to Friend19
 		static void BindFriend19(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend19.reset();
-			}
-			else
-			{
-				m.Friend19 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend19);
 		}
 
 		/// \brief Binds a result's column to Friend20
 		static void BindFriend20(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend20.reset();
-			}
-			else
-			{
-				m.Friend20 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend20);
 		}
 
 		/// \brief Binds a result's column to Friend21
 		static void BindFriend21(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend21.reset();
-			}
-			else
-			{
-				m.Friend21 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend21);
 		}
 
 		/// \brief Binds a result's column to Friend22
 		static void BindFriend22(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend22.reset();
-			}
-			else
-			{
-				m.Friend22 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend22);
 		}
 
 		/// \brief Binds a result's column to Friend23
 		static void BindFriend23(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend23.reset();
-			}
-			else
-			{
-				m.Friend23 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend23);
 		}
 
 		/// \brief Binds a result's column to Friend24
 		static void BindFriend24(full_model::FriendList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Friend24.reset();
-			}
-			else
-			{
-				m.Friend24 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Friend24);
 		}
 
 	};
@@ -1254,7 +981,9 @@ namespace full_binder
 		/// \brief Binds a result's column to WriteTime
 		static void BindWriteTime(full_model::HacktoolUserLog& m, const nanodbc::result& result, short colIndex)
 		{
-			m.WriteTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.WriteTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 	};
@@ -1291,53 +1020,25 @@ namespace full_binder
 		/// \brief Binds a result's column to UserId
 		static void BindUserId(full_model::HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.UserId.reset();
-			}
-			else
-			{
-				m.UserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.UserId);
 		}
 
 		/// \brief Binds a result's column to Nation
 		static void BindNation(full_model::HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Nation.reset();
-			}
-			else
-			{
-				m.Nation = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Nation);
 		}
 
 		/// \brief Binds a result's column to ClassName
 		static void BindClassName(full_model::HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ClassName.reset();
-			}
-			else
-			{
-				m.ClassName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ClassName);
 		}
 
 		/// \brief Binds a result's column to Achievement
 		static void BindAchievement(full_model::HeroUser& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Achievement.reset();
-			}
-			else
-			{
-				m.Achievement = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Achievement);
 		}
 
 	};
@@ -2189,14 +1890,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::ItemGroup& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Item1
@@ -2655,14 +2349,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to PictureId
@@ -3101,14 +2788,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to PictureId
@@ -3421,118 +3101,55 @@ namespace full_binder
 		/// \brief Binds a result's column to DropChance1
 		static void BindDropChance1(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.DropChance1.reset();
-			}
-			else
-			{
-				m.DropChance1 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance1);
 		}
 
 		/// \brief Binds a result's column to ItemId2
 		static void BindItemId2(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemId2.reset();
-			}
-			else
-			{
-				m.ItemId2 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId2);
 		}
 
 		/// \brief Binds a result's column to DropChance2
 		static void BindDropChance2(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.DropChance2.reset();
-			}
-			else
-			{
-				m.DropChance2 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance2);
 		}
 
 		/// \brief Binds a result's column to ItemId3
 		static void BindItemId3(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemId3.reset();
-			}
-			else
-			{
-				m.ItemId3 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId3);
 		}
 
 		/// \brief Binds a result's column to DropChance3
 		static void BindDropChance3(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.DropChance3.reset();
-			}
-			else
-			{
-				m.DropChance3 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance3);
 		}
 
 		/// \brief Binds a result's column to ItemId4
 		static void BindItemId4(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemId4.reset();
-			}
-			else
-			{
-				m.ItemId4 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId4);
 		}
 
 		/// \brief Binds a result's column to DropChance4
 		static void BindDropChance4(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.DropChance4.reset();
-			}
-			else
-			{
-				m.DropChance4 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance4);
 		}
 
 		/// \brief Binds a result's column to ItemId5
 		static void BindItemId5(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemId5.reset();
-			}
-			else
-			{
-				m.ItemId5 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ItemId5);
 		}
 
 		/// \brief Binds a result's column to DropChance5
 		static void BindDropChance5(full_model::NpcItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.DropChance5.reset();
-			}
-			else
-			{
-				m.DropChance5 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.DropChance5);
 		}
 
 	};
@@ -3572,92 +3189,43 @@ namespace full_binder
 		/// \brief Binds a result's column to ChangeItem
 		static void BindChangeItem(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ChangeItem.reset();
-			}
-			else
-			{
-				m.ChangeItem = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ChangeItem);
 		}
 
 		/// \brief Binds a result's column to ChangeId
 		static void BindChangeId(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ChangeId.reset();
-			}
-			else
-			{
-				m.ChangeId = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ChangeId);
 		}
 
 		/// \brief Binds a result's column to MoveItem
 		static void BindMoveItem(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveItem.reset();
-			}
-			else
-			{
-				m.MoveItem = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.MoveItem);
 		}
 
 		/// \brief Binds a result's column to MoveMinX
 		static void BindMoveMinX(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveMinX.reset();
-			}
-			else
-			{
-				m.MoveMinX = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.MoveMinX);
 		}
 
 		/// \brief Binds a result's column to MoveMinY
 		static void BindMoveMinY(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveMinY.reset();
-			}
-			else
-			{
-				m.MoveMinY = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.MoveMinY);
 		}
 
 		/// \brief Binds a result's column to MoveMaxX
 		static void BindMoveMaxX(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveMaxX.reset();
-			}
-			else
-			{
-				m.MoveMaxX = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.MoveMaxX);
 		}
 
 		/// \brief Binds a result's column to MoveMaxY
 		static void BindMoveMaxY(full_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveMaxY.reset();
-			}
-			else
-			{
-				m.MoveMaxY = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.MoveMaxY);
 		}
 
 	};
@@ -3817,14 +3385,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Path
 		static void BindPath(full_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Path.reset();
-			}
-			else
-			{
-				m.Path = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Path);
 		}
 
 	};
@@ -4192,27 +3753,13 @@ namespace full_binder
 		/// \brief Binds a result's column to KingName
 		static void BindKingName(full_model::KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KingName.reset();
-			}
-			else
-			{
-				m.KingName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.KingName);
 		}
 
 		/// \brief Binds a result's column to ImRequestId
 		static void BindImRequestId(full_model::KingSystem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ImRequestId.reset();
-			}
-			else
-			{
-				m.ImRequestId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ImRequestId);
 		}
 
 	};
@@ -4306,53 +3853,25 @@ namespace full_binder
 		/// \brief Binds a result's column to ViceChief1
 		static void BindViceChief1(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ViceChief1.reset();
-			}
-			else
-			{
-				m.ViceChief1 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief1);
 		}
 
 		/// \brief Binds a result's column to ViceChief2
 		static void BindViceChief2(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ViceChief2.reset();
-			}
-			else
-			{
-				m.ViceChief2 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief2);
 		}
 
 		/// \brief Binds a result's column to ViceChief3
 		static void BindViceChief3(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ViceChief3.reset();
-			}
-			else
-			{
-				m.ViceChief3 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief3);
 		}
 
 		/// \brief Binds a result's column to EnemyName
 		static void BindEnemyName(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.EnemyName.reset();
-			}
-			else
-			{
-				m.EnemyName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.EnemyName);
 		}
 
 		/// \brief Binds a result's column to OldWarResult
@@ -4400,7 +3919,9 @@ namespace full_binder
 		/// \brief Binds a result's column to CreateTime
 		static void BindCreateTime(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			m.CreateTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.CreateTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 		/// \brief Binds a result's column to MarkVersion
@@ -4418,27 +3939,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Mark
 		static void BindMark(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Mark.reset();
-			}
-			else
-			{
-				m.Mark = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.Mark);
 		}
 
 		/// \brief Binds a result's column to Stash
 		static void BindStash(full_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Stash.reset();
-			}
-			else
-			{
-				m.Stash = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.Stash);
 		}
 
 		/// \brief Binds a result's column to SiegeFlag
@@ -4803,14 +4310,7 @@ namespace full_binder
 		/// \brief Binds a result's column to ChallengeList
 		static void BindChallengeList(full_model::KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ChallengeList.reset();
-			}
-			else
-			{
-				m.ChallengeList = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ChallengeList);
 		}
 
 		/// \brief Binds a result's column to MoradonTariff
@@ -5024,40 +4524,19 @@ namespace full_binder
 		/// \brief Binds a result's column to EnglishName
 		static void BindEnglishName(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.EnglishName.reset();
-			}
-			else
-			{
-				m.EnglishName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.EnglishName);
 		}
 
 		/// \brief Binds a result's column to KoreanName
 		static void BindKoreanName(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KoreanName.reset();
-			}
-			else
-			{
-				m.KoreanName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.KoreanName);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::Magic& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to BeforeAction
@@ -5221,27 +4700,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType1& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Type
@@ -5336,27 +4801,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType2& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to HitType
@@ -5435,27 +4886,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType3& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Radius
@@ -5565,27 +5002,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType4& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to BuffType
@@ -5785,27 +5208,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType5& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType5& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Type
@@ -5886,14 +5295,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType6& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Size
@@ -6071,27 +5473,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Note
 		static void BindNote(full_model::MagicType7& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Note.reset();
-			}
-			else
-			{
-				m.Note = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Note);
 		}
 
 		/// \brief Binds a result's column to ValidGroup
@@ -6196,27 +5584,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType8& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to Target
@@ -6286,27 +5660,13 @@ namespace full_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(full_model::MagicType9& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to Description
 		static void BindDescription(full_model::MagicType9& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Description.reset();
-			}
-			else
-			{
-				m.Description = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Description);
 		}
 
 		/// \brief Binds a result's column to ValidGroup
@@ -6484,14 +5844,7 @@ namespace full_binder
 		/// \brief Binds a result's column to ItemInfo
 		static void BindItemInfo(full_model::MakeItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemInfo.reset();
-			}
-			else
-			{
-				m.ItemInfo = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ItemInfo);
 		}
 
 		/// \brief Binds a result's column to ItemCode
@@ -7191,131 +6544,61 @@ namespace full_binder
 		/// \brief Binds a result's column to Item1
 		static void BindItem1(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Item1.reset();
-			}
-			else
-			{
-				m.Item1 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.Item1);
 		}
 
 		/// \brief Binds a result's column to Percent1
 		static void BindPercent1(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Percent1.reset();
-			}
-			else
-			{
-				m.Percent1 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent1);
 		}
 
 		/// \brief Binds a result's column to Item2
 		static void BindItem2(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Item2.reset();
-			}
-			else
-			{
-				m.Item2 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.Item2);
 		}
 
 		/// \brief Binds a result's column to Percent2
 		static void BindPercent2(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Percent2.reset();
-			}
-			else
-			{
-				m.Percent2 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent2);
 		}
 
 		/// \brief Binds a result's column to Item3
 		static void BindItem3(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Item3.reset();
-			}
-			else
-			{
-				m.Item3 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.Item3);
 		}
 
 		/// \brief Binds a result's column to Percent3
 		static void BindPercent3(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Percent3.reset();
-			}
-			else
-			{
-				m.Percent3 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent3);
 		}
 
 		/// \brief Binds a result's column to Item4
 		static void BindItem4(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Item4.reset();
-			}
-			else
-			{
-				m.Item4 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.Item4);
 		}
 
 		/// \brief Binds a result's column to Percent4
 		static void BindPercent4(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Percent4.reset();
-			}
-			else
-			{
-				m.Percent4 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent4);
 		}
 
 		/// \brief Binds a result's column to Item5
 		static void BindItem5(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Item5.reset();
-			}
-			else
-			{
-				m.Item5 = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.Item5);
 		}
 
 		/// \brief Binds a result's column to Percent5
 		static void BindPercent5(full_model::MonsterItemTest& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Percent5.reset();
-			}
-			else
-			{
-				m.Percent5 = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.Percent5);
 		}
 
 	};
@@ -7425,7 +6708,9 @@ namespace full_binder
 		/// \brief Binds a result's column to WriteTime
 		static void BindWriteTime(full_model::ProgramListLog& m, const nanodbc::result& result, short colIndex)
 		{
-			m.WriteTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.WriteTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 	};
@@ -7532,46 +6817,33 @@ namespace full_binder
 		/// \brief Binds a result's column to BorrowerCharId
 		static void BindBorrowerCharId(full_model::RentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.BorrowerCharId.reset();
-			}
-			else
-			{
-				m.BorrowerCharId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.BorrowerCharId);
 		}
 
 		/// \brief Binds a result's column to BorrowerAccountId
 		static void BindBorrowerAccountId(full_model::RentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.BorrowerAccountId.reset();
-			}
-			else
-			{
-				m.BorrowerAccountId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.BorrowerAccountId);
 		}
 
 		/// \brief Binds a result's column to LendTime
 		static void BindLendTime(full_model::RentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.LendTime.reset();
-			}
+			std::optional<nanodbc::timestamp> tmpValue;
+			result.get_ref<std::optional<nanodbc::timestamp>>(colIndex, tmpValue);
+
+			if (tmpValue.has_value())
+				m.LendTime = binderUtil::CTimeFromDbTime(*tmpValue);
 			else
-			{
-			m.LendTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
-			}
+				m.LendTime.reset();
 		}
 
 		/// \brief Binds a result's column to RegisterTime
 		static void BindRegisterTime(full_model::RentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RegisterTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.RegisterTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 	};
@@ -7678,46 +6950,33 @@ namespace full_binder
 		/// \brief Binds a result's column to BorrowerCharId
 		static void BindBorrowerCharId(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.BorrowerCharId.reset();
-			}
-			else
-			{
-				m.BorrowerCharId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.BorrowerCharId);
 		}
 
 		/// \brief Binds a result's column to BorrowerAccountId
 		static void BindBorrowerAccountId(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.BorrowerAccountId.reset();
-			}
-			else
-			{
-				m.BorrowerAccountId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.BorrowerAccountId);
 		}
 
 		/// \brief Binds a result's column to LendTime
 		static void BindLendTime(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.LendTime.reset();
-			}
+			std::optional<nanodbc::timestamp> tmpValue;
+			result.get_ref<std::optional<nanodbc::timestamp>>(colIndex, tmpValue);
+
+			if (tmpValue.has_value())
+				m.LendTime = binderUtil::CTimeFromDbTime(*tmpValue);
 			else
-			{
-			m.LendTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
-			}
+				m.LendTime.reset();
 		}
 
 		/// \brief Binds a result's column to RegisterTime
 		static void BindRegisterTime(full_model::RentalItemList& m, const nanodbc::result& result, short colIndex)
 		{
-			m.RegisterTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.RegisterTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 	};
@@ -7917,7 +7176,9 @@ namespace full_binder
 		/// \brief Binds a result's column to PremiumExpire
 		static void BindPremiumExpire(full_model::TbUser& m, const nanodbc::result& result, short colIndex)
 		{
-			m.PremiumExpire = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.PremiumExpire = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 	};
@@ -8042,7 +7303,9 @@ namespace full_binder
 		/// \brief Binds a result's column to EditorTime
 		static void BindEditorTime(full_model::UserEditor& m, const nanodbc::result& result, short colIndex)
 		{
-			m.EditorTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.EditorTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 	};
@@ -8132,14 +7395,13 @@ namespace full_binder
 		/// \brief Binds a result's column to UpdateTime
 		static void BindUpdateTime(full_model::UserEditorItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.UpdateTime.reset();
-			}
+			std::optional<nanodbc::timestamp> tmpValue;
+			result.get_ref<std::optional<nanodbc::timestamp>>(colIndex, tmpValue);
+
+			if (tmpValue.has_value())
+				m.UpdateTime = binderUtil::CTimeFromDbTime(*tmpValue);
 			else
-			{
-			m.UpdateTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
-			}
+				m.UpdateTime.reset();
 		}
 
 	};
@@ -8186,79 +7448,37 @@ namespace full_binder
 		/// \brief Binds a result's column to ElmoUserId
 		static void BindElmoUserId(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ElmoUserId.reset();
-			}
-			else
-			{
-				m.ElmoUserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoUserId);
 		}
 
 		/// \brief Binds a result's column to ElmoKnightsName
 		static void BindElmoKnightsName(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ElmoKnightsName.reset();
-			}
-			else
-			{
-				m.ElmoKnightsName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoKnightsName);
 		}
 
 		/// \brief Binds a result's column to ElmoLoyalty
 		static void BindElmoLoyalty(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ElmoLoyalty.reset();
-			}
-			else
-			{
-				m.ElmoLoyalty = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ElmoLoyalty);
 		}
 
 		/// \brief Binds a result's column to KarusUserId
 		static void BindKarusUserId(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KarusUserId.reset();
-			}
-			else
-			{
-				m.KarusUserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.KarusUserId);
 		}
 
 		/// \brief Binds a result's column to KarusKnightsName
 		static void BindKarusKnightsName(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KarusKnightsName.reset();
-			}
-			else
-			{
-				m.KarusKnightsName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.KarusKnightsName);
 		}
 
 		/// \brief Binds a result's column to KarusLoyalty
 		static void BindKarusLoyalty(full_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KarusLoyalty.reset();
-			}
-			else
-			{
-				m.KarusLoyalty = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.KarusLoyalty);
 		}
 
 		/// \brief Binds a result's column to Money
@@ -8320,27 +7540,13 @@ namespace full_binder
 		/// \brief Binds a result's column to ElmoUserId
 		static void BindElmoUserId(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ElmoUserId.reset();
-			}
-			else
-			{
-				m.ElmoUserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoUserId);
 		}
 
 		/// \brief Binds a result's column to ElmoLoyaltyMonthly
 		static void BindElmoLoyaltyMonthly(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ElmoLoyaltyMonthly.reset();
-			}
-			else
-			{
-				m.ElmoLoyaltyMonthly = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ElmoLoyaltyMonthly);
 		}
 
 		/// \brief Binds a result's column to ElmoCheck
@@ -8358,27 +7564,13 @@ namespace full_binder
 		/// \brief Binds a result's column to KarusUserId
 		static void BindKarusUserId(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KarusUserId.reset();
-			}
-			else
-			{
-				m.KarusUserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.KarusUserId);
 		}
 
 		/// \brief Binds a result's column to KarusLoyaltyMonthly
 		static void BindKarusLoyaltyMonthly(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KarusLoyaltyMonthly.reset();
-			}
-			else
-			{
-				m.KarusLoyaltyMonthly = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.KarusLoyaltyMonthly);
 		}
 
 		/// \brief Binds a result's column to KarusCheck
@@ -8396,7 +7588,9 @@ namespace full_binder
 		/// \brief Binds a result's column to UpdateDate
 		static void BindUpdateDate(full_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			m.UpdateDate = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.UpdateDate = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 	};
@@ -8501,27 +7695,25 @@ namespace full_binder
 		/// \brief Binds a result's column to RentalTimestamp
 		static void BindRentalTimestamp(full_model::UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.RentalTimestamp.reset();
-			}
+			std::optional<nanodbc::timestamp> tmpValue;
+			result.get_ref<std::optional<nanodbc::timestamp>>(colIndex, tmpValue);
+
+			if (tmpValue.has_value())
+				m.RentalTimestamp = binderUtil::CTimeFromDbTime(*tmpValue);
 			else
-			{
-			m.RentalTimestamp = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
-			}
+				m.RentalTimestamp.reset();
 		}
 
 		/// \brief Binds a result's column to RegisterTime
 		static void BindRegisterTime(full_model::UserRentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.RegisterTime.reset();
-			}
+			std::optional<nanodbc::timestamp> tmpValue;
+			result.get_ref<std::optional<nanodbc::timestamp>>(colIndex, tmpValue);
+
+			if (tmpValue.has_value())
+				m.RegisterTime = binderUtil::CTimeFromDbTime(*tmpValue);
 			else
-			{
-			m.RegisterTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
-			}
+				m.RegisterTime.reset();
 		}
 
 	};
@@ -8910,14 +8102,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Bind
 		static void BindBind(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Bind.reset();
-			}
-			else
-			{
-				m.Bind = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.Bind);
 		}
 
 		/// \brief Binds a result's column to PosX
@@ -8947,40 +8132,19 @@ namespace full_binder
 		/// \brief Binds a result's column to SkillData
 		static void BindSkillData(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.SkillData.reset();
-			}
-			else
-			{
-				m.SkillData = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.SkillData);
 		}
 
 		/// \brief Binds a result's column to ItemData
 		static void BindItemData(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemData.reset();
-			}
-			else
-			{
-				m.ItemData = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemData);
 		}
 
 		/// \brief Binds a result's column to Serial
 		static void BindSerial(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Serial.reset();
-			}
-			else
-			{
-				m.Serial = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.Serial);
 		}
 
 		/// \brief Binds a result's column to QuestCount
@@ -8992,14 +8156,7 @@ namespace full_binder
 		/// \brief Binds a result's column to QuestData
 		static void BindQuestData(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.QuestData.reset();
-			}
-			else
-			{
-				m.QuestData = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.QuestData);
 		}
 
 		/// \brief Binds a result's column to MannerPoint
@@ -9017,20 +8174,21 @@ namespace full_binder
 		/// \brief Binds a result's column to CreateTime
 		static void BindCreateTime(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			m.CreateTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.CreateTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 		/// \brief Binds a result's column to UpdateTime
 		static void BindUpdateTime(full_model::UserData& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.UpdateTime.reset();
-			}
+			std::optional<nanodbc::timestamp> tmpValue;
+			result.get_ref<std::optional<nanodbc::timestamp>>(colIndex, tmpValue);
+
+			if (tmpValue.has_value())
+				m.UpdateTime = binderUtil::CTimeFromDbTime(*tmpValue);
 			else
-			{
-			m.UpdateTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
-			}
+				m.UpdateTime.reset();
 		}
 
 	};
@@ -9168,27 +8326,13 @@ namespace full_binder
 		/// \brief Binds a result's column to ItemData
 		static void BindItemData(full_model::Warehouse& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemData.reset();
-			}
-			else
-			{
-				m.ItemData = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemData);
 		}
 
 		/// \brief Binds a result's column to Serial
 		static void BindSerial(full_model::Warehouse& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Serial.reset();
-			}
-			else
-			{
-				m.Serial = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.Serial);
 		}
 
 	};
@@ -9254,59 +8398,33 @@ namespace full_binder
 		/// \brief Binds a result's column to BuyTime
 		static void BindBuyTime(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			m.BuyTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.BuyTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 		/// \brief Binds a result's column to ImgFileName
 		static void BindImgFileName(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ImgFileName.reset();
-			}
-			else
-			{
-				m.ImgFileName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ImgFileName);
 		}
 
 		/// \brief Binds a result's column to ItemName
 		static void BindItemName(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemName.reset();
-			}
-			else
-			{
-				m.ItemName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ItemName);
 		}
 
 		/// \brief Binds a result's column to Price
 		static void BindPrice(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Price.reset();
-			}
-			else
-			{
-				m.Price = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.Price);
 		}
 
 		/// \brief Binds a result's column to PayType
 		static void BindPayType(full_model::WebItemMall& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.PayType.reset();
-			}
-			else
-			{
-				m.PayType = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.PayType);
 		}
 
 	};
@@ -9372,59 +8490,33 @@ namespace full_binder
 		/// \brief Binds a result's column to BuyTime
 		static void BindBuyTime(full_model::WebItemMallLog& m, const nanodbc::result& result, short colIndex)
 		{
-			m.BuyTime = binderUtil::CTimeFromDbTime(result.get<nanodbc::timestamp>(colIndex));
+			nanodbc::timestamp tmpValue = {};
+			result.get_ref<nanodbc::timestamp>(colIndex, tmpValue);
+			m.BuyTime = binderUtil::CTimeFromDbTime(tmpValue);
 		}
 
 		/// \brief Binds a result's column to ImgFileName
 		static void BindImgFileName(full_model::WebItemMallLog& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ImgFileName.reset();
-			}
-			else
-			{
-				m.ImgFileName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ImgFileName);
 		}
 
 		/// \brief Binds a result's column to ItemName
 		static void BindItemName(full_model::WebItemMallLog& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemName.reset();
-			}
-			else
-			{
-				m.ItemName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ItemName);
 		}
 
 		/// \brief Binds a result's column to Price
 		static void BindPrice(full_model::WebItemMallLog& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Price.reset();
-			}
-			else
-			{
-				m.Price = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.Price);
 		}
 
 		/// \brief Binds a result's column to PayType
 		static void BindPayType(full_model::WebItemMallLog& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.PayType.reset();
-			}
-			else
-			{
-				m.PayType = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.PayType);
 		}
 
 	};
@@ -9541,14 +8633,7 @@ namespace full_binder
 		/// \brief Binds a result's column to Bz
 		static void BindBz(full_model::ZoneInfo& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Bz.reset();
-			}
-			else
-			{
-				m.Bz = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Bz);
 		}
 
 	};

@@ -1328,53 +1328,25 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to ViceChief1
 		static void BindViceChief1(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ViceChief1.reset();
-			}
-			else
-			{
-				m.ViceChief1 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief1);
 		}
 
 		/// \brief Binds a result's column to ViceChief2
 		static void BindViceChief2(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ViceChief2.reset();
-			}
-			else
-			{
-				m.ViceChief2 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief2);
 		}
 
 		/// \brief Binds a result's column to ViceChief3
 		static void BindViceChief3(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ViceChief3.reset();
-			}
-			else
-			{
-				m.ViceChief3 = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ViceChief3);
 		}
 
 		/// \brief Binds a result's column to EnemyName
 		static void BindEnemyName(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.EnemyName.reset();
-			}
-			else
-			{
-				m.EnemyName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.EnemyName);
 		}
 
 		/// \brief Binds a result's column to OldWarResult
@@ -1434,14 +1406,7 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to Mark
 		static void BindMark(ebenezer_model::Knights& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Mark.reset();
-			}
-			else
-			{
-				m.Mark = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.Mark);
 		}
 
 		/// \brief Binds a result's column to SiegeFlag
@@ -1799,14 +1764,7 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to ChallengeList
 		static void BindChallengeList(ebenezer_model::KnightsSiegeWarfare& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ChallengeList.reset();
-			}
-			else
-			{
-				m.ChallengeList = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ChallengeList);
 		}
 
 		/// \brief Binds a result's column to MoradonTariff
@@ -3338,27 +3296,13 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to BorrowerCharId
 		static void BindBorrowerCharId(ebenezer_model::RentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.BorrowerCharId.reset();
-			}
-			else
-			{
-				m.BorrowerCharId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.BorrowerCharId);
 		}
 
 		/// \brief Binds a result's column to BorrowerAccountId
 		static void BindBorrowerAccountId(ebenezer_model::RentalItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.BorrowerAccountId.reset();
-			}
-			else
-			{
-				m.BorrowerAccountId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.BorrowerAccountId);
 		}
 
 	};
@@ -3525,27 +3469,13 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to ElmoUserId
 		static void BindElmoUserId(ebenezer_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ElmoUserId.reset();
-			}
-			else
-			{
-				m.ElmoUserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoUserId);
 		}
 
 		/// \brief Binds a result's column to KarusUserId
 		static void BindKarusUserId(ebenezer_model::UserKnightsRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KarusUserId.reset();
-			}
-			else
-			{
-				m.KarusUserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.KarusUserId);
 		}
 
 		/// \brief Binds a result's column to Money
@@ -3587,27 +3517,13 @@ namespace ebenezer_binder
 		/// \brief Binds a result's column to ElmoUserId
 		static void BindElmoUserId(ebenezer_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ElmoUserId.reset();
-			}
-			else
-			{
-				m.ElmoUserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.ElmoUserId);
 		}
 
 		/// \brief Binds a result's column to KarusUserId
 		static void BindKarusUserId(ebenezer_model::UserPersonalRank& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.KarusUserId.reset();
-			}
-			else
-			{
-				m.KarusUserId = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.KarusUserId);
 		}
 
 		/// \brief Binds a result's column to Salary

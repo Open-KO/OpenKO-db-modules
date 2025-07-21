@@ -84,14 +84,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(aiserver_model::Monster& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to PictureId
@@ -530,14 +523,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Name
 		static void BindName(aiserver_model::Npc& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Name.reset();
-			}
-			else
-			{
-				m.Name = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Name);
 		}
 
 		/// \brief Binds a result's column to PictureId
@@ -841,92 +827,43 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to ChangeItem
 		static void BindChangeItem(aiserver_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ChangeItem.reset();
-			}
-			else
-			{
-				m.ChangeItem = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ChangeItem);
 		}
 
 		/// \brief Binds a result's column to ChangeId
 		static void BindChangeId(aiserver_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ChangeId.reset();
-			}
-			else
-			{
-				m.ChangeId = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.ChangeId);
 		}
 
 		/// \brief Binds a result's column to MoveItem
 		static void BindMoveItem(aiserver_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveItem.reset();
-			}
-			else
-			{
-				m.MoveItem = result.get<int32_t>(colIndex);
-			}
+			result.get_ref<std::optional<int32_t>>(colIndex, m.MoveItem);
 		}
 
 		/// \brief Binds a result's column to MoveMinX
 		static void BindMoveMinX(aiserver_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveMinX.reset();
-			}
-			else
-			{
-				m.MoveMinX = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.MoveMinX);
 		}
 
 		/// \brief Binds a result's column to MoveMinY
 		static void BindMoveMinY(aiserver_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveMinY.reset();
-			}
-			else
-			{
-				m.MoveMinY = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.MoveMinY);
 		}
 
 		/// \brief Binds a result's column to MoveMaxX
 		static void BindMoveMaxX(aiserver_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveMaxX.reset();
-			}
-			else
-			{
-				m.MoveMaxX = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.MoveMaxX);
 		}
 
 		/// \brief Binds a result's column to MoveMaxY
 		static void BindMoveMaxY(aiserver_model::NpcMoveItem& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.MoveMaxY.reset();
-			}
-			else
-			{
-				m.MoveMaxY = result.get<int16_t>(colIndex);
-			}
+			result.get_ref<std::optional<int16_t>>(colIndex, m.MoveMaxY);
 		}
 
 	};
@@ -1086,14 +1023,7 @@ namespace aiserver_binder
 		/// \brief Binds a result's column to Path
 		static void BindPath(aiserver_model::NpcPos& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Path.reset();
-			}
-			else
-			{
-				m.Path = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.Path);
 		}
 
 	};

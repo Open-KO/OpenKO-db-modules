@@ -47,14 +47,7 @@ namespace aujard_binder
 		/// \brief Binds a result's column to UserName
 		static void BindUserName(aujard_model::Battle& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.UserName.reset();
-			}
-			else
-			{
-				m.UserName = result.get<std::string>(colIndex);
-			}
+			result.get_ref<std::optional<std::string>>(colIndex, m.UserName);
 		}
 
 	};
@@ -295,27 +288,13 @@ namespace aujard_binder
 		/// \brief Binds a result's column to ItemData
 		static void BindItemData(aujard_model::Warehouse& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.ItemData.reset();
-			}
-			else
-			{
-				m.ItemData = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.ItemData);
 		}
 
 		/// \brief Binds a result's column to Serial
 		static void BindSerial(aujard_model::Warehouse& m, const nanodbc::result& result, short colIndex)
 		{
-			if (result.is_null(colIndex))
-			{
-				m.Serial.reset();
-			}
-			else
-			{
-				m.Serial = result.get<std::vector<uint8_t>>(colIndex);
-			}
+			result.get_ref<std::optional<std::vector<uint8_t>>>(colIndex, m.Serial);
 		}
 
 	};
