@@ -133,6 +133,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class AccountLogin
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" ACCOUNT_LOGIN MANUAL_TODO
 	export class AccountLogin : public StoredProcedure
 	{
 	public:
@@ -183,6 +184,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class AccountLogout
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" ACCOUNT_LOGOUT MANUAL_TODO
 	export class AccountLogout : public StoredProcedure
 	{
 	public:
@@ -235,6 +237,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class ChangeCastleCommerce
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CHANGE_CASTLE_COMMERCE MANUAL_TODO
 	export class ChangeCastleCommerce : public StoredProcedure
 	{
 	public:
@@ -285,6 +288,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class ChangeCopySerialItem
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CHANGE_COPY_SERIAL_ITEM MANUAL_TODO
 	export class ChangeCopySerialItem : public StoredProcedure
 	{
 	public:
@@ -322,6 +326,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class ChangeCopySerialItemTable
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CHANGE_COPY_SERIAL_ITEM_TABLE MANUAL_TODO
 	export class ChangeCopySerialItemTable : public StoredProcedure
 	{
 	public:
@@ -359,6 +364,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class ChangeKnightsCape
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CHANGE_KNIGHTS_CAPE MANUAL_TODO
 	export class ChangeKnightsCape : public StoredProcedure
 	{
 	public:
@@ -402,6 +408,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class CheckKnights
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CHECK_KNIGHTS MANUAL_TODO
 	export class CheckKnights : public StoredProcedure
 	{
 	public:
@@ -439,6 +446,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class ClearRemainUsers
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CLEAR_REMAIN_USERS MANUAL_TODO
 	export class ClearRemainUsers : public StoredProcedure
 	{
 	public:
@@ -481,6 +489,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class CreateKnights
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CREATE_KNIGHTS MANUAL_TODO
 	export class CreateKnights : public StoredProcedure
 	{
 	public:
@@ -535,6 +544,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class CreateKnights2
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CREATE_KNIGHTS2 MANUAL_TODO
 	export class CreateKnights2 : public StoredProcedure
 	{
 	public:
@@ -589,6 +599,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class CreateNewChar
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" CREATE_NEW_CHAR MANUAL_TODO
 	export class CreateNewChar : public StoredProcedure
 	{
 	public:
@@ -653,6 +664,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class DeleteFriendList
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" DELETE_FRIEND_LIST MANUAL_TODO
 	export class DeleteFriendList : public StoredProcedure
 	{
 	public:
@@ -703,6 +715,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class DeleteKnights
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" DELETE_KNIGHTS MANUAL_TODO
 	export class DeleteKnights : public StoredProcedure
 	{
 	public:
@@ -752,6 +765,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class EditerKnights
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" EDITER_KNIGHTS MANUAL_TODO
 	export class EditerKnights : public StoredProcedure
 	{
 	public:
@@ -789,6 +803,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class ExecKnightsUser
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" EXEC_KNIGHTS_USER MANUAL_TODO
 	export class ExecKnightsUser : public StoredProcedure
 	{
 	public:
@@ -826,6 +841,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class GivePremium
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" GIVE_PREMIUM MANUAL_TODO
 	export class GivePremium : public StoredProcedure
 	{
 	public:
@@ -870,6 +886,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class InsertFriendList
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" INSERT_FRIEND_LIST MANUAL_TODO
 	export class InsertFriendList : public StoredProcedure
 	{
 	public:
@@ -920,6 +937,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class InsertHacktoolUser
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" INSERT_HACKTOOL_USER MANUAL_TODO
 	export class InsertHacktoolUser : public StoredProcedure
 	{
 	public:
@@ -964,6 +982,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class InsertProgramCheckUser
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" INSERT_PROGRAM_CHECK_USER MANUAL_TODO
 	export class InsertProgramCheckUser : public StoredProcedure
 	{
 	public:
@@ -1008,6 +1027,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingCandidacyNoticeBoardProc
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_CANDIDACY_NOTICE_BOARD_PROC MANUAL_TODO
 	export class KingCandidacyNoticeBoardProc : public StoredProcedure
 	{
 	public:
@@ -1054,6 +1074,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingCandidacyRecommend
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_CANDIDACY_RECOMMEND MANUAL_TODO
 	export class KingCandidacyRecommend : public StoredProcedure
 	{
 	public:
@@ -1106,6 +1127,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingChangeTax
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_CHANGE_TAX MANUAL_TODO
 	export class KingChangeTax : public StoredProcedure
 	{
 	public:
@@ -1157,6 +1179,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingElectionProc
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_ELECTION_PROC MANUAL_TODO
 	export class KingElectionProc : public StoredProcedure
 	{
 	public:
@@ -1210,6 +1233,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingImpeachmentElection
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_IMPEACHMENT_ELECTION MANUAL_TODO
 	export class KingImpeachmentElection : public StoredProcedure
 	{
 	public:
@@ -1263,6 +1287,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingImpeachmentRequestElection
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_IMPEACHMENT_REQUEST_ELECTION MANUAL_TODO
 	export class KingImpeachmentRequestElection : public StoredProcedure
 	{
 	public:
@@ -1307,6 +1332,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingImpeachmentResult
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_IMPEACHMENT_RESULT MANUAL_TODO
 	export class KingImpeachmentResult : public StoredProcedure
 	{
 	public:
@@ -1357,6 +1383,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingInsertPrizeEvent
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_INSERT_PRIZE_EVENT MANUAL_TODO
 	export class KingInsertPrizeEvent : public StoredProcedure
 	{
 	public:
@@ -1403,6 +1430,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingUpdateElectionList
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_UPDATE_ELECTION_LIST MANUAL_TODO
 	export class KingUpdateElectionList : public StoredProcedure
 	{
 	public:
@@ -1451,6 +1479,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingUpdateElectionSchdule
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_UPDATE_ELECTION_SCHDULE MANUAL_TODO
 	export class KingUpdateElectionSchdule : public StoredProcedure
 	{
 	public:
@@ -1501,6 +1530,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingUpdateElectionStatus
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_UPDATE_ELECTION_STATUS MANUAL_TODO
 	export class KingUpdateElectionStatus : public StoredProcedure
 	{
 	public:
@@ -1544,6 +1574,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingUpdateImpeachmentStatus
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_UPDATE_IMPEACHMENT_STATUS MANUAL_TODO
 	export class KingUpdateImpeachmentStatus : public StoredProcedure
 	{
 	public:
@@ -1595,6 +1626,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KingUpdateNoahOrExpEvent
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KING_UPDATE_NOAH_OR_EXP_EVENT MANUAL_TODO
 	export class KingUpdateNoahOrExpEvent : public StoredProcedure
 	{
 	public:
@@ -1645,6 +1677,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class KnightsRatingUpdate
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" KNIGHTS_RATING_UPDATE MANUAL_TODO
 	export class KnightsRatingUpdate : public StoredProcedure
 	{
 	public:
@@ -1682,6 +1715,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class LoadAccountCharid
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" LOAD_ACCOUNT_CHARID MANUAL_TODO
 	export class LoadAccountCharid : public StoredProcedure
 	{
 	public:
@@ -1731,6 +1765,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class LoadCharInfo
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" LOAD_CHAR_INFO MANUAL_TODO
 	export class LoadCharInfo : public StoredProcedure
 	{
 	public:
@@ -1780,6 +1815,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class LoadKnightsMembers
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" LOAD_KNIGHTS_MEMBERS MANUAL_TODO
 	export class LoadKnightsMembers : public StoredProcedure
 	{
 	public:
@@ -1822,6 +1858,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class LoadPremiumServiceUser
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" LOAD_PREMIUM_SERVICE_USER MANUAL_TODO
 	export class LoadPremiumServiceUser : public StoredProcedure
 	{
 	public:
@@ -1872,6 +1909,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class LoadRentalData
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" LOAD_RENTAL_DATA MANUAL_TODO
 	export class LoadRentalData : public StoredProcedure
 	{
 	public:
@@ -1914,6 +1952,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class LoadSavedMagic
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" LOAD_SAVED_MAGIC MANUAL_TODO
 	export class LoadSavedMagic : public StoredProcedure
 	{
 	public:
@@ -1963,6 +2002,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class LoadUserData
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" LOAD_USER_DATA MANUAL_TODO
 	export class LoadUserData : public StoredProcedure
 	{
 	public:
@@ -2013,6 +2053,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class LoadWebItemmall
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" LOAD_WEB_ITEMMALL MANUAL_TODO
 	export class LoadWebItemmall : public StoredProcedure
 	{
 	public:
@@ -2055,6 +2096,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class NationSelect
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" NATION_SELECT MANUAL_TODO
 	export class NationSelect : public StoredProcedure
 	{
 	public:
@@ -2105,6 +2147,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class ProcInsertCurrentuser
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" PROC_INSERT_CURRENTUSER MANUAL_TODO
 	export class ProcInsertCurrentuser : public StoredProcedure
 	{
 	public:
@@ -2159,6 +2202,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class RankKnights
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" RANK_KNIGHTS MANUAL_TODO
 	export class RankKnights : public StoredProcedure
 	{
 	public:
@@ -2196,6 +2240,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class RentalItemCancel
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" RENTAL_ITEM_CANCEL MANUAL_TODO
 	export class RentalItemCancel : public StoredProcedure
 	{
 	public:
@@ -2249,6 +2294,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class RentalItemDestory
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" RENTAL_ITEM_DESTORY MANUAL_TODO
 	export class RentalItemDestory : public StoredProcedure
 	{
 	public:
@@ -2303,6 +2349,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class RentalItemDurabilityUpdate
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" RENTAL_ITEM_DURABILITY_UPDATE MANUAL_TODO
 	export class RentalItemDurabilityUpdate : public StoredProcedure
 	{
 	public:
@@ -2346,6 +2393,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class RentalItemLend
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" RENTAL_ITEM_LEND MANUAL_TODO
 	export class RentalItemLend : public StoredProcedure
 	{
 	public:
@@ -2399,6 +2447,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class RentalItemRegister
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" RENTAL_ITEM_REGISTER MANUAL_TODO
 	export class RentalItemRegister : public StoredProcedure
 	{
 	public:
@@ -2461,6 +2510,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class ResetLoyaltyMonthly
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" RESET_LOYALTY_MONTHLY MANUAL_TODO
 	export class ResetLoyaltyMonthly : public StoredProcedure
 	{
 	public:
@@ -2498,6 +2548,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class SkillshortcutLoad
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" SKILLSHORTCUT_LOAD MANUAL_TODO
 	export class SkillshortcutLoad : public StoredProcedure
 	{
 	public:
@@ -2540,6 +2591,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class SkillshortcutSave
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" SKILLSHORTCUT_SAVE MANUAL_TODO
 	export class SkillshortcutSave : public StoredProcedure
 	{
 	public:
@@ -2584,6 +2636,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateBattleHero
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_BATTLE_HERO MANUAL_TODO
 	export class UpdateBattleHero : public StoredProcedure
 	{
 	public:
@@ -2631,6 +2684,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateBattleResult
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_BATTLE_RESULT MANUAL_TODO
 	export class UpdateBattleResult : public StoredProcedure
 	{
 	public:
@@ -2675,6 +2729,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateEditorItemData
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_EDITOR_ITEM_DATA MANUAL_TODO
 	export class UpdateEditorItemData : public StoredProcedure
 	{
 	public:
@@ -2727,6 +2782,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateKnights
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_KNIGHTS MANUAL_TODO
 	export class UpdateKnights : public StoredProcedure
 	{
 	public:
@@ -2780,6 +2836,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateKnightsAlliance
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_KNIGHTS_ALLIANCE MANUAL_TODO
 	export class UpdateKnightsAlliance : public StoredProcedure
 	{
 	public:
@@ -2827,6 +2884,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateKnightsMark
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_KNIGHTS_MARK MANUAL_TODO
 	export class UpdateKnightsMark : public StoredProcedure
 	{
 	public:
@@ -2879,6 +2937,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateKnightsWar
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_KNIGHTS_WAR MANUAL_TODO
 	export class UpdateKnightsWar : public StoredProcedure
 	{
 	public:
@@ -2923,6 +2982,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdatePersonalRank
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_PERSONAL_RANK MANUAL_TODO
 	export class UpdatePersonalRank : public StoredProcedure
 	{
 	public:
@@ -2960,6 +3020,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdatePremiumServiceUser
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_PREMIUM_SERVICE_USER MANUAL_TODO
 	export class UpdatePremiumServiceUser : public StoredProcedure
 	{
 	public:
@@ -3010,6 +3071,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateSavedMagic
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_SAVED_MAGIC MANUAL_TODO
 	export class UpdateSavedMagic : public StoredProcedure
 	{
 	public:
@@ -3078,6 +3140,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateSiege
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_SIEGE MANUAL_TODO
 	export class UpdateSiege : public StoredProcedure
 	{
 	public:
@@ -3128,6 +3191,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateSiegeChallenger
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_SIEGE_CHALLENGER MANUAL_TODO
 	export class UpdateSiegeChallenger : public StoredProcedure
 	{
 	public:
@@ -3171,6 +3235,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateSiegeChallenger2
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_SIEGE_CHALLENGER2 MANUAL_TODO
 	export class UpdateSiegeChallenger2 : public StoredProcedure
 	{
 	public:
@@ -3227,6 +3292,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateSiegeDecideChallenger
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_SIEGE_DECIDE_CHALLENGER MANUAL_TODO
 	export class UpdateSiegeDecideChallenger : public StoredProcedure
 	{
 	public:
@@ -3282,6 +3348,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateUserData
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_USER_DATA MANUAL_TODO
 	export class UpdateUserData : public StoredProcedure
 	{
 	public:
@@ -3373,6 +3440,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UpdateWarehouse
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" UPDATE_WAREHOUSE MANUAL_TODO
 	export class UpdateWarehouse : public StoredProcedure
 	{
 	public:
@@ -3420,6 +3488,7 @@ namespace storedProc
 
 	/// \brief MANUAL_TODO
 	/// \class UserKnightsRatingUpdate
+	/// \xrefitem dbproc_GAME "GAME Database Stored Procedures" "GAME Database Stored Procedures" USER_KNIGHTS_RATING_UPDATE MANUAL_TODO
 	export class UserKnightsRatingUpdate : public StoredProcedure
 	{
 	public:
