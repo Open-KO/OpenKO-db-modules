@@ -1,10 +1,10 @@
 var classfull__model_1_1TbUser =
 [
     [ "MapKey", "classfull__model_1_1TbUser.html#acec139e1831d5cf29a8f690390250bad", null ],
-    [ "AccountId", "classfull__model_1_1TbUser.html#a5abf724a0aa86b709b6169cd2005fdc8", null ],
-    [ "Authority", "classfull__model_1_1TbUser.html#a522b1274ae58b3cb143121494dc10114", null ],
-    [ "Email", "classfull__model_1_1TbUser.html#a6a2b134186226a8ed47cdd11c9711ea8", null ],
-    [ "Password", "classfull__model_1_1TbUser.html#a43401adc7488e5c476a14a40f7af0b56", null ],
-    [ "PremiumExpire", "classfull__model_1_1TbUser.html#a95f60a58cdcd1f1cb8238c5b5f464642", null ],
-    [ "SocNo", "classfull__model_1_1TbUser.html#afa6ef9fc75a4433566102ecf8d507939", null ]
+    [ "AccountId", "classfull__model_1_1TbUser.html#ab6455acc874dc1758721d990dcc8999a", null ],
+    [ "Authority", "classfull__model_1_1TbUser.html#a7510782c8d6401136a9270a446b2b34d", null ],
+    [ "Email", "classfull__model_1_1TbUser.html#a193acde39abe5285b82042436aa8b896", null ],
+    [ "Password", "classfull__model_1_1TbUser.html#aa63a8fcac67682f2631ee1979d272219", null ],
+    [ "PremiumExpire", "classfull__model_1_1TbUser.html#a0a4c155460d59b723c360defff9712bf", null ],
+    [ "SocNo", "classfull__model_1_1TbUser.html#af021123f412f73747b5e4543ef59a440", null ]
 ];

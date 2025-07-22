@@ -1,14 +1,14 @@
 var classfull__model_1_1ItemUpgrade =
 [
     [ "MapKey", "classfull__model_1_1ItemUpgrade.html#a1fb55eafd238986491ab0588d08fd4f0", null ],
-    [ "GenRate", "classfull__model_1_1ItemUpgrade.html#ab9e1aed6e0ad1ab3f505fdd7261a4d4f", null ],
-    [ "GiveItem", "classfull__model_1_1ItemUpgrade.html#aafa1ccd1d88efd78ea05d1377cc2c7e2", null ],
-    [ "Index", "classfull__model_1_1ItemUpgrade.html#aabcaaa82a6664de92f1334f5de6dd41c", null ],
-    [ "Name", "classfull__model_1_1ItemUpgrade.html#a14bd33b371507f6acd95cf0b1fe78ca8", null ],
-    [ "Note", "classfull__model_1_1ItemUpgrade.html#aa3cd72312d698a083786932484572038", null ],
-    [ "NpcNumber", "classfull__model_1_1ItemUpgrade.html#a5e578b9210b0dd967fba7f2505f9e7af", null ],
-    [ "OriginItem", "classfull__model_1_1ItemUpgrade.html#a4b014f8f9ce640cdfe8996bb96e368fd", null ],
-    [ "OriginType", "classfull__model_1_1ItemUpgrade.html#a8b19298752e694f8c3b703414f595dfd", null ],
-    [ "RateType", "classfull__model_1_1ItemUpgrade.html#a522d0c36825bf0ddc4ff00e9c8cfd9ed", null ],
-    [ "RequiredCoins", "classfull__model_1_1ItemUpgrade.html#ab266942dfced398e900b7f25cf3b8f38", null ]
+    [ "GenRate", "classfull__model_1_1ItemUpgrade.html#ac4095a4034a12bf741a143be31f85f4d", null ],
+    [ "GiveItem", "classfull__model_1_1ItemUpgrade.html#a8ac8c077bd0fbfc19216ca7020d7272a", null ],
+    [ "Index", "classfull__model_1_1ItemUpgrade.html#ac22b6ded8ba2b2aeaf54eb2dd84e2f92", null ],
+    [ "Name", "classfull__model_1_1ItemUpgrade.html#aee92afe31adb11ed8a07f770901abe80", null ],
+    [ "Note", "classfull__model_1_1ItemUpgrade.html#ac2d927f1e652343c2c1f4657fea2290f", null ],
+    [ "NpcNumber", "classfull__model_1_1ItemUpgrade.html#a9ce972c029099792d87d45ac6a60c479", null ],
+    [ "OriginItem", "classfull__model_1_1ItemUpgrade.html#a07ed2dfb33c4aecef395974f54eae654", null ],
+    [ "OriginType", "classfull__model_1_1ItemUpgrade.html#aaa9a25a8f270f7ba73a0e485bbbf9b2c", null ],
+    [ "RateType", "classfull__model_1_1ItemUpgrade.html#a40d2da149308ca81f78b23dc844d6392", null ],
+    [ "RequiredCoins", "classfull__model_1_1ItemUpgrade.html#a7da9996cb0095cb7490f27f8d47ea46f", null ]
 ];

@@ -1,8 +1,8 @@
 var classebenezer__model_1_1KnightsAlliance =
 [
     [ "MapKey", "classebenezer__model_1_1KnightsAlliance.html#a9bcf372936e7d87aaa87ce15e8897224", null ],
-    [ "MainAllianceKnights", "classebenezer__model_1_1KnightsAlliance.html#a3a0d68daeb91a39f29db1613e5ecc013", null ],
-    [ "MercenaryClan1", "classebenezer__model_1_1KnightsAlliance.html#a469c7c977ad66061ee1cfbab14ad9928", null ],
-    [ "MercenaryClan2", "classebenezer__model_1_1KnightsAlliance.html#ac10d8e5a78a042879f0b96deab0521fc", null ],
-    [ "SubAllianceKnights", "classebenezer__model_1_1KnightsAlliance.html#a780df48cc840cc82e818ffd0a7ec11b3", null ]
+    [ "MainAllianceKnights", "classebenezer__model_1_1KnightsAlliance.html#ab2a0df27cca879269508a9c7e3e403f1", null ],
+    [ "MercenaryClan1", "classebenezer__model_1_1KnightsAlliance.html#a69552647c3a70578a32464a5369d1fa8", null ],
+    [ "MercenaryClan2", "classebenezer__model_1_1KnightsAlliance.html#a88b12dc5770b8b4f0d9f84c39190a3b4", null ],
+    [ "SubAllianceKnights", "classebenezer__model_1_1KnightsAlliance.html#afaa3eabfb2537b517ee727378d00f48e", null ]
 ];

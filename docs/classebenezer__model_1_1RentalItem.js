@@ -1,17 +1,17 @@
 var classebenezer__model_1_1RentalItem =
 [
     [ "MapKey", "classebenezer__model_1_1RentalItem.html#acfcd296922072168c7e79baf63eee0c2", null ],
-    [ "BorrowerAccountId", "classebenezer__model_1_1RentalItem.html#a33282c860558f9c0b1cd797ce9815b7e", null ],
-    [ "BorrowerCharId", "classebenezer__model_1_1RentalItem.html#a0771b9e84738277f303320aa98581f5b", null ],
-    [ "Class", "classebenezer__model_1_1RentalItem.html#aee06dbd22125b772f789e0a358be8f3a", null ],
-    [ "Durability", "classebenezer__model_1_1RentalItem.html#abb0773f020bff7ce89cb0a8235b38158", null ],
-    [ "ItemIndex", "classebenezer__model_1_1RentalItem.html#ad65268429a3b382c7f5d034123716206", null ],
-    [ "ItemType", "classebenezer__model_1_1RentalItem.html#a07056fb8c9bfc13f0d7a2330ec31a268", null ],
-    [ "LenderAccountId", "classebenezer__model_1_1RentalItem.html#a472576eaf5a7bbc455f74a878ca00964", null ],
-    [ "LenderCharId", "classebenezer__model_1_1RentalItem.html#a9e96a456a4ee898725d93fbfe8586131", null ],
-    [ "RegType", "classebenezer__model_1_1RentalItem.html#a04cda2fdd22f9c98cf31a3abcfd81df0", null ],
-    [ "RentalIndex", "classebenezer__model_1_1RentalItem.html#a3da7d2b2c6f54d62212f9ceb781763ef", null ],
-    [ "RentalMoney", "classebenezer__model_1_1RentalItem.html#ab9c1b192ecf44dd59748bfd20b1455b2", null ],
-    [ "RentalTime", "classebenezer__model_1_1RentalItem.html#a830531081df63a9b59cab09456fc8ebd", null ],
-    [ "SerialNumber", "classebenezer__model_1_1RentalItem.html#a463c686c55b86d53c8b664e55c5afde0", null ]
+    [ "BorrowerAccountId", "classebenezer__model_1_1RentalItem.html#a377890566f2beb82cceacaf8b576bb61", null ],
+    [ "BorrowerCharId", "classebenezer__model_1_1RentalItem.html#a659f001300c627a1b42e9a870294ae0a", null ],
+    [ "Class", "classebenezer__model_1_1RentalItem.html#a2ce4482da1e8829759236dc2227e8189", null ],
+    [ "Durability", "classebenezer__model_1_1RentalItem.html#afcd7ee9adf290a202bd0d4f3466d1980", null ],
+    [ "ItemIndex", "classebenezer__model_1_1RentalItem.html#a69f1505e8226719ff8d8de2a4cc00825", null ],
+    [ "ItemType", "classebenezer__model_1_1RentalItem.html#a4880890a547b32a6ea15c096ef409a50", null ],
+    [ "LenderAccountId", "classebenezer__model_1_1RentalItem.html#af956dee2d3602227e0c41a436d3d8a55", null ],
+    [ "LenderCharId", "classebenezer__model_1_1RentalItem.html#afa64baf14ca736d29df16e14b95a582d", null ],
+    [ "RegType", "classebenezer__model_1_1RentalItem.html#a2773db522c79799f340b2130110d7a2a", null ],
+    [ "RentalIndex", "classebenezer__model_1_1RentalItem.html#ad757f9c563ab03cfc6a50365ecdb95c9", null ],
+    [ "RentalMoney", "classebenezer__model_1_1RentalItem.html#af7db5aa9a49751bd146fbcc92f75f0d8", null ],
+    [ "RentalTime", "classebenezer__model_1_1RentalItem.html#ac853525bc644ca214bc170fca58cd79d", null ],
+    [ "SerialNumber", "classebenezer__model_1_1RentalItem.html#a671db2af20b524ef4688e01bab3b1361", null ]
 ];

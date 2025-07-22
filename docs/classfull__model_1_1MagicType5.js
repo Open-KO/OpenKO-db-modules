@@ -8,10 +8,10 @@ var classfull__model_1_1MagicType5 =
       [ "Unknown5", "classfull__model_1_1MagicType5.html#a751c23d9e53d6b567ef38fead595521aa9438fee56697232b35b5fddd839f5557", null ]
     ] ],
     [ "MapKey", "classfull__model_1_1MagicType5.html#ac01c9f9160948ab709cdedc9b3204221", null ],
-    [ "Description", "classfull__model_1_1MagicType5.html#a37b89fcebbec2b584869387c56d227c3", null ],
-    [ "ExpRecover", "classfull__model_1_1MagicType5.html#a4e2389709f57469206f6c5f118bf6c41", null ],
-    [ "ID", "classfull__model_1_1MagicType5.html#ac2c5a1ce18a2dcfe605df9bf63fbb2a3", null ],
-    [ "Name", "classfull__model_1_1MagicType5.html#ae0df00183c04048ab51fe73c0e2a513d", null ],
-    [ "NeedStone", "classfull__model_1_1MagicType5.html#abde2f76a42596cba84b093b1897e8559", null ],
-    [ "Type", "classfull__model_1_1MagicType5.html#aa4455be784c32e963907bcc2c342fe3d", null ]
+    [ "Description", "classfull__model_1_1MagicType5.html#ac09b3fc021848e8df369f7942888f1d0", null ],
+    [ "ExpRecover", "classfull__model_1_1MagicType5.html#a3ecc4a6b3232b17fd2324e684b244edf", null ],
+    [ "ID", "classfull__model_1_1MagicType5.html#ac36b7b3c0a3c0993b6280fa3249ea9b2", null ],
+    [ "Name", "classfull__model_1_1MagicType5.html#ab2bd1b98d382d5e564c7be29440a25e7", null ],
+    [ "NeedStone", "classfull__model_1_1MagicType5.html#a0639f75dd1ba78a5811f774b12ae10ff", null ],
+    [ "Type", "classfull__model_1_1MagicType5.html#aca489f6d73b30661b875fd471f5f5a7b", null ]
 ];

@@ -7,9 +7,9 @@ var classebenezer__model_1_1MagicType8 =
       [ "TeleportToFriendly", "classebenezer__model_1_1MagicType8.html#a62defd2ac40da826f21dfb6e18675843a980f67021d5069d1513fa25f0d906aa4", null ]
     ] ],
     [ "MapKey", "classebenezer__model_1_1MagicType8.html#a906d8de8fbcaa288ce24dd61a9324dbd", null ],
-    [ "ExpRecover", "classebenezer__model_1_1MagicType8.html#a2fc5a211fc8009fbd1a632fe7b155b67", null ],
-    [ "ID", "classebenezer__model_1_1MagicType8.html#a42dda3b8e3d0ab749a8baea43d70246a", null ],
-    [ "Radius", "classebenezer__model_1_1MagicType8.html#a877a9fcc6c33004e766eb9ca274db881", null ],
-    [ "Target", "classebenezer__model_1_1MagicType8.html#a29b315e017a7ac30fb470b93f3c614eb", null ],
-    [ "WarpType", "classebenezer__model_1_1MagicType8.html#a52627e55a751db9d40647dbdb60d7215", null ]
+    [ "ExpRecover", "classebenezer__model_1_1MagicType8.html#ae8a9c27a3b359128123092259e0558fe", null ],
+    [ "ID", "classebenezer__model_1_1MagicType8.html#aa1348e493ed685139c1844efa83da0e9", null ],
+    [ "Radius", "classebenezer__model_1_1MagicType8.html#acaca1a96588d24e385c5e6ccb222ea51", null ],
+    [ "Target", "classebenezer__model_1_1MagicType8.html#a2a866ed7695e710f0701b929c2d66044", null ],
+    [ "WarpType", "classebenezer__model_1_1MagicType8.html#a4f55837abfd90ceba3e2451d5d44335c", null ]
 ];

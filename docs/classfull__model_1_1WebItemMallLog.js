@@ -1,13 +1,13 @@
 var classfull__model_1_1WebItemMallLog =
 [
-    [ "AccountId", "classfull__model_1_1WebItemMallLog.html#aea475bca6d0dcac86d337a1868bab778", null ],
-    [ "BuyTime", "classfull__model_1_1WebItemMallLog.html#a74866424ac82622a520e1cd6852a1452", null ],
-    [ "CharId", "classfull__model_1_1WebItemMallLog.html#a07098f76db3aba5fae64bd08bfce4503", null ],
-    [ "ImgFileName", "classfull__model_1_1WebItemMallLog.html#aa59e47f32d0b729a708f845f7486929b", null ],
-    [ "ItemCount", "classfull__model_1_1WebItemMallLog.html#aa37c8d68acce449e65890c8e02329107", null ],
-    [ "ItemId", "classfull__model_1_1WebItemMallLog.html#a402b7287686e9ee84fa0c8aff0594fb9", null ],
-    [ "ItemName", "classfull__model_1_1WebItemMallLog.html#a415deddc9d8d60d1bf9e32d8fe7adddf", null ],
-    [ "PayType", "classfull__model_1_1WebItemMallLog.html#aa4f236c812986b37c42c52bf9cc2b95c", null ],
-    [ "Price", "classfull__model_1_1WebItemMallLog.html#a7b778136a5ea6a7311462b84d2e4b1b0", null ],
-    [ "ServerId", "classfull__model_1_1WebItemMallLog.html#a4f310d99fbf0a691672fb929a1df2577", null ]
+    [ "AccountId", "classfull__model_1_1WebItemMallLog.html#acc5676576f4691dcb58a040f680fa75b", null ],
+    [ "BuyTime", "classfull__model_1_1WebItemMallLog.html#a73545646f5d6d3dbc57ad73d51eabcbe", null ],
+    [ "CharId", "classfull__model_1_1WebItemMallLog.html#a5bf98a6e64da53e6b66e07eff21d73f7", null ],
+    [ "ImgFileName", "classfull__model_1_1WebItemMallLog.html#a69381080666d30ea5af83968ffbe248b", null ],
+    [ "ItemCount", "classfull__model_1_1WebItemMallLog.html#ad4eb4bc31b1d55abf68424d8d7366739", null ],
+    [ "ItemId", "classfull__model_1_1WebItemMallLog.html#ab941562ef99b7b1058b825b777ef65f5", null ],
+    [ "ItemName", "classfull__model_1_1WebItemMallLog.html#a7fd0541c09ea742eda91fe3114d25489", null ],
+    [ "PayType", "classfull__model_1_1WebItemMallLog.html#a99fda08ee17d75675034cfcc12dbae70", null ],
+    [ "Price", "classfull__model_1_1WebItemMallLog.html#a7a98a30dbe353d7825ea82568f788c61", null ],
+    [ "ServerId", "classfull__model_1_1WebItemMallLog.html#a23f9772889dba5a31bb28566a654cab6", null ]
 ];

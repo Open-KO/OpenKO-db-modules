@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['olduseritem_0',['OldUserItem',['../classfull__model_1_1UserEditor.html#a75c1ae2e75df1d113c37e15b790575f3',1,'full_model::UserEditor']]],
-  ['olduserskill_1',['OldUserSkill',['../classfull__model_1_1UserEditor.html#a05c59fa17efd1e3776fcc85c3a9e9d90',1,'full_model::UserEditor']]],
-  ['olduservalue_2',['OldUserValue',['../classfull__model_1_1UserEditor.html#aabcca49b583f335baeab1ea7d890287a',1,'full_model::UserEditor']]],
-  ['oldwarehouseitem_3',['OldWarehouseItem',['../classfull__model_1_1UserEditor.html#a435d84255cb7597d4b4a48ce75770d38',1,'full_model::UserEditor']]],
-  ['oldwarehousevalue_4',['OldWarehouseValue',['../classfull__model_1_1UserEditor.html#a5032cbe130fd0bc78ee857b33408edbe',1,'full_model::UserEditor']]],
-  ['oldwarresult_5',['OldWarResult',['../classebenezer__model_1_1Knights.html#a3dddebcdf9f6c12be57eb653b3d314b3',1,'ebenezer_model::Knights::OldWarResult()'],['../classfull__model_1_1Knights.html#a496f3e2739b3218811b54f08daad9114',1,'full_model::Knights::OldWarResult()']]],
-  ['opid_6',['OpId',['../classfull__model_1_1UserEditor.html#a2ef946835b68c5a06708f3cf51665fae',1,'full_model::UserEditor::OpId()'],['../classfull__model_1_1UserEditorItem.html#abbdb6285d995f116ea3955cc31688c0b',1,'full_model::UserEditorItem::OpId()']]],
-  ['opip_7',['OpIP',['../classfull__model_1_1UserEditor.html#a7be99cea0e447b7142c4bc78bfba83e0',1,'full_model::UserEditor::OpIP()'],['../classfull__model_1_1UserEditorItem.html#a0e585746d4a4b069f52b7ed26029716e',1,'full_model::UserEditorItem::OpIP()']]],
-  ['originitem_8',['OriginItem',['../classebenezer__model_1_1ItemUpgrade.html#acd553b0d4c700e3a82c351e0012106bd',1,'ebenezer_model::ItemUpgrade::OriginItem()'],['../classfull__model_1_1ItemUpgrade.html#a4b014f8f9ce640cdfe8996bb96e368fd',1,'full_model::ItemUpgrade::OriginItem()']]],
-  ['origintype_9',['OriginType',['../classebenezer__model_1_1ItemUpgrade.html#a1ab9bb9d52281d4e4a7a8b0fc866cb28',1,'ebenezer_model::ItemUpgrade::OriginType()'],['../classfull__model_1_1ItemUpgrade.html#a8b19298752e694f8c3b703414f595dfd',1,'full_model::ItemUpgrade::OriginType()']]]
+  ['olduseritem_0',['OldUserItem',['../classfull__model_1_1UserEditor.html#a860ab758919804a807f93953dc328901',1,'full_model::UserEditor']]],
+  ['olduserskill_1',['OldUserSkill',['../classfull__model_1_1UserEditor.html#abc15dce0f70a3a8102d5b9ceb089254d',1,'full_model::UserEditor']]],
+  ['olduservalue_2',['OldUserValue',['../classfull__model_1_1UserEditor.html#a689f2bbaa888c683a2ec3c897619099b',1,'full_model::UserEditor']]],
+  ['oldwarehouseitem_3',['OldWarehouseItem',['../classfull__model_1_1UserEditor.html#ad470dea3db407dc783ddc7d9340a07af',1,'full_model::UserEditor']]],
+  ['oldwarehousevalue_4',['OldWarehouseValue',['../classfull__model_1_1UserEditor.html#a28cf9e95a39d873c4546e8172f153261',1,'full_model::UserEditor']]],
+  ['oldwarresult_5',['OldWarResult',['../classebenezer__model_1_1Knights.html#ac651e1493e05e41078b78a465f7b5fd9',1,'ebenezer_model::Knights::OldWarResult'],['../classfull__model_1_1Knights.html#ab2cce93ebe07e23194998de909af0d98',1,'full_model::Knights::OldWarResult']]],
+  ['opid_6',['OpId',['../classfull__model_1_1UserEditor.html#a8957432f9fd034f87d52153bf99f94e3',1,'full_model::UserEditor::OpId'],['../classfull__model_1_1UserEditorItem.html#a3dd4db0a3009023bfcd9fb3ca6d34ef5',1,'full_model::UserEditorItem::OpId']]],
+  ['opip_7',['OpIP',['../classfull__model_1_1UserEditor.html#a87beae6ff4c7179698450ecdc208c510',1,'full_model::UserEditor::OpIP'],['../classfull__model_1_1UserEditorItem.html#a161bc347e1cf9159b5ceb8bb0a547cbc',1,'full_model::UserEditorItem::OpIP']]],
+  ['originitem_8',['OriginItem',['../classebenezer__model_1_1ItemUpgrade.html#aa5f08d58c808bc509c591f54e9c7dc14',1,'ebenezer_model::ItemUpgrade::OriginItem'],['../classfull__model_1_1ItemUpgrade.html#a07ed2dfb33c4aecef395974f54eae654',1,'full_model::ItemUpgrade::OriginItem']]],
+  ['origintype_9',['OriginType',['../classebenezer__model_1_1ItemUpgrade.html#acfce52945bc6d8a3ba45ba1a12211ec7',1,'ebenezer_model::ItemUpgrade::OriginType'],['../classfull__model_1_1ItemUpgrade.html#aaa9a25a8f270f7ba73a0e485bbbf9b2c',1,'full_model::ItemUpgrade::OriginType']]]
 ];

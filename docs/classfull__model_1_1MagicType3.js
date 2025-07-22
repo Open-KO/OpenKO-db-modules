@@ -13,15 +13,15 @@ var classfull__model_1_1MagicType3 =
       [ "Unknown255", "classfull__model_1_1MagicType3.html#a90d4c3916431d63cdece9f27130d50f9a30e18c0831a82d5d8041820425b1ea43", null ]
     ] ],
     [ "MapKey", "classfull__model_1_1MagicType3.html#ae80233f7ac00f91c64ef073bbfb06c52", null ],
-    [ "Angle", "classfull__model_1_1MagicType3.html#a6dd97dbc6ce21ecf4445221d627b0e1c", null ],
-    [ "Attribute", "classfull__model_1_1MagicType3.html#ac4bff643d8adc1450535b772ff01579f", null ],
-    [ "Description", "classfull__model_1_1MagicType3.html#a5f5bb54ff88947c9d3cd71fa33b0f780", null ],
-    [ "DirectType", "classfull__model_1_1MagicType3.html#a1e22ab6964cb8b0660288ec8390d7a0d", null ],
-    [ "Duration", "classfull__model_1_1MagicType3.html#a40d0faf218d969b75370c0884d872d1d", null ],
-    [ "EndDamage", "classfull__model_1_1MagicType3.html#abec434f53e1518c924ed5668536ca884", null ],
-    [ "FirstDamage", "classfull__model_1_1MagicType3.html#a1f3a3fc6a36e7765c05b039e05017312", null ],
-    [ "ID", "classfull__model_1_1MagicType3.html#a0fa5a937bb039543e9ff02dfe862281b", null ],
-    [ "Name", "classfull__model_1_1MagicType3.html#a788d15da2af3672775ef8a72d191fc42", null ],
-    [ "Radius", "classfull__model_1_1MagicType3.html#a0e736c5c7e7c9c2bddcc21b2dd1e8d6b", null ],
-    [ "TimeDamage", "classfull__model_1_1MagicType3.html#af310a5a08752b6cbc09d948885fe6dcc", null ]
+    [ "Angle", "classfull__model_1_1MagicType3.html#a8b8f63b9fca92c7689a0f9013932dcc0", null ],
+    [ "Attribute", "classfull__model_1_1MagicType3.html#aa1a03c3ec4e7c414eb40d30aaaeff444", null ],
+    [ "Description", "classfull__model_1_1MagicType3.html#aa69d331ceed64e5273568d8d69d5fc4f", null ],
+    [ "DirectType", "classfull__model_1_1MagicType3.html#ad3a0785a907d33a8762030733f4da288", null ],
+    [ "Duration", "classfull__model_1_1MagicType3.html#a44c0cd551cba42dc9762ebb647be3a80", null ],
+    [ "EndDamage", "classfull__model_1_1MagicType3.html#a18a590af6ede5fb4d7a69ca78a046694", null ],
+    [ "FirstDamage", "classfull__model_1_1MagicType3.html#adbbfe309d339dfc0df05e547da7eb9c4", null ],
+    [ "ID", "classfull__model_1_1MagicType3.html#aa8cba7bf764d03a5474ce2ba8db8cc09", null ],
+    [ "Name", "classfull__model_1_1MagicType3.html#a37e5b3441f9491ce3c35d2636c47783a", null ],
+    [ "Radius", "classfull__model_1_1MagicType3.html#a2e66bdac0cf99068b24165652764e67d", null ],
+    [ "TimeDamage", "classfull__model_1_1MagicType3.html#ab7a38bb1b0cd8719151a2b1676073a7a", null ]
 ];

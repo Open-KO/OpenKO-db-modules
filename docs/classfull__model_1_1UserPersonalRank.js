@@ -1,16 +1,16 @@
 var classfull__model_1_1UserPersonalRank =
 [
     [ "MapKey", "classfull__model_1_1UserPersonalRank.html#a074ef3d2950af9875f166cbdf19a2028", null ],
-    [ "ElmoCheck", "classfull__model_1_1UserPersonalRank.html#a5d74b7857489b1ae8c11a6e8cf3663c7", null ],
-    [ "ElmoLoyaltyMonthly", "classfull__model_1_1UserPersonalRank.html#a99880442e3f3b688cff1b9ec2723beef", null ],
-    [ "ElmoUp", "classfull__model_1_1UserPersonalRank.html#ab3a6f9907a8ef0dde23b3aef1dc3b5e9", null ],
-    [ "ElmoUserId", "classfull__model_1_1UserPersonalRank.html#ad2f8d8c79d826c0cfa3c35d595339d9f", null ],
-    [ "KarusCheck", "classfull__model_1_1UserPersonalRank.html#a28f3e39a338f29572e49b9046b80ae7d", null ],
-    [ "KarusLoyaltyMonthly", "classfull__model_1_1UserPersonalRank.html#a3abd117366faf06f436ec52da8e255ed", null ],
-    [ "KarusUp", "classfull__model_1_1UserPersonalRank.html#a504bb64397483ab273ebdb8318e4e19b", null ],
-    [ "KarusUserId", "classfull__model_1_1UserPersonalRank.html#a4b88b97045fcafd1d2f20d74d5b561ed", null ],
-    [ "Position", "classfull__model_1_1UserPersonalRank.html#aa6ecb276791e50039e702628c26b4ffa", null ],
-    [ "Rank", "classfull__model_1_1UserPersonalRank.html#a32102cd7c07a255c557fcec9c63b3786", null ],
-    [ "Salary", "classfull__model_1_1UserPersonalRank.html#a4e6a4fa54b898874360d9fa0607c0b5a", null ],
-    [ "UpdateDate", "classfull__model_1_1UserPersonalRank.html#af5d3bfd1df5114c9df4313fefdc1fcd0", null ]
+    [ "ElmoCheck", "classfull__model_1_1UserPersonalRank.html#a373caddf7d889cbdf370d3ae8e795dbf", null ],
+    [ "ElmoLoyaltyMonthly", "classfull__model_1_1UserPersonalRank.html#a01a0009e14cb7c25a8f2ebc31f5b8b14", null ],
+    [ "ElmoUp", "classfull__model_1_1UserPersonalRank.html#a96a3fda712fc92e84ecdf5737e63ea2f", null ],
+    [ "ElmoUserId", "classfull__model_1_1UserPersonalRank.html#a078a2485da251fbf9bd1828ce1499a94", null ],
+    [ "KarusCheck", "classfull__model_1_1UserPersonalRank.html#a053a7f85fbc1eff0462a71145bf76d9b", null ],
+    [ "KarusLoyaltyMonthly", "classfull__model_1_1UserPersonalRank.html#a0d5d4b872372a38471ab2483926169d4", null ],
+    [ "KarusUp", "classfull__model_1_1UserPersonalRank.html#a011b74a8c2583651aacbc469f353e478", null ],
+    [ "KarusUserId", "classfull__model_1_1UserPersonalRank.html#a47581333fbb1547c42051472b23b5db1", null ],
+    [ "Position", "classfull__model_1_1UserPersonalRank.html#aa0ab4cb95c36077cab681ce35cf61d26", null ],
+    [ "Rank", "classfull__model_1_1UserPersonalRank.html#aaf114b5105e891c6454fe01ce2416e9f", null ],
+    [ "Salary", "classfull__model_1_1UserPersonalRank.html#a8ba7981393c786db924c0d4f61e52f76", null ],
+    [ "UpdateDate", "classfull__model_1_1UserPersonalRank.html#a655a1d3764a65db6346fa8a02e0d8f6e", null ]
 ];

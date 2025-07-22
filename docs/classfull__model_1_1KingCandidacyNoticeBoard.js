@@ -1,8 +1,8 @@
 var classfull__model_1_1KingCandidacyNoticeBoard =
 [
     [ "MapKey", "classfull__model_1_1KingCandidacyNoticeBoard.html#a9bd9d8c108114bfb85d85ec989ca4ade", null ],
-    [ "CandidateId", "classfull__model_1_1KingCandidacyNoticeBoard.html#af1f99e7f726d28671b3f672101588296", null ],
-    [ "Nation", "classfull__model_1_1KingCandidacyNoticeBoard.html#a440f678a2d6b9552fd9b00b6c5075edf", null ],
-    [ "Notice", "classfull__model_1_1KingCandidacyNoticeBoard.html#a9097b82bec0402738a0d606076abe46f", null ],
-    [ "NoticeLength", "classfull__model_1_1KingCandidacyNoticeBoard.html#a2b6584343d2b8baa5d9815e4da34790e", null ]
+    [ "CandidateId", "classfull__model_1_1KingCandidacyNoticeBoard.html#a70018cf1b6bba1de20a7fda52425b36c", null ],
+    [ "Nation", "classfull__model_1_1KingCandidacyNoticeBoard.html#ad24befb94935153e727757a982517540", null ],
+    [ "Notice", "classfull__model_1_1KingCandidacyNoticeBoard.html#afe425785175ea7e7222d1b1e5e00b49f", null ],
+    [ "NoticeLength", "classfull__model_1_1KingCandidacyNoticeBoard.html#a62b236d83e7903fcd66697a2c7cfbd1e", null ]
 ];

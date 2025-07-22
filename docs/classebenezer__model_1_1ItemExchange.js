@@ -1,7 +1,7 @@
 var classebenezer__model_1_1ItemExchange =
 [
     [ "MapKey", "classebenezer__model_1_1ItemExchange.html#a91b94bba5507b328c205bb936629a5ff", null ],
-    [ "Index", "classebenezer__model_1_1ItemExchange.html#a9be8ea34f34529a419efcd4630ac94bc", null ],
-    [ "NpcNumber", "classebenezer__model_1_1ItemExchange.html#a02484516488a457143e33df2bb746586", null ],
-    [ "RandomFlag", "classebenezer__model_1_1ItemExchange.html#a2724abc5e288b45943a6f97c1d67a168", null ]
+    [ "Index", "classebenezer__model_1_1ItemExchange.html#a098125d681028729cd59317a478e975b", null ],
+    [ "NpcNumber", "classebenezer__model_1_1ItemExchange.html#a55894bc523b3ff8ba2aae91c745961b5", null ],
+    [ "RandomFlag", "classebenezer__model_1_1ItemExchange.html#a0bc3d6bc49336f795d5c7137c42e39f6", null ]
 ];

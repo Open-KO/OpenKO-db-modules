@@ -13,13 +13,13 @@ var classebenezer__model_1_1MagicType3 =
       [ "Unknown255", "classebenezer__model_1_1MagicType3.html#ab20c2bcaf9818841bbbcb45f3c6a552da30e18c0831a82d5d8041820425b1ea43", null ]
     ] ],
     [ "MapKey", "classebenezer__model_1_1MagicType3.html#a5ae5121c3508b58a065d2089eed38459", null ],
-    [ "Angle", "classebenezer__model_1_1MagicType3.html#afae7707722856ec9fff2ed3733a972ce", null ],
-    [ "Attribute", "classebenezer__model_1_1MagicType3.html#a88573f4c13e9c85941fc8b47b839ea6b", null ],
-    [ "DirectType", "classebenezer__model_1_1MagicType3.html#a6ff78196f34f5440eb6fcc0423ef8532", null ],
-    [ "Duration", "classebenezer__model_1_1MagicType3.html#a5d5160bae895a8f22b1fff883483450e", null ],
-    [ "EndDamage", "classebenezer__model_1_1MagicType3.html#af3326bd5ed7d06018dff135c59b96ba9", null ],
-    [ "FirstDamage", "classebenezer__model_1_1MagicType3.html#aecd94c797b9047507ecc789728d58021", null ],
-    [ "ID", "classebenezer__model_1_1MagicType3.html#adf758dcdd659124eb9953df6463a905c", null ],
-    [ "Radius", "classebenezer__model_1_1MagicType3.html#a864f647032396215a9204a2de7962edf", null ],
-    [ "TimeDamage", "classebenezer__model_1_1MagicType3.html#a61cfc3ce24d323d5201a74841208a2cc", null ]
+    [ "Angle", "classebenezer__model_1_1MagicType3.html#a8f221419ae3b912a21cab4830224d446", null ],
+    [ "Attribute", "classebenezer__model_1_1MagicType3.html#ab1a04a78726cf6980aacbcca3ff99811", null ],
+    [ "DirectType", "classebenezer__model_1_1MagicType3.html#a6402a4bc5b4698e83dd37f24cb15aa7b", null ],
+    [ "Duration", "classebenezer__model_1_1MagicType3.html#a1f9260c01b25ce374b39d4d7a4e1b3b5", null ],
+    [ "EndDamage", "classebenezer__model_1_1MagicType3.html#af8991b1fff71cf33a7b80ae43fbc7c6b", null ],
+    [ "FirstDamage", "classebenezer__model_1_1MagicType3.html#aa72c95d0150f1ac8a141079228586dc7", null ],
+    [ "ID", "classebenezer__model_1_1MagicType3.html#a4b70f46a97f9e6448c9b04f811367b3a", null ],
+    [ "Radius", "classebenezer__model_1_1MagicType3.html#ac6d1b718a0d95fc252ecca43b243a501", null ],
+    [ "TimeDamage", "classebenezer__model_1_1MagicType3.html#ace3f32c9307dfde366d880bc4168d6d6", null ]
 ];

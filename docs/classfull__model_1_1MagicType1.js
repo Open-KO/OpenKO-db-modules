@@ -6,16 +6,16 @@ var classfull__model_1_1MagicType1 =
       [ "IgnoreDefense", "classfull__model_1_1MagicType1.html#a10ac3a53ca3ebc4de08cf4c04ddcba45a9c941887bc8b134e44206806c110327d", null ]
     ] ],
     [ "MapKey", "classfull__model_1_1MagicType1.html#a02bd3cbd6039537a1be62cd224cba16e", null ],
-    [ "AddDamage", "classfull__model_1_1MagicType1.html#adaa6e08d46b543e1fbd4d294e4ae9aa4", null ],
-    [ "ComboCount", "classfull__model_1_1MagicType1.html#a7b237e1fbd685ae757cbec52908a65f5", null ],
-    [ "ComboDamage", "classfull__model_1_1MagicType1.html#a5526f924efb880c1d9197484a7f898e9", null ],
-    [ "ComboType", "classfull__model_1_1MagicType1.html#a8ab19e51e28e91897a4d520690cde069", null ],
-    [ "DamageMod", "classfull__model_1_1MagicType1.html#a6ff4cda2bd1a9607c6ce1b795c4f3720", null ],
-    [ "Delay", "classfull__model_1_1MagicType1.html#acb1deb3875ea6a47bd18c87691f7c838", null ],
-    [ "Description", "classfull__model_1_1MagicType1.html#a555f097af5494c8be52a6125107b0804", null ],
-    [ "HitRateMod", "classfull__model_1_1MagicType1.html#af586dd03d3294c8eb15f32c1c1a2e8ca", null ],
-    [ "ID", "classfull__model_1_1MagicType1.html#af9cf9e1cf4c112c0e038e84d328ed170", null ],
-    [ "Name", "classfull__model_1_1MagicType1.html#a438107736c001da1d56dedc748dd4f42", null ],
-    [ "Range", "classfull__model_1_1MagicType1.html#ad294ad690aabb32b87c2e66d3a92ac69", null ],
-    [ "Type", "classfull__model_1_1MagicType1.html#a5e713217caa9b5e937f6854038d81c40", null ]
+    [ "AddDamage", "classfull__model_1_1MagicType1.html#aeb32d3dae138e861cff59d2013bed41b", null ],
+    [ "ComboCount", "classfull__model_1_1MagicType1.html#a5ded6d404d535508a47811b574bf4bfe", null ],
+    [ "ComboDamage", "classfull__model_1_1MagicType1.html#a03f29cfaea2fa19813b5e232e105689e", null ],
+    [ "ComboType", "classfull__model_1_1MagicType1.html#ac4aecdc65b68245e76ac8fd82cce7cf5", null ],
+    [ "DamageMod", "classfull__model_1_1MagicType1.html#a07ffcf51b6397752731dd286e24e2262", null ],
+    [ "Delay", "classfull__model_1_1MagicType1.html#a1a16ca5f27d81bc58111b48ca99ae0ef", null ],
+    [ "Description", "classfull__model_1_1MagicType1.html#a9622396dc3b6911ea3b50bd982122303", null ],
+    [ "HitRateMod", "classfull__model_1_1MagicType1.html#a6ee5c6568c698d5ee364e0514c717ee2", null ],
+    [ "ID", "classfull__model_1_1MagicType1.html#ad73b0268227c9f4ad3b1b044c8045d0e", null ],
+    [ "Name", "classfull__model_1_1MagicType1.html#a084a9b4550bc6e16bd7b609236c0629e", null ],
+    [ "Range", "classfull__model_1_1MagicType1.html#aa7be4355c4d62fc8b38b2fab0aa8783b", null ],
+    [ "Type", "classfull__model_1_1MagicType1.html#a7f94adb60d9ea158095bd6fc91bda37b", null ]
 ];

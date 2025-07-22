@@ -5,11 +5,11 @@ var classaiserver__model_1_1MagicType2 =
       [ "Seeking", "classaiserver__model_1_1MagicType2.html#a96f0d1c57f5998036bad271d9f945253adfa6bb51bca02efb16d45113cd76c1f4", null ]
     ] ],
     [ "MapKey", "classaiserver__model_1_1MagicType2.html#afc202432525c12b5c68871435e7bd4a1", null ],
-    [ "AddDamagePlus", "classaiserver__model_1_1MagicType2.html#adba018a46cb165d439c485a239ba0c55", null ],
-    [ "DamageMod", "classaiserver__model_1_1MagicType2.html#a3986a93cc5234bbda932d9703ec762b4", null ],
-    [ "HitRateMod", "classaiserver__model_1_1MagicType2.html#abce02c13344637d1bd12cb77d5cd196b", null ],
-    [ "HitType", "classaiserver__model_1_1MagicType2.html#adea0e3a5ee674599796b6d2decd47b70", null ],
-    [ "ID", "classaiserver__model_1_1MagicType2.html#a8ad304d98a2715ce0d10bfad10313943", null ],
-    [ "NeedArrow", "classaiserver__model_1_1MagicType2.html#a7e380b63fb5993265ef6e433931ec614", null ],
-    [ "RangeMod", "classaiserver__model_1_1MagicType2.html#af5a86789233bfaac1c537a34b9883804", null ]
+    [ "AddDamagePlus", "classaiserver__model_1_1MagicType2.html#a97e29ee6305fe3836f68dd9ad3dd79f6", null ],
+    [ "DamageMod", "classaiserver__model_1_1MagicType2.html#af6c45e69342ea704f1e998d1a261449d", null ],
+    [ "HitRateMod", "classaiserver__model_1_1MagicType2.html#a95b1aef6f2177a1bf8afad5521f77819", null ],
+    [ "HitType", "classaiserver__model_1_1MagicType2.html#aae21206b8fe2a44ab28c1181b9748321", null ],
+    [ "ID", "classaiserver__model_1_1MagicType2.html#ad8c916a188727b9876cbbee22b0908dd", null ],
+    [ "NeedArrow", "classaiserver__model_1_1MagicType2.html#aabcbf9a8ad5159bbb777c4d7324232a5", null ],
+    [ "RangeMod", "classaiserver__model_1_1MagicType2.html#a8fd47cc57c5a3a15fcb9171f77e1cfed", null ]
 ];

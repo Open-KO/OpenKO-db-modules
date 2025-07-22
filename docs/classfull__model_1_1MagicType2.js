@@ -5,13 +5,13 @@ var classfull__model_1_1MagicType2 =
       [ "Seeking", "classfull__model_1_1MagicType2.html#ac64db29f453ce251792ccffff0d34cbfadfa6bb51bca02efb16d45113cd76c1f4", null ]
     ] ],
     [ "MapKey", "classfull__model_1_1MagicType2.html#aa23a523582ca346f20fdd54fc776f9bc", null ],
-    [ "AddDamagePlus", "classfull__model_1_1MagicType2.html#ad093890e2ebaccd66cd398560d38737b", null ],
-    [ "DamageMod", "classfull__model_1_1MagicType2.html#a9d470d49722a9139465328257ba46c17", null ],
-    [ "Description", "classfull__model_1_1MagicType2.html#a32b3ac16207326de6533f595fa8a7dd9", null ],
-    [ "HitRateMod", "classfull__model_1_1MagicType2.html#a995fd7c5760f08ece61814c81033382f", null ],
-    [ "HitType", "classfull__model_1_1MagicType2.html#adc877112dd8b5ee81a0b4c01fef48491", null ],
-    [ "ID", "classfull__model_1_1MagicType2.html#ad7a489dced9b45ef8577c833f26e2f04", null ],
-    [ "Name", "classfull__model_1_1MagicType2.html#a4fe54ec83464cd18e5be8f761ca8b10c", null ],
-    [ "NeedArrow", "classfull__model_1_1MagicType2.html#a6ef966009f55a9b655182742817cc15d", null ],
-    [ "RangeMod", "classfull__model_1_1MagicType2.html#acc695f891b5e4fbea41e52cea63c7516", null ]
+    [ "AddDamagePlus", "classfull__model_1_1MagicType2.html#ad943dd91f6a303155bec97ca8b1f8a9a", null ],
+    [ "DamageMod", "classfull__model_1_1MagicType2.html#af4d23493109ddd0d6a19d79f01b17e91", null ],
+    [ "Description", "classfull__model_1_1MagicType2.html#a8c2cfb31cd3baa9f5681eb36ae8689c4", null ],
+    [ "HitRateMod", "classfull__model_1_1MagicType2.html#a8311f19b83977a5d11169908d8fa2bf7", null ],
+    [ "HitType", "classfull__model_1_1MagicType2.html#a60de52ff7303273fc5102581d01ea128", null ],
+    [ "ID", "classfull__model_1_1MagicType2.html#a3545e84d4e566f3b8acbdf1493d1ea65", null ],
+    [ "Name", "classfull__model_1_1MagicType2.html#a3df4fa4490a648dbd1e0f4945d3bd96a", null ],
+    [ "NeedArrow", "classfull__model_1_1MagicType2.html#a4fb31737571035ee73426839b011f5dd", null ],
+    [ "RangeMod", "classfull__model_1_1MagicType2.html#a4a698a93fd808e1bf52f31b3ad48034f", null ]
 ];

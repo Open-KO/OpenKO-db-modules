@@ -1,12 +1,12 @@
 var classaiserver__model_1_1NpcMoveItem =
 [
     [ "MapKey", "classaiserver__model_1_1NpcMoveItem.html#acf74d8f32f2386117606984e03a47adf", null ],
-    [ "CastleIndex", "classaiserver__model_1_1NpcMoveItem.html#a928ab62b47a5fc9ebfc3f7b5761ab680", null ],
-    [ "ChangeId", "classaiserver__model_1_1NpcMoveItem.html#ac33d821f0a5213f39f7b20887fe81c95", null ],
-    [ "ChangeItem", "classaiserver__model_1_1NpcMoveItem.html#a5d064273b5c37d43b052d47e7232cb24", null ],
-    [ "MoveItem", "classaiserver__model_1_1NpcMoveItem.html#ac406faf6e48c9b66ffa1ec79fab03e84", null ],
-    [ "MoveMaxX", "classaiserver__model_1_1NpcMoveItem.html#a160e884b47040f3a9fe89037a8ec63b0", null ],
-    [ "MoveMaxY", "classaiserver__model_1_1NpcMoveItem.html#a3e1adf559b5419a544315b9d2118a02d", null ],
-    [ "MoveMinX", "classaiserver__model_1_1NpcMoveItem.html#adc38ccfb8bcbfdc1d17766947d62383e", null ],
-    [ "MoveMinY", "classaiserver__model_1_1NpcMoveItem.html#a63f9868572e9ecb60aef901ef3008289", null ]
+    [ "CastleIndex", "classaiserver__model_1_1NpcMoveItem.html#afa09aab318a3151c5d37a5bd79be48f4", null ],
+    [ "ChangeId", "classaiserver__model_1_1NpcMoveItem.html#a1a013558b733f45745bb1e6ac88b06aa", null ],
+    [ "ChangeItem", "classaiserver__model_1_1NpcMoveItem.html#ab01c8ad9216ccd96152be15ab5205fef", null ],
+    [ "MoveItem", "classaiserver__model_1_1NpcMoveItem.html#a84b0a8f9350ee881fcb865bfdcca0c26", null ],
+    [ "MoveMaxX", "classaiserver__model_1_1NpcMoveItem.html#a16f0de8d30a41743aa054dfa749f32f4", null ],
+    [ "MoveMaxY", "classaiserver__model_1_1NpcMoveItem.html#aabe4cf3c441c16180edcf5d8fe260bb8", null ],
+    [ "MoveMinX", "classaiserver__model_1_1NpcMoveItem.html#abbadbc0702e98f3443b97ec02378bc0b", null ],
+    [ "MoveMinY", "classaiserver__model_1_1NpcMoveItem.html#a2513b02786b626e232c588640fce3bae", null ]
 ];

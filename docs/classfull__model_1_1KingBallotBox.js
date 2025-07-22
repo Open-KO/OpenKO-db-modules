@@ -1,7 +1,7 @@
 var classfull__model_1_1KingBallotBox =
 [
-    [ "AccountId", "classfull__model_1_1KingBallotBox.html#aff535c1732db9879b31ae81fdba96caa", null ],
-    [ "CandidateId", "classfull__model_1_1KingBallotBox.html#a5840a316df98a494721eb25b7cd1d959", null ],
-    [ "CharId", "classfull__model_1_1KingBallotBox.html#aad7f81256e1b117948d44cec76a62e66", null ],
-    [ "Nation", "classfull__model_1_1KingBallotBox.html#a8f826770d8d3ad27b91d32fa7f09e53e", null ]
+    [ "AccountId", "classfull__model_1_1KingBallotBox.html#a90655de6177b65c8d0492bd3155af771", null ],
+    [ "CandidateId", "classfull__model_1_1KingBallotBox.html#ad73500bac3d123aed49d2a410ea65932", null ],
+    [ "CharId", "classfull__model_1_1KingBallotBox.html#ad250613dc904410e67fd7f5c0aaed644", null ],
+    [ "Nation", "classfull__model_1_1KingBallotBox.html#a37687c4bd44882b689504cf789af55f5", null ]
 ];

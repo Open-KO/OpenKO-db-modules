@@ -1,10 +1,10 @@
 var classebenezer__model_1_1MonsterChallenge =
 [
     [ "MapKey", "classebenezer__model_1_1MonsterChallenge.html#a361bad7d9f40ab2ea1e380b67754fc1d", null ],
-    [ "Index", "classebenezer__model_1_1MonsterChallenge.html#a5af405cf0823982edb45ea743b774e5e", null ],
-    [ "LevelMax", "classebenezer__model_1_1MonsterChallenge.html#a92a7764236b82b1c76136ce65da48266", null ],
-    [ "LevelMin", "classebenezer__model_1_1MonsterChallenge.html#a7dd8351b0e7bafa970b0a1196dce02bc", null ],
-    [ "StartTime1", "classebenezer__model_1_1MonsterChallenge.html#ab78cace0f50a84dda6f46ccd0bb53f51", null ],
-    [ "StartTime2", "classebenezer__model_1_1MonsterChallenge.html#a44d20fe31586d31cb16c9d46c7689378", null ],
-    [ "StartTime3", "classebenezer__model_1_1MonsterChallenge.html#a72e2c37faf8185b1dea2a1cd1d0d38d9", null ]
+    [ "Index", "classebenezer__model_1_1MonsterChallenge.html#a09307dec6da98be047228d0722692024", null ],
+    [ "LevelMax", "classebenezer__model_1_1MonsterChallenge.html#a872767b25543e635926f8fa18fa14d72", null ],
+    [ "LevelMin", "classebenezer__model_1_1MonsterChallenge.html#ade810d4f0e0b329543ab127cbc42596a", null ],
+    [ "StartTime1", "classebenezer__model_1_1MonsterChallenge.html#a327ea80e7674a3b9f2933a124c865413", null ],
+    [ "StartTime2", "classebenezer__model_1_1MonsterChallenge.html#a0ee6ed569c2a73aa4b4c1f7a0b9a1151", null ],
+    [ "StartTime3", "classebenezer__model_1_1MonsterChallenge.html#ac740a61bbdff21836b5a122873c109a5", null ]
 ];

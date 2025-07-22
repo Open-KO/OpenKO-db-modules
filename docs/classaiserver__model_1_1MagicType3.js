@@ -13,13 +13,13 @@ var classaiserver__model_1_1MagicType3 =
       [ "Unknown255", "classaiserver__model_1_1MagicType3.html#a2315c854ba0139529375cff60babbb07a30e18c0831a82d5d8041820425b1ea43", null ]
     ] ],
     [ "MapKey", "classaiserver__model_1_1MagicType3.html#a610409d79fe9f093aac1a13af7aaaa35", null ],
-    [ "Angle", "classaiserver__model_1_1MagicType3.html#ab450fa91a53858a2277b6385a8897143", null ],
-    [ "Attribute", "classaiserver__model_1_1MagicType3.html#a89c20d027e9096d9d0f5b93fcecdfdb9", null ],
-    [ "DirectType", "classaiserver__model_1_1MagicType3.html#a178a46d5b4ac5f851c28906417f63256", null ],
-    [ "Duration", "classaiserver__model_1_1MagicType3.html#a9f2517daf3bff02b3beaaf370808947d", null ],
-    [ "EndDamage", "classaiserver__model_1_1MagicType3.html#a6d671079aa63aedad448044e9cdb5b3f", null ],
-    [ "FirstDamage", "classaiserver__model_1_1MagicType3.html#a8753958c2a92df1f754cd3404bfe9b4d", null ],
-    [ "ID", "classaiserver__model_1_1MagicType3.html#af633e8a335a061b10ccfceae56d87fb8", null ],
-    [ "Radius", "classaiserver__model_1_1MagicType3.html#a1e514a09c4b8bbc15d8aab6619b85a50", null ],
-    [ "TimeDamage", "classaiserver__model_1_1MagicType3.html#a8445e19406c1aa96b170e2723726a1d6", null ]
+    [ "Angle", "classaiserver__model_1_1MagicType3.html#aa0adba3f76b742a0d997d00b3596797f", null ],
+    [ "Attribute", "classaiserver__model_1_1MagicType3.html#a63a84aeac70b85999ff6f4597753d1ff", null ],
+    [ "DirectType", "classaiserver__model_1_1MagicType3.html#a63d36563dc23e48483f4eef32ccd808c", null ],
+    [ "Duration", "classaiserver__model_1_1MagicType3.html#a4fdbc7f522ed271a350e3f392a49c5a5", null ],
+    [ "EndDamage", "classaiserver__model_1_1MagicType3.html#a1ded32ff354eeb765f0fd512ad754be1", null ],
+    [ "FirstDamage", "classaiserver__model_1_1MagicType3.html#a0bcb7edd2a5a03efaaf90bc0dd02645d", null ],
+    [ "ID", "classaiserver__model_1_1MagicType3.html#a8267602dfd7b2a33726eab14f1189dd8", null ],
+    [ "Radius", "classaiserver__model_1_1MagicType3.html#ac7f6b241018eaac551f65b909374f568", null ],
+    [ "TimeDamage", "classaiserver__model_1_1MagicType3.html#a9e6022707489bc32c661ccf06713cd2c", null ]
 ];

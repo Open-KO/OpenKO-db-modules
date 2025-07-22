@@ -6,14 +6,14 @@ var classebenezer__model_1_1MagicType1 =
       [ "IgnoreDefense", "classebenezer__model_1_1MagicType1.html#a9599c7c8ee1ce8ee2ff88e77d79ea6aba9c941887bc8b134e44206806c110327d", null ]
     ] ],
     [ "MapKey", "classebenezer__model_1_1MagicType1.html#abb14bb2700a766db44beebdc4ea57d03", null ],
-    [ "AddDamage", "classebenezer__model_1_1MagicType1.html#a2867342cd520d1e9ad0aa48494f36434", null ],
-    [ "ComboCount", "classebenezer__model_1_1MagicType1.html#a0d8d62ffe4c10de3f28fc3388da9e91c", null ],
-    [ "ComboDamage", "classebenezer__model_1_1MagicType1.html#a3e26226708577deec72a3b774260526a", null ],
-    [ "ComboType", "classebenezer__model_1_1MagicType1.html#a60eea2cc693ff71f8c2f53b40bc2c154", null ],
-    [ "DamageMod", "classebenezer__model_1_1MagicType1.html#a4394810a9de8e1a8cb790d437580243d", null ],
-    [ "Delay", "classebenezer__model_1_1MagicType1.html#ae7b58c03a7dc19e282121a8744e05b4e", null ],
-    [ "HitRateMod", "classebenezer__model_1_1MagicType1.html#a944fc506f7d9ddeb3e29e1a32227aa37", null ],
-    [ "ID", "classebenezer__model_1_1MagicType1.html#ac1188575b7a6e1b50b775993fa669020", null ],
-    [ "Range", "classebenezer__model_1_1MagicType1.html#ab1bbc1268bf2ddaaf237a06dd15b55a2", null ],
-    [ "Type", "classebenezer__model_1_1MagicType1.html#ae7c658d07b4e070a9d8edadefa4df8f1", null ]
+    [ "AddDamage", "classebenezer__model_1_1MagicType1.html#a7d820c5b88e82c4d93f4a19ccb7242e2", null ],
+    [ "ComboCount", "classebenezer__model_1_1MagicType1.html#aab469e059516d675df2db83b8af3cb58", null ],
+    [ "ComboDamage", "classebenezer__model_1_1MagicType1.html#a2b3a20c415b76eb7b7e4b488f1a757cb", null ],
+    [ "ComboType", "classebenezer__model_1_1MagicType1.html#af1c3848303acd78ea891b73008cf970f", null ],
+    [ "DamageMod", "classebenezer__model_1_1MagicType1.html#a5304148f72286a5d305595fc822be3da", null ],
+    [ "Delay", "classebenezer__model_1_1MagicType1.html#a93625dc55c75ffcbc321602af0dba41d", null ],
+    [ "HitRateMod", "classebenezer__model_1_1MagicType1.html#ad1d878c8e3d5155db05c43e20b4fc1f7", null ],
+    [ "ID", "classebenezer__model_1_1MagicType1.html#a1341cabe0089476025c295ba5b064f23", null ],
+    [ "Range", "classebenezer__model_1_1MagicType1.html#a35e10e41fe3af0aa03558050c3984901", null ],
+    [ "Type", "classebenezer__model_1_1MagicType1.html#aa3eceb47a5085f38c04d9e2dbb981aa3", null ]
 ];

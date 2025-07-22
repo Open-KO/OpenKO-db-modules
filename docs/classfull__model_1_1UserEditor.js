@@ -1,18 +1,18 @@
 var classfull__model_1_1UserEditor =
 [
-    [ "AccountId", "classfull__model_1_1UserEditor.html#af0f4eb21afbe0d87f846d5c68678a07e", null ],
-    [ "CharId", "classfull__model_1_1UserEditor.html#affe60579b80e076484cba9fe5eacf078", null ],
-    [ "EditorTime", "classfull__model_1_1UserEditor.html#a28b94bb4826a88f94245ed4fc393e3fe", null ],
-    [ "NewUserItem", "classfull__model_1_1UserEditor.html#a15785c05a3a8a8d38d6f7bef48fa3dff", null ],
-    [ "NewUserSkill", "classfull__model_1_1UserEditor.html#a63e3e641d2dd1c112ee1e9f04b76c08f", null ],
-    [ "NewUserValue", "classfull__model_1_1UserEditor.html#a67edf7ee2d112c43f81885e8b0eb8e67", null ],
-    [ "NewWarehouseItem", "classfull__model_1_1UserEditor.html#a74d0c74d547f1ae40f182f7c0af9769a", null ],
-    [ "NewWarehouseValue", "classfull__model_1_1UserEditor.html#ae815a33f9e7bf250415b555c067a2e2f", null ],
-    [ "OldUserItem", "classfull__model_1_1UserEditor.html#a75c1ae2e75df1d113c37e15b790575f3", null ],
-    [ "OldUserSkill", "classfull__model_1_1UserEditor.html#a05c59fa17efd1e3776fcc85c3a9e9d90", null ],
-    [ "OldUserValue", "classfull__model_1_1UserEditor.html#aabcca49b583f335baeab1ea7d890287a", null ],
-    [ "OldWarehouseItem", "classfull__model_1_1UserEditor.html#a435d84255cb7597d4b4a48ce75770d38", null ],
-    [ "OldWarehouseValue", "classfull__model_1_1UserEditor.html#a5032cbe130fd0bc78ee857b33408edbe", null ],
-    [ "OpId", "classfull__model_1_1UserEditor.html#a2ef946835b68c5a06708f3cf51665fae", null ],
-    [ "OpIP", "classfull__model_1_1UserEditor.html#a7be99cea0e447b7142c4bc78bfba83e0", null ]
+    [ "AccountId", "classfull__model_1_1UserEditor.html#a9a638ea343a1cfed1de4c4751b2e299a", null ],
+    [ "CharId", "classfull__model_1_1UserEditor.html#a41c64474283f47d8b745fc4935125a86", null ],
+    [ "EditorTime", "classfull__model_1_1UserEditor.html#a816a2d82a2091664c982e0f462523f6f", null ],
+    [ "NewUserItem", "classfull__model_1_1UserEditor.html#a738f1d5336959effe7ed6e7844953108", null ],
+    [ "NewUserSkill", "classfull__model_1_1UserEditor.html#a1f2cfc6587a68cc864967442f0f7ab31", null ],
+    [ "NewUserValue", "classfull__model_1_1UserEditor.html#a1d30ef584ca4787adae3fd1f9c32c167", null ],
+    [ "NewWarehouseItem", "classfull__model_1_1UserEditor.html#a5e0a9c09ee17737ea54d0c1b15184b31", null ],
+    [ "NewWarehouseValue", "classfull__model_1_1UserEditor.html#a5d3b3cf9adbb0d60ad4e92c5ea49f36d", null ],
+    [ "OldUserItem", "classfull__model_1_1UserEditor.html#a860ab758919804a807f93953dc328901", null ],
+    [ "OldUserSkill", "classfull__model_1_1UserEditor.html#abc15dce0f70a3a8102d5b9ceb089254d", null ],
+    [ "OldUserValue", "classfull__model_1_1UserEditor.html#a689f2bbaa888c683a2ec3c897619099b", null ],
+    [ "OldWarehouseItem", "classfull__model_1_1UserEditor.html#ad470dea3db407dc783ddc7d9340a07af", null ],
+    [ "OldWarehouseValue", "classfull__model_1_1UserEditor.html#a28cf9e95a39d873c4546e8172f153261", null ],
+    [ "OpId", "classfull__model_1_1UserEditor.html#a8957432f9fd034f87d52153bf99f94e3", null ],
+    [ "OpIP", "classfull__model_1_1UserEditor.html#a87beae6ff4c7179698450ecdc208c510", null ]
 ];

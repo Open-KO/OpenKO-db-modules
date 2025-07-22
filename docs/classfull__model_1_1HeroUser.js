@@ -1,8 +1,8 @@
 var classfull__model_1_1HeroUser =
 [
-    [ "Achievement", "classfull__model_1_1HeroUser.html#a393672340ad9dc5d2bb081e7fa67cf43", null ],
-    [ "ClassName", "classfull__model_1_1HeroUser.html#a57e685d56210e02332349b5ecf395262", null ],
-    [ "Index", "classfull__model_1_1HeroUser.html#ad53b682a157f6e879521121a5a314e21", null ],
-    [ "Nation", "classfull__model_1_1HeroUser.html#a95fd6686937692cb28fe81a202fc66b2", null ],
-    [ "UserId", "classfull__model_1_1HeroUser.html#a5c8e5b8666ca0db26333a886ea7e69c4", null ]
+    [ "Achievement", "classfull__model_1_1HeroUser.html#af801d47de2ad24b87fb705f183f4f998", null ],
+    [ "ClassName", "classfull__model_1_1HeroUser.html#af55b26dbbb5513233012981154b93668", null ],
+    [ "Index", "classfull__model_1_1HeroUser.html#a91e8c9746d8642e09df997d6d587fdf5", null ],
+    [ "Nation", "classfull__model_1_1HeroUser.html#a5943769a8d9e7aa3e090bfff5d9b8548", null ],
+    [ "UserId", "classfull__model_1_1HeroUser.html#ac0501b17371337b5bacb449c94b4f015", null ]
 ];
