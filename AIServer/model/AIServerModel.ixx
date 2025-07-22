@@ -37,7 +37,7 @@ namespace aiserver_model
 {
 	/// \brief [K_MONSTER] Monster definitions
 	/// \class Monster
-	/// \xrefitem gamedb "Game Database" "Game Database" K_MONSTER Monster definitions
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" K_MONSTER Monster definitions
 	export class Monster 
 	{
 	/// \publicsection
@@ -352,7 +352,7 @@ namespace aiserver_model
 
 	/// \brief [K_MONSTER_ITEM] Monster loot table
 	/// \class MonsterItem
-	/// \xrefitem gamedb "Game Database" "Game Database" K_MONSTER_ITEM Monster loot table
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" K_MONSTER_ITEM Monster loot table
 	export class MonsterItem 
 	{
 	/// \publicsection
@@ -499,7 +499,7 @@ namespace aiserver_model
 
 	/// \brief [K_NPC] Non-Player Character
 	/// \class Npc
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC Non-Player Character
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" K_NPC Non-Player Character
 	export class Npc 
 	{
 	/// \publicsection
@@ -814,7 +814,7 @@ namespace aiserver_model
 
 	/// \brief [K_NPC_MOVE_ITEM] NPC Move Item: TODO
 	/// \class NpcMoveItem
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC_MOVE_ITEM NPC Move Item: TODO
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" K_NPC_MOVE_ITEM NPC Move Item: TODO
 	export class NpcMoveItem 
 	{
 	/// \publicsection
@@ -924,7 +924,7 @@ namespace aiserver_model
 
 	/// \brief [K_NPCPOS] NPC Spawn Positions
 	/// \class NpcPos
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPCPOS NPC Spawn Positions
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" K_NPCPOS NPC Spawn Positions
 	export class NpcPos 
 	{
 	/// \publicsection
@@ -1088,7 +1088,7 @@ namespace aiserver_model
 
 	/// \brief [LEVEL_UP] Level experience requirements
 	/// \class LevelUp
-	/// \xrefitem gamedb "Game Database" "Game Database" LEVEL_UP Level experience requirements
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" LEVEL_UP Level experience requirements
 	export class LevelUp 
 	{
 	/// \publicsection
@@ -1168,7 +1168,7 @@ namespace aiserver_model
 
 	/// \brief [MAGIC] Contains the configuration for magic and abilities
 	/// \class Magic
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC Contains the configuration for magic and abilities
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAGIC Contains the configuration for magic and abilities
 	export class Magic 
 	{
 	/// \publicsection
@@ -1343,7 +1343,7 @@ namespace aiserver_model
 
 	/// \brief [MAGIC_TYPE1] Supports melee abilities
 	/// \class MagicType1
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE1 Supports melee abilities
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAGIC_TYPE1 Supports melee abilities
 	export class MagicType1 
 	{
 	/// \publicsection
@@ -1473,7 +1473,7 @@ namespace aiserver_model
 
 	/// \brief [MAGIC_TYPE2] Supports bow abilities
 	/// \class MagicType2
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE2 Supports bow abilities
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAGIC_TYPE2 Supports bow abilities
 	export class MagicType2 
 	{
 	/// \publicsection
@@ -1587,7 +1587,7 @@ namespace aiserver_model
 
 	/// \brief [MAGIC_TYPE3] Supports Area of Effect and Damage over Time effects
 	/// \class MagicType3
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE3 Supports Area of Effect and Damage over Time effects
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAGIC_TYPE3 Supports Area of Effect and Damage over Time effects
 	export class MagicType3 
 	{
 	/// \publicsection
@@ -1719,7 +1719,7 @@ namespace aiserver_model
 
 	/// \brief [MAGIC_TYPE4] Supports stat modification skills
 	/// \class MagicType4
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE4 Supports stat modification skills
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAGIC_TYPE4 Supports stat modification skills
 	export class MagicType4 
 	{
 	/// \publicsection
@@ -1951,7 +1951,7 @@ namespace aiserver_model
 
 	/// \brief [MAGIC_TYPE7] Supports targeting modifications
 	/// \class MagicType7
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE7 Supports targeting modifications
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAGIC_TYPE7 Supports targeting modifications
 	export class MagicType7 
 	{
 	/// \publicsection
@@ -2090,7 +2090,7 @@ namespace aiserver_model
 
 	/// \brief [MAKE_DEFENSIVE] Make defensive
 	/// \class MakeDefensive
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_DEFENSIVE Make defensive
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAKE_DEFENSIVE Make defensive
 	export class MakeDefensive 
 	{
 	/// \publicsection
@@ -2200,7 +2200,7 @@ namespace aiserver_model
 
 	/// \brief [MAKE_ITEM] Make item
 	/// \class MakeItem
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM Make item
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAKE_ITEM Make item
 	export class MakeItem 
 	{
 	/// \publicsection
@@ -2285,7 +2285,7 @@ namespace aiserver_model
 
 	/// \brief [MAKE_ITEM_GRADECODE] Make item grade code
 	/// \class MakeItemGradeCode
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GRADECODE Make item grade code
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAKE_ITEM_GRADECODE Make item grade code
 	export class MakeItemGradeCode 
 	{
 	/// \publicsection
@@ -2416,7 +2416,7 @@ namespace aiserver_model
 
 	/// \brief [MAKE_ITEM_GROUP] Make item group
 	/// \class MakeItemGroup
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GROUP Make item group
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAKE_ITEM_GROUP Make item group
 	export class MakeItemGroup 
 	{
 	/// \publicsection
@@ -2652,7 +2652,7 @@ namespace aiserver_model
 
 	/// \brief [MAKE_ITEM_LARECODE] Make item rarity codes
 	/// \class MakeItemRareCode
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_LARECODE Make item rarity codes
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAKE_ITEM_LARECODE Make item rarity codes
 	export class MakeItemRareCode 
 	{
 	/// \publicsection
@@ -2747,7 +2747,7 @@ namespace aiserver_model
 
 	/// \brief [MAKE_WEAPON] Make weapon
 	/// \class MakeWeapon
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_WEAPON Make weapon
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MAKE_WEAPON Make weapon
 	export class MakeWeapon 
 	{
 	/// \publicsection
@@ -2893,7 +2893,7 @@ namespace aiserver_model
 
 	/// \brief [MONSTER_SUMMON_LIST] Monster summon list
 	/// \class MonsterSummonList
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_SUMMON_LIST Monster summon list
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" MONSTER_SUMMON_LIST Monster summon list
 	export class MonsterSummonList 
 	{
 	/// \publicsection
@@ -2988,7 +2988,7 @@ namespace aiserver_model
 
 	/// \brief [ZONE_INFO] Zone (map) information
 	/// \class ZoneInfo
-	/// \xrefitem gamedb "Game Database" "Game Database" ZONE_INFO Zone (map) information
+	/// \xrefitem db_GAME_AIServer "GAME Database - AIServer Library" "GAME Database - AIServer Library" ZONE_INFO Zone (map) information
 	export class ZoneInfo 
 	{
 	/// \publicsection

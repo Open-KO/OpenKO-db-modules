@@ -95,7 +95,7 @@ namespace full_model
 {
 	/// \brief [ACCOUNT_CHAR] Represents the relationship between accounts and characters
 	/// \class AccountChar
-	/// \xrefitem gamedb "Game Database" "Game Database" ACCOUNT_CHAR Represents the relationship between accounts and characters
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" ACCOUNT_CHAR Represents the relationship between accounts and characters
 	export class AccountChar 
 	{
 	/// \publicsection
@@ -195,7 +195,7 @@ namespace full_model
 
 	/// \brief [BATTLE] Battle data for the game server
 	/// \class Battle
-	/// \xrefitem gamedb "Game Database" "Game Database" BATTLE Battle data for the game server
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" BATTLE Battle data for the game server
 	export class Battle 
 	{
 	/// \publicsection
@@ -355,7 +355,7 @@ namespace full_model
 
 	/// \brief [COEFFICIENT] Coefficient relationship between a character class, weapon types, and stats
 	/// \class Coefficient
-	/// \xrefitem gamedb "Game Database" "Game Database" COEFFICIENT Coefficient relationship between a character class, weapon types, and stats
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" COEFFICIENT Coefficient relationship between a character class, weapon types, and stats
 	export class Coefficient 
 	{
 	/// \publicsection
@@ -500,7 +500,7 @@ namespace full_model
 
 	/// \brief [CONCURRENT] Keeps track of concurrent user counts
 	/// \class Concurrent
-	/// \xrefitem gamedb "Game Database" "Game Database" CONCURRENT Keeps track of concurrent user counts
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" CONCURRENT Keeps track of concurrent user counts
 	export class Concurrent 
 	{
 	/// \publicsection
@@ -595,7 +595,7 @@ namespace full_model
 
 	/// \brief [COPY_SERIAL_ITEM] TODO: Doc
 	/// \class CopySerialItem
-	/// \xrefitem gamedb "Game Database" "Game Database" COPY_SERIAL_ITEM TODO: Doc
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" COPY_SERIAL_ITEM TODO: Doc
 	export class CopySerialItem 
 	{
 	/// \publicsection
@@ -684,7 +684,7 @@ namespace full_model
 
 	/// \brief [COPY_TEST] TODO: Doc
 	/// \class CopyTest
-	/// \xrefitem gamedb "Game Database" "Game Database" COPY_TEST TODO: Doc
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" COPY_TEST TODO: Doc
 	export class CopyTest 
 	{
 	/// \publicsection
@@ -753,7 +753,7 @@ namespace full_model
 
 	/// \brief [COUPON_SERIAL_LIST] Coupon Serial List
 	/// \class CouponSerialList
-	/// \xrefitem gamedb "Game Database" "Game Database" COUPON_SERIAL_LIST Coupon Serial List
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" COUPON_SERIAL_LIST Coupon Serial List
 	export class CouponSerialList 
 	{
 	/// \publicsection
@@ -843,7 +843,7 @@ namespace full_model
 
 	/// \brief [CURRENTUSER] Keeps track of users currently connected to the server
 	/// \class CurrentUser
-	/// \xrefitem gamedb "Game Database" "Game Database" CURRENTUSER Keeps track of users currently connected to the server
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" CURRENTUSER Keeps track of users currently connected to the server
 	export class CurrentUser 
 	{
 	/// \publicsection
@@ -938,7 +938,7 @@ namespace full_model
 
 	/// \brief [EVENT] Event Information
 	/// \class Event
-	/// \xrefitem gamedb "Game Database" "Game Database" EVENT Event Information
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" EVENT Event Information
 	export class Event 
 	{
 	/// \publicsection
@@ -1067,7 +1067,7 @@ namespace full_model
 
 	/// \brief [EVENT_TRIGGER] NPC Event Triggers
 	/// \class EventTrigger
-	/// \xrefitem gamedb "Game Database" "Game Database" EVENT_TRIGGER NPC Event Triggers
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" EVENT_TRIGGER NPC Event Triggers
 	export class EventTrigger 
 	{
 	/// \publicsection
@@ -1157,7 +1157,7 @@ namespace full_model
 
 	/// \brief [FRIEND_LIST] User friend list
 	/// \class FriendList
-	/// \xrefitem gamedb "Game Database" "Game Database" FRIEND_LIST User friend list
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" FRIEND_LIST User friend list
 	export class FriendList 
 	{
 	/// \publicsection
@@ -1352,7 +1352,7 @@ namespace full_model
 
 	/// \brief [HACKTOOL_USERLOG] Tracks possible detections of a hack tool by a user
 	/// \class HacktoolUserLog
-	/// \xrefitem gamedb "Game Database" "Game Database" HACKTOOL_USERLOG Tracks possible detections of a hack tool by a user
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" HACKTOOL_USERLOG Tracks possible detections of a hack tool by a user
 	export class HacktoolUserLog 
 	{
 	/// \publicsection
@@ -1436,7 +1436,7 @@ namespace full_model
 
 	/// \brief [HERO_USER] TODO Doc
 	/// \class HeroUser
-	/// \xrefitem gamedb "Game Database" "Game Database" HERO_USER TODO Doc
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" HERO_USER TODO Doc
 	export class HeroUser 
 	{
 	/// \publicsection
@@ -1525,7 +1525,7 @@ namespace full_model
 
 	/// \brief [HOME] TODO Doc
 	/// \class Home
-	/// \xrefitem gamedb "Game Database" "Game Database" HOME TODO Doc
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" HOME TODO Doc
 	export class Home 
 	{
 	/// \publicsection
@@ -1700,7 +1700,7 @@ namespace full_model
 
 	/// \brief [ITEM] Item information
 	/// \class Item
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM Item information
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" ITEM Item information
 	export class Item 
 	{
 	/// \publicsection
@@ -2203,7 +2203,7 @@ namespace full_model
 
 	/// \brief [ITEM_EXCHANGE] Enables players to be able to give items in exchange for an item from an NPC
 	/// \class ItemExchange
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_EXCHANGE Enables players to be able to give items in exchange for an item from an NPC
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" ITEM_EXCHANGE Enables players to be able to give items in exchange for an item from an NPC
 	export class ItemExchange 
 	{
 	/// \publicsection
@@ -2442,7 +2442,7 @@ namespace full_model
 
 	/// \brief [ITEM_GROUP] TODO Doc; No Data in table
 	/// \class ItemGroup
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_GROUP TODO Doc; No Data in table
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" ITEM_GROUP TODO Doc; No Data in table
 	export class ItemGroup 
 	{
 	/// \publicsection
@@ -2666,7 +2666,7 @@ namespace full_model
 
 	/// \brief [ITEM_UPGRADE] Item upgrade configuration
 	/// \class ItemUpgrade
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_UPGRADE Item upgrade configuration
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" ITEM_UPGRADE Item upgrade configuration
 	export class ItemUpgrade 
 	{
 	/// \publicsection
@@ -2837,7 +2837,7 @@ namespace full_model
 
 	/// \brief [ITEMUP_PROBABILITY] TODO: Doc usage
 	/// \class ItemUpProbability
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEMUP_PROBABILITY TODO: Doc usage
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" ITEMUP_PROBABILITY TODO: Doc usage
 	export class ItemUpProbability 
 	{
 	/// \publicsection
@@ -2932,7 +2932,7 @@ namespace full_model
 
 	/// \brief [K_MONSTER] Monster definitions
 	/// \class Monster
-	/// \xrefitem gamedb "Game Database" "Game Database" K_MONSTER Monster definitions
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" K_MONSTER Monster definitions
 	export class Monster 
 	{
 	/// \publicsection
@@ -3247,7 +3247,7 @@ namespace full_model
 
 	/// \brief [K_MONSTER_ITEM] Monster loot table
 	/// \class MonsterItem
-	/// \xrefitem gamedb "Game Database" "Game Database" K_MONSTER_ITEM Monster loot table
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" K_MONSTER_ITEM Monster loot table
 	export class MonsterItem 
 	{
 	/// \publicsection
@@ -3394,7 +3394,7 @@ namespace full_model
 
 	/// \brief [K_NPC] Non-Player Character
 	/// \class Npc
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC Non-Player Character
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" K_NPC Non-Player Character
 	export class Npc 
 	{
 	/// \publicsection
@@ -3709,7 +3709,7 @@ namespace full_model
 
 	/// \brief [K_NPC_ITEM] NPC loot table
 	/// \class NpcItem
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC_ITEM NPC loot table
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" K_NPC_ITEM NPC loot table
 	export class NpcItem 
 	{
 	/// \publicsection
@@ -3845,7 +3845,7 @@ namespace full_model
 
 	/// \brief [K_NPC_MOVE_ITEM] NPC Move Item: TODO
 	/// \class NpcMoveItem
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPC_MOVE_ITEM NPC Move Item: TODO
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" K_NPC_MOVE_ITEM NPC Move Item: TODO
 	export class NpcMoveItem 
 	{
 	/// \publicsection
@@ -3955,7 +3955,7 @@ namespace full_model
 
 	/// \brief [K_NPCPOS] NPC Spawn Positions
 	/// \class NpcPos
-	/// \xrefitem gamedb "Game Database" "Game Database" K_NPCPOS NPC Spawn Positions
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" K_NPCPOS NPC Spawn Positions
 	export class NpcPos 
 	{
 	/// \publicsection
@@ -4119,7 +4119,7 @@ namespace full_model
 
 	/// \brief [KING_BALLOT_BOX] King Ballot Box TODO
 	/// \class KingBallotBox
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_BALLOT_BOX King Ballot Box TODO
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KING_BALLOT_BOX King Ballot Box TODO
 	export class KingBallotBox 
 	{
 	/// \publicsection
@@ -4203,7 +4203,7 @@ namespace full_model
 
 	/// \brief [KING_CANDIDACY_NOTICE_BOARD] King candidacy notice board
 	/// \class KingCandidacyNoticeBoard
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_CANDIDACY_NOTICE_BOARD King candidacy notice board
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KING_CANDIDACY_NOTICE_BOARD King candidacy notice board
 	export class KingCandidacyNoticeBoard 
 	{
 	/// \publicsection
@@ -4293,7 +4293,7 @@ namespace full_model
 
 	/// \brief [KING_ELECTION_LIST] King election list
 	/// \class KingElectionList
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_ELECTION_LIST King election list
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KING_ELECTION_LIST King election list
 	export class KingElectionList 
 	{
 	/// \publicsection
@@ -4382,7 +4382,7 @@ namespace full_model
 
 	/// \brief [KING_SYSTEM] King System
 	/// \class KingSystem
-	/// \xrefitem gamedb "Game Database" "Game Database" KING_SYSTEM King System
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KING_SYSTEM King System
 	export class KingSystem 
 	{
 	/// \publicsection
@@ -4591,7 +4591,7 @@ namespace full_model
 
 	/// \brief [KNIGHTS] Knights are the clan/guild system of the game
 	/// \class Knights
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS Knights are the clan/guild system of the game
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KNIGHTS Knights are the clan/guild system of the game
 	export class Knights 
 	{
 	/// \publicsection
@@ -4791,7 +4791,7 @@ namespace full_model
 
 	/// \brief [KNIGHTS_ALLIANCE] Knights alliance formations
 	/// \class KnightsAlliance
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_ALLIANCE Knights alliance formations
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KNIGHTS_ALLIANCE Knights alliance formations
 	export class KnightsAlliance 
 	{
 	/// \publicsection
@@ -4881,7 +4881,7 @@ namespace full_model
 
 	/// \brief [KNIGHTS_CAPE] Knights cape information
 	/// \class KnightsCape
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_CAPE Knights cape information
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KNIGHTS_CAPE Knights cape information
 	export class KnightsCape 
 	{
 	/// \publicsection
@@ -4976,7 +4976,7 @@ namespace full_model
 
 	/// \brief [KNIGHTS_RATING] Knights Ratings
 	/// \class KnightsRating
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_RATING Knights Ratings
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KNIGHTS_RATING Knights Ratings
 	export class KnightsRating 
 	{
 	/// \publicsection
@@ -5066,7 +5066,7 @@ namespace full_model
 
 	/// \brief [KNIGHTS_SIEGE_WARFARE] Knights Siege Warfare
 	/// \class KnightsSiegeWarfare
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_SIEGE_WARFARE Knights Siege Warfare
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KNIGHTS_SIEGE_WARFARE Knights Siege Warfare
 	export class KnightsSiegeWarfare 
 	{
 	/// \publicsection
@@ -5326,7 +5326,7 @@ namespace full_model
 
 	/// \brief [KNIGHTS_USER] Knights to character relationships
 	/// \class KnightsUser
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_USER Knights to character relationships
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" KNIGHTS_USER Knights to character relationships
 	export class KnightsUser 
 	{
 	/// \publicsection
@@ -5406,7 +5406,7 @@ namespace full_model
 
 	/// \brief [LEVEL_UP] Level experience requirements
 	/// \class LevelUp
-	/// \xrefitem gamedb "Game Database" "Game Database" LEVEL_UP Level experience requirements
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" LEVEL_UP Level experience requirements
 	export class LevelUp 
 	{
 	/// \publicsection
@@ -5486,7 +5486,7 @@ namespace full_model
 
 	/// \brief [MAGIC] Contains the configuration for magic and abilities
 	/// \class Magic
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC Contains the configuration for magic and abilities
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC Contains the configuration for magic and abilities
 	export class Magic 
 	{
 	/// \publicsection
@@ -5676,7 +5676,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE1] Supports melee abilities
 	/// \class MagicType1
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE1 Supports melee abilities
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE1 Supports melee abilities
 	export class MagicType1 
 	{
 	/// \publicsection
@@ -5816,7 +5816,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE2] Supports bow abilities
 	/// \class MagicType2
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE2 Supports bow abilities
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE2 Supports bow abilities
 	export class MagicType2 
 	{
 	/// \publicsection
@@ -5940,7 +5940,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE3] Supports Area of Effect and Damage over Time effects
 	/// \class MagicType3
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE3 Supports Area of Effect and Damage over Time effects
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE3 Supports Area of Effect and Damage over Time effects
 	export class MagicType3 
 	{
 	/// \publicsection
@@ -6082,7 +6082,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE4] Supports stat modification skills
 	/// \class MagicType4
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE4 Supports stat modification skills
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE4 Supports stat modification skills
 	export class MagicType4 
 	{
 	/// \publicsection
@@ -6324,7 +6324,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE5] Supports recovery skills
 	/// \class MagicType5
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE5 Supports recovery skills
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE5 Supports recovery skills
 	export class MagicType5 
 	{
 	/// \publicsection
@@ -6436,7 +6436,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE6] Supports transformation magic
 	/// \class MagicType6
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE6 Supports transformation magic
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE6 Supports transformation magic
 	export class MagicType6 
 	{
 	/// \publicsection
@@ -6631,7 +6631,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE7] Supports targeting modifications
 	/// \class MagicType7
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE7 Supports targeting modifications
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE7 Supports targeting modifications
 	export class MagicType7 
 	{
 	/// \publicsection
@@ -6780,7 +6780,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE8] Supports warp magic
 	/// \class MagicType8
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE8 Supports warp magic
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE8 Supports warp magic
 	export class MagicType8 
 	{
 	/// \publicsection
@@ -6896,7 +6896,7 @@ namespace full_model
 
 	/// \brief [MAGIC_TYPE9] Supports stealth and detection abilities
 	/// \class MagicType9
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE9 Supports stealth and detection abilities
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAGIC_TYPE9 Supports stealth and detection abilities
 	export class MagicType9 
 	{
 	/// \publicsection
@@ -7036,7 +7036,7 @@ namespace full_model
 
 	/// \brief [MAKE_DEFENSIVE] Make defensive
 	/// \class MakeDefensive
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_DEFENSIVE Make defensive
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAKE_DEFENSIVE Make defensive
 	export class MakeDefensive 
 	{
 	/// \publicsection
@@ -7146,7 +7146,7 @@ namespace full_model
 
 	/// \brief [MAKE_ITEM] Make item
 	/// \class MakeItem
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM Make item
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAKE_ITEM Make item
 	export class MakeItem 
 	{
 	/// \publicsection
@@ -7236,7 +7236,7 @@ namespace full_model
 
 	/// \brief [MAKE_ITEM_GRADECODE] Make item grade code
 	/// \class MakeItemGradeCode
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GRADECODE Make item grade code
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAKE_ITEM_GRADECODE Make item grade code
 	export class MakeItemGradeCode 
 	{
 	/// \publicsection
@@ -7367,7 +7367,7 @@ namespace full_model
 
 	/// \brief [MAKE_ITEM_GROUP] Make item group
 	/// \class MakeItemGroup
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_GROUP Make item group
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAKE_ITEM_GROUP Make item group
 	export class MakeItemGroup 
 	{
 	/// \publicsection
@@ -7603,7 +7603,7 @@ namespace full_model
 
 	/// \brief [MAKE_ITEM_LARECODE] Make item rarity codes
 	/// \class MakeItemRareCode
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_ITEM_LARECODE Make item rarity codes
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAKE_ITEM_LARECODE Make item rarity codes
 	export class MakeItemRareCode 
 	{
 	/// \publicsection
@@ -7698,7 +7698,7 @@ namespace full_model
 
 	/// \brief [MAKE_WEAPON] Make weapon
 	/// \class MakeWeapon
-	/// \xrefitem gamedb "Game Database" "Game Database" MAKE_WEAPON Make weapon
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MAKE_WEAPON Make weapon
 	export class MakeWeapon 
 	{
 	/// \publicsection
@@ -7844,7 +7844,7 @@ namespace full_model
 
 	/// \brief [MONSTER_CHALLENGE] Monster challenge (Forgotten Temple)
 	/// \class MonsterChallenge
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_CHALLENGE Monster challenge (Forgotten Temple)
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MONSTER_CHALLENGE Monster challenge (Forgotten Temple)
 	export class MonsterChallenge 
 	{
 	/// \publicsection
@@ -7944,7 +7944,7 @@ namespace full_model
 
 	/// \brief [MONSTER_CHALLENGE_SUMMON_LIST] Forgotten Temple summon list
 	/// \class MonsterChallengeSummonList
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_CHALLENGE_SUMMON_LIST Forgotten Temple summon list
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MONSTER_CHALLENGE_SUMMON_LIST Forgotten Temple summon list
 	export class MonsterChallengeSummonList 
 	{
 	/// \publicsection
@@ -8064,7 +8064,7 @@ namespace full_model
 
 	/// \brief [MONSTER_ITEM_TEST] Monster item test
 	/// \class MonsterItemTest
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_ITEM_TEST Monster item test
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MONSTER_ITEM_TEST Monster item test
 	export class MonsterItemTest 
 	{
 	/// \publicsection
@@ -8183,7 +8183,7 @@ namespace full_model
 
 	/// \brief [MONSTER_SUMMON_LIST] Monster summon list
 	/// \class MonsterSummonList
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_SUMMON_LIST Monster summon list
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" MONSTER_SUMMON_LIST Monster summon list
 	export class MonsterSummonList 
 	{
 	/// \publicsection
@@ -8278,7 +8278,7 @@ namespace full_model
 
 	/// \brief [PROGRAMLIST_LOG] Program list log
 	/// \class ProgramListLog
-	/// \xrefitem gamedb "Game Database" "Game Database" PROGRAMLIST_LOG Program list log
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" PROGRAMLIST_LOG Program list log
 	export class ProgramListLog 
 	{
 	/// \publicsection
@@ -8373,7 +8373,7 @@ namespace full_model
 
 	/// \brief [RENTAL_ITEM] Rental item
 	/// \class RentalItem
-	/// \xrefitem gamedb "Game Database" "Game Database" RENTAL_ITEM Rental item
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" RENTAL_ITEM Rental item
 	export class RentalItem 
 	{
 	/// \publicsection
@@ -8518,7 +8518,7 @@ namespace full_model
 
 	/// \brief [RENTAL_ITEM_LIST] Rental item list
 	/// \class RentalItemList
-	/// \xrefitem gamedb "Game Database" "Game Database" RENTAL_ITEM_LIST Rental item list
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" RENTAL_ITEM_LIST Rental item list
 	export class RentalItemList 
 	{
 	/// \publicsection
@@ -8657,7 +8657,7 @@ namespace full_model
 
 	/// \brief [SERVER_RESOURCE] Server resource
 	/// \class ServerResource
-	/// \xrefitem gamedb "Game Database" "Game Database" SERVER_RESOURCE Server resource
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" SERVER_RESOURCE Server resource
 	export class ServerResource 
 	{
 	/// \publicsection
@@ -8742,7 +8742,7 @@ namespace full_model
 
 	/// \brief [START_POSITION] Start position
 	/// \class StartPosition
-	/// \xrefitem gamedb "Game Database" "Game Database" START_POSITION Start position
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" START_POSITION Start position
 	export class StartPosition 
 	{
 	/// \publicsection
@@ -8867,7 +8867,7 @@ namespace full_model
 
 	/// \brief [TB_USER] User Account Information
 	/// \class TbUser
-	/// \xrefitem gamedb "Game Database" "Game Database" TB_USER User Account Information
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" TB_USER User Account Information
 	export class TbUser 
 	{
 	/// \publicsection
@@ -8967,7 +8967,7 @@ namespace full_model
 
 	/// \brief [USER_EDITOR] User editor
 	/// \class UserEditor
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_EDITOR User editor
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" USER_EDITOR User editor
 	export class UserEditor 
 	{
 	/// \publicsection
@@ -9106,7 +9106,7 @@ namespace full_model
 
 	/// \brief [USER_EDITOR_ITEM] User editor item
 	/// \class UserEditorItem
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_EDITOR_ITEM User editor item
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" USER_EDITOR_ITEM User editor item
 	export class UserEditorItem 
 	{
 	/// \publicsection
@@ -9220,7 +9220,7 @@ namespace full_model
 
 	/// \brief [USER_KNIGHTS_RANK] User Knights Ranking
 	/// \class UserKnightsRank
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_KNIGHTS_RANK User Knights Ranking
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" USER_KNIGHTS_RANK User Knights Ranking
 	export class UserKnightsRank 
 	{
 	/// \publicsection
@@ -9335,7 +9335,7 @@ namespace full_model
 
 	/// \brief [USER_PERSONAL_RANK] User personal ranking
 	/// \class UserPersonalRank
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_PERSONAL_RANK User personal ranking
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" USER_PERSONAL_RANK User personal ranking
 	export class UserPersonalRank 
 	{
 	/// \publicsection
@@ -9465,7 +9465,7 @@ namespace full_model
 
 	/// \brief [USER_RENTAL_ITEM] User rental item
 	/// \class UserRentalItem
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_RENTAL_ITEM User rental item
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" USER_RENTAL_ITEM User rental item
 	export class UserRentalItem 
 	{
 	/// \publicsection
@@ -9594,7 +9594,7 @@ namespace full_model
 
 	/// \brief [USER_SAVED_MAGIC] User saved magic
 	/// \class UserSavedMagic
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_SAVED_MAGIC User saved magic
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" USER_SAVED_MAGIC User saved magic
 	export class UserSavedMagic 
 	{
 	/// \publicsection
@@ -9769,7 +9769,7 @@ namespace full_model
 
 	/// \brief [USERDATA] User data contains saved character information
 	/// \class UserData
-	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA User data contains saved character information
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" USERDATA User data contains saved character information
 	export class UserData 
 	{
 	/// \publicsection
@@ -10084,7 +10084,7 @@ namespace full_model
 
 	/// \brief [USERDATA_SKILLSHORTCUT] User data skill shortcut
 	/// \class UserDataSkillShortcut
-	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA_SKILLSHORTCUT User data skill shortcut
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" USERDATA_SKILLSHORTCUT User data skill shortcut
 	export class UserDataSkillShortcut 
 	{
 	/// \publicsection
@@ -10169,7 +10169,7 @@ namespace full_model
 
 	/// \brief [VERSION] Version data and patch management
 	/// \class Version
-	/// \xrefitem gamedb "Game Database" "Game Database" VERSION Version data and patch management
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" VERSION Version data and patch management
 	export class Version 
 	{
 	/// \publicsection
@@ -10259,7 +10259,7 @@ namespace full_model
 
 	/// \brief [WAREHOUSE] The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
 	/// \class Warehouse
-	/// \xrefitem gamedb "Game Database" "Game Database" WAREHOUSE The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" WAREHOUSE The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
 	export class Warehouse 
 	{
 	/// \publicsection
@@ -10354,7 +10354,7 @@ namespace full_model
 
 	/// \brief [WEB_ITEMMALL] Power-up store purchases
 	/// \class WebItemMall
-	/// \xrefitem gamedb "Game Database" "Game Database" WEB_ITEMMALL Power-up store purchases
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" WEB_ITEMMALL Power-up store purchases
 	export class WebItemMall 
 	{
 	/// \publicsection
@@ -10468,7 +10468,7 @@ namespace full_model
 
 	/// \brief [WEB_ITEMMALL_LOG] Power-up store purchase log
 	/// \class WebItemMallLog
-	/// \xrefitem gamedb "Game Database" "Game Database" WEB_ITEMMALL_LOG Power-up store purchase log
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" WEB_ITEMMALL_LOG Power-up store purchase log
 	export class WebItemMallLog 
 	{
 	/// \publicsection
@@ -10582,7 +10582,7 @@ namespace full_model
 
 	/// \brief [WEBPAGE_ADDRESS] Webpage URL list
 	/// \class WebpageAddress
-	/// \xrefitem gamedb "Game Database" "Game Database" WEBPAGE_ADDRESS Webpage URL list
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" WEBPAGE_ADDRESS Webpage URL list
 	export class WebpageAddress 
 	{
 	/// \publicsection
@@ -10662,7 +10662,7 @@ namespace full_model
 
 	/// \brief [ZONE_INFO] Zone (map) information
 	/// \class ZoneInfo
-	/// \xrefitem gamedb "Game Database" "Game Database" ZONE_INFO Zone (map) information
+	/// \xrefitem db_GAME_Full "GAME Database - Full Library" "GAME Database - Full Library" ZONE_INFO Zone (map) information
 	export class ZoneInfo 
 	{
 	/// \publicsection

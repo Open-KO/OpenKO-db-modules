@@ -23,7 +23,7 @@ namespace aujard_model
 {
 	/// \brief [BATTLE] Battle data for the game server
 	/// \class Battle
-	/// \xrefitem gamedb "Game Database" "Game Database" BATTLE Battle data for the game server
+	/// \xrefitem db_GAME_Aujard "GAME Database - Aujard Library" "GAME Database - Aujard Library" BATTLE Battle data for the game server
 	export class Battle 
 	{
 	/// \publicsection
@@ -108,7 +108,7 @@ namespace aujard_model
 
 	/// \brief [CURRENTUSER] Keeps track of users currently connected to the server
 	/// \class CurrentUser
-	/// \xrefitem gamedb "Game Database" "Game Database" CURRENTUSER Keeps track of users currently connected to the server
+	/// \xrefitem db_GAME_Aujard "GAME Database - Aujard Library" "GAME Database - Aujard Library" CURRENTUSER Keeps track of users currently connected to the server
 	export class CurrentUser 
 	{
 	/// \publicsection
@@ -203,7 +203,7 @@ namespace aujard_model
 
 	/// \brief [ITEM] Item information
 	/// \class Item
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM Item information
+	/// \xrefitem db_GAME_Aujard "GAME Database - Aujard Library" "GAME Database - Aujard Library" ITEM Item information
 	export class Item 
 	{
 	/// \publicsection
@@ -293,7 +293,7 @@ namespace aujard_model
 
 	/// \brief [KNIGHTS] Knights are the clan/guild system of the game
 	/// \class Knights
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS Knights are the clan/guild system of the game
+	/// \xrefitem db_GAME_Aujard "GAME Database - Aujard Library" "GAME Database - Aujard Library" KNIGHTS Knights are the clan/guild system of the game
 	export class Knights 
 	{
 	/// \publicsection
@@ -393,7 +393,7 @@ namespace aujard_model
 
 	/// \brief [USERDATA] User data contains saved character information
 	/// \class UserData
-	/// \xrefitem gamedb "Game Database" "Game Database" USERDATA User data contains saved character information
+	/// \xrefitem db_GAME_Aujard "GAME Database - Aujard Library" "GAME Database - Aujard Library" USERDATA User data contains saved character information
 	export class UserData 
 	{
 	/// \publicsection
@@ -478,7 +478,7 @@ namespace aujard_model
 
 	/// \brief [WAREHOUSE] The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
 	/// \class Warehouse
-	/// \xrefitem gamedb "Game Database" "Game Database" WAREHOUSE The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
+	/// \xrefitem db_GAME_Aujard "GAME Database - Aujard Library" "GAME Database - Aujard Library" WAREHOUSE The warehouse system is referred to as the Inn in-game.  It is account-level storage for a user
 	export class Warehouse 
 	{
 	/// \publicsection

@@ -53,7 +53,7 @@ namespace ebenezer_model
 {
 	/// \brief [BATTLE] Battle data for the game server
 	/// \class Battle
-	/// \xrefitem gamedb "Game Database" "Game Database" BATTLE Battle data for the game server
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" BATTLE Battle data for the game server
 	export class Battle 
 	{
 	/// \publicsection
@@ -133,7 +133,7 @@ namespace ebenezer_model
 
 	/// \brief [COEFFICIENT] Coefficient relationship between a character class, weapon types, and stats
 	/// \class Coefficient
-	/// \xrefitem gamedb "Game Database" "Game Database" COEFFICIENT Coefficient relationship between a character class, weapon types, and stats
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" COEFFICIENT Coefficient relationship between a character class, weapon types, and stats
 	export class Coefficient 
 	{
 	/// \publicsection
@@ -278,7 +278,7 @@ namespace ebenezer_model
 
 	/// \brief [COUPON_SERIAL_LIST] Coupon Serial List
 	/// \class CouponSerialList
-	/// \xrefitem gamedb "Game Database" "Game Database" COUPON_SERIAL_LIST Coupon Serial List
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" COUPON_SERIAL_LIST Coupon Serial List
 	export class CouponSerialList 
 	{
 	/// \publicsection
@@ -368,7 +368,7 @@ namespace ebenezer_model
 
 	/// \brief [EVENT] Event Information
 	/// \class Event
-	/// \xrefitem gamedb "Game Database" "Game Database" EVENT Event Information
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" EVENT Event Information
 	export class Event 
 	{
 	/// \publicsection
@@ -472,7 +472,7 @@ namespace ebenezer_model
 
 	/// \brief [EVENT_TRIGGER] NPC Event Triggers
 	/// \class EventTrigger
-	/// \xrefitem gamedb "Game Database" "Game Database" EVENT_TRIGGER NPC Event Triggers
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" EVENT_TRIGGER NPC Event Triggers
 	export class EventTrigger 
 	{
 	/// \publicsection
@@ -562,7 +562,7 @@ namespace ebenezer_model
 
 	/// \brief [HOME] TODO Doc
 	/// \class Home
-	/// \xrefitem gamedb "Game Database" "Game Database" HOME TODO Doc
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" HOME TODO Doc
 	export class Home 
 	{
 	/// \publicsection
@@ -737,7 +737,7 @@ namespace ebenezer_model
 
 	/// \brief [ITEM] Item information
 	/// \class Item
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM Item information
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" ITEM Item information
 	export class Item 
 	{
 	/// \publicsection
@@ -1235,7 +1235,7 @@ namespace ebenezer_model
 
 	/// \brief [ITEM_EXCHANGE] Enables players to be able to give items in exchange for an item from an NPC
 	/// \class ItemExchange
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_EXCHANGE Enables players to be able to give items in exchange for an item from an NPC
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" ITEM_EXCHANGE Enables players to be able to give items in exchange for an item from an NPC
 	export class ItemExchange 
 	{
 	/// \publicsection
@@ -1464,7 +1464,7 @@ namespace ebenezer_model
 
 	/// \brief [ITEM_UPGRADE] Item upgrade configuration
 	/// \class ItemUpgrade
-	/// \xrefitem gamedb "Game Database" "Game Database" ITEM_UPGRADE Item upgrade configuration
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" ITEM_UPGRADE Item upgrade configuration
 	export class ItemUpgrade 
 	{
 	/// \publicsection
@@ -1625,7 +1625,7 @@ namespace ebenezer_model
 
 	/// \brief [KNIGHTS] Knights are the clan/guild system of the game
 	/// \class Knights
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS Knights are the clan/guild system of the game
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" KNIGHTS Knights are the clan/guild system of the game
 	export class Knights 
 	{
 	/// \publicsection
@@ -1815,7 +1815,7 @@ namespace ebenezer_model
 
 	/// \brief [KNIGHTS_ALLIANCE] Knights alliance formations
 	/// \class KnightsAlliance
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_ALLIANCE Knights alliance formations
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" KNIGHTS_ALLIANCE Knights alliance formations
 	export class KnightsAlliance 
 	{
 	/// \publicsection
@@ -1905,7 +1905,7 @@ namespace ebenezer_model
 
 	/// \brief [KNIGHTS_CAPE] Knights cape information
 	/// \class KnightsCape
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_CAPE Knights cape information
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" KNIGHTS_CAPE Knights cape information
 	export class KnightsCape 
 	{
 	/// \publicsection
@@ -1995,7 +1995,7 @@ namespace ebenezer_model
 
 	/// \brief [KNIGHTS_RATING] Knights Ratings
 	/// \class KnightsRating
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_RATING Knights Ratings
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" KNIGHTS_RATING Knights Ratings
 	export class KnightsRating 
 	{
 	/// \publicsection
@@ -2085,7 +2085,7 @@ namespace ebenezer_model
 
 	/// \brief [KNIGHTS_SIEGE_WARFARE] Knights Siege Warfare
 	/// \class KnightsSiegeWarfare
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_SIEGE_WARFARE Knights Siege Warfare
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" KNIGHTS_SIEGE_WARFARE Knights Siege Warfare
 	export class KnightsSiegeWarfare 
 	{
 	/// \publicsection
@@ -2345,7 +2345,7 @@ namespace ebenezer_model
 
 	/// \brief [KNIGHTS_USER] Knights to character relationships
 	/// \class KnightsUser
-	/// \xrefitem gamedb "Game Database" "Game Database" KNIGHTS_USER Knights to character relationships
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" KNIGHTS_USER Knights to character relationships
 	export class KnightsUser 
 	{
 	/// \publicsection
@@ -2425,7 +2425,7 @@ namespace ebenezer_model
 
 	/// \brief [LEVEL_UP] Level experience requirements
 	/// \class LevelUp
-	/// \xrefitem gamedb "Game Database" "Game Database" LEVEL_UP Level experience requirements
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" LEVEL_UP Level experience requirements
 	export class LevelUp 
 	{
 	/// \publicsection
@@ -2505,7 +2505,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC] Contains the configuration for magic and abilities
 	/// \class Magic
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC Contains the configuration for magic and abilities
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC Contains the configuration for magic and abilities
 	export class Magic 
 	{
 	/// \publicsection
@@ -2680,7 +2680,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE1] Supports melee abilities
 	/// \class MagicType1
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE1 Supports melee abilities
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE1 Supports melee abilities
 	export class MagicType1 
 	{
 	/// \publicsection
@@ -2810,7 +2810,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE2] Supports bow abilities
 	/// \class MagicType2
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE2 Supports bow abilities
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE2 Supports bow abilities
 	export class MagicType2 
 	{
 	/// \publicsection
@@ -2924,7 +2924,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE3] Supports Area of Effect and Damage over Time effects
 	/// \class MagicType3
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE3 Supports Area of Effect and Damage over Time effects
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE3 Supports Area of Effect and Damage over Time effects
 	export class MagicType3 
 	{
 	/// \publicsection
@@ -3056,7 +3056,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE4] Supports stat modification skills
 	/// \class MagicType4
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE4 Supports stat modification skills
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE4 Supports stat modification skills
 	export class MagicType4 
 	{
 	/// \publicsection
@@ -3288,7 +3288,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE5] Supports recovery skills
 	/// \class MagicType5
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE5 Supports recovery skills
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE5 Supports recovery skills
 	export class MagicType5 
 	{
 	/// \publicsection
@@ -3390,7 +3390,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE6] Supports transformation magic
 	/// \class MagicType6
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE6 Supports transformation magic
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE6 Supports transformation magic
 	export class MagicType6 
 	{
 	/// \publicsection
@@ -3575,7 +3575,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE7] Supports targeting modifications
 	/// \class MagicType7
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE7 Supports targeting modifications
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE7 Supports targeting modifications
 	export class MagicType7 
 	{
 	/// \publicsection
@@ -3714,7 +3714,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE8] Supports warp magic
 	/// \class MagicType8
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE8 Supports warp magic
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE8 Supports warp magic
 	export class MagicType8 
 	{
 	/// \publicsection
@@ -3820,7 +3820,7 @@ namespace ebenezer_model
 
 	/// \brief [MAGIC_TYPE9] Supports stealth and detection abilities
 	/// \class MagicType9
-	/// \xrefitem gamedb "Game Database" "Game Database" MAGIC_TYPE9 Supports stealth and detection abilities
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MAGIC_TYPE9 Supports stealth and detection abilities
 	export class MagicType9 
 	{
 	/// \publicsection
@@ -3950,7 +3950,7 @@ namespace ebenezer_model
 
 	/// \brief [MONSTER_CHALLENGE] Monster challenge (Forgotten Temple)
 	/// \class MonsterChallenge
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_CHALLENGE Monster challenge (Forgotten Temple)
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MONSTER_CHALLENGE Monster challenge (Forgotten Temple)
 	export class MonsterChallenge 
 	{
 	/// \publicsection
@@ -4050,7 +4050,7 @@ namespace ebenezer_model
 
 	/// \brief [MONSTER_CHALLENGE_SUMMON_LIST] Forgotten Temple summon list
 	/// \class MonsterChallengeSummonList
-	/// \xrefitem gamedb "Game Database" "Game Database" MONSTER_CHALLENGE_SUMMON_LIST Forgotten Temple summon list
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" MONSTER_CHALLENGE_SUMMON_LIST Forgotten Temple summon list
 	export class MonsterChallengeSummonList 
 	{
 	/// \publicsection
@@ -4170,7 +4170,7 @@ namespace ebenezer_model
 
 	/// \brief [RENTAL_ITEM] Rental item
 	/// \class RentalItem
-	/// \xrefitem gamedb "Game Database" "Game Database" RENTAL_ITEM Rental item
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" RENTAL_ITEM Rental item
 	export class RentalItem 
 	{
 	/// \publicsection
@@ -4305,7 +4305,7 @@ namespace ebenezer_model
 
 	/// \brief [SERVER_RESOURCE] Server resource
 	/// \class ServerResource
-	/// \xrefitem gamedb "Game Database" "Game Database" SERVER_RESOURCE Server resource
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" SERVER_RESOURCE Server resource
 	export class ServerResource 
 	{
 	/// \publicsection
@@ -4385,7 +4385,7 @@ namespace ebenezer_model
 
 	/// \brief [START_POSITION] Start position
 	/// \class StartPosition
-	/// \xrefitem gamedb "Game Database" "Game Database" START_POSITION Start position
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" START_POSITION Start position
 	export class StartPosition 
 	{
 	/// \publicsection
@@ -4510,7 +4510,7 @@ namespace ebenezer_model
 
 	/// \brief [USER_KNIGHTS_RANK] User Knights Ranking
 	/// \class UserKnightsRank
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_KNIGHTS_RANK User Knights Ranking
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" USER_KNIGHTS_RANK User Knights Ranking
 	export class UserKnightsRank 
 	{
 	/// \publicsection
@@ -4600,7 +4600,7 @@ namespace ebenezer_model
 
 	/// \brief [USER_PERSONAL_RANK] User personal ranking
 	/// \class UserPersonalRank
-	/// \xrefitem gamedb "Game Database" "Game Database" USER_PERSONAL_RANK User personal ranking
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" USER_PERSONAL_RANK User personal ranking
 	export class UserPersonalRank 
 	{
 	/// \publicsection
@@ -4690,7 +4690,7 @@ namespace ebenezer_model
 
 	/// \brief [WEBPAGE_ADDRESS] Webpage URL list
 	/// \class WebpageAddress
-	/// \xrefitem gamedb "Game Database" "Game Database" WEBPAGE_ADDRESS Webpage URL list
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" WEBPAGE_ADDRESS Webpage URL list
 	export class WebpageAddress 
 	{
 	/// \publicsection
@@ -4770,7 +4770,7 @@ namespace ebenezer_model
 
 	/// \brief [ZONE_INFO] Zone (map) information
 	/// \class ZoneInfo
-	/// \xrefitem gamedb "Game Database" "Game Database" ZONE_INFO Zone (map) information
+	/// \xrefitem db_GAME_Ebenezer "GAME Database - Ebenezer Library" "GAME Database - Ebenezer Library" ZONE_INFO Zone (map) information
 	export class ZoneInfo 
 	{
 	/// \publicsection

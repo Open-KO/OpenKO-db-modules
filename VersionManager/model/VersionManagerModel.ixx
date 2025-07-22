@@ -20,7 +20,7 @@ namespace versionmanager_model
 {
 	/// \brief [CONCURRENT] Keeps track of concurrent user counts
 	/// \class Concurrent
-	/// \xrefitem gamedb "Game Database" "Game Database" CONCURRENT Keeps track of concurrent user counts
+	/// \xrefitem db_GAME_VersionManager "GAME Database - VersionManager Library" "GAME Database - VersionManager Library" CONCURRENT Keeps track of concurrent user counts
 	export class Concurrent 
 	{
 	/// \publicsection
@@ -110,7 +110,7 @@ namespace versionmanager_model
 
 	/// \brief [CURRENTUSER] Keeps track of users currently connected to the server
 	/// \class CurrentUser
-	/// \xrefitem gamedb "Game Database" "Game Database" CURRENTUSER Keeps track of users currently connected to the server
+	/// \xrefitem db_GAME_VersionManager "GAME Database - VersionManager Library" "GAME Database - VersionManager Library" CURRENTUSER Keeps track of users currently connected to the server
 	export class CurrentUser 
 	{
 	/// \publicsection
@@ -195,7 +195,7 @@ namespace versionmanager_model
 
 	/// \brief [TB_USER] User Account Information
 	/// \class TbUser
-	/// \xrefitem gamedb "Game Database" "Game Database" TB_USER User Account Information
+	/// \xrefitem db_GAME_VersionManager "GAME Database - VersionManager Library" "GAME Database - VersionManager Library" TB_USER User Account Information
 	export class TbUser 
 	{
 	/// \publicsection
@@ -280,7 +280,7 @@ namespace versionmanager_model
 
 	/// \brief [VERSION] Version data and patch management
 	/// \class Version
-	/// \xrefitem gamedb "Game Database" "Game Database" VERSION Version data and patch management
+	/// \xrefitem db_GAME_VersionManager "GAME Database - VersionManager Library" "GAME Database - VersionManager Library" VERSION Version data and patch management
 	export class Version 
 	{
 	/// \publicsection
