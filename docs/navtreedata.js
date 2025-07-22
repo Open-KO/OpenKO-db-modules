@@ -26,7 +26,11 @@ var NAVTREE =
 [
   [ "OpenKO Database Model", "index.html", [
     [ "OpenKO-db-modules", "md_README.html", null ],
-    [ "Game Database", "gamedb.html", null ],
+    [ "GAME Database - AIServer Library", "db_GAME_AIServer.html", null ],
+    [ "GAME Database - Aujard Library", "db_GAME_Aujard.html", null ],
+    [ "GAME Database - Ebenezer Library", "db_GAME_Ebenezer.html", null ],
+    [ "GAME Database - Full Library", "db_GAME_Full.html", null ],
+    [ "GAME Database - VersionManager Library", "db_GAME_VersionManager.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
