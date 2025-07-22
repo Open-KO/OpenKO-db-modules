@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Doxygenize
-        uses: langroodi/doxygenize@v1.7.0
+        uses: langroodi/doxygenize@v1.7.1
         with:
           doxygenconf: './Doxyfile'
           htmloutput: './docs'
           ghpagesbranch: 'doxygen_out'
           ghpagesdir: './docs/'
-#          darkmode: 'true'
+          darkmode: 'true'
